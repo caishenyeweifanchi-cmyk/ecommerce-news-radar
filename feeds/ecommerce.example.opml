@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Ecommerce News Radar RSS Example</title>
+  </head>
+  <body>
+    <outline text="Ecommerce Vertical Media">
+      <outline text="Ebrun B2C" title="Ebrun B2C" type="rss" xmlUrl="https://www.ebrun.com/rss/news_b2c.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="Ebrun Retail" title="Ebrun Retail" type="rss" xmlUrl="https://www.ebrun.com/rss/news_retail.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="Ebrun Brands" title="Ebrun Brands" type="rss" xmlUrl="https://www.ebrun.com/rss/news_brands.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="Ebrun Ecommerce Service" title="Ebrun Ecommerce Service" type="rss" xmlUrl="https://www.ebrun.com/rss/news_service.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="Ebrun Mobile Ecommerce" title="Ebrun Mobile Ecommerce" type="rss" xmlUrl="https://www.ebrun.com/rss/news_mec.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="Ebrun Foreign Trade Ecommerce" title="Ebrun Foreign Trade Ecommerce" type="rss" xmlUrl="https://www.ebrun.com/rss/news_fto.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="Ebrun International Ecommerce" title="Ebrun International Ecommerce" type="rss" xmlUrl="https://www.ebrun.com/rss/news_intl.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="Ebrun Ecommerce Policy" title="Ebrun Ecommerce Policy" type="rss" xmlUrl="https://www.ebrun.com/rss/news_policy.xml" htmlUrl="https://www.ebrun.com/" />
+    </outline>
+    <outline text="Business Broad Feeds">
+      <outline text="36Kr" title="36Kr" type="rss" xmlUrl="https://36kr.com/feed" htmlUrl="https://36kr.com/" />
+      <outline text="ReadHub" title="ReadHub" type="rss" xmlUrl="https://readhub.cn/rss" htmlUrl="https://readhub.cn/" />
+    </outline>
+  </body>
+</opml>
