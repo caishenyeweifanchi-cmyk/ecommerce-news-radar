@@ -41,6 +41,8 @@ const allDedupeLabelEl = document.getElementById("allDedupeLabel");
 const advancedSummaryEl = document.getElementById("advancedSummary");
 const sourceHealthEl = document.getElementById("sourceHealth");
 const filterTabEls = Array.from(document.querySelectorAll(".filter-tab"));
+const navLinkEls = Array.from(document.querySelectorAll(".nav-list a"));
+const advancedPanelEl = document.getElementById("advancedPanel");
 
 const waytoagiUpdatedAtEl = document.getElementById("waytoagiUpdatedAt");
 const waytoagiMetaEl = document.getElementById("waytoagiMeta");
@@ -310,6 +312,22 @@ function renderCategoryTabs() {
   filterTabEls.forEach((button) => {
     button.classList.toggle("active", (button.dataset.category || "") === state.categoryFilter);
   });
+}
+
+function setActiveNav(activeLink) {
+  navLinkEls.forEach((link) => link.classList.toggle("active", link === activeLink));
+}
+
+function scrollToPanel(targetId) {
+  const target = document.getElementById(targetId);
+  if (!target) return;
+  target.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function applyCategoryFilter(category) {
+  state.categoryFilter = category || "";
+  renderCategoryTabs();
+  renderList();
 }
 
 function itemTitleText(item) {
@@ -1296,9 +1314,22 @@ if (allDedupeToggleEl) {
 
 filterTabEls.forEach((button) => {
   button.addEventListener("click", () => {
-    state.categoryFilter = button.dataset.category || "";
-    renderCategoryTabs();
-    renderList();
+    applyCategoryFilter(button.dataset.category || "");
+    const matchedNav = navLinkEls.find((link) => (link.dataset.category || "") === state.categoryFilter);
+    if (matchedNav) setActiveNav(matchedNav);
+  });
+});
+
+navLinkEls.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const category = link.dataset.category;
+    const targetId = link.dataset.target || "overview";
+
+    setActiveNav(link);
+    if (category !== undefined) applyCategoryFilter(category);
+    if (targetId === "advancedPanel" && advancedPanelEl) advancedPanelEl.open = true;
+    scrollToPanel(targetId);
   });
 });
 

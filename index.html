@@ -37,14 +37,14 @@
           </div>
         </div>
         <nav class="nav-list">
-          <a class="active" href="#overview">总览</a>
-          <a href="#bolePicksWrap">热点精选</a>
-          <a href="#newsList">平台规则</a>
-          <a href="#newsList">内容电商</a>
-          <a href="#newsList">跨境电商</a>
-          <a href="#newsList">投流营销</a>
-          <a href="#sourceHealth">信息源</a>
-          <a href="#advancedPanel">设置</a>
+          <a class="active" href="#overview" data-target="overview" data-category="">总览</a>
+          <a href="#bolePicksWrap" data-target="bolePicksWrap">热点精选</a>
+          <a href="#newsList" data-target="listWrap" data-category="platform_policy">平台规则</a>
+          <a href="#newsList" data-target="listWrap" data-category="content_commerce">内容电商</a>
+          <a href="#newsList" data-target="listWrap" data-category="cross_border">跨境电商</a>
+          <a href="#newsList" data-target="listWrap" data-category="traffic_marketing">投流营销</a>
+          <a href="#sourceHealth" data-target="advancedPanel">信息源</a>
+          <a href="#advancedPanel" data-target="advancedPanel">设置</a>
         </nav>
       </aside>
 
@@ -176,7 +176,7 @@
         <div id="waytoagiList" class="waytoagi-list"></div>
       </section>
 
-      <section class="list-wrap">
+      <section class="list-wrap" id="listWrap">
         <div class="list-head">
           <h2 id="listTitle">电商信号流</h2>
           <span id="resultCount">0 条</span>
