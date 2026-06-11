@@ -17,6 +17,7 @@ const state = {
   waytoagiMode: "today",
   waytoagiData: null,
   sourceStatus: null,
+  webSources: null,
   generatedAt: null,
   latestPayload: null,
   dailyBrief: null,
@@ -40,6 +41,7 @@ const allDedupeToggleEl = document.getElementById("allDedupeToggle");
 const allDedupeLabelEl = document.getElementById("allDedupeLabel");
 const advancedSummaryEl = document.getElementById("advancedSummary");
 const sourceHealthEl = document.getElementById("sourceHealth");
+const webSourcePanelEl = document.getElementById("webSourcePanel");
 const filterTabEls = Array.from(document.querySelectorAll(".filter-tab"));
 const navLinkEls = Array.from(document.querySelectorAll(".nav-list a"));
 const advancedPanelEl = document.getElementById("advancedPanel");
@@ -109,11 +111,13 @@ function setStats(payload) {
   const sites = Array.isArray(status?.sites) ? status.sites : [];
   const okSites = Number(status?.successful_sites || 0);
   const health = sites.length ? `${Math.round((okSites / sites.length) * 100)}%` : `${fmtNumber(payload.site_count || 0)}源`;
+  const webSourceCount = Array.isArray(state.webSources?.sources) ? state.webSources.sources.length : 0;
+  const trackedSourceCount = Number(payload.source_count || payload.site_count || 0) + webSourceCount;
   const cards = [
     ["今日电商信号", fmtNumber(payload.total_items_raw || payload.total_items_all_mode || payload.total_items)],
     ["强相关热点", fmtNumber(payload.total_items)],
     ["高风险规则", fmtNumber(riskCount)],
-    ["追踪来源", fmtNumber(payload.source_count || payload.site_count)],
+    ["追踪来源", fmtNumber(trackedSourceCount)],
     ["源健康", health],
   ];
 
@@ -1157,6 +1161,69 @@ function renderSourceHealth(errorMessage = "") {
   renderAdvancedSummary();
 }
 
+function renderWebSources(errorMessage = "") {
+  if (!webSourcePanelEl) return;
+  webSourcePanelEl.innerHTML = "";
+
+  const sources = Array.isArray(state.webSources?.sources) ? state.webSources.sources : [];
+  if (!sources.length) {
+    const empty = document.createElement("div");
+    empty.className = "health-empty";
+    empty.textContent = errorMessage || "重点网页源未加载";
+    webSourcePanelEl.appendChild(empty);
+    return;
+  }
+
+  const required = sources.filter((source) => source.required === true);
+  const p0 = sources.filter((source) => source.priority === "P0");
+  const ready = sources.filter((source) => source.ingestion_method === "web_list_adapter");
+  const verify = sources.filter((source) => source.ingestion_method === "manual_verify_then_web_adapter");
+
+  const head = document.createElement("div");
+  head.className = "web-source-head";
+  head.innerHTML = `
+    <div>
+      <strong>重点网页源</strong>
+      <span>国内平台规则中心 / 商家公告 / 投流与内容电商入口</span>
+    </div>
+    <em>${fmtNumber(sources.length)} 个源</em>
+  `;
+
+  const metrics = document.createElement("div");
+  metrics.className = "web-source-metrics";
+  [
+    ["P0", p0.length],
+    ["必选", required.length],
+    ["可适配", ready.length],
+    ["待验证", verify.length],
+  ].forEach(([label, value]) => {
+    const node = document.createElement("div");
+    node.innerHTML = `<span>${label}</span><strong>${fmtNumber(value)}</strong>`;
+    metrics.appendChild(node);
+  });
+
+  const list = document.createElement("div");
+  list.className = "web-source-list";
+  sources.forEach((source) => {
+    const row = document.createElement("a");
+    row.className = "web-source-row";
+    row.href = source.url || "#";
+    row.target = "_blank";
+    row.rel = "noopener noreferrer";
+    const method = source.ingestion_method === "web_list_adapter" ? "网页适配器" : "待验证";
+    row.innerHTML = `
+      <div>
+        <strong>${source.name || "未命名源"}</strong>
+        <span>${source.platform || "未知平台"} · ${source.domain || "未分类"} · ${method}</span>
+      </div>
+      <em>${source.priority || "P?"}</em>
+    `;
+    list.appendChild(row);
+  });
+
+  webSourcePanelEl.append(head, metrics, list);
+}
+
 async function loadNewsData() {
   const res = await fetch(`./data/latest-24h.json?t=${Date.now()}`);
   if (!res.ok) throw new Error(`加载 latest-24h.json 失败: ${res.status}`);
@@ -1198,6 +1265,12 @@ async function loadSourceStatusData() {
   return res.json();
 }
 
+async function loadWebSourcesData() {
+  const res = await fetch(`./feeds/ecommerce.web-sources.json?t=${Date.now()}`);
+  if (!res.ok) throw new Error(`加载 ecommerce.web-sources.json 失败: ${res.status}`);
+  return res.json();
+}
+
 async function loadDailyBriefData() {
   const res = await fetch(`./data/daily-brief.json?t=${Date.now()}`);
   if (!res.ok) throw new Error(`加载 daily-brief.json 失败: ${res.status}`);
@@ -1205,11 +1278,12 @@ async function loadDailyBriefData() {
 }
 
 async function init() {
-  const [newsResult, waytoagiResult, statusResult, briefResult] = await Promise.allSettled([
+  const [newsResult, waytoagiResult, statusResult, briefResult, webSourcesResult] = await Promise.allSettled([
     loadNewsData(),
     loadWaytoagiData(),
     loadSourceStatusData(),
     loadDailyBriefData(),
+    loadWebSourcesData(),
   ]);
 
   if (briefResult.status === "fulfilled") {
@@ -1243,6 +1317,14 @@ async function init() {
     updatedAtEl.textContent = "新闻数据加载失败";
     newsListEl.innerHTML = `<div class="empty">${newsResult.reason.message}</div>`;
     renderCoverageStrip(newsResult.reason.message);
+  }
+
+  if (webSourcesResult.status === "fulfilled") {
+    state.webSources = webSourcesResult.value;
+    if (state.latestPayload) setStats(state.latestPayload);
+    renderWebSources();
+  } else {
+    renderWebSources(webSourcesResult.reason.message);
   }
 
   if (statusResult.status === "fulfilled") {

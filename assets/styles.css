@@ -780,6 +780,126 @@ summary:focus-visible {
   gap: 10px;
 }
 
+.web-source-panel {
+  display: grid;
+  gap: 10px;
+}
+
+.web-source-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+  border: 1px solid rgba(15, 118, 110, 0.22);
+  border-radius: var(--radius);
+  padding: 11px;
+  background: var(--accent-soft);
+}
+
+.web-source-head strong,
+.web-source-head span {
+  display: block;
+}
+
+.web-source-head strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.web-source-head span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.web-source-head em {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.web-source-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.web-source-metrics div {
+  display: grid;
+  gap: 2px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 8px 9px;
+  background: var(--surface-soft);
+}
+
+.web-source-metrics span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.web-source-metrics strong {
+  color: var(--ink);
+  font-size: 17px;
+}
+
+.web-source-list {
+  max-height: 360px;
+  display: grid;
+  gap: 7px;
+  overflow: auto;
+  padding-right: 2px;
+}
+
+.web-source-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 9px 10px;
+  color: var(--ink);
+  background: #fff;
+  text-decoration: none;
+}
+
+.web-source-row:hover {
+  border-color: rgba(15, 118, 110, 0.38);
+  background: var(--surface-soft);
+}
+
+.web-source-row strong,
+.web-source-row span {
+  display: block;
+}
+
+.web-source-row strong {
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.web-source-row span {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.web-source-row em {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  padding: 3px 7px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 900;
+}
+
 .health-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
