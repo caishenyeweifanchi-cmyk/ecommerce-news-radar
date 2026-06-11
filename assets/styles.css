@@ -81,6 +81,7 @@ a {
   height: 38px;
   border-radius: var(--radius);
   background: #fff;
+  object-fit: cover;
 }
 
 .brand strong,
@@ -164,6 +165,7 @@ a {
   border-radius: 14px;
   background: var(--surface);
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  object-fit: cover;
 }
 
 .hero-tag {
@@ -389,6 +391,11 @@ summary:focus-visible {
 .main-column,
 .insight-column {
   min-width: 0;
+}
+
+.main-column {
+  display: grid;
+  gap: 16px;
 }
 
 .insight-column {
@@ -1030,7 +1037,7 @@ summary:focus-visible {
 }
 
 .list-wrap {
-  margin-top: 16px;
+  margin-top: 0;
 }
 
 .news-list,

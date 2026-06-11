@@ -23,14 +23,14 @@
       name="twitter:description"
       content="自动整理电商、内容电商、跨境电商、平台规则、投流营销和品牌增长信息源。"
     />
-    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./assets/styles.css?v=ecommerce-console-0611" />
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/styles.css?v=ecommerce-console-0612-layout" />
   </head>
   <body>
     <div class="app-shell">
       <aside class="sidebar" aria-label="主导航">
         <div class="brand">
-          <img class="brand-logo" src="./assets/logo.svg" alt="电商热点雷达 Logo" />
+          <img class="brand-logo" src="./assets/logo.png" alt="电商热点雷达 Logo" />
           <div>
             <strong>电商雷达</strong>
             <span>情报中台</span>
@@ -52,7 +52,7 @@
         <header class="hero">
           <div class="hero-main">
             <div class="hero-headline">
-              <img class="hero-logo" src="./assets/logo.svg" alt="电商热点雷达 Logo" />
+              <img class="hero-logo" src="./assets/logo.png" alt="电商热点雷达 Logo" />
               <div>
                 <p class="hero-tag">ECOMMERCE INTELLIGENCE RADAR</p>
                 <h1>电商热点雷达</h1>
@@ -111,6 +111,14 @@
               </div>
               <div class="bole-picks-sub">把电商信息按故事线合并；优先看多源重复、平台规则、跨境政策和投流变化。</div>
               <div id="bolePicksList" class="bole-board"></div>
+            </section>
+
+            <section class="list-wrap" id="listWrap">
+              <div class="list-head">
+                <h2 id="listTitle">电商信号流</h2>
+                <span id="resultCount">0 条</span>
+              </div>
+              <div id="newsList" class="news-list"></div>
             </section>
           </section>
 
@@ -177,14 +185,6 @@
         <div id="waytoagiList" class="waytoagi-list"></div>
       </section>
 
-      <section class="list-wrap" id="listWrap">
-        <div class="list-head">
-          <h2 id="listTitle">电商信号流</h2>
-          <span id="resultCount">0 条</span>
-        </div>
-        <div id="newsList" class="news-list"></div>
-      </section>
-
       </main>
     </div>
 
@@ -201,7 +201,7 @@
     </template>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" defer></script>
-    <script src="./assets/motion.js?v=ecommerce-console-0611" defer></script>
-    <script src="./assets/app.js?v=ecommerce-console-0611" defer></script>
+    <script src="./assets/motion.js?v=ecommerce-console-0612-layout" defer></script>
+    <script src="./assets/app.js?v=ecommerce-console-0612-layout" defer></script>
   </body>
 </html>
