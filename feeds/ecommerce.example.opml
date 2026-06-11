@@ -1,22 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
   <head>
-    <title>Ecommerce News Radar RSS Example</title>
+    <title>Ecommerce News Radar RSS Sources</title>
   </head>
   <body>
-    <outline text="Ecommerce Vertical Media">
-      <outline text="Ebrun B2C" title="Ebrun B2C" type="rss" xmlUrl="https://www.ebrun.com/rss/news_b2c.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="Ebrun Retail" title="Ebrun Retail" type="rss" xmlUrl="https://www.ebrun.com/rss/news_retail.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="Ebrun Brands" title="Ebrun Brands" type="rss" xmlUrl="https://www.ebrun.com/rss/news_brands.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="Ebrun Ecommerce Service" title="Ebrun Ecommerce Service" type="rss" xmlUrl="https://www.ebrun.com/rss/news_service.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="Ebrun Mobile Ecommerce" title="Ebrun Mobile Ecommerce" type="rss" xmlUrl="https://www.ebrun.com/rss/news_mec.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="Ebrun Foreign Trade Ecommerce" title="Ebrun Foreign Trade Ecommerce" type="rss" xmlUrl="https://www.ebrun.com/rss/news_fto.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="Ebrun International Ecommerce" title="Ebrun International Ecommerce" type="rss" xmlUrl="https://www.ebrun.com/rss/news_intl.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="Ebrun Ecommerce Policy" title="Ebrun Ecommerce Policy" type="rss" xmlUrl="https://www.ebrun.com/rss/news_policy.xml" htmlUrl="https://www.ebrun.com/" />
+    <outline text="Existing ecommerce feeds">
+      <outline text="Ebrun B2C" title="Ebrun B2C" type="rss" xmlUrl="https://www.ebrun.com/rss/news_b2c.xml" htmlUrl="https://www.ebrun.com/"/>
+      <outline text="Ebrun Retail" title="Ebrun Retail" type="rss" xmlUrl="https://www.ebrun.com/rss/news_retail.xml" htmlUrl="https://www.ebrun.com/"/>
+      <outline text="Ebrun Brands" title="Ebrun Brands" type="rss" xmlUrl="https://www.ebrun.com/rss/news_brands.xml" htmlUrl="https://www.ebrun.com/"/>
+      <outline text="Ebrun Ecommerce Service" title="Ebrun Ecommerce Service" type="rss" xmlUrl="https://www.ebrun.com/rss/news_service.xml" htmlUrl="https://www.ebrun.com/"/>
+      <outline text="Ebrun Mobile Ecommerce" title="Ebrun Mobile Ecommerce" type="rss" xmlUrl="https://www.ebrun.com/rss/news_mec.xml" htmlUrl="https://www.ebrun.com/"/>
+      <outline text="Ebrun Foreign Trade Ecommerce" title="Ebrun Foreign Trade Ecommerce" type="rss" xmlUrl="https://www.ebrun.com/rss/news_fto.xml" htmlUrl="https://www.ebrun.com/"/>
+      <outline text="Ebrun International Ecommerce" title="Ebrun International Ecommerce" type="rss" xmlUrl="https://www.ebrun.com/rss/news_intl.xml" htmlUrl="https://www.ebrun.com/"/>
+      <outline text="Ebrun Ecommerce Policy" title="Ebrun Ecommerce Policy" type="rss" xmlUrl="https://www.ebrun.com/rss/news_policy.xml" htmlUrl="https://www.ebrun.com/"/>
+      <outline text="36Kr" title="36Kr" type="rss" xmlUrl="https://36kr.com/feed" htmlUrl="https://36kr.com/"/>
+      <outline text="ReadHub" title="ReadHub" type="rss" xmlUrl="https://readhub.cn/rss" htmlUrl="https://readhub.cn/"/>
     </outline>
-    <outline text="Business Broad Feeds">
-      <outline text="36Kr" title="36Kr" type="rss" xmlUrl="https://36kr.com/feed" htmlUrl="https://36kr.com/" />
-      <outline text="ReadHub" title="ReadHub" type="rss" xmlUrl="https://readhub.cn/rss" htmlUrl="https://readhub.cn/" />
+    <outline text="Batch 1 direct RSS feeds">
+      <outline text="Amazon Ads Updates" title="Amazon Ads Updates" type="rss" xmlUrl="https://advertising.amazon.com/blog/feed" htmlUrl="https://advertising.amazon.com/blog"/>
+      <outline text="Etsy Seller Handbook" title="Etsy Seller Handbook" type="rss" xmlUrl="https://www.etsy.com/seller-handbook/feed" htmlUrl="https://seller.etsy.com/handbook"/>
+      <outline text="Shopify Changelog" title="Shopify Changelog" type="rss" xmlUrl="https://changelog.shopify.com/feed" htmlUrl="https://changelog.shopify.com"/>
+      <outline text="Shopify Developer Changelog" title="Shopify Developer Changelog" type="rss" xmlUrl="https://shopify.dev/changelog/feed.xml" htmlUrl="https://shopify.dev/changelog"/>
+      <outline text="Shopify Partners Blog" title="Shopify Partners Blog" type="rss" xmlUrl="https://www.shopify.com/partners/blog/feed" htmlUrl="https://www.shopify.com/partners/blog"/>
+      <outline text="WooCommerce Blog" title="WooCommerce Blog" type="rss" xmlUrl="https://woocommerce.com/feed/" htmlUrl="https://woocommerce.com/blog"/>
+      <outline text="WooCommerce Developer Blog" title="WooCommerce Developer Blog" type="rss" xmlUrl="https://developer.woocommerce.com/feed/" htmlUrl="https://developer.woocommerce.com/blog"/>
+      <outline text="BigCommerce Blog" title="BigCommerce Blog" type="rss" xmlUrl="https://www.bigcommerce.com/blog/feed/" htmlUrl="https://www.bigcommerce.com/blog"/>
+      <outline text="Google Ads Status Dashboard" title="Google Ads Status Dashboard" type="rss" xmlUrl="https://status.ads.google.com/feed.atom" htmlUrl="https://status.ads.google.com"/>
+      <outline text="Meta for Business Blog" title="Meta for Business Blog" type="rss" xmlUrl="https://www.facebook.com/business/news/rss" htmlUrl="https://www.facebook.com/business/news"/>
+      <outline text="Instagram Shopping Updates" title="Instagram Shopping Updates" type="rss" xmlUrl="https://business.instagram.com/blog/feed" htmlUrl="https://business.instagram.com/blog"/>
+      <outline text="Microsoft Advertising Blog" title="Microsoft Advertising Blog" type="rss" xmlUrl="https://about.ads.microsoft.com/blog/feed" htmlUrl="https://about.ads.microsoft.com/blog"/>
+      <outline text="Pinterest Business Blog" title="Pinterest Business Blog" type="rss" xmlUrl="https://business.pinterest.com/blog/feed" htmlUrl="https://business.pinterest.com/blog"/>
+      <outline text="Snap Inc. Business Blog" title="Snap Inc. Business Blog" type="rss" xmlUrl="https://forbusiness.snapchat.com/blog/feed" htmlUrl="https://forbusiness.snapchat.com/blog"/>
+      <outline text="LinkedIn Marketing Blog" title="LinkedIn Marketing Blog" type="rss" xmlUrl="https://business.linkedin.com/marketing-solutions/blog/feed" htmlUrl="https://business.linkedin.com/marketing-solutions/blog"/>
+      <outline text="Klaviyo Product Updates" title="Klaviyo Product Updates" type="rss" xmlUrl="https://www.klaviyo.com/product-updates/feed" htmlUrl="https://www.klaviyo.com/product-updates"/>
+      <outline text="Mailchimp Business Blog" title="Mailchimp Business Blog" type="rss" xmlUrl="https://mailchimp.com/resources/feed" htmlUrl="https://mailchimp.com/resources"/>
+      <outline text="HubSpot Commerce Blog" title="HubSpot Commerce Blog" type="rss" xmlUrl="https://blog.hubspot.com/commerce/rss.xml" htmlUrl="https://blog.hubspot.com/commerce"/>
+      <outline text="电商报" title="电商报" type="rss" xmlUrl="https://www.dsb.cn/feed" htmlUrl="https://www.dsb.cn"/>
+      <outline text="Morketing" title="Morketing" type="rss" xmlUrl="https://www.morketing.com/feed" htmlUrl="https://www.morketing.com"/>
+      <outline text="36氪电商频道" title="36氪电商频道" type="rss" xmlUrl="https://36kr.com/feed/channel/ecommerce" htmlUrl="https://36kr.com/channel/ecommerce"/>
+      <outline text="Retail Dive" title="Retail Dive" type="rss" xmlUrl="https://www.retaildive.com/feed/" htmlUrl="https://www.retaildive.com"/>
+      <outline text="Modern Retail" title="Modern Retail" type="rss" xmlUrl="https://modernretail.co/feed/" htmlUrl="https://modernretail.co"/>
+      <outline text="Marketplace Pulse" title="Marketplace Pulse" type="rss" xmlUrl="https://www.marketplacepulse.com/rss/" htmlUrl="https://www.marketplacepulse.com"/>
+      <outline text="Practical Ecommerce" title="Practical Ecommerce" type="rss" xmlUrl="https://www.practicalecommerce.com/rss" htmlUrl="https://www.practicalecommerce.com"/>
+      <outline text="EcommerceBytes" title="EcommerceBytes" type="rss" xmlUrl="https://www.ecommercebytes.com/category/news/feed/" htmlUrl="https://www.ecommercebytes.com"/>
+      <outline text="Digital Commerce 360" title="Digital Commerce 360" type="rss" xmlUrl="https://www.digitalcommerce360.com/feed/" htmlUrl="https://www.digitalcommerce360.com"/>
+      <outline text="Internet Retailing" title="Internet Retailing" type="rss" xmlUrl="https://internetretailing.net/feed/" htmlUrl="https://internetretailing.net"/>
+      <outline text="The Drum Ecommerce" title="The Drum Ecommerce" type="rss" xmlUrl="https://www.thedrum.com/ecommerce/rss" htmlUrl="https://www.thedrum.com/ecommerce"/>
+      <outline text="Search Engine Land Commerce" title="Search Engine Land Commerce" type="rss" xmlUrl="https://searchengineland.com/feed" htmlUrl="https://searchengineland.com/commerce"/>
+      <outline text="Adweek Commerce" title="Adweek Commerce" type="rss" xmlUrl="https://www.adweek.com/feed/" htmlUrl="https://www.adweek.com/commerce"/>
+      <outline text="中国海关总署公告" title="中国海关总署公告" type="rss" xmlUrl="http://www.customs.gov.cn/customs/302249/302266/rss.xml" htmlUrl="http://www.customs.gov.cn/customs/302249/302266/index.html"/>
+      <outline text="美国FTC Business Guidance" title="美国FTC Business Guidance" type="rss" xmlUrl="https://www.ftc.gov/business-guidance/rss.xml" htmlUrl="https://www.ftc.gov/business-guidance"/>
+      <outline text="美国CBP Trade Updates" title="美国CBP Trade Updates" type="rss" xmlUrl="https://www.cbp.gov/rss/trade-updates.xml" htmlUrl="https://www.cbp.gov/trade/updates"/>
+      <outline text="Stripe Developer Changelog" title="Stripe Developer Changelog" type="rss" xmlUrl="https://stripe.com/docs/changelog.rss" htmlUrl="https://stripe.com/docs/changelog"/>
+      <outline text="Adyen News" title="Adyen News" type="rss" xmlUrl="https://www.adyen.com/news.rss" htmlUrl="https://www.adyen.com/news"/>
+      <outline text="Payoneer Blog" title="Payoneer Blog" type="rss" xmlUrl="https://blog.payoneer.com/feed/" htmlUrl="https://blog.payoneer.com"/>
+      <outline text="Printful Blog" title="Printful Blog" type="rss" xmlUrl="https://www.printful.com/blog/feed" htmlUrl="https://www.printful.com/blog"/>
+      <outline text="Google Ads Developer Blog" title="Google Ads Developer Blog" type="rss" xmlUrl="https://ads-developers.googleblog.com/feeds/posts/default" htmlUrl="https://ads-developers.googleblog.com/"/>
+      <outline text="Retail Dive E-Commerce" title="Retail Dive E-Commerce" type="rss" xmlUrl="https://www.retaildive.com/feeds/news" htmlUrl="https://www.retaildive.com/topic/e-commerce/"/>
+      <outline text="EcommerceBytes" title="EcommerceBytes" type="rss" xmlUrl="https://www.ecommercebytes.com/feed/" htmlUrl="https://www.ecommercebytes.com/"/>
+      <outline text="Etsy Forums RSS" title="Etsy Forums RSS" type="rss" xmlUrl="https://community.etsy.com/feed/" htmlUrl="https://community.etsy.com/feed/"/>
+      <outline text="Reddit r/ecommerce" title="Reddit r/ecommerce" type="rss" xmlUrl="https://www.reddit.com/r/ecommerce/.rss" htmlUrl="https://www.reddit.com/r/ecommerce/"/>
+      <outline text="Reddit r/shopify" title="Reddit r/shopify" type="rss" xmlUrl="https://www.reddit.com/r/shopify/.rss" htmlUrl="https://www.reddit.com/r/shopify/"/>
+      <outline text="Reddit r/FulfillmentByAmazon" title="Reddit r/FulfillmentByAmazon" type="rss" xmlUrl="https://www.reddit.com/r/FulfillmentByAmazon/.rss" htmlUrl="https://www.reddit.com/r/FulfillmentByAmazon/"/>
+      <outline text="Reddit r/AmazonSeller" title="Reddit r/AmazonSeller" type="rss" xmlUrl="https://www.reddit.com/r/AmazonSeller/.rss" htmlUrl="https://www.reddit.com/r/AmazonSeller/"/>
+      <outline text="Reddit r/PPC" title="Reddit r/PPC" type="rss" xmlUrl="https://www.reddit.com/r/PPC/.rss" htmlUrl="https://www.reddit.com/r/PPC/"/>
+      <outline text="Reddit r/dropship" title="Reddit r/dropship" type="rss" xmlUrl="https://www.reddit.com/r/dropship/.rss" htmlUrl="https://www.reddit.com/r/dropship/"/>
+      <outline text="Reddit r/EntrepreneurRideAlong" title="Reddit r/EntrepreneurRideAlong" type="rss" xmlUrl="https://www.reddit.com/r/EntrepreneurRideAlong/.rss" htmlUrl="https://www.reddit.com/r/EntrepreneurRideAlong/"/>
+      <outline text="Reddit r/EtsySellers" title="Reddit r/EtsySellers" type="rss" xmlUrl="https://www.reddit.com/r/EtsySellers/.rss" htmlUrl="https://www.reddit.com/r/EtsySellers/"/>
+      <outline text="Reddit r/WalmartSellers" title="Reddit r/WalmartSellers" type="rss" xmlUrl="https://www.reddit.com/r/WalmartSellers/.rss" htmlUrl="https://www.reddit.com/r/WalmartSellers/"/>
+      <outline text="Shopify Changelog" title="Shopify Changelog" type="rss" xmlUrl="https://changelog.shopify.com/feed.xml" htmlUrl="https://changelog.shopify.com/"/>
+      <outline text="BigCommerce Release Notes" title="BigCommerce Release Notes" type="rss" xmlUrl="https://support.bigcommerce.com/s/changelog/rss" htmlUrl="https://support.bigcommerce.com/s/changelog"/>
+      <outline text="亿邦动力 - 电商新闻" title="亿邦动力 - 电商新闻" type="rss" xmlUrl="https://www.ebrun.com/feed" htmlUrl="https://www.ebrun.com/"/>
+      <outline text="雨果跨境" title="雨果跨境" type="rss" xmlUrl="https://www.cifnews.com/feed" htmlUrl="https://www.cifnews.com/"/>
+      <outline text="Marketplace Pulse" title="Marketplace Pulse" type="rss" xmlUrl="https://www.marketplacepulse.com/feed" htmlUrl="https://www.marketplacepulse.com/"/>
+      <outline text="Stripe 产品更新" title="Stripe 产品更新" type="rss" xmlUrl="https://stripe.com/blog/changelog/rss" htmlUrl="https://stripe.com/blog/changelog"/>
     </outline>
   </body>
 </opml>
