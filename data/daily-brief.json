@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-11T17:50:46.803947Z",
-  "window_hours": 168,
+  "generated_at": "2026-06-11T19:30:45.608545Z",
+  "window_hours": 24,
   "total_items": 20,
   "items": [
     {
@@ -56,14 +56,14 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.902,
-      "importance": 0.902,
-      "importance_score": 0.902,
+      "score": 0.8584,
+      "importance": 0.8584,
+      "importance_score": 0.8584,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.9752,
+        "recency": 0.7568,
         "story_heat": 0.25
       },
       "category": "official",
@@ -130,14 +130,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8865,
-      "importance": 0.8865,
-      "importance_score": 0.8865,
+      "score": 0.8458,
+      "importance": 0.8458,
+      "importance_score": 0.8458,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.97,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -200,14 +200,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -270,14 +270,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -340,14 +340,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -410,14 +410,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8755,
-      "importance": 0.8755,
-      "importance_score": 0.8755,
+      "score": 0.8224,
+      "importance": 0.8224,
+      "importance_score": 0.8224,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.9673,
+        "recency": 0.7019,
         "story_heat": 0.0
       },
       "category": "official",
@@ -483,14 +483,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -553,14 +553,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -623,14 +623,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -693,14 +693,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -725,79 +725,6 @@
           "web_source_priority": "P0",
           "web_source_domain": "内容电商",
           "web_source_platform": "多多进宝"
-        }
-      }
-    },
-    {
-      "story_id": "story_4910d1273257",
-      "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
-      "source": "抖音电商规则中心",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
-          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T12:19:17Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "抖音电商规则中心"
-      ],
-      "items": [
-        {
-          "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
-          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T12:19:17Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8754,
-      "importance": 0.8754,
-      "importance_score": 0.8754,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.94,
-        "recency": 0.9671,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T12:19:17Z",
-      "latest_at": "2026-06-11T12:19:17Z",
-      "primary_item": {
-        "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
-        "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
-        "source": "抖音电商规则中心",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "douyin_ecommerce_rule_center",
-          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
-          "web_source_mode": "api_list",
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "抖音电商",
-          "rule_type": 0,
-          "rule_status": 201,
-          "knowledge_id": "aJkw6NXXPDHC"
         }
       }
     },
@@ -836,14 +763,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8115,
-      "importance": 0.8115,
-      "importance_score": 0.8115,
+      "score": 0.7708,
+      "importance": 0.7708,
+      "importance_score": 0.7708,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.72,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -867,6 +794,79 @@
           "web_source_priority": "P0",
           "web_source_domain": "投流营销",
           "web_source_platform": "京准通"
+        }
+      }
+    },
+    {
+      "story_id": "story_4910d1273257",
+      "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+      "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+      "source": "抖音电商规则中心",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
+          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T12:19:17Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "抖音电商规则中心"
+      ],
+      "items": [
+        {
+          "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
+          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T12:19:17Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8221,
+      "importance": 0.8221,
+      "importance_score": 0.8221,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.94,
+        "recency": 0.7004,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-11T12:19:17Z",
+      "latest_at": "2026-06-11T12:19:17Z",
+      "primary_item": {
+        "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
+        "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+        "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+        "source": "抖音电商规则中心",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
+          "web_source_priority": "P0",
+          "web_source_domain": "平台规则",
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 201,
+          "knowledge_id": "aJkw6NXXPDHC"
         }
       }
     },
@@ -905,14 +905,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -975,14 +975,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1045,14 +1045,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1115,14 +1115,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1147,79 +1147,6 @@
           "web_source_priority": "P0",
           "web_source_domain": "内容电商",
           "web_source_platform": "多多进宝"
-        }
-      }
-    },
-    {
-      "story_id": "story_8d10649411c6",
-      "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
-      "source": "抖音电商规则中心",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
-          "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T09:36:33Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "抖音电商规则中心"
-      ],
-      "items": [
-        {
-          "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
-          "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T09:36:33Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8722,
-      "importance": 0.8722,
-      "importance_score": 0.8722,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.94,
-        "recency": 0.951,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T09:36:33Z",
-      "latest_at": "2026-06-11T09:36:33Z",
-      "primary_item": {
-        "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
-        "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
-        "source": "抖音电商规则中心",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "douyin_ecommerce_rule_center",
-          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
-          "web_source_mode": "api_list",
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "抖音电商",
-          "rule_type": 0,
-          "rule_status": 0,
-          "knowledge_id": "aJkuEyVRFNst"
         }
       }
     },
@@ -1258,14 +1185,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8115,
-      "importance": 0.8115,
-      "importance_score": 0.8115,
+      "score": 0.7708,
+      "importance": 0.7708,
+      "importance_score": 0.7708,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.72,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1327,14 +1254,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8595,
-      "importance": 0.8595,
-      "importance_score": 0.8595,
+      "score": 0.8188,
+      "importance": 0.8188,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1397,14 +1324,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8115,
-      "importance": 0.8115,
-      "importance_score": 0.8115,
+      "score": 0.7708,
+      "importance": 0.7708,
+      "importance_score": 0.7708,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.72,
-        "recency": 0.9776,
+        "recency": 0.7741,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1428,6 +1355,79 @@
           "web_source_priority": "P0",
           "web_source_domain": "投流营销",
           "web_source_platform": "京准通"
+        }
+      }
+    },
+    {
+      "story_id": "story_8d10649411c6",
+      "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+      "source": "抖音电商规则中心",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
+          "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T09:36:33Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "抖音电商规则中心"
+      ],
+      "items": [
+        {
+          "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
+          "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T09:36:33Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7995,
+      "importance": 0.7995,
+      "importance_score": 0.7995,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.94,
+        "recency": 0.5874,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-11T09:36:33Z",
+      "latest_at": "2026-06-11T09:36:33Z",
+      "primary_item": {
+        "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
+        "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
+        "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+        "source": "抖音电商规则中心",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
+          "web_source_priority": "P0",
+          "web_source_domain": "平台规则",
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 0,
+          "knowledge_id": "aJkuEyVRFNst"
         }
       }
     }
