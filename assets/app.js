@@ -177,7 +177,9 @@ function renderCoverageStrip(errorMessage = "") {
   const opmlValue = rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "OPML";
   const opmlMeta = rss.enabled ? "RSS示例/自定义订阅已接入" : "可用OPML批量接入RSS";
   const webValue = web.enabled ? `${fmtNumber(web.active_sources || 0)}/${fmtNumber(web.source_total || 0)}` : `${fmtNumber(Array.isArray(state.webSources?.sources) ? state.webSources.sources.length : 0)}源`;
-  const webMeta = web.enabled ? `有效网页源 · ${fmtNumber((web.zero_item_sources || []).length)} 个零结果` : "重点网页源待抓取";
+  const webMeta = web.enabled
+    ? `列表 ${fmtNumber(web.list_sources || 0)} · 快照 ${fmtNumber(web.snapshot_sources || 0)} · 零结果 ${fmtNumber((web.zero_item_sources || []).length)}`
+    : "重点网页源待抓取";
   const xApiLabel = xApi.enabled ? `X ${xApi.skipped ? "待窗口" : fmtNumber(xApi.item_count || 0)}` : "X待配置";
   const mailLabel = agentmail.enabled ? `Mail ${fmtNumber(agentmail.item_count || 0)}` : "Mail待配置";
   const advancedMeta = xApi.enabled || agentmail.enabled
@@ -1140,6 +1142,8 @@ function renderSourceHealth(errorMessage = "") {
     renderMetric("内置源", `${fmtNumber(status.successful_sites || 0)}/${fmtNumber(sites.length)}`, failedSites.length ? "warn" : "ok"),
     renderMetric("RSS", rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "未启用"),
     renderMetric("网页源", web.enabled ? `${fmtNumber(web.active_sources || 0)}/${fmtNumber(web.source_total || 0)}` : "未启用", (web.failed_sources || []).length || (web.zero_item_sources || []).length ? "warn" : "ok"),
+    renderMetric("网页列表", web.enabled ? `${fmtNumber(web.list_sources || 0)}源` : "未启用", web.list_sources ? "ok" : "warn"),
+    renderMetric("页面快照", web.enabled ? `${fmtNumber(web.snapshot_sources || 0)}源` : "未启用", web.snapshot_sources ? "ok" : ""),
     renderMetric("X API", xApi.enabled ? (xApi.skipped ? "待窗口" : `${fmtNumber(xApi.item_count || 0)}条`) : "未启用", xApi.error ? "bad" : ""),
     renderMetric("AgentMail", agentmail.enabled ? `${fmtNumber(agentmail.item_count || 0)}封` : "未启用", agentmail.error ? "bad" : ""),
     renderMetric("失败源", fmtNumber(failedSites.length + failedFeeds.length), failedSites.length || failedFeeds.length ? "bad" : "ok"),
@@ -1228,8 +1232,12 @@ function renderWebSources(errorMessage = "") {
     const method = source.ingestion_method === "web_list_adapter" ? "网页适配器" : "待验证";
     const runtimeStatus = statusById.get(source.id);
     const itemCount = runtimeStatus ? Number(runtimeStatus.item_count || 0) : null;
+    const listCount = runtimeStatus ? Number(runtimeStatus.list_item_count || 0) : 0;
+    const snapshotCount = runtimeStatus ? Number(runtimeStatus.snapshot_count || 0) : 0;
     const statusText = runtimeStatus
-      ? (runtimeStatus.ok ? `本次 ${fmtNumber(itemCount)} 条` : "抓取失败")
+      ? (runtimeStatus.ok
+          ? (listCount ? `列表 ${fmtNumber(listCount)} 条` : (snapshotCount ? "页面快照监控" : "零结果"))
+          : "抓取失败")
       : method;
     row.innerHTML = `
       <div>

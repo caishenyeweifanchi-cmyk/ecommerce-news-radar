@@ -139,6 +139,7 @@ X_API_DEFAULT_MAX_RESULTS = 20
 X_API_MAX_QUERY_CHARS = 512
 WEB_SOURCE_DEFAULT_LIMIT = 0
 WEB_SOURCE_CANDIDATE_LIMIT = 12
+WEB_SOURCE_SNAPSHOT_TEXT_LIMIT = 240
 
 WEB_SOURCE_TITLE_KEYWORDS = (
     "公告",
@@ -2153,6 +2154,47 @@ def extract_web_source_candidates(page_html: str, source: dict[str, Any], now: d
     return out
 
 
+def build_web_source_snapshot_item(page_html: str, source: dict[str, Any], now: datetime) -> RawItem | None:
+    if not page_html:
+        return None
+    soup = BeautifulSoup(page_html, "html.parser")
+    for node in soup.select("script, style, noscript"):
+        node.decompose()
+    page_title = ""
+    if soup.title:
+        page_title = compact_title(maybe_fix_mojibake(soup.title.get_text(" ", strip=True)), 80)
+    source_url = str(source.get("url") or "")
+    source_name = first_non_empty(source.get("name"), source.get("platform"), host_of_url(source_url))
+    source_id = str(source.get("id") or slugify_source_id(source_url))
+    visible_text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True)).strip()
+    if not visible_text:
+        visible_text = first_non_empty(source.get("why_track"), source.get("risk_note"), source.get("information_value"))
+    fingerprint_src = "\n".join([page_title, visible_text[:2000], page_html[:4000]])
+    fingerprint = hashlib.sha1(fingerprint_src.encode("utf-8")).hexdigest()[:16]
+    summary = compact_title(visible_text, WEB_SOURCE_SNAPSHOT_TEXT_LIMIT)
+    title = f"页面监控：{source_name}"
+    if page_title and page_title.lower() != "undefined":
+        title = f"{title} · {page_title}"
+    return RawItem(
+        site_id="websource",
+        site_name="重点网页源",
+        source=source_name,
+        title=title,
+        url=source_url,
+        published_at=now,
+        meta={
+            "web_source_id": source_id,
+            "web_source_url": source_url,
+            "web_source_mode": "page_snapshot",
+            "web_source_snapshot_hash": fingerprint,
+            "web_source_snapshot_summary": summary,
+            "web_source_priority": source.get("priority"),
+            "web_source_domain": source.get("domain"),
+            "web_source_platform": source.get("platform"),
+        },
+    )
+
+
 def fetch_web_sources(
     session: requests.Session,
     now: datetime,
@@ -2173,6 +2215,7 @@ def fetch_web_sources(
         start = time.perf_counter()
         error = None
         local_items: list[RawItem] = []
+        snapshot_count = 0
         status_code = None
         try:
             resp = session.get(
@@ -2186,6 +2229,11 @@ def fetch_web_sources(
             status_code = resp.status_code
             resp.raise_for_status()
             local_items = extract_web_source_candidates(resp.text, source, now)
+            if not local_items:
+                snapshot_item = build_web_source_snapshot_item(resp.text, source, now)
+                if snapshot_item:
+                    local_items.append(snapshot_item)
+                    snapshot_count = 1
         except Exception as exc:
             error = str(exc)
 
@@ -2198,6 +2246,9 @@ def fetch_web_sources(
             "url": source_url,
             "ok": error is None,
             "item_count": len(local_items),
+            "snapshot_count": snapshot_count,
+            "list_item_count": max(0, len(local_items) - snapshot_count),
+            "collection_mode": "list" if len(local_items) > snapshot_count else ("snapshot" if snapshot_count else "empty"),
             "duration_ms": duration_ms,
             "error": error,
             "status_code": status_code,
@@ -2224,6 +2275,8 @@ def fetch_web_sources(
     failed_count = sum(1 for s in source_statuses if not s.get("ok"))
     zero_count = sum(1 for s in source_statuses if s.get("ok") and int(s.get("item_count") or 0) == 0)
     active_count = sum(1 for s in source_statuses if s.get("ok") and int(s.get("item_count") or 0) > 0)
+    snapshot_source_count = sum(1 for s in source_statuses if int(s.get("snapshot_count") or 0) > 0)
+    list_source_count = sum(1 for s in source_statuses if int(s.get("list_item_count") or 0) > 0)
     summary_status = {
         "site_id": "websource",
         "site_name": "重点网页源",
@@ -2235,6 +2288,8 @@ def fetch_web_sources(
         "source_count": len(sources),
         "ok_source_count": ok_count,
         "active_source_count": active_count,
+        "list_source_count": list_source_count,
+        "snapshot_source_count": snapshot_source_count,
         "failed_source_count": failed_count,
         "zero_item_source_count": zero_count,
     }
@@ -4108,6 +4163,8 @@ def main() -> int:
             "active_sources": sum(
                 1 for s in web_source_statuses if s.get("ok") and int(s.get("item_count") or 0) > 0
             ),
+            "list_sources": sum(1 for s in web_source_statuses if int(s.get("list_item_count") or 0) > 0),
+            "snapshot_sources": sum(1 for s in web_source_statuses if int(s.get("snapshot_count") or 0) > 0),
             "failed_sources": [s.get("source_id") or s.get("url") for s in web_source_statuses if not s.get("ok")],
             "zero_item_sources": [
                 s.get("source_id") or s.get("url")

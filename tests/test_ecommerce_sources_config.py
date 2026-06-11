@@ -2,7 +2,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from scripts.update_news import extract_web_source_candidates
+from scripts.update_news import build_web_source_snapshot_item, extract_web_source_candidates
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -71,3 +71,29 @@ def test_web_source_adapter_extracts_rule_links():
     assert "支付结算政策变更通知" in titles
     assert all(item.site_id == "websource" for item in items)
     assert all(item.url.startswith("https://example.com/") for item in items)
+
+
+def test_web_source_snapshot_tracks_js_shell_pages():
+    html = """
+    <html>
+      <head><title>规则中心</title><script>window.__APP__ = {}</script></head>
+      <body><div id="root">商家规则、平台治理、违规处罚公告请在页面加载后查看。</div></body>
+    </html>
+    """
+    source = {
+        "id": "js_rule_center",
+        "name": "JS规则中心",
+        "platform": "示例平台",
+        "domain": "平台规则",
+        "type": "规则中心",
+        "url": "https://example.com/rules",
+        "priority": "P0",
+    }
+
+    item = build_web_source_snapshot_item(html, source, datetime(2026, 6, 12, tzinfo=timezone.utc))
+
+    assert item is not None
+    assert item.title == "页面监控：JS规则中心 · 规则中心"
+    assert item.url == "https://example.com/rules"
+    assert item.meta["web_source_mode"] == "page_snapshot"
+    assert item.meta["web_source_snapshot_hash"]
