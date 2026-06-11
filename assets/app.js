@@ -11,12 +11,14 @@ const state = {
   allDataUrl: "data/latest-24h-all.json",
   allDataPromise: null,
   siteFilter: "",
+  categoryFilter: "",
   query: "",
   mode: "ai",
   waytoagiMode: "today",
   waytoagiData: null,
   sourceStatus: null,
   generatedAt: null,
+  latestPayload: null,
   dailyBrief: null,
   boleView: "hot",
 };
@@ -38,6 +40,7 @@ const allDedupeToggleEl = document.getElementById("allDedupeToggle");
 const allDedupeLabelEl = document.getElementById("allDedupeLabel");
 const advancedSummaryEl = document.getElementById("advancedSummary");
 const sourceHealthEl = document.getElementById("sourceHealth");
+const filterTabEls = Array.from(document.querySelectorAll(".filter-tab"));
 
 const waytoagiUpdatedAtEl = document.getElementById("waytoagiUpdatedAt");
 const waytoagiMetaEl = document.getElementById("waytoagiMeta");
@@ -53,7 +56,7 @@ const boleHotBtnEl = document.getElementById("boleHotBtn");
 const boleTimelineBtnEl = document.getElementById("boleTimelineBtn");
 
 const SOURCE_KINDS = {
-  official_ai: { label: "官方", tone: "official" },
+  official_ai: { label: "官方公告", tone: "official" },
   aibreakfast: { label: "日报", tone: "newsletter" },
   followbuilders: { label: "Builders/X", tone: "builders" },
   xapi: { label: "X API", tone: "builders" },
@@ -63,9 +66,12 @@ const SOURCE_KINDS = {
   bestblogs: { label: "博客", tone: "blogs" },
   tophub: { label: "聚合", tone: "aggregate" },
   zeli: { label: "聚合", tone: "aggregate" },
-  aihubtoday: { label: "AI站点", tone: "aihub" },
-  aibase: { label: "AI站点", tone: "aihub" },
+  aihubtoday: { label: "垂直站点", tone: "aihub" },
+  aibase: { label: "垂直站点", tone: "aihub" },
   newsnow: { label: "聚合", tone: "aggregate" },
+  opml_rss: { label: "RSS", tone: "aggregate" },
+  rss_opml: { label: "RSS", tone: "aggregate" },
+  readhub: { label: "媒体", tone: "aggregate" },
 };
 
 function fmtNumber(n) {
@@ -95,11 +101,18 @@ function fmtDate(iso) {
 }
 
 function setStats(payload) {
+  const items = payload.items_ai || payload.items || [];
+  const riskCount = items.filter((item) => item.ai_label === "platform_policy").length;
+  const status = state.sourceStatus;
+  const sites = Array.isArray(status?.sites) ? status.sites : [];
+  const okSites = Number(status?.successful_sites || 0);
+  const health = sites.length ? `${Math.round((okSites / sites.length) * 100)}%` : `${fmtNumber(payload.site_count || 0)}源`;
   const cards = [
-    ["电商信号", fmtNumber(payload.total_items)],
-    ["站点数", fmtNumber(payload.site_count)],
-    ["来源分组", fmtNumber(payload.source_count)],
-    ["归档", fmtNumber(payload.archive_total || 0)]
+    ["今日电商信号", fmtNumber(payload.total_items_raw || payload.total_items_all_mode || payload.total_items)],
+    ["强相关热点", fmtNumber(payload.total_items)],
+    ["高风险规则", fmtNumber(riskCount)],
+    ["追踪来源", fmtNumber(payload.source_count || payload.site_count)],
+    ["源健康", health],
   ];
 
   statsEl.innerHTML = "";
@@ -286,9 +299,16 @@ function getFilteredItems() {
   const q = state.query.trim().toLowerCase();
   return modeItems().filter((item) => {
     if (state.siteFilter && item.site_id !== state.siteFilter) return false;
+    if (state.categoryFilter && item.ai_label !== state.categoryFilter) return false;
     if (!q) return true;
     const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
     return hay.includes(q);
+  });
+}
+
+function renderCategoryTabs() {
+  filterTabEls.forEach((button) => {
+    button.classList.toggle("active", (button.dataset.category || "") === state.categoryFilter);
   });
 }
 
@@ -373,9 +393,9 @@ function sourceSignal(item) {
   const site = item.site_name || "";
   const source = item.source || "";
   const hay = `${site} ${source}`.toLowerCase();
-  if (site === "AI HOT") return "AI HOT精选";
-  if (hay.includes("hackernews") || hay.includes("hacker news")) return "HN热议";
-  if (source.includes("GitHub · Trending Today") || hay.includes("github")) return "GitHub趋势";
+  if (site === "AI HOT") return "垂直精选";
+  if (hay.includes("hackernews") || hay.includes("hacker news")) return "社区热议";
+  if (source.includes("GitHub · Trending Today") || hay.includes("github")) return "趋势源";
   if (site === "Official AI Updates") return "官方更新";
   if (site === "Follow Builders") return "Builders";
   if (site === "AIbase") return "AIbase";
@@ -386,11 +406,11 @@ function sourceSignal(item) {
 function sourcePriority(item) {
   const signal = sourceSignal(item);
   if (signal === "官方更新") return 100;
-  if (signal === "AI HOT精选") return 90;
+  if (signal === "垂直精选") return 90;
   if (signal === "AIbase") return 82;
   if (signal === "Builders") return 74;
   if (signal === "OPML") return 68;
-  if (signal === "HN热议" || signal === "GitHub趋势") return 62;
+  if (signal === "社区热议" || signal === "趋势源") return 62;
   return 50;
 }
 
@@ -412,8 +432,8 @@ function clusterBoleEvents(rows) {
     const signals = Array.from(cluster.signals);
     const maxScore = Math.max(...cluster.rows.map((row) => row.score));
     const sourceBonus = Math.min(12, Math.max(0, signals.length - 1) * 6);
-    const candidateBonus = signals.some((s) => s === "AI HOT精选") ? 8
-      : signals.some((s) => s === "HN热议" || s === "GitHub趋势") ? 6
+    const candidateBonus = signals.some((s) => s === "垂直精选") ? 8
+      : signals.some((s) => s === "社区热议" || s === "趋势源") ? 6
       : signals.some((s) => s === "官方更新") ? 5
       : 0;
     return {
@@ -507,7 +527,7 @@ function pickBoleItems(items) {
   const addPick = (cluster) => {
     if (cluster && !picked.includes(cluster) && picked.length < 8) picked.push(cluster);
   };
-  ["AI HOT精选", "HN热议", "GitHub趋势"].forEach((signal) => {
+  ["垂直精选", "社区热议", "趋势源"].forEach((signal) => {
     addPick(sorted.find((cluster) => cluster.sourceSignals.includes(signal)));
   });
   sorted.forEach(addPick);
@@ -737,7 +757,7 @@ function renderBoleBrief(stories) {
 
   const generatedAt = state.dailyBrief && state.dailyBrief.generated_at;
   bolePicksMetaEl.textContent = generatedAt ? `${metaLabel} · ${fmtTime(generatedAt)}` : metaLabel;
-  document.dispatchEvent(new CustomEvent("aiRadar:briefRendered"));
+  document.dispatchEvent(new CustomEvent("ecommerceRadar:briefRendered"));
 }
 
 function renderBoleFallback(picks) {
@@ -768,7 +788,7 @@ function renderBoleFallback(picks) {
     list.appendChild(buildBoleTimelineRow(row, index + 1));
   });
   bolePicksListEl.appendChild(list);
-  document.dispatchEvent(new CustomEvent("aiRadar:briefRendered"));
+  document.dispatchEvent(new CustomEvent("ecommerceRadar:briefRendered"));
 }
 
 function renderBolePicks() {
@@ -950,7 +970,7 @@ function renderList() {
   } else {
     renderGroupedBySiteAndSource(filtered);
   }
-  document.dispatchEvent(new CustomEvent("aiRadar:listRendered"));
+  document.dispatchEvent(new CustomEvent("ecommerceRadar:listRendered"));
 }
 
 function waytoagiViews(waytoagi) {
@@ -1182,6 +1202,7 @@ async function init() {
 
   if (newsResult.status === "fulfilled") {
     const payload = newsResult.value;
+    state.latestPayload = payload;
     state.itemsAi = payload.items_ai || payload.items || [];
     state.itemsAllRaw = payload.items_all_raw || payload.items_all || [];
     state.itemsAll = payload.items_all || [];
@@ -1208,6 +1229,7 @@ async function init() {
 
   if (statusResult.status === "fulfilled") {
     state.sourceStatus = statusResult.value;
+    if (state.latestPayload) setStats(state.latestPayload);
     renderSourceHealth();
     renderCoverageStrip();
   } else {
@@ -1271,6 +1293,14 @@ if (allDedupeToggleEl) {
     renderList();
   });
 }
+
+filterTabEls.forEach((button) => {
+  button.addEventListener("click", () => {
+    state.categoryFilter = button.dataset.category || "";
+    renderCategoryTabs();
+    renderList();
+  });
+});
 
 if (waytoagiTodayBtnEl) {
   waytoagiTodayBtnEl.addEventListener("click", () => {

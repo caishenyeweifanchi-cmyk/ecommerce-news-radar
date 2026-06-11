@@ -24,86 +24,142 @@
       content="自动整理电商、内容电商、跨境电商、平台规则、投流营销和品牌增长信息源。"
     />
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./assets/styles.css?v=bole-story-merge-0603" />
+    <link rel="stylesheet" href="./assets/styles.css?v=ecommerce-console-0611" />
   </head>
   <body>
-    <main class="shell">
-      <header class="hero">
-        <div class="hero-main">
-          <div class="hero-headline">
-            <img class="hero-logo" src="./assets/logo.svg" alt="电商热点雷达 Logo" />
-            <div>
-              <p class="hero-tag">ECOMMERCE NEWS RADAR</p>
-              <h1>电商热点雷达</h1>
-            </div>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="主导航">
+        <div class="brand">
+          <img class="brand-logo" src="./assets/logo.svg" alt="电商热点雷达 Logo" />
+          <div>
+            <strong>电商雷达</strong>
+            <span>情报中台</span>
           </div>
-          <p class="hero-sub">
-            收集电商、内容电商、跨境电商、平台规则、投流营销和品牌增长信息；按来源健康、相关性和时间线筛出重点。
-          </p>
         </div>
-        <div class="hero-meta">
-          <span class="updated-label">更新时间</span>
-          <span class="updated" id="updatedAt">加载中...</span>
-        </div>
+        <nav class="nav-list">
+          <a class="active" href="#overview">总览</a>
+          <a href="#bolePicksWrap">热点精选</a>
+          <a href="#newsList">平台规则</a>
+          <a href="#newsList">内容电商</a>
+          <a href="#newsList">跨境电商</a>
+          <a href="#newsList">投流营销</a>
+          <a href="#sourceHealth">信息源</a>
+          <a href="#advancedPanel">设置</a>
+        </nav>
+      </aside>
 
-        <section class="stats" id="stats"></section>
-
-        <section class="coverage-strip" id="coverageStrip" aria-label="Source coverage status"></section>
-      </header>
-
-      <section class="primary-controls">
-        <input id="searchInput" type="search" placeholder="搜索电商热点 / 来源" />
-        <div class="mode-hint" id="modeHint">电商强相关</div>
-      </section>
-
-      <details class="advanced-panel">
-        <summary>
-          <span>高级筛选与源状态</span>
-          <span class="advanced-summary" id="advancedSummary">加载中...</span>
-        </summary>
-        <div class="advanced-content">
-          <div class="advanced-controls">
-            <label class="field">
-              <span>站点</span>
-              <select id="siteSelect">
-                <option value="">全部站点</option>
-              </select>
-            </label>
-            <div class="field">
-              <span>视图</span>
-              <div class="mode-switch">
-                <button id="modeAiBtn" class="mode-btn active" type="button">电商强相关</button>
-                <button id="modeAllBtn" class="mode-btn" type="button">全量</button>
+      <main class="shell" id="overview">
+        <header class="hero">
+          <div class="hero-main">
+            <div class="hero-headline">
+              <img class="hero-logo" src="./assets/logo.svg" alt="电商热点雷达 Logo" />
+              <div>
+                <p class="hero-tag">ECOMMERCE INTELLIGENCE RADAR</p>
+                <h1>电商热点雷达</h1>
               </div>
             </div>
-            <label id="allDedupeWrap" class="all-dedupe" for="allDedupeToggle">
-              <input id="allDedupeToggle" type="checkbox" checked />
-              <span class="all-dedupe-dot"></span>
-              <span id="allDedupeLabel">去重开</span>
-            </label>
+            <p class="hero-sub">
+              实时追踪平台规则、内容电商、跨境动态、投流营销与品牌增长信号，按来源健康、相关性和时间线筛出重点。
+            </p>
           </div>
-          <div class="source-health" id="sourceHealth">源状态加载中...</div>
-          <section class="site-pills" id="sitePills"></section>
-        </div>
-      </details>
+          <div class="hero-meta">
+            <span class="status-pill">自动追踪中</span>
+            <span class="updated-label">更新时间</span>
+            <span class="updated" id="updatedAt">加载中...</span>
+          </div>
 
-      <section class="bole-picks-wrap" aria-label="伯乐精选" id="bolePicksWrap">
-        <div class="bole-picks-head">
-          <div>
-            <p class="section-eyebrow">BOLE PICKS</p>
-            <h2>伯乐精选</h2>
+          <section class="stats" id="stats"></section>
+        </header>
+
+        <section class="primary-controls" aria-label="搜索与视图切换">
+          <input id="searchInput" type="search" placeholder="搜索平台 / 品牌 / 关键词 / 信息源" />
+          <div class="mode-switch compact">
+            <button id="modeAiBtn" class="mode-btn active" type="button">强相关</button>
+            <button id="modeAllBtn" class="mode-btn" type="button">全量</button>
           </div>
-          <div class="bole-head-tools">
-            <div class="bole-view-toggle" id="boleViewToggle" hidden>
-              <button id="boleHotBtn" class="mode-btn" type="button">当前热点</button>
-              <button id="boleTimelineBtn" class="mode-btn" type="button">时间线</button>
-            </div>
-            <span id="bolePicksMeta">按评分排序</span>
-          </div>
-        </div>
-        <div class="bole-picks-sub">把电商信息按故事线合并；热点视图按多源聚簇与时间衰减排序，时间线视图按时间倒序铺成一条可读的电商雷达。</div>
-        <div id="bolePicksList" class="bole-board"></div>
-      </section>
+          <label id="allDedupeWrap" class="all-dedupe" for="allDedupeToggle">
+            <input id="allDedupeToggle" type="checkbox" checked />
+            <span class="all-dedupe-dot"></span>
+            <span id="allDedupeLabel">去重开</span>
+          </label>
+          <div class="mode-hint" id="modeHint">电商强相关</div>
+        </section>
+
+        <section class="filter-tabs" aria-label="热点分类">
+          <button class="filter-tab active" type="button" data-category="">全部</button>
+          <button class="filter-tab" type="button" data-category="platform_policy">平台规则</button>
+          <button class="filter-tab" type="button" data-category="content_commerce">内容电商</button>
+          <button class="filter-tab" type="button" data-category="cross_border">跨境电商</button>
+          <button class="filter-tab" type="button" data-category="traffic_marketing">投流营销</button>
+        </section>
+
+        <section class="dashboard-grid">
+          <section class="main-column">
+            <section class="bole-picks-wrap" aria-label="热点精选" id="bolePicksWrap">
+              <div class="bole-picks-head">
+                <div>
+                  <p class="section-eyebrow">PRIORITY HOTSPOTS</p>
+                  <h2>今日热点优先级</h2>
+                </div>
+                <div class="bole-head-tools">
+                  <div class="bole-view-toggle" id="boleViewToggle" hidden>
+                    <button id="boleHotBtn" class="mode-btn" type="button">当前热点</button>
+                    <button id="boleTimelineBtn" class="mode-btn" type="button">时间线</button>
+                  </div>
+                  <span id="bolePicksMeta">按评分排序</span>
+                </div>
+              </div>
+              <div class="bole-picks-sub">把电商信息按故事线合并；优先看多源重复、平台规则、跨境政策和投流变化。</div>
+              <div id="bolePicksList" class="bole-board"></div>
+            </section>
+          </section>
+
+          <aside class="insight-column" aria-label="风险与机会">
+            <section class="insight-card">
+              <div class="insight-head">
+                <div>
+                  <p class="section-eyebrow">RISK & CHANCE</p>
+                  <h2>风险与机会雷达</h2>
+                </div>
+                <span class="mini-badge">运营看板</span>
+              </div>
+              <div class="signal-chart" aria-hidden="true">
+                <span style="height: 34%"></span>
+                <span style="height: 58%"></span>
+                <span style="height: 42%"></span>
+                <span style="height: 76%"></span>
+                <span style="height: 54%"></span>
+                <span style="height: 88%"></span>
+                <span style="height: 63%"></span>
+              </div>
+              <div class="risk-list">
+                <div><strong>平台规则</strong><span>优先核对处罚、准入、支付与履约变化</span></div>
+                <div><strong>跨境动态</strong><span>关注 TikTok Shop、亚马逊、Temu、独立站政策</span></div>
+                <div><strong>投流营销</strong><span>跟踪广告产品、达人合作和店播入口变化</span></div>
+              </div>
+            </section>
+
+            <details class="advanced-panel" id="advancedPanel" open>
+              <summary>
+                <span>信息源状态</span>
+                <span class="advanced-summary" id="advancedSummary">加载中...</span>
+              </summary>
+              <div class="advanced-content">
+                <div class="advanced-controls">
+                  <label class="field">
+                    <span>站点</span>
+                    <select id="siteSelect">
+                      <option value="">全部站点</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="source-health" id="sourceHealth">源状态加载中...</div>
+                <section class="coverage-strip" id="coverageStrip" aria-label="Source coverage status"></section>
+                <section class="site-pills" id="sitePills"></section>
+              </div>
+            </details>
+          </aside>
+        </section>
 
       <section class="waytoagi-wrap" hidden>
         <div class="waytoagi-head">
@@ -128,7 +184,8 @@
         <div id="newsList" class="news-list"></div>
       </section>
 
-    </main>
+      </main>
+    </div>
 
     <template id="itemTpl">
       <article class="news-card">
@@ -143,7 +200,7 @@
     </template>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" defer></script>
-    <script src="./assets/motion.js?v=bole-story-merge-0603" defer></script>
-    <script src="./assets/app.js?v=bole-story-merge-0603" defer></script>
+    <script src="./assets/motion.js?v=ecommerce-console-0611" defer></script>
+    <script src="./assets/app.js?v=ecommerce-console-0611" defer></script>
   </body>
 </html>

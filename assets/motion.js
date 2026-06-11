@@ -16,8 +16,8 @@
       .from(".primary-controls", { autoAlpha: 0, y: 8, duration: 0.4 }, "-=0.15")
       .from(".advanced-panel", { autoAlpha: 0, y: 8, duration: 0.4 }, "-=0.3");
 
-    // 伯乐精选会在 daily-brief 或 fallback 渲染后触发；兼容 v0.6 story-row 与旧版 bole-row。
-    document.addEventListener("aiRadar:briefRendered", function () {
+    // 热点精选会在 daily-brief 或 fallback 渲染后触发。
+    document.addEventListener("ecommerceRadar:briefRendered", function () {
       const brief = document.querySelector(".bole-picks-wrap");
       const cards = Array.from(document.querySelectorAll(".story-row, .bole-row")).slice(0, 24);
       if (brief) {
@@ -28,7 +28,7 @@
     });
 
     // List: animate first 30 visible cards on render/mode switch
-    document.addEventListener("aiRadar:listRendered", function () {
+    document.addEventListener("ecommerceRadar:listRendered", function () {
       const cards = Array.from(document.querySelectorAll(".news-card")).slice(0, 30);
       if (!cards.length) return;
       gsap.from(cards, { autoAlpha: 0, y: 12, stagger: 0.03, duration: 0.4, clearProps: "transform,opacity,visibility" });
