@@ -164,6 +164,7 @@ function renderCoverageStrip(errorMessage = "") {
   const rows = siteRows();
   const failedSites = Array.isArray(state.sourceStatus?.failed_sites) ? state.sourceStatus.failed_sites : [];
   const rss = state.sourceStatus?.rss_opml || {};
+  const web = state.sourceStatus?.web_sources || {};
   const agentmail = state.sourceStatus?.agentmail || {};
   const xApi = state.sourceStatus?.x_api || {};
   const allCount = Number(state.sourceStatus?.items_before_topic_filter || state.totalAllMode || state.itemsAll.length || 0);
@@ -175,6 +176,8 @@ function renderCoverageStrip(errorMessage = "") {
   const okSites = Number(state.sourceStatus?.successful_sites || 0);
   const opmlValue = rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "OPML";
   const opmlMeta = rss.enabled ? "RSS示例/自定义订阅已接入" : "可用OPML批量接入RSS";
+  const webValue = web.enabled ? `${fmtNumber(web.active_sources || 0)}/${fmtNumber(web.source_total || 0)}` : `${fmtNumber(Array.isArray(state.webSources?.sources) ? state.webSources.sources.length : 0)}源`;
+  const webMeta = web.enabled ? `有效网页源 · ${fmtNumber((web.zero_item_sources || []).length)} 个零结果` : "重点网页源待抓取";
   const xApiLabel = xApi.enabled ? `X ${xApi.skipped ? "待窗口" : fmtNumber(xApi.item_count || 0)}` : "X待配置";
   const mailLabel = agentmail.enabled ? `Mail ${fmtNumber(agentmail.item_count || 0)}` : "Mail待配置";
   const advancedMeta = xApi.enabled || agentmail.enabled
@@ -188,6 +191,7 @@ function renderCoverageStrip(errorMessage = "") {
     ["垂直/日报源池", `${fmtNumber(officialCount + newsletterCount)} 条`, "官方节点 + 垂直媒体", "official"],
     ["扩展源池", `${fmtNumber(buildersCount)} 条`, "公开feed与自定义源", "builders"],
     ["RSS/OPML扩展", opmlValue, opmlMeta, "private"],
+    ["重点网页源", webValue, webMeta, "official"],
     ["高级源", "X / Mail", advancedMeta, "private"],
   ];
 
@@ -1123,6 +1127,7 @@ function renderSourceHealth(errorMessage = "") {
   const failedSites = Array.isArray(status.failed_sites) ? status.failed_sites : [];
   const zeroSites = Array.isArray(status.zero_item_sites) ? status.zero_item_sites : [];
   const rss = status.rss_opml || {};
+  const web = status.web_sources || {};
   const agentmail = status.agentmail || {};
   const xApi = status.x_api || {};
   const failedFeeds = Array.isArray(rss.failed_feeds) ? rss.failed_feeds : [];
@@ -1134,6 +1139,7 @@ function renderSourceHealth(errorMessage = "") {
   metricGrid.append(
     renderMetric("内置源", `${fmtNumber(status.successful_sites || 0)}/${fmtNumber(sites.length)}`, failedSites.length ? "warn" : "ok"),
     renderMetric("RSS", rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "未启用"),
+    renderMetric("网页源", web.enabled ? `${fmtNumber(web.active_sources || 0)}/${fmtNumber(web.source_total || 0)}` : "未启用", (web.failed_sources || []).length || (web.zero_item_sources || []).length ? "warn" : "ok"),
     renderMetric("X API", xApi.enabled ? (xApi.skipped ? "待窗口" : `${fmtNumber(xApi.item_count || 0)}条`) : "未启用", xApi.error ? "bad" : ""),
     renderMetric("AgentMail", agentmail.enabled ? `${fmtNumber(agentmail.item_count || 0)}封` : "未启用", agentmail.error ? "bad" : ""),
     renderMetric("失败源", fmtNumber(failedSites.length + failedFeeds.length), failedSites.length || failedFeeds.length ? "bad" : "ok"),
@@ -1146,6 +1152,12 @@ function renderSourceHealth(errorMessage = "") {
   if (failedSites.length) issues.appendChild(renderIssueList("失败站点", failedSites));
   if (zeroSites.length) issues.appendChild(renderIssueList("零结果站点", zeroSites));
   if (failedFeeds.length) issues.appendChild(renderIssueList("失败 RSS", failedFeeds));
+  if (Array.isArray(web.failed_sources) && web.failed_sources.length) {
+    issues.appendChild(renderIssueList("失败网页源", web.failed_sources));
+  }
+  if (Array.isArray(web.zero_item_sources) && web.zero_item_sources.length) {
+    issues.appendChild(renderIssueList("零结果网页源", web.zero_item_sources));
+  }
   if (skippedFeeds.length) {
     issues.appendChild(renderIssueList("跳过 RSS", skippedFeeds.map((item) => `${item.feed_url} · ${item.reason || "skipped"}`)));
   }
@@ -1178,6 +1190,9 @@ function renderWebSources(errorMessage = "") {
   const p0 = sources.filter((source) => source.priority === "P0");
   const ready = sources.filter((source) => source.ingestion_method === "web_list_adapter");
   const verify = sources.filter((source) => source.ingestion_method === "manual_verify_then_web_adapter");
+  const runtime = state.sourceStatus?.web_sources || {};
+  const runtimeSources = Array.isArray(runtime.sources) ? runtime.sources : [];
+  const statusById = new Map(runtimeSources.map((row) => [row.source_id, row]));
 
   const head = document.createElement("div");
   head.className = "web-source-head";
@@ -1194,7 +1209,7 @@ function renderWebSources(errorMessage = "") {
   [
     ["P0", p0.length],
     ["必选", required.length],
-    ["可适配", ready.length],
+    ["有效抓取", Number(runtime.active_sources || 0)],
     ["待验证", verify.length],
   ].forEach(([label, value]) => {
     const node = document.createElement("div");
@@ -1211,10 +1226,15 @@ function renderWebSources(errorMessage = "") {
     row.target = "_blank";
     row.rel = "noopener noreferrer";
     const method = source.ingestion_method === "web_list_adapter" ? "网页适配器" : "待验证";
+    const runtimeStatus = statusById.get(source.id);
+    const itemCount = runtimeStatus ? Number(runtimeStatus.item_count || 0) : null;
+    const statusText = runtimeStatus
+      ? (runtimeStatus.ok ? `本次 ${fmtNumber(itemCount)} 条` : "抓取失败")
+      : method;
     row.innerHTML = `
       <div>
         <strong>${source.name || "未命名源"}</strong>
-        <span>${source.platform || "未知平台"} · ${source.domain || "未分类"} · ${method}</span>
+        <span>${source.platform || "未知平台"} · ${source.domain || "未分类"} · ${statusText}</span>
       </div>
       <em>${source.priority || "P?"}</em>
     `;

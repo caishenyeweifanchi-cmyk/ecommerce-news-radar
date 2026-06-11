@@ -137,6 +137,44 @@ X_API_POST_READ_COST_USD = 0.005
 X_API_DEFAULT_QUERY = '(AI OR "artificial intelligence" OR "large language model" OR LLM) lang:en -is:retweet has:links'
 X_API_DEFAULT_MAX_RESULTS = 20
 X_API_MAX_QUERY_CHARS = 512
+WEB_SOURCE_DEFAULT_LIMIT = 0
+WEB_SOURCE_CANDIDATE_LIMIT = 12
+
+WEB_SOURCE_TITLE_KEYWORDS = (
+    "公告",
+    "规则",
+    "规范",
+    "政策",
+    "治理",
+    "处罚",
+    "违规",
+    "准入",
+    "招商",
+    "结算",
+    "支付",
+    "发货",
+    "履约",
+    "售后",
+    "商家",
+    "卖家",
+    "达人",
+    "直播",
+    "广告",
+    "投放",
+    "审核",
+    "更新",
+    "通知",
+    "协议",
+    "变更",
+    "notice",
+    "rule",
+    "policy",
+    "announcement",
+    "update",
+    "changelog",
+    "seller",
+    "merchant",
+)
 
 
 @dataclass
@@ -1998,6 +2036,211 @@ def compact_title(text: str, limit: int = 96) -> str:
     return s[: limit - 1].rstrip() + "…"
 
 
+def slugify_source_id(value: str) -> str:
+    raw = re.sub(r"[^a-zA-Z0-9]+", "_", value or "").strip("_").lower()
+    if raw:
+        return raw[:64]
+    return hashlib.sha1((value or "").encode("utf-8")).hexdigest()[:12]
+
+
+def load_web_source_config(path: Path) -> list[dict[str, Any]]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    sources = payload.get("sources") if isinstance(payload, dict) else []
+    if not isinstance(sources, list):
+        return []
+    out: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for source in sources:
+        if not isinstance(source, dict):
+            continue
+        url = str(source.get("url") or "").strip()
+        if not url.startswith(("http://", "https://")):
+            continue
+        sid = str(source.get("id") or "").strip() or slugify_source_id(url)
+        if sid in seen:
+            continue
+        seen.add(sid)
+        source = dict(source)
+        source["id"] = sid
+        source["url"] = url
+        out.append(source)
+    return out
+
+
+def web_source_link_score(text: str, href: str, source: dict[str, Any]) -> int:
+    hay = f"{text} {href}".lower()
+    score = 0
+    for keyword in WEB_SOURCE_TITLE_KEYWORDS:
+        if keyword.lower() in hay:
+            score += 4
+    domain = str(source.get("domain") or "")
+    source_type = str(source.get("type") or "")
+    if "规则" in domain or "规则" in source_type:
+        for keyword in ("规则", "规范", "处罚", "违规", "治理", "准入", "rule", "policy"):
+            if keyword.lower() in hay:
+                score += 6
+    if "投流" in domain:
+        for keyword in ("广告", "投放", "审核", "营销", "ads", "ad", "policy"):
+            if keyword.lower() in hay:
+                score += 5
+    if "内容" in domain or "直播" in domain:
+        for keyword in ("达人", "直播", "内容", "联盟", "商单", "creator", "affiliate"):
+            if keyword.lower() in hay:
+                score += 5
+    if re.search(r"(20\d{2}[-/.年]\d{1,2}|公告|通知|更新|变更|announcement|update)", hay):
+        score += 3
+    if len(text) >= 8:
+        score += 1
+    return score
+
+
+def extract_web_source_candidates(page_html: str, source: dict[str, Any], now: datetime) -> list[RawItem]:
+    soup = BeautifulSoup(page_html, "html.parser")
+    source_url = str(source.get("url") or "")
+    source_name = first_non_empty(source.get("name"), source.get("platform"), host_of_url(source_url))
+    source_id = str(source.get("id") or slugify_source_id(source_url))
+    base_host = host_of_url(source_url)
+    candidates: list[tuple[int, str, str]] = []
+    seen_urls: set[str] = set()
+
+    for a in soup.select("a[href]"):
+        href = str(a.get("href") or "").strip()
+        if not href or href.startswith(("javascript:", "mailto:", "tel:", "#")):
+            continue
+        url = normalize_url(urljoin(source_url, href))
+        if not url.startswith(("http://", "https://")):
+            continue
+        if host_of_url(url) != base_host:
+            continue
+        if url.rstrip("/") == normalize_url(source_url).rstrip("/"):
+            continue
+        text = a.get_text(" ", strip=True)
+        if not text:
+            title_attr = str(a.get("title") or "").strip()
+            text = title_attr
+        text = compact_title(maybe_fix_mojibake(text), 110)
+        if not text or len(text) < 4:
+            continue
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
+        score = web_source_link_score(text, url, source)
+        if score <= 0:
+            continue
+        candidates.append((score, text, url))
+
+    candidates.sort(key=lambda row: (-row[0], row[1]))
+    out: list[RawItem] = []
+    for score, title, url in candidates[:WEB_SOURCE_CANDIDATE_LIMIT]:
+        out.append(
+            RawItem(
+                site_id="websource",
+                site_name="重点网页源",
+                source=source_name,
+                title=title,
+                url=url,
+                published_at=now,
+                meta={
+                    "web_source_id": source_id,
+                    "web_source_url": source_url,
+                    "web_source_score": score,
+                    "web_source_priority": source.get("priority"),
+                    "web_source_domain": source.get("domain"),
+                    "web_source_platform": source.get("platform"),
+                },
+            )
+        )
+    return out
+
+
+def fetch_web_sources(
+    session: requests.Session,
+    now: datetime,
+    config_path: Path,
+    max_sources: int = WEB_SOURCE_DEFAULT_LIMIT,
+) -> tuple[list[RawItem], dict[str, Any], list[dict[str, Any]]]:
+    sources = load_web_source_config(config_path)
+    if max_sources > 0:
+        sources = sources[:max_sources]
+
+    out: list[RawItem] = []
+    source_statuses: list[dict[str, Any]] = []
+
+    def fetch_one(source: dict[str, Any]) -> tuple[list[RawItem], dict[str, Any]]:
+        source_url = str(source.get("url") or "")
+        source_id = str(source.get("id") or slugify_source_id(source_url))
+        source_name = first_non_empty(source.get("name"), source.get("platform"), source_url)
+        start = time.perf_counter()
+        error = None
+        local_items: list[RawItem] = []
+        status_code = None
+        try:
+            resp = session.get(
+                source_url,
+                timeout=18,
+                headers={
+                    "User-Agent": BROWSER_UA,
+                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+                },
+            )
+            status_code = resp.status_code
+            resp.raise_for_status()
+            local_items = extract_web_source_candidates(resp.text, source, now)
+        except Exception as exc:
+            error = str(exc)
+
+        duration_ms = int((time.perf_counter() - start) * 1000)
+        status = {
+            "site_id": f"websource:{source_id}",
+            "site_name": "重点网页源",
+            "source_id": source_id,
+            "source_name": source_name,
+            "url": source_url,
+            "ok": error is None,
+            "item_count": len(local_items),
+            "duration_ms": duration_ms,
+            "error": error,
+            "status_code": status_code,
+            "priority": source.get("priority"),
+            "required": bool(source.get("required")),
+            "ingestion_method": source.get("ingestion_method"),
+            "public_access": source.get("public_access"),
+            "login_required": source.get("login_required"),
+        }
+        return local_items, status
+
+    if sources:
+        worker_count = min(4, max(1, len(sources)))
+        with ThreadPoolExecutor(max_workers=worker_count) as executor:
+            futures = [executor.submit(fetch_one, source) for source in sources]
+            for future in as_completed(futures):
+                items, status = future.result()
+                out.extend(items)
+                source_statuses.append(status)
+
+    source_statuses.sort(key=lambda item: str(item.get("source_name") or item.get("source_id") or ""))
+    total_duration_ms = sum(int(s.get("duration_ms") or 0) for s in source_statuses)
+    ok_count = sum(1 for s in source_statuses if s.get("ok"))
+    failed_count = sum(1 for s in source_statuses if not s.get("ok"))
+    zero_count = sum(1 for s in source_statuses if s.get("ok") and int(s.get("item_count") or 0) == 0)
+    active_count = sum(1 for s in source_statuses if s.get("ok") and int(s.get("item_count") or 0) > 0)
+    summary_status = {
+        "site_id": "websource",
+        "site_name": "重点网页源",
+        "ok": active_count > 0,
+        "partial_failures": failed_count,
+        "item_count": len(out),
+        "duration_ms": total_duration_ms,
+        "error": None if failed_count == 0 else f"{failed_count} web sources failed",
+        "source_count": len(sources),
+        "ok_source_count": ok_count,
+        "active_source_count": active_count,
+        "failed_source_count": failed_count,
+        "zero_item_source_count": zero_count,
+    }
+    return out, summary_status, source_statuses
+
+
 def parse_telegram_public_items(
     html: str,
     *,
@@ -3541,6 +3784,17 @@ def main() -> int:
     parser.add_argument("--rss-opml", default="", help="Optional OPML file path to include RSS sources")
     parser.add_argument("--rss-max-feeds", type=int, default=0, help="Optional max OPML RSS feeds to fetch (0 means all)")
     parser.add_argument(
+        "--web-sources",
+        default="",
+        help="Optional JSON web source config for non-RSS ecommerce source pages",
+    )
+    parser.add_argument(
+        "--web-max-sources",
+        type=int,
+        default=WEB_SOURCE_DEFAULT_LIMIT,
+        help="Optional max web sources to fetch (0 means all)",
+    )
+    parser.add_argument(
         "--topic",
         choices=("ai", "ecommerce"),
         default=os.environ.get("NEWS_RADAR_TOPIC", "ai"),
@@ -3568,6 +3822,7 @@ def main() -> int:
     session = create_session()
     raw_items, statuses = collect_all(session, now, topic=args.topic)
     rss_feed_statuses: list[dict[str, Any]] = []
+    web_source_statuses: list[dict[str, Any]] = []
     email_digest_payload, agentmail_status = maybe_fetch_agentmail_digest(
         session,
         generated_at=iso(now),
@@ -3612,6 +3867,38 @@ def main() -> int:
                     "feed_count": 0,
                     "ok_feed_count": 0,
                     "failed_feed_count": 0,
+                }
+            )
+
+    web_sources_arg = args.web_sources
+    if not web_sources_arg and args.topic == "ecommerce":
+        default_web_sources = Path("feeds/ecommerce.web-sources.json")
+        if default_web_sources.exists():
+            web_sources_arg = str(default_web_sources)
+
+    if web_sources_arg:
+        web_sources_path = Path(web_sources_arg).expanduser()
+        if web_sources_path.exists():
+            web_items, web_summary_status, web_source_statuses = fetch_web_sources(
+                session,
+                now,
+                web_sources_path,
+                max_sources=max(0, int(args.web_max_sources)),
+            )
+            raw_items.extend(web_items)
+            statuses.append(web_summary_status)
+        else:
+            statuses.append(
+                {
+                    "site_id": "websource",
+                    "site_name": "重点网页源",
+                    "ok": False,
+                    "item_count": 0,
+                    "duration_ms": 0,
+                    "error": f"Web sources config not found: {web_sources_path}",
+                    "source_count": 0,
+                    "ok_source_count": 0,
+                    "failed_source_count": 0,
                 }
             )
 
@@ -3812,6 +4099,22 @@ def main() -> int:
                 if s.get("replaced") and s.get("effective_feed_url")
             ],
             "feeds": rss_feed_statuses,
+        },
+        "web_sources": {
+            "enabled": bool(web_sources_arg),
+            "path": "configured" if web_sources_arg else None,
+            "source_total": len(web_source_statuses),
+            "ok_sources": sum(1 for s in web_source_statuses if s.get("ok")),
+            "active_sources": sum(
+                1 for s in web_source_statuses if s.get("ok") and int(s.get("item_count") or 0) > 0
+            ),
+            "failed_sources": [s.get("source_id") or s.get("url") for s in web_source_statuses if not s.get("ok")],
+            "zero_item_sources": [
+                s.get("source_id") or s.get("url")
+                for s in web_source_statuses
+                if s.get("ok") and int(s.get("item_count") or 0) == 0
+            ],
+            "sources": web_source_statuses,
         },
         "agentmail": agentmail_status,
         "x_api": x_api_status,

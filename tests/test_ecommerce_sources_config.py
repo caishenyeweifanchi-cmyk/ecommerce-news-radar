@@ -1,5 +1,8 @@
 import json
+from datetime import datetime, timezone
 from pathlib import Path
+
+from scripts.update_news import extract_web_source_candidates
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,3 +43,31 @@ def test_direct_rss_opml_contains_batch_sources():
     assert "https://changelog.shopify.com/feed" in opml
     assert "https://www.reddit.com/r/ecommerce/.rss" in opml
     assert "https://stripe.com/docs/changelog.rss" in opml
+
+
+def test_web_source_adapter_extracts_rule_links():
+    html = """
+    <html><body>
+      <a href="/notice/1">普通首页</a>
+      <a href="/rule/abc">淘宝商家违规治理规则更新公告</a>
+      <a href="https://example.com/policy/pay">支付结算政策变更通知</a>
+      <a href="https://other.example.com/rule">站外链接不采</a>
+    </body></html>
+    """
+    source = {
+        "id": "example_rule_center",
+        "name": "示例规则中心",
+        "platform": "示例平台",
+        "domain": "平台规则",
+        "type": "规则中心",
+        "url": "https://example.com/rules",
+        "priority": "P0",
+    }
+
+    items = extract_web_source_candidates(html, source, datetime(2026, 6, 11, tzinfo=timezone.utc))
+
+    titles = {item.title for item in items}
+    assert "淘宝商家违规治理规则更新公告" in titles
+    assert "支付结算政策变更通知" in titles
+    assert all(item.site_id == "websource" for item in items)
+    assert all(item.url.startswith("https://example.com/") for item in items)
