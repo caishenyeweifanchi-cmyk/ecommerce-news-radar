@@ -2195,6 +2195,71 @@ def build_web_source_snapshot_item(page_html: str, source: dict[str, Any], now: 
     )
 
 
+def fetch_douyin_rule_center_items(
+    session: requests.Session,
+    source: dict[str, Any],
+    now: datetime,
+) -> list[RawItem]:
+    source_url = str(source.get("url") or "")
+    source_name = first_non_empty(source.get("name"), source.get("platform"), "抖音电商规则中心")
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    api_url = "https://school.jinritemai.com/api/eschool/v1/rule/list"
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "Referer": source_url or "https://school.jinritemai.com/doudian/web/rules?should_full_screen=1",
+    }
+    for rule_type in (0, 1, 2):
+        resp = session.get(
+            api_url,
+            params={
+                "rule_type": rule_type,
+                "rule_status": 0,
+                "direction": 2,
+                "page": 1,
+                "page_size": WEB_SOURCE_CANDIDATE_LIMIT,
+            },
+            headers=headers,
+            timeout=20,
+        )
+        resp.raise_for_status()
+        payload = resp.json()
+        for row in payload.get("data", {}).get("rule_infos", []) or []:
+            if not isinstance(row, dict):
+                continue
+            title = compact_title(maybe_fix_mojibake(str(row.get("title") or "")), 120)
+            knowledge_id = str(row.get("knowledge_id") or "").strip()
+            if not title or not knowledge_id or knowledge_id in seen:
+                continue
+            seen.add(knowledge_id)
+            ts = row.get("update_time") or row.get("effect_start")
+            published_at = datetime.fromtimestamp(int(ts), tz=UTC) if str(ts or "").isdigit() else now
+            out.append(
+                RawItem(
+                    site_id="websource",
+                    site_name="重点网页源",
+                    source=source_name,
+                    title=title,
+                    url=f"https://school.jinritemai.com/doudian/web/rules/{knowledge_id}?tabKey=rules",
+                    published_at=published_at,
+                    meta={
+                        "web_source_id": source.get("id"),
+                        "web_source_url": source_url,
+                        "web_source_mode": "api_list",
+                        "web_source_priority": source.get("priority"),
+                        "web_source_domain": source.get("domain"),
+                        "web_source_platform": source.get("platform"),
+                        "rule_type": rule_type,
+                        "rule_status": row.get("status_code"),
+                        "knowledge_id": knowledge_id,
+                    },
+                )
+            )
+    return out[:WEB_SOURCE_CANDIDATE_LIMIT]
+
+
 def fetch_web_sources(
     session: requests.Session,
     now: datetime,
@@ -2218,22 +2283,26 @@ def fetch_web_sources(
         snapshot_count = 0
         status_code = None
         try:
-            resp = session.get(
-                source_url,
-                timeout=18,
-                headers={
-                    "User-Agent": BROWSER_UA,
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                },
-            )
-            status_code = resp.status_code
-            resp.raise_for_status()
-            local_items = extract_web_source_candidates(resp.text, source, now)
-            if not local_items:
-                snapshot_item = build_web_source_snapshot_item(resp.text, source, now)
-                if snapshot_item:
-                    local_items.append(snapshot_item)
-                    snapshot_count = 1
+            if source_id == "douyin_ecommerce_rule_center":
+                local_items = fetch_douyin_rule_center_items(session, source, now)
+                status_code = 200
+            else:
+                resp = session.get(
+                    source_url,
+                    timeout=18,
+                    headers={
+                        "User-Agent": BROWSER_UA,
+                        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+                    },
+                )
+                status_code = resp.status_code
+                resp.raise_for_status()
+                local_items = extract_web_source_candidates(resp.text, source, now)
+                if not local_items:
+                    snapshot_item = build_web_source_snapshot_item(resp.text, source, now)
+                    if snapshot_item:
+                        local_items.append(snapshot_item)
+                        snapshot_count = 1
         except Exception as exc:
             error = str(exc)
 
@@ -2248,7 +2317,7 @@ def fetch_web_sources(
             "item_count": len(local_items),
             "snapshot_count": snapshot_count,
             "list_item_count": max(0, len(local_items) - snapshot_count),
-            "collection_mode": "list" if len(local_items) > snapshot_count else ("snapshot" if snapshot_count else "empty"),
+            "collection_mode": "api_list" if source_id == "douyin_ecommerce_rule_center" and local_items else ("list" if len(local_items) > snapshot_count else ("snapshot" if snapshot_count else "empty")),
             "duration_ms": duration_ms,
             "error": error,
             "status_code": status_code,
@@ -2606,6 +2675,7 @@ def event_time(record: dict[str, Any]) -> datetime | None:
 
 SOURCE_TIER_BY_SITE: dict[str, tuple[str, str, int]] = {
     "official_ai": ("official", "官方一手源", 0),
+    "websource": ("official", "官方网页源", 0),
     "aibreakfast": ("ai_vertical", "AI垂直源", 1),
     "aihubtoday": ("ai_vertical", "AI垂直源", 1),
     "aibase": ("ai_vertical", "AI垂直源", 1),
@@ -3417,6 +3487,28 @@ def suppress_near_duplicate_items(
     return [item for item in items if str(item.get("id") or id(item)) not in dropped_ids]
 
 
+def suppress_superseded_web_snapshots(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    detailed_sources: set[str] = set()
+    for item in items:
+        if str(item.get("site_id") or "") != "websource":
+            continue
+        meta = item.get("meta") if isinstance(item.get("meta"), dict) else {}
+        mode = str(meta.get("web_source_mode") or "")
+        if mode in {"api_list", "list"} or not str(item.get("title") or "").startswith("页面监控："):
+            detailed_sources.add(str(item.get("source") or ""))
+    if not detailed_sources:
+        return items
+
+    out: list[dict[str, Any]] = []
+    for item in items:
+        if str(item.get("site_id") or "") == "websource" and str(item.get("source") or "") in detailed_sources:
+            meta = item.get("meta") if isinstance(item.get("meta"), dict) else {}
+            if str(meta.get("web_source_mode") or "") == "page_snapshot" or str(item.get("title") or "").startswith("页面监控："):
+                continue
+        out.append(item)
+    return out
+
+
 def canonical_story_url(raw_url: str) -> str:
     normalized = normalize_url(raw_url)
     try:
@@ -3632,6 +3724,8 @@ def build_story_record(
             "url": url,
             "source": primary.get("source"),
             "source_name": primary.get("site_name"),
+            "site_id": primary.get("site_id"),
+            "meta": primary.get("meta") or {},
         },
     }
 
@@ -3707,6 +3801,22 @@ def merge_story_items(
 BRIEF_SCORE_GATE = 0.72
 
 
+def is_official_rule_story(story: dict[str, Any]) -> bool:
+    primary = story.get("primary_item") if isinstance(story.get("primary_item"), dict) else {}
+    site_id = str(primary.get("site_id") or story.get("primary_site_id") or "")
+    title = str(story.get("title") or primary.get("title") or "")
+    source = str(story.get("source") or primary.get("source") or "")
+    meta = primary.get("meta") if isinstance(primary.get("meta"), dict) else {}
+    if meta.get("web_source_mode") == "page_snapshot" or title.startswith("页面监控："):
+        return False
+    hay = f"{title} {source} {meta.get('web_source_domain') or ''} {meta.get('web_source_priority') or ''}"
+    if site_id != "websource":
+        return False
+    if meta.get("web_source_priority") == "P0":
+        return True
+    return any(keyword in hay for keyword in ("规则", "公告", "政策", "处罚", "违规", "治理", "公示", "准入", "履约"))
+
+
 def story_passes_brief_gate(story: dict[str, Any]) -> bool:
     """宁缺毋滥: a story earns a brief slot via multi-source confirmation or a
     strong score. Quiet days produce a short (possibly empty) brief instead of
@@ -3719,7 +3829,13 @@ def story_passes_brief_gate(story: dict[str, Any]) -> bool:
         score = float(story.get("score") or 0)
     except Exception:
         score = 0.0
-    return sources >= 2 or score >= BRIEF_SCORE_GATE
+    primary = story.get("primary_item") if isinstance(story.get("primary_item"), dict) else {}
+    meta = primary.get("meta") if isinstance(primary.get("meta"), dict) else {}
+    if str(primary.get("site_id") or "") == "websource" and (
+        meta.get("web_source_mode") == "page_snapshot" or str(story.get("title") or "").startswith("页面监控：")
+    ):
+        return False
+    return is_official_rule_story(story) or sources >= 2 or score >= BRIEF_SCORE_GATE
 
 
 def select_diverse_stories(
@@ -3982,6 +4098,7 @@ def main() -> int:
                 "published_at": iso(raw.published_at),
                 "first_seen_at": iso(now),
                 "last_seen_at": iso(now),
+                "meta": raw.meta or {},
             }
         else:
             existing["site_id"] = raw.site_id
@@ -3994,6 +4111,8 @@ def main() -> int:
                 if raw.site_id == "opmlrss" or not existing.get("published_at"):
                     existing["published_at"] = iso(raw.published_at)
             existing["last_seen_at"] = iso(now)
+            if raw.meta:
+                existing["meta"] = raw.meta
 
     # Prune old archive
     keep_after = now - timedelta(days=args.archive_days)
@@ -4035,7 +4154,7 @@ def main() -> int:
             normalized = add_source_tier_fields(normalized)
             latest_items_all.append(normalized)
 
-    latest_items_all = normalize_aihubtoday_records(latest_items_all)
+    latest_items_all = suppress_superseded_web_snapshots(normalize_aihubtoday_records(latest_items_all))
 
     latest_items_all.sort(key=lambda x: event_time(x) or datetime.min.replace(tzinfo=UTC), reverse=True)
     latest_items = [record for record in latest_items_all if record.get("ai_is_related", is_ai_related_record(record))]

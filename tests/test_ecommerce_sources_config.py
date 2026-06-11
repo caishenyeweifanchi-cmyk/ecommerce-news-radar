@@ -2,7 +2,13 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from scripts.update_news import build_web_source_snapshot_item, extract_web_source_candidates
+from scripts.ecommerce_relevance import score_ecommerce_relevance
+from scripts.update_news import (
+    build_daily_brief_payload,
+    build_web_source_snapshot_item,
+    extract_web_source_candidates,
+    suppress_superseded_web_snapshots,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -97,3 +103,89 @@ def test_web_source_snapshot_tracks_js_shell_pages():
     assert item.url == "https://example.com/rules"
     assert item.meta["web_source_mode"] == "page_snapshot"
     assert item.meta["web_source_snapshot_hash"]
+
+
+def test_official_web_source_rule_scores_above_generic_threshold():
+    result = score_ecommerce_relevance(
+        {
+            "site_id": "websource",
+            "site_name": "重点网页源",
+            "source": "抖音电商规则中心",
+            "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
+            "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
+        }
+    )
+
+    assert result["is_ecommerce_related"] is True
+    assert result["score"] >= 0.8
+    assert result["label"] == "platform_policy"
+
+
+def test_daily_brief_keeps_official_p0_rule_single_source():
+    story = {
+        "story_id": "story_rule",
+        "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
+        "score": 0.62,
+        "source_count": 1,
+        "primary_item": {
+            "site_id": "websource",
+            "source": "抖音电商规则中心",
+            "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
+            "meta": {
+                "web_source_priority": "P0",
+                "web_source_domain": "平台规则",
+                "web_source_mode": "api_list",
+            },
+        },
+    }
+
+    brief = build_daily_brief_payload([story], generated_at="2026-06-12T00:00:00Z", window_hours=24)
+
+    assert brief["total_items"] == 1
+    assert brief["items"][0]["story_id"] == "story_rule"
+
+
+def test_daily_brief_excludes_page_snapshot_as_rule_update():
+    story = {
+        "story_id": "story_snapshot",
+        "title": "页面监控：淘宝规则中心 · 淘宝规则",
+        "score": 0.9,
+        "source_count": 1,
+        "primary_item": {
+            "site_id": "websource",
+            "source": "淘宝规则中心",
+            "title": "页面监控：淘宝规则中心 · 淘宝规则",
+            "meta": {
+                "web_source_priority": "P0",
+                "web_source_domain": "平台规则",
+                "web_source_mode": "page_snapshot",
+            },
+        },
+    }
+
+    brief = build_daily_brief_payload([story], generated_at="2026-06-12T00:00:00Z", window_hours=24)
+
+    assert brief["total_items"] == 0
+
+
+def test_real_web_source_list_suppresses_old_snapshot():
+    items = [
+        {
+            "id": "snapshot",
+            "site_id": "websource",
+            "source": "抖音电商规则中心",
+            "title": "页面监控：抖音电商规则中心",
+            "meta": {"web_source_mode": "page_snapshot"},
+        },
+        {
+            "id": "rule",
+            "site_id": "websource",
+            "source": "抖音电商规则中心",
+            "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
+            "meta": {"web_source_mode": "api_list"},
+        },
+    ]
+
+    filtered = suppress_superseded_web_snapshots(items)
+
+    assert [item["id"] for item in filtered] == ["rule"]

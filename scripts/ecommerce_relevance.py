@@ -146,6 +146,7 @@ ECOMMERCE_RELEVANCE_THRESHOLD = 0.65
 
 SOURCE_PRIORS = {
     "opmlrss": 0.18,
+    "websource": 0.35,
     "xapi": 0.12,
     "agentmail": 0.12,
 }
@@ -235,6 +236,8 @@ def score_ecommerce_relevance(record: dict[str, Any]) -> dict[str, Any]:
     trusted_signals = matched_keywords(text, TRUSTED_SOURCE_HINTS)
     noise = matched_keywords(text, NOISE_KEYWORDS)
     source_prior = SOURCE_PRIORS.get(site_id, 0.0)
+    is_websource = site_id == "websource"
+    is_snapshot = "页面监控：" in title
 
     if not (ecommerce_signals or policy_signals or marketing_signals or cross_border_signals or trusted_signals):
         return _result(
@@ -257,6 +260,16 @@ def score_ecommerce_relevance(record: dict[str, Any]) -> dict[str, Any]:
     strong_cross_border = bool(set(cross_border_signals) & {"tiktok shop", "amazon", "temu", "shopee", "lazada", "aliexpress", "shopify", "跨境", "跨境电商", "独立站"})
     if (cross_border_signals and (has_ecommerce_context or strong_cross_border)) or (policy_signals and has_ecommerce_context) or (marketing_signals and ecommerce_signals):
         score = max(score, ECOMMERCE_RELEVANCE_THRESHOLD)
+    if is_websource:
+        score = max(score, 0.72)
+        if policy_signals:
+            score += 0.08
+        if any(k in text for k in ("公告", "公示", "新规", "规则", "处罚", "违规", "治理", "准入", "变更")):
+            score += 0.08
+        if any(k in text for k in ("抖音", "淘宝", "天猫", "京东", "拼多多", "小红书", "快手", "微信", "支付宝", "饿了么", "美团")):
+            score += 0.06
+        if is_snapshot:
+            score = min(score - 0.12, 0.68)
     if noise and len(noise) > len(ecommerce_signals):
         score -= min(0.24, 0.06 * len(noise))
 

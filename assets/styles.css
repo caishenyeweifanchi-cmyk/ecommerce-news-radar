@@ -25,6 +25,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html,
 body {
   margin: 0;
@@ -790,6 +794,23 @@ summary:focus-visible {
 .web-source-panel {
   display: grid;
   gap: 10px;
+}
+
+.agent-daily-panel {
+  display: grid;
+  gap: 5px;
+  border: 1px solid rgba(15, 118, 110, 0.2);
+  border-radius: var(--radius);
+  padding: 10px;
+  color: var(--muted);
+  background: var(--accent-soft);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.agent-daily-panel strong {
+  color: var(--ink);
+  font-size: 13px;
 }
 
 .web-source-head {

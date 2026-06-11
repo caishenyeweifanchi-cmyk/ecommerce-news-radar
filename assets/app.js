@@ -833,9 +833,10 @@ function renderBolePicks() {
   }
 
   if (brief) {
-    // 宁缺毋滥: a quiet day produces an empty gated brief — remove the whole
-    // block instead of padding it with weak candidates.
-    if (bolePicksWrapEl) bolePicksWrapEl.hidden = true;
+    if (bolePicksWrapEl) bolePicksWrapEl.hidden = false;
+    const picks = pickBoleItems(state.itemsAi || []);
+    bolePicksMetaEl.textContent = "日报暂未命中高优先级故事 · 展示当前候选信号";
+    renderBoleFallback(picks);
     return;
   }
 
@@ -1437,9 +1438,17 @@ navLinkEls.forEach((link) => {
     const targetId = link.dataset.target || "overview";
 
     setActiveNav(link);
-    if (category !== undefined) applyCategoryFilter(category);
+    if (category !== undefined) {
+      applyCategoryFilter(category);
+    } else if (targetId !== "advancedPanel") {
+      state.categoryFilter = "";
+      filterTabEls.forEach((tab) => tab.classList.toggle("active", !tab.dataset.category));
+      renderList();
+    }
     if (targetId === "advancedPanel" && advancedPanelEl) advancedPanelEl.open = true;
+    if (targetId === "bolePicksWrap" && bolePicksWrapEl) bolePicksWrapEl.hidden = false;
     scrollToPanel(targetId);
+    history.replaceState(null, "", `#${targetId}`);
   });
 });
 
