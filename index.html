@@ -38,12 +38,10 @@
         </div>
         <nav class="nav-list">
           <a class="active" href="#bolePicksWrap" data-target="bolePicksWrap">精选</a>
-          <a href="#listWrap" data-target="listWrap" data-category="">扩展观察</a>
+          <a href="#listWrap" data-target="listWrap" data-category="">电商动态</a>
           <a href="#dailyReportWrap" data-target="dailyReportWrap">电商日报</a>
           <a href="#agentAccessWrap" data-target="agentAccessWrap">Agent 接入</a>
           <a href="#aboutWrap" data-target="aboutWrap">关于</a>
-          <a href="#updateLogWrap" data-target="updateLogWrap">更新日志</a>
-          <a href="#feedbackWrap" data-target="feedbackWrap">反馈</a>
           <a href="#sourceSubmitWrap" data-target="sourceSubmitWrap">信源提报</a>
         </nav>
       </aside>
@@ -75,7 +73,7 @@
           <input id="searchInput" type="search" placeholder="搜索平台 / 品牌 / 关键词 / 信息源" />
           <div class="mode-switch compact">
             <button id="modeAiBtn" class="mode-btn active" type="button">今日必看</button>
-            <button id="modeAllBtn" class="mode-btn" type="button">扩展观察</button>
+            <button id="modeAllBtn" class="mode-btn" type="button">电商动态</button>
           </div>
           <label id="allDedupeWrap" class="all-dedupe" for="allDedupeToggle">
             <input id="allDedupeToggle" type="checkbox" checked />
@@ -243,45 +241,6 @@
             </article>
           </div>
         </section>
-
-        <section class="plain-section" id="updateLogWrap">
-          <div class="section-head">
-            <div>
-              <p class="section-eyebrow">CHANGELOG</p>
-              <h2>更新日志</h2>
-            </div>
-          </div>
-          <ul class="simple-list">
-            <li>接入 159 个重点网页源，并把可 RSS 化的信息源同步进 OPML。</li>
-            <li>修复网页源时间线：不再用采集时间冒充规则发布时间。</li>
-            <li>官方规则、政策、处罚、违规治理类内容优先进入电商日报。</li>
-          </ul>
-        </section>
-
-        <section class="plain-section" id="feedbackWrap">
-          <div class="section-head">
-            <div>
-              <p class="section-eyebrow">FEEDBACK</p>
-              <h2>反馈</h2>
-            </div>
-          </div>
-          <p class="section-copy">发现错误时间、入口页误入日报、规则源漏采时，把页面标题、URL 和截图一起提交到信源提报区，后续可做成 GitHub Issue 或飞书表单。</p>
-        </section>
-
-      <section class="waytoagi-wrap" hidden>
-        <div class="waytoagi-head">
-          <h2>WaytoAGI 更新日志</h2>
-          <div class="waytoagi-tools">
-            <div class="waytoagi-switch">
-              <button id="waytoagiTodayBtn" class="waytoagi-btn active" type="button">最近更新日</button>
-              <button id="waytoagi7dBtn" class="waytoagi-btn" type="button">近7日</button>
-            </div>
-            <span id="waytoagiUpdatedAt">加载中...</span>
-          </div>
-        </div>
-        <div id="waytoagiMeta" class="waytoagi-meta"></div>
-        <div id="waytoagiList" class="waytoagi-list"></div>
-      </section>
 
       </main>
     </div>

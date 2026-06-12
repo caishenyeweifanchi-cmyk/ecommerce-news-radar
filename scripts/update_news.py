@@ -2834,15 +2834,28 @@ def fetch_opml_rss(
         local_items: list[RawItem] = []
 
         try:
-            resp = requests.get(
-                feed_url,
-                timeout=12,
-                headers={
-                    "User-Agent": BROWSER_UA,
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                },
-            )
-            resp.raise_for_status()
+            last_exc: Exception | None = None
+            resp = None
+            request_ok = False
+            for attempt in range(2):
+                try:
+                    resp = requests.get(
+                        feed_url,
+                        timeout=12,
+                        headers={
+                            "User-Agent": BROWSER_UA,
+                            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+                        },
+                    )
+                    resp.raise_for_status()
+                    request_ok = True
+                    break
+                except Exception as exc:
+                    last_exc = exc
+                    if attempt == 0:
+                        time.sleep(1)
+            if not request_ok or resp is None:
+                raise RuntimeError(str(last_exc) if last_exc else "RSS request failed")
 
             bridge_type = str(feed.get("bridge_type") or "")
             if bridge_type == "telegram":

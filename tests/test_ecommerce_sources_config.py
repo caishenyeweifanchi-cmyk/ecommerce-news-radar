@@ -56,9 +56,10 @@ def test_direct_rss_opml_contains_batch_sources():
     opml = (ROOT / "feeds" / "ecommerce.example.opml").read_text(encoding="utf-8")
 
     assert "P0/P1 ecommerce operations feeds" in opml
-    assert "https://www.dsb.cn/feed" in opml
     assert "https://www.ebrun.com/rss/news_b2c.xml" in opml
     assert "https://changelog.shopify.com/feed" in opml
+    assert "https://www.ecommercebytes.com/feed/" in opml
+    assert "https://www.junglescout.com/blog/feed/" in opml
     assert "https://www.reddit.com/r/ecommerce/.rss" not in opml
 
 

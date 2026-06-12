@@ -243,6 +243,11 @@ a {
   background: var(--surface-soft);
 }
 
+a.daily-report-card {
+  color: inherit;
+  text-decoration: none;
+}
+
 .daily-report-card strong,
 .info-grid strong,
 .submitted-row strong {

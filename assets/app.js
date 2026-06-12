@@ -318,8 +318,8 @@ function renderModeSwitch() {
     const allCount = state.allDedup
       ? (state.totalAllMode || state.itemsAll.length)
       : (state.totalRaw || state.itemsAllRaw.length);
-    modeHintEl.textContent = `扩展观察 · ${state.allDedup ? "去重开" : "去重关"} · ${fmtNumber(allCount)} 条`;
-    if (listTitleEl) listTitleEl.textContent = "扩展观察";
+    modeHintEl.textContent = `电商动态 · ${state.allDedup ? "去重开" : "去重关"} · ${fmtNumber(allCount)} 条`;
+    if (listTitleEl) listTitleEl.textContent = "电商动态";
   }
   renderAdvancedSummary();
 }
@@ -957,9 +957,15 @@ function renderDailyReport() {
     sectionEl.appendChild(title);
     (section.items || []).forEach((story) => {
       index += 1;
-      const node = document.createElement("article");
-      node.className = "daily-report-card";
       const primary = story.primary_item || {};
+      const url = story.url || story.primary_url || primary.url || primary.link || "";
+      const node = document.createElement(url ? "a" : "article");
+      node.className = "daily-report-card";
+      if (url) {
+        node.href = url;
+        node.target = "_blank";
+        node.rel = "noopener noreferrer";
+      }
       const platform = story.platform || story.source || primary.source || primary.source_name || "来源";
       const impact = story.impact || story.business_value || "这条信息需要判断对电商运营的影响。";
       const action = story.suggested_action || "判断是否需要进入运营待办。";
@@ -1181,6 +1187,7 @@ function waytoagiViews(waytoagi) {
 }
 
 function renderWaytoagi(waytoagi) {
+  if (!waytoagiUpdatedAtEl || !waytoagiMetaEl || !waytoagiListEl) return;
   const { updates7d, updatesToday, latestDate } = waytoagiViews(waytoagi);
   if (waytoagiTodayBtnEl) waytoagiTodayBtnEl.classList.toggle("active", state.waytoagiMode === "today");
   if (waytoagi7dBtnEl) waytoagi7dBtnEl.classList.toggle("active", state.waytoagiMode === "7d");
@@ -1525,7 +1532,7 @@ async function init() {
   if (waytoagiResult.status === "fulfilled") {
     state.waytoagiData = waytoagiResult.value;
     renderWaytoagi(state.waytoagiData);
-  } else {
+  } else if (waytoagiUpdatedAtEl && waytoagiListEl) {
     waytoagiUpdatedAtEl.textContent = "加载失败";
     waytoagiListEl.innerHTML = `<div class="waytoagi-error">${waytoagiResult.reason.message}</div>`;
   }

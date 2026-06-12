@@ -5,29 +5,26 @@
   </head>
   <body>
     <outline text="P0/P1 ecommerce operations feeds">
-      <outline text="????????" title="????????" type="rss" xmlUrl="https://school.jinritemai.com/doudian/web/pc/index" htmlUrl="https://school.jinritemai.com/doudian/web/pc/index" />
-      <outline text="???" title="???" type="rss" xmlUrl="https://www.dsb.cn/feed" htmlUrl="https://www.dsb.cn" />
-      <outline text="????B2C" title="????B2C" type="rss" xmlUrl="https://www.ebrun.com/rss/news_b2c.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="??????" title="??????" type="rss" xmlUrl="https://www.ebrun.com/rss/news_retail.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="???? B2C" title="???? B2C" type="rss" xmlUrl="https://www.ebrun.com/rss/news_b2c.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="???????" title="???????" type="rss" xmlUrl="https://www.ebrun.com/rss/news_retail.xml" htmlUrl="https://www.ebrun.com/" />
       <outline text="??????" title="??????" type="rss" xmlUrl="https://www.ebrun.com/rss/news_brands.xml" htmlUrl="https://www.ebrun.com/" />
       <outline text="???????" title="???????" type="rss" xmlUrl="https://www.ebrun.com/rss/news_service.xml" htmlUrl="https://www.ebrun.com/" />
       <outline text="??????" title="??????" type="rss" xmlUrl="https://www.ebrun.com/rss/news_policy.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="Morketing" title="Morketing" type="rss" xmlUrl="https://www.morketing.com/feed" htmlUrl="https://www.morketing.com" />
-      <outline text="?????" title="?????" type="rss" xmlUrl="https://www.yystv.cn/rss" htmlUrl="https://www.yystv.cn/" />
-      <outline text="????" title="????" type="rss" xmlUrl="https://www.brandstar.com.cn/feed" htmlUrl="https://www.brandstar.com.cn/" />
-      <outline text="??" title="??" type="rss" xmlUrl="https://www.newrank.cn/public/info/list.html" htmlUrl="https://www.newrank.cn/" />
-      <outline text="????" title="????" type="rss" xmlUrl="https://www.cifnews.com/feed" htmlUrl="https://www.cifnews.com/" />
-      <outline text="AMZ123" title="AMZ123" type="rss" xmlUrl="https://www.amz123.com/rss" htmlUrl="https://www.amz123.com/" />
-      <outline text="Marketplace Pulse" title="Marketplace Pulse" type="rss" xmlUrl="https://www.marketplacepulse.com/rss/" htmlUrl="https://www.marketplacepulse.com" />
+      <outline text="Google Ads Commerce Blog" title="Google Ads Commerce Blog" type="rss" xmlUrl="https://blog.google/products/ads-commerce/rss/" htmlUrl="https://blog.google/products/ads-commerce/" />
+      <outline text="Shopify Changelog" title="Shopify Changelog" type="rss" xmlUrl="https://changelog.shopify.com/feed" htmlUrl="https://changelog.shopify.com" />
+      <outline text="WooCommerce Developer Blog" title="WooCommerce Developer Blog" type="rss" xmlUrl="https://developer.woocommerce.com/feed/" htmlUrl="https://developer.woocommerce.com/" />
+      <outline text="EcommerceBytes" title="EcommerceBytes" type="rss" xmlUrl="https://www.ecommercebytes.com/feed/" htmlUrl="https://www.ecommercebytes.com/" />
+      <outline text="EcommerceFuel" title="EcommerceFuel" type="rss" xmlUrl="https://www.ecommercefuel.com/feed/" htmlUrl="https://www.ecommercefuel.com/" />
+      <outline text="Jungle Scout Blog" title="Jungle Scout Blog" type="rss" xmlUrl="https://www.junglescout.com/blog/feed/" htmlUrl="https://www.junglescout.com/blog/" />
       <outline text="Practical Ecommerce" title="Practical Ecommerce" type="rss" xmlUrl="https://www.practicalecommerce.com/rss" htmlUrl="https://www.practicalecommerce.com" />
       <outline text="Modern Retail" title="Modern Retail" type="rss" xmlUrl="https://modernretail.co/feed/" htmlUrl="https://modernretail.co" />
       <outline text="Retail Dive E-Commerce" title="Retail Dive E-Commerce" type="rss" xmlUrl="https://www.retaildive.com/feeds/news" htmlUrl="https://www.retaildive.com/topic/e-commerce/" />
-      <outline text="Amazon Ads Updates" title="Amazon Ads Updates" type="rss" xmlUrl="https://advertising.amazon.com/blog/feed" htmlUrl="https://advertising.amazon.com/blog" />
-      <outline text="Meta for Business Blog" title="Meta for Business Blog" type="rss" xmlUrl="https://www.facebook.com/business/news/rss" htmlUrl="https://www.facebook.com/business/news" />
-      <outline text="Google Ads Developer Blog" title="Google Ads Developer Blog" type="rss" xmlUrl="https://ads-developers.googleblog.com/feeds/posts/default" htmlUrl="https://ads-developers.googleblog.com/" />
-      <outline text="Klaviyo Product Updates" title="Klaviyo Product Updates" type="rss" xmlUrl="https://www.klaviyo.com/product-updates/feed" htmlUrl="https://www.klaviyo.com/product-updates" />
-      <outline text="HubSpot Commerce Blog" title="HubSpot Commerce Blog" type="rss" xmlUrl="https://blog.hubspot.com/commerce/rss.xml" htmlUrl="https://blog.hubspot.com/commerce" />
-      <outline text="Shopify Changelog" title="Shopify Changelog" type="rss" xmlUrl="https://changelog.shopify.com/feed" htmlUrl="https://changelog.shopify.com" />
-    </outline>
+      <outline text="Search Engine Land" title="Search Engine Land" type="rss" xmlUrl="https://searchengineland.com/feed" htmlUrl="https://searchengineland.com/" />
+      <outline text="Digiday" title="Digiday" type="rss" xmlUrl="https://digiday.com/feed/" htmlUrl="https://digiday.com/" />
+      <outline text="Digital Commerce 360 AI" title="Digital Commerce 360 AI" type="rss" xmlUrl="https://www.digitalcommerce360.com/topic/artificial-intelligence/feed/" htmlUrl="https://www.digitalcommerce360.com/topic/artificial-intelligence/" />
+      <outline text="Retail Customer Experience" title="Retail Customer Experience" type="rss" xmlUrl="https://www.retailcustomerexperience.com/rss/" htmlUrl="https://www.retailcustomerexperience.com/" />
+      <outline text="MarTech.org" title="MarTech.org" type="rss" xmlUrl="https://martech.org/feed/" htmlUrl="https://martech.org/" />
+      <outline text="Dynamic Yield" title="Dynamic Yield" type="rss" xmlUrl="https://www.dynamicyield.com/feed/" htmlUrl="https://www.dynamicyield.com/" />
+      </outline>
   </body>
 </opml>
