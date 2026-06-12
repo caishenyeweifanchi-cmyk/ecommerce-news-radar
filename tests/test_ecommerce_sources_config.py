@@ -17,6 +17,7 @@ from scripts.update_news import (
     fetch_xiaohongshu_official_info_items,
     suppress_superseded_web_snapshots,
 )
+from scripts.ecommerce_relevance import score_ecommerce_relevance
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -54,10 +55,11 @@ def test_mandatory_cn_platform_sources_are_p0_required():
 def test_direct_rss_opml_contains_batch_sources():
     opml = (ROOT / "feeds" / "ecommerce.example.opml").read_text(encoding="utf-8")
 
-    assert "Batch 1 direct RSS feeds" in opml
+    assert "P0/P1 ecommerce operations feeds" in opml
+    assert "https://www.dsb.cn/feed" in opml
+    assert "https://www.ebrun.com/rss/news_b2c.xml" in opml
     assert "https://changelog.shopify.com/feed" in opml
-    assert "https://www.reddit.com/r/ecommerce/.rss" in opml
-    assert "https://stripe.com/docs/changelog.rss" in opml
+    assert "https://www.reddit.com/r/ecommerce/.rss" not in opml
 
 
 def test_web_source_adapter_extracts_rule_links():
@@ -446,3 +448,60 @@ def test_real_web_source_list_suppresses_old_snapshot():
     filtered = suppress_superseded_web_snapshots(items)
 
     assert [item["id"] for item in filtered] == ["rule"]
+
+
+def test_ecommerce_relevance_blocks_auto_recall_noise():
+    result = score_ecommerce_relevance(
+        {
+            "site_id": "opmlrss",
+            "source": "市场监管总局公告",
+            "title": "四川南骏汽车集团有限公司扩大召回部分新祥康EDH纯电动自卸汽车",
+            "url": "https://example.com/recall",
+        }
+    )
+
+    assert result["is_ecommerce_related"] is False
+    assert result["label"] == "excluded_noise"
+
+
+def test_ai_model_news_requires_ecommerce_use_case():
+    result = score_ecommerce_relevance(
+        {
+            "site_id": "opmlrss",
+            "source": "AI News",
+            "title": "OpenAI 发布新模型，推理能力提升",
+            "url": "https://example.com/model",
+        }
+    )
+
+    assert result["is_ecommerce_related"] is False
+    assert result["label"] == "ai_without_commerce_scenario"
+
+
+def test_ai_capability_maps_to_commerce_channel_when_useful():
+    result = score_ecommerce_relevance(
+        {
+            "site_id": "opmlrss",
+            "source": "AI 素材工具",
+            "title": "OpenAI 新模型视频生成速度提升，可用于批量生成商品图、广告素材和短视频脚本",
+            "url": "https://example.com/ai-commerce",
+        }
+    )
+
+    assert result["is_ecommerce_related"] is True
+    assert result["label"] == "ai_commerce"
+    assert "商品图" in result["usefulness"] or "短视频" in result["usefulness"]
+
+
+def test_cross_border_activity_without_seller_value_is_extended_only():
+    result = score_ecommerce_relevance(
+        {
+            "site_id": "opmlrss",
+            "source": "雨果跨境",
+            "title": "2026 Ozon全球产业带招商系列峰会-泉州站 报名中",
+            "url": "https://example.com/activity",
+        }
+    )
+
+    assert result["is_ecommerce_related"] is False
+    assert result["reason"] in {"cross_border_weak_signal", "missing_scene_or_value_gate", "below_ecommerce_threshold"}

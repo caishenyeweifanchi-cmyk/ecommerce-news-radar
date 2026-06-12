@@ -1,56 +1,46 @@
 #!/usr/bin/env python3
-"""Explainable ecommerce relevance scoring for news records."""
+"""Explainable ecommerce operations relevance scoring for news records."""
 
 from __future__ import annotations
 
+import re
 from typing import Any
 from urllib.parse import urlparse
 
-ECOMMERCE_KEYWORDS = [
-    "ecommerce",
-    "e-commerce",
-    "retail",
-    "marketplace",
-    "shopify",
-    "amazon",
-    "tiktok shop",
-    "temu",
-    "shopee",
-    "lazada",
-    "aliexpress",
-    "cross-border",
+ECOMMERCE_RELEVANCE_THRESHOLD = 0.62
+
+CORE_SCENE_KEYWORDS = [
     "电商",
-    "内容电商",
-    "直播电商",
-    "兴趣电商",
-    "货架电商",
-    "跨境电商",
-    "零售",
-    "平台",
     "商家",
     "卖家",
     "店铺",
-    "选品",
-    "爆品",
-    "爆款",
+    "商品",
     "带货",
+    "直播",
     "直播带货",
-    "达人带货",
+    "短视频",
     "短视频带货",
-    "私域",
-    "复购",
-    "转化率",
-    "客单价",
+    "种草",
+    "选品",
+    "爆款",
+    "爆品",
+    "投流",
+    "素材",
+    "转化",
     "gmv",
     "roi",
     "roas",
-    "投流",
+    "客服",
+    "私域",
+    "复购",
+    "达人",
+    "平台规则",
+    "规则中心",
+    "商家规则",
     "千川",
-    "巨量千川",
-    "广告投放",
-    "信息流广告",
-    "素材",
-    "种草",
+    "聚光",
+    "蒲公英",
+    "星图",
     "小红书",
     "抖音电商",
     "快手电商",
@@ -58,127 +48,270 @@ ECOMMERCE_KEYWORDS = [
     "天猫",
     "京东",
     "拼多多",
-    "亚马逊",
-    "速卖通",
-    "阿里国际站",
-    "独立站",
-    "供应链",
-    "物流",
-    "仓储",
-    "fba",
-    "合规",
-    "侵权",
-    "关税",
-    "支付",
-]
-
-PLATFORM_POLICY_KEYWORDS = [
-    "规则",
-    "政策",
-    "公告",
-    "治理",
-    "处罚",
-    "封禁",
-    "保证金",
-    "佣金",
-    "费率",
-    "类目",
-    "入驻",
-    "招商",
-    "商家规则",
-    "seller policy",
-    "policy update",
-]
-
-MARKETING_KEYWORDS = [
-    "营销",
-    "增长",
-    "品牌",
-    "案例",
-    "campaign",
-    "kol",
-    "koc",
-    "influencer",
-    "creator",
-    "affiliate",
-    "联盟营销",
-    "达人",
-    "蒲公英",
-    "星图",
-]
-
-CROSS_BORDER_KEYWORDS = [
-    "跨境",
-    "出海",
-    "海外",
-    "关税",
-    "海关",
-    "物流",
-    "fba",
+    "微信小店",
     "tiktok shop",
-    "amazon",
+    "amazon seller",
+    "seller central",
+    "shopify",
     "temu",
     "shopee",
     "lazada",
-    "aliexpress",
+    "跨境",
+    "物流",
+    "履约",
+    "收款",
+    "关税",
+]
+
+VALUE_KEYWORDS = {
+    "platform_policy": [
+        "规则",
+        "政策",
+        "公告",
+        "公示",
+        "治理",
+        "处罚",
+        "违规",
+        "保证金",
+        "佣金",
+        "费率",
+        "类目",
+        "入驻",
+        "招商",
+        "履约",
+        "售后",
+        "准入",
+        "结算",
+    ],
+    "operations_playbook": [
+        "玩法",
+        "案例",
+        "拆解",
+        "运营",
+        "店播",
+        "达人",
+        "种草",
+        "私域",
+        "复购",
+        "活动",
+        "直播间",
+        "内容电商",
+        "短视频带货",
+    ],
+    "ai_commerce": [
+        "aigc",
+        "openai",
+        "claude",
+        "gemini",
+        "deepseek",
+        "gpt",
+        "agent",
+        "智能体",
+        "多模态",
+        "图像生成",
+        "视频生成",
+        "商品图",
+        "广告素材",
+        "脚本",
+        "客服",
+        "自动化",
+        "竞品分析",
+    ],
+    "traffic_creative": [
+        "投流",
+        "千川",
+        "巨量",
+        "广告",
+        "信息流",
+        "素材",
+        "转化",
+        "roi",
+        "roas",
+        "达人合作",
+        "蒲公英",
+        "星图",
+        "聚光",
+        "腾讯广告",
+    ],
+    "product_trend": [
+        "选品",
+        "爆款",
+        "爆品",
+        "新品",
+        "趋势",
+        "品类",
+        "类目",
+        "需求",
+        "热销",
+    ],
+    "platform_opportunity": [
+        "平台",
+        "扶持",
+        "补贴",
+        "招商",
+        "入驻",
+        "流量",
+        "活动",
+        "工具",
+        "服务市场",
+    ],
+    "extended_watch": [
+        "跨境",
+        "出海",
+        "海外",
+        "物流",
+        "仓储",
+        "fba",
+        "支付",
+        "关税",
+        "收款",
+        "独立站",
+        "amazon",
+        "tiktok shop",
+        "temu",
+        "shopify",
+        "shopee",
+        "lazada",
+    ],
+}
+
+AI_COMMERCE_SCENE_KEYWORDS = [
+    "商品图",
+    "详情页",
+    "模特图",
+    "封面图",
+    "广告素材",
+    "短视频",
+    "视频生成",
+    "直播切片",
+    "脚本",
+    "文案",
+    "客服",
+    "评论分析",
+    "买家秀",
+    "素材拆解",
+    "店铺诊断",
+    "爆款拆解",
+    "投流复盘",
+    "运营 sop",
+    "批量生成",
+    "竞品采集",
+    "价格监控",
+    "飞书表",
+    "自动化运营",
+    "电商",
+    "商家",
+    "店铺",
+    "带货",
+    "投流",
+    "选品",
+]
+
+CROSS_BORDER_STRONG_KEYWORDS = [
+    "平台规则",
+    "seller policy",
+    "卖家",
+    "商家",
+    "运营",
+    "选品",
+    "投流",
+    "物流",
+    "收款",
+    "关税",
+    "tiktok shop",
+    "amazon",
+    "temu",
     "shopify",
-    "独立站",
+    "shopee",
+    "lazada",
+]
+
+OFFICIAL_SOURCE_HINTS = [
+    "抖音电商规则中心",
+    "抖音电商学习中心",
+    "巨量千川",
+    "巨量引擎",
+    "小红书电商",
+    "小红书蒲公英",
+    "小红书聚光",
+    "快手电商规则中心",
+    "快手电商学习中心",
+    "淘宝规则",
+    "天猫规则",
+    "阿里妈妈",
+    "京东商家规则",
+    "拼多多规则",
+    "微信小店",
+    "腾讯广告",
+]
+
+TRUSTED_MEDIA_HINTS = [
+    "电商报",
+    "亿邦",
+    "ebrun",
+    "派代",
+    "见实",
+    "运营研究社",
+    "品牌星球",
+    "新榜",
+    "飞瓜",
+    "蝉妈妈",
+    "灰豚",
+    "morketing",
 ]
 
 NOISE_KEYWORDS = [
-    "优惠券",
-    "券后",
-    "低价秒杀",
-    "今日特价",
-    "下单立减",
-    "买一送一",
-    "返利",
-    "白菜价",
+    "汽车召回",
+    "召回部分",
+    "车辆召回",
+    "医药",
+    "药品",
+    "it之家",
+    "上线通知",
+    "好友上线",
+    "战略合作协议",
+    "战略合作",
+    "market update",
+    "monthly update",
+    "custom liquid",
+    "融资",
+    "估值",
+    "资本市场",
+    "股票",
+    "指数",
+    "财报电话会",
+    "普通政策",
+    "国务院",
+    "部委通知",
+    "体育",
+    "娱乐八卦",
     "招聘",
     "求职",
     "租房",
     "彩票",
-    "体育",
-    "娱乐八卦",
+    "首页",
+    "栏目页",
+    "法律声明",
+    "隐私政策",
+    "用户协议",
 ]
-
-ECOMMERCE_RELEVANCE_THRESHOLD = 0.65
 
 SOURCE_PRIORS = {
-    "opmlrss": 0.18,
-    "websource": 0.35,
-    "xapi": 0.12,
-    "agentmail": 0.12,
+    "websource": 0.38,
+    "opmlrss": 0.12,
+    "xapi": 0.05,
+    "agentmail": 0.05,
 }
 
-TRUSTED_SOURCE_HINTS = [
-    "亿邦",
-    "ebrun",
-    "电商报",
-    "电商派",
-    "派代",
-    "amz123",
-    "雨果",
-    "跨境",
-    "seller",
-    "merchant",
-    "商家",
-    "卖家",
-    "tiktok shop",
-    "amazon",
-    "shopify",
-]
-
-LABEL_KEYWORDS = [
-    ("cross_border", CROSS_BORDER_KEYWORDS),
-    ("platform_policy", PLATFORM_POLICY_KEYWORDS),
-    ("traffic_marketing", MARKETING_KEYWORDS + ["投流", "千川", "广告", "素材"]),
-    ("content_commerce", ["内容电商", "直播电商", "种草", "小红书", "抖音", "快手", "带货", "达人"]),
-    ("product_trend", ["选品", "爆品", "爆款", "新品", "趋势", "品类", "类目"]),
-    ("supply_chain", ["供应链", "工厂", "仓储", "物流", "履约", "fba"]),
-    ("retail_platform", ["淘宝", "天猫", "京东", "拼多多", "temu", "amazon", "shopify", "shopee", "lazada"]),
-    ("industry_business", ["融资", "收购", "上市", "财报", "增长", "gmv", "营收"]),
-]
+LABEL_TO_CHANNEL = {
+    "platform_policy": "platform_policy",
+    "operations_playbook": "operations_playbook",
+    "ai_commerce": "ai_commerce",
+    "traffic_creative": "traffic_creative",
+    "product_trend": "operations_playbook",
+    "platform_opportunity": "operations_playbook",
+    "extended_watch": "extended_watch",
+}
 
 
 def contains_any_keyword(haystack: str, keywords: list[str]) -> bool:
@@ -191,11 +324,8 @@ def matched_keywords(haystack: str, keywords: list[str]) -> list[str]:
     return sorted({k for k in keywords if k.lower() in h})
 
 
-def _label_for_text(text: str) -> str:
-    for label, keywords in LABEL_KEYWORDS:
-        if contains_any_keyword(text, keywords):
-            return label
-    return "ecommerce_general"
+def has_standalone_ai(text: str) -> bool:
+    return bool(re.search(r"(^|[^a-z0-9])ai([^a-z0-9]|$)", text.lower()))
 
 
 def _result(
@@ -206,6 +336,7 @@ def _result(
     reason: str,
     signals: list[str] | None = None,
     noise: list[str] | None = None,
+    usefulness: str = "",
 ) -> dict[str, Any]:
     return {
         "is_ecommerce_related": bool(is_related),
@@ -214,7 +345,70 @@ def _result(
         "reason": reason,
         "signals": signals or [],
         "noise": noise or [],
+        "usefulness": usefulness,
     }
+
+
+def _dominant_value_bucket(value_hits: dict[str, list[str]]) -> str:
+    ordered = [
+        "platform_policy",
+        "traffic_creative",
+        "ai_commerce",
+        "operations_playbook",
+        "product_trend",
+        "platform_opportunity",
+        "extended_watch",
+    ]
+    return max(ordered, key=lambda key: (len(value_hits.get(key, [])), -ordered.index(key)))
+
+
+def _ai_commerce_usefulness(text: str) -> str:
+    if contains_any_keyword(text, ["图像", "图片", "商品图", "详情页", "模特图", "封面", "视觉", "image"]):
+        return "可用于商品图、详情页、封面图和广告素材批量生产。"
+    if contains_any_keyword(text, ["视频", "短视频", "直播", "切片", "video"]):
+        return "可用于短视频带货、产品展示、直播切片和信息流视频素材。"
+    if contains_any_keyword(text, ["多模态", "视觉理解", "评论", "买家秀", "页面分析"]):
+        return "可用于竞品页面、评论、买家秀和素材拆解分析。"
+    if contains_any_keyword(text, ["长上下文", "推理", "分析", "诊断", "复盘"]):
+        return "可用于店铺诊断、爆款拆解、投流复盘和运营 SOP 分析。"
+    if contains_any_keyword(text, ["降价", "成本", "速度", "批量", "便宜"]):
+        return "可用于批量生成文案、素材、脚本和客服回复，降低内容生产成本。"
+    if contains_any_keyword(text, ["agent", "浏览器", "自动化", "采集", "监控"]):
+        return "可用于竞品采集、价格监控、飞书表整理和自动化运营。"
+    return ""
+
+
+def _has_direct_ai_commerce_transfer(text: str) -> bool:
+    direct_terms = [
+        "商品图",
+        "详情页",
+        "模特图",
+        "封面图",
+        "广告素材",
+        "短视频",
+        "直播切片",
+        "脚本",
+        "文案",
+        "客服",
+        "评论分析",
+        "买家秀",
+        "素材拆解",
+        "店铺诊断",
+        "爆款拆解",
+        "投流复盘",
+        "运营 sop",
+        "批量生成",
+        "竞品采集",
+        "价格监控",
+        "飞书表",
+        "自动化运营",
+        "图像生成",
+        "视频生成",
+        "多模态",
+        "agent",
+        "智能体",
+    ]
+    return contains_any_keyword(text, direct_terms)
 
 
 def score_ecommerce_relevance(record: dict[str, Any]) -> dict[str, Any]:
@@ -223,65 +417,107 @@ def score_ecommerce_relevance(record: dict[str, Any]) -> dict[str, Any]:
     source = str(record.get("source") or "")
     site_name = str(record.get("site_name") or "")
     url = str(record.get("url") or "")
+    meta = record.get("meta") if isinstance(record.get("meta"), dict) else {}
     try:
         url_host = (urlparse(url).netloc or "").lower()
     except Exception:
         url_host = ""
-    text = f"{title} {source} {site_name} {url_host}".lower()
+    text = f"{title} {source} {site_name} {url_host} {meta.get('web_source_domain') or ''}".lower()
 
-    ecommerce_signals = matched_keywords(text, ECOMMERCE_KEYWORDS)
-    policy_signals = matched_keywords(text, PLATFORM_POLICY_KEYWORDS)
-    marketing_signals = matched_keywords(text, MARKETING_KEYWORDS)
-    cross_border_signals = matched_keywords(text, CROSS_BORDER_KEYWORDS)
-    trusted_signals = matched_keywords(text, TRUSTED_SOURCE_HINTS)
     noise = matched_keywords(text, NOISE_KEYWORDS)
+    official_hits = matched_keywords(text, OFFICIAL_SOURCE_HINTS)
+    media_hits = matched_keywords(text, TRUSTED_MEDIA_HINTS)
+    scene_hits = matched_keywords(text, CORE_SCENE_KEYWORDS)
+    value_hits = {bucket: matched_keywords(text, keywords) for bucket, keywords in VALUE_KEYWORDS.items()}
+    value_signals = [signal for signals in value_hits.values() for signal in signals]
+    label = _dominant_value_bucket(value_hits)
+    channel = LABEL_TO_CHANNEL.get(label, label)
     source_prior = SOURCE_PRIORS.get(site_id, 0.0)
-    is_websource = site_id == "websource"
-    is_snapshot = "页面监控：" in title
+    is_snapshot = meta.get("web_source_mode") == "page_snapshot" or title.startswith("页面监控：")
+    is_ai_candidate = bool(value_hits["ai_commerce"] or has_standalone_ai(text))
+    ai_usefulness = _ai_commerce_usefulness(text)
 
-    if not (ecommerce_signals or policy_signals or marketing_signals or cross_border_signals or trusted_signals):
+    if noise and not official_hits:
+        return _result(
+            is_related=False,
+            score=max(0.0, source_prior - 0.05),
+            label="excluded_noise",
+            reason="blocked_noise_keyword",
+            signals=scene_hits + value_signals + official_hits + media_hits,
+            noise=noise,
+        )
+
+    has_scene = bool(scene_hits or official_hits)
+    has_business_value = bool(value_signals or official_hits or media_hits)
+
+    if is_ai_candidate and not has_scene:
+        if ai_usefulness and _has_direct_ai_commerce_transfer(text):
+            has_scene = True
+            channel = "ai_commerce"
+        else:
+            return _result(
+                is_related=False,
+                score=source_prior,
+                label="ai_without_commerce_scenario",
+                reason="ai_news_missing_ecommerce_use_case",
+                signals=value_hits["ai_commerce"],
+                noise=noise,
+            )
+
+    if channel == "extended_watch" and not (official_hits or matched_keywords(text, CROSS_BORDER_STRONG_KEYWORDS)):
+        return _result(
+            is_related=False,
+            score=0.34,
+            label="extended_watch",
+            reason="cross_border_weak_signal",
+            signals=scene_hits + value_signals + media_hits,
+            noise=noise,
+        )
+
+    if not has_scene or not has_business_value:
         return _result(
             is_related=False,
             score=source_prior,
-            label="not_ecommerce",
-            reason="missing_ecommerce_signal",
-            signals=[],
+            label="missing_ecommerce_business_value",
+            reason="missing_scene_or_value_gate",
+            signals=scene_hits + value_signals + official_hits + media_hits,
             noise=noise,
         )
 
     score = source_prior
-    score += min(0.5, 0.09 * len(ecommerce_signals))
-    score += min(0.18, 0.06 * len(policy_signals))
-    score += min(0.16, 0.05 * len(marketing_signals))
-    score += min(0.18, 0.05 * len(cross_border_signals))
-    score += min(0.22, 0.08 * len(trusted_signals))
-
-    has_ecommerce_context = bool(ecommerce_signals or trusted_signals)
-    strong_cross_border = bool(set(cross_border_signals) & {"tiktok shop", "amazon", "temu", "shopee", "lazada", "aliexpress", "shopify", "跨境", "跨境电商", "独立站"})
-    if (cross_border_signals and (has_ecommerce_context or strong_cross_border)) or (policy_signals and has_ecommerce_context) or (marketing_signals and ecommerce_signals):
-        score = max(score, ECOMMERCE_RELEVANCE_THRESHOLD)
-    if is_websource:
-        score = max(score, 0.72)
-        if policy_signals:
-            score += 0.08
-        if any(k in text for k in ("公告", "公示", "新规", "规则", "处罚", "违规", "治理", "准入", "变更")):
-            score += 0.08
-        if any(k in text for k in ("抖音", "淘宝", "天猫", "京东", "拼多多", "小红书", "快手", "微信", "支付宝", "饿了么", "美团")):
-            score += 0.06
-        if is_snapshot:
-            score = min(score - 0.12, 0.68)
-    if noise and len(noise) > len(ecommerce_signals):
-        score -= min(0.24, 0.06 * len(noise))
+    score += min(0.36, 0.12 * len(scene_hits))
+    score += min(0.3, 0.1 * len(value_signals))
+    score += min(0.24, 0.12 * len(official_hits))
+    score += min(0.16, 0.08 * len(media_hits))
+    if is_ai_candidate and ai_usefulness:
+        score += 0.16
+        channel = "ai_commerce"
+    if is_snapshot:
+        score = min(score - 0.18, 0.58)
+    if channel == "extended_watch":
+        score -= 0.12
 
     is_related = score >= ECOMMERCE_RELEVANCE_THRESHOLD
+    usefulness = ai_usefulness or _business_usefulness(channel)
     return _result(
         is_related=is_related,
         score=score,
-        label=_label_for_text(text) if is_related else "weak_ecommerce_signal",
-        reason="matched_ecommerce_signal" if is_related else "below_ecommerce_threshold",
-        signals=ecommerce_signals + policy_signals + marketing_signals + cross_border_signals + trusted_signals,
+        label=channel if is_related else "below_ecommerce_threshold",
+        reason="matched_ecommerce_operations_value" if is_related else "below_ecommerce_threshold",
+        signals=scene_hits + value_signals + official_hits + media_hits,
         noise=noise,
+        usefulness=usefulness,
     )
+
+
+def _business_usefulness(label: str) -> str:
+    return {
+        "platform_policy": "用于判断平台规则、账号风险、处罚治理和商家经营动作。",
+        "operations_playbook": "用于内容电商运营、店播/达人/种草玩法和活动机会判断。",
+        "traffic_creative": "用于判断投流规则、素材生产、达人合作和广告转化变化。",
+        "ai_commerce": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+        "extended_watch": "作为跨境、物流、支付和海外平台经营变化的观察信号。",
+    }.get(label, "用于判断是否存在电商运营机会。")
 
 
 def is_ecommerce_related_record(record: dict[str, Any]) -> bool:
@@ -297,6 +533,7 @@ def add_ecommerce_relevance_fields(record: dict[str, Any]) -> dict[str, Any]:
     out["ai_relevance_reason"] = relevance["reason"]
     out["ai_signals"] = relevance["signals"]
     out["ai_noise"] = relevance["noise"]
+    out["business_value"] = relevance["usefulness"]
     out["topic"] = "ecommerce"
     out["topic_is_related"] = relevance["is_ecommerce_related"]
     out["topic_score"] = relevance["score"]

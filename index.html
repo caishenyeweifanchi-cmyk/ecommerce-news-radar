@@ -6,22 +6,22 @@
     <title>电商热点雷达｜实时电商信息收集</title>
     <meta
       name="description"
-      content="自动整理电商、内容电商、跨境电商、平台规则、投流营销和品牌增长信息源。"
+      content="追踪平台规则、内容电商玩法、投流素材变化、AI 电商能力、选品趋势和运营机会。"
     />
-    <link rel="canonical" href="https://learnprompt.github.io/ai-news-radar/" />
+    <link rel="canonical" href="https://caishenyeweifanchi-cmyk.github.io/ecommerce-news-radar/" />
     <meta property="og:title" content="电商热点雷达｜实时电商信息收集" />
     <meta
       property="og:description"
-      content="自动整理电商、内容电商、跨境电商、平台规则、投流营销和品牌增长信息源。"
+      content="追踪平台规则、内容电商玩法、投流素材变化、AI 电商能力、选品趋势和运营机会。"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://learnprompt.github.io/ai-news-radar/" />
+    <meta property="og:url" content="https://caishenyeweifanchi-cmyk.github.io/ecommerce-news-radar/" />
     <meta property="og:site_name" content="电商热点雷达" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="电商热点雷达｜实时电商信息收集" />
     <meta
       name="twitter:description"
-      content="自动整理电商、内容电商、跨境电商、平台规则、投流营销和品牌增长信息源。"
+      content="追踪平台规则、内容电商玩法、投流素材变化、AI 电商能力、选品趋势和运营机会。"
     />
     <link rel="icon" href="./assets/logo.png" type="image/png" />
     <link rel="stylesheet" href="./assets/styles.css?v=ecommerce-console-0612-datafix" />
@@ -38,7 +38,7 @@
         </div>
         <nav class="nav-list">
           <a class="active" href="#bolePicksWrap" data-target="bolePicksWrap">精选</a>
-          <a href="#listWrap" data-target="listWrap" data-category="">全部动态</a>
+          <a href="#listWrap" data-target="listWrap" data-category="">扩展观察</a>
           <a href="#dailyReportWrap" data-target="dailyReportWrap">电商日报</a>
           <a href="#agentAccessWrap" data-target="agentAccessWrap">Agent 接入</a>
           <a href="#aboutWrap" data-target="aboutWrap">关于</a>
@@ -59,7 +59,7 @@
               </div>
             </div>
             <p class="hero-sub">
-              实时追踪平台规则、内容电商、跨境动态、投流营销与品牌增长信号，按来源健康、相关性和时间线筛出重点。
+              追踪平台规则、内容电商玩法、投流素材变化、AI 电商能力、选品趋势和与你业务相关的运营机会。
             </p>
           </div>
           <div class="hero-meta">
@@ -74,27 +74,24 @@
         <section class="primary-controls" aria-label="搜索与视图切换">
           <input id="searchInput" type="search" placeholder="搜索平台 / 品牌 / 关键词 / 信息源" />
           <div class="mode-switch compact">
-            <button id="modeAiBtn" class="mode-btn active" type="button">强相关</button>
-            <button id="modeAllBtn" class="mode-btn" type="button">全量</button>
+            <button id="modeAiBtn" class="mode-btn active" type="button">今日必看</button>
+            <button id="modeAllBtn" class="mode-btn" type="button">扩展观察</button>
           </div>
           <label id="allDedupeWrap" class="all-dedupe" for="allDedupeToggle">
             <input id="allDedupeToggle" type="checkbox" checked />
             <span class="all-dedupe-dot"></span>
             <span id="allDedupeLabel">去重开</span>
           </label>
-          <div class="mode-hint" id="modeHint">电商强相关</div>
+          <div class="mode-hint" id="modeHint">电商运营可用情报</div>
         </section>
 
         <section class="filter-tabs" aria-label="热点分类">
           <button class="filter-tab active" type="button" data-category="">全部</button>
           <button class="filter-tab" type="button" data-category="platform_policy">平台规则</button>
-          <button class="filter-tab" type="button" data-category="content_commerce">内容电商</button>
-          <button class="filter-tab" type="button" data-category="cross_border">跨境电商</button>
-          <button class="filter-tab" type="button" data-category="traffic_marketing">投流营销</button>
-          <button class="filter-tab" type="button" data-category="product_trend">选品趋势</button>
-          <button class="filter-tab" type="button" data-category="supply_chain">供应链/物流</button>
-          <button class="filter-tab" type="button" data-category="retail_platform">零售平台</button>
-          <button class="filter-tab" type="button" data-category="industry_business">行业经营</button>
+          <button class="filter-tab" type="button" data-category="operations_playbook">运营玩法</button>
+          <button class="filter-tab" type="button" data-category="ai_commerce">AI 电商</button>
+          <button class="filter-tab" type="button" data-category="traffic_creative">投流素材</button>
+          <button class="filter-tab" type="button" data-category="extended_watch">扩展观察</button>
         </section>
 
         <section class="dashboard-grid">
@@ -113,7 +110,7 @@
                   <span id="bolePicksMeta">按评分排序</span>
                 </div>
               </div>
-              <div class="bole-picks-sub">把电商信息按故事线合并；优先看多源重复、平台规则、跨境政策和投流变化。</div>
+              <div class="bole-picks-sub">只看能帮助电商运营、内容生产、投流、选品、店铺经营或自动化提效的情报。</div>
               <div id="bolePicksList" class="bole-board"></div>
             </section>
 
@@ -130,8 +127,8 @@
             <section class="insight-card">
               <div class="insight-head">
                 <div>
-                  <p class="section-eyebrow">RISK & CHANCE</p>
-                  <h2>风险与机会雷达</h2>
+                  <p class="section-eyebrow">TODAY IMPACT</p>
+                  <h2>今日影响</h2>
                 </div>
                 <span class="mini-badge">运营看板</span>
               </div>
@@ -146,8 +143,8 @@
               </div>
               <div class="risk-list">
                 <div><strong>平台规则</strong><span>优先核对处罚、准入、支付与履约变化</span></div>
-                <div><strong>跨境动态</strong><span>关注 TikTok Shop、亚马逊、Temu、独立站政策</span></div>
-                <div><strong>投流营销</strong><span>跟踪广告产品、达人合作和店播入口变化</span></div>
+                <div><strong>运营玩法</strong><span>关注短视频带货、店播、达人、种草和选品机会</span></div>
+                <div><strong>AI 电商</strong><span>只看能转成素材、脚本、客服、选品和自动化的 AI 能力</span></div>
               </div>
             </section>
 
@@ -198,7 +195,7 @@
           </div>
           <div class="info-grid">
             <div><strong>日报文件</strong><span>data/daily-brief.json，每次自动采集后生成。</span></div>
-            <div><strong>全量动态</strong><span>data/latest-24h.json，保留强相关电商信号。</span></div>
+            <div><strong>今日必看</strong><span>data/latest-24h.json，保留电商运营可用信号。</span></div>
             <div><strong>源健康</strong><span>data/source-status.json，记录哪些源成功、跳过或失败。</span></div>
           </div>
         </section>
@@ -228,7 +225,7 @@
               <h2>关于电商热点雷达</h2>
             </div>
           </div>
-          <p class="section-copy">这个项目追踪电商平台规则、内容电商、跨境平台、投流营销、物流履约、支付合规、政策监管、卖家社区和行业媒体。核心原则是：有真实发布时间才进时间线，官方新规优先进入日报。</p>
+          <p class="section-copy">这个项目不是泛新闻聚合，而是电商运营情报系统。核心判断标准是：这条信息能不能帮助电商运营、内容生产、投流、选品、店铺经营或自动化提效。</p>
           <div class="contact-grid" aria-label="项目联系人">
             <article class="contact-card">
               <div>

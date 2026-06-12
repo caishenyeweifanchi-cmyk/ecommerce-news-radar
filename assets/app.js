@@ -140,7 +140,7 @@ function setStats(payload) {
   const trackedSourceCount = Number(payload.source_count || payload.site_count || 0) + webSourceCount;
   const cards = [
     ["今日电商信号", fmtNumber(payload.total_items_raw || payload.total_items_all_mode || payload.total_items)],
-    ["强相关热点", fmtNumber(payload.total_items)],
+    ["今日必看", fmtNumber(payload.total_items)],
     ["高风险规则", fmtNumber(riskCount)],
     ["追踪来源", fmtNumber(trackedSourceCount)],
     ["源健康", health],
@@ -312,14 +312,14 @@ function renderModeSwitch() {
   if (allDedupeToggleEl) allDedupeToggleEl.checked = state.allDedup;
   if (allDedupeLabelEl) allDedupeLabelEl.textContent = state.allDedup ? "去重开" : "去重关";
   if (state.mode === "ai") {
-    modeHintEl.textContent = `电商强相关 · ${fmtNumber(state.totalAi)} 条`;
+    modeHintEl.textContent = `今日必看 · ${fmtNumber(state.totalAi)} 条`;
     if (listTitleEl) listTitleEl.textContent = "电商信号流";
   } else {
     const allCount = state.allDedup
       ? (state.totalAllMode || state.itemsAll.length)
       : (state.totalRaw || state.itemsAllRaw.length);
-    modeHintEl.textContent = `全量 · ${state.allDedup ? "去重开" : "去重关"} · ${fmtNumber(allCount)} 条`;
-    if (listTitleEl) listTitleEl.textContent = "全量更新";
+    modeHintEl.textContent = `扩展观察 · ${state.allDedup ? "去重开" : "去重关"} · ${fmtNumber(allCount)} 条`;
+    if (listTitleEl) listTitleEl.textContent = "扩展观察";
   }
   renderAdvancedSummary();
 }
@@ -332,10 +332,24 @@ function modeItems() {
   return state.mode === "all" ? effectiveAllItems() : state.itemsAi;
 }
 
+function normalizedCategory(label) {
+  const value = String(label || "");
+  const aliases = {
+    content_commerce: "operations_playbook",
+    product_trend: "operations_playbook",
+    retail_platform: "operations_playbook",
+    industry_business: "operations_playbook",
+    traffic_marketing: "traffic_creative",
+    cross_border: "extended_watch",
+    supply_chain: "extended_watch",
+  };
+  return aliases[value] || value;
+}
+
 function itemMatchesActiveFilters(item, includeSite = true) {
   const q = state.query.trim().toLowerCase();
   if (includeSite && state.siteFilter && item.site_id !== state.siteFilter) return false;
-  if (state.categoryFilter && item.ai_label !== state.categoryFilter) return false;
+  if (state.categoryFilter && normalizedCategory(item.ai_label) !== state.categoryFilter) return false;
   if (!q) return true;
   const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""} ${item.url || ""}`.toLowerCase();
   return hay.includes(q);
@@ -348,7 +362,8 @@ function getFilteredItems() {
 function storyMatchesActiveFilters(story) {
   const primary = (story && story.primary_item) || {};
   const q = state.query.trim().toLowerCase();
-  if (state.categoryFilter && primary.ai_label !== state.categoryFilter && story.category !== state.categoryFilter) {
+  const storyCategory = normalizedCategory(story.brief_channel || story.category || primary.ai_label);
+  if (state.categoryFilter && storyCategory !== state.categoryFilter) {
     return false;
   }
   if (state.siteFilter && primary.site_id !== state.siteFilter) return false;
@@ -413,9 +428,13 @@ function labelText(item) {
   const labels = {
     ecommerce_general: "电商信号",
     platform_policy: "平台规则",
-    traffic_marketing: "投流营销",
-    cross_border: "跨境电商",
-    content_commerce: "内容电商",
+    operations_playbook: "运营玩法",
+    ai_commerce: "AI 电商",
+    traffic_creative: "投流素材",
+    extended_watch: "扩展观察",
+    traffic_marketing: "投流素材",
+    cross_border: "扩展观察",
+    content_commerce: "运营玩法",
     product_trend: "品类趋势",
     supply_chain: "供应链",
     retail_platform: "平台动态",
@@ -926,19 +945,36 @@ function renderDailyReport() {
     dailyReportListEl.appendChild(empty);
     return;
   }
-  items.forEach((story, index) => {
-    const node = document.createElement("article");
-    node.className = "daily-report-card";
-    const primary = story.primary_item || {};
-    node.innerHTML = `
-      <span>${String(index + 1).padStart(2, "0")}</span>
-      <div>
-        <strong>${story.title || primary.title || "未命名日报"}</strong>
-        <p>${story.summary || story.why || story.reason || "官方规则、平台政策或多源热点进入日报。"}</p>
-      </div>
-      <em>${story.score ? Math.round(Number(story.score) * 100) : story.score_percent || ""}</em>
-    `;
-    dailyReportListEl.appendChild(node);
+  const sections = Array.isArray(brief.sections) && brief.sections.length
+    ? brief.sections
+    : [{ title: "今日必看", items }];
+  let index = 0;
+  sections.forEach((section) => {
+    const sectionEl = document.createElement("section");
+    sectionEl.className = "daily-report-section";
+    const title = document.createElement("h3");
+    title.textContent = section.title || "今日必看";
+    sectionEl.appendChild(title);
+    (section.items || []).forEach((story) => {
+      index += 1;
+      const node = document.createElement("article");
+      node.className = "daily-report-card";
+      const primary = story.primary_item || {};
+      const platform = story.platform || story.source || primary.source || primary.source_name || "来源";
+      const impact = story.impact || story.business_value || "这条信息需要判断对电商运营的影响。";
+      const action = story.suggested_action || "判断是否需要进入运营待办。";
+      node.innerHTML = `
+        <span>${String(index).padStart(2, "0")}</span>
+        <div>
+          <strong>${platform}｜${story.title || primary.title || "未命名日报"}</strong>
+          <p>影响：${impact}</p>
+          <p>建议动作：${action}</p>
+        </div>
+        <em>${story.score ? Math.round(Number(story.score) * 100) : story.score_percent || ""}</em>
+      `;
+      sectionEl.appendChild(node);
+    });
+    dailyReportListEl.appendChild(sectionEl);
   });
 }
 

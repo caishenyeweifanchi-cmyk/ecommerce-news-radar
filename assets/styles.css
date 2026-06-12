@@ -219,6 +219,16 @@ a {
   gap: 10px;
 }
 
+.daily-report-section {
+  display: grid;
+  gap: 10px;
+}
+
+.daily-report-section h3 {
+  margin: 8px 0 0;
+  font-size: 20px;
+}
+
 .daily-report-card,
 .info-grid > div,
 .submitted-row,

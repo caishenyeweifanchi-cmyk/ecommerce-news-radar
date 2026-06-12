@@ -32,7 +32,7 @@ class EcommerceRelevanceScoringTests(unittest.TestCase):
         }
         result = score_ecommerce_relevance(rec)
         self.assertTrue(result["is_ecommerce_related"])
-        self.assertEqual(result["label"], "cross_border")
+        self.assertEqual(result["label"], "extended_watch")
         self.assertIn("tiktok shop", result["signals"])
 
     def test_rejects_non_ecommerce_margin_policy(self):

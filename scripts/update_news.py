@@ -2582,6 +2582,9 @@ def fetch_web_sources(
     max_sources: int = WEB_SOURCE_DEFAULT_LIMIT,
 ) -> tuple[list[RawItem], dict[str, Any], list[dict[str, Any]]]:
     sources = load_web_source_config(config_path)
+    total_config_sources = len(sources)
+    disabled_sources = [source for source in sources if source.get("enabled") is False]
+    sources = [source for source in sources if source.get("enabled") is not False]
     if max_sources > 0:
         sources = sources[:max_sources]
 
@@ -2677,6 +2680,8 @@ def fetch_web_sources(
         "duration_ms": total_duration_ms,
         "error": None if failed_count == 0 else f"{failed_count} web sources failed",
         "source_count": len(sources),
+        "configured_source_count": total_config_sources,
+        "disabled_source_count": len(disabled_sources),
         "ok_source_count": ok_count,
         "active_source_count": active_count,
         "list_source_count": list_source_count,
@@ -3995,6 +4000,46 @@ def importance_label(category: str) -> str:
     }.get(category, "值得关注")
 
 
+def ecommerce_brief_channel(item: dict[str, Any]) -> str:
+    label = str(item.get("topic_label") or item.get("ai_label") or "")
+    meta = item.get("meta") if isinstance(item.get("meta"), dict) else {}
+    domain = str(meta.get("web_source_domain") or "")
+    title = str(item.get("title") or "")
+    hay = f"{label} {domain} {title}"
+    if label == "platform_policy" or any(k in hay for k in ("规则", "违规", "处罚", "治理", "准入", "履约", "售后")):
+        return "platform_policy"
+    if label == "ai_commerce":
+        return "ai_commerce"
+    if label == "traffic_creative" or any(k in hay for k in ("投流", "千川", "广告", "素材", "聚光", "蒲公英", "星图")):
+        return "traffic_creative"
+    if label == "extended_watch" or any(k in hay.lower() for k in ("跨境", "amazon", "tiktok shop", "temu", "shopify", "物流", "支付", "关税")):
+        return "extended_watch"
+    return "operations_playbook"
+
+
+def ecommerce_impact_for_story(item: dict[str, Any], channel: str) -> str:
+    business_value = str(item.get("business_value") or "")
+    if business_value:
+        return business_value
+    return {
+        "platform_policy": "影响平台经营规则、账号风险、违规处罚或商家履约要求。",
+        "operations_playbook": "可作为内容电商运营、直播/短视频带货、活动玩法或选品参考。",
+        "ai_commerce": "可评估能否迁移到商品图、视频素材、脚本、客服、选品或自动化流程。",
+        "traffic_creative": "影响投流规则、素材生产、达人合作或广告转化策略。",
+        "extended_watch": "作为跨境、物流、支付、海外平台经营变化的观察信号。",
+    }.get(channel, "可作为电商运营机会或风险线索。")
+
+
+def ecommerce_action_for_story(item: dict[str, Any], channel: str) -> str:
+    return {
+        "platform_policy": "检查店铺、达人、商品、售后和投放规则是否需要调整。",
+        "operations_playbook": "提炼可复用玩法，判断是否适合小红书/抖音内容或店播测试。",
+        "ai_commerce": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
+        "traffic_creative": "复核当前素材、账户审核、达人合作和投放策略。",
+        "extended_watch": "只做观察；若影响平台规则、物流、收款或关税，再升级为必看。",
+    }.get(channel, "判断是否需要进入运营待办。")
+
+
 def choose_primary_story_item(
     items: list[dict[str, Any]],
     now: datetime,
@@ -4058,6 +4103,9 @@ def build_story_record(
     source_count = max(1, len(source_keys))
     title = primary.get("title_bilingual") or primary.get("title")
     url = primary.get("url")
+    brief_channel = ecommerce_brief_channel(primary)
+    impact = ecommerce_impact_for_story(primary, brief_channel)
+    suggested_action = ecommerce_action_for_story(primary, brief_channel)
     return {
         "story_id": story_id,
         "title": title,
@@ -4077,6 +4125,11 @@ def build_story_record(
         "importance_label": importance_label(category),
         "importance_breakdown": importance["breakdown"],
         "category": category,
+        "brief_channel": brief_channel,
+        "impact": impact,
+        "suggested_action": suggested_action,
+        "business_value": primary.get("business_value") or impact,
+        "platform": primary.get("source") or primary.get("site_name"),
         "reasons": story_reasons(primary, score, source_count),
         "earliest_at": iso(min(times)) if times else None,
         "latest_at": iso(max(times)) if times else None,
@@ -4197,6 +4250,9 @@ def story_passes_brief_gate(story: dict[str, Any]) -> bool:
         meta.get("web_source_mode") == "page_snapshot" or str(story.get("title") or "").startswith("页面监控：")
     ):
         return False
+    channel = str(story.get("brief_channel") or "")
+    if channel == "extended_watch" and sources < 2 and score < 0.82:
+        return False
     return is_official_rule_story(story) or sources >= 2 or score >= BRIEF_SCORE_GATE
 
 
@@ -4267,6 +4323,37 @@ def select_daily_brief_stories(stories: list[dict[str, Any]], max_items: int) ->
     return picked
 
 
+DAILY_SECTION_ORDER = [
+    ("must_read", "今日必看"),
+    ("platform_policy", "平台规则与风险"),
+    ("operations_playbook", "运营玩法与热点"),
+    ("ai_commerce", "AI 电商"),
+    ("traffic_creative", "投流与素材"),
+    ("extended_watch", "扩展观察"),
+]
+
+
+def daily_section_for_story(story: dict[str, Any]) -> str:
+    channel = str(story.get("brief_channel") or "operations_playbook")
+    if is_official_rule_story(story):
+        return "must_read"
+    if channel in {"platform_policy", "operations_playbook", "ai_commerce", "traffic_creative", "extended_watch"}:
+        return channel
+    return "operations_playbook"
+
+
+def build_daily_sections(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    grouped: dict[str, list[dict[str, Any]]] = {key: [] for key, _label in DAILY_SECTION_ORDER}
+    for story in items:
+        grouped.setdefault(daily_section_for_story(story), []).append(story)
+    sections: list[dict[str, Any]] = []
+    for key, label in DAILY_SECTION_ORDER:
+        rows = grouped.get(key, [])
+        if rows:
+            sections.append({"id": key, "title": label, "items": rows})
+    return sections
+
+
 def build_daily_brief_payload(
     stories: list[dict[str, Any]],
     generated_at: str,
@@ -4279,6 +4366,7 @@ def build_daily_brief_payload(
         "generated_at": generated_at,
         "window_hours": window_hours,
         "total_items": len(items),
+        "sections": build_daily_sections(items),
         "items": items,
     }
 
@@ -4534,6 +4622,8 @@ def main() -> int:
                 continue
             if args.topic == "ecommerce":
                 normalized = add_ecommerce_relevance_fields(normalized)
+                if not normalized.get("topic_is_related"):
+                    continue
             else:
                 normalized = add_ai_relevance_fields(normalized)
             normalized = add_source_tier_fields(normalized)
