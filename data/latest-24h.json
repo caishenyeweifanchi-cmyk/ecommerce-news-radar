@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-11T23:20:44.977263Z",
+  "generated_at": "2026-06-12T01:43:26.837556Z",
   "window_hours": 24,
-  "total_items": 110,
-  "total_items_ai_raw": 110,
-  "total_items_raw": 312,
-  "total_items_all_mode": 312,
+  "total_items": 106,
+  "total_items_ai_raw": 106,
+  "total_items_raw": 343,
+  "total_items_all_mode": 343,
   "topic_filter": "ecommerce_relevance_scoring_v0_1",
   "topic": "ecommerce",
   "ai_relevance_threshold": 0.65,
   "topic_relevance_threshold": 0.65,
-  "archive_total": 4344,
+  "archive_total": 4387,
   "site_count": 2,
   "source_count": 35,
   "site_stats": [
@@ -22,8 +22,8 @@
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
-      "count": 43,
-      "raw_count": 238
+      "count": 39,
+      "raw_count": 269
     }
   ],
   "items": [
@@ -36,7 +36,7 @@
       "url": "https://www.ecommercebytes.com/2026/06/11/amazon-to-use-ai-to-enforce-new-product-title-limits",
       "published_at": "2026-06-11T20:20:49Z",
       "first_seen_at": "2026-06-11T21:56:57.258080Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "feed_url": "https://www.ecommercebytes.com/feed/",
         "feed_home": "https://www.ecommercebytes.com/"
@@ -145,7 +145,7 @@
       "url": "https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components",
       "published_at": "2026-06-11T18:00:00Z",
       "first_seen_at": "2026-06-11T21:56:57.258080Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -217,12 +217,12 @@
       "url": "https://rulechannel.tmall.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "tmall_rule_channel",
         "web_source_url": "https://rulechannel.tmall.com/",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "7d0d937ea232519b",
+        "web_source_snapshot_hash": "35031fa7b3f6a755",
         "web_source_snapshot_summary": "天猫规则",
         "web_source_priority": "P0",
         "web_source_domain": "平台规则",
@@ -258,12 +258,12 @@
       "url": "https://rule.alimama.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "alimama_rule_center",
         "web_source_url": "https://rule.alimama.com/",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "6d7e1ee932899401",
+        "web_source_snapshot_hash": "c37b861ebf02a2b9",
         "web_source_snapshot_summary": "阿里妈妈规则中心",
         "web_source_priority": "P0",
         "web_source_domain": "投流营销",
@@ -298,7 +298,7 @@
       "url": "https://rule.jd.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_rule_center",
         "web_source_url": "https://rule.jd.com/",
@@ -342,12 +342,12 @@
       "url": "https://rule.taobao.com/index.htm",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "taobao_rule_center",
         "web_source_url": "https://rule.taobao.com/index.htm",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "7b4073cf93801a86",
+        "web_source_snapshot_hash": "16d5278f545a7d12",
         "web_source_snapshot_summary": "淘宝规则",
         "web_source_priority": "P0",
         "web_source_domain": "平台规则",
@@ -383,7 +383,7 @@
       "url": "https://helpcenter.jd.com/vender",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_vendor_help_center",
         "web_source_url": "https://helpcenter.jd.com/vender/",
@@ -425,7 +425,7 @@
       "url": "https://mms.pinduoduo.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "pinduoduo_rule_center",
         "web_source_url": "https://mms.pinduoduo.com/",
@@ -471,12 +471,12 @@
       "url": "https://school.jinritemai.com/doudian/web/pc/index",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_learning_center",
         "web_source_url": "https://school.jinritemai.com/doudian/web/pc/index",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "aecbfa607cc39c1b",
+        "web_source_snapshot_hash": "14fe75d15f955220",
         "web_source_snapshot_summary": "适合监控商家教育、直播运营、平台玩法更新。",
         "web_source_priority": "P0",
         "web_source_domain": "内容电商",
@@ -512,12 +512,12 @@
       "url": "https://qianchuan.jinritemai.com/support/?pageId=229",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "qianchuan_rule_center",
         "web_source_url": "https://qianchuan.jinritemai.com/support/?pageId=229",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "7fd9328ebed86b97",
+        "web_source_snapshot_hash": "ad9d99a61868eafa",
         "web_source_snapshot_summary": "undefined",
         "web_source_priority": "P0",
         "web_source_domain": "投流营销",
@@ -554,7 +554,7 @@
       "url": "https://ec.xiaohongshu.com/ecommerce/official-info?tab=rule",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xiaohongshu_ecommerce_rule_tab",
         "web_source_url": "https://ec.xiaohongshu.com/ecommerce/official-info?tab=rule",
@@ -597,7 +597,7 @@
       "url": "https://ec.xiaohongshu.com/ecommerce/official-info",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xiaohongshu_ecommerce_official_info",
         "web_source_url": "https://ec.xiaohongshu.com/ecommerce/official-info",
@@ -638,7 +638,7 @@
       "url": "https://ad.xiaohongshu.com/help",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xiaohongshu_juguang_help",
         "web_source_url": "https://ad.xiaohongshu.com/help",
@@ -678,12 +678,12 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/index",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "fbf3177ac4220603",
+        "web_source_snapshot_hash": "578d4af1f085894e",
         "web_source_snapshot_summary": "规则中心",
         "web_source_priority": "P0",
         "web_source_domain": "平台规则",
@@ -720,7 +720,7 @@
       "url": "https://edu.kwaixiaodian.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_learning_center",
         "web_source_url": "https://edu.kwaixiaodian.com/",
@@ -761,7 +761,7 @@
       "url": "https://pgy.xiaohongshu.com/help",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xiaohongshu_pugongying_help",
         "web_source_url": "https://pgy.xiaohongshu.com/help",
@@ -802,12 +802,12 @@
       "url": "https://lifexue.com/rule",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "meituan_life_rule_center",
         "web_source_url": "https://lifexue.com/rule",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "2d9ffa41f57e7154",
+        "web_source_snapshot_hash": "8e71828f3f1f1561",
         "web_source_snapshot_summary": "抖音生活服务-学习中心",
         "web_source_priority": "P0",
         "web_source_domain": "平台规则",
@@ -842,7 +842,7 @@
       "url": "https://h5.ele.me/alsc-risk-rule-center-fe",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "eleme_rule_center",
         "web_source_url": "https://h5.ele.me/alsc-risk-rule-center-fe/",
@@ -882,7 +882,7 @@
       "url": "https://opendocs.alipay.com/rules",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "alipay_open_rules",
         "web_source_url": "https://opendocs.alipay.com/rules",
@@ -924,7 +924,7 @@
       "url": "https://viva.vip.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "vip_supplier_announcement_entry",
         "web_source_url": "https://viva.vip.com/",
@@ -964,7 +964,7 @@
       "url": "https://e.kuaishou.com/help",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "kuaishou_magnetic_engine_help",
         "web_source_url": "https://e.kuaishou.com/help",
@@ -1367,7 +1367,7 @@
       "url": "https://changelog.shopify.com/posts/unified-pos-staff-management",
       "published_at": "2026-06-11T14:15:00Z",
       "first_seen_at": "2026-06-11T16:33:58.074400Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -1404,7 +1404,7 @@
       "url": "https://rule.1688.com/policy/copyright.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "1688_rule_center",
         "web_source_url": "https://rule.1688.com/",
@@ -1442,7 +1442,7 @@
       "url": "https://rule.1688.com/policy/terms.htm",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "1688_rule_center",
         "web_source_url": "https://rule.1688.com/",
@@ -1480,7 +1480,7 @@
       "url": "https://rule.1688.com/policy/legal.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "1688_rule_center",
         "web_source_url": "https://rule.1688.com/",
@@ -1518,7 +1518,7 @@
       "url": "https://rule.1688.com/policy/privacy.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "1688_rule_center",
         "web_source_url": "https://rule.1688.com/",
@@ -1556,7 +1556,7 @@
       "url": "https://rule.1688.com/?+tracelog=aliguize_wzdh01",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "1688_rule_center",
         "web_source_url": "https://rule.1688.com/",
@@ -1594,7 +1594,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/solution/zztf.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -1632,7 +1632,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/ad/updateAll.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -1670,7 +1670,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/ad/editActivityOverAllAd.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -1708,7 +1708,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/campaign/updateTimeRangePriceCoef.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -1746,7 +1746,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/kuaiche/campaign/updateDate.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -1784,7 +1784,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/campaign/updateDate.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -1822,7 +1822,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/campaign/updateDate.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -1860,7 +1860,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/swa/updateStatus.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -1898,7 +1898,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/kuaiche/campaign/updateSpeed.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -1936,7 +1936,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/liteGrowth/growthUpdateSKU.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -1974,7 +1974,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/adgroup/updateDmpList.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -2012,7 +2012,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/adgroup/updateDmpList.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -2050,7 +2050,7 @@
       "url": "https://jinbao.pinduoduo.com/content-channel",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -2088,7 +2088,7 @@
       "url": "https://jinbao.pinduoduo.com/message/detail?crumbs=broadcast&id=197",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -2126,7 +2126,7 @@
       "url": "https://jinbao.pinduoduo.com/head-audit",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -2166,7 +2166,7 @@
       "url": "https://jinbao.pinduoduo.com/risk-control-center",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -2204,7 +2204,7 @@
       "url": "https://jinbao.pinduoduo.com/zs-plan/overview",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -2242,7 +2242,7 @@
       "url": "https://jinbao.pinduoduo.com/goods-db/plan",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -2280,7 +2280,7 @@
       "url": "https://jinbao.pinduoduo.com/level-right",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -2318,7 +2318,7 @@
       "url": "https://jinbao.pinduoduo.com/promotion/url-promotion",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -2356,7 +2356,7 @@
       "url": "https://jinbao.pinduoduo.com/promotion/single-promotion",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -2394,7 +2394,7 @@
       "url": "https://jinbao.pinduoduo.com/message/detail?crumbs=broadcast&id=200",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -2432,7 +2432,7 @@
       "url": "https://www.xingtu.cn/help-center/author/109254",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2470,7 +2470,7 @@
       "url": "https://www.xingtu.cn/help-center/author/11199",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2508,7 +2508,7 @@
       "url": "https://www.xingtu.cn/help-center/author/109200",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2547,7 +2547,7 @@
       "url": "https://www.xingtu.cn/help-center/author/148107",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2587,7 +2587,7 @@
       "url": "https://www.xingtu.cn/help-center/author/109201",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2626,7 +2626,7 @@
       "url": "https://www.xingtu.cn/help-center/author/145277",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2666,7 +2666,7 @@
       "url": "https://www.xingtu.cn/help-center/author/134035",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2706,7 +2706,7 @@
       "url": "https://www.xingtu.cn/help-center/author/117623",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2744,7 +2744,7 @@
       "url": "https://www.xingtu.cn/help-center/author/113380",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2783,7 +2783,7 @@
       "url": "https://www.xingtu.cn/help-center/author/109250",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2821,7 +2821,7 @@
       "url": "https://www.xingtu.cn/help-center/author/109194",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2861,7 +2861,7 @@
       "url": "https://www.xingtu.cn/help-center/author",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -2900,7 +2900,7 @@
       "url": "https://www.dewu.com/personal-enter.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "dewu_merchant_public_rule_entry",
         "web_source_url": "https://www.dewu.com/",
@@ -2943,7 +2943,7 @@
       "url": "https://www.dewu.com/usage.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "dewu_merchant_public_rule_entry",
         "web_source_url": "https://www.dewu.com/",
@@ -2983,7 +2983,7 @@
       "url": "https://www.dewu.com/privacy.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "dewu_merchant_public_rule_entry",
         "web_source_url": "https://www.dewu.com/",
@@ -3096,7 +3096,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -3176,7 +3176,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNuPU?tabKey=rules",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -3220,7 +3220,7 @@
       "url": "https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider",
       "published_at": "2026-06-11T13:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -3328,7 +3328,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -3372,7 +3372,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -3625,7 +3625,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
       "published_at": "2026-06-11T09:36:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -3740,7 +3740,7 @@
       "url": "https://www.adweek.com/commerce/amazon-exec-reveals-what-the-new-alexa-has-that-rufus-didnt",
       "published_at": "2026-06-11T09:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "feed_url": "https://www.adweek.com/feed/",
         "feed_home": "https://www.adweek.com/commerce"
@@ -4030,7 +4030,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
       "published_at": "2026-06-11T03:01:40Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4100,151 +4100,6 @@
       "title_en": "Got my first IP/trademark complaint how do you guys avoid these?",
       "title_zh": "我收到了第一个知识产权/商标投诉，你们如何避免这些？",
       "title_bilingual": "我收到了第一个知识产权/商标投诉，你们如何避免这些？ / Got my first IP/trademark complaint how do you guys avoid these?"
-    },
-    {
-      "id": "5fe5fdc31348e5296d7386f500ac8854f8ff65d7",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Reddit r/FulfillmentByAmazon",
-      "title": "Most ecommerce tools show what happened. Very few explain why.",
-      "url": "https://www.reddit.com/r/FulfillmentByAmazon/comments/1u2jged/most_ecommerce_tools_show_what_happened_very_few",
-      "published_at": "2026-06-11T00:11:05Z",
-      "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
-      "meta": {
-        "feed_url": "https://www.reddit.com/r/FulfillmentByAmazon/.rss",
-        "feed_home": "https://www.reddit.com/r/FulfillmentByAmazon/"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.65,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "amazon",
-        "ecommerce",
-        "amazon",
-        "amazon"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.65,
-      "topic_label": "cross_border",
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "title_original": "Most ecommerce tools show what happened. Very few explain why.",
-      "title_en": "Most ecommerce tools show what happened. Very few explain why.",
-      "title_zh": "大多数电子商务工具都会显示发生的情况。很少有人解释原因。",
-      "title_bilingual": "大多数电子商务工具都会显示发生的情况。很少有人解释原因。 / Most ecommerce tools show what happened. Very few explain why."
-    },
-    {
-      "id": "9e4e8afb92350e05d7b6a2a59ff2be904c96c860",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Reddit r/shopify",
-      "title": "Search Bar broke after activating new filters",
-      "url": "https://www.reddit.com/r/shopify/comments/1u2jcss/search_bar_broke_after_activating_new_filters",
-      "published_at": "2026-06-11T00:06:48Z",
-      "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T19:30:45.608545Z",
-      "meta": {
-        "feed_url": "https://www.reddit.com/r/shopify/.rss",
-        "feed_home": "https://www.reddit.com/r/shopify/"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.65,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "shopify",
-        "shopify",
-        "shopify"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.65,
-      "topic_label": "cross_border",
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "title_original": "Search Bar broke after activating new filters",
-      "title_en": "Search Bar broke after activating new filters",
-      "title_zh": "激活新过滤器后搜索栏损坏",
-      "title_bilingual": "激活新过滤器后搜索栏损坏 / Search Bar broke after activating new filters"
-    },
-    {
-      "id": "a4ae8ea66b0f12538847e59ea909c659ab63568f",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Reddit r/shopify",
-      "title": "Lots of boxes no clue what it is.",
-      "url": "https://www.reddit.com/r/shopify/comments/1u2itfw/lots_of_boxes_no_clue_what_it_is",
-      "published_at": "2026-06-10T23:43:45Z",
-      "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
-      "meta": {
-        "feed_url": "https://www.reddit.com/r/shopify/.rss",
-        "feed_home": "https://www.reddit.com/r/shopify/"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.65,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "shopify",
-        "shopify",
-        "shopify"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.65,
-      "topic_label": "cross_border",
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "title_original": "Lots of boxes no clue what it is.",
-      "title_en": "Lots of boxes no clue what it is.",
-      "title_zh": "很多盒子都不知道是什么。",
-      "title_bilingual": "很多盒子都不知道是什么。 / Lots of boxes no clue what it is."
-    },
-    {
-      "id": "897d3307ccfe2670a04c484e5c552ffb6fdf2c76",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Reddit r/shopify",
-      "title": "Needing to scale",
-      "url": "https://www.reddit.com/r/shopify/comments/1u2ii5n/needing_to_scale",
-      "published_at": "2026-06-10T23:29:50Z",
-      "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T19:30:45.608545Z",
-      "meta": {
-        "feed_url": "https://www.reddit.com/r/shopify/.rss",
-        "feed_home": "https://www.reddit.com/r/shopify/"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.65,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "shopify",
-        "shopify",
-        "shopify"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.65,
-      "topic_label": "cross_border",
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "title_original": "Needing to scale",
-      "title_en": "Needing to scale",
-      "title_zh": "需要扩展",
-      "title_bilingual": "需要扩展 / Needing to scale"
     }
   ],
   "items_ai": [
@@ -4257,7 +4112,7 @@
       "url": "https://www.ecommercebytes.com/2026/06/11/amazon-to-use-ai-to-enforce-new-product-title-limits",
       "published_at": "2026-06-11T20:20:49Z",
       "first_seen_at": "2026-06-11T21:56:57.258080Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "feed_url": "https://www.ecommercebytes.com/feed/",
         "feed_home": "https://www.ecommercebytes.com/"
@@ -4366,7 +4221,7 @@
       "url": "https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components",
       "published_at": "2026-06-11T18:00:00Z",
       "first_seen_at": "2026-06-11T21:56:57.258080Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -4438,12 +4293,12 @@
       "url": "https://rulechannel.tmall.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "tmall_rule_channel",
         "web_source_url": "https://rulechannel.tmall.com/",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "7d0d937ea232519b",
+        "web_source_snapshot_hash": "35031fa7b3f6a755",
         "web_source_snapshot_summary": "天猫规则",
         "web_source_priority": "P0",
         "web_source_domain": "平台规则",
@@ -4479,12 +4334,12 @@
       "url": "https://rule.alimama.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "alimama_rule_center",
         "web_source_url": "https://rule.alimama.com/",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "6d7e1ee932899401",
+        "web_source_snapshot_hash": "c37b861ebf02a2b9",
         "web_source_snapshot_summary": "阿里妈妈规则中心",
         "web_source_priority": "P0",
         "web_source_domain": "投流营销",
@@ -4519,7 +4374,7 @@
       "url": "https://rule.jd.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_rule_center",
         "web_source_url": "https://rule.jd.com/",
@@ -4563,12 +4418,12 @@
       "url": "https://rule.taobao.com/index.htm",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "taobao_rule_center",
         "web_source_url": "https://rule.taobao.com/index.htm",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "7b4073cf93801a86",
+        "web_source_snapshot_hash": "16d5278f545a7d12",
         "web_source_snapshot_summary": "淘宝规则",
         "web_source_priority": "P0",
         "web_source_domain": "平台规则",
@@ -4604,7 +4459,7 @@
       "url": "https://helpcenter.jd.com/vender",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_vendor_help_center",
         "web_source_url": "https://helpcenter.jd.com/vender/",
@@ -4646,7 +4501,7 @@
       "url": "https://mms.pinduoduo.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "pinduoduo_rule_center",
         "web_source_url": "https://mms.pinduoduo.com/",
@@ -4692,12 +4547,12 @@
       "url": "https://school.jinritemai.com/doudian/web/pc/index",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_learning_center",
         "web_source_url": "https://school.jinritemai.com/doudian/web/pc/index",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "aecbfa607cc39c1b",
+        "web_source_snapshot_hash": "14fe75d15f955220",
         "web_source_snapshot_summary": "适合监控商家教育、直播运营、平台玩法更新。",
         "web_source_priority": "P0",
         "web_source_domain": "内容电商",
@@ -4733,12 +4588,12 @@
       "url": "https://qianchuan.jinritemai.com/support/?pageId=229",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "qianchuan_rule_center",
         "web_source_url": "https://qianchuan.jinritemai.com/support/?pageId=229",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "7fd9328ebed86b97",
+        "web_source_snapshot_hash": "ad9d99a61868eafa",
         "web_source_snapshot_summary": "undefined",
         "web_source_priority": "P0",
         "web_source_domain": "投流营销",
@@ -4775,7 +4630,7 @@
       "url": "https://ec.xiaohongshu.com/ecommerce/official-info?tab=rule",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xiaohongshu_ecommerce_rule_tab",
         "web_source_url": "https://ec.xiaohongshu.com/ecommerce/official-info?tab=rule",
@@ -4818,7 +4673,7 @@
       "url": "https://ec.xiaohongshu.com/ecommerce/official-info",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xiaohongshu_ecommerce_official_info",
         "web_source_url": "https://ec.xiaohongshu.com/ecommerce/official-info",
@@ -4859,7 +4714,7 @@
       "url": "https://ad.xiaohongshu.com/help",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xiaohongshu_juguang_help",
         "web_source_url": "https://ad.xiaohongshu.com/help",
@@ -4899,12 +4754,12 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/index",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "fbf3177ac4220603",
+        "web_source_snapshot_hash": "578d4af1f085894e",
         "web_source_snapshot_summary": "规则中心",
         "web_source_priority": "P0",
         "web_source_domain": "平台规则",
@@ -4941,7 +4796,7 @@
       "url": "https://edu.kwaixiaodian.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_learning_center",
         "web_source_url": "https://edu.kwaixiaodian.com/",
@@ -4982,7 +4837,7 @@
       "url": "https://pgy.xiaohongshu.com/help",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xiaohongshu_pugongying_help",
         "web_source_url": "https://pgy.xiaohongshu.com/help",
@@ -5023,12 +4878,12 @@
       "url": "https://lifexue.com/rule",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "meituan_life_rule_center",
         "web_source_url": "https://lifexue.com/rule",
         "web_source_mode": "page_snapshot",
-        "web_source_snapshot_hash": "2d9ffa41f57e7154",
+        "web_source_snapshot_hash": "8e71828f3f1f1561",
         "web_source_snapshot_summary": "抖音生活服务-学习中心",
         "web_source_priority": "P0",
         "web_source_domain": "平台规则",
@@ -5063,7 +4918,7 @@
       "url": "https://h5.ele.me/alsc-risk-rule-center-fe",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "eleme_rule_center",
         "web_source_url": "https://h5.ele.me/alsc-risk-rule-center-fe/",
@@ -5103,7 +4958,7 @@
       "url": "https://opendocs.alipay.com/rules",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "alipay_open_rules",
         "web_source_url": "https://opendocs.alipay.com/rules",
@@ -5145,7 +5000,7 @@
       "url": "https://viva.vip.com",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "vip_supplier_announcement_entry",
         "web_source_url": "https://viva.vip.com/",
@@ -5185,7 +5040,7 @@
       "url": "https://e.kuaishou.com/help",
       "published_at": "2026-06-11T17:12:51.580593Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "kuaishou_magnetic_engine_help",
         "web_source_url": "https://e.kuaishou.com/help",
@@ -5588,7 +5443,7 @@
       "url": "https://changelog.shopify.com/posts/unified-pos-staff-management",
       "published_at": "2026-06-11T14:15:00Z",
       "first_seen_at": "2026-06-11T16:33:58.074400Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -5625,7 +5480,7 @@
       "url": "https://rule.1688.com/policy/copyright.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "1688_rule_center",
         "web_source_url": "https://rule.1688.com/",
@@ -5663,7 +5518,7 @@
       "url": "https://rule.1688.com/policy/terms.htm",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "1688_rule_center",
         "web_source_url": "https://rule.1688.com/",
@@ -5701,7 +5556,7 @@
       "url": "https://rule.1688.com/policy/legal.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "1688_rule_center",
         "web_source_url": "https://rule.1688.com/",
@@ -5739,7 +5594,7 @@
       "url": "https://rule.1688.com/policy/privacy.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "1688_rule_center",
         "web_source_url": "https://rule.1688.com/",
@@ -5777,7 +5632,7 @@
       "url": "https://rule.1688.com/?+tracelog=aliguize_wzdh01",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "1688_rule_center",
         "web_source_url": "https://rule.1688.com/",
@@ -5815,7 +5670,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/solution/zztf.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -5853,7 +5708,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/ad/updateAll.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -5891,7 +5746,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/ad/editActivityOverAllAd.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -5929,7 +5784,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/campaign/updateTimeRangePriceCoef.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -5967,7 +5822,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/kuaiche/campaign/updateDate.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -6005,7 +5860,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/campaign/updateDate.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -6043,7 +5898,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/campaign/updateDate.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -6081,7 +5936,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/swa/updateStatus.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -6119,7 +5974,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/kuaiche/campaign/updateSpeed.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -6157,7 +6012,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/liteGrowth/growthUpdateSKU.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -6195,7 +6050,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/adgroup/updateDmpList.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -6233,7 +6088,7 @@
       "url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/adgroup/updateDmpList.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "jd_jzt_ads_api_docs",
         "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
@@ -6271,7 +6126,7 @@
       "url": "https://jinbao.pinduoduo.com/content-channel",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -6309,7 +6164,7 @@
       "url": "https://jinbao.pinduoduo.com/message/detail?crumbs=broadcast&id=197",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -6347,7 +6202,7 @@
       "url": "https://jinbao.pinduoduo.com/head-audit",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -6387,7 +6242,7 @@
       "url": "https://jinbao.pinduoduo.com/risk-control-center",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -6425,7 +6280,7 @@
       "url": "https://jinbao.pinduoduo.com/zs-plan/overview",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -6463,7 +6318,7 @@
       "url": "https://jinbao.pinduoduo.com/goods-db/plan",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -6501,7 +6356,7 @@
       "url": "https://jinbao.pinduoduo.com/level-right",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -6539,7 +6394,7 @@
       "url": "https://jinbao.pinduoduo.com/promotion/url-promotion",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -6577,7 +6432,7 @@
       "url": "https://jinbao.pinduoduo.com/promotion/single-promotion",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -6615,7 +6470,7 @@
       "url": "https://jinbao.pinduoduo.com/message/detail?crumbs=broadcast&id=200",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "duoduo_jinbao_docs",
         "web_source_url": "https://jinbao.pinduoduo.com/",
@@ -6653,7 +6508,7 @@
       "url": "https://www.xingtu.cn/help-center/author/109254",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -6691,7 +6546,7 @@
       "url": "https://www.xingtu.cn/help-center/author/11199",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -6729,7 +6584,7 @@
       "url": "https://www.xingtu.cn/help-center/author/109200",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -6768,7 +6623,7 @@
       "url": "https://www.xingtu.cn/help-center/author/148107",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -6808,7 +6663,7 @@
       "url": "https://www.xingtu.cn/help-center/author/109201",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -6847,7 +6702,7 @@
       "url": "https://www.xingtu.cn/help-center/author/145277",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -6887,7 +6742,7 @@
       "url": "https://www.xingtu.cn/help-center/author/134035",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -6927,7 +6782,7 @@
       "url": "https://www.xingtu.cn/help-center/author/117623",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -6965,7 +6820,7 @@
       "url": "https://www.xingtu.cn/help-center/author/113380",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -7004,7 +6859,7 @@
       "url": "https://www.xingtu.cn/help-center/author/109250",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -7042,7 +6897,7 @@
       "url": "https://www.xingtu.cn/help-center/author/109194",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -7082,7 +6937,7 @@
       "url": "https://www.xingtu.cn/help-center/author",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "xingtu_help_center",
         "web_source_url": "https://www.xingtu.cn/help-center",
@@ -7121,7 +6976,7 @@
       "url": "https://www.dewu.com/personal-enter.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "dewu_merchant_public_rule_entry",
         "web_source_url": "https://www.dewu.com/",
@@ -7164,7 +7019,7 @@
       "url": "https://www.dewu.com/usage.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "dewu_merchant_public_rule_entry",
         "web_source_url": "https://www.dewu.com/",
@@ -7204,7 +7059,7 @@
       "url": "https://www.dewu.com/privacy.html",
       "published_at": "2026-06-11T14:05:24.420694Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "dewu_merchant_public_rule_entry",
         "web_source_url": "https://www.dewu.com/",
@@ -7317,7 +7172,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -7397,7 +7252,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNuPU?tabKey=rules",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -7441,7 +7296,7 @@
       "url": "https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider",
       "published_at": "2026-06-11T13:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -7549,7 +7404,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -7593,7 +7448,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -7846,7 +7701,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
       "published_at": "2026-06-11T09:36:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -7961,7 +7816,7 @@
       "url": "https://www.adweek.com/commerce/amazon-exec-reveals-what-the-new-alexa-has-that-rufus-didnt",
       "published_at": "2026-06-11T09:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "feed_url": "https://www.adweek.com/feed/",
         "feed_home": "https://www.adweek.com/commerce"
@@ -8251,7 +8106,7 @@
       "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
       "published_at": "2026-06-11T03:01:40Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-11T23:20:44.977263Z",
+      "last_seen_at": "2026-06-12T01:43:26.837556Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -8321,151 +8176,6 @@
       "title_en": "Got my first IP/trademark complaint how do you guys avoid these?",
       "title_zh": "我收到了第一个知识产权/商标投诉，你们如何避免这些？",
       "title_bilingual": "我收到了第一个知识产权/商标投诉，你们如何避免这些？ / Got my first IP/trademark complaint how do you guys avoid these?"
-    },
-    {
-      "id": "5fe5fdc31348e5296d7386f500ac8854f8ff65d7",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Reddit r/FulfillmentByAmazon",
-      "title": "Most ecommerce tools show what happened. Very few explain why.",
-      "url": "https://www.reddit.com/r/FulfillmentByAmazon/comments/1u2jged/most_ecommerce_tools_show_what_happened_very_few",
-      "published_at": "2026-06-11T00:11:05Z",
-      "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
-      "meta": {
-        "feed_url": "https://www.reddit.com/r/FulfillmentByAmazon/.rss",
-        "feed_home": "https://www.reddit.com/r/FulfillmentByAmazon/"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.65,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "amazon",
-        "ecommerce",
-        "amazon",
-        "amazon"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.65,
-      "topic_label": "cross_border",
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "title_original": "Most ecommerce tools show what happened. Very few explain why.",
-      "title_en": "Most ecommerce tools show what happened. Very few explain why.",
-      "title_zh": "大多数电子商务工具都会显示发生的情况。很少有人解释原因。",
-      "title_bilingual": "大多数电子商务工具都会显示发生的情况。很少有人解释原因。 / Most ecommerce tools show what happened. Very few explain why."
-    },
-    {
-      "id": "9e4e8afb92350e05d7b6a2a59ff2be904c96c860",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Reddit r/shopify",
-      "title": "Search Bar broke after activating new filters",
-      "url": "https://www.reddit.com/r/shopify/comments/1u2jcss/search_bar_broke_after_activating_new_filters",
-      "published_at": "2026-06-11T00:06:48Z",
-      "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T19:30:45.608545Z",
-      "meta": {
-        "feed_url": "https://www.reddit.com/r/shopify/.rss",
-        "feed_home": "https://www.reddit.com/r/shopify/"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.65,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "shopify",
-        "shopify",
-        "shopify"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.65,
-      "topic_label": "cross_border",
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "title_original": "Search Bar broke after activating new filters",
-      "title_en": "Search Bar broke after activating new filters",
-      "title_zh": "激活新过滤器后搜索栏损坏",
-      "title_bilingual": "激活新过滤器后搜索栏损坏 / Search Bar broke after activating new filters"
-    },
-    {
-      "id": "a4ae8ea66b0f12538847e59ea909c659ab63568f",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Reddit r/shopify",
-      "title": "Lots of boxes no clue what it is.",
-      "url": "https://www.reddit.com/r/shopify/comments/1u2itfw/lots_of_boxes_no_clue_what_it_is",
-      "published_at": "2026-06-10T23:43:45Z",
-      "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
-      "meta": {
-        "feed_url": "https://www.reddit.com/r/shopify/.rss",
-        "feed_home": "https://www.reddit.com/r/shopify/"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.65,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "shopify",
-        "shopify",
-        "shopify"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.65,
-      "topic_label": "cross_border",
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "title_original": "Lots of boxes no clue what it is.",
-      "title_en": "Lots of boxes no clue what it is.",
-      "title_zh": "很多盒子都不知道是什么。",
-      "title_bilingual": "很多盒子都不知道是什么。 / Lots of boxes no clue what it is."
-    },
-    {
-      "id": "897d3307ccfe2670a04c484e5c552ffb6fdf2c76",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Reddit r/shopify",
-      "title": "Needing to scale",
-      "url": "https://www.reddit.com/r/shopify/comments/1u2ii5n/needing_to_scale",
-      "published_at": "2026-06-10T23:29:50Z",
-      "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T19:30:45.608545Z",
-      "meta": {
-        "feed_url": "https://www.reddit.com/r/shopify/.rss",
-        "feed_home": "https://www.reddit.com/r/shopify/"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.65,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "shopify",
-        "shopify",
-        "shopify"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.65,
-      "topic_label": "cross_border",
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "title_original": "Needing to scale",
-      "title_en": "Needing to scale",
-      "title_zh": "需要扩展",
-      "title_bilingual": "需要扩展 / Needing to scale"
     }
   ],
   "all_mode_data_url": "data/latest-24h-all.json"
