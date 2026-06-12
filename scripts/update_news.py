@@ -211,9 +211,28 @@ def parse_iso(dt_str: str | None) -> datetime | None:
     return dt.astimezone(UTC)
 
 
-def normalize_url(raw_url: str) -> str:
+def canonical_douyin_article_url(raw_url: str) -> str:
     try:
         parsed = urlparse(raw_url.strip())
+        if parsed.netloc.lower() != "school.jinritemai.com":
+            return raw_url.strip()
+        m = re.match(r"^/doudian/web/(?:rules|article|articlev0)/([^/?#]+)", parsed.path)
+        if not m:
+            return raw_url.strip()
+        return urlunparse(
+            parsed._replace(
+                path=f"/doudian/web/articlev0/{m.group(1)}",
+                query="",
+                fragment="",
+            )
+        )
+    except Exception:
+        return raw_url.strip()
+
+
+def normalize_url(raw_url: str) -> str:
+    try:
+        parsed = urlparse(canonical_douyin_article_url(raw_url))
         if not parsed.scheme:
             return raw_url.strip()
         query = []
@@ -2353,13 +2372,14 @@ def fetch_douyin_rule_center_items(
             seen.add(knowledge_id)
             ts = row.get("update_time") or row.get("effect_start")
             published_at = datetime.fromtimestamp(int(ts), tz=UTC) if str(ts or "").isdigit() else None
+            article_url = f"https://school.jinritemai.com/doudian/web/articlev0/{knowledge_id}"
             out.append(
                 RawItem(
                     site_id="websource",
                     site_name="重点网页源",
                     source=source_name,
                     title=title,
-                    url=f"https://school.jinritemai.com/doudian/web/rules/{knowledge_id}?tabKey=rules",
+                    url=article_url,
                     published_at=published_at,
                     meta={
                         "web_source_id": source.get("id"),
@@ -2371,6 +2391,7 @@ def fetch_douyin_rule_center_items(
                         "rule_type": rule_type,
                         "rule_status": row.get("status_code"),
                         "knowledge_id": knowledge_id,
+                        "article_url_source": "douyin_articlev0",
                         "published_time_source": "api" if published_at else "unconfirmed",
                     },
                 )
@@ -2787,6 +2808,33 @@ def load_archive(path: Path) -> dict[str, dict[str, Any]]:
                 it["id"] = item_id
                 out[item_id] = it
     return out
+
+
+def canonicalize_archive_item_ids(archive: dict[str, dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    canonical: dict[str, dict[str, Any]] = {}
+    for record in archive.values():
+        if not isinstance(record, dict):
+            continue
+        item = dict(record)
+        item["url"] = canonical_douyin_article_url(str(item.get("url") or ""))
+        item_id = make_item_id(
+            str(item.get("site_id") or ""),
+            str(item.get("source") or ""),
+            str(item.get("title") or ""),
+            str(item.get("url") or ""),
+        )
+        if not item_id:
+            continue
+        item["id"] = item_id
+        existing = canonical.get(item_id)
+        if existing is None:
+            canonical[item_id] = item
+            continue
+        existing_seen = parse_iso(existing.get("last_seen_at")) or datetime.min.replace(tzinfo=UTC)
+        item_seen = parse_iso(item.get("last_seen_at")) or datetime.min.replace(tzinfo=UTC)
+        if item_seen >= existing_seen or "articlev0" in str(item.get("url") or ""):
+            canonical[item_id] = item
+    return canonical
 
 
 def event_time(record: dict[str, Any]) -> datetime | None:
@@ -4120,7 +4168,7 @@ def main() -> int:
     title_cache_path = output_dir / "title-zh-cache.json"
     email_digest_path = output_dir / AGENTMAIL_DIGEST_FILE
 
-    archive = load_archive(archive_path)
+    archive = canonicalize_archive_item_ids(load_archive(archive_path))
 
     session = create_session()
     raw_items, statuses = collect_all(session, now, topic=args.topic)

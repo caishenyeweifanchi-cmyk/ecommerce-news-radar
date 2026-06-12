@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-06-12T02:57:42.686398Z",
+  "generated_at": "2026-06-12T03:33:57.585408Z",
   "window_hours": 168,
-  "total_items": 104,
-  "total_items_ai_raw": 104,
-  "total_items_raw": 485,
-  "total_items_all_mode": 475,
+  "total_items": 106,
+  "total_items_ai_raw": 106,
+  "total_items_raw": 506,
+  "total_items_all_mode": 496,
   "topic_filter": "ecommerce_relevance_scoring_v0_1",
   "topic": "ecommerce",
   "ai_relevance_threshold": 0.65,
   "topic_relevance_threshold": 0.65,
-  "archive_total": 4405,
+  "archive_total": 4426,
   "site_count": 2,
-  "source_count": 15,
+  "source_count": 16,
   "site_stats": [
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
-      "count": 92,
-      "raw_count": 473
+      "count": 94,
+      "raw_count": 494
     },
     {
       "site_id": "websource",
@@ -28,6 +28,76 @@
   ],
   "items": [
     {
+      "id": "61662144125202a3ed7c1f6f62aa2dc806b5787b",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "ReadHub",
+      "title": "我国件杂货国际物流发展整体稳健",
+      "url": "https://readhub.cn/topic/8ttR8U14klP",
+      "published_at": "2026-06-12T03:26:31Z",
+      "first_seen_at": "2026-06-12T03:33:57.585408Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
+      "meta": {
+        "feed_url": "https://readhub.cn/rss",
+        "feed_home": "https://readhub.cn/"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.65,
+      "ai_label": "cross_border",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "物流",
+        "物流"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.65,
+      "topic_label": "cross_border",
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "title_original": "我国件杂货国际物流发展整体稳健",
+      "title_en": null,
+      "title_zh": "我国件杂货国际物流发展整体稳健",
+      "title_bilingual": "我国件杂货国际物流发展整体稳健"
+    },
+    {
+      "id": "ff69f7d1eba20e9bc52132cc076c6deb9f64e2ea",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "36Kr",
+      "title": "我国件杂货国际物流发展整体稳健",
+      "url": "https://36kr.com/newsflashes/3849621359121411?f=rss",
+      "published_at": "2026-06-12T03:17:21Z",
+      "first_seen_at": "2026-06-12T03:25:24.434688Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
+      "meta": {
+        "feed_url": "https://36kr.com/feed",
+        "feed_home": "https://36kr.com/"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.65,
+      "ai_label": "cross_border",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "物流",
+        "物流"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.65,
+      "topic_label": "cross_border",
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "title_original": "我国件杂货国际物流发展整体稳健",
+      "title_en": null,
+      "title_zh": "我国件杂货国际物流发展整体稳健",
+      "title_bilingual": "我国件杂货国际物流发展整体稳健"
+    },
+    {
       "id": "a9965e850c05c60a1816d8be7f10cee777c98bab",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -36,7 +106,7 @@
       "url": "https://xiaguangshe.com/14455",
       "published_at": "2026-06-12T01:07:15Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -73,7 +143,7 @@
       "url": "https://www.ecommercebytes.com/2026/06/11/amazon-to-use-ai-to-enforce-new-product-title-limits",
       "published_at": "2026-06-11T20:20:49Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.ecommercebytes.com/feed/",
         "feed_home": "https://www.ecommercebytes.com/"
@@ -110,7 +180,7 @@
       "url": "https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components",
       "published_at": "2026-06-11T18:00:00Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -218,7 +288,7 @@
       "url": "https://searchengineland.com/amazon-turns-alexa-into-a-shopping-agent-and-an-advertising-platform-479905",
       "published_at": "2026-06-11T16:26:44Z",
       "first_seen_at": "2026-06-11T17:50:46.803947Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://searchengineland.com/feed",
         "feed_home": "https://searchengineland.com/commerce"
@@ -543,7 +613,7 @@
       "url": "https://changelog.shopify.com/posts/unified-pos-staff-management",
       "published_at": "2026-06-11T14:15:00Z",
       "first_seen_at": "2026-06-11T16:33:58.074400Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -644,15 +714,15 @@
       "title_bilingual": "结帐时营销选择加入框的问题（Attentive 和 Klaviyo） / Issues with Marketing Opt-In Box at Checkout (Attentive & Klaviyo)"
     },
     {
-      "id": "ff32c0619083d402af11b77e73ddeac9a6fa1bbc",
+      "id": "03e75dee8c02484036232c5158cee256680fbde0",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -663,6 +733,7 @@
         "rule_type": 0,
         "rule_status": 201,
         "knowledge_id": "aJksF3Y7x1Bc",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -725,15 +796,15 @@
       "title_bilingual": "帮助台/与本地 Shopify 中的活动指标进行聊天？ / Helpdesk/chat with indicators of activity in native Shopify?"
     },
     {
-      "id": "ee355eb84286a60b94c11df45b8063911871bc4e",
+      "id": "41bda9dcda8690e60afd232e64cc822f8cc71f76",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《创作者【违规营销内容】处置细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNuPU?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -744,6 +815,7 @@
         "rule_type": 0,
         "rule_status": 201,
         "knowledge_id": "aJkrRkeCNuPU",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -778,7 +850,7 @@
       "url": "https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider",
       "published_at": "2026-06-11T13:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -878,15 +950,15 @@
       "title_bilingual": "重复购买率确实很低 / Repeat purchase rate is really low"
     },
     {
-      "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
+      "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -897,6 +969,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkrRkeCNjeW",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -923,15 +996,15 @@
       "title_bilingual": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知"
     },
     {
-      "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
+      "id": "0bee5e39656239effbd913bb9a642663c851fb60",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -942,6 +1015,7 @@
         "rule_type": 0,
         "rule_status": 201,
         "knowledge_id": "aJkw6NXXPDHC",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -1049,7 +1123,7 @@
       "url": "https://www.reddit.com/r/ecommerce/comments/1u2vd1j/what_are_some_ecommerce_templates_that_still",
       "published_at": "2026-06-11T10:35:00Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.reddit.com/r/ecommerce/.rss",
         "feed_home": "https://www.reddit.com/r/ecommerce/"
@@ -1177,15 +1251,15 @@
       "title_bilingual": "您如何根据供应商发票更新 Shopify 库存？ / How are you updating Shopify inventory from supplier invoices?"
     },
     {
-      "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
+      "id": "ce57b94717309736cc5d6ec9ac9924dc182f40f9",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
       "published_at": "2026-06-11T09:36:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1196,6 +1270,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkuEyVRFNst",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -1301,7 +1376,7 @@
       "url": "https://www.adweek.com/commerce/amazon-exec-reveals-what-the-new-alexa-has-that-rufus-didnt",
       "published_at": "2026-06-11T09:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.adweek.com/feed/",
         "feed_home": "https://www.adweek.com/commerce"
@@ -1482,7 +1557,7 @@
       "url": "https://xiaguangshe.com/14453",
       "published_at": "2026-06-11T06:04:51Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -1589,7 +1664,7 @@
       "url": "https://www.reddit.com/r/ecommerce/comments/1u2olf1/should_i_switch_to_shopify",
       "published_at": "2026-06-11T04:12:03Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.reddit.com/r/ecommerce/.rss",
         "feed_home": "https://www.reddit.com/r/ecommerce/"
@@ -1618,15 +1693,15 @@
       "title_bilingual": "我应该切换到 Shopify / Should I switch to Shopify"
     },
     {
-      "id": "cfbfdf06e6ce4d46730bbf90aa0aea45a69e6372",
+      "id": "e9495a8852bcb0060cb2989b3ef939e1140aba5e",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《店铺类型规范》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
       "published_at": "2026-06-11T03:01:40Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1637,6 +1712,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkqnYhe9oDu",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -2065,7 +2141,7 @@
       "url": "https://www.reddit.com/r/ecommerce/comments/1u2a27t/ideas_for_mrpwms_for_complex_shopifyamazon_d2cb2b",
       "published_at": "2026-06-10T18:09:26Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.reddit.com/r/ecommerce/.rss",
         "feed_home": "https://www.reddit.com/r/ecommerce/"
@@ -2141,7 +2217,7 @@
       "url": "https://changelog.shopify.com/posts/shopify-collective-is-now-available-in-australia",
       "published_at": "2026-06-10T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -2253,7 +2329,7 @@
       "url": "https://changelog.shopify.com/posts/shipping-performance-metrics-and-verified-tracking-badge-in-shopify-collective",
       "published_at": "2026-06-10T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -2361,7 +2437,7 @@
       "url": "https://www.retaildive.com/news/amazon-prime-day-competitor-walmart-deals-event-june/822471",
       "published_at": "2026-06-10T14:47:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.retaildive.com/feeds/news",
         "feed_home": "https://www.retaildive.com/topic/e-commerce/"
@@ -2435,7 +2511,7 @@
       "url": "https://www.reddit.com/r/ecommerce/comments/1u23vvl/shopify_ajansı_seçerken_neye_bakmam_lazım",
       "published_at": "2026-06-10T14:31:48Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.reddit.com/r/ecommerce/.rss",
         "feed_home": "https://www.reddit.com/r/ecommerce/"
@@ -2464,15 +2540,15 @@
       "title_bilingual": "Shopify ajansı seçerken neye bakmam lazım"
     },
     {
-      "id": "83df403335ee69ca78eb9c01619802bd05455336",
+      "id": "0870406c8469871511d281919f202c714dd8f4ff",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
       "published_at": "2026-06-10T13:16:44Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2483,6 +2559,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkqnYT566kN",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -2510,15 +2587,15 @@
       "title_bilingual": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知"
     },
     {
-      "id": "c2ab251ee363b14a73c6960416923fc8b425ebb8",
+      "id": "f082d79d86a507468daeceb43b6b6b3210391434",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《珠宝文玩限制推广商品创作者准入细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
       "published_at": "2026-06-10T13:09:01Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2529,6 +2606,7 @@
         "rule_type": 0,
         "rule_status": 201,
         "knowledge_id": "aJktZaNTeeUJ",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -2670,7 +2748,7 @@
       "url": "https://xiaguangshe.com/14444",
       "published_at": "2026-06-10T11:59:16Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -2697,15 +2775,15 @@
       "title_bilingual": "2026跨境“黄金窗口”，中国商品席卷东南亚"
     },
     {
-      "id": "71fffa5ccf8f9c3a92f28870c95687deaaf2eb7e",
+      "id": "cac6473477d3df8947abf093047f4a67f8c2332b",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于废止《抖音电商古董艺术品产业带服务商准入、常规考核规范》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
       "published_at": "2026-06-10T11:34:12Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2716,6 +2794,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkqnYT55w1Q",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -2777,15 +2856,15 @@
       "title_bilingual": "Inventory to sell elsewhere."
     },
     {
-      "id": "e80215e249b1a3c242fef0f8c3ae34ec2f2727ed",
+      "id": "7461aeed2dd2b4dcaa3352713342c853e0089e27",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于废止《二手数码行业品牌服务商准入标准》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9Tjy",
       "published_at": "2026-06-10T11:21:00Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2796,6 +2875,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkqnYhe9Tjy",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -2858,15 +2938,15 @@
       "title_bilingual": "In-Stock Head Start vs Pre-Launch Vine"
     },
     {
-      "id": "cc9f2f8a79eb831d9c5a9bf1e45b111033b6f8c4",
+      "id": "06a3d420375d8531271b74ee561906a1583abc0a",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《商家【类目错放】细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55mGS",
       "published_at": "2026-06-10T10:03:13Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2877,6 +2957,7 @@
         "rule_type": 0,
         "rule_status": 201,
         "knowledge_id": "aJkqnYT55mGS",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -2941,15 +3022,15 @@
       "title_bilingual": "Custom gift box store on Shopify, how should I setup the options?"
     },
     {
-      "id": "72efea99106184ed59e3445a1924a480b29df818",
+      "id": "d9b07423ea88830b8eb550b4376d7264cc2a5e23",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于废止《抖音商城超值购招商规则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuECtrT",
       "published_at": "2026-06-10T09:09:52Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2960,6 +3041,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJksBkuECtrT",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -3249,7 +3331,7 @@
       "url": "https://xiaguangshe.com/14435",
       "published_at": "2026-06-09T12:23:25Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -3359,7 +3441,7 @@
       "url": "https://www.digitalcommerce360.com/2026/06/08/amazons-alexa-for-shopping-adds-customization-feature-for-merch",
       "published_at": "2026-06-08T22:32:29Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.digitalcommerce360.com/feed/",
         "feed_home": "https://www.digitalcommerce360.com"
@@ -3431,7 +3513,7 @@
       "url": "https://changelog.shopify.com/posts/multi-location-pickup-is-now-available-in-pos",
       "published_at": "2026-06-08T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -3504,7 +3586,7 @@
       "url": "https://changelog.shopify.com/posts/improved-catalog-publishing",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -3540,7 +3622,7 @@
       "url": "https://shopify.dev/changelog/headless-checkout-sso-is-now-documented-with-ssosilent",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -3761,7 +3843,7 @@
       "url": "https://shopify.dev/changelog/giftcardcashouttransaction-now-resolvable-from-giftcardtransaction",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -3797,7 +3879,7 @@
       "url": "https://shopify.dev/changelog/gift-card-local-currency-support",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -3833,7 +3915,7 @@
       "url": "https://shopify.dev/changelog/inventory-transfer-webhooks-include-origin-and-destination-location-ids-and-mutation-documentation-clarified",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -3869,7 +3951,7 @@
       "url": "https://changelog.shopify.com/posts/schedule-publish-and-a-b-test-new-themes-and-checkout-and-customer-account-configurations",
       "published_at": "2026-06-05T14:30:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -3899,6 +3981,76 @@
   ],
   "items_ai": [
     {
+      "id": "61662144125202a3ed7c1f6f62aa2dc806b5787b",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "ReadHub",
+      "title": "我国件杂货国际物流发展整体稳健",
+      "url": "https://readhub.cn/topic/8ttR8U14klP",
+      "published_at": "2026-06-12T03:26:31Z",
+      "first_seen_at": "2026-06-12T03:33:57.585408Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
+      "meta": {
+        "feed_url": "https://readhub.cn/rss",
+        "feed_home": "https://readhub.cn/"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.65,
+      "ai_label": "cross_border",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "物流",
+        "物流"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.65,
+      "topic_label": "cross_border",
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "title_original": "我国件杂货国际物流发展整体稳健",
+      "title_en": null,
+      "title_zh": "我国件杂货国际物流发展整体稳健",
+      "title_bilingual": "我国件杂货国际物流发展整体稳健"
+    },
+    {
+      "id": "ff69f7d1eba20e9bc52132cc076c6deb9f64e2ea",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "36Kr",
+      "title": "我国件杂货国际物流发展整体稳健",
+      "url": "https://36kr.com/newsflashes/3849621359121411?f=rss",
+      "published_at": "2026-06-12T03:17:21Z",
+      "first_seen_at": "2026-06-12T03:25:24.434688Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
+      "meta": {
+        "feed_url": "https://36kr.com/feed",
+        "feed_home": "https://36kr.com/"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.65,
+      "ai_label": "cross_border",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "物流",
+        "物流"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.65,
+      "topic_label": "cross_border",
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "title_original": "我国件杂货国际物流发展整体稳健",
+      "title_en": null,
+      "title_zh": "我国件杂货国际物流发展整体稳健",
+      "title_bilingual": "我国件杂货国际物流发展整体稳健"
+    },
+    {
       "id": "a9965e850c05c60a1816d8be7f10cee777c98bab",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -3907,7 +4059,7 @@
       "url": "https://xiaguangshe.com/14455",
       "published_at": "2026-06-12T01:07:15Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -3944,7 +4096,7 @@
       "url": "https://www.ecommercebytes.com/2026/06/11/amazon-to-use-ai-to-enforce-new-product-title-limits",
       "published_at": "2026-06-11T20:20:49Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.ecommercebytes.com/feed/",
         "feed_home": "https://www.ecommercebytes.com/"
@@ -3981,7 +4133,7 @@
       "url": "https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components",
       "published_at": "2026-06-11T18:00:00Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -4089,7 +4241,7 @@
       "url": "https://searchengineland.com/amazon-turns-alexa-into-a-shopping-agent-and-an-advertising-platform-479905",
       "published_at": "2026-06-11T16:26:44Z",
       "first_seen_at": "2026-06-11T17:50:46.803947Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://searchengineland.com/feed",
         "feed_home": "https://searchengineland.com/commerce"
@@ -4414,7 +4566,7 @@
       "url": "https://changelog.shopify.com/posts/unified-pos-staff-management",
       "published_at": "2026-06-11T14:15:00Z",
       "first_seen_at": "2026-06-11T16:33:58.074400Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -4515,15 +4667,15 @@
       "title_bilingual": "结帐时营销选择加入框的问题（Attentive 和 Klaviyo） / Issues with Marketing Opt-In Box at Checkout (Attentive & Klaviyo)"
     },
     {
-      "id": "ff32c0619083d402af11b77e73ddeac9a6fa1bbc",
+      "id": "03e75dee8c02484036232c5158cee256680fbde0",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4534,6 +4686,7 @@
         "rule_type": 0,
         "rule_status": 201,
         "knowledge_id": "aJksF3Y7x1Bc",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -4596,15 +4749,15 @@
       "title_bilingual": "帮助台/与本地 Shopify 中的活动指标进行聊天？ / Helpdesk/chat with indicators of activity in native Shopify?"
     },
     {
-      "id": "ee355eb84286a60b94c11df45b8063911871bc4e",
+      "id": "41bda9dcda8690e60afd232e64cc822f8cc71f76",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《创作者【违规营销内容】处置细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNuPU?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4615,6 +4768,7 @@
         "rule_type": 0,
         "rule_status": 201,
         "knowledge_id": "aJkrRkeCNuPU",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -4649,7 +4803,7 @@
       "url": "https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider",
       "published_at": "2026-06-11T13:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -4749,15 +4903,15 @@
       "title_bilingual": "重复购买率确实很低 / Repeat purchase rate is really low"
     },
     {
-      "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
+      "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4768,6 +4922,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkrRkeCNjeW",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -4794,15 +4949,15 @@
       "title_bilingual": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知"
     },
     {
-      "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
+      "id": "0bee5e39656239effbd913bb9a642663c851fb60",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4813,6 +4968,7 @@
         "rule_type": 0,
         "rule_status": 201,
         "knowledge_id": "aJkw6NXXPDHC",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -4920,7 +5076,7 @@
       "url": "https://www.reddit.com/r/ecommerce/comments/1u2vd1j/what_are_some_ecommerce_templates_that_still",
       "published_at": "2026-06-11T10:35:00Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.reddit.com/r/ecommerce/.rss",
         "feed_home": "https://www.reddit.com/r/ecommerce/"
@@ -5048,15 +5204,15 @@
       "title_bilingual": "您如何根据供应商发票更新 Shopify 库存？ / How are you updating Shopify inventory from supplier invoices?"
     },
     {
-      "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
+      "id": "ce57b94717309736cc5d6ec9ac9924dc182f40f9",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
       "published_at": "2026-06-11T09:36:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5067,6 +5223,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkuEyVRFNst",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -5172,7 +5329,7 @@
       "url": "https://www.adweek.com/commerce/amazon-exec-reveals-what-the-new-alexa-has-that-rufus-didnt",
       "published_at": "2026-06-11T09:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.adweek.com/feed/",
         "feed_home": "https://www.adweek.com/commerce"
@@ -5353,7 +5510,7 @@
       "url": "https://xiaguangshe.com/14453",
       "published_at": "2026-06-11T06:04:51Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -5460,7 +5617,7 @@
       "url": "https://www.reddit.com/r/ecommerce/comments/1u2olf1/should_i_switch_to_shopify",
       "published_at": "2026-06-11T04:12:03Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.reddit.com/r/ecommerce/.rss",
         "feed_home": "https://www.reddit.com/r/ecommerce/"
@@ -5489,15 +5646,15 @@
       "title_bilingual": "我应该切换到 Shopify / Should I switch to Shopify"
     },
     {
-      "id": "cfbfdf06e6ce4d46730bbf90aa0aea45a69e6372",
+      "id": "e9495a8852bcb0060cb2989b3ef939e1140aba5e",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《店铺类型规范》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
       "published_at": "2026-06-11T03:01:40Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5508,6 +5665,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkqnYhe9oDu",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -5936,7 +6094,7 @@
       "url": "https://www.reddit.com/r/ecommerce/comments/1u2a27t/ideas_for_mrpwms_for_complex_shopifyamazon_d2cb2b",
       "published_at": "2026-06-10T18:09:26Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.reddit.com/r/ecommerce/.rss",
         "feed_home": "https://www.reddit.com/r/ecommerce/"
@@ -6012,7 +6170,7 @@
       "url": "https://changelog.shopify.com/posts/shopify-collective-is-now-available-in-australia",
       "published_at": "2026-06-10T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -6124,7 +6282,7 @@
       "url": "https://changelog.shopify.com/posts/shipping-performance-metrics-and-verified-tracking-badge-in-shopify-collective",
       "published_at": "2026-06-10T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -6232,7 +6390,7 @@
       "url": "https://www.retaildive.com/news/amazon-prime-day-competitor-walmart-deals-event-june/822471",
       "published_at": "2026-06-10T14:47:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.retaildive.com/feeds/news",
         "feed_home": "https://www.retaildive.com/topic/e-commerce/"
@@ -6306,7 +6464,7 @@
       "url": "https://www.reddit.com/r/ecommerce/comments/1u23vvl/shopify_ajansı_seçerken_neye_bakmam_lazım",
       "published_at": "2026-06-10T14:31:48Z",
       "first_seen_at": "2026-06-11T17:12:51.580593Z",
-      "last_seen_at": "2026-06-11T17:50:46.803947Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.reddit.com/r/ecommerce/.rss",
         "feed_home": "https://www.reddit.com/r/ecommerce/"
@@ -6335,15 +6493,15 @@
       "title_bilingual": "Shopify ajansı seçerken neye bakmam lazım"
     },
     {
-      "id": "83df403335ee69ca78eb9c01619802bd05455336",
+      "id": "0870406c8469871511d281919f202c714dd8f4ff",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
       "published_at": "2026-06-10T13:16:44Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -6354,6 +6512,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkqnYT566kN",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -6381,15 +6540,15 @@
       "title_bilingual": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知"
     },
     {
-      "id": "c2ab251ee363b14a73c6960416923fc8b425ebb8",
+      "id": "f082d79d86a507468daeceb43b6b6b3210391434",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《珠宝文玩限制推广商品创作者准入细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
       "published_at": "2026-06-10T13:09:01Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -6400,6 +6559,7 @@
         "rule_type": 0,
         "rule_status": 201,
         "knowledge_id": "aJktZaNTeeUJ",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -6541,7 +6701,7 @@
       "url": "https://xiaguangshe.com/14444",
       "published_at": "2026-06-10T11:59:16Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -6568,15 +6728,15 @@
       "title_bilingual": "2026跨境“黄金窗口”，中国商品席卷东南亚"
     },
     {
-      "id": "71fffa5ccf8f9c3a92f28870c95687deaaf2eb7e",
+      "id": "cac6473477d3df8947abf093047f4a67f8c2332b",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于废止《抖音电商古董艺术品产业带服务商准入、常规考核规范》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
       "published_at": "2026-06-10T11:34:12Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -6587,6 +6747,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkqnYT55w1Q",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -6648,15 +6809,15 @@
       "title_bilingual": "Inventory to sell elsewhere."
     },
     {
-      "id": "e80215e249b1a3c242fef0f8c3ae34ec2f2727ed",
+      "id": "7461aeed2dd2b4dcaa3352713342c853e0089e27",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于废止《二手数码行业品牌服务商准入标准》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9Tjy",
       "published_at": "2026-06-10T11:21:00Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -6667,6 +6828,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJkqnYhe9Tjy",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -6729,15 +6891,15 @@
       "title_bilingual": "In-Stock Head Start vs Pre-Launch Vine"
     },
     {
-      "id": "cc9f2f8a79eb831d9c5a9bf1e45b111033b6f8c4",
+      "id": "06a3d420375d8531271b74ee561906a1583abc0a",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于修订《商家【类目错放】细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55mGS",
       "published_at": "2026-06-10T10:03:13Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -6748,6 +6910,7 @@
         "rule_type": 0,
         "rule_status": 201,
         "knowledge_id": "aJkqnYT55mGS",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -6812,15 +6975,15 @@
       "title_bilingual": "Custom gift box store on Shopify, how should I setup the options?"
     },
     {
-      "id": "72efea99106184ed59e3445a1924a480b29df818",
+      "id": "d9b07423ea88830b8eb550b4376d7264cc2a5e23",
       "site_id": "websource",
       "site_name": "重点网页源",
       "source": "抖音电商规则中心",
       "title": "关于废止《抖音商城超值购招商规则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuECtrT",
       "published_at": "2026-06-10T09:09:52Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -6831,6 +6994,7 @@
         "rule_type": 0,
         "rule_status": 0,
         "knowledge_id": "aJksBkuECtrT",
+        "article_url_source": "douyin_articlev0",
         "published_time_source": "api"
       },
       "ai_is_related": true,
@@ -7120,7 +7284,7 @@
       "url": "https://xiaguangshe.com/14435",
       "published_at": "2026-06-09T12:23:25Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -7230,7 +7394,7 @@
       "url": "https://www.digitalcommerce360.com/2026/06/08/amazons-alexa-for-shopping-adds-customization-feature-for-merch",
       "published_at": "2026-06-08T22:32:29Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://www.digitalcommerce360.com/feed/",
         "feed_home": "https://www.digitalcommerce360.com"
@@ -7302,7 +7466,7 @@
       "url": "https://changelog.shopify.com/posts/multi-location-pickup-is-now-available-in-pos",
       "published_at": "2026-06-08T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -7375,7 +7539,7 @@
       "url": "https://changelog.shopify.com/posts/improved-catalog-publishing",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -7411,7 +7575,7 @@
       "url": "https://shopify.dev/changelog/headless-checkout-sso-is-now-documented-with-ssosilent",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -7632,7 +7796,7 @@
       "url": "https://shopify.dev/changelog/giftcardcashouttransaction-now-resolvable-from-giftcardtransaction",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -7668,7 +7832,7 @@
       "url": "https://shopify.dev/changelog/gift-card-local-currency-support",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -7704,7 +7868,7 @@
       "url": "https://shopify.dev/changelog/inventory-transfer-webhooks-include-origin-and-destination-location-ids-and-mutation-documentation-clarified",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -7740,7 +7904,7 @@
       "url": "https://changelog.shopify.com/posts/schedule-publish-and-a-b-test-new-themes-and-checkout-and-customer-account-configurations",
       "published_at": "2026-06-05T14:30:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T02:57:42.686398Z",
+      "last_seen_at": "2026-06-12T03:33:57.585408Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"

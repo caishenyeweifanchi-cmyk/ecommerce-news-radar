@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-12T02:57:42.686398Z",
+  "generated_at": "2026-06-12T03:33:57.585408Z",
   "window_hours": 168,
   "total_items": 11,
   "items": [
     {
-      "story_id": "story_a02001e1bd79",
+      "story_id": "story_71b89768f94e",
       "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "ff32c0619083d402af11b77e73ddeac9a6fa1bbc",
+          "id": "03e75dee8c02484036232c5158cee256680fbde0",
           "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
           "published_at": "2026-06-11T13:40:33Z"
         },
         {
-          "id": "ee355eb84286a60b94c11df45b8063911871bc4e",
+          "id": "41bda9dcda8690e60afd232e64cc822f8cc71f76",
           "title": "关于修订《创作者【违规营销内容】处置细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNuPU?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -36,18 +36,18 @@
       ],
       "items": [
         {
-          "id": "ff32c0619083d402af11b77e73ddeac9a6fa1bbc",
+          "id": "03e75dee8c02484036232c5158cee256680fbde0",
           "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
           "published_at": "2026-06-11T13:40:33Z"
         },
         {
-          "id": "ee355eb84286a60b94c11df45b8063911871bc4e",
+          "id": "41bda9dcda8690e60afd232e64cc822f8cc71f76",
           "title": "关于修订《创作者【违规营销内容】处置细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNuPU?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -56,14 +56,14 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8912,
-      "importance": 0.8912,
-      "importance_score": 0.8912,
+      "score": 0.8905,
+      "importance": 0.8905,
+      "importance_score": 0.8905,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.9209,
+        "recency": 0.9173,
         "story_heat": 0.25
       },
       "category": "official",
@@ -76,9 +76,9 @@
       "earliest_at": "2026-06-11T13:10:27Z",
       "latest_at": "2026-06-11T13:40:33Z",
       "primary_item": {
-        "id": "ff32c0619083d402af11b77e73ddeac9a6fa1bbc",
+        "id": "03e75dee8c02484036232c5158cee256680fbde0",
         "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -92,22 +92,23 @@
           "rule_type": 0,
           "rule_status": 201,
           "knowledge_id": "aJksF3Y7x1Bc",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_4910d1273257",
+      "story_id": "story_e1286e4ba64a",
       "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
+          "id": "0bee5e39656239effbd913bb9a642663c851fb60",
           "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -120,9 +121,9 @@
       ],
       "items": [
         {
-          "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
+          "id": "0bee5e39656239effbd913bb9a642663c851fb60",
           "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -131,14 +132,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8646,
-      "importance": 0.8646,
-      "importance_score": 0.8646,
+      "score": 0.8639,
+      "importance": 0.8639,
+      "importance_score": 0.8639,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.9129,
+        "recency": 0.9093,
         "story_heat": 0.0
       },
       "category": "official",
@@ -150,9 +151,9 @@
       "earliest_at": "2026-06-11T12:19:17Z",
       "latest_at": "2026-06-11T12:19:17Z",
       "primary_item": {
-        "id": "bf7ce6f6b4b9f4bffbeb1620639b77232a055925",
+        "id": "0bee5e39656239effbd913bb9a642663c851fb60",
         "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkw6NXXPDHC?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -166,22 +167,23 @@
           "rule_type": 0,
           "rule_status": 201,
           "knowledge_id": "aJkw6NXXPDHC",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_cac1a913dc9b",
+      "story_id": "story_806a4315559e",
       "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
+          "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
           "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -194,9 +196,9 @@
       ],
       "items": [
         {
-          "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
+          "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
           "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -205,14 +207,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8646,
-      "importance": 0.8646,
-      "importance_score": 0.8646,
+      "score": 0.8639,
+      "importance": 0.8639,
+      "importance_score": 0.8639,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.9131,
+        "recency": 0.9095,
         "story_heat": 0.0
       },
       "category": "official",
@@ -224,9 +226,9 @@
       "earliest_at": "2026-06-11T12:21:33Z",
       "latest_at": "2026-06-11T12:21:33Z",
       "primary_item": {
-        "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
+        "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
         "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -240,22 +242,23 @@
           "rule_type": 0,
           "rule_status": 0,
           "knowledge_id": "aJkrRkeCNjeW",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_8d10649411c6",
+      "story_id": "story_47d11aa8eac3",
       "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
+          "id": "ce57b94717309736cc5d6ec9ac9924dc182f40f9",
           "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -268,9 +271,9 @@
       ],
       "items": [
         {
-          "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
+          "id": "ce57b94717309736cc5d6ec9ac9924dc182f40f9",
           "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -279,14 +282,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8613,
-      "importance": 0.8613,
-      "importance_score": 0.8613,
+      "score": 0.8606,
+      "importance": 0.8606,
+      "importance_score": 0.8606,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.8967,
+        "recency": 0.8931,
         "story_heat": 0.0
       },
       "category": "official",
@@ -298,9 +301,9 @@
       "earliest_at": "2026-06-11T09:36:33Z",
       "latest_at": "2026-06-11T09:36:33Z",
       "primary_item": {
-        "id": "9fb31f4ac57915ccd8021068df34355b4a090f11",
+        "id": "ce57b94717309736cc5d6ec9ac9924dc182f40f9",
         "title": "关于修订《创作者【违规宣传价格】实施细则》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkuEyVRFNst?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -314,22 +317,23 @@
           "rule_type": 0,
           "rule_status": 0,
           "knowledge_id": "aJkuEyVRFNst",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_09da6b6d3866",
+      "story_id": "story_d03f94b3a6cb",
       "title": "关于修订《店铺类型规范》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "cfbfdf06e6ce4d46730bbf90aa0aea45a69e6372",
+          "id": "e9495a8852bcb0060cb2989b3ef939e1140aba5e",
           "title": "关于修订《店铺类型规范》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -342,9 +346,9 @@
       ],
       "items": [
         {
-          "id": "cfbfdf06e6ce4d46730bbf90aa0aea45a69e6372",
+          "id": "e9495a8852bcb0060cb2989b3ef939e1140aba5e",
           "title": "关于修订《店铺类型规范》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -353,14 +357,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8535,
-      "importance": 0.8535,
-      "importance_score": 0.8535,
+      "score": 0.8528,
+      "importance": 0.8528,
+      "importance_score": 0.8528,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.8575,
+        "recency": 0.8539,
         "story_heat": 0.0
       },
       "category": "official",
@@ -372,9 +376,9 @@
       "earliest_at": "2026-06-11T03:01:40Z",
       "latest_at": "2026-06-11T03:01:40Z",
       "primary_item": {
-        "id": "cfbfdf06e6ce4d46730bbf90aa0aea45a69e6372",
+        "id": "e9495a8852bcb0060cb2989b3ef939e1140aba5e",
         "title": "关于修订《店铺类型规范》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -388,22 +392,23 @@
           "rule_type": 0,
           "rule_status": 0,
           "knowledge_id": "aJkqnYhe9oDu",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_2d8afa247b1f",
+      "story_id": "story_471f0cd60443",
       "title": "关于修订《商家【类目错放】细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55mGS",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55mGS",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "cc9f2f8a79eb831d9c5a9bf1e45b111033b6f8c4",
+          "id": "06a3d420375d8531271b74ee561906a1583abc0a",
           "title": "关于修订《商家【类目错放】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55mGS",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -416,9 +421,9 @@
       ],
       "items": [
         {
-          "id": "cc9f2f8a79eb831d9c5a9bf1e45b111033b6f8c4",
+          "id": "06a3d420375d8531271b74ee561906a1583abc0a",
           "title": "关于修订《商家【类目错放】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55mGS",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -427,14 +432,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8513,
-      "importance": 0.8513,
-      "importance_score": 0.8513,
+      "score": 0.8506,
+      "importance": 0.8506,
+      "importance_score": 0.8506,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7565,
+        "recency": 0.7529,
         "story_heat": 0.0
       },
       "category": "official",
@@ -446,9 +451,9 @@
       "earliest_at": "2026-06-10T10:03:13Z",
       "latest_at": "2026-06-10T10:03:13Z",
       "primary_item": {
-        "id": "cc9f2f8a79eb831d9c5a9bf1e45b111033b6f8c4",
+        "id": "06a3d420375d8531271b74ee561906a1583abc0a",
         "title": "关于修订《商家【类目错放】细则》的意见征集通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55mGS",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -462,22 +467,23 @@
           "rule_type": 0,
           "rule_status": 201,
           "knowledge_id": "aJkqnYT55mGS",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_75b7aa032a6f",
+      "story_id": "story_b24d7830f3e8",
       "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "83df403335ee69ca78eb9c01619802bd05455336",
+          "id": "0870406c8469871511d281919f202c714dd8f4ff",
           "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -490,9 +496,9 @@
       ],
       "items": [
         {
-          "id": "83df403335ee69ca78eb9c01619802bd05455336",
+          "id": "0870406c8469871511d281919f202c714dd8f4ff",
           "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -501,14 +507,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8371,
-      "importance": 0.8371,
-      "importance_score": 0.8371,
+      "score": 0.8364,
+      "importance": 0.8364,
+      "importance_score": 0.8364,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.7757,
+        "recency": 0.7721,
         "story_heat": 0.0
       },
       "category": "official",
@@ -520,9 +526,9 @@
       "earliest_at": "2026-06-10T13:16:44Z",
       "latest_at": "2026-06-10T13:16:44Z",
       "primary_item": {
-        "id": "83df403335ee69ca78eb9c01619802bd05455336",
+        "id": "0870406c8469871511d281919f202c714dd8f4ff",
         "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -536,22 +542,23 @@
           "rule_type": 0,
           "rule_status": 0,
           "knowledge_id": "aJkqnYT566kN",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_1d735d7e7ca5",
+      "story_id": "story_cc93d78d8e60",
       "title": "关于修订《珠宝文玩限制推广商品创作者准入细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "c2ab251ee363b14a73c6960416923fc8b425ebb8",
+          "id": "f082d79d86a507468daeceb43b6b6b3210391434",
           "title": "关于修订《珠宝文玩限制推广商品创作者准入细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -564,9 +571,9 @@
       ],
       "items": [
         {
-          "id": "c2ab251ee363b14a73c6960416923fc8b425ebb8",
+          "id": "f082d79d86a507468daeceb43b6b6b3210391434",
           "title": "关于修订《珠宝文玩限制推广商品创作者准入细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -575,14 +582,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.837,
-      "importance": 0.837,
-      "importance_score": 0.837,
+      "score": 0.8363,
+      "importance": 0.8363,
+      "importance_score": 0.8363,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.7749,
+        "recency": 0.7713,
         "story_heat": 0.0
       },
       "category": "official",
@@ -594,9 +601,9 @@
       "earliest_at": "2026-06-10T13:09:01Z",
       "latest_at": "2026-06-10T13:09:01Z",
       "primary_item": {
-        "id": "c2ab251ee363b14a73c6960416923fc8b425ebb8",
+        "id": "f082d79d86a507468daeceb43b6b6b3210391434",
         "title": "关于修订《珠宝文玩限制推广商品创作者准入细则》的意见征集通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -610,22 +617,23 @@
           "rule_type": 0,
           "rule_status": 201,
           "knowledge_id": "aJktZaNTeeUJ",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_6d6f12d175ed",
+      "story_id": "story_d200e2e38f37",
       "title": "关于废止《抖音电商古董艺术品产业带服务商准入、常规考核规范》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "71fffa5ccf8f9c3a92f28870c95687deaaf2eb7e",
+          "id": "cac6473477d3df8947abf093047f4a67f8c2332b",
           "title": "关于废止《抖音电商古董艺术品产业带服务商准入、常规考核规范》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -638,9 +646,9 @@
       ],
       "items": [
         {
-          "id": "71fffa5ccf8f9c3a92f28870c95687deaaf2eb7e",
+          "id": "cac6473477d3df8947abf093047f4a67f8c2332b",
           "title": "关于废止《抖音电商古董艺术品产业带服务商准入、常规考核规范》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -649,14 +657,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8351,
-      "importance": 0.8351,
-      "importance_score": 0.8351,
+      "score": 0.8344,
+      "importance": 0.8344,
+      "importance_score": 0.8344,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.7655,
+        "recency": 0.7619,
         "story_heat": 0.0
       },
       "category": "official",
@@ -668,9 +676,9 @@
       "earliest_at": "2026-06-10T11:34:12Z",
       "latest_at": "2026-06-10T11:34:12Z",
       "primary_item": {
-        "id": "71fffa5ccf8f9c3a92f28870c95687deaaf2eb7e",
+        "id": "cac6473477d3df8947abf093047f4a67f8c2332b",
         "title": "关于废止《抖音电商古董艺术品产业带服务商准入、常规考核规范》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -684,22 +692,23 @@
           "rule_type": 0,
           "rule_status": 0,
           "knowledge_id": "aJkqnYT55w1Q",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_dc64eb513bda",
+      "story_id": "story_74da87e06667",
       "title": "关于废止《二手数码行业品牌服务商准入标准》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9Tjy",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9Tjy",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "e80215e249b1a3c242fef0f8c3ae34ec2f2727ed",
+          "id": "7461aeed2dd2b4dcaa3352713342c853e0089e27",
           "title": "关于废止《二手数码行业品牌服务商准入标准》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9Tjy",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -712,9 +721,9 @@
       ],
       "items": [
         {
-          "id": "e80215e249b1a3c242fef0f8c3ae34ec2f2727ed",
+          "id": "7461aeed2dd2b4dcaa3352713342c853e0089e27",
           "title": "关于废止《二手数码行业品牌服务商准入标准》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9Tjy",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -723,14 +732,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8348,
-      "importance": 0.8348,
-      "importance_score": 0.8348,
+      "score": 0.8341,
+      "importance": 0.8341,
+      "importance_score": 0.8341,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.7642,
+        "recency": 0.7606,
         "story_heat": 0.0
       },
       "category": "official",
@@ -742,9 +751,9 @@
       "earliest_at": "2026-06-10T11:21:00Z",
       "latest_at": "2026-06-10T11:21:00Z",
       "primary_item": {
-        "id": "e80215e249b1a3c242fef0f8c3ae34ec2f2727ed",
+        "id": "7461aeed2dd2b4dcaa3352713342c853e0089e27",
         "title": "关于废止《二手数码行业品牌服务商准入标准》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9Tjy",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -758,22 +767,23 @@
           "rule_type": 0,
           "rule_status": 0,
           "knowledge_id": "aJkqnYhe9Tjy",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_7f2929615515",
+      "story_id": "story_37e693753846",
       "title": "关于废止《抖音商城超值购招商规则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuECtrT",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuECtrT",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "72efea99106184ed59e3445a1924a480b29df818",
+          "id": "d9b07423ea88830b8eb550b4376d7264cc2a5e23",
           "title": "关于废止《抖音商城超值购招商规则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuECtrT",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -786,9 +796,9 @@
       ],
       "items": [
         {
-          "id": "72efea99106184ed59e3445a1924a480b29df818",
+          "id": "d9b07423ea88830b8eb550b4376d7264cc2a5e23",
           "title": "关于废止《抖音商城超值购招商规则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuECtrT",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
@@ -797,14 +807,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8322,
-      "importance": 0.8322,
-      "importance_score": 0.8322,
+      "score": 0.8315,
+      "importance": 0.8315,
+      "importance_score": 0.8315,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.7512,
+        "recency": 0.7476,
         "story_heat": 0.0
       },
       "category": "official",
@@ -816,9 +826,9 @@
       "earliest_at": "2026-06-10T09:09:52Z",
       "latest_at": "2026-06-10T09:09:52Z",
       "primary_item": {
-        "id": "72efea99106184ed59e3445a1924a480b29df818",
+        "id": "d9b07423ea88830b8eb550b4376d7264cc2a5e23",
         "title": "关于废止《抖音商城超值购招商规则》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuECtrT",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -832,6 +842,7 @@
           "rule_type": 0,
           "rule_status": 0,
           "knowledge_id": "aJksBkuECtrT",
+          "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
       }

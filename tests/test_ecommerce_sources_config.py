@@ -6,9 +6,12 @@ from scripts.ecommerce_relevance import score_ecommerce_relevance
 from scripts.update_news import (
     build_daily_brief_payload,
     build_web_source_snapshot_item,
+    canonical_douyin_article_url,
+    canonicalize_archive_item_ids,
     event_time,
     extract_datetime_from_text,
     extract_web_source_candidates,
+    fetch_douyin_rule_center_items,
     suppress_superseded_web_snapshots,
 )
 
@@ -157,13 +160,83 @@ def test_official_web_source_rule_scores_above_generic_threshold():
             "site_name": "重点网页源",
             "source": "抖音电商规则中心",
             "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-            "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
+            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
         }
     )
 
     assert result["is_ecommerce_related"] is True
     assert result["score"] >= 0.8
     assert result["label"] == "platform_policy"
+
+
+def test_douyin_rule_api_items_link_to_article_detail_page():
+    class Response:
+        def raise_for_status(self):
+            return None
+
+        def json(self):
+            return {
+                "data": {
+                    "rule_infos": [
+                        {
+                            "knowledge_id": "aJksF3Y7x1Bc",
+                            "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
+                            "update_time": "1781185233",
+                            "status_code": 201,
+                        }
+                    ]
+                }
+            }
+
+    class Session:
+        def get(self, *args, **kwargs):
+            return Response()
+
+    items = fetch_douyin_rule_center_items(
+        Session(),
+        {"id": "douyin_ecommerce_rule_center", "name": "抖音电商规则中心"},
+        datetime(2026, 6, 12, tzinfo=timezone.utc),
+    )
+
+    assert items[0].url == "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc"
+    assert items[0].meta["article_url_source"] == "douyin_articlev0"
+
+
+def test_douyin_rule_urls_are_canonicalized_to_article_detail_page():
+    old_url = "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules"
+
+    assert (
+        canonical_douyin_article_url(old_url)
+        == "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc"
+    )
+
+
+def test_archive_canonicalization_merges_old_douyin_rule_route():
+    old = {
+        "old": {
+            "id": "old",
+            "site_id": "websource",
+            "source": "抖音电商规则中心",
+            "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
+            "url": "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules",
+            "published_at": "2026-06-11T13:40:33Z",
+            "last_seen_at": "2026-06-12T01:00:00Z",
+        },
+        "new": {
+            "id": "new",
+            "site_id": "websource",
+            "source": "抖音电商规则中心",
+            "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
+            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+            "published_at": "2026-06-11T13:40:33Z",
+            "last_seen_at": "2026-06-12T02:00:00Z",
+        },
+    }
+
+    merged = canonicalize_archive_item_ids(old)
+
+    assert len(merged) == 1
+    assert next(iter(merged.values()))["url"] == "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc"
 
 
 def test_daily_brief_keeps_official_p0_rule_single_source():
