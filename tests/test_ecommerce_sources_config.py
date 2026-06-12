@@ -6,6 +6,8 @@ from scripts.ecommerce_relevance import score_ecommerce_relevance
 from scripts.update_news import (
     build_daily_brief_payload,
     build_web_source_snapshot_item,
+    event_time,
+    extract_datetime_from_text,
     extract_web_source_candidates,
     suppress_superseded_web_snapshots,
 )
@@ -18,9 +20,7 @@ def test_mandatory_cn_platform_sources_are_p0_required():
     payload = json.loads((ROOT / "feeds" / "ecommerce.web-sources.json").read_text(encoding="utf-8"))
     sources = payload["sources"]
 
-    assert len(sources) >= 30
-    assert all(source["priority"] == "P0" for source in sources)
-    assert all(source["required"] is True for source in sources)
+    assert len(sources) >= 150
 
     required_ids = {
         "taobao_rule_center",
@@ -40,6 +40,9 @@ def test_mandatory_cn_platform_sources_are_p0_required():
     }
     present_ids = {source["id"] for source in sources}
     assert required_ids <= present_ids
+    by_id = {source["id"]: source for source in sources}
+    assert all(by_id[source_id]["priority"] == "P0" for source_id in required_ids)
+    assert all(by_id[source_id]["required"] is True for source_id in required_ids)
 
 
 def test_direct_rss_opml_contains_batch_sources():
@@ -77,6 +80,30 @@ def test_web_source_adapter_extracts_rule_links():
     assert "支付结算政策变更通知" in titles
     assert all(item.site_id == "websource" for item in items)
     assert all(item.url.startswith("https://example.com/") for item in items)
+    assert all(item.published_at is None for item in items)
+    assert all(item.meta["published_time_source"] == "unconfirmed" for item in items)
+
+
+def test_web_source_adapter_uses_real_list_time_when_available():
+    html = """
+    <html><body>
+      <a href="/rule/abc">【二手3C数码】行业管理规范 2026-06-11 00:00:05</a>
+    </body></html>
+    """
+    source = {
+        "id": "douyin_rule_center",
+        "name": "抖音电商规则中心",
+        "platform": "抖音电商",
+        "domain": "平台规则",
+        "type": "规则中心",
+        "url": "https://school.jinritemai.com/doudian/web/rules",
+        "priority": "P0",
+    }
+
+    items = extract_web_source_candidates(html, source, datetime(2026, 6, 12, tzinfo=timezone.utc))
+
+    assert items[0].published_at == datetime(2026, 6, 10, 16, 0, 5, tzinfo=timezone.utc)
+    assert items[0].meta["published_time_source"] == "list_text"
 
 
 def test_web_source_snapshot_tracks_js_shell_pages():
@@ -101,8 +128,26 @@ def test_web_source_snapshot_tracks_js_shell_pages():
     assert item is not None
     assert item.title == "页面监控：JS规则中心 · 规则中心"
     assert item.url == "https://example.com/rules"
+    assert item.published_at is None
     assert item.meta["web_source_mode"] == "page_snapshot"
     assert item.meta["web_source_snapshot_hash"]
+    assert item.meta["published_time_source"] == "snapshot"
+
+
+def test_event_time_for_websource_never_falls_back_to_seen_time():
+    assert event_time(
+        {
+            "site_id": "websource",
+            "published_at": None,
+            "first_seen_at": "2026-06-12T01:12:00Z",
+        }
+    ) is None
+
+
+def test_extract_datetime_from_text_supports_full_chinese_rule_time():
+    parsed = extract_datetime_from_text("巨量星图达人管理规则 2026-05-12 15:02:46", datetime(2026, 6, 12, tzinfo=timezone.utc))
+
+    assert parsed == datetime(2026, 5, 12, 7, 2, 46, tzinfo=timezone.utc)
 
 
 def test_official_web_source_rule_scores_above_generic_threshold():

@@ -37,14 +37,14 @@
           </div>
         </div>
         <nav class="nav-list">
-          <a class="active" href="#overview" data-target="overview" data-category="">总览</a>
-          <a href="#bolePicksWrap" data-target="bolePicksWrap">热点精选</a>
-          <a href="#newsList" data-target="listWrap" data-category="platform_policy">平台规则</a>
-          <a href="#newsList" data-target="listWrap" data-category="content_commerce">内容电商</a>
-          <a href="#newsList" data-target="listWrap" data-category="cross_border">跨境电商</a>
-          <a href="#newsList" data-target="listWrap" data-category="traffic_marketing">投流营销</a>
-          <a href="#sourceHealth" data-target="advancedPanel">信息源</a>
-          <a href="#advancedPanel" data-target="advancedPanel">设置</a>
+          <a class="active" href="#bolePicksWrap" data-target="bolePicksWrap">精选</a>
+          <a href="#listWrap" data-target="listWrap" data-category="">全部动态</a>
+          <a href="#dailyReportWrap" data-target="dailyReportWrap">电商日报</a>
+          <a href="#agentAccessWrap" data-target="agentAccessWrap">Agent 接入</a>
+          <a href="#aboutWrap" data-target="aboutWrap">关于</a>
+          <a href="#updateLogWrap" data-target="updateLogWrap">更新日志</a>
+          <a href="#feedbackWrap" data-target="feedbackWrap">反馈</a>
+          <a href="#sourceSubmitWrap" data-target="sourceSubmitWrap">信源提报</a>
         </nav>
       </aside>
 
@@ -172,6 +172,83 @@
               </div>
             </details>
           </aside>
+        </section>
+
+        <section class="plain-section" id="dailyReportWrap">
+          <div class="section-head">
+            <div>
+              <p class="section-eyebrow">DAILY BRIEF</p>
+              <h2>电商日报</h2>
+            </div>
+            <span id="dailyReportMeta">加载中...</span>
+          </div>
+          <div id="dailyReportList" class="daily-report-list"></div>
+        </section>
+
+        <section class="plain-section" id="agentAccessWrap">
+          <div class="section-head">
+            <div>
+              <p class="section-eyebrow">AGENT ACCESS</p>
+              <h2>Agent 接入</h2>
+            </div>
+          </div>
+          <div class="info-grid">
+            <div><strong>日报文件</strong><span>data/daily-brief.json，每次自动采集后生成。</span></div>
+            <div><strong>全量动态</strong><span>data/latest-24h.json，保留强相关电商信号。</span></div>
+            <div><strong>源健康</strong><span>data/source-status.json，记录哪些源成功、跳过或失败。</span></div>
+          </div>
+        </section>
+
+        <section class="plain-section" id="sourceSubmitWrap">
+          <div class="section-head">
+            <div>
+              <p class="section-eyebrow">SOURCE SUBMIT</p>
+              <h2>信源提报</h2>
+            </div>
+            <span>静态站先保存到本机浏览器，可复制给仓库维护者审核入库。</span>
+          </div>
+          <form class="source-submit-form" id="sourceSubmitForm">
+            <label><span>URL</span><input name="url" type="url" placeholder="https://..." required /></label>
+            <label><span>信源名称</span><input name="name" type="text" placeholder="例如：某平台规则中心" required /></label>
+            <label><span>推荐理由</span><textarea name="reason" placeholder="说明它为什么值得追踪，尤其是否有规则、公告、投流或跨境价值" required></textarea></label>
+            <label><span>提报人</span><input name="submitter" type="text" placeholder="可留空" /></label>
+            <button type="submit">保存提报</button>
+          </form>
+          <div class="submitted-sources" id="submittedSources"></div>
+        </section>
+
+        <section class="plain-section" id="aboutWrap">
+          <div class="section-head">
+            <div>
+              <p class="section-eyebrow">ABOUT</p>
+              <h2>关于电商热点雷达</h2>
+            </div>
+          </div>
+          <p class="section-copy">这个项目追踪电商平台规则、内容电商、跨境平台、投流营销、物流履约、支付合规、政策监管、卖家社区和行业媒体。核心原则是：有真实发布时间才进时间线，官方新规优先进入日报。</p>
+        </section>
+
+        <section class="plain-section" id="updateLogWrap">
+          <div class="section-head">
+            <div>
+              <p class="section-eyebrow">CHANGELOG</p>
+              <h2>更新日志</h2>
+            </div>
+          </div>
+          <ul class="simple-list">
+            <li>接入 159 个重点网页源，并把可 RSS 化的信息源同步进 OPML。</li>
+            <li>修复网页源时间线：不再用采集时间冒充规则发布时间。</li>
+            <li>官方规则、政策、处罚、违规治理类内容优先进入电商日报。</li>
+          </ul>
+        </section>
+
+        <section class="plain-section" id="feedbackWrap">
+          <div class="section-head">
+            <div>
+              <p class="section-eyebrow">FEEDBACK</p>
+              <h2>反馈</h2>
+            </div>
+          </div>
+          <p class="section-copy">发现错误时间、入口页误入日报、规则源漏采时，把页面标题、URL 和截图一起提交到信源提报区，后续可做成 GitHub Issue 或飞书表单。</p>
         </section>
 
       <section class="waytoagi-wrap" hidden>

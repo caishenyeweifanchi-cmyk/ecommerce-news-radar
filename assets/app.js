@@ -58,6 +58,10 @@ const bolePicksWrapEl = document.getElementById("bolePicksWrap");
 const boleViewToggleEl = document.getElementById("boleViewToggle");
 const boleHotBtnEl = document.getElementById("boleHotBtn");
 const boleTimelineBtnEl = document.getElementById("boleTimelineBtn");
+const dailyReportMetaEl = document.getElementById("dailyReportMeta");
+const dailyReportListEl = document.getElementById("dailyReportList");
+const sourceSubmitFormEl = document.getElementById("sourceSubmitForm");
+const submittedSourcesEl = document.getElementById("submittedSources");
 
 const SOURCE_KINDS = {
   official_ai: { label: "官方公告", tone: "official" },
@@ -382,6 +386,7 @@ function timelineIso(item) {
   const published = item.published_at || "";
   const seen = item.first_seen_at || "";
   const generated = state.generatedAt || "";
+  if (item.site_id === "websource") return published;
   if (published && generated) {
     const publishedMs = new Date(published).getTime();
     const generatedMs = new Date(generated).getTime();
@@ -390,6 +395,11 @@ function timelineIso(item) {
     }
   }
   return published || seen;
+}
+
+function itemDisplayTime(item) {
+  if (item.site_id === "websource") return item.published_at ? fmtTime(item.published_at) : "时间待确认";
+  return fmtTime(item.published_at || item.first_seen_at);
 }
 
 function timelineMs(item) {
@@ -846,6 +856,74 @@ function renderBolePicks() {
   renderBoleFallback(picks);
 }
 
+function renderDailyReport() {
+  if (!dailyReportMetaEl || !dailyReportListEl) return;
+  const brief = state.dailyBrief;
+  const items = brief && Array.isArray(brief.items) ? brief.items : [];
+  dailyReportMetaEl.textContent = brief
+    ? `${fmtTime(brief.generated_at)} · ${fmtNumber(items.length)} 条`
+    : "日报未生成";
+  dailyReportListEl.innerHTML = "";
+  if (!items.length) {
+    const empty = document.createElement("div");
+    empty.className = "empty-note";
+    empty.textContent = "当前日报没有命中高优先级故事。";
+    dailyReportListEl.appendChild(empty);
+    return;
+  }
+  items.forEach((story, index) => {
+    const node = document.createElement("article");
+    node.className = "daily-report-card";
+    const primary = story.primary_item || {};
+    node.innerHTML = `
+      <span>${String(index + 1).padStart(2, "0")}</span>
+      <div>
+        <strong>${story.title || primary.title || "未命名日报"}</strong>
+        <p>${story.summary || story.why || story.reason || "官方规则、平台政策或多源热点进入日报。"}</p>
+      </div>
+      <em>${story.score ? Math.round(Number(story.score) * 100) : story.score_percent || ""}</em>
+    `;
+    dailyReportListEl.appendChild(node);
+  });
+}
+
+function storedSubmissions() {
+  try {
+    return JSON.parse(localStorage.getItem("ecommerceRadarSourceSubmissions") || "[]");
+  } catch {
+    return [];
+  }
+}
+
+function renderSubmittedSources() {
+  if (!submittedSourcesEl) return;
+  const rows = storedSubmissions();
+  submittedSourcesEl.innerHTML = "";
+  const head = document.createElement("div");
+  head.className = "submitted-head";
+  head.innerHTML = `<strong>本机已保存提报</strong><button type="button">复制 JSON</button>`;
+  head.querySelector("button").addEventListener("click", async () => {
+    await navigator.clipboard.writeText(JSON.stringify(rows, null, 2));
+  });
+  submittedSourcesEl.appendChild(head);
+  if (!rows.length) {
+    const empty = document.createElement("div");
+    empty.className = "empty-note";
+    empty.textContent = "暂无提报。";
+    submittedSourcesEl.appendChild(empty);
+    return;
+  }
+  rows.slice().reverse().forEach((row) => {
+    const item = document.createElement("a");
+    item.className = "submitted-row";
+    item.href = row.url;
+    item.target = "_blank";
+    item.rel = "noopener noreferrer";
+    item.innerHTML = `<strong>${row.name}</strong><span>${row.reason}</span><em>${fmtTime(row.created_at)}</em>`;
+    submittedSourcesEl.appendChild(item);
+  });
+}
+
 function renderItemNode(item) {
   const node = itemTpl.content.firstElementChild.cloneNode(true);
   node.querySelector(".site").textContent = item.site_name;
@@ -859,7 +937,7 @@ function renderItemNode(item) {
   tagEl.textContent = `${labelText(item)} · ${score || "?"}分`;
   categoryEl.insertAdjacentElement("afterend", tagEl);
   node.querySelector(".source").textContent = `分区: ${item.source}`;
-  node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
+  node.querySelector(".time").textContent = itemDisplayTime(item);
 
   const titleEl = node.querySelector(".title");
   const zh = (item.title_zh || "").trim();
@@ -1320,6 +1398,7 @@ async function init() {
   } else {
     state.dailyBrief = null;
   }
+  renderDailyReport();
 
   if (newsResult.status === "fulfilled") {
     const payload = newsResult.value;
@@ -1451,6 +1530,28 @@ navLinkEls.forEach((link) => {
     history.replaceState(null, "", `#${targetId}`);
   });
 });
+
+if (sourceSubmitFormEl) {
+  sourceSubmitFormEl.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const formData = new FormData(sourceSubmitFormEl);
+    const row = {
+      url: String(formData.get("url") || "").trim(),
+      name: String(formData.get("name") || "").trim(),
+      reason: String(formData.get("reason") || "").trim(),
+      submitter: String(formData.get("submitter") || "").trim(),
+      created_at: new Date().toISOString(),
+    };
+    if (!row.url || !row.name || !row.reason) return;
+    const rows = storedSubmissions();
+    rows.push(row);
+    localStorage.setItem("ecommerceRadarSourceSubmissions", JSON.stringify(rows));
+    sourceSubmitFormEl.reset();
+    renderSubmittedSources();
+  });
+}
+
+renderSubmittedSources();
 
 if (waytoagiTodayBtnEl) {
   waytoagiTodayBtnEl.addEventListener("click", () => {

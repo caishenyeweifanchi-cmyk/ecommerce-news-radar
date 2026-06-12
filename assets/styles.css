@@ -146,6 +146,127 @@ a {
   padding: 28px 28px 48px;
 }
 
+.plain-section {
+  margin-top: 22px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.section-head h2 {
+  margin: 3px 0 0;
+  font-size: 24px;
+}
+
+.section-copy {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+.daily-report-list,
+.info-grid,
+.submitted-sources {
+  display: grid;
+  gap: 10px;
+}
+
+.daily-report-card,
+.info-grid > div,
+.submitted-row,
+.submitted-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: start;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+
+.daily-report-card strong,
+.info-grid strong,
+.submitted-row strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.daily-report-card p,
+.info-grid span,
+.submitted-row span,
+.empty-note {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.source-submit-form {
+  display: grid;
+  gap: 12px;
+}
+
+.source-submit-form label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.source-submit-form input,
+.source-submit-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 11px 12px;
+  color: var(--ink);
+  background: #fff;
+}
+
+.source-submit-form textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.source-submit-form button,
+.submitted-head button {
+  width: fit-content;
+  border: 0;
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  color: #fff;
+  background: var(--accent);
+  font-weight: 800;
+}
+
+.submitted-head {
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-top: 14px;
+}
+
+.submitted-row {
+  color: inherit;
+  text-decoration: none;
+}
+
+.simple-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 230px;

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-12T01:43:26.837556Z",
-  "window_hours": 24,
-  "total_items": 20,
+  "generated_at": "2026-06-12T02:57:42.686398Z",
+  "window_hours": 168,
+  "total_items": 11,
   "items": [
     {
       "story_id": "story_a02001e1bd79",
@@ -56,14 +56,14 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8066,
-      "importance": 0.8066,
-      "importance_score": 0.8066,
+      "score": 0.8912,
+      "importance": 0.8912,
+      "importance_score": 0.8912,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.498,
+        "recency": 0.9209,
         "story_heat": 0.25
       },
       "category": "official",
@@ -91,708 +91,8 @@
           "web_source_platform": "抖音电商",
           "rule_type": 0,
           "rule_status": 201,
-          "knowledge_id": "aJksF3Y7x1Bc"
-        }
-      }
-    },
-    {
-      "story_id": "story_7ba6f19cd830",
-      "title": "个人卖家入驻",
-      "url": "https://www.dewu.com/personal-enter.html",
-      "primary_url": "https://www.dewu.com/personal-enter.html",
-      "source": "得物商家公开规则入口",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "44ad67f0870d303b7bdf80174cd56f8ef487e5f2",
-          "title": "个人卖家入驻",
-          "url": "https://www.dewu.com/personal-enter.html",
-          "source": "得物商家公开规则入口",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "得物商家公开规则入口"
-      ],
-      "items": [
-        {
-          "id": "44ad67f0870d303b7bdf80174cd56f8ef487e5f2",
-          "title": "个人卖家入驻",
-          "url": "https://www.dewu.com/personal-enter.html",
-          "source": "得物商家公开规则入口",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.794,
-      "importance": 0.794,
-      "importance_score": 0.794,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.97,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "44ad67f0870d303b7bdf80174cd56f8ef487e5f2",
-        "title": "个人卖家入驻",
-        "url": "https://www.dewu.com/personal-enter.html",
-        "source": "得物商家公开规则入口",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "dewu_merchant_public_rule_entry",
-          "web_source_url": "https://www.dewu.com/",
-          "web_source_score": 4,
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "得物"
-        }
-      }
-    },
-    {
-      "story_id": "story_17fafd9ebedf",
-      "title": "个体达人提现税务规则介绍",
-      "url": "https://www.xingtu.cn/help-center/author/148107",
-      "primary_url": "https://www.xingtu.cn/help-center/author/148107",
-      "source": "巨量星图帮助中心",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "8dfbd5951e7282fe1c40663773f9eddf5c4477ac",
-          "title": "个体达人提现税务规则介绍",
-          "url": "https://www.xingtu.cn/help-center/author/148107",
-          "source": "巨量星图帮助中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "巨量星图帮助中心"
-      ],
-      "items": [
-        {
-          "id": "8dfbd5951e7282fe1c40663773f9eddf5c4477ac",
-          "title": "个体达人提现税务规则介绍",
-          "url": "https://www.xingtu.cn/help-center/author/148107",
-          "source": "巨量星图帮助中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "8dfbd5951e7282fe1c40663773f9eddf5c4477ac",
-        "title": "个体达人提现税务规则介绍",
-        "url": "https://www.xingtu.cn/help-center/author/148107",
-        "source": "巨量星图帮助中心",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "xingtu_help_center",
-          "web_source_url": "https://www.xingtu.cn/help-center",
-          "web_source_score": 14,
-          "web_source_priority": "P0",
-          "web_source_domain": "内容电商",
-          "web_source_platform": "巨量星图"
-        }
-      }
-    },
-    {
-      "story_id": "story_127705b5acea",
-      "title": "服务条款",
-      "url": "https://rule.1688.com/policy/terms.htm",
-      "primary_url": "https://rule.1688.com/policy/terms.htm",
-      "source": "1688规则中心",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "9cfbf828cefa72bb8c84313d03559da7ce017ec0",
-          "title": "服务条款",
-          "url": "https://rule.1688.com/policy/terms.htm",
-          "source": "1688规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "1688规则中心"
-      ],
-      "items": [
-        {
-          "id": "9cfbf828cefa72bb8c84313d03559da7ce017ec0",
-          "title": "服务条款",
-          "url": "https://rule.1688.com/policy/terms.htm",
-          "source": "1688规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "9cfbf828cefa72bb8c84313d03559da7ce017ec0",
-        "title": "服务条款",
-        "url": "https://rule.1688.com/policy/terms.htm",
-        "source": "1688规则中心",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "1688_rule_center",
-          "web_source_url": "https://rule.1688.com/",
-          "web_source_score": 20,
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "1688"
-        }
-      }
-    },
-    {
-      "story_id": "story_e204f1536e37",
-      "title": "查看结算规则和审核流程",
-      "url": "https://jinbao.pinduoduo.com/message/detail?crumbs=broadcast&id=197",
-      "primary_url": "https://jinbao.pinduoduo.com/message/detail?crumbs=broadcast&id=197",
-      "source": "多多进宝官方资料页",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "cbe60bf77b0cc8eb0d9dac181aa4b0967d9d964f",
-          "title": "查看结算规则和审核流程",
-          "url": "https://jinbao.pinduoduo.com/message/detail?crumbs=broadcast&id=197",
-          "source": "多多进宝官方资料页",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "多多进宝官方资料页"
-      ],
-      "items": [
-        {
-          "id": "cbe60bf77b0cc8eb0d9dac181aa4b0967d9d964f",
-          "title": "查看结算规则和审核流程",
-          "url": "https://jinbao.pinduoduo.com/message/detail?crumbs=broadcast&id=197",
-          "source": "多多进宝官方资料页",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "cbe60bf77b0cc8eb0d9dac181aa4b0967d9d964f",
-        "title": "查看结算规则和审核流程",
-        "url": "https://jinbao.pinduoduo.com/message/detail?crumbs=broadcast&id=197",
-        "source": "多多进宝官方资料页",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "duoduo_jinbao_docs",
-          "web_source_url": "https://jinbao.pinduoduo.com/",
-          "web_source_score": 13,
-          "web_source_priority": "P0",
-          "web_source_domain": "内容电商",
-          "web_source_platform": "多多进宝"
-        }
-      }
-    },
-    {
-      "story_id": "story_cac1a913dc9b",
-      "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
-      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
-      "source": "抖音电商规则中心",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
-          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T12:21:33Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "抖音电商规则中心"
-      ],
-      "items": [
-        {
-          "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
-          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T12:21:33Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7706,
-      "importance": 0.7706,
-      "importance_score": 0.7706,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.94,
-        "recency": 0.4431,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T12:21:33Z",
-      "latest_at": "2026-06-11T12:21:33Z",
-      "primary_item": {
-        "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
-        "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
-        "source": "抖音电商规则中心",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "douyin_ecommerce_rule_center",
-          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
-          "web_source_mode": "api_list",
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "抖音电商",
-          "rule_type": 0,
-          "rule_status": 0,
-          "knowledge_id": "aJkrRkeCNjeW"
-        }
-      }
-    },
-    {
-      "story_id": "story_9b39b8f4feb5",
-      "title": "巨量星图达人信用分规则（试运行版）",
-      "url": "https://www.xingtu.cn/help-center/author/145277",
-      "primary_url": "https://www.xingtu.cn/help-center/author/145277",
-      "source": "巨量星图帮助中心",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "f2925332caf2516b189c437dc306f28376f93617",
-          "title": "巨量星图达人信用分规则（试运行版）",
-          "url": "https://www.xingtu.cn/help-center/author/145277",
-          "source": "巨量星图帮助中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "巨量星图帮助中心"
-      ],
-      "items": [
-        {
-          "id": "f2925332caf2516b189c437dc306f28376f93617",
-          "title": "巨量星图达人信用分规则（试运行版）",
-          "url": "https://www.xingtu.cn/help-center/author/145277",
-          "source": "巨量星图帮助中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "f2925332caf2516b189c437dc306f28376f93617",
-        "title": "巨量星图达人信用分规则（试运行版）",
-        "url": "https://www.xingtu.cn/help-center/author/145277",
-        "source": "巨量星图帮助中心",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "xingtu_help_center",
-          "web_source_url": "https://www.xingtu.cn/help-center",
-          "web_source_score": 14,
-          "web_source_priority": "P0",
-          "web_source_domain": "内容电商",
-          "web_source_platform": "巨量星图"
-        }
-      }
-    },
-    {
-      "story_id": "story_236ca64ae2fc",
-      "title": "法律声明",
-      "url": "https://rule.1688.com/policy/legal.html",
-      "primary_url": "https://rule.1688.com/policy/legal.html",
-      "source": "1688规则中心",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "e70b4ae671dddb5695b92a54af2a4a47f74e76a9",
-          "title": "法律声明",
-          "url": "https://rule.1688.com/policy/legal.html",
-          "source": "1688规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "1688规则中心"
-      ],
-      "items": [
-        {
-          "id": "e70b4ae671dddb5695b92a54af2a4a47f74e76a9",
-          "title": "法律声明",
-          "url": "https://rule.1688.com/policy/legal.html",
-          "source": "1688规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "e70b4ae671dddb5695b92a54af2a4a47f74e76a9",
-        "title": "法律声明",
-        "url": "https://rule.1688.com/policy/legal.html",
-        "source": "1688规则中心",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "1688_rule_center",
-          "web_source_url": "https://rule.1688.com/",
-          "web_source_score": 20,
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "1688"
-        }
-      }
-    },
-    {
-      "story_id": "story_7cc8aaa4ddf1",
-      "title": "用户协议",
-      "url": "https://www.dewu.com/usage.html",
-      "primary_url": "https://www.dewu.com/usage.html",
-      "source": "得物商家公开规则入口",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "02e37b153b6f65fd48828dc0343d2b51b59d8c47",
-          "title": "用户协议",
-          "url": "https://www.dewu.com/usage.html",
-          "source": "得物商家公开规则入口",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "得物商家公开规则入口"
-      ],
-      "items": [
-        {
-          "id": "02e37b153b6f65fd48828dc0343d2b51b59d8c47",
-          "title": "用户协议",
-          "url": "https://www.dewu.com/usage.html",
-          "source": "得物商家公开规则入口",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "02e37b153b6f65fd48828dc0343d2b51b59d8c47",
-        "title": "用户协议",
-        "url": "https://www.dewu.com/usage.html",
-        "source": "得物商家公开规则入口",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "dewu_merchant_public_rule_entry",
-          "web_source_url": "https://www.dewu.com/",
-          "web_source_score": 4,
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "得物"
-        }
-      }
-    },
-    {
-      "story_id": "story_0f36493d1db7",
-      "title": "等级权益 查看等级规则，完成任务即可升级专享权益",
-      "url": "https://jinbao.pinduoduo.com/level-right",
-      "primary_url": "https://jinbao.pinduoduo.com/level-right",
-      "source": "多多进宝官方资料页",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "db5bde2ddaa447fb1cf950f14c1d3ee4cc70eac3",
-          "title": "等级权益 查看等级规则，完成任务即可升级专享权益",
-          "url": "https://jinbao.pinduoduo.com/level-right",
-          "source": "多多进宝官方资料页",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "多多进宝官方资料页"
-      ],
-      "items": [
-        {
-          "id": "db5bde2ddaa447fb1cf950f14c1d3ee4cc70eac3",
-          "title": "等级权益 查看等级规则，完成任务即可升级专享权益",
-          "url": "https://jinbao.pinduoduo.com/level-right",
-          "source": "多多进宝官方资料页",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "db5bde2ddaa447fb1cf950f14c1d3ee4cc70eac3",
-        "title": "等级权益 查看等级规则，完成任务即可升级专享权益",
-        "url": "https://jinbao.pinduoduo.com/level-right",
-        "source": "多多进宝官方资料页",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "duoduo_jinbao_docs",
-          "web_source_url": "https://jinbao.pinduoduo.com/",
-          "web_source_score": 5,
-          "web_source_priority": "P0",
-          "web_source_domain": "内容电商",
-          "web_source_platform": "多多进宝"
-        }
-      }
-    },
-    {
-      "story_id": "story_6d08cfb212ec",
-      "title": "修改投放时段",
-      "url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/campaign/updateTimeRangePriceCoef.html",
-      "primary_url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/campaign/updateTimeRangePriceCoef.html",
-      "source": "京准通营销 API 文档",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "cd67f535b525f69657c188cf1f1feb4363ef93e5",
-          "title": "修改投放时段",
-          "url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/campaign/updateTimeRangePriceCoef.html",
-          "source": "京准通营销 API 文档",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "京准通营销 API 文档"
-      ],
-      "items": [
-        {
-          "id": "cd67f535b525f69657c188cf1f1feb4363ef93e5",
-          "title": "修改投放时段",
-          "url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/campaign/updateTimeRangePriceCoef.html",
-          "source": "京准通营销 API 文档",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.719,
-      "importance": 0.719,
-      "importance_score": 0.719,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.72,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "cd67f535b525f69657c188cf1f1feb4363ef93e5",
-        "title": "修改投放时段",
-        "url": "https://opendoc.jd.com/ads_api/jzt/api/word/zhanwai/campaign/updateTimeRangePriceCoef.html",
-        "source": "京准通营销 API 文档",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "jd_jzt_ads_api_docs",
-          "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
-          "web_source_score": 26,
-          "web_source_priority": "P0",
-          "web_source_domain": "投流营销",
-          "web_source_platform": "京准通"
+          "knowledge_id": "aJksF3Y7x1Bc",
+          "published_time_source": "api"
         }
       }
     },
@@ -831,14 +131,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7703,
-      "importance": 0.7703,
-      "importance_score": 0.7703,
+      "score": 0.8646,
+      "importance": 0.8646,
+      "importance_score": 0.8646,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.4416,
+        "recency": 0.9129,
         "story_heat": 0.0
       },
       "category": "official",
@@ -865,53 +165,54 @@
           "web_source_platform": "抖音电商",
           "rule_type": 0,
           "rule_status": 201,
-          "knowledge_id": "aJkw6NXXPDHC"
+          "knowledge_id": "aJkw6NXXPDHC",
+          "published_time_source": "api"
         }
       }
     },
     {
-      "story_id": "story_3443c652d187",
-      "title": "巨量星图达人管理规则",
-      "url": "https://www.xingtu.cn/help-center/author/134035",
-      "primary_url": "https://www.xingtu.cn/help-center/author/134035",
-      "source": "巨量星图帮助中心",
+      "story_id": "story_cac1a913dc9b",
+      "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+      "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "daaed9e96d43d5fd3594db76080a54dd24f00663",
-          "title": "巨量星图达人管理规则",
-          "url": "https://www.xingtu.cn/help-center/author/134035",
-          "source": "巨量星图帮助中心",
+          "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
+          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+          "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
+          "published_at": "2026-06-11T12:21:33Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "巨量星图帮助中心"
+        "抖音电商规则中心"
       ],
       "items": [
         {
-          "id": "daaed9e96d43d5fd3594db76080a54dd24f00663",
-          "title": "巨量星图达人管理规则",
-          "url": "https://www.xingtu.cn/help-center/author/134035",
-          "source": "巨量星图帮助中心",
+          "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
+          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+          "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
+          "published_at": "2026-06-11T12:21:33Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
+      "score": 0.8646,
+      "importance": 0.8646,
+      "importance_score": 0.8646,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
+        "ai_relevance": 0.94,
+        "recency": 0.9131,
         "story_heat": 0.0
       },
       "category": "official",
@@ -920,438 +221,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
+      "earliest_at": "2026-06-11T12:21:33Z",
+      "latest_at": "2026-06-11T12:21:33Z",
       "primary_item": {
-        "id": "daaed9e96d43d5fd3594db76080a54dd24f00663",
-        "title": "巨量星图达人管理规则",
-        "url": "https://www.xingtu.cn/help-center/author/134035",
-        "source": "巨量星图帮助中心",
+        "id": "205ca6af717b6087666fe2b3ba0a939fb83b36bd",
+        "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+        "url": "https://school.jinritemai.com/doudian/web/rules/aJkrRkeCNjeW?tabKey=rules",
+        "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
         "meta": {
-          "web_source_id": "xingtu_help_center",
-          "web_source_url": "https://www.xingtu.cn/help-center",
-          "web_source_score": 14,
-          "web_source_priority": "P0",
-          "web_source_domain": "内容电商",
-          "web_source_platform": "巨量星图"
-        }
-      }
-    },
-    {
-      "story_id": "story_67a7010fd7e1",
-      "title": "著作权与商标声明",
-      "url": "https://rule.1688.com/policy/copyright.html",
-      "primary_url": "https://rule.1688.com/policy/copyright.html",
-      "source": "1688规则中心",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "5027aa92788c9aaeda3ccc1f81e1bec86856eec6",
-          "title": "著作权与商标声明",
-          "url": "https://rule.1688.com/policy/copyright.html",
-          "source": "1688规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "1688规则中心"
-      ],
-      "items": [
-        {
-          "id": "5027aa92788c9aaeda3ccc1f81e1bec86856eec6",
-          "title": "著作权与商标声明",
-          "url": "https://rule.1688.com/policy/copyright.html",
-          "source": "1688规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "5027aa92788c9aaeda3ccc1f81e1bec86856eec6",
-        "title": "著作权与商标声明",
-        "url": "https://rule.1688.com/policy/copyright.html",
-        "source": "1688规则中心",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "1688_rule_center",
-          "web_source_url": "https://rule.1688.com/",
-          "web_source_score": 21,
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
           "web_source_priority": "P0",
           "web_source_domain": "平台规则",
-          "web_source_platform": "1688"
-        }
-      }
-    },
-    {
-      "story_id": "story_eb3d26ef27dc",
-      "title": "隐私政策",
-      "url": "https://www.dewu.com/privacy.html",
-      "primary_url": "https://www.dewu.com/privacy.html",
-      "source": "得物商家公开规则入口",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "b99d790c029b627ac75b55c08638a93b2b6a5c89",
-          "title": "隐私政策",
-          "url": "https://www.dewu.com/privacy.html",
-          "source": "得物商家公开规则入口",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "得物商家公开规则入口"
-      ],
-      "items": [
-        {
-          "id": "b99d790c029b627ac75b55c08638a93b2b6a5c89",
-          "title": "隐私政策",
-          "url": "https://www.dewu.com/privacy.html",
-          "source": "得物商家公开规则入口",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "b99d790c029b627ac75b55c08638a93b2b6a5c89",
-        "title": "隐私政策",
-        "url": "https://www.dewu.com/privacy.html",
-        "source": "得物商家公开规则入口",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "dewu_merchant_public_rule_entry",
-          "web_source_url": "https://www.dewu.com/",
-          "web_source_score": 4,
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "得物"
-        }
-      }
-    },
-    {
-      "story_id": "story_a9c3460c0d9b",
-      "title": "风控中心 风控规则和违规记录",
-      "url": "https://jinbao.pinduoduo.com/risk-control-center",
-      "primary_url": "https://jinbao.pinduoduo.com/risk-control-center",
-      "source": "多多进宝官方资料页",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "5a16054e5538d5432ecf998790052828beff9d38",
-          "title": "风控中心 风控规则和违规记录",
-          "url": "https://jinbao.pinduoduo.com/risk-control-center",
-          "source": "多多进宝官方资料页",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "多多进宝官方资料页"
-      ],
-      "items": [
-        {
-          "id": "5a16054e5538d5432ecf998790052828beff9d38",
-          "title": "风控中心 风控规则和违规记录",
-          "url": "https://jinbao.pinduoduo.com/risk-control-center",
-          "source": "多多进宝官方资料页",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "5a16054e5538d5432ecf998790052828beff9d38",
-        "title": "风控中心 风控规则和违规记录",
-        "url": "https://jinbao.pinduoduo.com/risk-control-center",
-        "source": "多多进宝官方资料页",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "duoduo_jinbao_docs",
-          "web_source_url": "https://jinbao.pinduoduo.com/",
-          "web_source_score": 9,
-          "web_source_priority": "P0",
-          "web_source_domain": "内容电商",
-          "web_source_platform": "多多进宝"
-        }
-      }
-    },
-    {
-      "story_id": "story_e83265056d19",
-      "title": "修改投放时间",
-      "url": "https://opendoc.jd.com/ads_api/jzt/api/word/kuaiche/campaign/updateDate.html",
-      "primary_url": "https://opendoc.jd.com/ads_api/jzt/api/word/kuaiche/campaign/updateDate.html",
-      "source": "京准通营销 API 文档",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "4c03bad14cc86ddc6637dd770ec86840b126dea0",
-          "title": "修改投放时间",
-          "url": "https://opendoc.jd.com/ads_api/jzt/api/word/kuaiche/campaign/updateDate.html",
-          "source": "京准通营销 API 文档",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "京准通营销 API 文档"
-      ],
-      "items": [
-        {
-          "id": "4c03bad14cc86ddc6637dd770ec86840b126dea0",
-          "title": "修改投放时间",
-          "url": "https://opendoc.jd.com/ads_api/jzt/api/word/kuaiche/campaign/updateDate.html",
-          "source": "京准通营销 API 文档",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.719,
-      "importance": 0.719,
-      "importance_score": 0.719,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.72,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "4c03bad14cc86ddc6637dd770ec86840b126dea0",
-        "title": "修改投放时间",
-        "url": "https://opendoc.jd.com/ads_api/jzt/api/word/kuaiche/campaign/updateDate.html",
-        "source": "京准通营销 API 文档",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "jd_jzt_ads_api_docs",
-          "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
-          "web_source_score": 26,
-          "web_source_priority": "P0",
-          "web_source_domain": "投流营销",
-          "web_source_platform": "京准通"
-        }
-      }
-    },
-    {
-      "story_id": "story_91b1369d2a45",
-      "title": "阿里网规",
-      "url": "https://rule.1688.com/?+tracelog=aliguize_wzdh01",
-      "primary_url": "https://rule.1688.com/?+tracelog=aliguize_wzdh01",
-      "source": "1688规则中心",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "539555d5ec57971486c97c1006e8389d94a6cd50",
-          "title": "阿里网规",
-          "url": "https://rule.1688.com/?+tracelog=aliguize_wzdh01",
-          "source": "1688规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "1688规则中心"
-      ],
-      "items": [
-        {
-          "id": "539555d5ec57971486c97c1006e8389d94a6cd50",
-          "title": "阿里网规",
-          "url": "https://rule.1688.com/?+tracelog=aliguize_wzdh01",
-          "source": "1688规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.767,
-      "importance": 0.767,
-      "importance_score": 0.767,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "539555d5ec57971486c97c1006e8389d94a6cd50",
-        "title": "阿里网规",
-        "url": "https://rule.1688.com/?+tracelog=aliguize_wzdh01",
-        "source": "1688规则中心",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "1688_rule_center",
-          "web_source_url": "https://rule.1688.com/",
-          "web_source_score": 10,
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "1688"
-        }
-      }
-    },
-    {
-      "story_id": "story_f9ca86d55162",
-      "title": "修改投放时间",
-      "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/campaign/updateDate.html",
-      "primary_url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/campaign/updateDate.html",
-      "source": "京准通营销 API 文档",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "97ad1f6555565f77bce037d335129c5855ce7ee3",
-          "title": "修改投放时间",
-          "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/campaign/updateDate.html",
-          "source": "京准通营销 API 文档",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "京准通营销 API 文档"
-      ],
-      "items": [
-        {
-          "id": "97ad1f6555565f77bce037d335129c5855ce7ee3",
-          "title": "修改投放时间",
-          "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/campaign/updateDate.html",
-          "source": "京准通营销 API 文档",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:05:24.420694Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.719,
-      "importance": 0.719,
-      "importance_score": 0.719,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.72,
-        "recency": 0.5152,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source"
-      ],
-      "earliest_at": "2026-06-11T14:05:24.420694Z",
-      "latest_at": "2026-06-11T14:05:24.420694Z",
-      "primary_item": {
-        "id": "97ad1f6555565f77bce037d335129c5855ce7ee3",
-        "title": "修改投放时间",
-        "url": "https://opendoc.jd.com/ads_api/jzt/api/word/recommend/campaign/updateDate.html",
-        "source": "京准通营销 API 文档",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "jd_jzt_ads_api_docs",
-          "web_source_url": "https://opendoc.jd.com/ads_api/jzt/api/word/introduce.html",
-          "web_source_score": 26,
-          "web_source_priority": "P0",
-          "web_source_domain": "投流营销",
-          "web_source_platform": "京准通"
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 0,
+          "knowledge_id": "aJkrRkeCNjeW",
+          "published_time_source": "api"
         }
       }
     },
@@ -1390,20 +279,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7477,
-      "importance": 0.7477,
-      "importance_score": 0.7477,
+      "score": 0.8613,
+      "importance": 0.8613,
+      "importance_score": 0.8613,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.3285,
+        "recency": 0.8967,
         "story_heat": 0.0
       },
       "category": "official",
       "reasons": [
         "official_source",
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
       "earliest_at": "2026-06-11T09:36:33Z",
       "latest_at": "2026-06-11T09:36:33Z",
@@ -1423,7 +313,526 @@
           "web_source_platform": "抖音电商",
           "rule_type": 0,
           "rule_status": 0,
-          "knowledge_id": "aJkuEyVRFNst"
+          "knowledge_id": "aJkuEyVRFNst",
+          "published_time_source": "api"
+        }
+      }
+    },
+    {
+      "story_id": "story_09da6b6d3866",
+      "title": "关于修订《店铺类型规范》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+      "source": "抖音电商规则中心",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "cfbfdf06e6ce4d46730bbf90aa0aea45a69e6372",
+          "title": "关于修订《店铺类型规范》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T03:01:40Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "抖音电商规则中心"
+      ],
+      "items": [
+        {
+          "id": "cfbfdf06e6ce4d46730bbf90aa0aea45a69e6372",
+          "title": "关于修订《店铺类型规范》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T03:01:40Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8535,
+      "importance": 0.8535,
+      "importance_score": 0.8535,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.94,
+        "recency": 0.8575,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-11T03:01:40Z",
+      "latest_at": "2026-06-11T03:01:40Z",
+      "primary_item": {
+        "id": "cfbfdf06e6ce4d46730bbf90aa0aea45a69e6372",
+        "title": "关于修订《店铺类型规范》的公示通知",
+        "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9oDu?tabKey=rules",
+        "source": "抖音电商规则中心",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
+          "web_source_priority": "P0",
+          "web_source_domain": "平台规则",
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 0,
+          "knowledge_id": "aJkqnYhe9oDu",
+          "published_time_source": "api"
+        }
+      }
+    },
+    {
+      "story_id": "story_2d8afa247b1f",
+      "title": "关于修订《商家【类目错放】细则》的意见征集通知",
+      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+      "source": "抖音电商规则中心",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "cc9f2f8a79eb831d9c5a9bf1e45b111033b6f8c4",
+          "title": "关于修订《商家【类目错放】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T10:03:13Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "抖音电商规则中心"
+      ],
+      "items": [
+        {
+          "id": "cc9f2f8a79eb831d9c5a9bf1e45b111033b6f8c4",
+          "title": "关于修订《商家【类目错放】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T10:03:13Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8513,
+      "importance": 0.8513,
+      "importance_score": 0.8513,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.7565,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-10T10:03:13Z",
+      "latest_at": "2026-06-10T10:03:13Z",
+      "primary_item": {
+        "id": "cc9f2f8a79eb831d9c5a9bf1e45b111033b6f8c4",
+        "title": "关于修订《商家【类目错放】细则》的意见征集通知",
+        "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55mGS?tabKey=rules",
+        "source": "抖音电商规则中心",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
+          "web_source_priority": "P0",
+          "web_source_domain": "平台规则",
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 201,
+          "knowledge_id": "aJkqnYT55mGS",
+          "published_time_source": "api"
+        }
+      }
+    },
+    {
+      "story_id": "story_75b7aa032a6f",
+      "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+      "source": "抖音电商规则中心",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "83df403335ee69ca78eb9c01619802bd05455336",
+          "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T13:16:44Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "抖音电商规则中心"
+      ],
+      "items": [
+        {
+          "id": "83df403335ee69ca78eb9c01619802bd05455336",
+          "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T13:16:44Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8371,
+      "importance": 0.8371,
+      "importance_score": 0.8371,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.94,
+        "recency": 0.7757,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-10T13:16:44Z",
+      "latest_at": "2026-06-10T13:16:44Z",
+      "primary_item": {
+        "id": "83df403335ee69ca78eb9c01619802bd05455336",
+        "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
+        "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT566kN?tabKey=rules",
+        "source": "抖音电商规则中心",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
+          "web_source_priority": "P0",
+          "web_source_domain": "平台规则",
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 0,
+          "knowledge_id": "aJkqnYT566kN",
+          "published_time_source": "api"
+        }
+      }
+    },
+    {
+      "story_id": "story_1d735d7e7ca5",
+      "title": "关于修订《珠宝文玩限制推广商品创作者准入细则》的意见征集通知",
+      "url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+      "source": "抖音电商规则中心",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "c2ab251ee363b14a73c6960416923fc8b425ebb8",
+          "title": "关于修订《珠宝文玩限制推广商品创作者准入细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T13:09:01Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "抖音电商规则中心"
+      ],
+      "items": [
+        {
+          "id": "c2ab251ee363b14a73c6960416923fc8b425ebb8",
+          "title": "关于修订《珠宝文玩限制推广商品创作者准入细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T13:09:01Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.837,
+      "importance": 0.837,
+      "importance_score": 0.837,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.94,
+        "recency": 0.7749,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-10T13:09:01Z",
+      "latest_at": "2026-06-10T13:09:01Z",
+      "primary_item": {
+        "id": "c2ab251ee363b14a73c6960416923fc8b425ebb8",
+        "title": "关于修订《珠宝文玩限制推广商品创作者准入细则》的意见征集通知",
+        "url": "https://school.jinritemai.com/doudian/web/rules/aJktZaNTeeUJ?tabKey=rules",
+        "source": "抖音电商规则中心",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
+          "web_source_priority": "P0",
+          "web_source_domain": "平台规则",
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 201,
+          "knowledge_id": "aJktZaNTeeUJ",
+          "published_time_source": "api"
+        }
+      }
+    },
+    {
+      "story_id": "story_6d6f12d175ed",
+      "title": "关于废止《抖音电商古董艺术品产业带服务商准入、常规考核规范》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+      "source": "抖音电商规则中心",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "71fffa5ccf8f9c3a92f28870c95687deaaf2eb7e",
+          "title": "关于废止《抖音电商古董艺术品产业带服务商准入、常规考核规范》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T11:34:12Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "抖音电商规则中心"
+      ],
+      "items": [
+        {
+          "id": "71fffa5ccf8f9c3a92f28870c95687deaaf2eb7e",
+          "title": "关于废止《抖音电商古董艺术品产业带服务商准入、常规考核规范》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T11:34:12Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8351,
+      "importance": 0.8351,
+      "importance_score": 0.8351,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.94,
+        "recency": 0.7655,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-10T11:34:12Z",
+      "latest_at": "2026-06-10T11:34:12Z",
+      "primary_item": {
+        "id": "71fffa5ccf8f9c3a92f28870c95687deaaf2eb7e",
+        "title": "关于废止《抖音电商古董艺术品产业带服务商准入、常规考核规范》的公示通知",
+        "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYT55w1Q?tabKey=rules",
+        "source": "抖音电商规则中心",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
+          "web_source_priority": "P0",
+          "web_source_domain": "平台规则",
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 0,
+          "knowledge_id": "aJkqnYT55w1Q",
+          "published_time_source": "api"
+        }
+      }
+    },
+    {
+      "story_id": "story_dc64eb513bda",
+      "title": "关于废止《二手数码行业品牌服务商准入标准》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+      "source": "抖音电商规则中心",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "e80215e249b1a3c242fef0f8c3ae34ec2f2727ed",
+          "title": "关于废止《二手数码行业品牌服务商准入标准》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T11:21:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "抖音电商规则中心"
+      ],
+      "items": [
+        {
+          "id": "e80215e249b1a3c242fef0f8c3ae34ec2f2727ed",
+          "title": "关于废止《二手数码行业品牌服务商准入标准》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T11:21:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8348,
+      "importance": 0.8348,
+      "importance_score": 0.8348,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.94,
+        "recency": 0.7642,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-10T11:21:00Z",
+      "latest_at": "2026-06-10T11:21:00Z",
+      "primary_item": {
+        "id": "e80215e249b1a3c242fef0f8c3ae34ec2f2727ed",
+        "title": "关于废止《二手数码行业品牌服务商准入标准》的公示通知",
+        "url": "https://school.jinritemai.com/doudian/web/rules/aJkqnYhe9Tjy?tabKey=rules",
+        "source": "抖音电商规则中心",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
+          "web_source_priority": "P0",
+          "web_source_domain": "平台规则",
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 0,
+          "knowledge_id": "aJkqnYhe9Tjy",
+          "published_time_source": "api"
+        }
+      }
+    },
+    {
+      "story_id": "story_7f2929615515",
+      "title": "关于废止《抖音商城超值购招商规则》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+      "primary_url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+      "source": "抖音电商规则中心",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "72efea99106184ed59e3445a1924a480b29df818",
+          "title": "关于废止《抖音商城超值购招商规则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T09:09:52Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "抖音电商规则中心"
+      ],
+      "items": [
+        {
+          "id": "72efea99106184ed59e3445a1924a480b29df818",
+          "title": "关于废止《抖音商城超值购招商规则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T09:09:52Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8322,
+      "importance": 0.8322,
+      "importance_score": 0.8322,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.94,
+        "recency": 0.7512,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-10T09:09:52Z",
+      "latest_at": "2026-06-10T09:09:52Z",
+      "primary_item": {
+        "id": "72efea99106184ed59e3445a1924a480b29df818",
+        "title": "关于废止《抖音商城超值购招商规则》的公示通知",
+        "url": "https://school.jinritemai.com/doudian/web/rules/aJksBkuECtrT?tabKey=rules",
+        "source": "抖音电商规则中心",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
+          "web_source_priority": "P0",
+          "web_source_domain": "平台规则",
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 0,
+          "knowledge_id": "aJksBkuECtrT",
+          "published_time_source": "api"
         }
       }
     }

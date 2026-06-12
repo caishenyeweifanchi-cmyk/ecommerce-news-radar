@@ -2095,13 +2095,115 @@ def web_source_link_score(text: str, href: str, source: dict[str, Any]) -> int:
     return score
 
 
+WEB_SOURCE_DATE_PATTERNS: tuple[re.Pattern[str], ...] = (
+    re.compile(r"(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})日?\s+(\d{1,2}):(\d{2})(?::(\d{2}))?"),
+    re.compile(r"(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})日?"),
+    re.compile(r"(?<!\d)(\d{1,2})[-/.月](\d{1,2})日?(?:\s+(\d{1,2}):(\d{2})(?::(\d{2}))?)?"),
+)
+
+
+def extract_datetime_from_text(text: str, now: datetime) -> datetime | None:
+    text = maybe_fix_mojibake(str(text or ""))
+    for pattern in WEB_SOURCE_DATE_PATTERNS:
+        match = pattern.search(text)
+        if not match:
+            continue
+        parts = match.groups()
+        try:
+            if len(parts) == 6 and parts[0] and len(parts[0]) == 4:
+                year, month, day, hour, minute, second = parts
+                return datetime(
+                    int(year),
+                    int(month),
+                    int(day),
+                    int(hour),
+                    int(minute),
+                    int(second or 0),
+                    tzinfo=SH_TZ,
+                ).astimezone(UTC)
+            if len(parts) == 3 and parts[0] and len(parts[0]) == 4:
+                year, month, day = parts
+                return datetime(int(year), int(month), int(day), tzinfo=SH_TZ).astimezone(UTC)
+            month, day, hour, minute, second = parts
+            candidate = datetime(
+                now.astimezone(SH_TZ).year,
+                int(month),
+                int(day),
+                int(hour or 0),
+                int(minute or 0),
+                int(second or 0),
+                tzinfo=SH_TZ,
+            ).astimezone(UTC)
+            if candidate > now + timedelta(days=3):
+                candidate = candidate.replace(year=candidate.year - 1)
+            return candidate
+        except ValueError:
+            continue
+    return None
+
+
+def extract_page_published_at(page_html: str, now: datetime) -> tuple[datetime | None, str]:
+    soup = BeautifulSoup(page_html, "html.parser")
+    meta_selectors = [
+        ("meta[property='article:published_time']", "content"),
+        ("meta[property='article:modified_time']", "content"),
+        ("meta[name='pubdate']", "content"),
+        ("meta[name='publishdate']", "content"),
+        ("meta[name='date']", "content"),
+        ("time[datetime]", "datetime"),
+    ]
+    for selector, attr in meta_selectors:
+        node = soup.select_one(selector)
+        value = str(node.get(attr) or "").strip() if node else ""
+        parsed = parse_iso(value) or extract_datetime_from_text(value, now)
+        if parsed:
+            return parsed, "detail_meta"
+
+    for node in soup.select("script, style, noscript"):
+        node.decompose()
+    visible = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
+    parsed = extract_datetime_from_text(visible[:5000], now)
+    if parsed:
+        return parsed, "detail_text"
+    return None, "unknown"
+
+
+def enrich_web_source_candidate_times(
+    session: requests.Session,
+    items: list[RawItem],
+    source: dict[str, Any],
+    now: datetime,
+) -> None:
+    for item in items[:WEB_SOURCE_CANDIDATE_LIMIT]:
+        if item.published_at is not None:
+            continue
+        try:
+            resp = session.get(
+                item.url,
+                timeout=12,
+                headers={
+                    "User-Agent": BROWSER_UA,
+                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+                    "Referer": str(source.get("url") or ""),
+                },
+            )
+            resp.raise_for_status()
+        except Exception as exc:
+            item.meta["published_time_source"] = "unconfirmed"
+            item.meta["published_time_error"] = str(exc)[:160]
+            continue
+        published_at, source_name = extract_page_published_at(resp.text, now)
+        item.published_at = published_at
+        item.meta["published_time_source"] = source_name if published_at else "unconfirmed"
+
+
 def extract_web_source_candidates(page_html: str, source: dict[str, Any], now: datetime) -> list[RawItem]:
     soup = BeautifulSoup(page_html, "html.parser")
     source_url = str(source.get("url") or "")
     source_name = first_non_empty(source.get("name"), source.get("platform"), host_of_url(source_url))
     source_id = str(source.get("id") or slugify_source_id(source_url))
     base_host = host_of_url(source_url)
-    candidates: list[tuple[int, str, str]] = []
+    candidates: list[tuple[int, str, str, datetime | None, str]] = []
     seen_urls: set[str] = set()
 
     for a in soup.select("a[href]"):
@@ -2128,11 +2230,12 @@ def extract_web_source_candidates(page_html: str, source: dict[str, Any], now: d
         score = web_source_link_score(text, url, source)
         if score <= 0:
             continue
-        candidates.append((score, text, url))
+        published_at = extract_datetime_from_text(f"{text} {href} {url}", now)
+        candidates.append((score, text, url, published_at, "list_text" if published_at else "unconfirmed"))
 
     candidates.sort(key=lambda row: (-row[0], row[1]))
     out: list[RawItem] = []
-    for score, title, url in candidates[:WEB_SOURCE_CANDIDATE_LIMIT]:
+    for score, title, url, published_at, published_time_source in candidates[:WEB_SOURCE_CANDIDATE_LIMIT]:
         out.append(
             RawItem(
                 site_id="websource",
@@ -2140,7 +2243,7 @@ def extract_web_source_candidates(page_html: str, source: dict[str, Any], now: d
                 source=source_name,
                 title=title,
                 url=url,
-                published_at=now,
+                published_at=published_at,
                 meta={
                     "web_source_id": source_id,
                     "web_source_url": source_url,
@@ -2148,6 +2251,7 @@ def extract_web_source_candidates(page_html: str, source: dict[str, Any], now: d
                     "web_source_priority": source.get("priority"),
                     "web_source_domain": source.get("domain"),
                     "web_source_platform": source.get("platform"),
+                    "published_time_source": published_time_source,
                 },
             )
         )
@@ -2181,7 +2285,7 @@ def build_web_source_snapshot_item(page_html: str, source: dict[str, Any], now: 
         source=source_name,
         title=title,
         url=source_url,
-        published_at=now,
+        published_at=None,
         meta={
             "web_source_id": source_id,
             "web_source_url": source_url,
@@ -2191,6 +2295,7 @@ def build_web_source_snapshot_item(page_html: str, source: dict[str, Any], now: 
             "web_source_priority": source.get("priority"),
             "web_source_domain": source.get("domain"),
             "web_source_platform": source.get("platform"),
+            "published_time_source": "snapshot",
         },
     )
 
@@ -2212,20 +2317,32 @@ def fetch_douyin_rule_center_items(
         "Referer": source_url or "https://school.jinritemai.com/doudian/web/rules?should_full_screen=1",
     }
     for rule_type in (0, 1, 2):
-        resp = session.get(
-            api_url,
-            params={
-                "rule_type": rule_type,
-                "rule_status": 0,
-                "direction": 2,
-                "page": 1,
-                "page_size": WEB_SOURCE_CANDIDATE_LIMIT,
-            },
-            headers=headers,
-            timeout=20,
-        )
-        resp.raise_for_status()
-        payload = resp.json()
+        payload: dict[str, Any] | None = None
+        last_error: Exception | None = None
+        for attempt in range(3):
+            try:
+                resp = session.get(
+                    api_url,
+                    params={
+                        "rule_type": rule_type,
+                        "rule_status": 0,
+                        "direction": 2,
+                        "page": 1,
+                        "page_size": WEB_SOURCE_CANDIDATE_LIMIT,
+                    },
+                    headers=headers,
+                    timeout=30,
+                )
+                resp.raise_for_status()
+                payload = resp.json()
+                break
+            except Exception as exc:
+                last_error = exc
+                time.sleep(1.5 * (attempt + 1))
+        if payload is None:
+            if not out and rule_type == 2 and last_error:
+                raise last_error
+            continue
         for row in payload.get("data", {}).get("rule_infos", []) or []:
             if not isinstance(row, dict):
                 continue
@@ -2235,7 +2352,7 @@ def fetch_douyin_rule_center_items(
                 continue
             seen.add(knowledge_id)
             ts = row.get("update_time") or row.get("effect_start")
-            published_at = datetime.fromtimestamp(int(ts), tz=UTC) if str(ts or "").isdigit() else now
+            published_at = datetime.fromtimestamp(int(ts), tz=UTC) if str(ts or "").isdigit() else None
             out.append(
                 RawItem(
                     site_id="websource",
@@ -2254,6 +2371,7 @@ def fetch_douyin_rule_center_items(
                         "rule_type": rule_type,
                         "rule_status": row.get("status_code"),
                         "knowledge_id": knowledge_id,
+                        "published_time_source": "api" if published_at else "unconfirmed",
                     },
                 )
             )
@@ -2282,11 +2400,15 @@ def fetch_web_sources(
         local_items: list[RawItem] = []
         snapshot_count = 0
         status_code = None
+        method = str(source.get("ingestion_method") or "")
+        skipped_reason = ""
         try:
+            if method not in {"web_list_adapter"} and source_id != "douyin_ecommerce_rule_center":
+                skipped_reason = "manual_verify_required_or_rss_preferred"
             if source_id == "douyin_ecommerce_rule_center":
                 local_items = fetch_douyin_rule_center_items(session, source, now)
                 status_code = 200
-            else:
+            elif not skipped_reason:
                 resp = session.get(
                     source_url,
                     timeout=18,
@@ -2298,6 +2420,7 @@ def fetch_web_sources(
                 status_code = resp.status_code
                 resp.raise_for_status()
                 local_items = extract_web_source_candidates(resp.text, source, now)
+                enrich_web_source_candidate_times(session, local_items, source, now)
                 if not local_items:
                     snapshot_item = build_web_source_snapshot_item(resp.text, source, now)
                     if snapshot_item:
@@ -2317,9 +2440,10 @@ def fetch_web_sources(
             "item_count": len(local_items),
             "snapshot_count": snapshot_count,
             "list_item_count": max(0, len(local_items) - snapshot_count),
-            "collection_mode": "api_list" if source_id == "douyin_ecommerce_rule_center" and local_items else ("list" if len(local_items) > snapshot_count else ("snapshot" if snapshot_count else "empty")),
+            "collection_mode": "api_list" if source_id == "douyin_ecommerce_rule_center" and local_items else ("list" if len(local_items) > snapshot_count else ("snapshot" if snapshot_count else ("skipped" if skipped_reason else "empty"))),
             "duration_ms": duration_ms,
             "error": error,
+            "skip_reason": skipped_reason or None,
             "status_code": status_code,
             "priority": source.get("priority"),
             "required": bool(source.get("required")),
@@ -2668,7 +2792,15 @@ def load_archive(path: Path) -> dict[str, dict[str, Any]]:
 def event_time(record: dict[str, Any]) -> datetime | None:
     # RSS sources must rely on the source's publish time only.
     # first_seen_at is fetch time and would falsely mark historical items as "24h".
-    if str(record.get("site_id") or "") == "opmlrss":
+    site_id = str(record.get("site_id") or "")
+    if site_id == "opmlrss":
+        return parse_iso(record.get("published_at"))
+    if site_id == "websource":
+        meta = record.get("meta") if isinstance(record.get("meta"), dict) else {}
+        if meta.get("web_source_mode") == "page_snapshot":
+            return None
+        if meta.get("published_time_source") not in {"api", "list_text", "detail_meta", "detail_text"}:
+            return None
         return parse_iso(record.get("published_at"))
     return parse_iso(record.get("published_at")) or parse_iso(record.get("first_seen_at"))
 
@@ -4106,7 +4238,9 @@ def main() -> int:
             existing["source"] = raw.source
             existing["title"] = title
             existing["url"] = url
-            if raw.published_at:
+            if raw.site_id == "websource":
+                existing["published_at"] = iso(raw.published_at)
+            elif raw.published_at:
                 # OPML RSS may fix previously wrong publish times; allow overwrite.
                 if raw.site_id == "opmlrss" or not existing.get("published_at"):
                     existing["published_at"] = iso(raw.published_at)
@@ -4285,10 +4419,15 @@ def main() -> int:
             "list_sources": sum(1 for s in web_source_statuses if int(s.get("list_item_count") or 0) > 0),
             "snapshot_sources": sum(1 for s in web_source_statuses if int(s.get("snapshot_count") or 0) > 0),
             "failed_sources": [s.get("source_id") or s.get("url") for s in web_source_statuses if not s.get("ok")],
+            "skipped_sources": [
+                s.get("source_id") or s.get("url")
+                for s in web_source_statuses
+                if s.get("collection_mode") == "skipped"
+            ],
             "zero_item_sources": [
                 s.get("source_id") or s.get("url")
                 for s in web_source_statuses
-                if s.get("ok") and int(s.get("item_count") or 0) == 0
+                if s.get("ok") and s.get("collection_mode") != "skipped" and int(s.get("item_count") or 0) == 0
             ],
             "sources": web_source_statuses,
         },
