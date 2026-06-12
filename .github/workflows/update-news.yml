@@ -66,9 +66,9 @@ jobs:
           WEB_MAX_SOURCES: ${{ vars.WEB_MAX_SOURCES || 0 }}
         run: |
           if [ -f feeds/follow.opml ]; then
-            python scripts/update_news.py --topic ecommerce --output-dir data --window-hours 24 --archive-days 21 --rss-opml feeds/follow.opml --rss-max-feeds "${RSS_MAX_FEEDS:-0}" --web-sources feeds/ecommerce.web-sources.json --web-max-sources "${WEB_MAX_SOURCES:-0}"
+            python scripts/update_news.py --topic ecommerce --output-dir data --window-hours 168 --archive-days 21 --rss-opml feeds/follow.opml --rss-max-feeds "${RSS_MAX_FEEDS:-0}" --web-sources feeds/ecommerce.web-sources.json --web-max-sources "${WEB_MAX_SOURCES:-0}"
           else
-            python scripts/update_news.py --topic ecommerce --output-dir data --window-hours 24 --archive-days 21 --web-sources feeds/ecommerce.web-sources.json --web-max-sources "${WEB_MAX_SOURCES:-0}"
+            python scripts/update_news.py --topic ecommerce --output-dir data --window-hours 168 --archive-days 21 --web-sources feeds/ecommerce.web-sources.json --web-max-sources "${WEB_MAX_SOURCES:-0}"
           fi
 
       - name: Commit and push changes

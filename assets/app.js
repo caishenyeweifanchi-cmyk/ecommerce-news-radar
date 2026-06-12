@@ -82,6 +82,27 @@ const SOURCE_KINDS = {
   readhub: { label: "媒体", tone: "aggregate" },
 };
 
+const RAW_DATA_BASE = "https://raw.githubusercontent.com/caishenyeweifanchi-cmyk/ecommerce-news-radar/main";
+
+async function fetchJsonWithFallback(path) {
+  const cleanPath = String(path || "").replace(/^\.\//, "");
+  const candidates = [
+    `./${cleanPath}?t=${Date.now()}`,
+    `${RAW_DATA_BASE}/${cleanPath}?t=${Date.now()}`,
+  ];
+  let lastError = null;
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) throw new Error(`${url} 返回 ${res.status}`);
+      return await res.json();
+    } catch (err) {
+      lastError = err;
+    }
+  }
+  throw lastError || new Error(`加载 ${cleanPath} 失败`);
+}
+
 function fmtNumber(n) {
   return new Intl.NumberFormat("zh-CN").format(n || 0);
 }
@@ -1332,19 +1353,13 @@ function renderWebSources(errorMessage = "") {
 }
 
 async function loadNewsData() {
-  const res = await fetch(`./data/latest-24h.json?t=${Date.now()}`);
-  if (!res.ok) throw new Error(`加载 latest-24h.json 失败: ${res.status}`);
-  return res.json();
+  return fetchJsonWithFallback("data/latest-24h.json");
 }
 
 async function loadAllModeData() {
   if (state.allDataLoaded) return;
   if (!state.allDataPromise) {
-    state.allDataPromise = fetch(`./${state.allDataUrl}?t=${Date.now()}`)
-      .then((res) => {
-        if (!res.ok) throw new Error(`加载 latest-24h-all.json 失败: ${res.status}`);
-        return res.json();
-      })
+    state.allDataPromise = fetchJsonWithFallback(state.allDataUrl)
       .then((payload) => {
         state.itemsAllRaw = payload.items_all_raw || payload.items_all || state.itemsAi;
         state.itemsAll = payload.items_all || state.itemsAi;
@@ -1361,27 +1376,19 @@ async function loadAllModeData() {
 }
 
 async function loadWaytoagiData() {
-  const res = await fetch(`./data/waytoagi-7d.json?t=${Date.now()}`);
-  if (!res.ok) throw new Error(`加载 waytoagi-7d.json 失败: ${res.status}`);
-  return res.json();
+  return fetchJsonWithFallback("data/waytoagi-7d.json");
 }
 
 async function loadSourceStatusData() {
-  const res = await fetch(`./data/source-status.json?t=${Date.now()}`);
-  if (!res.ok) throw new Error(`加载 source-status.json 失败: ${res.status}`);
-  return res.json();
+  return fetchJsonWithFallback("data/source-status.json");
 }
 
 async function loadWebSourcesData() {
-  const res = await fetch(`./feeds/ecommerce.web-sources.json?t=${Date.now()}`);
-  if (!res.ok) throw new Error(`加载 ecommerce.web-sources.json 失败: ${res.status}`);
-  return res.json();
+  return fetchJsonWithFallback("feeds/ecommerce.web-sources.json");
 }
 
 async function loadDailyBriefData() {
-  const res = await fetch(`./data/daily-brief.json?t=${Date.now()}`);
-  if (!res.ok) throw new Error(`加载 daily-brief.json 失败: ${res.status}`);
-  return res.json();
+  return fetchJsonWithFallback("data/daily-brief.json");
 }
 
 async function init() {
