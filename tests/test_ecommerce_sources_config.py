@@ -8,6 +8,7 @@ from scripts.update_news import (
     build_web_source_snapshot_item,
     canonical_douyin_article_url,
     canonicalize_archive_item_ids,
+    clear_future_record_publish_time,
     event_time,
     extract_datetime_from_text,
     extract_web_source_candidates,
@@ -153,6 +154,31 @@ def test_extract_datetime_from_text_supports_full_chinese_rule_time():
     parsed = extract_datetime_from_text("巨量星图达人管理规则 2026-05-12 15:02:46", datetime(2026, 6, 12, tzinfo=timezone.utc))
 
     assert parsed == datetime(2026, 5, 12, 7, 2, 46, tzinfo=timezone.utc)
+
+
+def test_extract_datetime_from_text_ignores_future_event_registration_time():
+    parsed = extract_datetime_from_text(
+        "报名中 2026 Ozon全球产业带招商系列峰会-泉州站 2026-07-16 13:30 泉州市",
+        datetime(2026, 6, 12, 6, 0, tzinfo=timezone.utc),
+    )
+
+    assert parsed is None
+
+
+def test_clear_future_record_publish_time_removes_event_time_from_timeline():
+    record = {
+        "site_id": "opmlrss",
+        "published_at": "2026-07-16T05:30:00Z",
+        "first_seen_at": "2026-06-12T06:00:00Z",
+        "meta": {},
+    }
+
+    clear_future_record_publish_time(record, datetime(2026, 6, 12, 6, 0, tzinfo=timezone.utc))
+
+    assert record["published_at"] is None
+    assert record["meta"]["rejected_published_at"] == "2026-07-16T05:30:00Z"
+    assert record["meta"]["published_time_source"] == "future_time_rejected"
+    assert event_time(record) is None
 
 
 def test_official_web_source_rule_scores_above_generic_threshold():

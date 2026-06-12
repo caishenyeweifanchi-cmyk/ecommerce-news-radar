@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T08:34:53.650613Z",
+  "generated_at": "2026-06-12T09:50:52.543088Z",
   "window_hours": 168,
   "total_items": 20,
   "items": [
@@ -38,14 +38,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8935,
-      "importance": 0.8935,
-      "importance_score": 0.8935,
+      "score": 0.892,
+      "importance": 0.892,
+      "importance_score": 0.892,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.9974,
+        "recency": 0.9899,
         "story_heat": 0.0
       },
       "category": "official",
@@ -75,77 +75,6 @@
           "knowledge_id": "aJkbJcdRFFSP",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
-        }
-      }
-    },
-    {
-      "story_id": "story_b9cf7ef73cf9",
-      "title": "政策添力·跨境合规π计划 | 实战训练营（第四期） 2026-06-24 广东省广州市",
-      "url": "https://www.amz123.com/hd/aUhz0Q77",
-      "primary_url": "https://www.amz123.com/hd/aUhz0Q77",
-      "source": "卖家之家",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "b4bbf17c33057a35194c38b63526ce2ee32fc590",
-          "title": "政策添力·跨境合规π计划 | 实战训练营（第四期） 2026-06-24 广东省广州市",
-          "url": "https://www.amz123.com/hd/aUhz0Q77",
-          "source": "卖家之家",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-23T16:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "卖家之家"
-      ],
-      "items": [
-        {
-          "id": "b4bbf17c33057a35194c38b63526ce2ee32fc590",
-          "title": "政策添力·跨境合规π计划 | 实战训练营（第四期） 2026-06-24 广东省广州市",
-          "url": "https://www.amz123.com/hd/aUhz0Q77",
-          "source": "卖家之家",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-23T16:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.882,
-      "importance": 0.882,
-      "importance_score": 0.882,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.94,
-        "recency": 1.0,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-23T16:00:00Z",
-      "latest_at": "2026-06-23T16:00:00Z",
-      "primary_item": {
-        "id": "b4bbf17c33057a35194c38b63526ce2ee32fc590",
-        "title": "政策添力·跨境合规π计划 | 实战训练营（第四期） 2026-06-24 广东省广州市",
-        "url": "https://www.amz123.com/hd/aUhz0Q77",
-        "source": "卖家之家",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "amz123_com",
-          "web_source_url": "https://www.amz123.com/",
-          "web_source_score": 8,
-          "web_source_priority": "P1",
-          "web_source_domain": "行业资讯",
-          "web_source_platform": "卖家之家",
-          "published_time_source": "list_text"
         }
       }
     },
@@ -184,14 +113,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8814,
-      "importance": 0.8814,
-      "importance_score": 0.8814,
+      "score": 0.8799,
+      "importance": 0.8799,
+      "importance_score": 0.8799,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.997,
+        "recency": 0.9894,
         "story_heat": 0.0
       },
       "category": "official",
@@ -257,14 +186,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8637,
-      "importance": 0.8637,
-      "importance_score": 0.8637,
+      "score": 0.8622,
+      "importance": 0.8622,
+      "importance_score": 0.8622,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9987,
+        "recency": 0.9912,
         "story_heat": 0.0
       },
       "category": "official",
@@ -328,14 +257,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.891,
-      "importance": 0.891,
-      "importance_score": 0.891,
+      "score": 0.8895,
+      "importance": 0.8895,
+      "importance_score": 0.8895,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.985,
+        "recency": 0.9775,
         "story_heat": 0.0
       },
       "category": "official",
@@ -422,14 +351,14 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8525,
-      "importance": 0.8525,
-      "importance_score": 0.8525,
+      "score": 0.851,
+      "importance": 0.851,
+      "importance_score": 0.851,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.83,
-        "recency": 0.8924,
+        "recency": 0.8848,
         "story_heat": 0.25
       },
       "category": "official",
@@ -494,14 +423,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8443,
-      "importance": 0.8443,
-      "importance_score": 0.8443,
+      "score": 0.8428,
+      "importance": 0.8428,
+      "importance_score": 0.8428,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9013,
+        "recency": 0.8938,
         "story_heat": 0.0
       },
       "category": "official",
@@ -526,77 +455,6 @@
           "web_source_priority": "P1",
           "web_source_domain": "供应链物流",
           "web_source_platform": "马士基",
-          "published_time_source": "list_text"
-        }
-      }
-    },
-    {
-      "story_id": "story_0a59c8d3fe07",
-      "title": "重要政策｜2026年7月8日起，美国CPSC证书必须电子申报！",
-      "url": "https://www.cifnews.com/article/185839",
-      "primary_url": "https://www.cifnews.com/article/185839",
-      "source": "雨果跨境",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "abd10db911723dd7b0be3b81c89cb2f23b38b96e",
-          "title": "重要政策｜2026年7月8日起，美国CPSC证书必须电子申报！",
-          "url": "https://www.cifnews.com/article/185839",
-          "source": "雨果跨境",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-07-07T16:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "雨果跨境"
-      ],
-      "items": [
-        {
-          "id": "abd10db911723dd7b0be3b81c89cb2f23b38b96e",
-          "title": "重要政策｜2026年7月8日起，美国CPSC证书必须电子申报！",
-          "url": "https://www.cifnews.com/article/185839",
-          "source": "雨果跨境",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-07-07T16:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.84,
-      "importance": 0.84,
-      "importance_score": 0.84,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.8,
-        "recency": 1.0,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-07T16:00:00Z",
-      "latest_at": "2026-07-07T16:00:00Z",
-      "primary_item": {
-        "id": "abd10db911723dd7b0be3b81c89cb2f23b38b96e",
-        "title": "重要政策｜2026年7月8日起，美国CPSC证书必须电子申报！",
-        "url": "https://www.cifnews.com/article/185839",
-        "source": "雨果跨境",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "cifnews_com",
-          "web_source_url": "https://www.cifnews.com/",
-          "web_source_score": 8,
-          "web_source_priority": "P1",
-          "web_source_domain": "跨境电商",
-          "web_source_platform": "雨果跨境",
           "published_time_source": "list_text"
         }
       }
@@ -636,14 +494,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.836,
-      "importance": 0.836,
-      "importance_score": 0.836,
+      "score": 0.8345,
+      "importance": 0.8345,
+      "importance_score": 0.8345,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.8601,
+        "recency": 0.8526,
         "story_heat": 0.0
       },
       "category": "official",
@@ -707,14 +565,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8637,
-      "importance": 0.8637,
-      "importance_score": 0.8637,
+      "score": 0.8622,
+      "importance": 0.8622,
+      "importance_score": 0.8622,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9985,
+        "recency": 0.991,
         "story_heat": 0.0
       },
       "category": "official",
@@ -778,14 +636,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8575,
-      "importance": 0.8575,
-      "importance_score": 0.8575,
+      "score": 0.856,
+      "importance": 0.856,
+      "importance_score": 0.856,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.8774,
+        "recency": 0.8698,
         "story_heat": 0.0
       },
       "category": "official",
@@ -843,7 +701,7 @@
           "published_at": "2026-06-11T13:10:27Z"
         }
       ],
-      "source_count": 2,
+      "source_count": 1,
       "source_names": [
         "抖音电商规则中心"
       ],
@@ -869,20 +727,19 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8845,
-      "importance": 0.8845,
-      "importance_score": 0.8845,
+      "score": 0.883,
+      "importance": 0.883,
+      "importance_score": 0.883,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.8875,
+        "recency": 0.8799,
         "story_heat": 0.25
       },
       "category": "official",
       "reasons": [
         "official_source",
-        "multi_source",
         "high_ai_relevance",
         "high_importance"
       ],
@@ -907,77 +764,6 @@
           "knowledge_id": "aJksF3Y7x1Bc",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
-        }
-      }
-    },
-    {
-      "story_id": "story_e992763bbb49",
-      "title": "0624深圳丨聚焦5H政策破局，一站式解锁合规新路径",
-      "url": "https://www.amz123.com/hd/aUhz0Q77_bXy3",
-      "primary_url": "https://www.amz123.com/hd/aUhz0Q77_bXy3",
-      "source": "卖家之家",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "de2c8adf15104f0a4e3bd5c850ea3c79af64c79f",
-          "title": "0624深圳丨聚焦5H政策破局，一站式解锁合规新路径",
-          "url": "https://www.amz123.com/hd/aUhz0Q77_bXy3",
-          "source": "卖家之家",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-24T06:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "卖家之家"
-      ],
-      "items": [
-        {
-          "id": "de2c8adf15104f0a4e3bd5c850ea3c79af64c79f",
-          "title": "0624深圳丨聚焦5H政策破局，一站式解锁合规新路径",
-          "url": "https://www.amz123.com/hd/aUhz0Q77_bXy3",
-          "source": "卖家之家",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-24T06:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.849,
-      "importance": 0.849,
-      "importance_score": 0.849,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.83,
-        "recency": 1.0,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-24T06:00:00Z",
-      "latest_at": "2026-06-24T06:00:00Z",
-      "primary_item": {
-        "id": "de2c8adf15104f0a4e3bd5c850ea3c79af64c79f",
-        "title": "0624深圳丨聚焦5H政策破局，一站式解锁合规新路径",
-        "url": "https://www.amz123.com/hd/aUhz0Q77_bXy3",
-        "source": "卖家之家",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "amz123_com",
-          "web_source_url": "https://www.amz123.com/",
-          "web_source_score": 5,
-          "web_source_priority": "P1",
-          "web_source_domain": "行业资讯",
-          "web_source_platform": "卖家之家",
-          "published_time_source": "detail_text"
         }
       }
     },
@@ -1016,14 +802,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.836,
-      "importance": 0.836,
-      "importance_score": 0.836,
+      "score": 0.8345,
+      "importance": 0.8345,
+      "importance_score": 0.8345,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.8601,
+        "recency": 0.8526,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1087,14 +873,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8058,
-      "importance": 0.8058,
-      "importance_score": 0.8058,
+      "score": 0.8043,
+      "importance": 0.8043,
+      "importance_score": 0.8043,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.72,
-        "recency": 0.9489,
+        "recency": 0.9414,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1157,14 +943,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8637,
-      "importance": 0.8637,
-      "importance_score": 0.8637,
+      "score": 0.8622,
+      "importance": 0.8622,
+      "importance_score": 0.8622,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9985,
+        "recency": 0.991,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1228,14 +1014,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8574,
-      "importance": 0.8574,
-      "importance_score": 0.8574,
+      "score": 0.8559,
+      "importance": 0.8559,
+      "importance_score": 0.8559,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.8772,
+        "recency": 0.8696,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1301,14 +1087,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8815,
-      "importance": 0.8815,
-      "importance_score": 0.8815,
+      "score": 0.8799,
+      "importance": 0.8799,
+      "importance_score": 0.8799,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.9973,
+        "recency": 0.9897,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1376,14 +1162,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8157,
-      "importance": 0.8157,
-      "importance_score": 0.8157,
+      "score": 0.8142,
+      "importance": 0.8142,
+      "importance_score": 0.8142,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.7584,
+        "recency": 0.7509,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1408,6 +1194,77 @@
           "web_source_priority": "P1",
           "web_source_domain": "供应链物流",
           "web_source_platform": "马士基",
+          "published_time_source": "list_text"
+        }
+      }
+    },
+    {
+      "story_id": "story_dc65d88b2e48",
+      "title": "回放 2026“下半场”，如何在地缘变局、贸易政策与AI浪潮中发现出海新增长点? 2026-06-10 16:00",
+      "url": "https://www.cifnews.com/zhibo/4728?origin=home_zhibo_tuijian",
+      "primary_url": "https://www.cifnews.com/zhibo/4728?origin=home_zhibo_tuijian",
+      "source": "雨果跨境",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "46469d8e872c1adc6182305823723c3723928136",
+          "title": "回放 2026“下半场”，如何在地缘变局、贸易政策与AI浪潮中发现出海新增长点? 2026-06-10 16:00",
+          "url": "https://www.cifnews.com/zhibo/4728?origin=home_zhibo_tuijian",
+          "source": "雨果跨境",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T08:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "雨果跨境"
+      ],
+      "items": [
+        {
+          "id": "46469d8e872c1adc6182305823723c3723928136",
+          "title": "回放 2026“下半场”，如何在地缘变局、贸易政策与AI浪潮中发现出海新增长点? 2026-06-10 16:00",
+          "url": "https://www.cifnews.com/zhibo/4728?origin=home_zhibo_tuijian",
+          "source": "雨果跨境",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T08:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7807,
+      "importance": 0.7807,
+      "importance_score": 0.7807,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.8,
+        "recency": 0.7033,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-10T08:00:00Z",
+      "latest_at": "2026-06-10T08:00:00Z",
+      "primary_item": {
+        "id": "46469d8e872c1adc6182305823723c3723928136",
+        "title": "回放 2026“下半场”，如何在地缘变局、贸易政策与AI浪潮中发现出海新增长点? 2026-06-10 16:00",
+        "url": "https://www.cifnews.com/zhibo/4728?origin=home_zhibo_tuijian",
+        "source": "雨果跨境",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "cifnews_com",
+          "web_source_url": "https://www.cifnews.com/",
+          "web_source_score": 8,
+          "web_source_priority": "P1",
+          "web_source_domain": "跨境电商",
+          "web_source_platform": "雨果跨境",
           "published_time_source": "list_text"
         }
       }
@@ -1447,14 +1304,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7726,
-      "importance": 0.7726,
-      "importance_score": 0.7726,
+      "score": 0.7711,
+      "importance": 0.7711,
+      "importance_score": 0.7711,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.8,
-        "recency": 0.6632,
+        "recency": 0.6557,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1479,6 +1336,147 @@
           "web_source_priority": "P1",
           "web_source_domain": "政策监管",
           "web_source_platform": "欧盟委员会",
+          "published_time_source": "detail_meta"
+        }
+      }
+    },
+    {
+      "story_id": "story_9ab041aec103",
+      "title": "两部门关于组织开展2026消费名品全国行的通知",
+      "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_f39a045b0f5543b69f85cf67af5b72f0.html",
+      "primary_url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_f39a045b0f5543b69f85cf67af5b72f0.html",
+      "source": "工信部公告",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "977c097288bd06328f4a18a9f45d6b85ddffa605",
+          "title": "两部门关于组织开展2026消费名品全国行的通知",
+          "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_f39a045b0f5543b69f85cf67af5b72f0.html",
+          "source": "工信部公告",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T00:37:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "工信部公告"
+      ],
+      "items": [
+        {
+          "id": "977c097288bd06328f4a18a9f45d6b85ddffa605",
+          "title": "两部门关于组织开展2026消费名品全国行的通知",
+          "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_f39a045b0f5543b69f85cf67af5b72f0.html",
+          "source": "工信部公告",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T00:37:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8244,
+      "importance": 0.8244,
+      "importance_score": 0.8244,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.88,
+        "recency": 0.8022,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-11T00:37:00Z",
+      "latest_at": "2026-06-11T00:37:00Z",
+      "primary_item": {
+        "id": "977c097288bd06328f4a18a9f45d6b85ddffa605",
+        "title": "两部门关于组织开展2026消费名品全国行的通知",
+        "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_f39a045b0f5543b69f85cf67af5b72f0.html",
+        "source": "工信部公告",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "miit_gov_cn",
+          "web_source_url": "https://www.miit.gov.cn",
+          "web_source_score": 8,
+          "web_source_priority": "P1",
+          "web_source_domain": "政策监管",
+          "web_source_platform": "工信部",
+          "published_time_source": "detail_text"
+        }
+      }
+    },
+    {
+      "story_id": "story_f59f442c63e3",
+      "title": "文章 / Articles",
+      "url": "https://www.marketplacepulse.com/articles",
+      "primary_url": "https://www.marketplacepulse.com/articles",
+      "source": "Marketplace Pulse",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "036fca4e1408503f4c2508e80ba8b47c7a11617d",
+          "title": "文章 / Articles",
+          "url": "https://www.marketplacepulse.com/articles",
+          "source": "Marketplace Pulse",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T14:30:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Marketplace Pulse"
+      ],
+      "items": [
+        {
+          "id": "036fca4e1408503f4c2508e80ba8b47c7a11617d",
+          "title": "文章 / Articles",
+          "url": "https://www.marketplacepulse.com/articles",
+          "source": "Marketplace Pulse",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T14:30:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.793,
+      "importance": 0.793,
+      "importance_score": 0.793,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.72,
+        "recency": 0.8848,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-11T14:30:00Z",
+      "latest_at": "2026-06-11T14:30:00Z",
+      "primary_item": {
+        "id": "036fca4e1408503f4c2508e80ba8b47c7a11617d",
+        "title": "文章 / Articles",
+        "url": "https://www.marketplacepulse.com/articles",
+        "source": "Marketplace Pulse",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "marketplacepulse_com",
+          "web_source_url": "https://www.marketplacepulse.com",
+          "web_source_score": 1,
+          "web_source_priority": "P0",
+          "web_source_domain": "跨境电商",
+          "web_source_platform": "Marketplace Pulse",
           "published_time_source": "detail_meta"
         }
       }

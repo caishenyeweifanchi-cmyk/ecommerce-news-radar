@@ -2121,6 +2121,36 @@ WEB_SOURCE_DATE_PATTERNS: tuple[re.Pattern[str], ...] = (
 )
 
 
+def is_plausible_published_time(candidate: datetime, now: datetime) -> bool:
+    # A public page cannot be published in the future. Event pages often put
+    # registration or activity times in titles; those must not drive the radar
+    # timeline.
+    return candidate <= now + timedelta(hours=6)
+
+
+def normalize_raw_publish_time(raw: RawItem, now: datetime) -> tuple[datetime | None, dict[str, Any]]:
+    meta = dict(raw.meta or {})
+    published_at = raw.published_at
+    if published_at and not is_plausible_published_time(published_at, now):
+        meta["rejected_published_at"] = iso(published_at)
+        meta["published_time_source"] = "future_time_rejected"
+        published_at = None
+    return published_at, meta
+
+
+def clear_future_record_publish_time(record: dict[str, Any], now: datetime) -> None:
+    published_at = parse_iso(str(record.get("published_at") or "")) if record.get("published_at") else None
+    if not published_at or is_plausible_published_time(published_at, now):
+        return
+
+    meta = record.get("meta") if isinstance(record.get("meta"), dict) else {}
+    next_meta = dict(meta)
+    next_meta.setdefault("rejected_published_at", record.get("published_at"))
+    next_meta["published_time_source"] = "future_time_rejected"
+    record["meta"] = next_meta
+    record["published_at"] = None
+
+
 def extract_datetime_from_text(text: str, now: datetime) -> datetime | None:
     text = maybe_fix_mojibake(str(text or ""))
     for pattern in WEB_SOURCE_DATE_PATTERNS:
@@ -2131,7 +2161,7 @@ def extract_datetime_from_text(text: str, now: datetime) -> datetime | None:
         try:
             if len(parts) == 6 and parts[0] and len(parts[0]) == 4:
                 year, month, day, hour, minute, second = parts
-                return datetime(
+                candidate = datetime(
                     int(year),
                     int(month),
                     int(day),
@@ -2140,9 +2170,15 @@ def extract_datetime_from_text(text: str, now: datetime) -> datetime | None:
                     int(second or 0),
                     tzinfo=SH_TZ,
                 ).astimezone(UTC)
+                if is_plausible_published_time(candidate, now):
+                    return candidate
+                continue
             if len(parts) == 3 and parts[0] and len(parts[0]) == 4:
                 year, month, day = parts
-                return datetime(int(year), int(month), int(day), tzinfo=SH_TZ).astimezone(UTC)
+                candidate = datetime(int(year), int(month), int(day), tzinfo=SH_TZ).astimezone(UTC)
+                if is_plausible_published_time(candidate, now):
+                    return candidate
+                continue
             month, day, hour, minute, second = parts
             candidate = datetime(
                 now.astimezone(SH_TZ).year,
@@ -2153,9 +2189,9 @@ def extract_datetime_from_text(text: str, now: datetime) -> datetime | None:
                 int(second or 0),
                 tzinfo=SH_TZ,
             ).astimezone(UTC)
-            if candidate > now + timedelta(days=3):
-                candidate = candidate.replace(year=candidate.year - 1)
-            return candidate
+            if is_plausible_published_time(candidate, now):
+                return candidate
+            continue
         except ValueError:
             continue
     return None
@@ -3985,12 +4021,12 @@ def story_item_link(item: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def story_reasons(primary: dict[str, Any], score: float, duplicate_count: int) -> list[str]:
+def story_reasons(primary: dict[str, Any], score: float, source_count: int) -> list[str]:
     reasons: list[str] = []
     tier = source_tier_for_site(str(primary.get("site_id") or ""))
     if tier["source_tier"] == "official":
         reasons.append("official_source")
-    if duplicate_count >= 2:
+    if source_count >= 2:
         reasons.append("multi_source")
     if ai_relevance_score(primary) >= 0.8:
         reasons.append("high_ai_relevance")
@@ -4014,7 +4050,12 @@ def build_story_record(
     category = story_category(score, primary, len(items))
     times = [ts for ts in (event_time(item) for item in sorted_items) if ts]
     source_refs = [story_item_link(item) for item in sorted_items]
+    source_keys = {
+        f"{item.get('site_id') or ''}::{item.get('source') or item.get('site_name') or item.get('url') or ''}"
+        for item in sorted_items
+    }
     source_names = sorted({str(item.get("source") or item.get("site_name") or "") for item in sorted_items if item.get("source") or item.get("site_name")})
+    source_count = max(1, len(source_keys))
     title = primary.get("title_bilingual") or primary.get("title")
     url = primary.get("url")
     return {
@@ -4025,7 +4066,7 @@ def build_story_record(
         "source": primary.get("source"),
         "source_name": primary.get("site_name"),
         "sources": source_refs,
-        "source_count": len(source_refs),
+        "source_count": source_count,
         "source_names": source_names,
         "items": source_refs,
         "item_count": len(sorted_items),
@@ -4036,7 +4077,7 @@ def build_story_record(
         "importance_label": importance_label(category),
         "importance_breakdown": importance["breakdown"],
         "category": category,
-        "reasons": story_reasons(primary, score, len(sorted_items)),
+        "reasons": story_reasons(primary, score, source_count),
         "earliest_at": iso(min(times)) if times else None,
         "latest_at": iso(max(times)) if times else None,
         "primary_item": {
@@ -4423,6 +4464,7 @@ def main() -> int:
         item_id = make_item_id(raw.site_id, raw.source, title, url)
         seen_this_run.add(item_id)
 
+        published_at, raw_meta = normalize_raw_publish_time(raw, now)
         existing = archive.get(item_id)
         if existing is None:
             archive[item_id] = {
@@ -4432,26 +4474,30 @@ def main() -> int:
                 "source": raw.source,
                 "title": title,
                 "url": url,
-                "published_at": iso(raw.published_at),
+                "published_at": iso(published_at),
                 "first_seen_at": iso(now),
                 "last_seen_at": iso(now),
-                "meta": raw.meta or {},
+                "meta": raw_meta,
             }
         else:
+            clear_future_record_publish_time(existing, now)
             existing["site_id"] = raw.site_id
             existing["site_name"] = raw.site_name
             existing["source"] = raw.source
             existing["title"] = title
             existing["url"] = url
             if raw.site_id == "websource":
-                existing["published_at"] = iso(raw.published_at)
-            elif raw.published_at:
+                existing["published_at"] = iso(published_at)
+            elif published_at:
                 # OPML RSS may fix previously wrong publish times; allow overwrite.
                 if raw.site_id == "opmlrss" or not existing.get("published_at"):
-                    existing["published_at"] = iso(raw.published_at)
+                    existing["published_at"] = iso(published_at)
             existing["last_seen_at"] = iso(now)
-            if raw.meta:
-                existing["meta"] = raw.meta
+            if raw_meta:
+                existing["meta"] = raw_meta
+
+    for record in archive.values():
+        clear_future_record_publish_time(record, now)
 
     # Prune old archive
     keep_after = now - timedelta(days=args.archive_days)

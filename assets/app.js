@@ -332,15 +332,42 @@ function modeItems() {
   return state.mode === "all" ? effectiveAllItems() : state.itemsAi;
 }
 
-function getFilteredItems() {
+function itemMatchesActiveFilters(item, includeSite = true) {
   const q = state.query.trim().toLowerCase();
-  return modeItems().filter((item) => {
-    if (state.siteFilter && item.site_id !== state.siteFilter) return false;
-    if (state.categoryFilter && item.ai_label !== state.categoryFilter) return false;
-    if (!q) return true;
-    const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
-    return hay.includes(q);
-  });
+  if (includeSite && state.siteFilter && item.site_id !== state.siteFilter) return false;
+  if (state.categoryFilter && item.ai_label !== state.categoryFilter) return false;
+  if (!q) return true;
+  const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""} ${item.url || ""}`.toLowerCase();
+  return hay.includes(q);
+}
+
+function getFilteredItems() {
+  return modeItems().filter((item) => itemMatchesActiveFilters(item));
+}
+
+function storyMatchesActiveFilters(story) {
+  const primary = (story && story.primary_item) || {};
+  const q = state.query.trim().toLowerCase();
+  if (state.categoryFilter && primary.ai_label !== state.categoryFilter && story.category !== state.categoryFilter) {
+    return false;
+  }
+  if (state.siteFilter && primary.site_id !== state.siteFilter) return false;
+  if (!q) return true;
+  const sources = Array.isArray(story && story.sources) ? story.sources : [];
+  const hay = [
+    story.title,
+    story.summary,
+    story.reason,
+    story.source,
+    primary.title,
+    primary.title_zh,
+    primary.title_en,
+    primary.site_name,
+    primary.source,
+    primary.url,
+    ...sources.map((source) => `${source.site_name || ""} ${source.source || ""} ${source.url || ""}`),
+  ].join(" ").toLowerCase();
+  return hay.includes(q);
 }
 
 function renderCategoryTabs() {
@@ -362,6 +389,7 @@ function scrollToPanel(targetId) {
 function applyCategoryFilter(category) {
   state.categoryFilter = category || "";
   renderCategoryTabs();
+  renderBolePicks();
   renderList();
 }
 
@@ -552,7 +580,7 @@ function storyPrimaryEnText(story) {
 
 function storySourceCount(story) {
   const sources = Array.isArray(story && story.sources) ? story.sources : [];
-  const explicit = Number(story && story.duplicate_count);
+  const explicit = Number(story && story.source_count);
   if (Number.isFinite(explicit) && explicit > 0) return explicit;
   return Math.max(1, sources.length);
 }
@@ -764,7 +792,7 @@ function buildStoryCard(story, rank) {
 const HOT_DECAY_HOURS = 12;
 
 function storyHotness(story) {
-  const sources = Number(story.source_count) || 1;
+  const sources = storySourceCount(story);
   if (sources < 2) return 0;
   const latest = storyTimeMs(story, "latest_at") || storyTimeMs(story, "earliest_at");
   const ageHours = latest ? Math.max(0, (Date.now() - latest) / 3600000) : 24;
@@ -774,7 +802,13 @@ function storyHotness(story) {
 function hotStories(stories) {
   return stories
     .filter((story) => storyHotness(story) > 0)
-    .sort((a, b) => storyHotness(b) - storyHotness(a) || storyScore(b) - storyScore(a));
+    .sort((a, b) => {
+      const bySources = storySourceCount(b) - storySourceCount(a);
+      if (bySources !== 0) return bySources;
+      const byHotness = storyHotness(b) - storyHotness(a);
+      if (byHotness !== 0) return byHotness;
+      return storyScore(b) - storyScore(a);
+    });
 }
 
 function renderBoleBrief(stories) {
@@ -782,7 +816,7 @@ function renderBoleBrief(stories) {
   bolePicksListEl.className = "bole-board";
 
   const hot = hotStories(stories);
-  const hotAvailable = hot.length >= 2;
+  const hotAvailable = hot.length >= 1;
   // 宁缺毋滥: the hot view only exists when there is real multi-source heat.
   if (boleViewToggleEl) boleViewToggleEl.hidden = !hotAvailable;
   if (!hotAvailable) state.boleView = "timeline";
@@ -856,7 +890,7 @@ function renderBolePicks() {
   bolePicksListEl.className = "bole-board";
 
   const brief = state.dailyBrief;
-  const items = brief && Array.isArray(brief.items) ? brief.items : [];
+  const items = brief && Array.isArray(brief.items) ? brief.items.filter(storyMatchesActiveFilters) : [];
   if (items.length) {
     if (bolePicksWrapEl) bolePicksWrapEl.hidden = false;
     renderBoleBrief(items);
@@ -865,14 +899,14 @@ function renderBolePicks() {
 
   if (brief) {
     if (bolePicksWrapEl) bolePicksWrapEl.hidden = false;
-    const picks = pickBoleItems(state.itemsAi || []);
-    bolePicksMetaEl.textContent = "日报暂未命中高优先级故事 · 展示当前候选信号";
+    const picks = pickBoleItems(getFilteredItems());
+    bolePicksMetaEl.textContent = "当前筛选未命中日报故事 · 展示匹配候选信号";
     renderBoleFallback(picks);
     return;
   }
 
   if (bolePicksWrapEl) bolePicksWrapEl.hidden = false;
-  const picks = pickBoleItems(state.itemsAi || []);
+  const picks = pickBoleItems(getFilteredItems());
   bolePicksMetaEl.textContent = "故事合并数据暂未生成 · 伯乐候选信号";
   renderBoleFallback(picks);
 }
@@ -1463,12 +1497,14 @@ async function init() {
 
 searchInputEl.addEventListener("input", (e) => {
   state.query = e.target.value;
+  renderBolePicks();
   renderList();
 });
 
 siteSelectEl.addEventListener("change", (e) => {
   state.siteFilter = e.target.value;
   renderSiteFilters();
+  renderBolePicks();
   renderList();
 });
 
@@ -1476,6 +1512,7 @@ modeAiBtnEl.addEventListener("click", () => {
   state.mode = "ai";
   renderModeSwitch();
   renderSiteFilters();
+  renderBolePicks();
   renderList();
 });
 
@@ -1490,6 +1527,7 @@ modeAllBtnEl.addEventListener("click", async () => {
   try {
     await loadAllModeData();
     renderSiteFilters();
+    renderBolePicks();
     renderList();
   } catch (err) {
     newsListEl.innerHTML = "";
@@ -1505,6 +1543,7 @@ if (allDedupeToggleEl) {
     state.allDedup = Boolean(e.target.checked);
     renderModeSwitch();
     renderSiteFilters();
+    renderBolePicks();
     renderList();
   });
 }
@@ -1529,6 +1568,7 @@ navLinkEls.forEach((link) => {
     } else if (targetId !== "advancedPanel") {
       state.categoryFilter = "";
       filterTabEls.forEach((tab) => tab.classList.toggle("active", !tab.dataset.category));
+      renderBolePicks();
       renderList();
     }
     if (targetId === "advancedPanel" && advancedPanelEl) advancedPanelEl.open = true;
