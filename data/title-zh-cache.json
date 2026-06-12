@@ -112,5 +112,7 @@
   "`GiftCardCashOutTransaction` is now resolvable from `GiftCardTransaction`": "“GiftCardCashOutTransaction”现在可以从“GiftCardTransaction”解析",
   "Local currency support gift cards now available in the GraphQL Admin API": "GraphQL 管理 API 现已提供本地货币支持礼品卡",
   "Inventory transfer webhooks include origin and destination location IDs, and mutation documentation clarified": "库存转移 webhook 包括出发地和目的地位置 ID，以及澄清的突变文档",
-  "Schedule, publish, and A/B test new themes and checkout and customer account configurations": "安排、发布和 A/B 测试新主题以及结帐和客户帐户配置"
+  "Schedule, publish, and A/B test new themes and checkout and customer account configurations": "安排、发布和 A/B 测试新主题以及结帐和客户帐户配置",
+  "1781172365737 🎯 Introducing Skills: get more predictable, consistent answers from your AI Agent by Felipe Mor…": "1781172365737 🎯 技能介绍：从 Felipe Mor 的 AI 代理那里获得更可预测、一致的答案……",
+  "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.": "增强型本地服务广告将购房者和本地代理商聚集在一起。"
 }

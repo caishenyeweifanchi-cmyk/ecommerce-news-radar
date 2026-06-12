@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-06-12T11:40:49.329347Z",
+  "generated_at": "2026-06-12T14:03:39.114523Z",
   "window_hours": 168,
-  "total_items": 35,
-  "total_items_ai_raw": 36,
-  "total_items_raw": 36,
-  "total_items_all_mode": 36,
+  "total_items": 36,
+  "total_items_ai_raw": 37,
+  "total_items_raw": 37,
+  "total_items_all_mode": 37,
   "topic_filter": "ecommerce_relevance_scoring_v0_1",
   "topic": "ecommerce",
   "ai_relevance_threshold": 0.65,
   "topic_relevance_threshold": 0.65,
-  "archive_total": 6405,
+  "archive_total": 6422,
   "site_count": 2,
   "source_count": 13,
   "site_stats": [
     {
       "site_id": "websource",
       "site_name": "重点网页源",
-      "count": 35,
-      "raw_count": 36
+      "count": 36,
+      "raw_count": 37
     },
     {
       "site_id": "opmlrss",
@@ -28,6 +28,57 @@
   ],
   "items": [
     {
+      "id": "e18238979867f87c91eeb53515db51c1955356ff",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "抖音电商规则中心",
+      "title": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
+      "published_at": "2026-06-12T14:03:03Z",
+      "first_seen_at": "2026-06-12T14:03:39.114523Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
+      "meta": {
+        "web_source_id": "douyin_ecommerce_rule_center",
+        "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "抖音电商",
+        "rule_type": 0,
+        "rule_status": 201,
+        "knowledge_id": "aJkqnYLDPfoP",
+        "article_url_source": "douyin_articlev0",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 1.0,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_operations_value",
+      "ai_signals": [
+        "平台规则",
+        "抖音电商",
+        "电商",
+        "规则中心",
+        "规则",
+        "违规",
+        "平台",
+        "抖音电商规则中心"
+      ],
+      "ai_noise": [],
+      "business_value": "用于判断平台规则、账号风险、处罚治理和商家经营动作。",
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 1.0,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+      "title_en": null,
+      "title_zh": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+      "title_bilingual": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知"
+    },
+    {
       "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
       "site_id": "websource",
       "site_name": "重点网页源",
@@ -36,7 +87,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
       "published_at": "2026-06-12T11:19:31Z",
       "first_seen_at": "2026-06-12T11:20:02.262762Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -89,7 +140,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
       "published_at": "2026-06-12T11:14:17Z",
       "first_seen_at": "2026-06-12T11:20:02.262762Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -141,7 +192,7 @@
       "url": "https://www.newrank.cn/article/detail/34521",
       "published_at": "2026-06-12T10:20:10Z",
       "first_seen_at": "2026-06-12T11:40:49.329347Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -183,7 +234,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkbJcdRFFSP",
       "published_at": "2026-06-12T08:08:45Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -235,7 +286,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEEEnB",
       "published_at": "2026-06-12T08:07:17Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -286,7 +337,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=RsXYMVvx14",
       "published_at": "2026-06-12T08:04:11.913000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -336,7 +387,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
       "published_at": "2026-06-12T06:03:42Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -388,7 +439,7 @@
       "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -478,7 +529,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -532,7 +583,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -583,7 +634,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -634,7 +685,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -685,7 +736,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=4NJAdFIRMe",
       "published_at": "2026-06-11T11:58:36.954000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -734,7 +785,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=nGTlUU3dqS",
       "published_at": "2026-06-11T11:56:51.964000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -813,8 +864,8 @@
       "source_tier_rank": 0,
       "title_original": "1781172365737 🎯 Introducing Skills: get more predictable, consistent answers from your AI Agent by Felipe Mor…",
       "title_en": "1781172365737 🎯 Introducing Skills: get more predictable, consistent answers from your AI Agent by Felipe Mor…",
-      "title_zh": null,
-      "title_bilingual": "1781172365737 🎯 Introducing Skills: get more predictable, consistent answers from your AI Agent by Felipe Mor…"
+      "title_zh": "1781172365737 🎯 技能介绍：从 Felipe Mor 的 AI 代理那里获得更可预测、一致的答案……",
+      "title_bilingual": "1781172365737 🎯 技能介绍：从 Felipe Mor 的 AI 代理那里获得更可预测、一致的答案…… / 1781172365737 🎯 Introducing Skills: get more predictable, consistent answers from your AI Agent by Felipe Mor…"
     },
     {
       "id": "39fbc598df06b4a2da9d952089930f49c66f9862",
@@ -869,7 +920,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
       "published_at": "2026-06-11T09:36:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -921,7 +972,7 @@
       "url": "https://www.newrank.cn/article/detail/34517",
       "published_at": "2026-06-11T08:32:44Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -1146,7 +1197,7 @@
       "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
       "published_at": "2026-06-11T00:00:00Z",
       "first_seen_at": "2026-06-12T04:24:03.456863Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "blog_google_products_ads_commerce",
         "web_source_url": "https://blog.google/products/ads-commerce/",
@@ -1176,8 +1227,8 @@
       "source_tier_rank": 0,
       "title_original": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
       "title_en": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
-      "title_zh": null,
-      "title_bilingual": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together."
+      "title_zh": "增强型本地服务广告将购房者和本地代理商聚集在一起。",
+      "title_bilingual": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together."
     },
     {
       "id": "ba73fac7356ef9ab021fcd638cfef727695fa1aa",
@@ -1591,7 +1642,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=TParGlyquv",
       "published_at": "2026-06-09T03:28:16.623000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -1641,7 +1692,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=YI9zgXSF6o",
       "published_at": "2026-06-09T03:26:21.935000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -1729,6 +1780,57 @@
   ],
   "items_ai": [
     {
+      "id": "e18238979867f87c91eeb53515db51c1955356ff",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "抖音电商规则中心",
+      "title": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
+      "published_at": "2026-06-12T14:03:03Z",
+      "first_seen_at": "2026-06-12T14:03:39.114523Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
+      "meta": {
+        "web_source_id": "douyin_ecommerce_rule_center",
+        "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "抖音电商",
+        "rule_type": 0,
+        "rule_status": 201,
+        "knowledge_id": "aJkqnYLDPfoP",
+        "article_url_source": "douyin_articlev0",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 1.0,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_operations_value",
+      "ai_signals": [
+        "平台规则",
+        "抖音电商",
+        "电商",
+        "规则中心",
+        "规则",
+        "违规",
+        "平台",
+        "抖音电商规则中心"
+      ],
+      "ai_noise": [],
+      "business_value": "用于判断平台规则、账号风险、处罚治理和商家经营动作。",
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 1.0,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+      "title_en": null,
+      "title_zh": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+      "title_bilingual": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知"
+    },
+    {
       "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
       "site_id": "websource",
       "site_name": "重点网页源",
@@ -1737,7 +1839,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
       "published_at": "2026-06-12T11:19:31Z",
       "first_seen_at": "2026-06-12T11:20:02.262762Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1790,7 +1892,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
       "published_at": "2026-06-12T11:14:17Z",
       "first_seen_at": "2026-06-12T11:20:02.262762Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1842,7 +1944,7 @@
       "url": "https://www.newrank.cn/article/detail/34521",
       "published_at": "2026-06-12T10:20:10Z",
       "first_seen_at": "2026-06-12T11:40:49.329347Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -1884,7 +1986,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkbJcdRFFSP",
       "published_at": "2026-06-12T08:08:45Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1936,7 +2038,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEEEnB",
       "published_at": "2026-06-12T08:07:17Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1987,7 +2089,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=RsXYMVvx14",
       "published_at": "2026-06-12T08:04:11.913000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -2037,7 +2139,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
       "published_at": "2026-06-12T06:03:42Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2089,7 +2191,7 @@
       "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -2179,7 +2281,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2233,7 +2335,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2284,7 +2386,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2335,7 +2437,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2386,7 +2488,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=4NJAdFIRMe",
       "published_at": "2026-06-11T11:58:36.954000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -2435,7 +2537,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=nGTlUU3dqS",
       "published_at": "2026-06-11T11:56:51.964000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -2514,8 +2616,8 @@
       "source_tier_rank": 0,
       "title_original": "1781172365737 🎯 Introducing Skills: get more predictable, consistent answers from your AI Agent by Felipe Mor…",
       "title_en": "1781172365737 🎯 Introducing Skills: get more predictable, consistent answers from your AI Agent by Felipe Mor…",
-      "title_zh": null,
-      "title_bilingual": "1781172365737 🎯 Introducing Skills: get more predictable, consistent answers from your AI Agent by Felipe Mor…"
+      "title_zh": "1781172365737 🎯 技能介绍：从 Felipe Mor 的 AI 代理那里获得更可预测、一致的答案……",
+      "title_bilingual": "1781172365737 🎯 技能介绍：从 Felipe Mor 的 AI 代理那里获得更可预测、一致的答案…… / 1781172365737 🎯 Introducing Skills: get more predictable, consistent answers from your AI Agent by Felipe Mor…"
     },
     {
       "id": "39fbc598df06b4a2da9d952089930f49c66f9862",
@@ -2570,7 +2672,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
       "published_at": "2026-06-11T09:36:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2622,7 +2724,7 @@
       "url": "https://www.newrank.cn/article/detail/34517",
       "published_at": "2026-06-11T08:32:44Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -2847,7 +2949,7 @@
       "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
       "published_at": "2026-06-11T00:00:00Z",
       "first_seen_at": "2026-06-12T04:24:03.456863Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "blog_google_products_ads_commerce",
         "web_source_url": "https://blog.google/products/ads-commerce/",
@@ -2877,8 +2979,8 @@
       "source_tier_rank": 0,
       "title_original": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
       "title_en": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
-      "title_zh": null,
-      "title_bilingual": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together."
+      "title_zh": "增强型本地服务广告将购房者和本地代理商聚集在一起。",
+      "title_bilingual": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together."
     },
     {
       "id": "ba73fac7356ef9ab021fcd638cfef727695fa1aa",
@@ -3292,7 +3394,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=TParGlyquv",
       "published_at": "2026-06-09T03:28:16.623000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -3342,7 +3444,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=YI9zgXSF6o",
       "published_at": "2026-06-09T03:26:21.935000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T11:40:49.329347Z",
+      "last_seen_at": "2026-06-12T14:03:39.114523Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T11:40:49.329347Z",
+  "generated_at": "2026-06-12T14:03:39.114523Z",
   "window_hours": 168,
   "total_items": 20,
   "sections": [
@@ -8,21 +8,21 @@
       "title": "今日必看",
       "items": [
         {
-          "story_id": "story_4106d6383aac",
-          "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
-          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
+          "story_id": "story_41a28550dc0b",
+          "title": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
+          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "sources": [
             {
-              "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
-              "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
+              "id": "e18238979867f87c91eeb53515db51c1955356ff",
+              "title": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
               "source": "抖音电商规则中心",
               "source_name": "重点网页源",
               "site_id": "websource",
-              "published_at": "2026-06-12T11:19:31Z"
+              "published_at": "2026-06-12T14:03:03Z"
             }
           ],
           "source_count": 1,
@@ -31,25 +31,25 @@
           ],
           "items": [
             {
-              "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
-              "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
+              "id": "e18238979867f87c91eeb53515db51c1955356ff",
+              "title": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
               "source": "抖音电商规则中心",
               "source_name": "重点网页源",
               "site_id": "websource",
-              "published_at": "2026-06-12T11:19:31Z"
+              "published_at": "2026-06-12T14:03:03Z"
             }
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8996,
-          "importance": 0.8996,
-          "importance_score": 0.8996,
+          "score": 0.9,
+          "importance": 0.9,
+          "importance_score": 0.9,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.9979,
+            "recency": 0.9999,
             "story_heat": 0.0
           },
           "category": "official",
@@ -63,12 +63,12 @@
             "high_ai_relevance",
             "high_importance"
           ],
-          "earliest_at": "2026-06-12T11:19:31Z",
-          "latest_at": "2026-06-12T11:19:31Z",
+          "earliest_at": "2026-06-12T14:03:03Z",
+          "latest_at": "2026-06-12T14:03:03Z",
           "primary_item": {
-            "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
-            "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
-            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
+            "id": "e18238979867f87c91eeb53515db51c1955356ff",
+            "title": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
             "source": "抖音电商规则中心",
             "source_name": "重点网页源",
             "site_id": "websource",
@@ -80,8 +80,8 @@
               "web_source_domain": "平台规则",
               "web_source_platform": "抖音电商",
               "rule_type": 0,
-              "rule_status": 0,
-              "knowledge_id": "aJksBkuEaPfM",
+              "rule_status": 201,
+              "knowledge_id": "aJkqnYLDPfoP",
               "article_url_source": "douyin_articlev0",
               "published_time_source": "api"
             }
@@ -122,14 +122,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8957,
-          "importance": 0.8957,
-          "importance_score": 0.8957,
+          "score": 0.8929,
+          "importance": 0.8929,
+          "importance_score": 0.8929,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.9785,
+            "recency": 0.9643,
             "story_heat": 0.0
           },
           "category": "official",
@@ -166,21 +166,21 @@
           }
         },
         {
-          "story_id": "story_be7e1ae8851c",
-          "title": "关于修订《【处方药】品类管理规范》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
-          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
+          "story_id": "story_4106d6383aac",
+          "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
+          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "sources": [
             {
-              "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
-              "title": "关于修订《【处方药】品类管理规范》的公示通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
+              "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
+              "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
+              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
               "source": "抖音电商规则中心",
               "source_name": "重点网页源",
               "site_id": "websource",
-              "published_at": "2026-06-12T11:14:17Z"
+              "published_at": "2026-06-12T11:19:31Z"
             }
           ],
           "source_count": 1,
@@ -189,25 +189,25 @@
           ],
           "items": [
             {
-              "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
-              "title": "关于修订《【处方药】品类管理规范》的公示通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
+              "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
+              "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
+              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
               "source": "抖音电商规则中心",
               "source_name": "重点网页源",
               "site_id": "websource",
-              "published_at": "2026-06-12T11:14:17Z"
+              "published_at": "2026-06-12T11:19:31Z"
             }
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8995,
-          "importance": 0.8995,
-          "importance_score": 0.8995,
+          "score": 0.8967,
+          "importance": 0.8967,
+          "importance_score": 0.8967,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.9974,
+            "recency": 0.9837,
             "story_heat": 0.0
           },
           "category": "official",
@@ -221,12 +221,12 @@
             "high_ai_relevance",
             "high_importance"
           ],
-          "earliest_at": "2026-06-12T11:14:17Z",
-          "latest_at": "2026-06-12T11:14:17Z",
+          "earliest_at": "2026-06-12T11:19:31Z",
+          "latest_at": "2026-06-12T11:19:31Z",
           "primary_item": {
-            "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
-            "title": "关于修订《【处方药】品类管理规范》的公示通知",
-            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
+            "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
+            "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
+            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
             "source": "抖音电商规则中心",
             "source_name": "重点网页源",
             "site_id": "websource",
@@ -239,7 +239,7 @@
               "web_source_platform": "抖音电商",
               "rule_type": 0,
               "rule_status": 0,
-              "knowledge_id": "aJkqnYheAUBm",
+              "knowledge_id": "aJksBkuEaPfM",
               "article_url_source": "douyin_articlev0",
               "published_time_source": "api"
             }
@@ -299,14 +299,14 @@
           ],
           "item_count": 2,
           "duplicate_count": 2,
-          "score": 0.8458,
-          "importance": 0.8458,
-          "importance_score": 0.8458,
+          "score": 0.843,
+          "importance": 0.843,
+          "importance_score": 0.843,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.82,
-            "recency": 0.8739,
+            "recency": 0.8598,
             "story_heat": 0.25
           },
           "category": "official",
@@ -376,14 +376,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8444,
-          "importance": 0.8444,
-          "importance_score": 0.8444,
+          "score": 0.8416,
+          "importance": 0.8416,
+          "importance_score": 0.8416,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.82,
-            "recency": 0.992,
+            "recency": 0.9778,
             "story_heat": 0.0
           },
           "category": "official",
@@ -452,14 +452,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8718,
-          "importance": 0.8718,
-          "importance_score": 0.8718,
+          "score": 0.8689,
+          "importance": 0.8689,
+          "importance_score": 0.8689,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.8589,
+            "recency": 0.8447,
             "story_heat": 0.0
           },
           "category": "official",
@@ -496,30 +496,21 @@
           }
         },
         {
-          "story_id": "story_71b89768f94e",
-          "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
-          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+          "story_id": "story_be7e1ae8851c",
+          "title": "关于修订《【处方药】品类管理规范》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
+          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "sources": [
             {
-              "id": "03e75dee8c02484036232c5158cee256680fbde0",
-              "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+              "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
+              "title": "关于修订《【处方药】品类管理规范》的公示通知",
+              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
               "source": "抖音电商规则中心",
               "source_name": "重点网页源",
               "site_id": "websource",
-              "published_at": "2026-06-11T13:40:33Z"
-            },
-            {
-              "id": "41bda9dcda8690e60afd232e64cc822f8cc71f76",
-              "title": "关于修订《创作者【违规营销内容】处置细则》的意见征集通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
-              "source": "抖音电商规则中心",
-              "source_name": "重点网页源",
-              "site_id": "websource",
-              "published_at": "2026-06-11T13:10:27Z"
+              "published_at": "2026-06-12T11:14:17Z"
             }
           ],
           "source_count": 1,
@@ -528,35 +519,26 @@
           ],
           "items": [
             {
-              "id": "03e75dee8c02484036232c5158cee256680fbde0",
-              "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+              "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
+              "title": "关于修订《【处方药】品类管理规范》的公示通知",
+              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
               "source": "抖音电商规则中心",
               "source_name": "重点网页源",
               "site_id": "websource",
-              "published_at": "2026-06-11T13:40:33Z"
-            },
-            {
-              "id": "41bda9dcda8690e60afd232e64cc822f8cc71f76",
-              "title": "关于修订《创作者【违规营销内容】处置细则》的意见征集通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
-              "source": "抖音电商规则中心",
-              "source_name": "重点网页源",
-              "site_id": "websource",
-              "published_at": "2026-06-11T13:10:27Z"
+              "published_at": "2026-06-12T11:14:17Z"
             }
           ],
-          "item_count": 2,
-          "duplicate_count": 2,
-          "score": 0.8988,
-          "importance": 0.8988,
-          "importance_score": 0.8988,
+          "item_count": 1,
+          "duplicate_count": 1,
+          "score": 0.8966,
+          "importance": 0.8966,
+          "importance_score": 0.8966,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.869,
-            "story_heat": 0.25
+            "recency": 0.9832,
+            "story_heat": 0.0
           },
           "category": "official",
           "brief_channel": "platform_policy",
@@ -569,12 +551,12 @@
             "high_ai_relevance",
             "high_importance"
           ],
-          "earliest_at": "2026-06-11T13:10:27Z",
-          "latest_at": "2026-06-11T13:40:33Z",
+          "earliest_at": "2026-06-12T11:14:17Z",
+          "latest_at": "2026-06-12T11:14:17Z",
           "primary_item": {
-            "id": "03e75dee8c02484036232c5158cee256680fbde0",
-            "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+            "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
+            "title": "关于修订《【处方药】品类管理规范》的公示通知",
+            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
             "source": "抖音电商规则中心",
             "source_name": "重点网页源",
             "site_id": "websource",
@@ -586,8 +568,8 @@
               "web_source_domain": "平台规则",
               "web_source_platform": "抖音电商",
               "rule_type": 0,
-              "rule_status": 201,
-              "knowledge_id": "aJksF3Y7x1Bc",
+              "rule_status": 0,
+              "knowledge_id": "aJkqnYheAUBm",
               "article_url_source": "douyin_articlev0",
               "published_time_source": "api"
             }
@@ -595,7 +577,7 @@
         },
         {
           "story_id": "story_75ee5875eff4",
-          "title": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
+          "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
           "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
           "primary_url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
           "source": "Google Ads Blog",
@@ -603,7 +585,7 @@
           "sources": [
             {
               "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-              "title": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
+              "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
               "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
               "source": "Google Ads Blog",
               "source_name": "重点网页源",
@@ -618,7 +600,7 @@
           "items": [
             {
               "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-              "title": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
+              "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
               "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
               "source": "Google Ads Blog",
               "source_name": "重点网页源",
@@ -628,14 +610,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8155,
-          "importance": 0.8155,
-          "importance_score": 0.8155,
+          "score": 0.8127,
+          "importance": 0.8127,
+          "importance_score": 0.8127,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.86,
-            "recency": 0.7876,
+            "recency": 0.7734,
             "story_heat": 0.0
           },
           "category": "official",
@@ -653,7 +635,7 @@
           "latest_at": "2026-06-11T00:00:00Z",
           "primary_item": {
             "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-            "title": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
+            "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
             "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
             "source": "Google Ads Blog",
             "source_name": "重点网页源",
@@ -704,14 +686,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8717,
-          "importance": 0.8717,
-          "importance_score": 0.8717,
+          "score": 0.8689,
+          "importance": 0.8689,
+          "importance_score": 0.8689,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.8587,
+            "recency": 0.8446,
             "story_heat": 0.0
           },
           "category": "official",
@@ -782,14 +764,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8958,
-          "importance": 0.8958,
-          "importance_score": 0.8958,
+          "score": 0.893,
+          "importance": 0.893,
+          "importance_score": 0.893,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.979,
+            "recency": 0.9648,
             "story_heat": 0.0
           },
           "category": "official",
@@ -862,14 +844,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8137,
-          "importance": 0.8137,
-          "importance_score": 0.8137,
+          "score": 0.8109,
+          "importance": 0.8109,
+          "importance_score": 0.8109,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.82,
-            "recency": 0.8385,
+            "recency": 0.8243,
             "story_heat": 0.0
           },
           "category": "official",
@@ -938,14 +920,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8958,
-          "importance": 0.8958,
-          "importance_score": 0.8958,
+          "score": 0.8929,
+          "importance": 0.8929,
+          "importance_score": 0.8929,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.9788,
+            "recency": 0.9646,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1018,14 +1000,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.758,
-          "importance": 0.758,
-          "importance_score": 0.758,
+          "score": 0.7552,
+          "importance": 0.7552,
+          "importance_score": 0.7552,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.7,
-            "recency": 0.74,
+            "recency": 0.7258,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1093,14 +1075,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8933,
-          "importance": 0.8933,
-          "importance_score": 0.8933,
+          "score": 0.8905,
+          "importance": 0.8905,
+          "importance_score": 0.8905,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.9666,
+            "recency": 0.9524,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1173,14 +1155,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8045,
-          "importance": 0.8045,
-          "importance_score": 0.8045,
+          "score": 0.8017,
+          "importance": 0.8017,
+          "importance_score": 0.8017,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.5226,
+            "recency": 0.5084,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1251,14 +1233,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.7294,
-          "importance": 0.7294,
-          "importance_score": 0.7294,
+          "score": 0.7266,
+          "importance": 0.7266,
+          "importance_score": 0.7266,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.7,
-            "recency": 0.5971,
+            "recency": 0.583,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1325,14 +1307,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8722,
-          "importance": 0.8722,
-          "importance_score": 0.8722,
+          "score": 0.8694,
+          "importance": 0.8694,
+          "importance_score": 0.8694,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.861,
+            "recency": 0.8468,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1405,14 +1387,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8045,
-          "importance": 0.8045,
-          "importance_score": 0.8045,
+          "score": 0.8016,
+          "importance": 0.8016,
+          "importance_score": 0.8016,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.5224,
+            "recency": 0.5082,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1483,14 +1465,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8722,
-          "importance": 0.8722,
-          "importance_score": 0.8722,
+          "score": 0.8694,
+          "importance": 0.8694,
+          "importance_score": 0.8694,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.8612,
+            "recency": 0.847,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1563,14 +1545,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.869,
-          "importance": 0.869,
-          "importance_score": 0.869,
+          "score": 0.8661,
+          "importance": 0.8661,
+          "importance_score": 0.8661,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.8448,
+            "recency": 0.8306,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1613,21 +1595,21 @@
   ],
   "items": [
     {
-      "story_id": "story_4106d6383aac",
-      "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
-      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
+      "story_id": "story_41a28550dc0b",
+      "title": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
-          "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
+          "id": "e18238979867f87c91eeb53515db51c1955356ff",
+          "title": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-12T11:19:31Z"
+          "published_at": "2026-06-12T14:03:03Z"
         }
       ],
       "source_count": 1,
@@ -1636,25 +1618,25 @@
       ],
       "items": [
         {
-          "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
-          "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
+          "id": "e18238979867f87c91eeb53515db51c1955356ff",
+          "title": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-12T11:19:31Z"
+          "published_at": "2026-06-12T14:03:03Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8996,
-      "importance": 0.8996,
-      "importance_score": 0.8996,
+      "score": 0.9,
+      "importance": 0.9,
+      "importance_score": 0.9,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9979,
+        "recency": 0.9999,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1668,12 +1650,12 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-12T11:19:31Z",
-      "latest_at": "2026-06-12T11:19:31Z",
+      "earliest_at": "2026-06-12T14:03:03Z",
+      "latest_at": "2026-06-12T14:03:03Z",
       "primary_item": {
-        "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
-        "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
+        "id": "e18238979867f87c91eeb53515db51c1955356ff",
+        "title": "关于修订《创作者【严重违规营销】处置细则》的意见征集通知",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -1685,8 +1667,8 @@
           "web_source_domain": "平台规则",
           "web_source_platform": "抖音电商",
           "rule_type": 0,
-          "rule_status": 0,
-          "knowledge_id": "aJksBkuEaPfM",
+          "rule_status": 201,
+          "knowledge_id": "aJkqnYLDPfoP",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
@@ -1727,14 +1709,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8957,
-      "importance": 0.8957,
-      "importance_score": 0.8957,
+      "score": 0.8929,
+      "importance": 0.8929,
+      "importance_score": 0.8929,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9785,
+        "recency": 0.9643,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1771,21 +1753,21 @@
       }
     },
     {
-      "story_id": "story_be7e1ae8851c",
-      "title": "关于修订《【处方药】品类管理规范》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
-      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
+      "story_id": "story_4106d6383aac",
+      "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
-          "title": "关于修订《【处方药】品类管理规范》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
+          "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
+          "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-12T11:14:17Z"
+          "published_at": "2026-06-12T11:19:31Z"
         }
       ],
       "source_count": 1,
@@ -1794,25 +1776,25 @@
       ],
       "items": [
         {
-          "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
-          "title": "关于修订《【处方药】品类管理规范》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
+          "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
+          "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-12T11:14:17Z"
+          "published_at": "2026-06-12T11:19:31Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8995,
-      "importance": 0.8995,
-      "importance_score": 0.8995,
+      "score": 0.8967,
+      "importance": 0.8967,
+      "importance_score": 0.8967,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9974,
+        "recency": 0.9837,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1826,12 +1808,12 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-12T11:14:17Z",
-      "latest_at": "2026-06-12T11:14:17Z",
+      "earliest_at": "2026-06-12T11:19:31Z",
+      "latest_at": "2026-06-12T11:19:31Z",
       "primary_item": {
-        "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
-        "title": "关于修订《【处方药】品类管理规范》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
+        "id": "e275ea7c16e9780891228c48a4a2443b25115fa4",
+        "title": "关于修订《【情趣用品】类目管理规范》的公示通知",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -1844,7 +1826,7 @@
           "web_source_platform": "抖音电商",
           "rule_type": 0,
           "rule_status": 0,
-          "knowledge_id": "aJkqnYheAUBm",
+          "knowledge_id": "aJksBkuEaPfM",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
@@ -1904,14 +1886,14 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8458,
-      "importance": 0.8458,
-      "importance_score": 0.8458,
+      "score": 0.843,
+      "importance": 0.843,
+      "importance_score": 0.843,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.82,
-        "recency": 0.8739,
+        "recency": 0.8598,
         "story_heat": 0.25
       },
       "category": "official",
@@ -1981,14 +1963,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8444,
-      "importance": 0.8444,
-      "importance_score": 0.8444,
+      "score": 0.8416,
+      "importance": 0.8416,
+      "importance_score": 0.8416,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.82,
-        "recency": 0.992,
+        "recency": 0.9778,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2057,14 +2039,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8718,
-      "importance": 0.8718,
-      "importance_score": 0.8718,
+      "score": 0.8689,
+      "importance": 0.8689,
+      "importance_score": 0.8689,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8589,
+        "recency": 0.8447,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2101,30 +2083,21 @@
       }
     },
     {
-      "story_id": "story_71b89768f94e",
-      "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
-      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+      "story_id": "story_be7e1ae8851c",
+      "title": "关于修订《【处方药】品类管理规范》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "03e75dee8c02484036232c5158cee256680fbde0",
-          "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+          "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
+          "title": "关于修订《【处方药】品类管理规范》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T13:40:33Z"
-        },
-        {
-          "id": "41bda9dcda8690e60afd232e64cc822f8cc71f76",
-          "title": "关于修订《创作者【违规营销内容】处置细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T13:10:27Z"
+          "published_at": "2026-06-12T11:14:17Z"
         }
       ],
       "source_count": 1,
@@ -2133,35 +2106,26 @@
       ],
       "items": [
         {
-          "id": "03e75dee8c02484036232c5158cee256680fbde0",
-          "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+          "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
+          "title": "关于修订《【处方药】品类管理规范》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T13:40:33Z"
-        },
-        {
-          "id": "41bda9dcda8690e60afd232e64cc822f8cc71f76",
-          "title": "关于修订《创作者【违规营销内容】处置细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T13:10:27Z"
+          "published_at": "2026-06-12T11:14:17Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8988,
-      "importance": 0.8988,
-      "importance_score": 0.8988,
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8966,
+      "importance": 0.8966,
+      "importance_score": 0.8966,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.869,
-        "story_heat": 0.25
+        "recency": 0.9832,
+        "story_heat": 0.0
       },
       "category": "official",
       "brief_channel": "platform_policy",
@@ -2174,12 +2138,12 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-11T13:10:27Z",
-      "latest_at": "2026-06-11T13:40:33Z",
+      "earliest_at": "2026-06-12T11:14:17Z",
+      "latest_at": "2026-06-12T11:14:17Z",
       "primary_item": {
-        "id": "03e75dee8c02484036232c5158cee256680fbde0",
-        "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
-        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+        "id": "dcfb20c557c481bc14ffd62cef771a409514b831",
+        "title": "关于修订《【处方药】品类管理规范》的公示通知",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -2191,8 +2155,8 @@
           "web_source_domain": "平台规则",
           "web_source_platform": "抖音电商",
           "rule_type": 0,
-          "rule_status": 201,
-          "knowledge_id": "aJksF3Y7x1Bc",
+          "rule_status": 0,
+          "knowledge_id": "aJkqnYheAUBm",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
@@ -2200,7 +2164,7 @@
     },
     {
       "story_id": "story_75ee5875eff4",
-      "title": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
+      "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
       "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
       "primary_url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
       "source": "Google Ads Blog",
@@ -2208,7 +2172,7 @@
       "sources": [
         {
           "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-          "title": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
+          "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
           "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
           "source": "Google Ads Blog",
           "source_name": "重点网页源",
@@ -2223,7 +2187,7 @@
       "items": [
         {
           "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-          "title": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
+          "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
           "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
           "source": "Google Ads Blog",
           "source_name": "重点网页源",
@@ -2233,14 +2197,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8155,
-      "importance": 0.8155,
-      "importance_score": 0.8155,
+      "score": 0.8127,
+      "importance": 0.8127,
+      "importance_score": 0.8127,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.86,
-        "recency": 0.7876,
+        "recency": 0.7734,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2258,7 +2222,7 @@
       "latest_at": "2026-06-11T00:00:00Z",
       "primary_item": {
         "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-        "title": "Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
+        "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
         "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
         "source": "Google Ads Blog",
         "source_name": "重点网页源",
@@ -2309,14 +2273,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8717,
-      "importance": 0.8717,
-      "importance_score": 0.8717,
+      "score": 0.8689,
+      "importance": 0.8689,
+      "importance_score": 0.8689,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8587,
+        "recency": 0.8446,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2387,14 +2351,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8958,
-      "importance": 0.8958,
-      "importance_score": 0.8958,
+      "score": 0.893,
+      "importance": 0.893,
+      "importance_score": 0.893,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.979,
+        "recency": 0.9648,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2467,14 +2431,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8137,
-      "importance": 0.8137,
-      "importance_score": 0.8137,
+      "score": 0.8109,
+      "importance": 0.8109,
+      "importance_score": 0.8109,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.82,
-        "recency": 0.8385,
+        "recency": 0.8243,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2543,14 +2507,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8958,
-      "importance": 0.8958,
-      "importance_score": 0.8958,
+      "score": 0.8929,
+      "importance": 0.8929,
+      "importance_score": 0.8929,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9788,
+        "recency": 0.9646,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2623,14 +2587,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.758,
-      "importance": 0.758,
-      "importance_score": 0.758,
+      "score": 0.7552,
+      "importance": 0.7552,
+      "importance_score": 0.7552,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.7,
-        "recency": 0.74,
+        "recency": 0.7258,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2698,14 +2662,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8933,
-      "importance": 0.8933,
-      "importance_score": 0.8933,
+      "score": 0.8905,
+      "importance": 0.8905,
+      "importance_score": 0.8905,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9666,
+        "recency": 0.9524,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2778,14 +2742,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8045,
-      "importance": 0.8045,
-      "importance_score": 0.8045,
+      "score": 0.8017,
+      "importance": 0.8017,
+      "importance_score": 0.8017,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.5226,
+        "recency": 0.5084,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2856,14 +2820,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7294,
-      "importance": 0.7294,
-      "importance_score": 0.7294,
+      "score": 0.7266,
+      "importance": 0.7266,
+      "importance_score": 0.7266,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.7,
-        "recency": 0.5971,
+        "recency": 0.583,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2930,14 +2894,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8722,
-      "importance": 0.8722,
-      "importance_score": 0.8722,
+      "score": 0.8694,
+      "importance": 0.8694,
+      "importance_score": 0.8694,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.861,
+        "recency": 0.8468,
         "story_heat": 0.0
       },
       "category": "official",
@@ -3010,14 +2974,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8045,
-      "importance": 0.8045,
-      "importance_score": 0.8045,
+      "score": 0.8016,
+      "importance": 0.8016,
+      "importance_score": 0.8016,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.5224,
+        "recency": 0.5082,
         "story_heat": 0.0
       },
       "category": "official",
@@ -3088,14 +3052,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8722,
-      "importance": 0.8722,
-      "importance_score": 0.8722,
+      "score": 0.8694,
+      "importance": 0.8694,
+      "importance_score": 0.8694,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8612,
+        "recency": 0.847,
         "story_heat": 0.0
       },
       "category": "official",
@@ -3168,14 +3132,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.869,
-      "importance": 0.869,
-      "importance_score": 0.869,
+      "score": 0.8661,
+      "importance": 0.8661,
+      "importance_score": 0.8661,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8448,
+        "recency": 0.8306,
         "story_heat": 0.0
       },
       "category": "official",
