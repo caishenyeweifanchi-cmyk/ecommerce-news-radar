@@ -18,7 +18,7 @@ from datetime import date, datetime, timedelta, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
-from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
+from urllib.parse import parse_qsl, quote, urlencode, urljoin, urlparse, urlunparse
 from zoneinfo import ZoneInfo
 
 import requests
@@ -2399,6 +2399,146 @@ def fetch_douyin_rule_center_items(
     return out[:WEB_SOURCE_CANDIDATE_LIMIT]
 
 
+def fetch_xiaohongshu_official_info_items(
+    session: requests.Session,
+    source: dict[str, Any],
+    now: datetime,
+) -> list[RawItem]:
+    source_url = str(source.get("url") or "https://ec.xiaohongshu.com/ecommerce/official-info")
+    source_name = first_non_empty(source.get("name"), source.get("platform"), "xiaohongshu ecommerce official info")
+    api_url = "https://ec.xiaohongshu.com/api/merchant/official/web/notice"
+    resp = session.get(
+        api_url,
+        headers={
+            "User-Agent": BROWSER_UA,
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Referer": source_url,
+        },
+        timeout=30,
+    )
+    resp.raise_for_status()
+    payload = resp.json()
+    sections = (
+        payload.get("data", {})
+        .get("red_official_information_notice", {})
+        .get("notice_config_list", [])
+    )
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for section in sections or []:
+        if not isinstance(section, dict):
+            continue
+        section_title = compact_title(maybe_fix_mojibake(str(section.get("title") or "")), 60)
+        for row in section.get("information_detail_list", []) or []:
+            if not isinstance(row, dict):
+                continue
+            title = compact_title(maybe_fix_mojibake(str(row.get("title") or "")), 120)
+            url = normalize_url(str(row.get("link") or "").strip())
+            if not title or not url.startswith(("http://", "https://")) or url in seen:
+                continue
+            seen.add(url)
+            published_at = parse_date_any(row.get("time"), now)
+            out.append(
+                RawItem(
+                    site_id="websource",
+                    site_name="重点网页源",
+                    source=source_name,
+                    title=title,
+                    url=url,
+                    published_at=published_at,
+                    meta={
+                        "web_source_id": source.get("id"),
+                        "web_source_url": source_url,
+                        "web_source_mode": "api_list",
+                        "web_source_priority": source.get("priority"),
+                        "web_source_domain": source.get("domain"),
+                        "web_source_platform": source.get("platform"),
+                        "section": section_title,
+                        "article_url_source": "xiaohongshu_official_notice_api",
+                        "published_time_source": "api" if published_at else "unconfirmed",
+                    },
+                )
+            )
+    out.sort(key=lambda item: item.published_at or datetime.min.replace(tzinfo=UTC), reverse=True)
+    return out[:WEB_SOURCE_CANDIDATE_LIMIT]
+
+
+def fetch_kuaishou_rule_center_items(
+    session: requests.Session,
+    source: dict[str, Any],
+    now: datetime,
+) -> list[RawItem]:
+    source_url = str(source.get("url") or "https://edu.kwaixiaodian.com/rule/web/index")
+    source_name = first_non_empty(source.get("name"), source.get("platform"), "kuaishou ecommerce rule center")
+    api_url = "https://s.kwaixiaodian.com/gateway/rest/pc/education/front/resource/list/query"
+    resp = session.post(
+        api_url,
+        json={"deviceSource": "pc", "scene": "RULE_LAST_RESOURCE"},
+        headers={
+            "User-Agent": BROWSER_UA,
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Content-Type": "application/json",
+            "Origin": "https://edu.kwaixiaodian.com",
+            "Referer": source_url,
+        },
+        timeout=30,
+    )
+    resp.raise_for_status()
+    payload = resp.json()
+    rows = payload.get("data", {}).get("list", [])
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for row in rows or []:
+        if not isinstance(row, dict):
+            continue
+        title = compact_title(maybe_fix_mojibake(str(row.get("title") or row.get("name") or "")), 120)
+        resource_id = str(row.get("resourceId") or row.get("id") or "").strip()
+        if not title or not resource_id or resource_id in seen:
+            continue
+        seen.add(resource_id)
+        published_at = parse_date_any(row.get("publishTime") or row.get("createTime") or row.get("updateTime"), now)
+        detail_url = f"https://edu.kwaixiaodian.com/rule/web/detail?id={quote(resource_id)}"
+        out.append(
+            RawItem(
+                site_id="websource",
+                site_name="重点网页源",
+                source=source_name,
+                title=title,
+                url=detail_url,
+                published_at=published_at,
+                meta={
+                    "web_source_id": source.get("id"),
+                    "web_source_url": source_url,
+                    "web_source_mode": "api_list",
+                    "web_source_priority": source.get("priority"),
+                    "web_source_domain": source.get("domain"),
+                    "web_source_platform": source.get("platform"),
+                    "resource_id": resource_id,
+                    "article_url_source": "kuaishou_rule_resource_api",
+                    "published_time_source": "api" if published_at else "unconfirmed",
+                },
+            )
+        )
+    return out[:WEB_SOURCE_CANDIDATE_LIMIT]
+
+
+def fetch_custom_web_source_items(
+    session: requests.Session,
+    source: dict[str, Any],
+    now: datetime,
+) -> list[RawItem] | None:
+    source_id = str(source.get("id") or slugify_source_id(str(source.get("url") or "")))
+    if source_id == "douyin_ecommerce_rule_center":
+        return fetch_douyin_rule_center_items(session, source, now)
+    if source_id in {"xiaohongshu_ecommerce_official_info", "xiaohongshu_ecommerce_rule_tab"}:
+        return fetch_xiaohongshu_official_info_items(session, source, now)
+    if source_id == "kuaishou_ecommerce_rule_center":
+        return fetch_kuaishou_rule_center_items(session, source, now)
+    return None
+
+
 def fetch_web_sources(
     session: requests.Session,
     now: datetime,
@@ -2424,12 +2564,13 @@ def fetch_web_sources(
         method = str(source.get("ingestion_method") or "")
         skipped_reason = ""
         try:
-            if method not in {"web_list_adapter"} and source_id != "douyin_ecommerce_rule_center":
-                skipped_reason = "manual_verify_required_or_rss_preferred"
-            if source_id == "douyin_ecommerce_rule_center":
-                local_items = fetch_douyin_rule_center_items(session, source, now)
+            custom_items = fetch_custom_web_source_items(session, source, now)
+            if custom_items is not None:
+                local_items = custom_items
                 status_code = 200
-            elif not skipped_reason:
+            elif method not in {"web_list_adapter"}:
+                skipped_reason = "manual_verify_required_or_rss_preferred"
+            if custom_items is None and not skipped_reason:
                 resp = session.get(
                     source_url,
                     timeout=18,
@@ -2461,7 +2602,7 @@ def fetch_web_sources(
             "item_count": len(local_items),
             "snapshot_count": snapshot_count,
             "list_item_count": max(0, len(local_items) - snapshot_count),
-            "collection_mode": "api_list" if source_id == "douyin_ecommerce_rule_center" and local_items else ("list" if len(local_items) > snapshot_count else ("snapshot" if snapshot_count else ("skipped" if skipped_reason else "empty"))),
+            "collection_mode": "api_list" if local_items and any(item.meta.get("web_source_mode") == "api_list" for item in local_items) else ("list" if len(local_items) > snapshot_count else ("snapshot" if snapshot_count else ("skipped" if skipped_reason else "empty"))),
             "duration_ms": duration_ms,
             "error": error,
             "skip_reason": skipped_reason or None,
@@ -4069,6 +4210,22 @@ def select_diverse_stories(
     return picked
 
 
+def select_daily_brief_stories(stories: list[dict[str, Any]], max_items: int) -> list[dict[str, Any]]:
+    official_rule_stories = [story for story in stories if is_official_rule_story(story)]
+    picked = select_diverse_stories(official_rule_stories, max_items)
+    if len(picked) >= max_items:
+        return picked
+
+    picked_ids = {str(story.get("story_id") or "") for story in picked}
+    remaining = [
+        story
+        for story in stories
+        if str(story.get("story_id") or "") not in picked_ids and not is_official_rule_story(story)
+    ]
+    picked.extend(select_diverse_stories(remaining, max_items - len(picked)))
+    return picked
+
+
 def build_daily_brief_payload(
     stories: list[dict[str, Any]],
     generated_at: str,
@@ -4076,7 +4233,7 @@ def build_daily_brief_payload(
     max_items: int = 20,
 ) -> dict[str, Any]:
     gated = [story for story in stories if story_passes_brief_gate(story)]
-    items = select_diverse_stories(gated, max_items)
+    items = select_daily_brief_stories(gated, max_items)
     return {
         "generated_at": generated_at,
         "window_hours": window_hours,

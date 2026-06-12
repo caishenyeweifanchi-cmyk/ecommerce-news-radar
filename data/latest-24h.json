@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-12T06:29:50.692537Z",
+  "generated_at": "2026-06-12T08:34:53.650613Z",
   "window_hours": 168,
-  "total_items": 185,
-  "total_items_ai_raw": 189,
-  "total_items_raw": 979,
-  "total_items_all_mode": 965,
+  "total_items": 194,
+  "total_items_ai_raw": 198,
+  "total_items_raw": 1040,
+  "total_items_all_mode": 1026,
   "topic_filter": "ecommerce_relevance_scoring_v0_1",
   "topic": "ecommerce",
   "ai_relevance_threshold": 0.65,
   "topic_relevance_threshold": 0.65,
-  "archive_total": 5956,
+  "archive_total": 6034,
   "site_count": 2,
-  "source_count": 40,
+  "source_count": 42,
   "site_stats": [
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
       "count": 99,
-      "raw_count": 851
+      "raw_count": 904
     },
     {
       "site_id": "websource",
       "site_name": "重点网页源",
-      "count": 86,
-      "raw_count": 128
+      "count": 95,
+      "raw_count": 136
     }
   ],
   "items": [
@@ -334,6 +334,294 @@
       "title_bilingual": "日本乐天卖家大会 入驻门槛直降，史上最低"
     },
     {
+      "id": "f34fe1a7fda0811138786e66dda806d01bf3b675",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "市场监管总局公告",
+      "title": "2026年5月汽车召回月度汇总",
+      "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_f5e569a3475346c28ac2dfe0440aefa3.html",
+      "published_at": "2026-06-12T08:22:00Z",
+      "first_seen_at": "2026-06-12T08:34:53.650613Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "samr_gov_cn_zw",
+        "web_source_url": "https://www.samr.gov.cn/zw/",
+        "web_source_score": 4,
+        "web_source_priority": "P0",
+        "web_source_domain": "政策监管",
+        "web_source_platform": "市场监管总局",
+        "published_time_source": "detail_text"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.88,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "公告"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.88,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "2026年5月汽车召回月度汇总",
+      "title_en": null,
+      "title_zh": "2026年5月汽车召回月度汇总",
+      "title_bilingual": "2026年5月汽车召回月度汇总"
+    },
+    {
+      "id": "18bf0b6befa2183268703cd85b84e1ea36b604e5",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "市场监管总局公告",
+      "title": "四川南骏汽车集团有限公司扩大召回部分新祥康EDH纯电动自卸汽车",
+      "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_26e8b64c786c45ab8bd4c85850558226.html",
+      "published_at": "2026-06-12T08:20:00Z",
+      "first_seen_at": "2026-06-12T08:34:53.650613Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "samr_gov_cn_zw",
+        "web_source_url": "https://www.samr.gov.cn/zw/",
+        "web_source_score": 1,
+        "web_source_priority": "P0",
+        "web_source_domain": "政策监管",
+        "web_source_platform": "市场监管总局",
+        "published_time_source": "detail_text"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.88,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "公告"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.88,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "四川南骏汽车集团有限公司扩大召回部分新祥康EDH纯电动自卸汽车",
+      "title_en": null,
+      "title_zh": "四川南骏汽车集团有限公司扩大召回部分新祥康EDH纯电动自卸汽车",
+      "title_bilingual": "四川南骏汽车集团有限公司扩大召回部分新祥康EDH纯电动自卸汽车"
+    },
+    {
+      "id": "e4393780a8b4e07b268bc5819bf698f25f8e7ef6",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "市场监管总局公告",
+      "title": "大众汽车（中国）销售有限公司召回部分进口宾利欧陆系列汽车",
+      "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_e169add446af411f8fce26593aadfdfb.html",
+      "published_at": "2026-06-12T08:20:00Z",
+      "first_seen_at": "2026-06-12T08:34:53.650613Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "samr_gov_cn_zw",
+        "web_source_url": "https://www.samr.gov.cn/zw/",
+        "web_source_score": 1,
+        "web_source_priority": "P0",
+        "web_source_domain": "政策监管",
+        "web_source_platform": "市场监管总局",
+        "published_time_source": "detail_text"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.88,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "公告"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.88,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "大众汽车（中国）销售有限公司召回部分进口宾利欧陆系列汽车",
+      "title_en": null,
+      "title_zh": "大众汽车（中国）销售有限公司召回部分进口宾利欧陆系列汽车",
+      "title_bilingual": "大众汽车（中国）销售有限公司召回部分进口宾利欧陆系列汽车"
+    },
+    {
+      "id": "4e1abb39cd49e174559f0fa2fd9bde99f8db2d69",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "IT之家电商板块",
+      "title": "抖音：开展“恶意营销号”治理，累计处置违规账号 387.4 万个",
+      "url": "https://www.ithome.com/0/963/559.htm",
+      "published_at": "2026-06-12T08:14:40Z",
+      "first_seen_at": "2026-06-12T08:24:33.645185Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "feed_url": "https://www.ithome.com/rss",
+        "feed_home": "https://www.ithome.com"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.65,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "电商",
+        "治理",
+        "营销"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.65,
+      "topic_label": "platform_policy",
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "title_original": "抖音：开展“恶意营销号”治理，累计处置违规账号 387.4 万个",
+      "title_en": null,
+      "title_zh": "抖音：开展“恶意营销号”治理，累计处置违规账号 387.4 万个",
+      "title_bilingual": "抖音：开展“恶意营销号”治理，累计处置违规账号 387.4 万个"
+    },
+    {
+      "id": "32820b3eec78f1104b59886b69fc440403f9919e",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "抖音电商规则中心",
+      "title": "关于修订《【商家—不当获利】细则》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkbJcdRFFSP",
+      "published_at": "2026-06-12T08:08:45Z",
+      "first_seen_at": "2026-06-12T08:11:15.953975Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "douyin_ecommerce_rule_center",
+        "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "抖音电商",
+        "rule_type": 0,
+        "rule_status": 0,
+        "knowledge_id": "aJkbJcdRFFSP",
+        "article_url_source": "douyin_articlev0",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.98,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "商家",
+        "抖音电商",
+        "电商",
+        "规则",
+        "商家"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.98,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "关于修订《【商家—不当获利】细则》的公示通知",
+      "title_en": null,
+      "title_zh": "关于修订《【商家—不当获利】细则》的公示通知",
+      "title_bilingual": "关于修订《【商家—不当获利】细则》的公示通知"
+    },
+    {
+      "id": "c2e8781ef7caaf9a4c689fa0ae0a2f39e240f7dc",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "抖音电商规则中心",
+      "title": "关于修订《创作者【不当获利】实施细则》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEEEnB",
+      "published_at": "2026-06-12T08:07:17Z",
+      "first_seen_at": "2026-06-12T08:11:15.953975Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "douyin_ecommerce_rule_center",
+        "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "抖音电商",
+        "rule_type": 0,
+        "rule_status": 0,
+        "knowledge_id": "aJksBkuEEEnB",
+        "article_url_source": "douyin_articlev0",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "抖音电商",
+        "电商",
+        "规则"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "关于修订《创作者【不当获利】实施细则》的公示通知",
+      "title_en": null,
+      "title_zh": "关于修订《创作者【不当获利】实施细则》的公示通知",
+      "title_bilingual": "关于修订《创作者【不当获利】实施细则》的公示通知"
+    },
+    {
+      "id": "482a71f468f2ab0b9f6a44aca1473dae2deb1eab",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "快手电商规则中心",
+      "title": "运用AIGC内容售卖商品的行为规范",
+      "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=RsXYMVvx14",
+      "published_at": "2026-06-12T08:04:11.913000Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "kuaishou_ecommerce_rule_center",
+        "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "快手电商",
+        "resource_id": "RsXYMVvx14",
+        "article_url_source": "kuaishou_rule_resource_api",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "快手电商",
+        "电商",
+        "规则"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "运用AIGC内容售卖商品的行为规范",
+      "title_en": null,
+      "title_zh": "运用AIGC内容售卖商品的行为规范",
+      "title_bilingual": "运用AIGC内容售卖商品的行为规范"
+    },
+    {
       "id": "2b81e9e5703e8a26a89ae43de1a6dbb422de39f9",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -341,8 +629,8 @@
       "title": "凯迪拉克官宣推出全系燃油车 3 年 8 折保值回购政策",
       "url": "https://www.ithome.com/0/963/454.htm",
       "published_at": "2026-06-12T06:26:34Z",
-      "first_seen_at": "2026-06-12T06:29:50.692537Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "first_seen_at": "2026-06-12T08:11:15.953975Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://www.ithome.com/rss",
         "feed_home": "https://www.ithome.com"
@@ -376,8 +664,8 @@
       "title": "关于修订《【商家-综合认定商品/商家品质差】细则》的意见征集通知",
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
       "published_at": "2026-06-12T06:03:42Z",
-      "first_seen_at": "2026-06-12T06:29:50.692537Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -416,41 +704,6 @@
       "title_bilingual": "关于修订《【商家-综合认定商品/商家品质差】细则》的意见征集通知"
     },
     {
-      "id": "58c98904ac696a3d539d790fd8a5c16e409e5ccd",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "36Kr",
-      "title": "上海跨境贸易数字金融服务公司成立，注册资本5亿",
-      "url": "https://36kr.com/newsflashes/3849757791966209?f=rss",
-      "published_at": "2026-06-12T05:36:08Z",
-      "first_seen_at": "2026-06-12T06:29:50.692537Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
-      "meta": {
-        "feed_url": "https://36kr.com/feed",
-        "feed_home": "https://36kr.com/"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.65,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "跨境",
-        "跨境"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.65,
-      "topic_label": "cross_border",
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "title_original": "上海跨境贸易数字金融服务公司成立，注册资本5亿",
-      "title_en": null,
-      "title_zh": "上海跨境贸易数字金融服务公司成立，注册资本5亿",
-      "title_bilingual": "上海跨境贸易数字金融服务公司成立，注册资本5亿"
-    },
-    {
       "id": "288859a3a36a61e7a848b2efd7c7e4f557348bf0",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -458,8 +711,8 @@
       "title": "商家恶意无货源发货被平台处罚，“假交易”换来法院真罚款",
       "url": "https://www.ithome.com/0/963/420.htm",
       "published_at": "2026-06-12T05:34:19Z",
-      "first_seen_at": "2026-06-12T06:29:50.692537Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "first_seen_at": "2026-06-12T08:11:15.953975Z",
+      "last_seen_at": "2026-06-12T08:11:15.953975Z",
       "meta": {
         "feed_url": "https://www.ithome.com/rss",
         "feed_home": "https://www.ithome.com"
@@ -658,7 +911,7 @@
       "url": "https://readhub.cn/topic/8ttR8U14klP",
       "published_at": "2026-06-12T03:26:31Z",
       "first_seen_at": "2026-06-12T03:33:57.585408Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:07:27.920849Z",
       "meta": {
         "feed_url": "https://readhub.cn/rss",
         "feed_home": "https://readhub.cn/"
@@ -814,7 +1067,7 @@
       "url": "https://www.ithome.com/0/963/323.htm",
       "published_at": "2026-06-12T03:09:47Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://www.ithome.com/rss",
         "feed_home": "https://www.ithome.com"
@@ -1013,7 +1266,7 @@
       "url": "https://xiaguangshe.com/14455",
       "published_at": "2026-06-12T01:07:15Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -1170,7 +1423,7 @@
       "url": "https://www.ecommercebytes.com/2026/06/11/amazon-to-use-ai-to-enforce-new-product-title-limits",
       "published_at": "2026-06-11T20:20:49Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://www.ecommercebytes.com/feed/",
         "feed_home": "https://www.ecommercebytes.com/"
@@ -1248,7 +1501,7 @@
       "url": "https://www.huxiu.com/article/4866594.html?f=rss",
       "published_at": "2026-06-11T18:45:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://rss.huxiu.com",
         "feed_home": "https://www.huxiu.com"
@@ -1283,7 +1536,7 @@
       "url": "https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components",
       "published_at": "2026-06-11T18:00:00Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -1391,7 +1644,7 @@
       "url": "https://searchengineland.com/amazon-turns-alexa-into-a-shopping-agent-and-an-advertising-platform-479905",
       "published_at": "2026-06-11T16:26:44Z",
       "first_seen_at": "2026-06-11T17:50:46.803947Z",
-      "last_seen_at": "2026-06-12T04:24:03.456863Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://searchengineland.com/feed",
         "feed_home": "https://searchengineland.com/commerce"
@@ -1878,7 +2131,7 @@
       "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -1922,7 +2175,7 @@
       "url": "https://www.marketplacepulse.com/articles",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -2044,7 +2297,7 @@
       "url": "https://changelog.shopify.com/posts/unified-pos-staff-management",
       "published_at": "2026-06-11T14:15:00Z",
       "first_seen_at": "2026-06-11T16:33:58.074400Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -2153,7 +2406,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2235,7 +2488,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2281,7 +2534,7 @@
       "url": "https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider",
       "published_at": "2026-06-11T13:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -2389,7 +2642,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2435,7 +2688,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2470,6 +2723,95 @@
       "title_en": null,
       "title_zh": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
       "title_bilingual": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知"
+    },
+    {
+      "id": "05c2635bfe48ea6d9c3d2c75b84af352decf3ee9",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "快手电商规则中心",
+      "title": "《品牌标识管理规则》修订公告",
+      "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=4NJAdFIRMe",
+      "published_at": "2026-06-11T11:58:36.954000Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "kuaishou_ecommerce_rule_center",
+        "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "快手电商",
+        "resource_id": "4NJAdFIRMe",
+        "article_url_source": "kuaishou_rule_resource_api",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "快手电商",
+        "电商",
+        "公告",
+        "规则",
+        "品牌"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "《品牌标识管理规则》修订公告",
+      "title_en": null,
+      "title_zh": "《品牌标识管理规则》修订公告",
+      "title_bilingual": "《品牌标识管理规则》修订公告"
+    },
+    {
+      "id": "6cbd08dc06099ebde96a7439f1c36fabcf618a29",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "快手电商规则中心",
+      "title": "《快手旗舰标识管理规则》修订公告",
+      "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=nGTlUU3dqS",
+      "published_at": "2026-06-11T11:56:51.964000Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "kuaishou_ecommerce_rule_center",
+        "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "快手电商",
+        "resource_id": "nGTlUU3dqS",
+        "article_url_source": "kuaishou_rule_resource_api",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "快手电商",
+        "电商",
+        "公告",
+        "规则"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "《快手旗舰标识管理规则》修订公告",
+      "title_en": null,
+      "title_zh": "《快手旗舰标识管理规则》修订公告",
+      "title_bilingual": "《快手旗舰标识管理规则》修订公告"
     },
     {
       "id": "2d9c91ed600eae116ea67d001a0bf65fdee2c7ee",
@@ -2773,7 +3115,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
       "published_at": "2026-06-11T09:36:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -3011,7 +3353,7 @@
       "url": "https://www.adweek.com/commerce/amazon-exec-reveals-what-the-new-alexa-has-that-rufus-didnt",
       "published_at": "2026-06-11T09:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://www.adweek.com/feed/",
         "feed_home": "https://www.adweek.com/commerce"
@@ -3235,7 +3577,7 @@
       "url": "https://xiaguangshe.com/14453",
       "published_at": "2026-06-11T06:04:51Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -3462,7 +3804,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
       "published_at": "2026-06-11T03:01:40Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4176,7 +4518,7 @@
       "url": "https://changelog.shopify.com/posts/shopify-collective-is-now-available-in-australia",
       "published_at": "2026-06-10T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -4288,7 +4630,7 @@
       "url": "https://changelog.shopify.com/posts/shipping-performance-metrics-and-verified-tracking-badge-in-shopify-collective",
       "published_at": "2026-06-10T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -4592,7 +4934,7 @@
       "url": "https://www.retaildive.com/news/amazon-prime-day-competitor-walmart-deals-event-june/822471",
       "published_at": "2026-06-10T14:47:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://www.retaildive.com/feeds/news",
         "feed_home": "https://www.retaildive.com/topic/e-commerce/"
@@ -4742,7 +5084,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
       "published_at": "2026-06-10T13:16:44Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4789,7 +5131,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
       "published_at": "2026-06-10T13:09:01Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4942,7 +5284,7 @@
       "url": "https://xiaguangshe.com/14444",
       "published_at": "2026-06-10T11:59:16Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -4977,7 +5319,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
       "published_at": "2026-06-10T11:34:12Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5099,7 +5441,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9Tjy",
       "published_at": "2026-06-10T11:21:00Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:02:46.098641Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5181,7 +5523,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55mGS",
       "published_at": "2026-06-10T10:03:13Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:02:46.098641Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5551,7 +5893,7 @@
       "url": "https://www.newrank.cn/article/detail/34513",
       "published_at": "2026-06-10T02:00:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -6007,7 +6349,7 @@
       "url": "https://xiaguangshe.com/14435",
       "published_at": "2026-06-09T12:23:25Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -6148,6 +6490,94 @@
       "title_bilingual": "如果您的排名第一的 SKU 正在悄然亏钱怎么办？ / What if your #1 SKU is quietly losing you money?"
     },
     {
+      "id": "dedf60551169084d7be932b7039b0d0ddc2932d6",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "快手电商规则中心",
+      "title": "《快手小店结算规则》修订公告",
+      "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=TParGlyquv",
+      "published_at": "2026-06-09T03:28:16.623000Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "kuaishou_ecommerce_rule_center",
+        "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "快手电商",
+        "resource_id": "TParGlyquv",
+        "article_url_source": "kuaishou_rule_resource_api",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "快手电商",
+        "电商",
+        "公告",
+        "规则"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "《快手小店结算规则》修订公告",
+      "title_en": null,
+      "title_zh": "《快手小店结算规则》修订公告",
+      "title_bilingual": "《快手小店结算规则》修订公告"
+    },
+    {
+      "id": "ebb3899af7b78a157aea8b3a41c659f2496a13ef",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "快手电商规则中心",
+      "title": "快手月付信用交易服务收费公告",
+      "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=YI9zgXSF6o",
+      "published_at": "2026-06-09T03:26:21.935000Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "kuaishou_ecommerce_rule_center",
+        "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "快手电商",
+        "resource_id": "YI9zgXSF6o",
+        "article_url_source": "kuaishou_rule_resource_api",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "快手电商",
+        "电商",
+        "公告",
+        "规则"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "快手月付信用交易服务收费公告",
+      "title_en": null,
+      "title_zh": "快手月付信用交易服务收费公告",
+      "title_bilingual": "快手月付信用交易服务收费公告"
+    },
+    {
       "id": "5e8a15c79d89dd633e715705c11b16d79bc564cf",
       "site_id": "websource",
       "site_name": "重点网页源",
@@ -6199,7 +6629,7 @@
       "url": "https://www.digitalcommerce360.com/2026/06/08/amazons-alexa-for-shopping-adds-customization-feature-for-merch",
       "published_at": "2026-06-08T22:32:29Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://www.digitalcommerce360.com/feed/",
         "feed_home": "https://www.digitalcommerce360.com"
@@ -6271,7 +6701,7 @@
       "url": "https://changelog.shopify.com/posts/multi-location-pickup-is-now-available-in-pos",
       "published_at": "2026-06-08T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -6344,7 +6774,7 @@
       "url": "https://changelog.shopify.com/posts/improved-catalog-publishing",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -6380,7 +6810,7 @@
       "url": "https://shopify.dev/changelog/headless-checkout-sso-is-now-documented-with-ssosilent",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -6874,7 +7304,7 @@
       "url": "https://shopify.dev/changelog/giftcardcashouttransaction-now-resolvable-from-giftcardtransaction",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -6910,7 +7340,7 @@
       "url": "https://shopify.dev/changelog/gift-card-local-currency-support",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -6946,7 +7376,7 @@
       "url": "https://shopify.dev/changelog/inventory-transfer-webhooks-include-origin-and-destination-location-ids-and-mutation-documentation-clarified",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -6982,7 +7412,7 @@
       "url": "https://changelog.shopify.com/posts/schedule-publish-and-a-b-test-new-themes-and-checkout-and-customer-account-configurations",
       "published_at": "2026-06-05T14:30:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -7018,7 +7448,7 @@
       "url": "http://dzsws.mofcom.gov.cn/gzdt/art/2026/art_0d5cda43e50d41429e613594b990a891.html",
       "published_at": "2026-06-05T10:41:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "dzsws_mofcom_gov_cn",
         "web_source_url": "http://dzsws.mofcom.gov.cn/",
@@ -7126,45 +7556,6 @@
       "title_en": null,
       "title_zh": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情",
       "title_bilingual": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情"
-    },
-    {
-      "id": "5f2348da3e229aeb30b2a1c094ab73caecc7cb1e",
-      "site_id": "websource",
-      "site_name": "重点网页源",
-      "source": "Morketing",
-      "title": "2026Q1海外4A营收：AI与整合，正在重塑广告行业 | Morketing财报洞察 张禹成 2026-06-05 15:52 30366",
-      "url": "https://www.morketing.com/detail/28485",
-      "published_at": "2026-06-05T07:52:00Z",
-      "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T04:07:27.920849Z",
-      "meta": {
-        "web_source_id": "morketing_com_morketing",
-        "web_source_url": "https://www.morketing.com/",
-        "web_source_score": 8,
-        "web_source_priority": "P1",
-        "web_source_domain": "行业资讯",
-        "web_source_platform": "Morketing",
-        "published_time_source": "list_text"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.72,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "海外"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.72,
-      "topic_label": "cross_border",
-      "source_tier": "official",
-      "source_tier_label": "官方网页源",
-      "source_tier_rank": 0,
-      "title_original": "2026Q1海外4A营收：AI与整合，正在重塑广告行业 | Morketing财报洞察 张禹成 2026-06-05 15:52 30366",
-      "title_en": null,
-      "title_zh": "2026Q1海外4A营收：AI与整合，正在重塑广告行业 | Morketing财报洞察 张禹成 2026-06-05 15:52 30366",
-      "title_bilingual": "2026Q1海外4A营收：AI与整合，正在重塑广告行业 | Morketing财报洞察 张禹成 2026-06-05 15:52 30366"
     }
   ],
   "items_ai": [
@@ -7475,6 +7866,294 @@
       "title_bilingual": "日本乐天卖家大会 入驻门槛直降，史上最低"
     },
     {
+      "id": "f34fe1a7fda0811138786e66dda806d01bf3b675",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "市场监管总局公告",
+      "title": "2026年5月汽车召回月度汇总",
+      "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_f5e569a3475346c28ac2dfe0440aefa3.html",
+      "published_at": "2026-06-12T08:22:00Z",
+      "first_seen_at": "2026-06-12T08:34:53.650613Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "samr_gov_cn_zw",
+        "web_source_url": "https://www.samr.gov.cn/zw/",
+        "web_source_score": 4,
+        "web_source_priority": "P0",
+        "web_source_domain": "政策监管",
+        "web_source_platform": "市场监管总局",
+        "published_time_source": "detail_text"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.88,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "公告"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.88,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "2026年5月汽车召回月度汇总",
+      "title_en": null,
+      "title_zh": "2026年5月汽车召回月度汇总",
+      "title_bilingual": "2026年5月汽车召回月度汇总"
+    },
+    {
+      "id": "18bf0b6befa2183268703cd85b84e1ea36b604e5",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "市场监管总局公告",
+      "title": "四川南骏汽车集团有限公司扩大召回部分新祥康EDH纯电动自卸汽车",
+      "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_26e8b64c786c45ab8bd4c85850558226.html",
+      "published_at": "2026-06-12T08:20:00Z",
+      "first_seen_at": "2026-06-12T08:34:53.650613Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "samr_gov_cn_zw",
+        "web_source_url": "https://www.samr.gov.cn/zw/",
+        "web_source_score": 1,
+        "web_source_priority": "P0",
+        "web_source_domain": "政策监管",
+        "web_source_platform": "市场监管总局",
+        "published_time_source": "detail_text"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.88,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "公告"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.88,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "四川南骏汽车集团有限公司扩大召回部分新祥康EDH纯电动自卸汽车",
+      "title_en": null,
+      "title_zh": "四川南骏汽车集团有限公司扩大召回部分新祥康EDH纯电动自卸汽车",
+      "title_bilingual": "四川南骏汽车集团有限公司扩大召回部分新祥康EDH纯电动自卸汽车"
+    },
+    {
+      "id": "e4393780a8b4e07b268bc5819bf698f25f8e7ef6",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "市场监管总局公告",
+      "title": "大众汽车（中国）销售有限公司召回部分进口宾利欧陆系列汽车",
+      "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_e169add446af411f8fce26593aadfdfb.html",
+      "published_at": "2026-06-12T08:20:00Z",
+      "first_seen_at": "2026-06-12T08:34:53.650613Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "samr_gov_cn_zw",
+        "web_source_url": "https://www.samr.gov.cn/zw/",
+        "web_source_score": 1,
+        "web_source_priority": "P0",
+        "web_source_domain": "政策监管",
+        "web_source_platform": "市场监管总局",
+        "published_time_source": "detail_text"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.88,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "公告"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.88,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "大众汽车（中国）销售有限公司召回部分进口宾利欧陆系列汽车",
+      "title_en": null,
+      "title_zh": "大众汽车（中国）销售有限公司召回部分进口宾利欧陆系列汽车",
+      "title_bilingual": "大众汽车（中国）销售有限公司召回部分进口宾利欧陆系列汽车"
+    },
+    {
+      "id": "4e1abb39cd49e174559f0fa2fd9bde99f8db2d69",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "IT之家电商板块",
+      "title": "抖音：开展“恶意营销号”治理，累计处置违规账号 387.4 万个",
+      "url": "https://www.ithome.com/0/963/559.htm",
+      "published_at": "2026-06-12T08:14:40Z",
+      "first_seen_at": "2026-06-12T08:24:33.645185Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "feed_url": "https://www.ithome.com/rss",
+        "feed_home": "https://www.ithome.com"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.65,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "电商",
+        "治理",
+        "营销"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.65,
+      "topic_label": "platform_policy",
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "title_original": "抖音：开展“恶意营销号”治理，累计处置违规账号 387.4 万个",
+      "title_en": null,
+      "title_zh": "抖音：开展“恶意营销号”治理，累计处置违规账号 387.4 万个",
+      "title_bilingual": "抖音：开展“恶意营销号”治理，累计处置违规账号 387.4 万个"
+    },
+    {
+      "id": "32820b3eec78f1104b59886b69fc440403f9919e",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "抖音电商规则中心",
+      "title": "关于修订《【商家—不当获利】细则》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkbJcdRFFSP",
+      "published_at": "2026-06-12T08:08:45Z",
+      "first_seen_at": "2026-06-12T08:11:15.953975Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "douyin_ecommerce_rule_center",
+        "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "抖音电商",
+        "rule_type": 0,
+        "rule_status": 0,
+        "knowledge_id": "aJkbJcdRFFSP",
+        "article_url_source": "douyin_articlev0",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.98,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "商家",
+        "抖音电商",
+        "电商",
+        "规则",
+        "商家"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.98,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "关于修订《【商家—不当获利】细则》的公示通知",
+      "title_en": null,
+      "title_zh": "关于修订《【商家—不当获利】细则》的公示通知",
+      "title_bilingual": "关于修订《【商家—不当获利】细则》的公示通知"
+    },
+    {
+      "id": "c2e8781ef7caaf9a4c689fa0ae0a2f39e240f7dc",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "抖音电商规则中心",
+      "title": "关于修订《创作者【不当获利】实施细则》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEEEnB",
+      "published_at": "2026-06-12T08:07:17Z",
+      "first_seen_at": "2026-06-12T08:11:15.953975Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "douyin_ecommerce_rule_center",
+        "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "抖音电商",
+        "rule_type": 0,
+        "rule_status": 0,
+        "knowledge_id": "aJksBkuEEEnB",
+        "article_url_source": "douyin_articlev0",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "抖音电商",
+        "电商",
+        "规则"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "关于修订《创作者【不当获利】实施细则》的公示通知",
+      "title_en": null,
+      "title_zh": "关于修订《创作者【不当获利】实施细则》的公示通知",
+      "title_bilingual": "关于修订《创作者【不当获利】实施细则》的公示通知"
+    },
+    {
+      "id": "482a71f468f2ab0b9f6a44aca1473dae2deb1eab",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "快手电商规则中心",
+      "title": "运用AIGC内容售卖商品的行为规范",
+      "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=RsXYMVvx14",
+      "published_at": "2026-06-12T08:04:11.913000Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "kuaishou_ecommerce_rule_center",
+        "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "快手电商",
+        "resource_id": "RsXYMVvx14",
+        "article_url_source": "kuaishou_rule_resource_api",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "快手电商",
+        "电商",
+        "规则"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "运用AIGC内容售卖商品的行为规范",
+      "title_en": null,
+      "title_zh": "运用AIGC内容售卖商品的行为规范",
+      "title_bilingual": "运用AIGC内容售卖商品的行为规范"
+    },
+    {
       "id": "2b81e9e5703e8a26a89ae43de1a6dbb422de39f9",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -7482,8 +8161,8 @@
       "title": "凯迪拉克官宣推出全系燃油车 3 年 8 折保值回购政策",
       "url": "https://www.ithome.com/0/963/454.htm",
       "published_at": "2026-06-12T06:26:34Z",
-      "first_seen_at": "2026-06-12T06:29:50.692537Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "first_seen_at": "2026-06-12T08:11:15.953975Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://www.ithome.com/rss",
         "feed_home": "https://www.ithome.com"
@@ -7517,8 +8196,8 @@
       "title": "关于修订《【商家-综合认定商品/商家品质差】细则》的意见征集通知",
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
       "published_at": "2026-06-12T06:03:42Z",
-      "first_seen_at": "2026-06-12T06:29:50.692537Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -7557,41 +8236,6 @@
       "title_bilingual": "关于修订《【商家-综合认定商品/商家品质差】细则》的意见征集通知"
     },
     {
-      "id": "58c98904ac696a3d539d790fd8a5c16e409e5ccd",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "36Kr",
-      "title": "上海跨境贸易数字金融服务公司成立，注册资本5亿",
-      "url": "https://36kr.com/newsflashes/3849757791966209?f=rss",
-      "published_at": "2026-06-12T05:36:08Z",
-      "first_seen_at": "2026-06-12T06:29:50.692537Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
-      "meta": {
-        "feed_url": "https://36kr.com/feed",
-        "feed_home": "https://36kr.com/"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.65,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "跨境",
-        "跨境"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.65,
-      "topic_label": "cross_border",
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "title_original": "上海跨境贸易数字金融服务公司成立，注册资本5亿",
-      "title_en": null,
-      "title_zh": "上海跨境贸易数字金融服务公司成立，注册资本5亿",
-      "title_bilingual": "上海跨境贸易数字金融服务公司成立，注册资本5亿"
-    },
-    {
       "id": "288859a3a36a61e7a848b2efd7c7e4f557348bf0",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -7599,8 +8243,8 @@
       "title": "商家恶意无货源发货被平台处罚，“假交易”换来法院真罚款",
       "url": "https://www.ithome.com/0/963/420.htm",
       "published_at": "2026-06-12T05:34:19Z",
-      "first_seen_at": "2026-06-12T06:29:50.692537Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "first_seen_at": "2026-06-12T08:11:15.953975Z",
+      "last_seen_at": "2026-06-12T08:11:15.953975Z",
       "meta": {
         "feed_url": "https://www.ithome.com/rss",
         "feed_home": "https://www.ithome.com"
@@ -7799,7 +8443,7 @@
       "url": "https://readhub.cn/topic/8ttR8U14klP",
       "published_at": "2026-06-12T03:26:31Z",
       "first_seen_at": "2026-06-12T03:33:57.585408Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:07:27.920849Z",
       "meta": {
         "feed_url": "https://readhub.cn/rss",
         "feed_home": "https://readhub.cn/"
@@ -7955,7 +8599,7 @@
       "url": "https://www.ithome.com/0/963/323.htm",
       "published_at": "2026-06-12T03:09:47Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://www.ithome.com/rss",
         "feed_home": "https://www.ithome.com"
@@ -8154,7 +8798,7 @@
       "url": "https://xiaguangshe.com/14455",
       "published_at": "2026-06-12T01:07:15Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -8311,7 +8955,7 @@
       "url": "https://www.ecommercebytes.com/2026/06/11/amazon-to-use-ai-to-enforce-new-product-title-limits",
       "published_at": "2026-06-11T20:20:49Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://www.ecommercebytes.com/feed/",
         "feed_home": "https://www.ecommercebytes.com/"
@@ -8389,7 +9033,7 @@
       "url": "https://www.huxiu.com/article/4866594.html?f=rss",
       "published_at": "2026-06-11T18:45:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://rss.huxiu.com",
         "feed_home": "https://www.huxiu.com"
@@ -8424,7 +9068,7 @@
       "url": "https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components",
       "published_at": "2026-06-11T18:00:00Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -8532,7 +9176,7 @@
       "url": "https://searchengineland.com/amazon-turns-alexa-into-a-shopping-agent-and-an-advertising-platform-479905",
       "published_at": "2026-06-11T16:26:44Z",
       "first_seen_at": "2026-06-11T17:50:46.803947Z",
-      "last_seen_at": "2026-06-12T04:24:03.456863Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://searchengineland.com/feed",
         "feed_home": "https://searchengineland.com/commerce"
@@ -9019,7 +9663,7 @@
       "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -9063,7 +9707,7 @@
       "url": "https://www.marketplacepulse.com/articles",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -9185,7 +9829,7 @@
       "url": "https://changelog.shopify.com/posts/unified-pos-staff-management",
       "published_at": "2026-06-11T14:15:00Z",
       "first_seen_at": "2026-06-11T16:33:58.074400Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -9294,7 +9938,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -9376,7 +10020,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -9422,7 +10066,7 @@
       "url": "https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider",
       "published_at": "2026-06-11T13:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -9530,7 +10174,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -9576,7 +10220,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -9611,6 +10255,95 @@
       "title_en": null,
       "title_zh": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
       "title_bilingual": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知"
+    },
+    {
+      "id": "05c2635bfe48ea6d9c3d2c75b84af352decf3ee9",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "快手电商规则中心",
+      "title": "《品牌标识管理规则》修订公告",
+      "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=4NJAdFIRMe",
+      "published_at": "2026-06-11T11:58:36.954000Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "kuaishou_ecommerce_rule_center",
+        "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "快手电商",
+        "resource_id": "4NJAdFIRMe",
+        "article_url_source": "kuaishou_rule_resource_api",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "快手电商",
+        "电商",
+        "公告",
+        "规则",
+        "品牌"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "《品牌标识管理规则》修订公告",
+      "title_en": null,
+      "title_zh": "《品牌标识管理规则》修订公告",
+      "title_bilingual": "《品牌标识管理规则》修订公告"
+    },
+    {
+      "id": "6cbd08dc06099ebde96a7439f1c36fabcf618a29",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "快手电商规则中心",
+      "title": "《快手旗舰标识管理规则》修订公告",
+      "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=nGTlUU3dqS",
+      "published_at": "2026-06-11T11:56:51.964000Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "kuaishou_ecommerce_rule_center",
+        "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "快手电商",
+        "resource_id": "nGTlUU3dqS",
+        "article_url_source": "kuaishou_rule_resource_api",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "快手电商",
+        "电商",
+        "公告",
+        "规则"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "《快手旗舰标识管理规则》修订公告",
+      "title_en": null,
+      "title_zh": "《快手旗舰标识管理规则》修订公告",
+      "title_bilingual": "《快手旗舰标识管理规则》修订公告"
     },
     {
       "id": "2d9c91ed600eae116ea67d001a0bf65fdee2c7ee",
@@ -9914,7 +10647,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
       "published_at": "2026-06-11T09:36:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -10152,7 +10885,7 @@
       "url": "https://www.adweek.com/commerce/amazon-exec-reveals-what-the-new-alexa-has-that-rufus-didnt",
       "published_at": "2026-06-11T09:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://www.adweek.com/feed/",
         "feed_home": "https://www.adweek.com/commerce"
@@ -10376,7 +11109,7 @@
       "url": "https://xiaguangshe.com/14453",
       "published_at": "2026-06-11T06:04:51Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -10603,7 +11336,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
       "published_at": "2026-06-11T03:01:40Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -11317,7 +12050,7 @@
       "url": "https://changelog.shopify.com/posts/shopify-collective-is-now-available-in-australia",
       "published_at": "2026-06-10T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -11429,7 +12162,7 @@
       "url": "https://changelog.shopify.com/posts/shipping-performance-metrics-and-verified-tracking-badge-in-shopify-collective",
       "published_at": "2026-06-10T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -11733,7 +12466,7 @@
       "url": "https://www.retaildive.com/news/amazon-prime-day-competitor-walmart-deals-event-june/822471",
       "published_at": "2026-06-10T14:47:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://www.retaildive.com/feeds/news",
         "feed_home": "https://www.retaildive.com/topic/e-commerce/"
@@ -11883,7 +12616,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
       "published_at": "2026-06-10T13:16:44Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -11930,7 +12663,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
       "published_at": "2026-06-10T13:09:01Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -12083,7 +12816,7 @@
       "url": "https://xiaguangshe.com/14444",
       "published_at": "2026-06-10T11:59:16Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -12118,7 +12851,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
       "published_at": "2026-06-10T11:34:12Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -12240,7 +12973,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9Tjy",
       "published_at": "2026-06-10T11:21:00Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:02:46.098641Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -12322,7 +13055,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55mGS",
       "published_at": "2026-06-10T10:03:13Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:02:46.098641Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -12692,7 +13425,7 @@
       "url": "https://www.newrank.cn/article/detail/34513",
       "published_at": "2026-06-10T02:00:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -13148,7 +13881,7 @@
       "url": "https://xiaguangshe.com/14435",
       "published_at": "2026-06-09T12:23:25Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T04:24:03.456863Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -13289,6 +14022,94 @@
       "title_bilingual": "如果您的排名第一的 SKU 正在悄然亏钱怎么办？ / What if your #1 SKU is quietly losing you money?"
     },
     {
+      "id": "dedf60551169084d7be932b7039b0d0ddc2932d6",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "快手电商规则中心",
+      "title": "《快手小店结算规则》修订公告",
+      "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=TParGlyquv",
+      "published_at": "2026-06-09T03:28:16.623000Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "kuaishou_ecommerce_rule_center",
+        "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "快手电商",
+        "resource_id": "TParGlyquv",
+        "article_url_source": "kuaishou_rule_resource_api",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "快手电商",
+        "电商",
+        "公告",
+        "规则"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "《快手小店结算规则》修订公告",
+      "title_en": null,
+      "title_zh": "《快手小店结算规则》修订公告",
+      "title_bilingual": "《快手小店结算规则》修订公告"
+    },
+    {
+      "id": "ebb3899af7b78a157aea8b3a41c659f2496a13ef",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "快手电商规则中心",
+      "title": "快手月付信用交易服务收费公告",
+      "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=YI9zgXSF6o",
+      "published_at": "2026-06-09T03:26:21.935000Z",
+      "first_seen_at": "2026-06-12T08:02:46.098641Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
+      "meta": {
+        "web_source_id": "kuaishou_ecommerce_rule_center",
+        "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
+        "web_source_mode": "api_list",
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_platform": "快手电商",
+        "resource_id": "YI9zgXSF6o",
+        "article_url_source": "kuaishou_rule_resource_api",
+        "published_time_source": "api"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.94,
+      "ai_label": "platform_policy",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "快手电商",
+        "电商",
+        "公告",
+        "规则"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.94,
+      "topic_label": "platform_policy",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "快手月付信用交易服务收费公告",
+      "title_en": null,
+      "title_zh": "快手月付信用交易服务收费公告",
+      "title_bilingual": "快手月付信用交易服务收费公告"
+    },
+    {
       "id": "5e8a15c79d89dd633e715705c11b16d79bc564cf",
       "site_id": "websource",
       "site_name": "重点网页源",
@@ -13340,7 +14161,7 @@
       "url": "https://www.digitalcommerce360.com/2026/06/08/amazons-alexa-for-shopping-adds-customization-feature-for-merch",
       "published_at": "2026-06-08T22:32:29Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://www.digitalcommerce360.com/feed/",
         "feed_home": "https://www.digitalcommerce360.com"
@@ -13412,7 +14233,7 @@
       "url": "https://changelog.shopify.com/posts/multi-location-pickup-is-now-available-in-pos",
       "published_at": "2026-06-08T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -13485,7 +14306,7 @@
       "url": "https://changelog.shopify.com/posts/improved-catalog-publishing",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -13521,7 +14342,7 @@
       "url": "https://shopify.dev/changelog/headless-checkout-sso-is-now-documented-with-ssosilent",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -14015,7 +14836,7 @@
       "url": "https://shopify.dev/changelog/giftcardcashouttransaction-now-resolvable-from-giftcardtransaction",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -14051,7 +14872,7 @@
       "url": "https://shopify.dev/changelog/gift-card-local-currency-support",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -14087,7 +14908,7 @@
       "url": "https://shopify.dev/changelog/inventory-transfer-webhooks-include-origin-and-destination-location-ids-and-mutation-documentation-clarified",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -14123,7 +14944,7 @@
       "url": "https://changelog.shopify.com/posts/schedule-publish-and-a-b-test-new-themes-and-checkout-and-customer-account-configurations",
       "published_at": "2026-06-05T14:30:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -14159,7 +14980,7 @@
       "url": "http://dzsws.mofcom.gov.cn/gzdt/art/2026/art_0d5cda43e50d41429e613594b990a891.html",
       "published_at": "2026-06-05T10:41:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T06:29:50.692537Z",
+      "last_seen_at": "2026-06-12T08:34:53.650613Z",
       "meta": {
         "web_source_id": "dzsws_mofcom_gov_cn",
         "web_source_url": "http://dzsws.mofcom.gov.cn/",
@@ -14267,45 +15088,6 @@
       "title_en": null,
       "title_zh": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情",
       "title_bilingual": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情"
-    },
-    {
-      "id": "5f2348da3e229aeb30b2a1c094ab73caecc7cb1e",
-      "site_id": "websource",
-      "site_name": "重点网页源",
-      "source": "Morketing",
-      "title": "2026Q1海外4A营收：AI与整合，正在重塑广告行业 | Morketing财报洞察 张禹成 2026-06-05 15:52 30366",
-      "url": "https://www.morketing.com/detail/28485",
-      "published_at": "2026-06-05T07:52:00Z",
-      "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T04:07:27.920849Z",
-      "meta": {
-        "web_source_id": "morketing_com_morketing",
-        "web_source_url": "https://www.morketing.com/",
-        "web_source_score": 8,
-        "web_source_priority": "P1",
-        "web_source_domain": "行业资讯",
-        "web_source_platform": "Morketing",
-        "published_time_source": "list_text"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.72,
-      "ai_label": "cross_border",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "海外"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.72,
-      "topic_label": "cross_border",
-      "source_tier": "official",
-      "source_tier_label": "官方网页源",
-      "source_tier_rank": 0,
-      "title_original": "2026Q1海外4A营收：AI与整合，正在重塑广告行业 | Morketing财报洞察 张禹成 2026-06-05 15:52 30366",
-      "title_en": null,
-      "title_zh": "2026Q1海外4A营收：AI与整合，正在重塑广告行业 | Morketing财报洞察 张禹成 2026-06-05 15:52 30366",
-      "title_bilingual": "2026Q1海外4A营收：AI与整合，正在重塑广告行业 | Morketing财报洞察 张禹成 2026-06-05 15:52 30366"
     }
   ],
   "all_mode_data_url": "data/latest-24h-all.json"

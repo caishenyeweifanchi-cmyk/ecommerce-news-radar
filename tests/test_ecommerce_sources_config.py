@@ -12,6 +12,8 @@ from scripts.update_news import (
     extract_datetime_from_text,
     extract_web_source_candidates,
     fetch_douyin_rule_center_items,
+    fetch_kuaishou_rule_center_items,
+    fetch_xiaohongshu_official_info_items,
     suppress_superseded_web_snapshots,
 )
 
@@ -202,6 +204,81 @@ def test_douyin_rule_api_items_link_to_article_detail_page():
     assert items[0].meta["article_url_source"] == "douyin_articlev0"
 
 
+def test_xiaohongshu_official_api_items_use_notice_links_and_times():
+    class Response:
+        def raise_for_status(self):
+            return None
+
+        def json(self):
+            return {
+                "data": {
+                    "red_official_information_notice": {
+                        "notice_config_list": [
+                            {
+                                "title": "规则公告",
+                                "information_detail_list": [
+                                    {
+                                        "title": "小红书电商商家规则更新通知",
+                                        "time": "2026-06-11",
+                                        "link": "https://ec.xiaohongshu.com/rule/detail/abc",
+                                    }
+                                ],
+                            }
+                        ]
+                    }
+                }
+            }
+
+    class Session:
+        def get(self, *args, **kwargs):
+            return Response()
+
+    items = fetch_xiaohongshu_official_info_items(
+        Session(),
+        {"id": "xiaohongshu_ecommerce_official_info", "name": "小红书电商官方资讯"},
+        datetime(2026, 6, 12, tzinfo=timezone.utc),
+    )
+
+    assert items[0].url == "https://ec.xiaohongshu.com/rule/detail/abc"
+    assert items[0].published_at == datetime(2026, 6, 11, 0, 0, tzinfo=timezone.utc)
+    assert items[0].meta["web_source_mode"] == "api_list"
+    assert items[0].meta["published_time_source"] == "api"
+
+
+def test_kuaishou_rule_api_items_link_to_rule_detail_page():
+    class Response:
+        def raise_for_status(self):
+            return None
+
+        def json(self):
+            return {
+                "result": 1,
+                "data": {
+                    "list": [
+                        {
+                            "title": "快手电商品牌标识管理规则修订公告",
+                            "resourceId": "4NJAdFIRMe",
+                            "publishTime": 1781179116954,
+                        }
+                    ]
+                },
+            }
+
+    class Session:
+        def post(self, *args, **kwargs):
+            return Response()
+
+    items = fetch_kuaishou_rule_center_items(
+        Session(),
+        {"id": "kuaishou_ecommerce_rule_center", "name": "快手电商规则中心"},
+        datetime(2026, 6, 12, tzinfo=timezone.utc),
+    )
+
+    assert items[0].url == "https://edu.kwaixiaodian.com/rule/web/detail?id=4NJAdFIRMe"
+    assert items[0].published_at == datetime(2026, 6, 11, 11, 58, 36, 954000, tzinfo=timezone.utc)
+    assert items[0].meta["article_url_source"] == "kuaishou_rule_resource_api"
+
+
 def test_douyin_rule_urls_are_canonicalized_to_article_detail_page():
     old_url = "https://school.jinritemai.com/doudian/web/rules/aJksF3Y7x1Bc?tabKey=rules"
 
@@ -284,6 +361,42 @@ def test_daily_brief_excludes_page_snapshot_as_rule_update():
     brief = build_daily_brief_payload([story], generated_at="2026-06-12T00:00:00Z", window_hours=24)
 
     assert brief["total_items"] == 0
+
+
+def test_daily_brief_prioritizes_official_p0_rules_over_generic_high_score_items():
+    official = {
+        "story_id": "official_rule",
+        "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
+        "score": 0.62,
+        "source_count": 1,
+        "source": "抖音电商规则中心",
+        "primary_item": {
+            "site_id": "websource",
+            "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
+            "source": "抖音电商规则中心",
+            "meta": {
+                "web_source_priority": "P0",
+                "web_source_domain": "平台规则",
+                "web_source_mode": "api_list",
+            },
+        },
+    }
+    generic = [
+        {
+            "story_id": f"generic_{idx}",
+            "title": f"跨境电商运营热点 {idx}",
+            "score": 0.95,
+            "source_count": 2,
+            "source": f"行业媒体 {idx}",
+            "primary_item": {"site_id": "opmlrss", "title": f"跨境电商运营热点 {idx}"},
+        }
+        for idx in range(25)
+    ]
+
+    brief = build_daily_brief_payload(generic + [official], generated_at="2026-06-12T00:00:00Z", window_hours=24)
+
+    assert brief["total_items"] == 20
+    assert brief["items"][0]["story_id"] == "official_rule"
 
 
 def test_real_web_source_list_suppresses_old_snapshot():
