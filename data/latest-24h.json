@@ -1,33 +1,69 @@
 {
-  "generated_at": "2026-06-12T09:50:52.543088Z",
+  "generated_at": "2026-06-12T10:50:38.906737Z",
   "window_hours": 168,
-  "total_items": 189,
-  "total_items_ai_raw": 193,
-  "total_items_raw": 1151,
-  "total_items_all_mode": 1137,
+  "total_items": 187,
+  "total_items_ai_raw": 191,
+  "total_items_raw": 1210,
+  "total_items_all_mode": 1196,
   "topic_filter": "ecommerce_relevance_scoring_v0_1",
   "topic": "ecommerce",
   "ai_relevance_threshold": 0.65,
   "topic_relevance_threshold": 0.65,
-  "archive_total": 6153,
+  "archive_total": 6230,
   "site_count": 2,
-  "source_count": 42,
+  "source_count": 41,
   "site_stats": [
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
-      "count": 101,
-      "raw_count": 1023
+      "count": 102,
+      "raw_count": 1085
     },
     {
       "site_id": "websource",
       "site_name": "重点网页源",
-      "count": 88,
-      "raw_count": 128
+      "count": 85,
+      "raw_count": 125
     }
   ],
   "items": [
     {
+      "id": "6e05fa47f150bc6762e6ab6b69bd54424007b0a6",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "ReadHub",
+      "title": "中国印尼跨境二维码支付互联互通项目上线",
+      "url": "https://readhub.cn/topic/8ttUj0Q4nx0",
+      "published_at": "2026-06-12T10:45:49Z",
+      "first_seen_at": "2026-06-12T10:50:38.906737Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
+      "meta": {
+        "feed_url": "https://readhub.cn/rss",
+        "feed_home": "https://readhub.cn/"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.65,
+      "ai_label": "cross_border",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "支付",
+        "跨境",
+        "跨境"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.65,
+      "topic_label": "cross_border",
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "title_original": "中国印尼跨境二维码支付互联互通项目上线",
+      "title_en": null,
+      "title_zh": "中国印尼跨境二维码支付互联互通项目上线",
+      "title_bilingual": "中国印尼跨境二维码支付互联互通项目上线"
+    },
+    {
       "id": "7d0efe11dcaec3fe249b6cab11bb12a994933424",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -36,7 +72,7 @@
       "url": "https://www.ithome.com/0/963/623.htm",
       "published_at": "2026-06-12T09:37:20Z",
       "first_seen_at": "2026-06-12T09:50:52.543088Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.ithome.com/rss",
         "feed_home": "https://www.ithome.com"
@@ -73,7 +109,7 @@
       "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_f5e569a3475346c28ac2dfe0440aefa3.html",
       "published_at": "2026-06-12T08:22:00Z",
       "first_seen_at": "2026-06-12T08:34:53.650613Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "samr_gov_cn_zw",
         "web_source_url": "https://www.samr.gov.cn/zw/",
@@ -112,7 +148,7 @@
       "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_26e8b64c786c45ab8bd4c85850558226.html",
       "published_at": "2026-06-12T08:20:00Z",
       "first_seen_at": "2026-06-12T08:34:53.650613Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "samr_gov_cn_zw",
         "web_source_url": "https://www.samr.gov.cn/zw/",
@@ -151,7 +187,7 @@
       "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_e169add446af411f8fce26593aadfdfb.html",
       "published_at": "2026-06-12T08:20:00Z",
       "first_seen_at": "2026-06-12T08:34:53.650613Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "samr_gov_cn_zw",
         "web_source_url": "https://www.samr.gov.cn/zw/",
@@ -190,7 +226,7 @@
       "url": "https://www.ithome.com/0/963/559.htm",
       "published_at": "2026-06-12T08:14:40Z",
       "first_seen_at": "2026-06-12T08:24:33.645185Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.ithome.com/rss",
         "feed_home": "https://www.ithome.com"
@@ -226,7 +262,7 @@
       "url": "https://www.huxiu.com/article/4866774.html?f=rss",
       "published_at": "2026-06-12T08:11:30Z",
       "first_seen_at": "2026-06-12T09:06:16.570453Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://rss.huxiu.com",
         "feed_home": "https://www.huxiu.com"
@@ -263,7 +299,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkbJcdRFFSP",
       "published_at": "2026-06-12T08:08:45Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -310,7 +346,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEEEnB",
       "published_at": "2026-06-12T08:07:17Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -355,7 +391,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=RsXYMVvx14",
       "published_at": "2026-06-12T08:04:11.913000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -433,7 +469,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
       "published_at": "2026-06-12T06:03:42Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1034,7 +1070,7 @@
       "url": "https://xiaguangshe.com/14455",
       "published_at": "2026-06-12T01:07:15Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -1191,7 +1227,7 @@
       "url": "https://www.ecommercebytes.com/2026/06/11/amazon-to-use-ai-to-enforce-new-product-title-limits",
       "published_at": "2026-06-11T20:20:49Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.ecommercebytes.com/feed/",
         "feed_home": "https://www.ecommercebytes.com/"
@@ -1269,7 +1305,7 @@
       "url": "https://www.huxiu.com/article/4866594.html?f=rss",
       "published_at": "2026-06-11T18:45:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://rss.huxiu.com",
         "feed_home": "https://www.huxiu.com"
@@ -1304,7 +1340,7 @@
       "url": "https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components",
       "published_at": "2026-06-11T18:00:00Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -1899,7 +1935,7 @@
       "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -1943,7 +1979,7 @@
       "url": "https://www.marketplacepulse.com/articles",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -2065,7 +2101,7 @@
       "url": "https://changelog.shopify.com/posts/unified-pos-staff-management",
       "published_at": "2026-06-11T14:15:00Z",
       "first_seen_at": "2026-06-11T16:33:58.074400Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -2174,7 +2210,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2256,7 +2292,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2302,7 +2338,7 @@
       "url": "https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider",
       "published_at": "2026-06-11T13:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -2410,7 +2446,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2456,7 +2492,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -2501,7 +2537,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=4NJAdFIRMe",
       "published_at": "2026-06-11T11:58:36.954000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -2546,7 +2582,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=nGTlUU3dqS",
       "published_at": "2026-06-11T11:56:51.964000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -2883,7 +2919,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
       "published_at": "2026-06-11T09:36:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -3121,7 +3157,7 @@
       "url": "https://www.adweek.com/commerce/amazon-exec-reveals-what-the-new-alexa-has-that-rufus-didnt",
       "published_at": "2026-06-11T09:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.adweek.com/feed/",
         "feed_home": "https://www.adweek.com/commerce"
@@ -3345,7 +3381,7 @@
       "url": "https://xiaguangshe.com/14453",
       "published_at": "2026-06-11T06:04:51Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -3572,7 +3608,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
       "published_at": "2026-06-11T03:01:40Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4286,7 +4322,7 @@
       "url": "https://changelog.shopify.com/posts/shopify-collective-is-now-available-in-australia",
       "published_at": "2026-06-10T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -4398,7 +4434,7 @@
       "url": "https://changelog.shopify.com/posts/shipping-performance-metrics-and-verified-tracking-badge-in-shopify-collective",
       "published_at": "2026-06-10T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -4702,7 +4738,7 @@
       "url": "https://www.retaildive.com/news/amazon-prime-day-competitor-walmart-deals-event-june/822471",
       "published_at": "2026-06-10T14:47:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.retaildive.com/feeds/news",
         "feed_home": "https://www.retaildive.com/topic/e-commerce/"
@@ -4852,7 +4888,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
       "published_at": "2026-06-10T13:16:44Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4899,7 +4935,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
       "published_at": "2026-06-10T13:09:01Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5052,7 +5088,7 @@
       "url": "https://xiaguangshe.com/14444",
       "published_at": "2026-06-10T11:59:16Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -5087,7 +5123,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
       "published_at": "2026-06-10T11:34:12Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5661,7 +5697,7 @@
       "url": "https://www.newrank.cn/article/detail/34513",
       "published_at": "2026-06-10T02:00:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -6117,7 +6153,7 @@
       "url": "https://xiaguangshe.com/14435",
       "published_at": "2026-06-09T12:23:25Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -6266,7 +6302,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=TParGlyquv",
       "published_at": "2026-06-09T03:28:16.623000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -6310,7 +6346,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=YI9zgXSF6o",
       "published_at": "2026-06-09T03:26:21.935000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -6397,7 +6433,7 @@
       "url": "https://www.digitalcommerce360.com/2026/06/08/amazons-alexa-for-shopping-adds-customization-feature-for-merch",
       "published_at": "2026-06-08T22:32:29Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.digitalcommerce360.com/feed/",
         "feed_home": "https://www.digitalcommerce360.com"
@@ -6469,7 +6505,7 @@
       "url": "https://changelog.shopify.com/posts/multi-location-pickup-is-now-available-in-pos",
       "published_at": "2026-06-08T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -6542,7 +6578,7 @@
       "url": "https://changelog.shopify.com/posts/improved-catalog-publishing",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -6578,7 +6614,7 @@
       "url": "https://shopify.dev/changelog/headless-checkout-sso-is-now-documented-with-ssosilent",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -7072,7 +7108,7 @@
       "url": "https://shopify.dev/changelog/giftcardcashouttransaction-now-resolvable-from-giftcardtransaction",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -7108,7 +7144,7 @@
       "url": "https://shopify.dev/changelog/gift-card-local-currency-support",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -7144,7 +7180,7 @@
       "url": "https://shopify.dev/changelog/inventory-transfer-webhooks-include-origin-and-destination-location-ids-and-mutation-documentation-clarified",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -7180,7 +7216,7 @@
       "url": "https://changelog.shopify.com/posts/schedule-publish-and-a-b-test-new-themes-and-checkout-and-customer-account-configurations",
       "published_at": "2026-06-05T14:30:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -7206,128 +7242,46 @@
       "title_en": "Schedule, publish, and A/B test new themes and checkout and customer account configurations",
       "title_zh": "安排、发布和 A/B 测试新主题以及结帐和客户帐户配置",
       "title_bilingual": "安排、发布和 A/B 测试新主题以及结帐和客户帐户配置 / Schedule, publish, and A/B test new themes and checkout and customer account configurations"
-    },
-    {
-      "id": "b9d4421c5fe085550894916ad6aabceab58f9e08",
-      "site_id": "websource",
-      "site_name": "重点网页源",
-      "source": "商务部电子商务和信息化司",
-      "title": "商务部有关司局召开主要电商平台专题座谈会",
-      "url": "http://dzsws.mofcom.gov.cn/gzdt/art/2026/art_0d5cda43e50d41429e613594b990a891.html",
-      "published_at": "2026-06-05T10:41:00Z",
-      "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
-      "meta": {
-        "web_source_id": "dzsws_mofcom_gov_cn",
-        "web_source_url": "http://dzsws.mofcom.gov.cn/",
-        "web_source_score": 1,
-        "web_source_priority": "P0",
-        "web_source_domain": "政策监管",
-        "web_source_platform": "商务部",
-        "published_time_source": "detail_text"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.72,
-      "ai_label": "ecommerce_general",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "平台",
-        "电商"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.72,
-      "topic_label": "ecommerce_general",
-      "source_tier": "official",
-      "source_tier_label": "官方网页源",
-      "source_tier_rank": 0,
-      "title_original": "商务部有关司局召开主要电商平台专题座谈会",
-      "title_en": null,
-      "title_zh": "商务部有关司局召开主要电商平台专题座谈会",
-      "title_bilingual": "商务部有关司局召开主要电商平台专题座谈会"
-    },
-    {
-      "id": "25f09fd18f86c81165b9a2c106711499227835f8",
-      "site_id": "websource",
-      "site_name": "重点网页源",
-      "source": "eBay UK Business Seller Board",
-      "title": "View topic",
-      "url": "https://community.ebay.co.uk/t5/Announcements/Enter-the-eBay-for-Business-Awards-for-the-chance-to-win-10-000/ba-p/8038690",
-      "published_at": "2026-06-05T10:00:00.028000Z",
-      "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T04:07:27.920849Z",
-      "meta": {
-        "web_source_id": "community_ebay_co_uk_t5_business_seller_board_bd_p_2190000154",
-        "web_source_url": "https://community.ebay.co.uk/t5/Business-Seller-Board/bd-p/21900001545",
-        "web_source_score": 8,
-        "web_source_priority": "P1",
-        "web_source_domain": "卖家社区",
-        "web_source_platform": "eBay",
-        "published_time_source": "detail_meta"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.72,
-      "ai_label": "ecommerce_general",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "seller"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.72,
-      "topic_label": "ecommerce_general",
-      "source_tier": "official",
-      "source_tier_label": "官方网页源",
-      "source_tier_rank": 0,
-      "title_original": "View topic",
-      "title_en": "View topic",
-      "title_zh": "查看主题",
-      "title_bilingual": "查看主题 / View topic"
-    },
-    {
-      "id": "6cbbac435b4f9e442702071c39caa32b6967847f",
-      "site_id": "websource",
-      "site_name": "重点网页源",
-      "source": "Morketing",
-      "title": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情",
-      "url": "https://www.morketing.com/detail/28489",
-      "published_at": "2026-06-05T09:51:00Z",
-      "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T04:07:27.920849Z",
-      "meta": {
-        "web_source_id": "morketing_com_morketing",
-        "web_source_url": "https://www.morketing.com/",
-        "web_source_score": 4,
-        "web_source_priority": "P1",
-        "web_source_domain": "行业资讯",
-        "web_source_platform": "Morketing",
-        "published_time_source": "list_text"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.72,
-      "ai_label": "traffic_marketing",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "品牌"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.72,
-      "topic_label": "traffic_marketing",
-      "source_tier": "official",
-      "source_tier_label": "官方网页源",
-      "source_tier_rank": 0,
-      "title_original": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情",
-      "title_en": null,
-      "title_zh": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情",
-      "title_bilingual": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情"
     }
   ],
   "items_ai": [
     {
+      "id": "6e05fa47f150bc6762e6ab6b69bd54424007b0a6",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "ReadHub",
+      "title": "中国印尼跨境二维码支付互联互通项目上线",
+      "url": "https://readhub.cn/topic/8ttUj0Q4nx0",
+      "published_at": "2026-06-12T10:45:49Z",
+      "first_seen_at": "2026-06-12T10:50:38.906737Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
+      "meta": {
+        "feed_url": "https://readhub.cn/rss",
+        "feed_home": "https://readhub.cn/"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.65,
+      "ai_label": "cross_border",
+      "ai_relevance_reason": "matched_ecommerce_signal",
+      "ai_signals": [
+        "支付",
+        "跨境",
+        "跨境"
+      ],
+      "ai_noise": [],
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.65,
+      "topic_label": "cross_border",
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "title_original": "中国印尼跨境二维码支付互联互通项目上线",
+      "title_en": null,
+      "title_zh": "中国印尼跨境二维码支付互联互通项目上线",
+      "title_bilingual": "中国印尼跨境二维码支付互联互通项目上线"
+    },
+    {
       "id": "7d0efe11dcaec3fe249b6cab11bb12a994933424",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -7336,7 +7290,7 @@
       "url": "https://www.ithome.com/0/963/623.htm",
       "published_at": "2026-06-12T09:37:20Z",
       "first_seen_at": "2026-06-12T09:50:52.543088Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.ithome.com/rss",
         "feed_home": "https://www.ithome.com"
@@ -7373,7 +7327,7 @@
       "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_f5e569a3475346c28ac2dfe0440aefa3.html",
       "published_at": "2026-06-12T08:22:00Z",
       "first_seen_at": "2026-06-12T08:34:53.650613Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "samr_gov_cn_zw",
         "web_source_url": "https://www.samr.gov.cn/zw/",
@@ -7412,7 +7366,7 @@
       "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_26e8b64c786c45ab8bd4c85850558226.html",
       "published_at": "2026-06-12T08:20:00Z",
       "first_seen_at": "2026-06-12T08:34:53.650613Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "samr_gov_cn_zw",
         "web_source_url": "https://www.samr.gov.cn/zw/",
@@ -7451,7 +7405,7 @@
       "url": "https://www.samr.gov.cn/zw/zh/art/2026/art_e169add446af411f8fce26593aadfdfb.html",
       "published_at": "2026-06-12T08:20:00Z",
       "first_seen_at": "2026-06-12T08:34:53.650613Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "samr_gov_cn_zw",
         "web_source_url": "https://www.samr.gov.cn/zw/",
@@ -7490,7 +7444,7 @@
       "url": "https://www.ithome.com/0/963/559.htm",
       "published_at": "2026-06-12T08:14:40Z",
       "first_seen_at": "2026-06-12T08:24:33.645185Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.ithome.com/rss",
         "feed_home": "https://www.ithome.com"
@@ -7526,7 +7480,7 @@
       "url": "https://www.huxiu.com/article/4866774.html?f=rss",
       "published_at": "2026-06-12T08:11:30Z",
       "first_seen_at": "2026-06-12T09:06:16.570453Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://rss.huxiu.com",
         "feed_home": "https://www.huxiu.com"
@@ -7563,7 +7517,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkbJcdRFFSP",
       "published_at": "2026-06-12T08:08:45Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -7610,7 +7564,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEEEnB",
       "published_at": "2026-06-12T08:07:17Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -7655,7 +7609,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=RsXYMVvx14",
       "published_at": "2026-06-12T08:04:11.913000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -7733,7 +7687,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
       "published_at": "2026-06-12T06:03:42Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -8334,7 +8288,7 @@
       "url": "https://xiaguangshe.com/14455",
       "published_at": "2026-06-12T01:07:15Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -8491,7 +8445,7 @@
       "url": "https://www.ecommercebytes.com/2026/06/11/amazon-to-use-ai-to-enforce-new-product-title-limits",
       "published_at": "2026-06-11T20:20:49Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.ecommercebytes.com/feed/",
         "feed_home": "https://www.ecommercebytes.com/"
@@ -8569,7 +8523,7 @@
       "url": "https://www.huxiu.com/article/4866594.html?f=rss",
       "published_at": "2026-06-11T18:45:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://rss.huxiu.com",
         "feed_home": "https://www.huxiu.com"
@@ -8604,7 +8558,7 @@
       "url": "https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components",
       "published_at": "2026-06-11T18:00:00Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -9199,7 +9153,7 @@
       "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -9243,7 +9197,7 @@
       "url": "https://www.marketplacepulse.com/articles",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -9365,7 +9319,7 @@
       "url": "https://changelog.shopify.com/posts/unified-pos-staff-management",
       "published_at": "2026-06-11T14:15:00Z",
       "first_seen_at": "2026-06-11T16:33:58.074400Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -9474,7 +9428,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -9556,7 +9510,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -9602,7 +9556,7 @@
       "url": "https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider",
       "published_at": "2026-06-11T13:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -9710,7 +9664,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -9756,7 +9710,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -9801,7 +9755,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=4NJAdFIRMe",
       "published_at": "2026-06-11T11:58:36.954000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -9846,7 +9800,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=nGTlUU3dqS",
       "published_at": "2026-06-11T11:56:51.964000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -10183,7 +10137,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkuEyVRFNst",
       "published_at": "2026-06-11T09:36:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -10421,7 +10375,7 @@
       "url": "https://www.adweek.com/commerce/amazon-exec-reveals-what-the-new-alexa-has-that-rufus-didnt",
       "published_at": "2026-06-11T09:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.adweek.com/feed/",
         "feed_home": "https://www.adweek.com/commerce"
@@ -10645,7 +10599,7 @@
       "url": "https://xiaguangshe.com/14453",
       "published_at": "2026-06-11T06:04:51Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -10872,7 +10826,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYhe9oDu",
       "published_at": "2026-06-11T03:01:40Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -11586,7 +11540,7 @@
       "url": "https://changelog.shopify.com/posts/shopify-collective-is-now-available-in-australia",
       "published_at": "2026-06-10T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -11698,7 +11652,7 @@
       "url": "https://changelog.shopify.com/posts/shipping-performance-metrics-and-verified-tracking-badge-in-shopify-collective",
       "published_at": "2026-06-10T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -12002,7 +11956,7 @@
       "url": "https://www.retaildive.com/news/amazon-prime-day-competitor-walmart-deals-event-june/822471",
       "published_at": "2026-06-10T14:47:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.retaildive.com/feeds/news",
         "feed_home": "https://www.retaildive.com/topic/e-commerce/"
@@ -12152,7 +12106,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
       "published_at": "2026-06-10T13:16:44Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -12199,7 +12153,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJktZaNTeeUJ",
       "published_at": "2026-06-10T13:09:01Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -12352,7 +12306,7 @@
       "url": "https://xiaguangshe.com/14444",
       "published_at": "2026-06-10T11:59:16Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -12387,7 +12341,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT55w1Q",
       "published_at": "2026-06-10T11:34:12Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -12961,7 +12915,7 @@
       "url": "https://www.newrank.cn/article/detail/34513",
       "published_at": "2026-06-10T02:00:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -13417,7 +13371,7 @@
       "url": "https://xiaguangshe.com/14435",
       "published_at": "2026-06-09T12:23:25Z",
       "first_seen_at": "2026-06-12T02:38:45.595135Z",
-      "last_seen_at": "2026-06-12T09:21:22.378470Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://xiaguangshe.com/feed",
         "feed_home": "https://xiaguangshe.com/"
@@ -13566,7 +13520,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=TParGlyquv",
       "published_at": "2026-06-09T03:28:16.623000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -13610,7 +13564,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=YI9zgXSF6o",
       "published_at": "2026-06-09T03:26:21.935000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -13697,7 +13651,7 @@
       "url": "https://www.digitalcommerce360.com/2026/06/08/amazons-alexa-for-shopping-adds-customization-feature-for-merch",
       "published_at": "2026-06-08T22:32:29Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://www.digitalcommerce360.com/feed/",
         "feed_home": "https://www.digitalcommerce360.com"
@@ -13769,7 +13723,7 @@
       "url": "https://changelog.shopify.com/posts/multi-location-pickup-is-now-available-in-pos",
       "published_at": "2026-06-08T18:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -13842,7 +13796,7 @@
       "url": "https://changelog.shopify.com/posts/improved-catalog-publishing",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -13878,7 +13832,7 @@
       "url": "https://shopify.dev/changelog/headless-checkout-sso-is-now-documented-with-ssosilent",
       "published_at": "2026-06-08T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -14372,7 +14326,7 @@
       "url": "https://shopify.dev/changelog/giftcardcashouttransaction-now-resolvable-from-giftcardtransaction",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -14408,7 +14362,7 @@
       "url": "https://shopify.dev/changelog/gift-card-local-currency-support",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -14444,7 +14398,7 @@
       "url": "https://shopify.dev/changelog/inventory-transfer-webhooks-include-origin-and-destination-location-ids-and-mutation-documentation-clarified",
       "published_at": "2026-06-05T16:00:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://shopify.dev/changelog/feed.xml",
         "feed_home": "https://shopify.dev/changelog"
@@ -14480,7 +14434,7 @@
       "url": "https://changelog.shopify.com/posts/schedule-publish-and-a-b-test-new-themes-and-checkout-and-customer-account-configurations",
       "published_at": "2026-06-05T14:30:00Z",
       "first_seen_at": "2026-06-11T14:05:24.420694Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
+      "last_seen_at": "2026-06-12T10:50:38.906737Z",
       "meta": {
         "feed_url": "https://changelog.shopify.com/feed.xml",
         "feed_home": "https://changelog.shopify.com/"
@@ -14506,124 +14460,6 @@
       "title_en": "Schedule, publish, and A/B test new themes and checkout and customer account configurations",
       "title_zh": "安排、发布和 A/B 测试新主题以及结帐和客户帐户配置",
       "title_bilingual": "安排、发布和 A/B 测试新主题以及结帐和客户帐户配置 / Schedule, publish, and A/B test new themes and checkout and customer account configurations"
-    },
-    {
-      "id": "b9d4421c5fe085550894916ad6aabceab58f9e08",
-      "site_id": "websource",
-      "site_name": "重点网页源",
-      "source": "商务部电子商务和信息化司",
-      "title": "商务部有关司局召开主要电商平台专题座谈会",
-      "url": "http://dzsws.mofcom.gov.cn/gzdt/art/2026/art_0d5cda43e50d41429e613594b990a891.html",
-      "published_at": "2026-06-05T10:41:00Z",
-      "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T09:50:52.543088Z",
-      "meta": {
-        "web_source_id": "dzsws_mofcom_gov_cn",
-        "web_source_url": "http://dzsws.mofcom.gov.cn/",
-        "web_source_score": 1,
-        "web_source_priority": "P0",
-        "web_source_domain": "政策监管",
-        "web_source_platform": "商务部",
-        "published_time_source": "detail_text"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.72,
-      "ai_label": "ecommerce_general",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "平台",
-        "电商"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.72,
-      "topic_label": "ecommerce_general",
-      "source_tier": "official",
-      "source_tier_label": "官方网页源",
-      "source_tier_rank": 0,
-      "title_original": "商务部有关司局召开主要电商平台专题座谈会",
-      "title_en": null,
-      "title_zh": "商务部有关司局召开主要电商平台专题座谈会",
-      "title_bilingual": "商务部有关司局召开主要电商平台专题座谈会"
-    },
-    {
-      "id": "25f09fd18f86c81165b9a2c106711499227835f8",
-      "site_id": "websource",
-      "site_name": "重点网页源",
-      "source": "eBay UK Business Seller Board",
-      "title": "View topic",
-      "url": "https://community.ebay.co.uk/t5/Announcements/Enter-the-eBay-for-Business-Awards-for-the-chance-to-win-10-000/ba-p/8038690",
-      "published_at": "2026-06-05T10:00:00.028000Z",
-      "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T04:07:27.920849Z",
-      "meta": {
-        "web_source_id": "community_ebay_co_uk_t5_business_seller_board_bd_p_2190000154",
-        "web_source_url": "https://community.ebay.co.uk/t5/Business-Seller-Board/bd-p/21900001545",
-        "web_source_score": 8,
-        "web_source_priority": "P1",
-        "web_source_domain": "卖家社区",
-        "web_source_platform": "eBay",
-        "published_time_source": "detail_meta"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.72,
-      "ai_label": "ecommerce_general",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "seller"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.72,
-      "topic_label": "ecommerce_general",
-      "source_tier": "official",
-      "source_tier_label": "官方网页源",
-      "source_tier_rank": 0,
-      "title_original": "View topic",
-      "title_en": "View topic",
-      "title_zh": "查看主题",
-      "title_bilingual": "查看主题 / View topic"
-    },
-    {
-      "id": "6cbbac435b4f9e442702071c39caa32b6967847f",
-      "site_id": "websource",
-      "site_name": "重点网页源",
-      "source": "Morketing",
-      "title": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情",
-      "url": "https://www.morketing.com/detail/28489",
-      "published_at": "2026-06-05T09:51:00Z",
-      "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-12T04:07:27.920849Z",
-      "meta": {
-        "web_source_id": "morketing_com_morketing",
-        "web_source_url": "https://www.morketing.com/",
-        "web_source_score": 4,
-        "web_source_priority": "P1",
-        "web_source_domain": "行业资讯",
-        "web_source_platform": "Morketing",
-        "published_time_source": "list_text"
-      },
-      "ai_is_related": true,
-      "ai_score": 0.72,
-      "ai_label": "traffic_marketing",
-      "ai_relevance_reason": "matched_ecommerce_signal",
-      "ai_signals": [
-        "品牌"
-      ],
-      "ai_noise": [],
-      "topic": "ecommerce",
-      "topic_is_related": true,
-      "topic_score": 0.72,
-      "topic_label": "traffic_marketing",
-      "source_tier": "official",
-      "source_tier_label": "官方网页源",
-      "source_tier_rank": 0,
-      "title_original": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情",
-      "title_en": null,
-      "title_zh": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情",
-      "title_bilingual": "2026-06-05 17:51 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 馥郁满铺融资近亿：一株晚香玉如何讲好情绪护肤的故事？| iBrandi品牌X档案 查看详情"
     }
   ],
   "all_mode_data_url": "data/latest-24h-all.json"
