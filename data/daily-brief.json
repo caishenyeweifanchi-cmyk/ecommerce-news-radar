@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T04:24:03.456863Z",
+  "generated_at": "2026-06-12T06:29:50.692537Z",
   "window_hours": 168,
   "total_items": 20,
   "items": [
@@ -75,6 +75,81 @@
       }
     },
     {
+      "story_id": "story_f84103c26256",
+      "title": "关于修订《【商家-综合认定商品/商家品质差】细则》的意见征集通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
+      "source": "抖音电商规则中心",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "71c33eb1fd8d576a1323fe210b64f0a5830d5663",
+          "title": "关于修订《【商家-综合认定商品/商家品质差】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-12T06:03:42Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "抖音电商规则中心"
+      ],
+      "items": [
+        {
+          "id": "71c33eb1fd8d576a1323fe210b64f0a5830d5663",
+          "title": "关于修订《【商家-综合认定商品/商家品质差】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
+          "source": "抖音电商规则中心",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-12T06:03:42Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8935,
+      "importance": 0.8935,
+      "importance_score": 0.8935,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.98,
+        "recency": 0.9974,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-12T06:03:42Z",
+      "latest_at": "2026-06-12T06:03:42Z",
+      "primary_item": {
+        "id": "71c33eb1fd8d576a1323fe210b64f0a5830d5663",
+        "title": "关于修订《【商家-综合认定商品/商家品质差】细则》的意见征集通知",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
+        "source": "抖音电商规则中心",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "douyin_ecommerce_rule_center",
+          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
+          "web_source_mode": "api_list",
+          "web_source_priority": "P0",
+          "web_source_domain": "平台规则",
+          "web_source_platform": "抖音电商",
+          "rule_type": 0,
+          "rule_status": 201,
+          "knowledge_id": "aJksBkuEDuJF",
+          "article_url_source": "douyin_articlev0",
+          "published_time_source": "api"
+        }
+      }
+    },
+    {
       "story_id": "story_71b89768f94e",
       "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
@@ -127,14 +202,14 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8895,
-      "importance": 0.8895,
-      "importance_score": 0.8895,
+      "score": 0.887,
+      "importance": 0.887,
+      "importance_score": 0.887,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.9124,
+        "recency": 0.8999,
         "story_heat": 0.25
       },
       "category": "official",
@@ -165,6 +240,97 @@
           "knowledge_id": "aJksF3Y7x1Bc",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
+        }
+      }
+    },
+    {
+      "story_id": "story_3fbef3c43939",
+      "title": "2026 年 6 月 11 日 在 TikTok 商店上，1% 的卖家推动 60% 的 GMV TikTok 商店建立在任何人的承诺之上…… / Jun 11, 2026 On TikTok Shop, 1% of Sellers Drive 60% of GMV TikTok Shop was built on the promise that anyone…",
+      "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
+      "primary_url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
+      "source": "Marketplace Pulse",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "635a9b05d82a6bce53c09bd5b0b83a65d403383d",
+          "title": "2026 年 6 月 11 日 在 TikTok 商店上，1% 的卖家推动 60% 的 GMV TikTok 商店建立在任何人的承诺之上…… / Jun 11, 2026 On TikTok Shop, 1% of Sellers Drive 60% of GMV TikTok Shop was built on the promise that anyone…",
+          "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
+          "source": "Marketplace Pulse",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T14:30:00Z"
+        },
+        {
+          "id": "61006a6f734469fc4f95669e48911b61f1b597db",
+          "title": "在 TikTok 商店上，1% 的卖家创造了 60% 的 GMV / On TikTok Shop, 1% of Sellers Drive 60% of GMV",
+          "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
+          "source": "Marketplace Pulse Research",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T14:30:00Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Marketplace Pulse",
+        "Marketplace Pulse Research"
+      ],
+      "items": [
+        {
+          "id": "635a9b05d82a6bce53c09bd5b0b83a65d403383d",
+          "title": "2026 年 6 月 11 日 在 TikTok 商店上，1% 的卖家推动 60% 的 GMV TikTok 商店建立在任何人的承诺之上…… / Jun 11, 2026 On TikTok Shop, 1% of Sellers Drive 60% of GMV TikTok Shop was built on the promise that anyone…",
+          "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
+          "source": "Marketplace Pulse",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T14:30:00Z"
+        },
+        {
+          "id": "61006a6f734469fc4f95669e48911b61f1b597db",
+          "title": "在 TikTok 商店上，1% 的卖家创造了 60% 的 GMV / On TikTok Shop, 1% of Sellers Drive 60% of GMV",
+          "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
+          "source": "Marketplace Pulse Research",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T14:30:00Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.855,
+      "importance": 0.855,
+      "importance_score": 0.855,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.83,
+        "recency": 0.9048,
+        "story_heat": 0.25
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-11T14:30:00Z",
+      "latest_at": "2026-06-11T14:30:00Z",
+      "primary_item": {
+        "id": "635a9b05d82a6bce53c09bd5b0b83a65d403383d",
+        "title": "2026 年 6 月 11 日 在 TikTok 商店上，1% 的卖家推动 60% 的 GMV TikTok 商店建立在任何人的承诺之上…… / Jun 11, 2026 On TikTok Shop, 1% of Sellers Drive 60% of GMV TikTok Shop was built on the promise that anyone…",
+        "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
+        "source": "Marketplace Pulse",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "marketplacepulse_com",
+          "web_source_url": "https://www.marketplacepulse.com",
+          "web_source_score": 5,
+          "web_source_priority": "P0",
+          "web_source_domain": "跨境电商",
+          "web_source_platform": "Marketplace Pulse",
+          "published_time_source": "detail_meta"
         }
       }
     },
@@ -312,7 +478,7 @@
     },
     {
       "story_id": "story_6f4b00ddf0ca",
-      "title": "Maersk Latin America Market Update – June, 2026",
+      "title": "马士基拉丁美洲市场最新动态 – 2026 年 6 月 / Maersk Latin America Market Update – June, 2026",
       "url": "https://www.maersk.com/news/articles/2026/06/12/latin-america-market-update-june",
       "primary_url": "https://www.maersk.com/news/articles/2026/06/12/latin-america-market-update-june",
       "source": "船公司公告 马士基",
@@ -320,7 +486,7 @@
       "sources": [
         {
           "id": "884cab6ee671cf4aedb04b42ed9189195c48d4bc",
-          "title": "Maersk Latin America Market Update – June, 2026",
+          "title": "马士基拉丁美洲市场最新动态 – 2026 年 6 月 / Maersk Latin America Market Update – June, 2026",
           "url": "https://www.maersk.com/news/articles/2026/06/12/latin-america-market-update-june",
           "source": "船公司公告 马士基",
           "source_name": "重点网页源",
@@ -335,7 +501,7 @@
       "items": [
         {
           "id": "884cab6ee671cf4aedb04b42ed9189195c48d4bc",
-          "title": "Maersk Latin America Market Update – June, 2026",
+          "title": "马士基拉丁美洲市场最新动态 – 2026 年 6 月 / Maersk Latin America Market Update – June, 2026",
           "url": "https://www.maersk.com/news/articles/2026/06/12/latin-america-market-update-june",
           "source": "船公司公告 马士基",
           "source_name": "重点网页源",
@@ -345,14 +511,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8492,
-      "importance": 0.8492,
-      "importance_score": 0.8492,
+      "score": 0.8467,
+      "importance": 0.8467,
+      "importance_score": 0.8467,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.88,
-        "recency": 0.9262,
+        "recency": 0.9137,
         "story_heat": 0.0
       },
       "category": "official",
@@ -365,7 +531,7 @@
       "latest_at": "2026-06-11T16:00:00Z",
       "primary_item": {
         "id": "884cab6ee671cf4aedb04b42ed9189195c48d4bc",
-        "title": "Maersk Latin America Market Update – June, 2026",
+        "title": "马士基拉丁美洲市场最新动态 – 2026 年 6 月 / Maersk Latin America Market Update – June, 2026",
         "url": "https://www.maersk.com/news/articles/2026/06/12/latin-america-market-update-june",
         "source": "船公司公告 马士基",
         "source_name": "重点网页源",
@@ -378,77 +544,6 @@
           "web_source_domain": "供应链物流",
           "web_source_platform": "马士基",
           "published_time_source": "list_text"
-        }
-      }
-    },
-    {
-      "story_id": "story_15e8a20df61b",
-      "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
-      "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
-      "primary_url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
-      "source": "工信部公告",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "7afbaa37b186de61ef0d26f8c896527f921c1a09",
-          "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
-          "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
-          "source": "工信部公告",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T09:05:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "工信部公告"
-      ],
-      "items": [
-        {
-          "id": "7afbaa37b186de61ef0d26f8c896527f921c1a09",
-          "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
-          "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
-          "source": "工信部公告",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T09:05:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.841,
-      "importance": 0.841,
-      "importance_score": 0.841,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.885,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T09:05:00Z",
-      "latest_at": "2026-06-11T09:05:00Z",
-      "primary_item": {
-        "id": "7afbaa37b186de61ef0d26f8c896527f921c1a09",
-        "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
-        "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
-        "source": "工信部公告",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "miit_gov_cn",
-          "web_source_url": "https://www.miit.gov.cn",
-          "web_source_score": 12,
-          "web_source_priority": "P1",
-          "web_source_domain": "政策监管",
-          "web_source_platform": "工信部",
-          "published_time_source": "detail_text"
         }
       }
     },
@@ -524,48 +619,48 @@
       }
     },
     {
-      "story_id": "story_e1286e4ba64a",
-      "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
-      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
-      "source": "抖音电商规则中心",
+      "story_id": "story_15e8a20df61b",
+      "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
+      "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
+      "primary_url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
+      "source": "工信部公告",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "0bee5e39656239effbd913bb9a642663c851fb60",
-          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
-          "source": "抖音电商规则中心",
+          "id": "7afbaa37b186de61ef0d26f8c896527f921c1a09",
+          "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
+          "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
+          "source": "工信部公告",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T12:19:17Z"
+          "published_at": "2026-06-11T09:05:00Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "抖音电商规则中心"
+        "工信部公告"
       ],
       "items": [
         {
-          "id": "0bee5e39656239effbd913bb9a642663c851fb60",
-          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
-          "source": "抖音电商规则中心",
+          "id": "7afbaa37b186de61ef0d26f8c896527f921c1a09",
+          "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
+          "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
+          "source": "工信部公告",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T12:19:17Z"
+          "published_at": "2026-06-11T09:05:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8629,
-      "importance": 0.8629,
-      "importance_score": 0.8629,
+      "score": 0.8385,
+      "importance": 0.8385,
+      "importance_score": 0.8385,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
-        "ai_relevance": 0.94,
-        "recency": 0.9043,
+        "ai_relevance": 0.88,
+        "recency": 0.8725,
         "story_heat": 0.0
       },
       "category": "official",
@@ -574,169 +669,23 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-11T12:19:17Z",
-      "latest_at": "2026-06-11T12:19:17Z",
+      "earliest_at": "2026-06-11T09:05:00Z",
+      "latest_at": "2026-06-11T09:05:00Z",
       "primary_item": {
-        "id": "0bee5e39656239effbd913bb9a642663c851fb60",
-        "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
-        "source": "抖音电商规则中心",
+        "id": "7afbaa37b186de61ef0d26f8c896527f921c1a09",
+        "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
+        "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
+        "source": "工信部公告",
         "source_name": "重点网页源",
         "site_id": "websource",
         "meta": {
-          "web_source_id": "douyin_ecommerce_rule_center",
-          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
-          "web_source_mode": "api_list",
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "抖音电商",
-          "rule_type": 0,
-          "rule_status": 201,
-          "knowledge_id": "aJkw6NXXPDHC",
-          "article_url_source": "douyin_articlev0",
-          "published_time_source": "api"
-        }
-      }
-    },
-    {
-      "story_id": "story_9774fbaa183a",
-      "title": "Jun 11, 2026 On TikTok Shop, 1% of Sellers Drive 60% of GMV TikTok Shop was built on the promise that anyone…",
-      "url": "https://marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
-      "primary_url": "https://marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
-      "source": "Marketplace Pulse",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "cc367d43ea8585cd956bbf5b901a00ace3169f8a",
-          "title": "Jun 11, 2026 On TikTok Shop, 1% of Sellers Drive 60% of GMV TikTok Shop was built on the promise that anyone…",
-          "url": "https://marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
-          "source": "Marketplace Pulse",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:30:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Marketplace Pulse"
-      ],
-      "items": [
-        {
-          "id": "cc367d43ea8585cd956bbf5b901a00ace3169f8a",
-          "title": "Jun 11, 2026 On TikTok Shop, 1% of Sellers Drive 60% of GMV TikTok Shop was built on the promise that anyone…",
-          "url": "https://marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
-          "source": "Marketplace Pulse",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:30:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8325,
-      "importance": 0.8325,
-      "importance_score": 0.8325,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.83,
-        "recency": 0.9173,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:30:00Z",
-      "latest_at": "2026-06-11T14:30:00Z",
-      "primary_item": {
-        "id": "cc367d43ea8585cd956bbf5b901a00ace3169f8a",
-        "title": "Jun 11, 2026 On TikTok Shop, 1% of Sellers Drive 60% of GMV TikTok Shop was built on the promise that anyone…",
-        "url": "https://marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
-        "source": "Marketplace Pulse",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "marketplacepulse_com_marketplace_pulse",
-          "web_source_url": "https://marketplacepulse.com/",
-          "web_source_score": 5,
+          "web_source_id": "miit_gov_cn",
+          "web_source_url": "https://www.miit.gov.cn",
+          "web_source_score": 12,
           "web_source_priority": "P1",
-          "web_source_domain": "行业资讯",
-          "web_source_platform": "Marketplace Pulse",
-          "published_time_source": "detail_meta"
-        }
-      }
-    },
-    {
-      "story_id": "story_3fbef3c43939",
-      "title": "On TikTok Shop, 1% of Sellers Drive 60% of GMV",
-      "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
-      "primary_url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
-      "source": "Marketplace Pulse Research",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "61006a6f734469fc4f95669e48911b61f1b597db",
-          "title": "On TikTok Shop, 1% of Sellers Drive 60% of GMV",
-          "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
-          "source": "Marketplace Pulse Research",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:30:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Marketplace Pulse Research"
-      ],
-      "items": [
-        {
-          "id": "61006a6f734469fc4f95669e48911b61f1b597db",
-          "title": "On TikTok Shop, 1% of Sellers Drive 60% of GMV",
-          "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
-          "source": "Marketplace Pulse Research",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T14:30:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8325,
-      "importance": 0.8325,
-      "importance_score": 0.8325,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.83,
-        "recency": 0.9173,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T14:30:00Z",
-      "latest_at": "2026-06-11T14:30:00Z",
-      "primary_item": {
-        "id": "61006a6f734469fc4f95669e48911b61f1b597db",
-        "title": "On TikTok Shop, 1% of Sellers Drive 60% of GMV",
-        "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
-        "source": "Marketplace Pulse Research",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "marketplacepulse_com_articles",
-          "web_source_url": "https://www.marketplacepulse.com/articles",
-          "web_source_score": 5,
-          "web_source_priority": "P1",
-          "web_source_domain": "跨境电商",
-          "web_source_platform": "Marketplace Pulse",
-          "published_time_source": "detail_meta"
+          "web_source_domain": "政策监管",
+          "web_source_platform": "工信部",
+          "published_time_source": "detail_text"
         }
       }
     },
@@ -775,14 +724,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8323,
-      "importance": 0.8323,
-      "importance_score": 0.8323,
+      "score": 0.8298,
+      "importance": 0.8298,
+      "importance_score": 0.8298,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.78,
-        "recency": 0.9915,
+        "recency": 0.979,
         "story_heat": 0.0
       },
       "category": "official",
@@ -812,7 +761,7 @@
     },
     {
       "story_id": "story_744c7089af1a",
-      "title": "App Review Rejection - Can't Reproduce Errors Shown in Screencast",
+      "title": "应用程序审核被拒绝 - 无法重现截屏视频中显示的错误 / App Review Rejection - Can't Reproduce Errors Shown in Screencast",
       "url": "https://community.shopify.dev/t/app-review-rejection-cant-reproduce-errors-shown-in-screencast/35094",
       "primary_url": "https://community.shopify.dev/t/app-review-rejection-cant-reproduce-errors-shown-in-screencast/35094",
       "source": "Shopify Developer Community",
@@ -820,7 +769,7 @@
       "sources": [
         {
           "id": "32d138a622864f155ab372a2b3f92275a4a6ee29",
-          "title": "App Review Rejection - Can't Reproduce Errors Shown in Screencast",
+          "title": "应用程序审核被拒绝 - 无法重现截屏视频中显示的错误 / App Review Rejection - Can't Reproduce Errors Shown in Screencast",
           "url": "https://community.shopify.dev/t/app-review-rejection-cant-reproduce-errors-shown-in-screencast/35094",
           "source": "Shopify Developer Community",
           "source_name": "重点网页源",
@@ -835,7 +784,7 @@
       "items": [
         {
           "id": "32d138a622864f155ab372a2b3f92275a4a6ee29",
-          "title": "App Review Rejection - Can't Reproduce Errors Shown in Screencast",
+          "title": "应用程序审核被拒绝 - 无法重现截屏视频中显示的错误 / App Review Rejection - Can't Reproduce Errors Shown in Screencast",
           "url": "https://community.shopify.dev/t/app-review-rejection-cant-reproduce-errors-shown-in-screencast/35094",
           "source": "Shopify Developer Community",
           "source_name": "重点网页源",
@@ -845,14 +794,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8157,
-      "importance": 0.8157,
-      "importance_score": 0.8157,
+      "score": 0.8132,
+      "importance": 0.8132,
+      "importance_score": 0.8132,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.72,
-        "recency": 0.9985,
+        "recency": 0.986,
         "story_heat": 0.0
       },
       "category": "official",
@@ -864,7 +813,7 @@
       "latest_at": "2026-06-12T04:09:08Z",
       "primary_item": {
         "id": "32d138a622864f155ab372a2b3f92275a4a6ee29",
-        "title": "App Review Rejection - Can't Reproduce Errors Shown in Screencast",
+        "title": "应用程序审核被拒绝 - 无法重现截屏视频中显示的错误 / App Review Rejection - Can't Reproduce Errors Shown in Screencast",
         "url": "https://community.shopify.dev/t/app-review-rejection-cant-reproduce-errors-shown-in-screencast/35094",
         "source": "Shopify Developer Community",
         "source_name": "重点网页源",
@@ -876,147 +825,6 @@
           "web_source_priority": "P1",
           "web_source_domain": "卖家社区",
           "web_source_platform": "Shopify",
-          "published_time_source": "detail_meta"
-        }
-      }
-    },
-    {
-      "story_id": "story_42fe7603bf6c",
-      "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
-      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
-      "primary_url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
-      "source": "工信部公告",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "ade4cab81054f56387c9ccaf109e1fbf8abbc4ce",
-          "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
-          "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
-          "source": "工信部公告",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T09:05:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "工信部公告"
-      ],
-      "items": [
-        {
-          "id": "ade4cab81054f56387c9ccaf109e1fbf8abbc4ce",
-          "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
-          "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
-          "source": "工信部公告",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T09:05:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.841,
-      "importance": 0.841,
-      "importance_score": 0.841,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.885,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T09:05:00Z",
-      "latest_at": "2026-06-11T09:05:00Z",
-      "primary_item": {
-        "id": "ade4cab81054f56387c9ccaf109e1fbf8abbc4ce",
-        "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
-        "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
-        "source": "工信部公告",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "miit_gov_cn",
-          "web_source_url": "https://www.miit.gov.cn",
-          "web_source_score": 12,
-          "web_source_priority": "P1",
-          "web_source_domain": "政策监管",
-          "web_source_platform": "工信部",
-          "published_time_source": "detail_text"
-        }
-      }
-    },
-    {
-      "story_id": "story_0222bb4072f2",
-      "title": "Policy papers and consultations",
-      "url": "https://www.gov.uk/search/policy-papers-and-consultations",
-      "primary_url": "https://www.gov.uk/search/policy-papers-and-consultations",
-      "source": "UK CMA案例",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "20d71e0b3832d75146052578e0a1c4c2184fcd1b",
-          "title": "Policy papers and consultations",
-          "url": "https://www.gov.uk/search/policy-papers-and-consultations",
-          "source": "UK CMA案例",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-12T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "UK CMA案例"
-      ],
-      "items": [
-        {
-          "id": "20d71e0b3832d75146052578e0a1c4c2184fcd1b",
-          "title": "Policy papers and consultations",
-          "url": "https://www.gov.uk/search/policy-papers-and-consultations",
-          "source": "UK CMA案例",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-12T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8108,
-      "importance": 0.8108,
-      "importance_score": 0.8108,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.72,
-        "recency": 0.9738,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-12T00:00:00Z",
-      "latest_at": "2026-06-12T00:00:00Z",
-      "primary_item": {
-        "id": "20d71e0b3832d75146052578e0a1c4c2184fcd1b",
-        "title": "Policy papers and consultations",
-        "url": "https://www.gov.uk/search/policy-papers-and-consultations",
-        "source": "UK CMA案例",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "gov_uk_uk_cma",
-          "web_source_url": "https://www.gov.uk/cma-cases",
-          "web_source_score": 5,
-          "web_source_priority": "P1",
-          "web_source_domain": "政策监管",
-          "web_source_platform": "英国竞争与市场管理局",
           "published_time_source": "detail_meta"
         }
       }
@@ -1093,8 +901,149 @@
       }
     },
     {
+      "story_id": "story_42fe7603bf6c",
+      "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
+      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
+      "primary_url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
+      "source": "工信部公告",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "ade4cab81054f56387c9ccaf109e1fbf8abbc4ce",
+          "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
+          "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
+          "source": "工信部公告",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T09:05:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "工信部公告"
+      ],
+      "items": [
+        {
+          "id": "ade4cab81054f56387c9ccaf109e1fbf8abbc4ce",
+          "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
+          "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
+          "source": "工信部公告",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T09:05:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8385,
+      "importance": 0.8385,
+      "importance_score": 0.8385,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.88,
+        "recency": 0.8725,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-11T09:05:00Z",
+      "latest_at": "2026-06-11T09:05:00Z",
+      "primary_item": {
+        "id": "ade4cab81054f56387c9ccaf109e1fbf8abbc4ce",
+        "title": "两部门关于开展2026年全国中小企业法律政策宣传月活动的通知",
+        "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_fc592cb44c1d451683b0fc947b25212c.html",
+        "source": "工信部公告",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "miit_gov_cn",
+          "web_source_url": "https://www.miit.gov.cn",
+          "web_source_score": 12,
+          "web_source_priority": "P1",
+          "web_source_domain": "政策监管",
+          "web_source_platform": "工信部",
+          "published_time_source": "detail_text"
+        }
+      }
+    },
+    {
+      "story_id": "story_0222bb4072f2",
+      "title": "政策文件和咨询 / Policy papers and consultations",
+      "url": "https://www.gov.uk/search/policy-papers-and-consultations",
+      "primary_url": "https://www.gov.uk/search/policy-papers-and-consultations",
+      "source": "UK CMA案例",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "20d71e0b3832d75146052578e0a1c4c2184fcd1b",
+          "title": "政策文件和咨询 / Policy papers and consultations",
+          "url": "https://www.gov.uk/search/policy-papers-and-consultations",
+          "source": "UK CMA案例",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-12T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "UK CMA案例"
+      ],
+      "items": [
+        {
+          "id": "20d71e0b3832d75146052578e0a1c4c2184fcd1b",
+          "title": "政策文件和咨询 / Policy papers and consultations",
+          "url": "https://www.gov.uk/search/policy-papers-and-consultations",
+          "source": "UK CMA案例",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-12T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8083,
+      "importance": 0.8083,
+      "importance_score": 0.8083,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.72,
+        "recency": 0.9613,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-12T00:00:00Z",
+      "latest_at": "2026-06-12T00:00:00Z",
+      "primary_item": {
+        "id": "20d71e0b3832d75146052578e0a1c4c2184fcd1b",
+        "title": "政策文件和咨询 / Policy papers and consultations",
+        "url": "https://www.gov.uk/search/policy-papers-and-consultations",
+        "source": "UK CMA案例",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "gov_uk_uk_cma",
+          "web_source_url": "https://www.gov.uk/cma-cases",
+          "web_source_score": 5,
+          "web_source_priority": "P1",
+          "web_source_domain": "政策监管",
+          "web_source_platform": "英国竞争与市场管理局",
+          "published_time_source": "detail_meta"
+        }
+      }
+    },
+    {
       "story_id": "story_7b63b7889edd",
-      "title": "EU \"Withdrawal Button\" for Stores with Digital Products (for EU Directive 2023/2673)",
+      "title": "适用于数字产品商店的欧盟“提款按钮”（适用于欧盟指令 2023/2673） / EU \"Withdrawal Button\" for Stores with Digital Products (for EU Directive 2023/2673)",
       "url": "https://community.shopify.com/t/eu-withdrawal-button-for-stores-with-digital-products-for-eu-directive-2023-2673/636370",
       "primary_url": "https://community.shopify.com/t/eu-withdrawal-button-for-stores-with-digital-products-for-eu-directive-2023-2673/636370",
       "source": "Shopify Community Discussion",
@@ -1102,7 +1051,7 @@
       "sources": [
         {
           "id": "9c4a7d3ceab09bccbc202fbbdc4d977cb6d09265",
-          "title": "EU \"Withdrawal Button\" for Stores with Digital Products (for EU Directive 2023/2673)",
+          "title": "适用于数字产品商店的欧盟“提款按钮”（适用于欧盟指令 2023/2673） / EU \"Withdrawal Button\" for Stores with Digital Products (for EU Directive 2023/2673)",
           "url": "https://community.shopify.com/t/eu-withdrawal-button-for-stores-with-digital-products-for-eu-directive-2023-2673/636370",
           "source": "Shopify Community Discussion",
           "source_name": "重点网页源",
@@ -1117,7 +1066,7 @@
       "items": [
         {
           "id": "9c4a7d3ceab09bccbc202fbbdc4d977cb6d09265",
-          "title": "EU \"Withdrawal Button\" for Stores with Digital Products (for EU Directive 2023/2673)",
+          "title": "适用于数字产品商店的欧盟“提款按钮”（适用于欧盟指令 2023/2673） / EU \"Withdrawal Button\" for Stores with Digital Products (for EU Directive 2023/2673)",
           "url": "https://community.shopify.com/t/eu-withdrawal-button-for-stores-with-digital-products-for-eu-directive-2023-2673/636370",
           "source": "Shopify Community Discussion",
           "source_name": "重点网页源",
@@ -1127,14 +1076,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8066,
-      "importance": 0.8066,
-      "importance_score": 0.8066,
+      "score": 0.8041,
+      "importance": 0.8041,
+      "importance_score": 0.8041,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.72,
-        "recency": 0.9528,
+        "recency": 0.9403,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1146,7 +1095,7 @@
       "latest_at": "2026-06-11T20:27:48Z",
       "primary_item": {
         "id": "9c4a7d3ceab09bccbc202fbbdc4d977cb6d09265",
-        "title": "EU \"Withdrawal Button\" for Stores with Digital Products (for EU Directive 2023/2673)",
+        "title": "适用于数字产品商店的欧盟“提款按钮”（适用于欧盟指令 2023/2673） / EU \"Withdrawal Button\" for Stores with Digital Products (for EU Directive 2023/2673)",
         "url": "https://community.shopify.com/t/eu-withdrawal-button-for-stores-with-digital-products-for-eu-directive-2023-2673/636370",
         "source": "Shopify Community Discussion",
         "source_name": "重点网页源",
@@ -1163,21 +1112,21 @@
       }
     },
     {
-      "story_id": "story_806a4315559e",
-      "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
-      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+      "story_id": "story_e1286e4ba64a",
+      "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
-          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+          "id": "0bee5e39656239effbd913bb9a642663c851fb60",
+          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T12:21:33Z"
+          "published_at": "2026-06-11T12:19:17Z"
         }
       ],
       "source_count": 1,
@@ -1186,25 +1135,25 @@
       ],
       "items": [
         {
-          "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
-          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+          "id": "0bee5e39656239effbd913bb9a642663c851fb60",
+          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T12:21:33Z"
+          "published_at": "2026-06-11T12:19:17Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8629,
-      "importance": 0.8629,
-      "importance_score": 0.8629,
+      "score": 0.8604,
+      "importance": 0.8604,
+      "importance_score": 0.8604,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.9045,
+        "recency": 0.8918,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1213,12 +1162,12 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-11T12:21:33Z",
-      "latest_at": "2026-06-11T12:21:33Z",
+      "earliest_at": "2026-06-11T12:19:17Z",
+      "latest_at": "2026-06-11T12:19:17Z",
       "primary_item": {
-        "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
-        "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+        "id": "0bee5e39656239effbd913bb9a642663c851fb60",
+        "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -1230,8 +1179,8 @@
           "web_source_domain": "平台规则",
           "web_source_platform": "抖音电商",
           "rule_type": 0,
-          "rule_status": 0,
-          "knowledge_id": "aJkrRkeCNjeW",
+          "rule_status": 201,
+          "knowledge_id": "aJkw6NXXPDHC",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
@@ -1272,14 +1221,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8323,
-      "importance": 0.8323,
-      "importance_score": 0.8323,
+      "score": 0.8298,
+      "importance": 0.8298,
+      "importance_score": 0.8298,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.78,
-        "recency": 0.9916,
+        "recency": 0.9791,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1304,77 +1253,6 @@
           "web_source_domain": "行业资讯",
           "web_source_platform": "电商报",
           "published_time_source": "detail_text"
-        }
-      }
-    },
-    {
-      "story_id": "story_38b1a6072c40",
-      "title": "Customs Visibility Origin (CVO) from Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi…",
-      "url": "https://www.maersk.com/news/articles/2026/06/11/customs-visibility-origin-cvo-india-ports-june",
-      "primary_url": "https://www.maersk.com/news/articles/2026/06/11/customs-visibility-origin-cvo-india-ports-june",
-      "source": "船公司公告 马士基",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "ba73fac7356ef9ab021fcd638cfef727695fa1aa",
-          "title": "Customs Visibility Origin (CVO) from Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi…",
-          "url": "https://www.maersk.com/news/articles/2026/06/11/customs-visibility-origin-cvo-india-ports-june",
-          "source": "船公司公告 马士基",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-10T16:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "船公司公告 马士基"
-      ],
-      "items": [
-        {
-          "id": "ba73fac7356ef9ab021fcd638cfef727695fa1aa",
-          "title": "Customs Visibility Origin (CVO) from Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi…",
-          "url": "https://www.maersk.com/news/articles/2026/06/11/customs-visibility-origin-cvo-india-ports-june",
-          "source": "船公司公告 马士基",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-10T16:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8207,
-      "importance": 0.8207,
-      "importance_score": 0.8207,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.88,
-        "recency": 0.7833,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-10T16:00:00Z",
-      "latest_at": "2026-06-10T16:00:00Z",
-      "primary_item": {
-        "id": "ba73fac7356ef9ab021fcd638cfef727695fa1aa",
-        "title": "Customs Visibility Origin (CVO) from Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi…",
-        "url": "https://www.maersk.com/news/articles/2026/06/11/customs-visibility-origin-cvo-india-ports-june",
-        "source": "船公司公告 马士基",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "maersk_com_news",
-          "web_source_url": "https://www.maersk.com/news",
-          "web_source_score": 4,
-          "web_source_priority": "P1",
-          "web_source_domain": "供应链物流",
-          "web_source_platform": "马士基",
-          "published_time_source": "list_text"
         }
       }
     },
@@ -1446,6 +1324,147 @@
           "web_source_domain": "行业资讯",
           "web_source_platform": "卖家之家",
           "published_time_source": "detail_text"
+        }
+      }
+    },
+    {
+      "story_id": "story_38b1a6072c40",
+      "title": "来自 Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi… 的海关可见性来源地 (CVO) / Customs Visibility Origin (CVO) from Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi…",
+      "url": "https://www.maersk.com/news/articles/2026/06/11/customs-visibility-origin-cvo-india-ports-june",
+      "primary_url": "https://www.maersk.com/news/articles/2026/06/11/customs-visibility-origin-cvo-india-ports-june",
+      "source": "船公司公告 马士基",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "ba73fac7356ef9ab021fcd638cfef727695fa1aa",
+          "title": "来自 Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi… 的海关可见性来源地 (CVO) / Customs Visibility Origin (CVO) from Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi…",
+          "url": "https://www.maersk.com/news/articles/2026/06/11/customs-visibility-origin-cvo-india-ports-june",
+          "source": "船公司公告 马士基",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T16:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "船公司公告 马士基"
+      ],
+      "items": [
+        {
+          "id": "ba73fac7356ef9ab021fcd638cfef727695fa1aa",
+          "title": "来自 Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi… 的海关可见性来源地 (CVO) / Customs Visibility Origin (CVO) from Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi…",
+          "url": "https://www.maersk.com/news/articles/2026/06/11/customs-visibility-origin-cvo-india-ports-june",
+          "source": "船公司公告 马士基",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-10T16:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8182,
+      "importance": 0.8182,
+      "importance_score": 0.8182,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.88,
+        "recency": 0.7708,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-10T16:00:00Z",
+      "latest_at": "2026-06-10T16:00:00Z",
+      "primary_item": {
+        "id": "ba73fac7356ef9ab021fcd638cfef727695fa1aa",
+        "title": "来自 Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi… 的海关可见性来源地 (CVO) / Customs Visibility Origin (CVO) from Haldia Port, IN, Kolkata, IN, Pipavav, IN, Tuticorin, IN, Hazira, IN, Vi…",
+        "url": "https://www.maersk.com/news/articles/2026/06/11/customs-visibility-origin-cvo-india-ports-june",
+        "source": "船公司公告 马士基",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "maersk_com_news",
+          "web_source_url": "https://www.maersk.com/news",
+          "web_source_score": 4,
+          "web_source_priority": "P1",
+          "web_source_domain": "供应链物流",
+          "web_source_platform": "马士基",
+          "published_time_source": "list_text"
+        }
+      }
+    },
+    {
+      "story_id": "story_64d865b3f1a6",
+      "title": "Amazon, Walmart, and OpenAI vie for AI ad dollars Article | 2026 年 6 月 11 日 / Amazon, Walmart, and OpenAI vie for AI ad dollars Article | Jun 11, 2026",
+      "url": "https://www.emarketer.com/content/amazon-walmart-openai-vie-ai-ad-dollars",
+      "primary_url": "https://www.emarketer.com/content/amazon-walmart-openai-vie-ai-ad-dollars",
+      "source": "eMarketer",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "937c0f4fcc5c41e64f4524cb25a04820d359ee82",
+          "title": "Amazon, Walmart, and OpenAI vie for AI ad dollars Article | 2026 年 6 月 11 日 / Amazon, Walmart, and OpenAI vie for AI ad dollars Article | Jun 11, 2026",
+          "url": "https://www.emarketer.com/content/amazon-walmart-openai-vie-ai-ad-dollars",
+          "source": "eMarketer",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T04:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "eMarketer"
+      ],
+      "items": [
+        {
+          "id": "937c0f4fcc5c41e64f4524cb25a04820d359ee82",
+          "title": "Amazon, Walmart, and OpenAI vie for AI ad dollars Article | 2026 年 6 月 11 日 / Amazon, Walmart, and OpenAI vie for AI ad dollars Article | Jun 11, 2026",
+          "url": "https://www.emarketer.com/content/amazon-walmart-openai-vie-ai-ad-dollars",
+          "source": "eMarketer",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T04:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7845,
+      "importance": 0.7845,
+      "importance_score": 0.7845,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.72,
+        "recency": 0.8423,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-11T04:00:00Z",
+      "latest_at": "2026-06-11T04:00:00Z",
+      "primary_item": {
+        "id": "937c0f4fcc5c41e64f4524cb25a04820d359ee82",
+        "title": "Amazon, Walmart, and OpenAI vie for AI ad dollars Article | 2026 年 6 月 11 日 / Amazon, Walmart, and OpenAI vie for AI ad dollars Article | Jun 11, 2026",
+        "url": "https://www.emarketer.com/content/amazon-walmart-openai-vie-ai-ad-dollars",
+        "source": "eMarketer",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "emarketer_com",
+          "web_source_url": "https://www.emarketer.com",
+          "web_source_score": 1,
+          "web_source_priority": "P1",
+          "web_source_domain": "行业资讯",
+          "web_source_platform": "eMarketer/Insider Intelligence",
+          "published_time_source": "detail_meta"
         }
       }
     }
