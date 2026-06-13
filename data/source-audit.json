@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T19:16:37.578873Z",
+  "generated_at": "2026-06-13T20:47:03.250646Z",
   "description": "Web source quality audit. Homepage and daily brief should prefer sources with detail URLs and real publish times.",
   "summary": {
     "source_total": 171,
@@ -3310,33 +3310,6 @@
       "reason": "snapshot_only"
     },
     {
-      "source_id": "samr_gov_cn_xw_zj",
-      "source_name": "市场监管总局公告",
-      "platform": "市场监管总局",
-      "domain": "政策监管",
-      "type": "政策公告页",
-      "priority": "P0",
-      "url": "https://www.samr.gov.cn/xw/zj/",
-      "ok": true,
-      "collection_mode": "snapshot",
-      "ingestion_method": "web_list_adapter",
-      "item_count": 1,
-      "detail_url_count": 0,
-      "real_published_time_count": 0,
-      "snapshot_count": 1,
-      "detail_url_rate": 0.0,
-      "real_published_time_rate": 0.0,
-      "published_time_sources": [
-        "snapshot"
-      ],
-      "article_url_sources": [],
-      "status_code": 200,
-      "error": null,
-      "skip_reason": null,
-      "recommendation": "candidate_only",
-      "reason": "snapshot_only"
-    },
-    {
       "source_id": "samr_gov_cn_zw",
       "source_name": "市场监管总局公告",
       "platform": "市场监管总局",
@@ -3363,6 +3336,33 @@
       "skip_reason": null,
       "recommendation": "enable",
       "reason": "usable"
+    },
+    {
+      "source_id": "samr_gov_cn_xw_zj",
+      "source_name": "市场监管总局公告",
+      "platform": "市场监管总局",
+      "domain": "政策监管",
+      "type": "政策公告页",
+      "priority": "P0",
+      "url": "https://www.samr.gov.cn/xw/zj/",
+      "ok": true,
+      "collection_mode": "snapshot",
+      "ingestion_method": "web_list_adapter",
+      "item_count": 1,
+      "detail_url_count": 0,
+      "real_published_time_count": 0,
+      "snapshot_count": 1,
+      "detail_url_rate": 0.0,
+      "real_published_time_rate": 0.0,
+      "published_time_sources": [
+        "snapshot"
+      ],
+      "article_url_sources": [],
+      "status_code": 200,
+      "error": null,
+      "skip_reason": null,
+      "recommendation": "candidate_only",
+      "reason": "snapshot_only"
     },
     {
       "source_id": "dewu_merchant_public_rule_entry",
