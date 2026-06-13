@@ -27,6 +27,7 @@
     </outline>
     <outline text="AI 情报池 - 官方模型与能力源">
       <outline text="OpenAI News" title="OpenAI News" type="rss" xmlUrl="https://openai.com/news/rss.xml" htmlUrl="https://openai.com/news" />
+      <outline text="Anthropic News" title="Anthropic News" type="rss" xmlUrl="https://www.anthropic.com/rss.xml" htmlUrl="https://www.anthropic.com/news" />
       <outline text="Google DeepMind Blog" title="Google DeepMind Blog" type="rss" xmlUrl="https://deepmind.google/blog/rss.xml" htmlUrl="https://deepmind.google/blog" />
       <outline text="Google AI Blog" title="Google AI Blog" type="rss" xmlUrl="https://blog.google/innovation-and-ai/technology/ai/rss/" htmlUrl="https://blog.google/technology/ai/" />
       <outline text="Hugging Face Blog" title="Hugging Face Blog" type="rss" xmlUrl="https://huggingface.co/blog/feed.xml" htmlUrl="https://huggingface.co/blog" />
@@ -50,6 +51,12 @@
       <outline text="Towards AI" title="Towards AI" type="rss" xmlUrl="https://towardsai.net/feed" htmlUrl="https://towardsai.net/" />
       <outline text="AI Business" title="AI Business" type="rss" xmlUrl="https://aibusiness.com/rss.xml" htmlUrl="https://aibusiness.com/" />
       <outline text="Zapier Blog AI" title="Zapier Blog AI" type="rss" xmlUrl="https://zapier.com/blog/feeds/latest/category/ai-automation/" htmlUrl="https://zapier.com/blog/ai-automation/" />
+      <outline text="LangChain Blog" title="LangChain Blog" type="rss" xmlUrl="https://blog.langchain.dev/rss/" htmlUrl="https://blog.langchain.dev/" />
+      <outline text="量子位 QbitAI" title="量子位 QbitAI" type="rss" xmlUrl="https://www.qbitai.com/feed" htmlUrl="https://www.qbitai.com/" />
+    </outline>
+    <outline text="AI 情报池 - 中文媒体源">
+      <outline text="机器之心" title="机器之心" type="rss" xmlUrl="https://www.jiqizhixin.com/rss" htmlUrl="https://www.jiqizhixin.com/" />
+      <outline text="AIGC开放社区" title="AIGC开放社区" type="rss" xmlUrl="https://www.aigc.cn/rss.xml" htmlUrl="https://www.aigc.cn/" />
     </outline>
   </body>
 </opml>

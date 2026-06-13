@@ -382,7 +382,7 @@ function normalizedCategory(label) {
 function itemMatchesActiveFilters(item, includeSite = true) {
   const q = state.query.trim().toLowerCase();
   if (includeSite && state.siteFilter && item.site_id !== state.siteFilter) return false;
-  if (state.categoryFilter && normalizedCategory(item.ai_label) !== state.categoryFilter) return false;
+  if (state.mode !== "pure_ai" && state.categoryFilter && normalizedCategory(item.ai_label) !== state.categoryFilter) return false;
   if (!q) return true;
   const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""} ${item.url || ""}`.toLowerCase();
   return hay.includes(q);
@@ -472,6 +472,15 @@ function labelText(item) {
     supply_chain: "供应链",
     retail_platform: "平台动态",
     industry_business: "行业经营",
+    ai_general: "AI 动态",
+    model_release: "模型发布",
+    ai_product_update: "AI 产品",
+    agent_workflow: "Agent 工作流",
+    developer_tool: "开发工具",
+    infra_compute: "算力基础",
+    robotics: "AI 机器人",
+    research_paper: "研究论文",
+    not_ai: "泛科技",
   };
   return labels[item.ai_label] || item.ai_label || "精选信号";
 }
