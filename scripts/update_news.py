@@ -3223,6 +3223,17 @@ def event_time(record: dict[str, Any]) -> datetime | None:
     return parse_iso(record.get("published_at")) or parse_iso(record.get("first_seen_at"))
 
 
+def is_record_on_local_date(record: dict[str, Any], target_date: date) -> bool:
+    ts = event_time(record)
+    if not ts:
+        return False
+    return ts.astimezone(SH_TZ).date() == target_date
+
+
+def filter_records_for_local_date(records: list[dict[str, Any]], target_date: date) -> list[dict[str, Any]]:
+    return [record for record in records if is_record_on_local_date(record, target_date)]
+
+
 SOURCE_TIER_BY_SITE: dict[str, tuple[str, str, int]] = {
     "official_ai": ("official", "官方一手源", 0),
     "websource": ("official", "官方网页源", 0),
@@ -4577,9 +4588,13 @@ def build_daily_brief_payload(
 ) -> dict[str, Any]:
     gated = [story for story in stories if story_passes_brief_gate(story)]
     items = select_daily_brief_stories(gated, max_items)
+    generated_ts = parse_iso(generated_at)
+    day_filter = generated_ts.astimezone(SH_TZ).date().isoformat() if generated_ts else None
     return {
         "generated_at": generated_at,
         "window_hours": window_hours,
+        "day_filter": day_filter,
+        "day_filter_timezone": "Asia/Shanghai",
         "total_items": len(items),
         "sections": build_daily_sections(items),
         "items": items,
@@ -4591,9 +4606,13 @@ def build_stories_payload(
     generated_at: str,
     window_hours: int,
 ) -> dict[str, Any]:
+    generated_ts = parse_iso(generated_at)
+    day_filter = generated_ts.astimezone(SH_TZ).date().isoformat() if generated_ts else None
     return {
         "generated_at": generated_at,
         "window_hours": window_hours,
+        "day_filter": day_filter,
+        "day_filter_timezone": "Asia/Shanghai",
         "total_stories": len(stories),
         "stories": stories,
     }
@@ -4857,9 +4876,11 @@ def main() -> int:
     latest_items_all = suppress_superseded_web_snapshots(normalize_aihubtoday_records(latest_items_all))
 
     latest_items_all.sort(key=lambda x: event_time(x) or datetime.min.replace(tzinfo=UTC), reverse=True)
+    today_local_date = now.astimezone(SH_TZ).date()
+    latest_items_today = filter_records_for_local_date(latest_items_all, today_local_date)
     ai_radar_items = dedupe_items_by_title_url(ai_radar_items, random_pick=False)
     ai_radar_items.sort(key=lambda x: event_time(x) or datetime.min.replace(tzinfo=UTC), reverse=True)
-    latest_items = [record for record in latest_items_all if record.get("ai_is_related", is_ai_related_record(record))]
+    latest_items = [record for record in latest_items_today if record.get("ai_is_related", is_ai_related_record(record))]
     title_cache = load_title_zh_cache(title_cache_path)
     latest_items, latest_items_all, title_cache = add_bilingual_fields(
         latest_items,
@@ -4928,6 +4949,9 @@ def main() -> int:
         "total_items_all_mode": len(latest_items_all_dedup),
         "topic_filter": "ecommerce_relevance_scoring_v0_1" if args.topic == "ecommerce" else "ai_relevance_scoring_v0_4",
         "topic": args.topic,
+        "day_filter": today_local_date.isoformat(),
+        "day_filter_timezone": "Asia/Shanghai",
+        "day_filter_scope": "items/items_ai, daily brief, current hotspots",
         "ai_relevance_threshold": 0.65,
         "topic_relevance_threshold": 0.65,
         "archive_total": len(archive),

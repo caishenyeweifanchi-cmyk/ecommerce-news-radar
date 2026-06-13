@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T05:09:01.586807Z",
+  "generated_at": "2026-06-13T06:22:53.034840Z",
   "description": "Web source quality audit. Homepage and daily brief should prefer sources with detail URLs and real publish times.",
   "summary": {
     "source_total": 171,
@@ -1762,10 +1762,10 @@
       "ingestion_method": "web_list_adapter",
       "item_count": 12,
       "detail_url_count": 12,
-      "real_published_time_count": 7,
+      "real_published_time_count": 5,
       "snapshot_count": 0,
       "detail_url_rate": 1.0,
-      "real_published_time_rate": 0.5833,
+      "real_published_time_rate": 0.4167,
       "published_time_sources": [
         "detail_meta",
         "detail_text",

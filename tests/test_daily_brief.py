@@ -8,6 +8,7 @@ from scripts.update_news import (
     build_merge_log_payload,
     build_stories_payload,
     calculate_item_importance,
+    filter_records_for_local_date,
     merge_story_items,
 )
 
@@ -94,6 +95,15 @@ def test_daily_brief_record_supports_bole_output_contract():
     assert len(record["items"]) == 2
     assert len(record["sources"]) == 2
     assert record["primary_item"]["id"] == "item-1"
+
+
+def test_today_filter_keeps_only_same_shanghai_calendar_day_for_brief_inputs():
+    today = make_item(1, title="Today official ecommerce rule update", hours_ago=1)
+    yesterday = make_item(2, title="Yesterday official ecommerce rule update", hours_ago=30)
+
+    filtered = filter_records_for_local_date([today, yesterday], NOW.astimezone(timezone.utc).date())
+
+    assert [item["id"] for item in filtered] == ["item-1"]
 
 
 def test_stories_and_merge_log_payload_shapes_are_explicit():
