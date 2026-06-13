@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-13T16:11:25.814589Z",
+  "generated_at": "2026-06-13T17:51:45.546954Z",
   "window_hours": 168,
-  "total_items": 0,
-  "total_items_ai_raw": 0,
-  "total_items_raw": 93,
-  "total_items_all_mode": 91,
+  "total_items": 1,
+  "total_items_ai_raw": 1,
+  "total_items_raw": 94,
+  "total_items_all_mode": 92,
   "topic_filter": "ecommerce_relevance_scoring_v0_1",
   "topic": "ecommerce",
   "day_filter": "2026-06-14",
@@ -12,24 +12,132 @@
   "day_filter_scope": "items/items_ai, daily brief, current hotspots",
   "ai_relevance_threshold": 0.65,
   "topic_relevance_threshold": 0.65,
-  "archive_total": 10402,
+  "archive_total": 10406,
   "site_count": 2,
-  "source_count": 0,
+  "source_count": 1,
   "site_stats": [
+    {
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "count": 1,
+      "raw_count": 54
+    },
     {
       "site_id": "websource",
       "site_name": "重点网页源",
       "count": 0,
       "raw_count": 40
-    },
-    {
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "count": 0,
-      "raw_count": 53
     }
   ],
-  "items": [],
-  "items_ai": [],
+  "items": [
+    {
+      "id": "27ede44d9381f364fcc2a2d16d4c09aa5794c305",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "MarkTechPost",
+      "title": "How to Build a QwenPaw Agent Workspace with Custom Skills, Model Providers, Console Access, and Streaming API Testing",
+      "url": "https://www.marktechpost.com/2026/06/13/how-to-build-a-qwenpaw-agent-workspace-with-custom-skills-model-providers-console-access-and-streaming-api-testing",
+      "published_at": "2026-06-13T17:27:22Z",
+      "first_seen_at": "2026-06-13T17:51:45.546954Z",
+      "last_seen_at": "2026-06-13T17:51:45.546954Z",
+      "meta": {
+        "feed_url": "https://www.marktechpost.com/feed/",
+        "feed_home": "https://www.marktechpost.com/"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.68,
+      "ai_label": "ai_commerce",
+      "ai_relevance_reason": "matched_ecommerce_operations_value",
+      "ai_signals": [
+        "agent"
+      ],
+      "ai_noise": [],
+      "business_value": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
+      "impact": "自动化/Agent 能力变化，影响数据采集、客服和运营 SOP 的自动化程度。",
+      "suggested_action": "评估能否接入现有运营 SOP，尝试用 Agent 替代重复性数据处理任务。",
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.68,
+      "topic_label": "ai_commerce",
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "title_original": "How to Build a QwenPaw Agent Workspace with Custom Skills, Model Providers, Console Access, and Streaming API Testing",
+      "title_en": "How to Build a QwenPaw Agent Workspace with Custom Skills, Model Providers, Console Access, and Streaming API Testing",
+      "title_zh": "如何使用自定义技能、模型提供程序、控制台访问和流 API 测试构建 QwenPaw 代理工作区",
+      "title_bilingual": "如何使用自定义技能、模型提供程序、控制台访问和流 API 测试构建 QwenPaw 代理工作区 / How to Build a QwenPaw Agent Workspace with Custom Skills, Model Providers, Console Access, and Streaming API Testing",
+      "operational_depth": {
+        "operator_question": "这条信息对电商运营有什么用？",
+        "affected_roles": [
+          "内容生产",
+          "素材团队",
+          "自动化/客服"
+        ],
+        "action_priority": "P2",
+        "why_it_matters": "自动化/Agent 能力变化，影响数据采集、客服和运营 SOP 的自动化程度。",
+        "next_action": "评估能否接入现有运营 SOP，尝试用 Agent 替代重复性数据处理任务。",
+        "quality_basis": {
+          "source_count": 1,
+          "score": 0.68,
+          "channel": "ai_commerce"
+        }
+      }
+    }
+  ],
+  "items_ai": [
+    {
+      "id": "27ede44d9381f364fcc2a2d16d4c09aa5794c305",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "MarkTechPost",
+      "title": "How to Build a QwenPaw Agent Workspace with Custom Skills, Model Providers, Console Access, and Streaming API Testing",
+      "url": "https://www.marktechpost.com/2026/06/13/how-to-build-a-qwenpaw-agent-workspace-with-custom-skills-model-providers-console-access-and-streaming-api-testing",
+      "published_at": "2026-06-13T17:27:22Z",
+      "first_seen_at": "2026-06-13T17:51:45.546954Z",
+      "last_seen_at": "2026-06-13T17:51:45.546954Z",
+      "meta": {
+        "feed_url": "https://www.marktechpost.com/feed/",
+        "feed_home": "https://www.marktechpost.com/"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.68,
+      "ai_label": "ai_commerce",
+      "ai_relevance_reason": "matched_ecommerce_operations_value",
+      "ai_signals": [
+        "agent"
+      ],
+      "ai_noise": [],
+      "business_value": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
+      "impact": "自动化/Agent 能力变化，影响数据采集、客服和运营 SOP 的自动化程度。",
+      "suggested_action": "评估能否接入现有运营 SOP，尝试用 Agent 替代重复性数据处理任务。",
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.68,
+      "topic_label": "ai_commerce",
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "title_original": "How to Build a QwenPaw Agent Workspace with Custom Skills, Model Providers, Console Access, and Streaming API Testing",
+      "title_en": "How to Build a QwenPaw Agent Workspace with Custom Skills, Model Providers, Console Access, and Streaming API Testing",
+      "title_zh": "如何使用自定义技能、模型提供程序、控制台访问和流 API 测试构建 QwenPaw 代理工作区",
+      "title_bilingual": "如何使用自定义技能、模型提供程序、控制台访问和流 API 测试构建 QwenPaw 代理工作区 / How to Build a QwenPaw Agent Workspace with Custom Skills, Model Providers, Console Access, and Streaming API Testing",
+      "operational_depth": {
+        "operator_question": "这条信息对电商运营有什么用？",
+        "affected_roles": [
+          "内容生产",
+          "素材团队",
+          "自动化/客服"
+        ],
+        "action_priority": "P2",
+        "why_it_matters": "自动化/Agent 能力变化，影响数据采集、客服和运营 SOP 的自动化程度。",
+        "next_action": "评估能否接入现有运营 SOP，尝试用 Agent 替代重复性数据处理任务。",
+        "quality_basis": {
+          "source_count": 1,
+          "score": 0.68,
+          "channel": "ai_commerce"
+        }
+      }
+    }
+  ],
   "all_mode_data_url": "data/latest-24h-all.json"
 }
