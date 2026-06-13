@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T04:39:57.246832Z",
+  "generated_at": "2026-06-13T04:58:27.563610Z",
   "window_hours": 168,
   "total_items": 20,
   "sections": [
@@ -78,14 +78,14 @@
           ],
           "item_count": 3,
           "duplicate_count": 3,
-          "score": 0.9326,
-          "importance": 0.9326,
-          "importance_score": 0.9326,
+          "score": 0.9322,
+          "importance": 0.9322,
+          "importance_score": 0.9322,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.913,
+            "recency": 0.9112,
             "story_heat": 0.5
           },
           "category": "official",
@@ -158,14 +158,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8755,
-          "importance": 0.8755,
-          "importance_score": 0.8755,
+          "score": 0.8751,
+          "importance": 0.8751,
+          "importance_score": 0.8751,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.8774,
+            "recency": 0.8756,
             "story_heat": 0.0
           },
           "category": "official",
@@ -254,14 +254,14 @@
           ],
           "item_count": 2,
           "duplicate_count": 2,
-          "score": 0.9044,
-          "importance": 0.9044,
-          "importance_score": 0.9044,
+          "score": 0.904,
+          "importance": 0.904,
+          "importance_score": 0.904,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.8968,
+            "recency": 0.8949,
             "story_heat": 0.25
           },
           "category": "official",
@@ -352,14 +352,14 @@
           ],
           "item_count": 2,
           "duplicate_count": 2,
-          "score": 0.9005,
-          "importance": 0.9005,
-          "importance_score": 0.9005,
+          "score": 0.9002,
+          "importance": 0.9002,
+          "importance_score": 0.9002,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.8777,
+            "recency": 0.8759,
             "story_heat": 0.25
           },
           "category": "official",
@@ -394,6 +394,81 @@
               "knowledge_id": "aJksBkuEEEnB",
               "article_url_source": "douyin_articlev0",
               "published_time_source": "api"
+            }
+          }
+        },
+        {
+          "story_id": "story_b97cb7c95d93",
+          "title": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+          "url": "https://www.newrank.cn/article/detail/34522",
+          "primary_url": "https://www.newrank.cn/article/detail/34522",
+          "source": "新榜",
+          "source_name": "重点网页源",
+          "sources": [
+            {
+              "id": "3a034d76bccd144901433b0850e9b6b39bce6322",
+              "title": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+              "url": "https://www.newrank.cn/article/detail/34522",
+              "source": "新榜",
+              "source_name": "重点网页源",
+              "site_id": "websource",
+              "published_at": "2026-06-13T04:00:00Z"
+            }
+          ],
+          "source_count": 1,
+          "source_names": [
+            "新榜"
+          ],
+          "items": [
+            {
+              "id": "3a034d76bccd144901433b0850e9b6b39bce6322",
+              "title": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+              "url": "https://www.newrank.cn/article/detail/34522",
+              "source": "新榜",
+              "source_name": "重点网页源",
+              "site_id": "websource",
+              "published_at": "2026-06-13T04:00:00Z"
+            }
+          ],
+          "item_count": 1,
+          "duplicate_count": 1,
+          "score": 0.8328,
+          "importance": 0.8328,
+          "importance_score": 0.8328,
+          "importance_label": "官方更新",
+          "importance_breakdown": {
+            "source_tier": 1.0,
+            "ai_relevance": 0.78,
+            "recency": 0.9942,
+            "story_heat": 0.0
+          },
+          "category": "official",
+          "brief_channel": "ai_commerce",
+          "impact": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+          "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
+          "business_value": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+          "platform": "新榜",
+          "reasons": [
+            "official_source",
+            "high_importance"
+          ],
+          "earliest_at": "2026-06-13T04:00:00Z",
+          "latest_at": "2026-06-13T04:00:00Z",
+          "primary_item": {
+            "id": "3a034d76bccd144901433b0850e9b6b39bce6322",
+            "title": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+            "url": "https://www.newrank.cn/article/detail/34522",
+            "source": "新榜",
+            "source_name": "重点网页源",
+            "site_id": "websource",
+            "meta": {
+              "web_source_id": "newrank_cn",
+              "web_source_url": "https://www.newrank.cn/",
+              "web_source_score": 4,
+              "web_source_priority": "P0",
+              "web_source_domain": "行业资讯",
+              "web_source_platform": "新榜",
+              "published_time_source": "list_text"
             }
           }
         },
@@ -451,14 +526,14 @@
           ],
           "item_count": 2,
           "duplicate_count": 2,
-          "score": 0.8256,
-          "importance": 0.8256,
-          "importance_score": 0.8256,
+          "score": 0.8252,
+          "importance": 0.8252,
+          "importance_score": 0.8252,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.82,
-            "recency": 0.7728,
+            "recency": 0.771,
             "story_heat": 0.25
           },
           "category": "official",
@@ -490,82 +565,6 @@
               "web_source_domain": "跨境电商",
               "web_source_platform": "Marketplace Pulse",
               "published_time_source": "detail_meta"
-            }
-          }
-        },
-        {
-          "story_id": "story_2852bf7a48b8",
-          "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
-          "url": "https://www.newrank.cn/article/detail/34521",
-          "primary_url": "https://www.newrank.cn/article/detail/34521",
-          "source": "新榜",
-          "source_name": "重点网页源",
-          "sources": [
-            {
-              "id": "a7a9754586250e5c086754b208526bd89db218e3",
-              "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
-              "url": "https://www.newrank.cn/article/detail/34521",
-              "source": "新榜",
-              "source_name": "重点网页源",
-              "site_id": "websource",
-              "published_at": "2026-06-12T10:20:10Z"
-            }
-          ],
-          "source_count": 1,
-          "source_names": [
-            "新榜"
-          ],
-          "items": [
-            {
-              "id": "a7a9754586250e5c086754b208526bd89db218e3",
-              "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
-              "url": "https://www.newrank.cn/article/detail/34521",
-              "source": "新榜",
-              "source_name": "重点网页源",
-              "site_id": "websource",
-              "published_at": "2026-06-12T10:20:10Z"
-            }
-          ],
-          "item_count": 1,
-          "duplicate_count": 1,
-          "score": 0.8242,
-          "importance": 0.8242,
-          "importance_score": 0.8242,
-          "importance_label": "官方更新",
-          "importance_breakdown": {
-            "source_tier": 1.0,
-            "ai_relevance": 0.82,
-            "recency": 0.8909,
-            "story_heat": 0.0
-          },
-          "category": "official",
-          "brief_channel": "ai_commerce",
-          "impact": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
-          "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
-          "business_value": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
-          "platform": "新榜",
-          "reasons": [
-            "official_source",
-            "high_ai_relevance",
-            "high_importance"
-          ],
-          "earliest_at": "2026-06-12T10:20:10Z",
-          "latest_at": "2026-06-12T10:20:10Z",
-          "primary_item": {
-            "id": "a7a9754586250e5c086754b208526bd89db218e3",
-            "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
-            "url": "https://www.newrank.cn/article/detail/34521",
-            "source": "新榜",
-            "source_name": "重点网页源",
-            "site_id": "websource",
-            "meta": {
-              "web_source_id": "newrank_cn",
-              "web_source_url": "https://www.newrank.cn/",
-              "web_source_score": 4,
-              "web_source_priority": "P0",
-              "web_source_domain": "行业资讯",
-              "web_source_platform": "新榜",
-              "published_time_source": "list_text"
             }
           }
         },
@@ -604,14 +603,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8516,
-          "importance": 0.8516,
-          "importance_score": 0.8516,
+          "score": 0.8512,
+          "importance": 0.8512,
+          "importance_score": 0.8512,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.7578,
+            "recency": 0.756,
             "story_heat": 0.0
           },
           "category": "official",
@@ -644,6 +643,82 @@
               "resource_id": "4NJAdFIRMe",
               "article_url_source": "kuaishou_rule_resource_api",
               "published_time_source": "api"
+            }
+          }
+        },
+        {
+          "story_id": "story_2852bf7a48b8",
+          "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
+          "url": "https://www.newrank.cn/article/detail/34521",
+          "primary_url": "https://www.newrank.cn/article/detail/34521",
+          "source": "新榜",
+          "source_name": "重点网页源",
+          "sources": [
+            {
+              "id": "a7a9754586250e5c086754b208526bd89db218e3",
+              "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
+              "url": "https://www.newrank.cn/article/detail/34521",
+              "source": "新榜",
+              "source_name": "重点网页源",
+              "site_id": "websource",
+              "published_at": "2026-06-12T10:20:10Z"
+            }
+          ],
+          "source_count": 1,
+          "source_names": [
+            "新榜"
+          ],
+          "items": [
+            {
+              "id": "a7a9754586250e5c086754b208526bd89db218e3",
+              "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
+              "url": "https://www.newrank.cn/article/detail/34521",
+              "source": "新榜",
+              "source_name": "重点网页源",
+              "site_id": "websource",
+              "published_at": "2026-06-12T10:20:10Z"
+            }
+          ],
+          "item_count": 1,
+          "duplicate_count": 1,
+          "score": 0.8238,
+          "importance": 0.8238,
+          "importance_score": 0.8238,
+          "importance_label": "官方更新",
+          "importance_breakdown": {
+            "source_tier": 1.0,
+            "ai_relevance": 0.82,
+            "recency": 0.8891,
+            "story_heat": 0.0
+          },
+          "category": "official",
+          "brief_channel": "ai_commerce",
+          "impact": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
+          "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
+          "business_value": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
+          "platform": "新榜",
+          "reasons": [
+            "official_source",
+            "high_ai_relevance",
+            "high_importance"
+          ],
+          "earliest_at": "2026-06-12T10:20:10Z",
+          "latest_at": "2026-06-12T10:20:10Z",
+          "primary_item": {
+            "id": "a7a9754586250e5c086754b208526bd89db218e3",
+            "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
+            "url": "https://www.newrank.cn/article/detail/34521",
+            "source": "新榜",
+            "source_name": "重点网页源",
+            "site_id": "websource",
+            "meta": {
+              "web_source_id": "newrank_cn",
+              "web_source_url": "https://www.newrank.cn/",
+              "web_source_score": 4,
+              "web_source_priority": "P0",
+              "web_source_domain": "行业资讯",
+              "web_source_platform": "新榜",
+              "published_time_source": "list_text"
             }
           }
         },
@@ -682,14 +757,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8515,
-          "importance": 0.8515,
-          "importance_score": 0.8515,
+          "score": 0.8512,
+          "importance": 0.8512,
+          "importance_score": 0.8512,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.7576,
+            "recency": 0.7558,
             "story_heat": 0.0
           },
           "category": "official",
@@ -760,14 +835,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8756,
-          "importance": 0.8756,
-          "importance_score": 0.8756,
+          "score": 0.8752,
+          "importance": 0.8752,
+          "importance_score": 0.8752,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.8779,
+            "recency": 0.876,
             "story_heat": 0.0
           },
           "category": "official",
@@ -806,82 +881,6 @@
           }
         },
         {
-          "story_id": "story_af979909e968",
-          "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
-          "url": "https://www.newrank.cn/article/detail/34517",
-          "primary_url": "https://www.newrank.cn/article/detail/34517",
-          "source": "新榜",
-          "source_name": "重点网页源",
-          "sources": [
-            {
-              "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
-              "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
-              "url": "https://www.newrank.cn/article/detail/34517",
-              "source": "新榜",
-              "source_name": "重点网页源",
-              "site_id": "websource",
-              "published_at": "2026-06-11T08:32:44Z"
-            }
-          ],
-          "source_count": 1,
-          "source_names": [
-            "新榜"
-          ],
-          "items": [
-            {
-              "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
-              "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
-              "url": "https://www.newrank.cn/article/detail/34517",
-              "source": "新榜",
-              "source_name": "重点网页源",
-              "site_id": "websource",
-              "published_at": "2026-06-11T08:32:44Z"
-            }
-          ],
-          "item_count": 1,
-          "duplicate_count": 1,
-          "score": 0.7935,
-          "importance": 0.7935,
-          "importance_score": 0.7935,
-          "importance_label": "官方更新",
-          "importance_breakdown": {
-            "source_tier": 1.0,
-            "ai_relevance": 0.82,
-            "recency": 0.7374,
-            "story_heat": 0.0
-          },
-          "category": "official",
-          "brief_channel": "ai_commerce",
-          "impact": "可用于短视频带货、产品展示、直播切片和信息流视频素材。",
-          "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
-          "business_value": "可用于短视频带货、产品展示、直播切片和信息流视频素材。",
-          "platform": "新榜",
-          "reasons": [
-            "official_source",
-            "high_ai_relevance",
-            "high_importance"
-          ],
-          "earliest_at": "2026-06-11T08:32:44Z",
-          "latest_at": "2026-06-11T08:32:44Z",
-          "primary_item": {
-            "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
-            "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
-            "url": "https://www.newrank.cn/article/detail/34517",
-            "source": "新榜",
-            "source_name": "重点网页源",
-            "site_id": "websource",
-            "meta": {
-              "web_source_id": "newrank_cn",
-              "web_source_url": "https://www.newrank.cn/",
-              "web_source_score": 4,
-              "web_source_priority": "P0",
-              "web_source_domain": "行业资讯",
-              "web_source_platform": "新榜",
-              "published_time_source": "list_text"
-            }
-          }
-        },
-        {
           "story_id": "story_f84103c26256",
           "title": "关于修订《【商家-综合认定商品/商家品质差】细则》的意见征集通知",
           "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
@@ -916,14 +915,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8731,
-          "importance": 0.8731,
-          "importance_score": 0.8731,
+          "score": 0.8727,
+          "importance": 0.8727,
+          "importance_score": 0.8727,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.8655,
+            "recency": 0.8636,
             "story_heat": 0.0
           },
           "category": "official",
@@ -996,14 +995,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.7378,
-          "importance": 0.7378,
-          "importance_score": 0.7378,
+          "score": 0.7374,
+          "importance": 0.7374,
+          "importance_score": 0.7374,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.7,
-            "recency": 0.6389,
+            "recency": 0.6371,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1031,6 +1030,82 @@
               "web_source_priority": "P1",
               "web_source_domain": "供应链物流",
               "web_source_platform": "马士基",
+              "published_time_source": "list_text"
+            }
+          }
+        },
+        {
+          "story_id": "story_af979909e968",
+          "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
+          "url": "https://www.newrank.cn/article/detail/34517",
+          "primary_url": "https://www.newrank.cn/article/detail/34517",
+          "source": "新榜",
+          "source_name": "重点网页源",
+          "sources": [
+            {
+              "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
+              "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
+              "url": "https://www.newrank.cn/article/detail/34517",
+              "source": "新榜",
+              "source_name": "重点网页源",
+              "site_id": "websource",
+              "published_at": "2026-06-11T08:32:44Z"
+            }
+          ],
+          "source_count": 1,
+          "source_names": [
+            "新榜"
+          ],
+          "items": [
+            {
+              "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
+              "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
+              "url": "https://www.newrank.cn/article/detail/34517",
+              "source": "新榜",
+              "source_name": "重点网页源",
+              "site_id": "websource",
+              "published_at": "2026-06-11T08:32:44Z"
+            }
+          ],
+          "item_count": 1,
+          "duplicate_count": 1,
+          "score": 0.7931,
+          "importance": 0.7931,
+          "importance_score": 0.7931,
+          "importance_label": "官方更新",
+          "importance_breakdown": {
+            "source_tier": 1.0,
+            "ai_relevance": 0.82,
+            "recency": 0.7355,
+            "story_heat": 0.0
+          },
+          "category": "official",
+          "brief_channel": "ai_commerce",
+          "impact": "可用于短视频带货、产品展示、直播切片和信息流视频素材。",
+          "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
+          "business_value": "可用于短视频带货、产品展示、直播切片和信息流视频素材。",
+          "platform": "新榜",
+          "reasons": [
+            "official_source",
+            "high_ai_relevance",
+            "high_importance"
+          ],
+          "earliest_at": "2026-06-11T08:32:44Z",
+          "latest_at": "2026-06-11T08:32:44Z",
+          "primary_item": {
+            "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
+            "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
+            "url": "https://www.newrank.cn/article/detail/34517",
+            "source": "新榜",
+            "source_name": "重点网页源",
+            "site_id": "websource",
+            "meta": {
+              "web_source_id": "newrank_cn",
+              "web_source_url": "https://www.newrank.cn/",
+              "web_source_score": 4,
+              "web_source_priority": "P0",
+              "web_source_domain": "行业资讯",
+              "web_source_platform": "新榜",
               "published_time_source": "list_text"
             }
           }
@@ -1070,14 +1145,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.7048,
-          "importance": 0.7048,
-          "importance_score": 0.7048,
+          "score": 0.7045,
+          "importance": 0.7045,
+          "importance_score": 0.7045,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.7,
-            "recency": 0.4742,
+            "recency": 0.4724,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1144,14 +1219,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.852,
-          "importance": 0.852,
-          "importance_score": 0.852,
+          "score": 0.8516,
+          "importance": 0.8516,
+          "importance_score": 0.8516,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.7599,
+            "recency": 0.758,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1224,14 +1299,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.7843,
-          "importance": 0.7843,
-          "importance_score": 0.7843,
+          "score": 0.7839,
+          "importance": 0.7839,
+          "importance_score": 0.7839,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.4215,
+            "recency": 0.4196,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1302,14 +1377,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.7092,
-          "importance": 0.7092,
-          "importance_score": 0.7092,
+          "score": 0.7088,
+          "importance": 0.7088,
+          "importance_score": 0.7088,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.7,
-            "recency": 0.496,
+            "recency": 0.4942,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1376,14 +1451,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.852,
-          "importance": 0.852,
-          "importance_score": 0.852,
+          "score": 0.8516,
+          "importance": 0.8516,
+          "importance_score": 0.8516,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.7601,
+            "recency": 0.7582,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1456,14 +1531,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.7843,
-          "importance": 0.7843,
-          "importance_score": 0.7843,
+          "score": 0.7839,
+          "importance": 0.7839,
+          "importance_score": 0.7839,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.4213,
+            "recency": 0.4194,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1534,14 +1609,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8409,
-          "importance": 0.8409,
-          "importance_score": 0.8409,
+          "score": 0.8405,
+          "importance": 0.8405,
+          "importance_score": 0.8405,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.7045,
+            "recency": 0.7027,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1574,86 +1649,6 @@
               "rule_type": 0,
               "rule_status": 0,
               "knowledge_id": "aJkqnYhe9oDu",
-              "article_url_source": "douyin_articlev0",
-              "published_time_source": "api"
-            }
-          }
-        },
-        {
-          "story_id": "story_b24d7830f3e8",
-          "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
-          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "sources": [
-            {
-              "id": "0870406c8469871511d281919f202c714dd8f4ff",
-              "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
-              "source": "抖音电商规则中心",
-              "source_name": "重点网页源",
-              "site_id": "websource",
-              "published_at": "2026-06-10T13:16:44Z"
-            }
-          ],
-          "source_count": 1,
-          "source_names": [
-            "抖音电商规则中心"
-          ],
-          "items": [
-            {
-              "id": "0870406c8469871511d281919f202c714dd8f4ff",
-              "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
-              "source": "抖音电商规则中心",
-              "source_name": "重点网页源",
-              "site_id": "websource",
-              "published_at": "2026-06-10T13:16:44Z"
-            }
-          ],
-          "item_count": 1,
-          "duplicate_count": 1,
-          "score": 0.8245,
-          "importance": 0.8245,
-          "importance_score": 0.8245,
-          "importance_label": "官方更新",
-          "importance_breakdown": {
-            "source_tier": 1.0,
-            "ai_relevance": 1.0,
-            "recency": 0.6227,
-            "story_heat": 0.0
-          },
-          "category": "official",
-          "brief_channel": "platform_policy",
-          "impact": "用于判断平台规则、账号风险、处罚治理和商家经营动作。",
-          "suggested_action": "检查店铺、达人、商品、售后和投放规则是否需要调整。",
-          "business_value": "用于判断平台规则、账号风险、处罚治理和商家经营动作。",
-          "platform": "抖音电商规则中心",
-          "reasons": [
-            "official_source",
-            "high_ai_relevance",
-            "high_importance"
-          ],
-          "earliest_at": "2026-06-10T13:16:44Z",
-          "latest_at": "2026-06-10T13:16:44Z",
-          "primary_item": {
-            "id": "0870406c8469871511d281919f202c714dd8f4ff",
-            "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
-            "source": "抖音电商规则中心",
-            "source_name": "重点网页源",
-            "site_id": "websource",
-            "meta": {
-              "web_source_id": "douyin_ecommerce_rule_center",
-              "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
-              "web_source_mode": "api_list",
-              "web_source_priority": "P0",
-              "web_source_domain": "平台规则",
-              "web_source_platform": "抖音电商",
-              "rule_type": 0,
-              "rule_status": 0,
-              "knowledge_id": "aJkqnYT566kN",
               "article_url_source": "douyin_articlev0",
               "published_time_source": "api"
             }
@@ -1734,14 +1729,14 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.9326,
-      "importance": 0.9326,
-      "importance_score": 0.9326,
+      "score": 0.9322,
+      "importance": 0.9322,
+      "importance_score": 0.9322,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.913,
+        "recency": 0.9112,
         "story_heat": 0.5
       },
       "category": "official",
@@ -1814,14 +1809,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8755,
-      "importance": 0.8755,
-      "importance_score": 0.8755,
+      "score": 0.8751,
+      "importance": 0.8751,
+      "importance_score": 0.8751,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8774,
+        "recency": 0.8756,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1910,14 +1905,14 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.9044,
-      "importance": 0.9044,
-      "importance_score": 0.9044,
+      "score": 0.904,
+      "importance": 0.904,
+      "importance_score": 0.904,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8968,
+        "recency": 0.8949,
         "story_heat": 0.25
       },
       "category": "official",
@@ -2008,14 +2003,14 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.9005,
-      "importance": 0.9005,
-      "importance_score": 0.9005,
+      "score": 0.9002,
+      "importance": 0.9002,
+      "importance_score": 0.9002,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8777,
+        "recency": 0.8759,
         "story_heat": 0.25
       },
       "category": "official",
@@ -2050,6 +2045,81 @@
           "knowledge_id": "aJksBkuEEEnB",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
+        }
+      }
+    },
+    {
+      "story_id": "story_b97cb7c95d93",
+      "title": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+      "url": "https://www.newrank.cn/article/detail/34522",
+      "primary_url": "https://www.newrank.cn/article/detail/34522",
+      "source": "新榜",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "3a034d76bccd144901433b0850e9b6b39bce6322",
+          "title": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+          "url": "https://www.newrank.cn/article/detail/34522",
+          "source": "新榜",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-13T04:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "新榜"
+      ],
+      "items": [
+        {
+          "id": "3a034d76bccd144901433b0850e9b6b39bce6322",
+          "title": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+          "url": "https://www.newrank.cn/article/detail/34522",
+          "source": "新榜",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-13T04:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8328,
+      "importance": 0.8328,
+      "importance_score": 0.8328,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.78,
+        "recency": 0.9942,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "brief_channel": "ai_commerce",
+      "impact": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+      "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
+      "business_value": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+      "platform": "新榜",
+      "reasons": [
+        "official_source",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-13T04:00:00Z",
+      "latest_at": "2026-06-13T04:00:00Z",
+      "primary_item": {
+        "id": "3a034d76bccd144901433b0850e9b6b39bce6322",
+        "title": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+        "url": "https://www.newrank.cn/article/detail/34522",
+        "source": "新榜",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "newrank_cn",
+          "web_source_url": "https://www.newrank.cn/",
+          "web_source_score": 4,
+          "web_source_priority": "P0",
+          "web_source_domain": "行业资讯",
+          "web_source_platform": "新榜",
+          "published_time_source": "list_text"
         }
       }
     },
@@ -2107,14 +2177,14 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8256,
-      "importance": 0.8256,
-      "importance_score": 0.8256,
+      "score": 0.8252,
+      "importance": 0.8252,
+      "importance_score": 0.8252,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.82,
-        "recency": 0.7728,
+        "recency": 0.771,
         "story_heat": 0.25
       },
       "category": "official",
@@ -2146,82 +2216,6 @@
           "web_source_domain": "跨境电商",
           "web_source_platform": "Marketplace Pulse",
           "published_time_source": "detail_meta"
-        }
-      }
-    },
-    {
-      "story_id": "story_2852bf7a48b8",
-      "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
-      "url": "https://www.newrank.cn/article/detail/34521",
-      "primary_url": "https://www.newrank.cn/article/detail/34521",
-      "source": "新榜",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "a7a9754586250e5c086754b208526bd89db218e3",
-          "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
-          "url": "https://www.newrank.cn/article/detail/34521",
-          "source": "新榜",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-12T10:20:10Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "新榜"
-      ],
-      "items": [
-        {
-          "id": "a7a9754586250e5c086754b208526bd89db218e3",
-          "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
-          "url": "https://www.newrank.cn/article/detail/34521",
-          "source": "新榜",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-12T10:20:10Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8242,
-      "importance": 0.8242,
-      "importance_score": 0.8242,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.82,
-        "recency": 0.8909,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "brief_channel": "ai_commerce",
-      "impact": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
-      "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
-      "business_value": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
-      "platform": "新榜",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-12T10:20:10Z",
-      "latest_at": "2026-06-12T10:20:10Z",
-      "primary_item": {
-        "id": "a7a9754586250e5c086754b208526bd89db218e3",
-        "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
-        "url": "https://www.newrank.cn/article/detail/34521",
-        "source": "新榜",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "newrank_cn",
-          "web_source_url": "https://www.newrank.cn/",
-          "web_source_score": 4,
-          "web_source_priority": "P0",
-          "web_source_domain": "行业资讯",
-          "web_source_platform": "新榜",
-          "published_time_source": "list_text"
         }
       }
     },
@@ -2260,14 +2254,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8516,
-      "importance": 0.8516,
-      "importance_score": 0.8516,
+      "score": 0.8512,
+      "importance": 0.8512,
+      "importance_score": 0.8512,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7578,
+        "recency": 0.756,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2300,6 +2294,82 @@
           "resource_id": "4NJAdFIRMe",
           "article_url_source": "kuaishou_rule_resource_api",
           "published_time_source": "api"
+        }
+      }
+    },
+    {
+      "story_id": "story_2852bf7a48b8",
+      "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
+      "url": "https://www.newrank.cn/article/detail/34521",
+      "primary_url": "https://www.newrank.cn/article/detail/34521",
+      "source": "新榜",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "a7a9754586250e5c086754b208526bd89db218e3",
+          "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
+          "url": "https://www.newrank.cn/article/detail/34521",
+          "source": "新榜",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-12T10:20:10Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "新榜"
+      ],
+      "items": [
+        {
+          "id": "a7a9754586250e5c086754b208526bd89db218e3",
+          "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
+          "url": "https://www.newrank.cn/article/detail/34521",
+          "source": "新榜",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-12T10:20:10Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8238,
+      "importance": 0.8238,
+      "importance_score": 0.8238,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.82,
+        "recency": 0.8891,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "brief_channel": "ai_commerce",
+      "impact": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
+      "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
+      "business_value": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
+      "platform": "新榜",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-12T10:20:10Z",
+      "latest_at": "2026-06-12T10:20:10Z",
+      "primary_item": {
+        "id": "a7a9754586250e5c086754b208526bd89db218e3",
+        "title": "我花7万token点了杯咖啡：瑞幸上线AI开放平台，野心何在？ 懒人 2026-06-12 18:20:10 Agent也可以点咖啡了",
+        "url": "https://www.newrank.cn/article/detail/34521",
+        "source": "新榜",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "newrank_cn",
+          "web_source_url": "https://www.newrank.cn/",
+          "web_source_score": 4,
+          "web_source_priority": "P0",
+          "web_source_domain": "行业资讯",
+          "web_source_platform": "新榜",
+          "published_time_source": "list_text"
         }
       }
     },
@@ -2338,14 +2408,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8515,
-      "importance": 0.8515,
-      "importance_score": 0.8515,
+      "score": 0.8512,
+      "importance": 0.8512,
+      "importance_score": 0.8512,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7576,
+        "recency": 0.7558,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2416,14 +2486,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8756,
-      "importance": 0.8756,
-      "importance_score": 0.8756,
+      "score": 0.8752,
+      "importance": 0.8752,
+      "importance_score": 0.8752,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8779,
+        "recency": 0.876,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2462,82 +2532,6 @@
       }
     },
     {
-      "story_id": "story_af979909e968",
-      "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
-      "url": "https://www.newrank.cn/article/detail/34517",
-      "primary_url": "https://www.newrank.cn/article/detail/34517",
-      "source": "新榜",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
-          "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
-          "url": "https://www.newrank.cn/article/detail/34517",
-          "source": "新榜",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T08:32:44Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "新榜"
-      ],
-      "items": [
-        {
-          "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
-          "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
-          "url": "https://www.newrank.cn/article/detail/34517",
-          "source": "新榜",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T08:32:44Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7935,
-      "importance": 0.7935,
-      "importance_score": 0.7935,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.82,
-        "recency": 0.7374,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "brief_channel": "ai_commerce",
-      "impact": "可用于短视频带货、产品展示、直播切片和信息流视频素材。",
-      "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
-      "business_value": "可用于短视频带货、产品展示、直播切片和信息流视频素材。",
-      "platform": "新榜",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T08:32:44Z",
-      "latest_at": "2026-06-11T08:32:44Z",
-      "primary_item": {
-        "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
-        "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
-        "url": "https://www.newrank.cn/article/detail/34517",
-        "source": "新榜",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "newrank_cn",
-          "web_source_url": "https://www.newrank.cn/",
-          "web_source_score": 4,
-          "web_source_priority": "P0",
-          "web_source_domain": "行业资讯",
-          "web_source_platform": "新榜",
-          "published_time_source": "list_text"
-        }
-      }
-    },
-    {
       "story_id": "story_f84103c26256",
       "title": "关于修订《【商家-综合认定商品/商家品质差】细则》的意见征集通知",
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
@@ -2572,14 +2566,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8731,
-      "importance": 0.8731,
-      "importance_score": 0.8731,
+      "score": 0.8727,
+      "importance": 0.8727,
+      "importance_score": 0.8727,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8655,
+        "recency": 0.8636,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2652,14 +2646,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7378,
-      "importance": 0.7378,
-      "importance_score": 0.7378,
+      "score": 0.7374,
+      "importance": 0.7374,
+      "importance_score": 0.7374,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.7,
-        "recency": 0.6389,
+        "recency": 0.6371,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2687,6 +2681,82 @@
           "web_source_priority": "P1",
           "web_source_domain": "供应链物流",
           "web_source_platform": "马士基",
+          "published_time_source": "list_text"
+        }
+      }
+    },
+    {
+      "story_id": "story_af979909e968",
+      "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
+      "url": "https://www.newrank.cn/article/detail/34517",
+      "primary_url": "https://www.newrank.cn/article/detail/34517",
+      "source": "新榜",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
+          "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
+          "url": "https://www.newrank.cn/article/detail/34517",
+          "source": "新榜",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T08:32:44Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "新榜"
+      ],
+      "items": [
+        {
+          "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
+          "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
+          "url": "https://www.newrank.cn/article/detail/34517",
+          "source": "新榜",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-11T08:32:44Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7931,
+      "importance": 0.7931,
+      "importance_score": 0.7931,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.82,
+        "recency": 0.7355,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "brief_channel": "ai_commerce",
+      "impact": "可用于短视频带货、产品展示、直播切片和信息流视频素材。",
+      "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
+      "business_value": "可用于短视频带货、产品展示、直播切片和信息流视频素材。",
+      "platform": "新榜",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-11T08:32:44Z",
+      "latest_at": "2026-06-11T08:32:44Z",
+      "primary_item": {
+        "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
+        "title": "AI音视频编辑工具Descript总榜排名飙升34位；AI视频创作Agent产品OiiOii升级2.0，总榜排名上升16位 | AI产品周榜 AI新榜 2026-06-11 16:32:44 新榜出品",
+        "url": "https://www.newrank.cn/article/detail/34517",
+        "source": "新榜",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "newrank_cn",
+          "web_source_url": "https://www.newrank.cn/",
+          "web_source_score": 4,
+          "web_source_priority": "P0",
+          "web_source_domain": "行业资讯",
+          "web_source_platform": "新榜",
           "published_time_source": "list_text"
         }
       }
@@ -2726,14 +2796,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7048,
-      "importance": 0.7048,
-      "importance_score": 0.7048,
+      "score": 0.7045,
+      "importance": 0.7045,
+      "importance_score": 0.7045,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.7,
-        "recency": 0.4742,
+        "recency": 0.4724,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2800,14 +2870,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.852,
-      "importance": 0.852,
-      "importance_score": 0.852,
+      "score": 0.8516,
+      "importance": 0.8516,
+      "importance_score": 0.8516,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7599,
+        "recency": 0.758,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2880,14 +2950,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7843,
-      "importance": 0.7843,
-      "importance_score": 0.7843,
+      "score": 0.7839,
+      "importance": 0.7839,
+      "importance_score": 0.7839,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.4215,
+        "recency": 0.4196,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2958,14 +3028,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7092,
-      "importance": 0.7092,
-      "importance_score": 0.7092,
+      "score": 0.7088,
+      "importance": 0.7088,
+      "importance_score": 0.7088,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.7,
-        "recency": 0.496,
+        "recency": 0.4942,
         "story_heat": 0.0
       },
       "category": "official",
@@ -3032,14 +3102,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.852,
-      "importance": 0.852,
-      "importance_score": 0.852,
+      "score": 0.8516,
+      "importance": 0.8516,
+      "importance_score": 0.8516,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7601,
+        "recency": 0.7582,
         "story_heat": 0.0
       },
       "category": "official",
@@ -3112,14 +3182,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7843,
-      "importance": 0.7843,
-      "importance_score": 0.7843,
+      "score": 0.7839,
+      "importance": 0.7839,
+      "importance_score": 0.7839,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.4213,
+        "recency": 0.4194,
         "story_heat": 0.0
       },
       "category": "official",
@@ -3190,14 +3260,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8409,
-      "importance": 0.8409,
-      "importance_score": 0.8409,
+      "score": 0.8405,
+      "importance": 0.8405,
+      "importance_score": 0.8405,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7045,
+        "recency": 0.7027,
         "story_heat": 0.0
       },
       "category": "official",
@@ -3230,86 +3300,6 @@
           "rule_type": 0,
           "rule_status": 0,
           "knowledge_id": "aJkqnYhe9oDu",
-          "article_url_source": "douyin_articlev0",
-          "published_time_source": "api"
-        }
-      }
-    },
-    {
-      "story_id": "story_b24d7830f3e8",
-      "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
-      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
-      "source": "抖音电商规则中心",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "0870406c8469871511d281919f202c714dd8f4ff",
-          "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-10T13:16:44Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "抖音电商规则中心"
-      ],
-      "items": [
-        {
-          "id": "0870406c8469871511d281919f202c714dd8f4ff",
-          "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
-          "source": "抖音电商规则中心",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-10T13:16:44Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8245,
-      "importance": 0.8245,
-      "importance_score": 0.8245,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.6227,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "brief_channel": "platform_policy",
-      "impact": "用于判断平台规则、账号风险、处罚治理和商家经营动作。",
-      "suggested_action": "检查店铺、达人、商品、售后和投放规则是否需要调整。",
-      "business_value": "用于判断平台规则、账号风险、处罚治理和商家经营动作。",
-      "platform": "抖音电商规则中心",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-10T13:16:44Z",
-      "latest_at": "2026-06-10T13:16:44Z",
-      "primary_item": {
-        "id": "0870406c8469871511d281919f202c714dd8f4ff",
-        "title": "关于废止《抖店服务市场代运营类目服务商入驻、考核、退出规则》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYT566kN",
-        "source": "抖音电商规则中心",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "douyin_ecommerce_rule_center",
-          "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
-          "web_source_mode": "api_list",
-          "web_source_priority": "P0",
-          "web_source_domain": "平台规则",
-          "web_source_platform": "抖音电商",
-          "rule_type": 0,
-          "rule_status": 0,
-          "knowledge_id": "aJkqnYT566kN",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }

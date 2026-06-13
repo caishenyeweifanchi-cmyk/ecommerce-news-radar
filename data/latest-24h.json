@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-13T04:39:57.246832Z",
+  "generated_at": "2026-06-13T04:58:27.563610Z",
   "window_hours": 168,
-  "total_items": 88,
-  "total_items_ai_raw": 92,
-  "total_items_raw": 92,
-  "total_items_all_mode": 90,
+  "total_items": 89,
+  "total_items_ai_raw": 93,
+  "total_items_raw": 93,
+  "total_items_all_mode": 91,
   "topic_filter": "ecommerce_relevance_scoring_v0_1",
   "topic": "ecommerce",
   "ai_relevance_threshold": 0.65,
   "topic_relevance_threshold": 0.65,
-  "archive_total": 10378,
+  "archive_total": 10383,
   "site_count": 2,
   "source_count": 37,
   "site_stats": [
@@ -22,12 +22,57 @@
     {
       "site_id": "websource",
       "site_name": "重点网页源",
-      "count": 36,
-      "raw_count": 39
+      "count": 37,
+      "raw_count": 40
     }
   ],
   "items": [
     {
+      "id": "3a034d76bccd144901433b0850e9b6b39bce6322",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "新榜",
+      "title": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+      "url": "https://www.newrank.cn/article/detail/34522",
+      "published_at": "2026-06-13T04:00:00Z",
+      "first_seen_at": "2026-06-13T04:58:27.563610Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
+      "meta": {
+        "web_source_id": "newrank_cn",
+        "web_source_url": "https://www.newrank.cn/",
+        "web_source_score": 4,
+        "web_source_priority": "P0",
+        "web_source_domain": "行业资讯",
+        "web_source_platform": "新榜",
+        "published_time_source": "list_text"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.78,
+      "ai_label": "ai_commerce",
+      "ai_relevance_reason": "matched_ecommerce_operations_value",
+      "ai_signals": [
+        "爆款",
+        "aigc",
+        "爆款",
+        "新榜"
+      ],
+      "ai_noise": [],
+      "business_value": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+      "impact": "AI 能力更新，影响电商内容生产、素材制作或运营自动化效率。",
+      "suggested_action": "评估该 AI 能力能否降低素材、客服或数据分析的人力成本，安排小规模测试。",
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.78,
+      "topic_label": "ai_commerce",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+      "title_en": null,
+      "title_zh": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+      "title_bilingual": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？"
+    },
+    {
       "id": "ed5f9f28f310ebcbe9214e9c187f60713798be5c",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -36,7 +81,7 @@
       "url": "https://www.digitalcommerce360.com/2026/06/12/visa-openai-agent-led-payments",
       "published_at": "2026-06-12T22:02:26Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://www.digitalcommerce360.com/topic/artificial-intelligence/feed/",
         "feed_home": "https://www.digitalcommerce360.com/topic/artificial-intelligence/"
@@ -62,8 +107,8 @@
       "source_tier_rank": 3,
       "title_original": "Visa, OpenAI work together to support agent-led payments",
       "title_en": "Visa, OpenAI work together to support agent-led payments",
-      "title_zh": null,
-      "title_bilingual": "Visa, OpenAI work together to support agent-led payments"
+      "title_zh": "Visa 与 OpenAI 合作支持代理主导的支付",
+      "title_bilingual": "Visa 与 OpenAI 合作支持代理主导的支付 / Visa, OpenAI work together to support agent-led payments"
     },
     {
       "id": "9708d87d5390332e8f23e400f6746a0a08095c64",
@@ -74,7 +119,7 @@
       "url": "https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark",
       "published_at": "2026-06-12T21:12:40Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
         "feed_home": "https://developer.nvidia.com/blog/category/generative-ai/"
@@ -100,8 +145,8 @@
       "source_tier_rank": 3,
       "title_original": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark",
       "title_en": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark",
-      "title_zh": null,
-      "title_bilingual": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark"
+      "title_zh": "NVIDIA 在第一个 Agentic AI 基准测试中实现了领先的 Agentic 编码性能",
+      "title_bilingual": "NVIDIA 在第一个 Agentic AI 基准测试中实现了领先的 Agentic 编码性能 / NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark"
     },
     {
       "id": "93b8bc3a6af04b5b2f6064b0be85bf42de3722c5",
@@ -112,7 +157,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai",
       "published_at": "2026-06-12T20:43:56Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -138,8 +183,8 @@
       "source_tier_rank": 3,
       "title_original": "Building Supercharger: How Rocket Close optimized title operations with agentic AI",
       "title_en": "Building Supercharger: How Rocket Close optimized title operations with agentic AI",
-      "title_zh": null,
-      "title_bilingual": "Building Supercharger: How Rocket Close optimized title operations with agentic AI"
+      "title_zh": "构建超级充电站：Rocket Close 如何利用代理 AI 优化游戏运营",
+      "title_bilingual": "构建超级充电站：Rocket Close 如何利用代理 AI 优化游戏运营 / Building Supercharger: How Rocket Close optimized title operations with agentic AI"
     },
     {
       "id": "846a54c369edcc8bd36461dad1a9e6a2c62d8797",
@@ -150,7 +195,7 @@
       "url": "https://the-decoder.com/openai-kicks-off-the-ai-price-wars-with-flexible-rate-limit-resets-for-its-codex-coding-agent",
       "published_at": "2026-06-12T17:34:23Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://the-decoder.com/feed/",
         "feed_home": "https://the-decoder.com/"
@@ -176,8 +221,8 @@
       "source_tier_rank": 3,
       "title_original": "OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent",
       "title_en": "OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent",
-      "title_zh": null,
-      "title_bilingual": "OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent"
+      "title_zh": "OpenAI 通过为其 Codex 编码代理重置灵活的速率限制，拉开了人工智能价格战的序幕",
+      "title_bilingual": "OpenAI 通过为其 Codex 编码代理重置灵活的速率限制，拉开了人工智能价格战的序幕 / OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent"
     },
     {
       "id": "929c827df499a6818341e70b1a3a1c1a0e656422",
@@ -188,7 +233,7 @@
       "url": "https://openrouter.ai/blog/tutorials/hermes-agent",
       "published_at": "2026-06-12T16:00:00Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:00:37.203440Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -225,7 +270,7 @@
       "url": "https://developer.nvidia.com/blog/deploy-long-context-reasoning-and-agentic-workflows-with-minimax-m3-on-nvidia-accelerated-infrastructure",
       "published_at": "2026-06-12T14:43:17Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
         "feed_home": "https://developer.nvidia.com/blog/category/generative-ai/"
@@ -251,8 +296,8 @@
       "source_tier_rank": 3,
       "title_original": "Deploy Long-Context Reasoning and Agentic Workflows with MiniMax M3 on NVIDIA Accelerated Infrastructure",
       "title_en": "Deploy Long-Context Reasoning and Agentic Workflows with MiniMax M3 on NVIDIA Accelerated Infrastructure",
-      "title_zh": null,
-      "title_bilingual": "Deploy Long-Context Reasoning and Agentic Workflows with MiniMax M3 on NVIDIA Accelerated Infrastructure"
+      "title_zh": "在 NVIDIA 加速基础设施上使用 MiniMax M3 部署长上下文推理和代理工作流程",
+      "title_bilingual": "在 NVIDIA 加速基础设施上使用 MiniMax M3 部署长上下文推理和代理工作流程 / Deploy Long-Context Reasoning and Agentic Workflows with MiniMax M3 on NVIDIA Accelerated Infrastructure"
     },
     {
       "id": "e18238979867f87c91eeb53515db51c1955356ff",
@@ -263,7 +308,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
       "published_at": "2026-06-12T14:03:03Z",
       "first_seen_at": "2026-06-12T15:20:33.878634Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -316,7 +361,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
       "published_at": "2026-06-12T11:19:31Z",
       "first_seen_at": "2026-06-12T11:20:02.262762Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -371,7 +416,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
       "published_at": "2026-06-12T11:14:17Z",
       "first_seen_at": "2026-06-12T11:20:02.262762Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -425,7 +470,7 @@
       "url": "https://www.newrank.cn/article/detail/34521",
       "published_at": "2026-06-12T10:20:10Z",
       "first_seen_at": "2026-06-12T11:40:49.329347Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -469,7 +514,7 @@
       "url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-launches-kimi-work-a-local-desktop-agent-reportedly-running-on-kimi-k2-6-with-a-300-sub-agent-agent-swarm",
       "published_at": "2026-06-12T09:37:30Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://www.marktechpost.com/feed/",
         "feed_home": "https://www.marktechpost.com/"
@@ -494,8 +539,8 @@
       "source_tier_rank": 3,
       "title_original": "Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm",
       "title_en": "Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm",
-      "title_zh": null,
-      "title_bilingual": "Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm"
+      "title_zh": "Moonshot AI 推出 Kimi Work，这是一款本地桌面代理，据称运行在 Kimi K2.6 上，具有 300 个子代理代理群",
+      "title_bilingual": "Moonshot AI 推出 Kimi Work，这是一款本地桌面代理，据称运行在 Kimi K2.6 上，具有 300 个子代理代理群 / Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm"
     },
     {
       "id": "32820b3eec78f1104b59886b69fc440403f9919e",
@@ -506,7 +551,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkbJcdRFFSP",
       "published_at": "2026-06-12T08:08:45Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -560,7 +605,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEEEnB",
       "published_at": "2026-06-12T08:07:17Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -613,7 +658,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=RsXYMVvx14",
       "published_at": "2026-06-12T08:04:11.913000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -702,7 +747,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
       "published_at": "2026-06-12T06:03:42Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -830,7 +875,7 @@
       "url": "https://x.com/Replit/status/2065146579326271883",
       "published_at": "2026-06-11T18:58:07Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:00:37.203440Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -905,7 +950,7 @@
       "url": "https://github.blog/changelog/2026-06-11-github-agentic-workflows-is-now-in-public-preview",
       "published_at": "2026-06-11T16:00:35Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://github.blog/changelog/feed/",
         "feed_home": "https://github.blog/changelog/"
@@ -930,8 +975,8 @@
       "source_tier_rank": 3,
       "title_original": "GitHub Agentic Workflows is now in public preview",
       "title_en": "GitHub Agentic Workflows is now in public preview",
-      "title_zh": null,
-      "title_bilingual": "GitHub Agentic Workflows is now in public preview"
+      "title_zh": "GitHub Agentic Workflows 现已推出公共预览版",
+      "title_bilingual": "GitHub Agentic Workflows 现已推出公共预览版 / GitHub Agentic Workflows is now in public preview"
     },
     {
       "id": "a41cdfe40fa0ddcfbdbd32b6f9f2af4cefbf3543",
@@ -942,7 +987,7 @@
       "url": "https://github.blog/changelog/2026-06-11-agentic-workflows-no-longer-need-a-personal-access-token",
       "published_at": "2026-06-11T15:55:49Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://github.blog/changelog/feed/",
         "feed_home": "https://github.blog/changelog/"
@@ -967,8 +1012,8 @@
       "source_tier_rank": 3,
       "title_original": "Agentic workflows no longer need a personal access token",
       "title_en": "Agentic workflows no longer need a personal access token",
-      "title_zh": null,
-      "title_bilingual": "Agentic workflows no longer need a personal access token"
+      "title_zh": "代理工作流程不再需要个人访问令牌",
+      "title_bilingual": "代理工作流程不再需要个人访问令牌 / Agentic workflows no longer need a personal access token"
     },
     {
       "id": "a1e6176099470ee9df055641fff056a6279de837",
@@ -979,7 +1024,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/evaluate-ai-agents-systematically-with-agent-evalkit",
       "published_at": "2026-06-11T15:49:47Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -1005,8 +1050,8 @@
       "source_tier_rank": 3,
       "title_original": "Evaluate AI agents systematically with Agent-EvalKit",
       "title_en": "Evaluate AI agents systematically with Agent-EvalKit",
-      "title_zh": null,
-      "title_bilingual": "Evaluate AI agents systematically with Agent-EvalKit"
+      "title_zh": "使用 Agent-EvalKit 系统地评估 AI 代理",
+      "title_bilingual": "使用 Agent-EvalKit 系统地评估 AI 代理 / Evaluate AI agents systematically with Agent-EvalKit"
     },
     {
       "id": "6b1598c9c68b32e0cbf4971354a3a3b6a1c49bf4",
@@ -1042,8 +1087,8 @@
       "source_tier_rank": 3,
       "title_original": "Useful tools for agent optimization (AXO) in eCommerce?",
       "title_en": "Useful tools for agent optimization (AXO) in eCommerce?",
-      "title_zh": null,
-      "title_bilingual": "Useful tools for agent optimization (AXO) in eCommerce?"
+      "title_zh": "电子商务中代理优化 (AXO) 的有用工具？",
+      "title_bilingual": "电子商务中代理优化 (AXO) 的有用工具？ / Useful tools for agent optimization (AXO) in eCommerce?"
     },
     {
       "id": "1f67d19b1ff14e1f9834fc7f01fe9ab7c776a095",
@@ -1054,7 +1099,7 @@
       "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
       "published_at": "2026-06-11T15:00:00Z",
       "first_seen_at": "2026-06-12T15:20:33.878634Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://blog.google/products/ads-commerce/rss/",
         "feed_home": "https://blog.google/products/ads-commerce/"
@@ -1091,7 +1136,7 @@
       "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -1185,7 +1230,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1241,7 +1286,7 @@
       "url": "https://aibusiness.com/generative-ai/startup-openai-backing-overhaul-enterprise-ai-automation",
       "published_at": "2026-06-11T13:28:02Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aibusiness.com/rss.xml",
         "feed_home": "https://aibusiness.com/"
@@ -1266,8 +1311,8 @@
       "source_tier_rank": 3,
       "title_original": "Startup Gets OpenAI Backing to Overhaul Enterprise AI Automation",
       "title_en": "Startup Gets OpenAI Backing to Overhaul Enterprise AI Automation",
-      "title_zh": null,
-      "title_bilingual": "Startup Gets OpenAI Backing to Overhaul Enterprise AI Automation"
+      "title_zh": "初创公司获得 OpenAI 支持以彻底改革企业人工智能自动化",
+      "title_bilingual": "初创公司获得 OpenAI 支持以彻底改革企业人工智能自动化 / Startup Gets OpenAI Backing to Overhaul Enterprise AI Automation"
     },
     {
       "id": "41bda9dcda8690e60afd232e64cc822f8cc71f76",
@@ -1278,7 +1323,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1331,7 +1376,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1384,7 +1429,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -1437,7 +1482,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=4NJAdFIRMe",
       "published_at": "2026-06-11T11:58:36.954000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -1488,7 +1533,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=nGTlUU3dqS",
       "published_at": "2026-06-11T11:56:51.964000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -1601,8 +1646,8 @@
       "source_tier_rank": 3,
       "title_original": "Trust gap slows UK take-up of AI shopping agents",
       "title_en": "Trust gap slows UK take-up of AI shopping agents",
-      "title_zh": null,
-      "title_bilingual": "Trust gap slows UK take-up of AI shopping agents"
+      "title_zh": "信任差距减缓了英国对人工智能购物代理的采用",
+      "title_bilingual": "信任差距减缓了英国对人工智能购物代理的采用 / Trust gap slows UK take-up of AI shopping agents"
     },
     {
       "id": "04dc1bbdc93a49337be840bfb1f32d4bbfbc9bb9",
@@ -1613,7 +1658,7 @@
       "url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact",
       "published_at": "2026-06-11T11:00:45Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
         "feed_home": "https://www.technologyreview.com/topic/artificial-intelligence/"
@@ -1639,8 +1684,8 @@
       "source_tier_rank": 3,
       "title_original": "Google DeepMind is worried about what happens when millions of agents start to interact",
       "title_en": "Google DeepMind is worried about what happens when millions of agents start to interact",
-      "title_zh": null,
-      "title_bilingual": "Google DeepMind is worried about what happens when millions of agents start to interact"
+      "title_zh": "谷歌 DeepMind 担心当数百万智能体开始交互时会发生什么",
+      "title_bilingual": "谷歌 DeepMind 担心当数百万智能体开始交互时会发生什么 / Google DeepMind is worried about what happens when millions of agents start to interact"
     },
     {
       "id": "598ba046e2dddd1f128802a5350a3158f63b446a",
@@ -1688,7 +1733,7 @@
       "url": "https://x.com/SiliconFlowAI/status/2065015632215912879",
       "published_at": "2026-06-11T10:17:47Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:00:37.203440Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -1815,7 +1860,7 @@
       "url": "https://www.marktechpost.com/2026/06/11/nous-research-ships-hermes-agent-profile-builder-identity-model-skills-and-mcp-servers-in-one-dashboard-flow",
       "published_at": "2026-06-11T09:53:52Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://www.marktechpost.com/feed/",
         "feed_home": "https://www.marktechpost.com/"
@@ -1840,8 +1885,8 @@
       "source_tier_rank": 3,
       "title_original": "Nous Research Ships Hermes Agent Profile Builder: Identity, Model, Skills, and MCP Servers in One Dashboard Flow",
       "title_en": "Nous Research Ships Hermes Agent Profile Builder: Identity, Model, Skills, and MCP Servers in One Dashboard Flow",
-      "title_zh": null,
-      "title_bilingual": "Nous Research Ships Hermes Agent Profile Builder: Identity, Model, Skills, and MCP Servers in One Dashboard Flow"
+      "title_zh": "Nous Research 推出 Hermes Agent Profile Builder：在一个仪表板流程中提供身份、模型、技能和 MCP 服务器",
+      "title_bilingual": "Nous Research 推出 Hermes Agent Profile Builder：在一个仪表板流程中提供身份、模型、技能和 MCP 服务器 / Nous Research Ships Hermes Agent Profile Builder: Identity, Model, Skills, and MCP Servers in One Dashboard Flow"
     },
     {
       "id": "ce57b94717309736cc5d6ec9ac9924dc182f40f9",
@@ -1906,7 +1951,7 @@
       "url": "https://www.marktechpost.com/2026/06/11/meet-north-mini-code-coheres-30b-open-weight-mixture-of-experts-model-with-3b-active-parameters-for-agentic-coding",
       "published_at": "2026-06-11T08:33:27Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://www.marktechpost.com/feed/",
         "feed_home": "https://www.marktechpost.com/"
@@ -1931,8 +1976,8 @@
       "source_tier_rank": 3,
       "title_original": "Meet ‘North Mini Code’: Cohere’s 30B Open-Weight Mixture-of-Experts Model With 3B Active Parameters for Agentic Coding",
       "title_en": "Meet ‘North Mini Code’: Cohere’s 30B Open-Weight Mixture-of-Experts Model With 3B Active Parameters for Agentic Coding",
-      "title_zh": null,
-      "title_bilingual": "Meet ‘North Mini Code’: Cohere’s 30B Open-Weight Mixture-of-Experts Model With 3B Active Parameters for Agentic Coding"
+      "title_zh": "认识“North Mini Code”：Cohere 的 30B 开放权重混合专家模型，具有用于代理编码的 3B 主动参数",
+      "title_bilingual": "认识“North Mini Code”：Cohere 的 30B 开放权重混合专家模型，具有用于代理编码的 3B 主动参数 / Meet ‘North Mini Code’: Cohere’s 30B Open-Weight Mixture-of-Experts Model With 3B Active Parameters for Agentic Coding"
     },
     {
       "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
@@ -1943,7 +1988,7 @@
       "url": "https://www.newrank.cn/article/detail/34517",
       "published_at": "2026-06-11T08:32:44Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -2133,7 +2178,7 @@
       "url": "https://mp.weixin.qq.com/s/nFSSzluc57xPv50Zbh4owg",
       "published_at": "2026-06-11T01:58:00Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:00:37.203440Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -2215,7 +2260,7 @@
       "url": "https://arxiv.org/abs/2606.13289",
       "published_at": "2026-06-11T00:00:00Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:00:37.203440Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -2252,7 +2297,7 @@
       "url": "https://simonwillison.net/2026/Jun/10/datasette-agent",
       "published_at": "2026-06-10T23:57:27Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://simonwillison.net/atom/everything/",
         "feed_home": "https://simonwillison.net/"
@@ -2277,8 +2322,8 @@
       "source_tier_rank": 3,
       "title_original": "datasette-agent 0.2a0",
       "title_en": "datasette-agent 0.2a0",
-      "title_zh": null,
-      "title_bilingual": "datasette-agent 0.2a0"
+      "title_zh": "数据集代理 0.2a0",
+      "title_bilingual": "数据集代理 0.2a0 / datasette-agent 0.2a0"
     },
     {
       "id": "1cde13c2ce38319baf8fb4f155a36f4f0a79d30d",
@@ -2314,8 +2359,8 @@
       "source_tier_rank": 3,
       "title_original": "Adidas offers ecommerce-as-a-service (EaaS) featuring AI agents",
       "title_en": "Adidas offers ecommerce-as-a-service (EaaS) featuring AI agents",
-      "title_zh": null,
-      "title_bilingual": "Adidas offers ecommerce-as-a-service (EaaS) featuring AI agents"
+      "title_zh": "阿迪达斯提供采用人工智能代理的电子商务即服务 (EaaS)",
+      "title_bilingual": "阿迪达斯提供采用人工智能代理的电子商务即服务 (EaaS) / Adidas offers ecommerce-as-a-service (EaaS) featuring AI agents"
     },
     {
       "id": "258fa083cd8ad23c1b69497fc3cc5fb789c29c51",
@@ -2351,8 +2396,8 @@
       "source_tier_rank": 3,
       "title_original": "GrubMarket adds AI agent with goal to assist sales teams",
       "title_en": "GrubMarket adds AI agent with goal to assist sales teams",
-      "title_zh": null,
-      "title_bilingual": "GrubMarket adds AI agent with goal to assist sales teams"
+      "title_zh": "GrubMarket 添加人工智能代理，旨在协助销售团队",
+      "title_bilingual": "GrubMarket 添加人工智能代理，旨在协助销售团队 / GrubMarket adds AI agent with goal to assist sales teams"
     },
     {
       "id": "ba73fac7356ef9ab021fcd638cfef727695fa1aa",
@@ -2407,7 +2452,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/stop-hand-tuning-kernels-how-neuron-agentic-development-accelerates-aws-trainium-optimizations",
       "published_at": "2026-06-10T15:26:45Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -2433,8 +2478,8 @@
       "source_tier_rank": 3,
       "title_original": "Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations",
       "title_en": "Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations",
-      "title_zh": null,
-      "title_bilingual": "Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations"
+      "title_zh": "停止手动调整内核：Neuron Agentic Development 如何加速 AWS Trainium 优化",
+      "title_bilingual": "停止手动调整内核：Neuron Agentic Development 如何加速 AWS Trainium 优化 / Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations"
     },
     {
       "id": "3eb7efb75872a19b3f7364bdc4f940a42e086ba7",
@@ -2445,7 +2490,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-equipment-repair-assistant-using-amazon-bedrock-agentcore",
       "published_at": "2026-06-10T15:21:35Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -2471,8 +2516,8 @@
       "source_tier_rank": 3,
       "title_original": "Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore",
       "title_en": "Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore",
-      "title_zh": null,
-      "title_bilingual": "Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore"
+      "title_zh": "使用 Amazon Bedrock AgentCore 构建 AI 驱动的设备维修助手",
+      "title_bilingual": "使用 Amazon Bedrock AgentCore 构建 AI 驱动的设备维修助手 / Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore"
     },
     {
       "id": "0870406c8469871511d281919f202c714dd8f4ff",
@@ -2596,7 +2641,7 @@
       "url": "https://martech.org/the-martech-categories-hit-hardest-by-ai-agents",
       "published_at": "2026-06-10T12:09:00Z",
       "first_seen_at": "2026-06-12T15:44:33.165688Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://martech.org/feed/",
         "feed_home": "https://martech.org/"
@@ -2621,8 +2666,8 @@
       "source_tier_rank": 3,
       "title_original": "The martech categories hit hardest by AI agents",
       "title_en": "The martech categories hit hardest by AI agents",
-      "title_zh": null,
-      "title_bilingual": "The martech categories hit hardest by AI agents"
+      "title_zh": "Martech 类别受 AI 代理打击最严重",
+      "title_bilingual": "Martech 类别受 AI 代理打击最严重 / The martech categories hit hardest by AI agents"
     },
     {
       "id": "cac6473477d3df8947abf093047f4a67f8c2332b",
@@ -2741,7 +2786,7 @@
       "url": "https://martech.org/ai-skills-the-next-layer-of-marketing-automation",
       "published_at": "2026-06-10T11:00:00Z",
       "first_seen_at": "2026-06-12T15:44:33.165688Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://martech.org/feed/",
         "feed_home": "https://martech.org/"
@@ -2764,8 +2809,8 @@
       "source_tier_rank": 3,
       "title_original": "AI skills: The next layer of marketing automation by Optmyzr",
       "title_en": "AI skills: The next layer of marketing automation by Optmyzr",
-      "title_zh": null,
-      "title_bilingual": "AI skills: The next layer of marketing automation by Optmyzr"
+      "title_zh": "AI 技能：Optmyzr 的下一层营销自动化",
+      "title_bilingual": "AI 技能：Optmyzr 的下一层营销自动化 / AI skills: The next layer of marketing automation by Optmyzr"
     },
     {
       "id": "1b6c2d6d0b4bc975288bdc148c7c44931263ee9b",
@@ -2776,7 +2821,7 @@
       "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research",
       "published_at": "2026-06-10T10:21:19Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://deepmind.google/blog/rss.xml",
         "feed_home": "https://deepmind.google/blog"
@@ -2802,8 +2847,8 @@
       "source_tier_rank": 3,
       "title_original": "Investing in multi-agent AI safety research",
       "title_en": "Investing in multi-agent AI safety research",
-      "title_zh": null,
-      "title_bilingual": "Investing in multi-agent AI safety research"
+      "title_zh": "投资多智能体人工智能安全研究",
+      "title_bilingual": "投资多智能体人工智能安全研究 / Investing in multi-agent AI safety research"
     },
     {
       "id": "06a3d420375d8531271b74ee561906a1583abc0a",
@@ -2924,7 +2969,7 @@
       "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
       "published_at": "2026-06-09T21:35:31Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://simonwillison.net/atom/everything/",
         "feed_home": "https://simonwillison.net/"
@@ -2949,8 +2994,8 @@
       "source_tier_rank": 3,
       "title_original": "Setting a custom price for a model in AgentsView",
       "title_en": "Setting a custom price for a model in AgentsView",
-      "title_zh": null,
-      "title_bilingual": "Setting a custom price for a model in AgentsView"
+      "title_zh": "在 AgentsView 中为模型设置自定义价格",
+      "title_bilingual": "在 AgentsView 中为模型设置自定义价格 / Setting a custom price for a model in AgentsView"
     },
     {
       "id": "bf1006319af67a79ef7bfcab585583f31d53ac24",
@@ -2961,7 +3006,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/hands-free-first-notice-of-loss-using-strands-agents-and-amazon-bedrock-agentcore-browser-tool-for-intelligent-claims-intake",
       "published_at": "2026-06-09T16:43:28Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -2987,8 +3032,8 @@
       "source_tier_rank": 3,
       "title_original": "Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake",
       "title_en": "Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake",
-      "title_zh": null,
-      "title_bilingual": "Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake"
+      "title_zh": "免提第一时间通知损失：使用 Strands Agents 和 Amazon Bedrock AgentCore 浏览器工具进行智能索赔受理",
+      "title_bilingual": "免提第一时间通知损失：使用 Strands Agents 和 Amazon Bedrock AgentCore 浏览器工具进行智能索赔受理 / Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake"
     },
     {
       "id": "d211252d113d06ddc02090d4911e0aa52c20ff62",
@@ -2999,7 +3044,7 @@
       "url": "https://developer.nvidia.com/blog/accelerating-federated-learning-research-with-ai-agents-and-nvidia-flare-auto-fl",
       "published_at": "2026-06-09T16:35:08Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
         "feed_home": "https://developer.nvidia.com/blog/category/generative-ai/"
@@ -3025,8 +3070,8 @@
       "source_tier_rank": 3,
       "title_original": "Accelerating Federated Learning Research with AI Agents and NVIDIA FLARE Auto-FL",
       "title_en": "Accelerating Federated Learning Research with AI Agents and NVIDIA FLARE Auto-FL",
-      "title_zh": null,
-      "title_bilingual": "Accelerating Federated Learning Research with AI Agents and NVIDIA FLARE Auto-FL"
+      "title_zh": "利用 AI 代理和 NVIDIA FLARE Auto-FL 加速联合学习研究",
+      "title_bilingual": "利用 AI 代理和 NVIDIA FLARE Auto-FL 加速联合学习研究 / Accelerating Federated Learning Research with AI Agents and NVIDIA FLARE Auto-FL"
     },
     {
       "id": "ca1fa041887475894244d675d0b609535cec59fb",
@@ -3037,7 +3082,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic",
       "published_at": "2026-06-09T16:10:37Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -3063,8 +3108,8 @@
       "source_tier_rank": 3,
       "title_original": "Build an agentic incident triage assistant with Amazon Quick and New Relic",
       "title_en": "Build an agentic incident triage assistant with Amazon Quick and New Relic",
-      "title_zh": null,
-      "title_bilingual": "Build an agentic incident triage assistant with Amazon Quick and New Relic"
+      "title_zh": "使用 Amazon Quick 和 New Relic 构建代理事件分类助手",
+      "title_bilingual": "使用 Amazon Quick 和 New Relic 构建代理事件分类助手 / Build an agentic incident triage assistant with Amazon Quick and New Relic"
     },
     {
       "id": "ea33d62feb3431e668b5aeb645f9e5f3b0dc266c",
@@ -3075,7 +3120,7 @@
       "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
       "published_at": "2026-06-09T16:00:00Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://github.blog/ai-and-ml/feed/",
         "feed_home": "https://github.blog/ai-and-ml/"
@@ -3101,8 +3146,8 @@
       "source_tier_rank": 3,
       "title_original": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
       "title_en": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
-      "title_zh": null,
-      "title_bilingual": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI"
+      "title_zh": "从一次性提示到工作流程：如何在 GitHub Copilot CLI 中使用自定义代理",
+      "title_bilingual": "从一次性提示到工作流程：如何在 GitHub Copilot CLI 中使用自定义代理 / From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI"
     },
     {
       "id": "fd788f557c04ccdad4edaa445429f39ac9cf3d38",
@@ -3157,7 +3202,7 @@
       "url": "https://developer.nvidia.com/blog/evaluate-clinical-asr-models-faster-with-agent-skills-and-nvidia-nemotron-speech",
       "published_at": "2026-06-09T15:00:00Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
         "feed_home": "https://developer.nvidia.com/blog/category/generative-ai/"
@@ -3183,8 +3228,8 @@
       "source_tier_rank": 3,
       "title_original": "Evaluate Clinical ASR Models Faster with Agent Skills and NVIDIA Nemotron Speech",
       "title_en": "Evaluate Clinical ASR Models Faster with Agent Skills and NVIDIA Nemotron Speech",
-      "title_zh": null,
-      "title_bilingual": "Evaluate Clinical ASR Models Faster with Agent Skills and NVIDIA Nemotron Speech"
+      "title_zh": "利用代理技能和 NVIDIA Nemotron 语音更快地评估临床 ASR 模型",
+      "title_bilingual": "利用代理技能和 NVIDIA Nemotron 语音更快地评估临床 ASR 模型 / Evaluate Clinical ASR Models Faster with Agent Skills and NVIDIA Nemotron Speech"
     },
     {
       "id": "37c589fbfe216c46fb043da2938715160b360f7f",
@@ -3220,8 +3265,8 @@
       "source_tier_rank": 3,
       "title_original": "My AI agent stack as a Y Combinator founder",
       "title_en": "My AI agent stack as a Y Combinator founder",
-      "title_zh": null,
-      "title_bilingual": "My AI agent stack as a Y Combinator founder"
+      "title_zh": "我作为 Y Combinator 创始人的 AI 代理栈",
+      "title_bilingual": "我作为 Y Combinator 创始人的 AI 代理栈 / My AI agent stack as a Y Combinator founder"
     },
     {
       "id": "9f50dda0062fb2cf13b39c18f14a709a8835c971",
@@ -3232,7 +3277,7 @@
       "url": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model",
       "published_at": "2026-06-09T14:10:19Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://deepmind.google/blog/rss.xml",
         "feed_home": "https://deepmind.google/blog"
@@ -3257,8 +3302,8 @@
       "source_tier_rank": 3,
       "title_original": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
       "title_en": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
-      "title_zh": null,
-      "title_bilingual": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model"
+      "title_zh": "Gemma 4 12B 简介：统一、无编码器的多模态模型",
+      "title_bilingual": "Gemma 4 12B 简介：统一、无编码器的多模态模型 / Introducing Gemma 4 12B: a unified, encoder-free multimodal model"
     },
     {
       "id": "4e307e04de828fccad7d7de3ce6da451717f10f7",
@@ -3313,7 +3358,7 @@
       "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
       "published_at": "2026-06-09T10:46:19Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://huggingface.co/blog/feed.xml",
         "feed_home": "https://huggingface.co/blog"
@@ -3339,8 +3384,8 @@
       "source_tier_rank": 3,
       "title_original": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
       "title_en": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
-      "title_zh": null,
-      "title_bilingual": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces"
+      "title_zh": "特工如何通过链接两个拥抱的面部空间来构建 3D 巴黎画廊",
+      "title_bilingual": "特工如何通过链接两个拥抱的面部空间来构建 3D 巴黎画廊 / How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces"
     },
     {
       "id": "dedf60551169084d7be932b7039b0d0ddc2932d6",
@@ -3351,7 +3396,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=TParGlyquv",
       "published_at": "2026-06-09T03:28:16.623000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -3403,7 +3448,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=YI9zgXSF6o",
       "published_at": "2026-06-09T03:26:21.935000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -3501,7 +3546,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-amazon-bedrock-agentcore",
       "published_at": "2026-06-08T16:35:02Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -3527,8 +3572,8 @@
       "source_tier_rank": 3,
       "title_original": "It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore",
       "title_en": "It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore",
-      "title_zh": null,
-      "title_bilingual": "It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore"
+      "title_zh": "现在可以安全地关闭您的笔记本电脑：在 Amazon Bedrock AgentCore 上托管编码代理",
+      "title_bilingual": "现在可以安全地关闭您的笔记本电脑：在 Amazon Bedrock AgentCore 上托管编码代理 / It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore"
     },
     {
       "id": "a8d6e329b7ebbd5321a1dfbfbd773290b26e28df",
@@ -3539,7 +3584,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-microphone-required",
       "published_at": "2026-06-08T15:57:45Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -3565,8 +3610,8 @@
       "source_tier_rank": 3,
       "title_original": "Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required",
       "title_en": "Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required",
-      "title_zh": null,
-      "title_bilingual": "Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required"
+      "title_zh": "大规模评估您的 Amazon Nova Sonic 语音代理，无需麦克风",
+      "title_bilingual": "大规模评估您的 Amazon Nova Sonic 语音代理，无需麦克风 / Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required"
     },
     {
       "id": "adae229861ad1964b8063d53234a4a865b95ec56",
@@ -3577,7 +3622,7 @@
       "url": "https://towardsai.net/p/machine-learning/build-a-zero-cost-web-automation-pipeline-with-openrouter-openclaw-and-mediause",
       "published_at": "2026-06-08T09:09:12Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://towardsai.net/feed",
         "feed_home": "https://towardsai.net/"
@@ -3600,8 +3645,8 @@
       "source_tier_rank": 3,
       "title_original": "Build a Zero-Cost Web Automation Pipeline With OpenRouter, OpenClaw, and MediaUse",
       "title_en": "Build a Zero-Cost Web Automation Pipeline With OpenRouter, OpenClaw, and MediaUse",
-      "title_zh": null,
-      "title_bilingual": "Build a Zero-Cost Web Automation Pipeline With OpenRouter, OpenClaw, and MediaUse"
+      "title_zh": "使用 OpenRouter、OpenClaw 和 MediaUse 构建零成本 Web 自动化管道",
+      "title_bilingual": "使用 OpenRouter、OpenClaw 和 MediaUse 构建零成本 Web 自动化管道 / Build a Zero-Cost Web Automation Pipeline With OpenRouter, OpenClaw, and MediaUse"
     },
     {
       "id": "7c176be3569d423a28d9ab71a16cb9b4de43e4bb",
@@ -3612,7 +3657,7 @@
       "url": "https://towardsai.net/p/machine-learning/beyond-the-prompt-why-autonomous-ai-agents-are-replacing-the-chatbot",
       "published_at": "2026-06-08T09:08:07Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://towardsai.net/feed",
         "feed_home": "https://towardsai.net/"
@@ -3637,8 +3682,8 @@
       "source_tier_rank": 3,
       "title_original": "Beyond the Prompt: Why Autonomous AI Agents Are Replacing the Chatbot",
       "title_en": "Beyond the Prompt: Why Autonomous AI Agents Are Replacing the Chatbot",
-      "title_zh": null,
-      "title_bilingual": "Beyond the Prompt: Why Autonomous AI Agents Are Replacing the Chatbot"
+      "title_zh": "超越提示：为什么自主人工智能代理正在取代聊天机器人",
+      "title_bilingual": "超越提示：为什么自主人工智能代理正在取代聊天机器人 / Beyond the Prompt: Why Autonomous AI Agents Are Replacing the Chatbot"
     },
     {
       "id": "2e943973f38210ec8d7efbc5d8c714ae92556c75",
@@ -3649,7 +3694,7 @@
       "url": "https://towardsai.net/p/machine-learning/moonshot-cracked-claude-codes-playbook-with-an-mit-terminal-agent-and-a-0-60-model",
       "published_at": "2026-06-08T09:07:31Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://towardsai.net/feed",
         "feed_home": "https://towardsai.net/"
@@ -3675,8 +3720,8 @@
       "source_tier_rank": 3,
       "title_original": "Moonshot Cracked Claude Code’s Playbook with an MIT Terminal Agent and a $0.60 Model",
       "title_en": "Moonshot Cracked Claude Code’s Playbook with an MIT Terminal Agent and a $0.60 Model",
-      "title_zh": null,
-      "title_bilingual": "Moonshot Cracked Claude Code’s Playbook with an MIT Terminal Agent and a $0.60 Model"
+      "title_zh": "Moonshot 使用 MIT 终端代理和 0.60 美元的模型破解了 Claude Code 的剧本",
+      "title_bilingual": "Moonshot 使用 MIT 终端代理和 0.60 美元的模型破解了 Claude Code 的剧本 / Moonshot Cracked Claude Code’s Playbook with an MIT Terminal Agent and a $0.60 Model"
     },
     {
       "id": "41b2f8ebc87b588b03e77cc2d5bc2aa7ab042ffc",
@@ -3687,7 +3732,7 @@
       "url": "https://towardsai.net/p/machine-learning/langchain-explained-understanding-models-prompts-chains-memory-indexes-and-agents",
       "published_at": "2026-06-08T08:43:59Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://towardsai.net/feed",
         "feed_home": "https://towardsai.net/"
@@ -3712,8 +3757,8 @@
       "source_tier_rank": 3,
       "title_original": "LangChain Explained: Understanding Models, Prompts, Chains, Memory, Indexes, and Agents",
       "title_en": "LangChain Explained: Understanding Models, Prompts, Chains, Memory, Indexes, and Agents",
-      "title_zh": null,
-      "title_bilingual": "LangChain Explained: Understanding Models, Prompts, Chains, Memory, Indexes, and Agents"
+      "title_zh": "LangChain详解：理解模型、提示、链、内存、索引和代理",
+      "title_bilingual": "LangChain详解：理解模型、提示、链、内存、索引和代理 / LangChain Explained: Understanding Models, Prompts, Chains, Memory, Indexes, and Agents"
     },
     {
       "id": "76a5f6755d05a4d61b7835e772fecf43904d2edc",
@@ -3724,7 +3769,7 @@
       "url": "https://huggingface.co/blog/openenv-agentic-rl",
       "published_at": "2026-06-08T00:00:00Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://huggingface.co/blog/feed.xml",
         "feed_home": "https://huggingface.co/blog"
@@ -3750,8 +3795,8 @@
       "source_tier_rank": 3,
       "title_original": "The Open Source Community is backing OpenEnv for Agentic RL",
       "title_en": "The Open Source Community is backing OpenEnv for Agentic RL",
-      "title_zh": null,
-      "title_bilingual": "The Open Source Community is backing OpenEnv for Agentic RL"
+      "title_zh": "开源社区支持 OpenEnv 用于 Agentic RL",
+      "title_bilingual": "开源社区支持 OpenEnv 用于 Agentic RL / The Open Source Community is backing OpenEnv for Agentic RL"
     },
     {
       "id": "5bb7b0619f23f8f6d34937dc55797aad7e4835a8",
@@ -3762,7 +3807,7 @@
       "url": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit",
       "published_at": "2026-06-07T23:56:38Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://simonwillison.net/atom/everything/",
         "feed_home": "https://simonwillison.net/"
@@ -3787,12 +3832,57 @@
       "source_tier_rank": 3,
       "title_original": "datasette-agent-edit 0.1a0",
       "title_en": "datasette-agent-edit 0.1a0",
-      "title_zh": null,
-      "title_bilingual": "datasette-agent-edit 0.1a0"
+      "title_zh": "数据集代理编辑 0.1a0",
+      "title_bilingual": "数据集代理编辑 0.1a0 / datasette-agent-edit 0.1a0"
     }
   ],
   "items_ai": [
     {
+      "id": "3a034d76bccd144901433b0850e9b6b39bce6322",
+      "site_id": "websource",
+      "site_name": "重点网页源",
+      "source": "新榜",
+      "title": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+      "url": "https://www.newrank.cn/article/detail/34522",
+      "published_at": "2026-06-13T04:00:00Z",
+      "first_seen_at": "2026-06-13T04:58:27.563610Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
+      "meta": {
+        "web_source_id": "newrank_cn",
+        "web_source_url": "https://www.newrank.cn/",
+        "web_source_score": 4,
+        "web_source_priority": "P0",
+        "web_source_domain": "行业资讯",
+        "web_source_platform": "新榜",
+        "published_time_source": "list_text"
+      },
+      "ai_is_related": true,
+      "ai_score": 0.78,
+      "ai_label": "ai_commerce",
+      "ai_relevance_reason": "matched_ecommerce_operations_value",
+      "ai_signals": [
+        "爆款",
+        "aigc",
+        "爆款",
+        "新榜"
+      ],
+      "ai_noise": [],
+      "business_value": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+      "impact": "AI 能力更新，影响电商内容生产、素材制作或运营自动化效率。",
+      "suggested_action": "评估该 AI 能力能否降低素材、客服或数据分析的人力成本，安排小规模测试。",
+      "topic": "ecommerce",
+      "topic_is_related": true,
+      "topic_score": 0.78,
+      "topic_label": "ai_commerce",
+      "source_tier": "official",
+      "source_tier_label": "官方网页源",
+      "source_tier_rank": 0,
+      "title_original": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+      "title_en": null,
+      "title_zh": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？",
+      "title_bilingual": "两集播放量超7500万，“中式机械朋克”系列故事《万物生》爆火；AI怪谈宇宙新爆款狂揽1.1亿播放 | AIGC热门精选 博雯 2026-06-13 12:00:00 过去一周，是谁在用AI产出爆款？"
+    },
+    {
       "id": "ed5f9f28f310ebcbe9214e9c187f60713798be5c",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -3801,7 +3891,7 @@
       "url": "https://www.digitalcommerce360.com/2026/06/12/visa-openai-agent-led-payments",
       "published_at": "2026-06-12T22:02:26Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://www.digitalcommerce360.com/topic/artificial-intelligence/feed/",
         "feed_home": "https://www.digitalcommerce360.com/topic/artificial-intelligence/"
@@ -3827,8 +3917,8 @@
       "source_tier_rank": 3,
       "title_original": "Visa, OpenAI work together to support agent-led payments",
       "title_en": "Visa, OpenAI work together to support agent-led payments",
-      "title_zh": null,
-      "title_bilingual": "Visa, OpenAI work together to support agent-led payments"
+      "title_zh": "Visa 与 OpenAI 合作支持代理主导的支付",
+      "title_bilingual": "Visa 与 OpenAI 合作支持代理主导的支付 / Visa, OpenAI work together to support agent-led payments"
     },
     {
       "id": "9708d87d5390332e8f23e400f6746a0a08095c64",
@@ -3839,7 +3929,7 @@
       "url": "https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark",
       "published_at": "2026-06-12T21:12:40Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
         "feed_home": "https://developer.nvidia.com/blog/category/generative-ai/"
@@ -3865,8 +3955,8 @@
       "source_tier_rank": 3,
       "title_original": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark",
       "title_en": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark",
-      "title_zh": null,
-      "title_bilingual": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark"
+      "title_zh": "NVIDIA 在第一个 Agentic AI 基准测试中实现了领先的 Agentic 编码性能",
+      "title_bilingual": "NVIDIA 在第一个 Agentic AI 基准测试中实现了领先的 Agentic 编码性能 / NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark"
     },
     {
       "id": "93b8bc3a6af04b5b2f6064b0be85bf42de3722c5",
@@ -3877,7 +3967,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai",
       "published_at": "2026-06-12T20:43:56Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -3903,8 +3993,8 @@
       "source_tier_rank": 3,
       "title_original": "Building Supercharger: How Rocket Close optimized title operations with agentic AI",
       "title_en": "Building Supercharger: How Rocket Close optimized title operations with agentic AI",
-      "title_zh": null,
-      "title_bilingual": "Building Supercharger: How Rocket Close optimized title operations with agentic AI"
+      "title_zh": "构建超级充电站：Rocket Close 如何利用代理 AI 优化游戏运营",
+      "title_bilingual": "构建超级充电站：Rocket Close 如何利用代理 AI 优化游戏运营 / Building Supercharger: How Rocket Close optimized title operations with agentic AI"
     },
     {
       "id": "846a54c369edcc8bd36461dad1a9e6a2c62d8797",
@@ -3915,7 +4005,7 @@
       "url": "https://the-decoder.com/openai-kicks-off-the-ai-price-wars-with-flexible-rate-limit-resets-for-its-codex-coding-agent",
       "published_at": "2026-06-12T17:34:23Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://the-decoder.com/feed/",
         "feed_home": "https://the-decoder.com/"
@@ -3941,8 +4031,8 @@
       "source_tier_rank": 3,
       "title_original": "OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent",
       "title_en": "OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent",
-      "title_zh": null,
-      "title_bilingual": "OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent"
+      "title_zh": "OpenAI 通过为其 Codex 编码代理重置灵活的速率限制，拉开了人工智能价格战的序幕",
+      "title_bilingual": "OpenAI 通过为其 Codex 编码代理重置灵活的速率限制，拉开了人工智能价格战的序幕 / OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent"
     },
     {
       "id": "929c827df499a6818341e70b1a3a1c1a0e656422",
@@ -3953,7 +4043,7 @@
       "url": "https://openrouter.ai/blog/tutorials/hermes-agent",
       "published_at": "2026-06-12T16:00:00Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:00:37.203440Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -3990,7 +4080,7 @@
       "url": "https://developer.nvidia.com/blog/deploy-long-context-reasoning-and-agentic-workflows-with-minimax-m3-on-nvidia-accelerated-infrastructure",
       "published_at": "2026-06-12T14:43:17Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
         "feed_home": "https://developer.nvidia.com/blog/category/generative-ai/"
@@ -4016,8 +4106,8 @@
       "source_tier_rank": 3,
       "title_original": "Deploy Long-Context Reasoning and Agentic Workflows with MiniMax M3 on NVIDIA Accelerated Infrastructure",
       "title_en": "Deploy Long-Context Reasoning and Agentic Workflows with MiniMax M3 on NVIDIA Accelerated Infrastructure",
-      "title_zh": null,
-      "title_bilingual": "Deploy Long-Context Reasoning and Agentic Workflows with MiniMax M3 on NVIDIA Accelerated Infrastructure"
+      "title_zh": "在 NVIDIA 加速基础设施上使用 MiniMax M3 部署长上下文推理和代理工作流程",
+      "title_bilingual": "在 NVIDIA 加速基础设施上使用 MiniMax M3 部署长上下文推理和代理工作流程 / Deploy Long-Context Reasoning and Agentic Workflows with MiniMax M3 on NVIDIA Accelerated Infrastructure"
     },
     {
       "id": "e18238979867f87c91eeb53515db51c1955356ff",
@@ -4028,7 +4118,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYLDPfoP",
       "published_at": "2026-06-12T14:03:03Z",
       "first_seen_at": "2026-06-12T15:20:33.878634Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4081,7 +4171,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEaPfM",
       "published_at": "2026-06-12T11:19:31Z",
       "first_seen_at": "2026-06-12T11:20:02.262762Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4136,7 +4226,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkqnYheAUBm",
       "published_at": "2026-06-12T11:14:17Z",
       "first_seen_at": "2026-06-12T11:20:02.262762Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4190,7 +4280,7 @@
       "url": "https://www.newrank.cn/article/detail/34521",
       "published_at": "2026-06-12T10:20:10Z",
       "first_seen_at": "2026-06-12T11:40:49.329347Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -4234,7 +4324,7 @@
       "url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-launches-kimi-work-a-local-desktop-agent-reportedly-running-on-kimi-k2-6-with-a-300-sub-agent-agent-swarm",
       "published_at": "2026-06-12T09:37:30Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://www.marktechpost.com/feed/",
         "feed_home": "https://www.marktechpost.com/"
@@ -4259,8 +4349,8 @@
       "source_tier_rank": 3,
       "title_original": "Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm",
       "title_en": "Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm",
-      "title_zh": null,
-      "title_bilingual": "Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm"
+      "title_zh": "Moonshot AI 推出 Kimi Work，这是一款本地桌面代理，据称运行在 Kimi K2.6 上，具有 300 个子代理代理群",
+      "title_bilingual": "Moonshot AI 推出 Kimi Work，这是一款本地桌面代理，据称运行在 Kimi K2.6 上，具有 300 个子代理代理群 / Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm"
     },
     {
       "id": "32820b3eec78f1104b59886b69fc440403f9919e",
@@ -4271,7 +4361,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkbJcdRFFSP",
       "published_at": "2026-06-12T08:08:45Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4325,7 +4415,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEEEnB",
       "published_at": "2026-06-12T08:07:17Z",
       "first_seen_at": "2026-06-12T08:11:15.953975Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4378,7 +4468,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=RsXYMVvx14",
       "published_at": "2026-06-12T08:04:11.913000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -4467,7 +4557,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksBkuEDuJF",
       "published_at": "2026-06-12T06:03:42Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -4595,7 +4685,7 @@
       "url": "https://x.com/Replit/status/2065146579326271883",
       "published_at": "2026-06-11T18:58:07Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:00:37.203440Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -4670,7 +4760,7 @@
       "url": "https://github.blog/changelog/2026-06-11-github-agentic-workflows-is-now-in-public-preview",
       "published_at": "2026-06-11T16:00:35Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://github.blog/changelog/feed/",
         "feed_home": "https://github.blog/changelog/"
@@ -4695,8 +4785,8 @@
       "source_tier_rank": 3,
       "title_original": "GitHub Agentic Workflows is now in public preview",
       "title_en": "GitHub Agentic Workflows is now in public preview",
-      "title_zh": null,
-      "title_bilingual": "GitHub Agentic Workflows is now in public preview"
+      "title_zh": "GitHub Agentic Workflows 现已推出公共预览版",
+      "title_bilingual": "GitHub Agentic Workflows 现已推出公共预览版 / GitHub Agentic Workflows is now in public preview"
     },
     {
       "id": "a41cdfe40fa0ddcfbdbd32b6f9f2af4cefbf3543",
@@ -4707,7 +4797,7 @@
       "url": "https://github.blog/changelog/2026-06-11-agentic-workflows-no-longer-need-a-personal-access-token",
       "published_at": "2026-06-11T15:55:49Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://github.blog/changelog/feed/",
         "feed_home": "https://github.blog/changelog/"
@@ -4732,8 +4822,8 @@
       "source_tier_rank": 3,
       "title_original": "Agentic workflows no longer need a personal access token",
       "title_en": "Agentic workflows no longer need a personal access token",
-      "title_zh": null,
-      "title_bilingual": "Agentic workflows no longer need a personal access token"
+      "title_zh": "代理工作流程不再需要个人访问令牌",
+      "title_bilingual": "代理工作流程不再需要个人访问令牌 / Agentic workflows no longer need a personal access token"
     },
     {
       "id": "a1e6176099470ee9df055641fff056a6279de837",
@@ -4744,7 +4834,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/evaluate-ai-agents-systematically-with-agent-evalkit",
       "published_at": "2026-06-11T15:49:47Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -4770,8 +4860,8 @@
       "source_tier_rank": 3,
       "title_original": "Evaluate AI agents systematically with Agent-EvalKit",
       "title_en": "Evaluate AI agents systematically with Agent-EvalKit",
-      "title_zh": null,
-      "title_bilingual": "Evaluate AI agents systematically with Agent-EvalKit"
+      "title_zh": "使用 Agent-EvalKit 系统地评估 AI 代理",
+      "title_bilingual": "使用 Agent-EvalKit 系统地评估 AI 代理 / Evaluate AI agents systematically with Agent-EvalKit"
     },
     {
       "id": "6b1598c9c68b32e0cbf4971354a3a3b6a1c49bf4",
@@ -4807,8 +4897,8 @@
       "source_tier_rank": 3,
       "title_original": "Useful tools for agent optimization (AXO) in eCommerce?",
       "title_en": "Useful tools for agent optimization (AXO) in eCommerce?",
-      "title_zh": null,
-      "title_bilingual": "Useful tools for agent optimization (AXO) in eCommerce?"
+      "title_zh": "电子商务中代理优化 (AXO) 的有用工具？",
+      "title_bilingual": "电子商务中代理优化 (AXO) 的有用工具？ / Useful tools for agent optimization (AXO) in eCommerce?"
     },
     {
       "id": "1f67d19b1ff14e1f9834fc7f01fe9ab7c776a095",
@@ -4819,7 +4909,7 @@
       "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
       "published_at": "2026-06-11T15:00:00Z",
       "first_seen_at": "2026-06-12T15:20:33.878634Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://blog.google/products/ads-commerce/rss/",
         "feed_home": "https://blog.google/products/ads-commerce/"
@@ -4856,7 +4946,7 @@
       "url": "https://www.marketplacepulse.com/articles/on-tiktok-shop-1-of-sellers-drive-60-of-gmv",
       "published_at": "2026-06-11T14:30:00Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "marketplacepulse_com",
         "web_source_url": "https://www.marketplacepulse.com",
@@ -4950,7 +5040,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
       "published_at": "2026-06-11T13:40:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5006,7 +5096,7 @@
       "url": "https://aibusiness.com/generative-ai/startup-openai-backing-overhaul-enterprise-ai-automation",
       "published_at": "2026-06-11T13:28:02Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aibusiness.com/rss.xml",
         "feed_home": "https://aibusiness.com/"
@@ -5031,8 +5121,8 @@
       "source_tier_rank": 3,
       "title_original": "Startup Gets OpenAI Backing to Overhaul Enterprise AI Automation",
       "title_en": "Startup Gets OpenAI Backing to Overhaul Enterprise AI Automation",
-      "title_zh": null,
-      "title_bilingual": "Startup Gets OpenAI Backing to Overhaul Enterprise AI Automation"
+      "title_zh": "初创公司获得 OpenAI 支持以彻底改革企业人工智能自动化",
+      "title_bilingual": "初创公司获得 OpenAI 支持以彻底改革企业人工智能自动化 / Startup Gets OpenAI Backing to Overhaul Enterprise AI Automation"
     },
     {
       "id": "41bda9dcda8690e60afd232e64cc822f8cc71f76",
@@ -5043,7 +5133,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNuPU",
       "published_at": "2026-06-11T13:10:27Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5096,7 +5186,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "published_at": "2026-06-11T12:21:33Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5149,7 +5239,7 @@
       "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "published_at": "2026-06-11T12:19:17Z",
       "first_seen_at": "2026-06-11T17:42:18.692367Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "douyin_ecommerce_rule_center",
         "web_source_url": "https://school.jinritemai.com/doudian/wap/rules?should_full_screen=1",
@@ -5202,7 +5292,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=4NJAdFIRMe",
       "published_at": "2026-06-11T11:58:36.954000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -5253,7 +5343,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=nGTlUU3dqS",
       "published_at": "2026-06-11T11:56:51.964000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -5366,8 +5456,8 @@
       "source_tier_rank": 3,
       "title_original": "Trust gap slows UK take-up of AI shopping agents",
       "title_en": "Trust gap slows UK take-up of AI shopping agents",
-      "title_zh": null,
-      "title_bilingual": "Trust gap slows UK take-up of AI shopping agents"
+      "title_zh": "信任差距减缓了英国对人工智能购物代理的采用",
+      "title_bilingual": "信任差距减缓了英国对人工智能购物代理的采用 / Trust gap slows UK take-up of AI shopping agents"
     },
     {
       "id": "04dc1bbdc93a49337be840bfb1f32d4bbfbc9bb9",
@@ -5378,7 +5468,7 @@
       "url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact",
       "published_at": "2026-06-11T11:00:45Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
         "feed_home": "https://www.technologyreview.com/topic/artificial-intelligence/"
@@ -5404,8 +5494,8 @@
       "source_tier_rank": 3,
       "title_original": "Google DeepMind is worried about what happens when millions of agents start to interact",
       "title_en": "Google DeepMind is worried about what happens when millions of agents start to interact",
-      "title_zh": null,
-      "title_bilingual": "Google DeepMind is worried about what happens when millions of agents start to interact"
+      "title_zh": "谷歌 DeepMind 担心当数百万智能体开始交互时会发生什么",
+      "title_bilingual": "谷歌 DeepMind 担心当数百万智能体开始交互时会发生什么 / Google DeepMind is worried about what happens when millions of agents start to interact"
     },
     {
       "id": "598ba046e2dddd1f128802a5350a3158f63b446a",
@@ -5453,7 +5543,7 @@
       "url": "https://x.com/SiliconFlowAI/status/2065015632215912879",
       "published_at": "2026-06-11T10:17:47Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:00:37.203440Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -5580,7 +5670,7 @@
       "url": "https://www.marktechpost.com/2026/06/11/nous-research-ships-hermes-agent-profile-builder-identity-model-skills-and-mcp-servers-in-one-dashboard-flow",
       "published_at": "2026-06-11T09:53:52Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://www.marktechpost.com/feed/",
         "feed_home": "https://www.marktechpost.com/"
@@ -5605,8 +5695,8 @@
       "source_tier_rank": 3,
       "title_original": "Nous Research Ships Hermes Agent Profile Builder: Identity, Model, Skills, and MCP Servers in One Dashboard Flow",
       "title_en": "Nous Research Ships Hermes Agent Profile Builder: Identity, Model, Skills, and MCP Servers in One Dashboard Flow",
-      "title_zh": null,
-      "title_bilingual": "Nous Research Ships Hermes Agent Profile Builder: Identity, Model, Skills, and MCP Servers in One Dashboard Flow"
+      "title_zh": "Nous Research 推出 Hermes Agent Profile Builder：在一个仪表板流程中提供身份、模型、技能和 MCP 服务器",
+      "title_bilingual": "Nous Research 推出 Hermes Agent Profile Builder：在一个仪表板流程中提供身份、模型、技能和 MCP 服务器 / Nous Research Ships Hermes Agent Profile Builder: Identity, Model, Skills, and MCP Servers in One Dashboard Flow"
     },
     {
       "id": "ce57b94717309736cc5d6ec9ac9924dc182f40f9",
@@ -5671,7 +5761,7 @@
       "url": "https://www.marktechpost.com/2026/06/11/meet-north-mini-code-coheres-30b-open-weight-mixture-of-experts-model-with-3b-active-parameters-for-agentic-coding",
       "published_at": "2026-06-11T08:33:27Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://www.marktechpost.com/feed/",
         "feed_home": "https://www.marktechpost.com/"
@@ -5696,8 +5786,8 @@
       "source_tier_rank": 3,
       "title_original": "Meet ‘North Mini Code’: Cohere’s 30B Open-Weight Mixture-of-Experts Model With 3B Active Parameters for Agentic Coding",
       "title_en": "Meet ‘North Mini Code’: Cohere’s 30B Open-Weight Mixture-of-Experts Model With 3B Active Parameters for Agentic Coding",
-      "title_zh": null,
-      "title_bilingual": "Meet ‘North Mini Code’: Cohere’s 30B Open-Weight Mixture-of-Experts Model With 3B Active Parameters for Agentic Coding"
+      "title_zh": "认识“North Mini Code”：Cohere 的 30B 开放权重混合专家模型，具有用于代理编码的 3B 主动参数",
+      "title_bilingual": "认识“North Mini Code”：Cohere 的 30B 开放权重混合专家模型，具有用于代理编码的 3B 主动参数 / Meet ‘North Mini Code’: Cohere’s 30B Open-Weight Mixture-of-Experts Model With 3B Active Parameters for Agentic Coding"
     },
     {
       "id": "66797bd1bf2a1b398d5473aadc01e0c6bfe7b365",
@@ -5708,7 +5798,7 @@
       "url": "https://www.newrank.cn/article/detail/34517",
       "published_at": "2026-06-11T08:32:44Z",
       "first_seen_at": "2026-06-12T04:07:27.920849Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -5898,7 +5988,7 @@
       "url": "https://mp.weixin.qq.com/s/nFSSzluc57xPv50Zbh4owg",
       "published_at": "2026-06-11T01:58:00Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:00:37.203440Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -5980,7 +6070,7 @@
       "url": "https://arxiv.org/abs/2606.13289",
       "published_at": "2026-06-11T00:00:00Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:00:37.203440Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -6017,7 +6107,7 @@
       "url": "https://simonwillison.net/2026/Jun/10/datasette-agent",
       "published_at": "2026-06-10T23:57:27Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://simonwillison.net/atom/everything/",
         "feed_home": "https://simonwillison.net/"
@@ -6042,8 +6132,8 @@
       "source_tier_rank": 3,
       "title_original": "datasette-agent 0.2a0",
       "title_en": "datasette-agent 0.2a0",
-      "title_zh": null,
-      "title_bilingual": "datasette-agent 0.2a0"
+      "title_zh": "数据集代理 0.2a0",
+      "title_bilingual": "数据集代理 0.2a0 / datasette-agent 0.2a0"
     },
     {
       "id": "1cde13c2ce38319baf8fb4f155a36f4f0a79d30d",
@@ -6079,8 +6169,8 @@
       "source_tier_rank": 3,
       "title_original": "Adidas offers ecommerce-as-a-service (EaaS) featuring AI agents",
       "title_en": "Adidas offers ecommerce-as-a-service (EaaS) featuring AI agents",
-      "title_zh": null,
-      "title_bilingual": "Adidas offers ecommerce-as-a-service (EaaS) featuring AI agents"
+      "title_zh": "阿迪达斯提供采用人工智能代理的电子商务即服务 (EaaS)",
+      "title_bilingual": "阿迪达斯提供采用人工智能代理的电子商务即服务 (EaaS) / Adidas offers ecommerce-as-a-service (EaaS) featuring AI agents"
     },
     {
       "id": "258fa083cd8ad23c1b69497fc3cc5fb789c29c51",
@@ -6116,8 +6206,8 @@
       "source_tier_rank": 3,
       "title_original": "GrubMarket adds AI agent with goal to assist sales teams",
       "title_en": "GrubMarket adds AI agent with goal to assist sales teams",
-      "title_zh": null,
-      "title_bilingual": "GrubMarket adds AI agent with goal to assist sales teams"
+      "title_zh": "GrubMarket 添加人工智能代理，旨在协助销售团队",
+      "title_bilingual": "GrubMarket 添加人工智能代理，旨在协助销售团队 / GrubMarket adds AI agent with goal to assist sales teams"
     },
     {
       "id": "ba73fac7356ef9ab021fcd638cfef727695fa1aa",
@@ -6172,7 +6262,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/stop-hand-tuning-kernels-how-neuron-agentic-development-accelerates-aws-trainium-optimizations",
       "published_at": "2026-06-10T15:26:45Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -6198,8 +6288,8 @@
       "source_tier_rank": 3,
       "title_original": "Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations",
       "title_en": "Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations",
-      "title_zh": null,
-      "title_bilingual": "Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations"
+      "title_zh": "停止手动调整内核：Neuron Agentic Development 如何加速 AWS Trainium 优化",
+      "title_bilingual": "停止手动调整内核：Neuron Agentic Development 如何加速 AWS Trainium 优化 / Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations"
     },
     {
       "id": "3eb7efb75872a19b3f7364bdc4f940a42e086ba7",
@@ -6210,7 +6300,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-equipment-repair-assistant-using-amazon-bedrock-agentcore",
       "published_at": "2026-06-10T15:21:35Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -6236,8 +6326,8 @@
       "source_tier_rank": 3,
       "title_original": "Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore",
       "title_en": "Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore",
-      "title_zh": null,
-      "title_bilingual": "Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore"
+      "title_zh": "使用 Amazon Bedrock AgentCore 构建 AI 驱动的设备维修助手",
+      "title_bilingual": "使用 Amazon Bedrock AgentCore 构建 AI 驱动的设备维修助手 / Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore"
     },
     {
       "id": "0870406c8469871511d281919f202c714dd8f4ff",
@@ -6361,7 +6451,7 @@
       "url": "https://martech.org/the-martech-categories-hit-hardest-by-ai-agents",
       "published_at": "2026-06-10T12:09:00Z",
       "first_seen_at": "2026-06-12T15:44:33.165688Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://martech.org/feed/",
         "feed_home": "https://martech.org/"
@@ -6386,8 +6476,8 @@
       "source_tier_rank": 3,
       "title_original": "The martech categories hit hardest by AI agents",
       "title_en": "The martech categories hit hardest by AI agents",
-      "title_zh": null,
-      "title_bilingual": "The martech categories hit hardest by AI agents"
+      "title_zh": "Martech 类别受 AI 代理打击最严重",
+      "title_bilingual": "Martech 类别受 AI 代理打击最严重 / The martech categories hit hardest by AI agents"
     },
     {
       "id": "cac6473477d3df8947abf093047f4a67f8c2332b",
@@ -6506,7 +6596,7 @@
       "url": "https://martech.org/ai-skills-the-next-layer-of-marketing-automation",
       "published_at": "2026-06-10T11:00:00Z",
       "first_seen_at": "2026-06-12T15:44:33.165688Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://martech.org/feed/",
         "feed_home": "https://martech.org/"
@@ -6529,8 +6619,8 @@
       "source_tier_rank": 3,
       "title_original": "AI skills: The next layer of marketing automation by Optmyzr",
       "title_en": "AI skills: The next layer of marketing automation by Optmyzr",
-      "title_zh": null,
-      "title_bilingual": "AI skills: The next layer of marketing automation by Optmyzr"
+      "title_zh": "AI 技能：Optmyzr 的下一层营销自动化",
+      "title_bilingual": "AI 技能：Optmyzr 的下一层营销自动化 / AI skills: The next layer of marketing automation by Optmyzr"
     },
     {
       "id": "1b6c2d6d0b4bc975288bdc148c7c44931263ee9b",
@@ -6541,7 +6631,7 @@
       "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research",
       "published_at": "2026-06-10T10:21:19Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://deepmind.google/blog/rss.xml",
         "feed_home": "https://deepmind.google/blog"
@@ -6567,8 +6657,8 @@
       "source_tier_rank": 3,
       "title_original": "Investing in multi-agent AI safety research",
       "title_en": "Investing in multi-agent AI safety research",
-      "title_zh": null,
-      "title_bilingual": "Investing in multi-agent AI safety research"
+      "title_zh": "投资多智能体人工智能安全研究",
+      "title_bilingual": "投资多智能体人工智能安全研究 / Investing in multi-agent AI safety research"
     },
     {
       "id": "06a3d420375d8531271b74ee561906a1583abc0a",
@@ -6689,7 +6779,7 @@
       "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
       "published_at": "2026-06-09T21:35:31Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://simonwillison.net/atom/everything/",
         "feed_home": "https://simonwillison.net/"
@@ -6714,8 +6804,8 @@
       "source_tier_rank": 3,
       "title_original": "Setting a custom price for a model in AgentsView",
       "title_en": "Setting a custom price for a model in AgentsView",
-      "title_zh": null,
-      "title_bilingual": "Setting a custom price for a model in AgentsView"
+      "title_zh": "在 AgentsView 中为模型设置自定义价格",
+      "title_bilingual": "在 AgentsView 中为模型设置自定义价格 / Setting a custom price for a model in AgentsView"
     },
     {
       "id": "bf1006319af67a79ef7bfcab585583f31d53ac24",
@@ -6726,7 +6816,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/hands-free-first-notice-of-loss-using-strands-agents-and-amazon-bedrock-agentcore-browser-tool-for-intelligent-claims-intake",
       "published_at": "2026-06-09T16:43:28Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -6752,8 +6842,8 @@
       "source_tier_rank": 3,
       "title_original": "Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake",
       "title_en": "Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake",
-      "title_zh": null,
-      "title_bilingual": "Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake"
+      "title_zh": "免提第一时间通知损失：使用 Strands Agents 和 Amazon Bedrock AgentCore 浏览器工具进行智能索赔受理",
+      "title_bilingual": "免提第一时间通知损失：使用 Strands Agents 和 Amazon Bedrock AgentCore 浏览器工具进行智能索赔受理 / Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake"
     },
     {
       "id": "d211252d113d06ddc02090d4911e0aa52c20ff62",
@@ -6764,7 +6854,7 @@
       "url": "https://developer.nvidia.com/blog/accelerating-federated-learning-research-with-ai-agents-and-nvidia-flare-auto-fl",
       "published_at": "2026-06-09T16:35:08Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
         "feed_home": "https://developer.nvidia.com/blog/category/generative-ai/"
@@ -6790,8 +6880,8 @@
       "source_tier_rank": 3,
       "title_original": "Accelerating Federated Learning Research with AI Agents and NVIDIA FLARE Auto-FL",
       "title_en": "Accelerating Federated Learning Research with AI Agents and NVIDIA FLARE Auto-FL",
-      "title_zh": null,
-      "title_bilingual": "Accelerating Federated Learning Research with AI Agents and NVIDIA FLARE Auto-FL"
+      "title_zh": "利用 AI 代理和 NVIDIA FLARE Auto-FL 加速联合学习研究",
+      "title_bilingual": "利用 AI 代理和 NVIDIA FLARE Auto-FL 加速联合学习研究 / Accelerating Federated Learning Research with AI Agents and NVIDIA FLARE Auto-FL"
     },
     {
       "id": "ca1fa041887475894244d675d0b609535cec59fb",
@@ -6802,7 +6892,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic",
       "published_at": "2026-06-09T16:10:37Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -6828,8 +6918,8 @@
       "source_tier_rank": 3,
       "title_original": "Build an agentic incident triage assistant with Amazon Quick and New Relic",
       "title_en": "Build an agentic incident triage assistant with Amazon Quick and New Relic",
-      "title_zh": null,
-      "title_bilingual": "Build an agentic incident triage assistant with Amazon Quick and New Relic"
+      "title_zh": "使用 Amazon Quick 和 New Relic 构建代理事件分类助手",
+      "title_bilingual": "使用 Amazon Quick 和 New Relic 构建代理事件分类助手 / Build an agentic incident triage assistant with Amazon Quick and New Relic"
     },
     {
       "id": "ea33d62feb3431e668b5aeb645f9e5f3b0dc266c",
@@ -6840,7 +6930,7 @@
       "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
       "published_at": "2026-06-09T16:00:00Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://github.blog/ai-and-ml/feed/",
         "feed_home": "https://github.blog/ai-and-ml/"
@@ -6866,8 +6956,8 @@
       "source_tier_rank": 3,
       "title_original": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
       "title_en": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
-      "title_zh": null,
-      "title_bilingual": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI"
+      "title_zh": "从一次性提示到工作流程：如何在 GitHub Copilot CLI 中使用自定义代理",
+      "title_bilingual": "从一次性提示到工作流程：如何在 GitHub Copilot CLI 中使用自定义代理 / From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI"
     },
     {
       "id": "fd788f557c04ccdad4edaa445429f39ac9cf3d38",
@@ -6922,7 +7012,7 @@
       "url": "https://developer.nvidia.com/blog/evaluate-clinical-asr-models-faster-with-agent-skills-and-nvidia-nemotron-speech",
       "published_at": "2026-06-09T15:00:00Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
         "feed_home": "https://developer.nvidia.com/blog/category/generative-ai/"
@@ -6948,8 +7038,8 @@
       "source_tier_rank": 3,
       "title_original": "Evaluate Clinical ASR Models Faster with Agent Skills and NVIDIA Nemotron Speech",
       "title_en": "Evaluate Clinical ASR Models Faster with Agent Skills and NVIDIA Nemotron Speech",
-      "title_zh": null,
-      "title_bilingual": "Evaluate Clinical ASR Models Faster with Agent Skills and NVIDIA Nemotron Speech"
+      "title_zh": "利用代理技能和 NVIDIA Nemotron 语音更快地评估临床 ASR 模型",
+      "title_bilingual": "利用代理技能和 NVIDIA Nemotron 语音更快地评估临床 ASR 模型 / Evaluate Clinical ASR Models Faster with Agent Skills and NVIDIA Nemotron Speech"
     },
     {
       "id": "37c589fbfe216c46fb043da2938715160b360f7f",
@@ -6985,8 +7075,8 @@
       "source_tier_rank": 3,
       "title_original": "My AI agent stack as a Y Combinator founder",
       "title_en": "My AI agent stack as a Y Combinator founder",
-      "title_zh": null,
-      "title_bilingual": "My AI agent stack as a Y Combinator founder"
+      "title_zh": "我作为 Y Combinator 创始人的 AI 代理栈",
+      "title_bilingual": "我作为 Y Combinator 创始人的 AI 代理栈 / My AI agent stack as a Y Combinator founder"
     },
     {
       "id": "9f50dda0062fb2cf13b39c18f14a709a8835c971",
@@ -6997,7 +7087,7 @@
       "url": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model",
       "published_at": "2026-06-09T14:10:19Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://deepmind.google/blog/rss.xml",
         "feed_home": "https://deepmind.google/blog"
@@ -7022,8 +7112,8 @@
       "source_tier_rank": 3,
       "title_original": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
       "title_en": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
-      "title_zh": null,
-      "title_bilingual": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model"
+      "title_zh": "Gemma 4 12B 简介：统一、无编码器的多模态模型",
+      "title_bilingual": "Gemma 4 12B 简介：统一、无编码器的多模态模型 / Introducing Gemma 4 12B: a unified, encoder-free multimodal model"
     },
     {
       "id": "4e307e04de828fccad7d7de3ce6da451717f10f7",
@@ -7078,7 +7168,7 @@
       "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
       "published_at": "2026-06-09T10:46:19Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://huggingface.co/blog/feed.xml",
         "feed_home": "https://huggingface.co/blog"
@@ -7104,8 +7194,8 @@
       "source_tier_rank": 3,
       "title_original": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
       "title_en": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
-      "title_zh": null,
-      "title_bilingual": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces"
+      "title_zh": "特工如何通过链接两个拥抱的面部空间来构建 3D 巴黎画廊",
+      "title_bilingual": "特工如何通过链接两个拥抱的面部空间来构建 3D 巴黎画廊 / How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces"
     },
     {
       "id": "dedf60551169084d7be932b7039b0d0ddc2932d6",
@@ -7116,7 +7206,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=TParGlyquv",
       "published_at": "2026-06-09T03:28:16.623000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -7168,7 +7258,7 @@
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=YI9zgXSF6o",
       "published_at": "2026-06-09T03:26:21.935000Z",
       "first_seen_at": "2026-06-12T08:02:46.098641Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "web_source_id": "kuaishou_ecommerce_rule_center",
         "web_source_url": "https://edu.kwaixiaodian.com/rule/web/index",
@@ -7266,7 +7356,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-amazon-bedrock-agentcore",
       "published_at": "2026-06-08T16:35:02Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -7292,8 +7382,8 @@
       "source_tier_rank": 3,
       "title_original": "It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore",
       "title_en": "It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore",
-      "title_zh": null,
-      "title_bilingual": "It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore"
+      "title_zh": "现在可以安全地关闭您的笔记本电脑：在 Amazon Bedrock AgentCore 上托管编码代理",
+      "title_bilingual": "现在可以安全地关闭您的笔记本电脑：在 Amazon Bedrock AgentCore 上托管编码代理 / It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore"
     },
     {
       "id": "a8d6e329b7ebbd5321a1dfbfbd773290b26e28df",
@@ -7304,7 +7394,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-microphone-required",
       "published_at": "2026-06-08T15:57:45Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -7330,8 +7420,8 @@
       "source_tier_rank": 3,
       "title_original": "Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required",
       "title_en": "Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required",
-      "title_zh": null,
-      "title_bilingual": "Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required"
+      "title_zh": "大规模评估您的 Amazon Nova Sonic 语音代理，无需麦克风",
+      "title_bilingual": "大规模评估您的 Amazon Nova Sonic 语音代理，无需麦克风 / Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required"
     },
     {
       "id": "adae229861ad1964b8063d53234a4a865b95ec56",
@@ -7342,7 +7432,7 @@
       "url": "https://towardsai.net/p/machine-learning/build-a-zero-cost-web-automation-pipeline-with-openrouter-openclaw-and-mediause",
       "published_at": "2026-06-08T09:09:12Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://towardsai.net/feed",
         "feed_home": "https://towardsai.net/"
@@ -7365,8 +7455,8 @@
       "source_tier_rank": 3,
       "title_original": "Build a Zero-Cost Web Automation Pipeline With OpenRouter, OpenClaw, and MediaUse",
       "title_en": "Build a Zero-Cost Web Automation Pipeline With OpenRouter, OpenClaw, and MediaUse",
-      "title_zh": null,
-      "title_bilingual": "Build a Zero-Cost Web Automation Pipeline With OpenRouter, OpenClaw, and MediaUse"
+      "title_zh": "使用 OpenRouter、OpenClaw 和 MediaUse 构建零成本 Web 自动化管道",
+      "title_bilingual": "使用 OpenRouter、OpenClaw 和 MediaUse 构建零成本 Web 自动化管道 / Build a Zero-Cost Web Automation Pipeline With OpenRouter, OpenClaw, and MediaUse"
     },
     {
       "id": "7c176be3569d423a28d9ab71a16cb9b4de43e4bb",
@@ -7377,7 +7467,7 @@
       "url": "https://towardsai.net/p/machine-learning/beyond-the-prompt-why-autonomous-ai-agents-are-replacing-the-chatbot",
       "published_at": "2026-06-08T09:08:07Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://towardsai.net/feed",
         "feed_home": "https://towardsai.net/"
@@ -7402,8 +7492,8 @@
       "source_tier_rank": 3,
       "title_original": "Beyond the Prompt: Why Autonomous AI Agents Are Replacing the Chatbot",
       "title_en": "Beyond the Prompt: Why Autonomous AI Agents Are Replacing the Chatbot",
-      "title_zh": null,
-      "title_bilingual": "Beyond the Prompt: Why Autonomous AI Agents Are Replacing the Chatbot"
+      "title_zh": "超越提示：为什么自主人工智能代理正在取代聊天机器人",
+      "title_bilingual": "超越提示：为什么自主人工智能代理正在取代聊天机器人 / Beyond the Prompt: Why Autonomous AI Agents Are Replacing the Chatbot"
     },
     {
       "id": "2e943973f38210ec8d7efbc5d8c714ae92556c75",
@@ -7414,7 +7504,7 @@
       "url": "https://towardsai.net/p/machine-learning/moonshot-cracked-claude-codes-playbook-with-an-mit-terminal-agent-and-a-0-60-model",
       "published_at": "2026-06-08T09:07:31Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://towardsai.net/feed",
         "feed_home": "https://towardsai.net/"
@@ -7440,8 +7530,8 @@
       "source_tier_rank": 3,
       "title_original": "Moonshot Cracked Claude Code’s Playbook with an MIT Terminal Agent and a $0.60 Model",
       "title_en": "Moonshot Cracked Claude Code’s Playbook with an MIT Terminal Agent and a $0.60 Model",
-      "title_zh": null,
-      "title_bilingual": "Moonshot Cracked Claude Code’s Playbook with an MIT Terminal Agent and a $0.60 Model"
+      "title_zh": "Moonshot 使用 MIT 终端代理和 0.60 美元的模型破解了 Claude Code 的剧本",
+      "title_bilingual": "Moonshot 使用 MIT 终端代理和 0.60 美元的模型破解了 Claude Code 的剧本 / Moonshot Cracked Claude Code’s Playbook with an MIT Terminal Agent and a $0.60 Model"
     },
     {
       "id": "41b2f8ebc87b588b03e77cc2d5bc2aa7ab042ffc",
@@ -7452,7 +7542,7 @@
       "url": "https://towardsai.net/p/machine-learning/langchain-explained-understanding-models-prompts-chains-memory-indexes-and-agents",
       "published_at": "2026-06-08T08:43:59Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://towardsai.net/feed",
         "feed_home": "https://towardsai.net/"
@@ -7477,8 +7567,8 @@
       "source_tier_rank": 3,
       "title_original": "LangChain Explained: Understanding Models, Prompts, Chains, Memory, Indexes, and Agents",
       "title_en": "LangChain Explained: Understanding Models, Prompts, Chains, Memory, Indexes, and Agents",
-      "title_zh": null,
-      "title_bilingual": "LangChain Explained: Understanding Models, Prompts, Chains, Memory, Indexes, and Agents"
+      "title_zh": "LangChain详解：理解模型、提示、链、内存、索引和代理",
+      "title_bilingual": "LangChain详解：理解模型、提示、链、内存、索引和代理 / LangChain Explained: Understanding Models, Prompts, Chains, Memory, Indexes, and Agents"
     },
     {
       "id": "76a5f6755d05a4d61b7835e772fecf43904d2edc",
@@ -7489,7 +7579,7 @@
       "url": "https://huggingface.co/blog/openenv-agentic-rl",
       "published_at": "2026-06-08T00:00:00Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://huggingface.co/blog/feed.xml",
         "feed_home": "https://huggingface.co/blog"
@@ -7515,8 +7605,8 @@
       "source_tier_rank": 3,
       "title_original": "The Open Source Community is backing OpenEnv for Agentic RL",
       "title_en": "The Open Source Community is backing OpenEnv for Agentic RL",
-      "title_zh": null,
-      "title_bilingual": "The Open Source Community is backing OpenEnv for Agentic RL"
+      "title_zh": "开源社区支持 OpenEnv 用于 Agentic RL",
+      "title_bilingual": "开源社区支持 OpenEnv 用于 Agentic RL / The Open Source Community is backing OpenEnv for Agentic RL"
     },
     {
       "id": "5bb7b0619f23f8f6d34937dc55797aad7e4835a8",
@@ -7527,7 +7617,7 @@
       "url": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit",
       "published_at": "2026-06-07T23:56:38Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T04:39:57.246832Z",
+      "last_seen_at": "2026-06-13T04:58:27.563610Z",
       "meta": {
         "feed_url": "https://simonwillison.net/atom/everything/",
         "feed_home": "https://simonwillison.net/"
@@ -7552,8 +7642,8 @@
       "source_tier_rank": 3,
       "title_original": "datasette-agent-edit 0.1a0",
       "title_en": "datasette-agent-edit 0.1a0",
-      "title_zh": null,
-      "title_bilingual": "datasette-agent-edit 0.1a0"
+      "title_zh": "数据集代理编辑 0.1a0",
+      "title_bilingual": "数据集代理编辑 0.1a0 / datasette-agent-edit 0.1a0"
     }
   ],
   "all_mode_data_url": "data/latest-24h-all.json"
