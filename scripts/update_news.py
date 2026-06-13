@@ -2669,6 +2669,9 @@ def fetch_web_sources(
             "site_name": "重点网页源",
             "source_id": source_id,
             "source_name": source_name,
+            "platform": source.get("platform"),
+            "domain": source.get("domain"),
+            "type": source.get("type"),
             "url": source_url,
             "ok": error is None,
             "item_count": len(local_items),
@@ -2726,6 +2729,142 @@ def fetch_web_sources(
         "zero_item_source_count": zero_count,
     }
     return out, summary_status, source_statuses
+
+
+REAL_PUBLISHED_TIME_SOURCES = {"api", "detail_meta", "detail_text", "list_text"}
+
+
+def is_websource_detail_item(item: RawItem | dict[str, Any]) -> bool:
+    meta = item.meta if isinstance(item, RawItem) else dict(item.get("meta") or {})
+    url = item.url if isinstance(item, RawItem) else str(item.get("url") or "")
+    source_url = str(meta.get("web_source_url") or "")
+    if str(meta.get("web_source_mode") or "") == "page_snapshot":
+        return False
+    if meta.get("article_url_source"):
+        return True
+    if not source_url:
+        return True
+    item_url = normalize_url(url)
+    base_url = normalize_url(source_url)
+    item_path = urlparse(item_url).path.rstrip("/")
+    base_path = urlparse(base_url).path.rstrip("/")
+    if item_url == base_url:
+        return False
+    if item_path and item_path != base_path:
+        return True
+    return False
+
+
+def has_real_published_time(item: RawItem | dict[str, Any]) -> bool:
+    meta = item.meta if isinstance(item, RawItem) else dict(item.get("meta") or {})
+    published = item.published_at if isinstance(item, RawItem) else parse_iso(str(item.get("published_at") or ""))
+    return bool(published and str(meta.get("published_time_source") or "") in REAL_PUBLISHED_TIME_SOURCES)
+
+
+def build_source_audit_payload(
+    *,
+    generated_at: str,
+    web_source_statuses: list[dict[str, Any]],
+    web_items: list[RawItem],
+) -> dict[str, Any]:
+    items_by_source: dict[str, list[RawItem]] = {}
+    for item in web_items:
+        source_id = str(item.meta.get("web_source_id") or "")
+        if source_id:
+            items_by_source.setdefault(source_id, []).append(item)
+
+    audited_sources: list[dict[str, Any]] = []
+    for status in web_source_statuses:
+        source_id = str(status.get("source_id") or "")
+        source_items = items_by_source.get(source_id, [])
+        item_count = len(source_items)
+        detail_count = sum(1 for item in source_items if is_websource_detail_item(item))
+        real_time_count = sum(1 for item in source_items if has_real_published_time(item))
+        snapshot_count = int(status.get("snapshot_count") or 0)
+        priority = str(status.get("priority") or "")
+        ok = bool(status.get("ok"))
+        skipped = status.get("collection_mode") == "skipped"
+        if not ok:
+            recommendation = "disable"
+            reason = "fetch_failed"
+        elif skipped:
+            recommendation = "candidate_only"
+            reason = "manual_verify_required"
+        elif item_count == 0:
+            recommendation = "candidate_only"
+            reason = "no_items"
+        elif snapshot_count and snapshot_count >= item_count:
+            recommendation = "candidate_only"
+            reason = "snapshot_only"
+        elif priority in {"P0", "P1"} and real_time_count == 0:
+            recommendation = "candidate_only"
+            reason = "missing_real_publish_time"
+        elif priority in {"P0", "P1"} and detail_count == 0:
+            recommendation = "candidate_only"
+            reason = "missing_detail_url"
+        else:
+            recommendation = "enable"
+            reason = "usable"
+
+        published_time_sources = sorted(
+            {
+                str(item.meta.get("published_time_source") or "")
+                for item in source_items
+                if item.meta.get("published_time_source")
+            }
+        )
+        article_url_sources = sorted(
+            {
+                str(item.meta.get("article_url_source") or "")
+                for item in source_items
+                if item.meta.get("article_url_source")
+            }
+        )
+        audited_sources.append(
+            {
+                "source_id": source_id,
+                "source_name": status.get("source_name"),
+                "platform": status.get("platform"),
+                "domain": status.get("domain"),
+                "type": status.get("type"),
+                "priority": status.get("priority"),
+                "url": status.get("url"),
+                "ok": ok,
+                "collection_mode": status.get("collection_mode"),
+                "ingestion_method": status.get("ingestion_method"),
+                "item_count": item_count,
+                "detail_url_count": detail_count,
+                "real_published_time_count": real_time_count,
+                "snapshot_count": snapshot_count,
+                "detail_url_rate": round(detail_count / item_count, 4) if item_count else 0,
+                "real_published_time_rate": round(real_time_count / item_count, 4) if item_count else 0,
+                "published_time_sources": published_time_sources,
+                "article_url_sources": article_url_sources,
+                "status_code": status.get("status_code"),
+                "error": status.get("error"),
+                "skip_reason": status.get("skip_reason"),
+                "recommendation": recommendation,
+                "reason": reason,
+            }
+        )
+
+    p0_p1 = [s for s in audited_sources if s.get("priority") in {"P0", "P1"}]
+    return {
+        "generated_at": generated_at,
+        "description": "Web source quality audit. Homepage and daily brief should prefer sources with detail URLs and real publish times.",
+        "summary": {
+            "source_total": len(audited_sources),
+            "p0_p1_total": len(p0_p1),
+            "enable_total": sum(1 for s in audited_sources if s.get("recommendation") == "enable"),
+            "candidate_only_total": sum(1 for s in audited_sources if s.get("recommendation") == "candidate_only"),
+            "disable_total": sum(1 for s in audited_sources if s.get("recommendation") == "disable"),
+            "p0_p1_enable_total": sum(1 for s in p0_p1 if s.get("recommendation") == "enable"),
+            "p0_p1_candidate_only_total": sum(1 for s in p0_p1 if s.get("recommendation") == "candidate_only"),
+            "active_detail_sources": sum(1 for s in audited_sources if int(s.get("detail_url_count") or 0) > 0),
+            "active_real_time_sources": sum(1 for s in audited_sources if int(s.get("real_published_time_count") or 0) > 0),
+        },
+        "sources": audited_sources,
+    }
 
 
 def parse_telegram_public_items(
@@ -4525,6 +4664,7 @@ def main() -> int:
     status_path = output_dir / "source-status.json"
     daily_brief_path = output_dir / "daily-brief.json"
     ai_radar_path = output_dir / "ai-radar.json"
+    source_audit_path = output_dir / "source-audit.json"
     stories_merged_path = output_dir / "stories-merged.json"
     merge_log_path = output_dir / "merge-log.json"
     waytoagi_path = output_dir / "waytoagi-7d.json"
@@ -4537,6 +4677,7 @@ def main() -> int:
     raw_items, statuses = collect_all(session, now, topic=args.topic)
     rss_feed_statuses: list[dict[str, Any]] = []
     web_source_statuses: list[dict[str, Any]] = []
+    web_items_for_audit: list[RawItem] = []
     email_digest_payload, agentmail_status = maybe_fetch_agentmail_digest(
         session,
         generated_at=iso(now),
@@ -4599,6 +4740,7 @@ def main() -> int:
                 web_sources_path,
                 max_sources=max(0, int(args.web_max_sources)),
             )
+            web_items_for_audit = list(web_items)
             raw_items.extend(web_items)
             statuses.append(web_summary_status)
         else:
@@ -4875,6 +5017,11 @@ def main() -> int:
         "agentmail": agentmail_status,
         "x_api": x_api_status,
     }
+    source_audit_payload = build_source_audit_payload(
+        generated_at=generated_at,
+        web_source_statuses=web_source_statuses,
+        web_items=web_items_for_audit,
+    )
 
     waytoagi_payload = {
         "generated_at": iso(now),
@@ -4929,6 +5076,10 @@ def main() -> int:
         encoding="utf-8",
     )
     status_path.write_text(json.dumps(sanitize_public_payload(status_payload), ensure_ascii=False, indent=2), encoding="utf-8")
+    source_audit_path.write_text(
+        json.dumps(sanitize_public_payload(source_audit_payload), ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
     if email_digest_payload is not None:
         email_digest_path.write_text(
             json.dumps(sanitize_public_payload(email_digest_payload), ensure_ascii=False, indent=2),
@@ -4945,6 +5096,7 @@ def main() -> int:
     print(f"Wrote: {merge_log_path} ({len(merge_events)} merge events)")
     print(f"Wrote: {archive_path} ({len(archive)} items)")
     print(f"Wrote: {status_path}")
+    print(f"Wrote: {source_audit_path} ({source_audit_payload.get('summary', {}).get('source_total', 0)} sources)")
     if email_digest_payload is not None:
         print(f"Wrote: {email_digest_path} ({email_digest_payload.get('total_messages', 0)} email items)")
     print(f"Wrote: {waytoagi_path} ({waytoagi_payload.get('count_7d', 0)} items)")

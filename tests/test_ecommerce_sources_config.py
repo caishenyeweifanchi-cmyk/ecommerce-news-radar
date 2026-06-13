@@ -4,7 +4,9 @@ from pathlib import Path
 
 from scripts.ecommerce_relevance import score_ecommerce_relevance
 from scripts.update_news import (
+    RawItem,
     build_daily_brief_payload,
+    build_source_audit_payload,
     build_web_source_snapshot_item,
     canonical_douyin_article_url,
     canonicalize_archive_item_ids,
@@ -15,6 +17,8 @@ from scripts.update_news import (
     fetch_douyin_rule_center_items,
     fetch_kuaishou_rule_center_items,
     fetch_xiaohongshu_official_info_items,
+    has_real_published_time,
+    is_websource_detail_item,
     suppress_superseded_web_snapshots,
 )
 from scripts.ecommerce_relevance import score_ecommerce_relevance
@@ -306,6 +310,91 @@ def test_kuaishou_rule_api_items_link_to_rule_detail_page():
     assert items[0].url == "https://edu.kwaixiaodian.com/rule/web/detail?id=4NJAdFIRMe"
     assert items[0].published_at == datetime(2026, 6, 11, 11, 58, 36, 954000, tzinfo=timezone.utc)
     assert items[0].meta["article_url_source"] == "kuaishou_rule_resource_api"
+
+
+def test_source_audit_marks_detail_and_real_time_sources_usable():
+    item = RawItem(
+        site_id="websource",
+        site_name="重点网页源",
+        source="抖音电商规则中心",
+        title="关于修订规则的通知",
+        url="https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+        published_at=datetime(2026, 6, 11, 13, 40, 33, tzinfo=timezone.utc),
+        meta={
+            "web_source_id": "douyin_ecommerce_rule_center",
+            "web_source_url": "https://school.jinritemai.com/doudian/web/rules",
+            "web_source_mode": "api_list",
+            "article_url_source": "douyin_articlev0",
+            "published_time_source": "api",
+        },
+    )
+    payload = build_source_audit_payload(
+        generated_at="2026-06-12T00:00:00Z",
+        web_source_statuses=[
+            {
+                "source_id": "douyin_ecommerce_rule_center",
+                "source_name": "抖音电商规则中心",
+                "platform": "抖音电商",
+                "domain": "平台规则",
+                "type": "规则中心",
+                "priority": "P0",
+                "url": "https://school.jinritemai.com/doudian/web/rules",
+                "ok": True,
+                "collection_mode": "api_list",
+                "ingestion_method": "web_list_adapter",
+                "item_count": 1,
+                "snapshot_count": 0,
+            }
+        ],
+        web_items=[item],
+    )
+
+    source = payload["sources"][0]
+    assert is_websource_detail_item(item) is True
+    assert has_real_published_time(item) is True
+    assert source["recommendation"] == "enable"
+    assert source["detail_url_rate"] == 1
+    assert source["real_published_time_rate"] == 1
+    assert payload["summary"]["p0_p1_enable_total"] == 1
+
+
+def test_source_audit_keeps_snapshot_only_source_candidate():
+    item = RawItem(
+        site_id="websource",
+        site_name="重点网页源",
+        source="淘宝规则中心",
+        title="页面监控：淘宝规则中心 · 淘宝规则",
+        url="https://rule.taobao.com/index.htm",
+        published_at=None,
+        meta={
+            "web_source_id": "taobao_rule_center",
+            "web_source_url": "https://rule.taobao.com/index.htm",
+            "web_source_mode": "page_snapshot",
+            "published_time_source": "snapshot",
+        },
+    )
+    payload = build_source_audit_payload(
+        generated_at="2026-06-12T00:00:00Z",
+        web_source_statuses=[
+            {
+                "source_id": "taobao_rule_center",
+                "source_name": "淘宝规则中心",
+                "priority": "P0",
+                "url": "https://rule.taobao.com/index.htm",
+                "ok": True,
+                "collection_mode": "snapshot",
+                "item_count": 1,
+                "snapshot_count": 1,
+            }
+        ],
+        web_items=[item],
+    )
+
+    source = payload["sources"][0]
+    assert is_websource_detail_item(item) is False
+    assert has_real_published_time(item) is False
+    assert source["recommendation"] == "candidate_only"
+    assert source["reason"] == "snapshot_only"
 
 
 def test_douyin_rule_urls_are_canonicalized_to_article_detail_page():
