@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T10:44:24.534070Z",
+  "generated_at": "2026-06-13T12:21:59.813508Z",
   "window_hours": 168,
   "day_filter": "2026-06-13",
   "day_filter_timezone": "Asia/Shanghai",
@@ -44,14 +44,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.826,
-          "importance": 0.826,
-          "importance_score": 0.826,
+          "score": 0.824,
+          "importance": 0.824,
+          "importance_score": 0.824,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.78,
-            "recency": 0.9599,
+            "recency": 0.9502,
             "story_heat": 0.0
           },
           "category": "official",
@@ -71,7 +71,7 @@
             "next_action": "评估该 AI 能力能否降低素材、客服或数据分析的人力成本，安排小规模测试。",
             "quality_basis": {
               "source_count": 1,
-              "score": 0.826,
+              "score": 0.824,
               "channel": "ai_commerce"
             }
           },
@@ -107,7 +107,7 @@
               "next_action": "评估该 AI 能力能否降低素材、客服或数据分析的人力成本，安排小规模测试。",
               "quality_basis": {
                 "source_count": 1,
-                "score": 0.826,
+                "score": 0.824,
                 "channel": "ai_commerce"
               }
             },
@@ -161,14 +161,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.826,
-      "importance": 0.826,
-      "importance_score": 0.826,
+      "score": 0.824,
+      "importance": 0.824,
+      "importance_score": 0.824,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.78,
-        "recency": 0.9599,
+        "recency": 0.9502,
         "story_heat": 0.0
       },
       "category": "official",
@@ -188,7 +188,7 @@
         "next_action": "评估该 AI 能力能否降低素材、客服或数据分析的人力成本，安排小规模测试。",
         "quality_basis": {
           "source_count": 1,
-          "score": 0.826,
+          "score": 0.824,
           "channel": "ai_commerce"
         }
       },
@@ -224,7 +224,7 @@
           "next_action": "评估该 AI 能力能否降低素材、客服或数据分析的人力成本，安排小规模测试。",
           "quality_basis": {
             "source_count": 1,
-            "score": 0.826,
+            "score": 0.824,
             "channel": "ai_commerce"
           }
         },
