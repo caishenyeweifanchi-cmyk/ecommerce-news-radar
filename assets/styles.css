@@ -1615,6 +1615,31 @@ summary:focus-visible {
   }
 }
 
+/* 信号卡片业务价值提示 */
+.card-value-hint {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 6px;
+  padding: 7px 10px;
+  background: var(--surface-soft);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+}
+
+.card-impact {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.card-action {
+  font-size: 11.5px;
+  color: var(--accent);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
 /* AI 情报 section */
 .ai-radar-section {
   border: 1px solid var(--line);

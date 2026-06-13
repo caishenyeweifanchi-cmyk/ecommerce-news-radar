@@ -613,22 +613,101 @@ def _business_usefulness(label: str) -> str:
     }.get(label, "用于判断是否存在电商运营机会。")
 
 
+def _generate_impact(label: str, signals: list[str], text: str) -> str:
+    """一句话：影响谁，影响哪个场景。"""
+    sig = set(s.lower() for s in signals)
+    if label == "platform_policy":
+        if any(k in text for k in ("处罚", "违规", "封号", "限流", "扣分")):
+            return "可能影响账号状态，所有在该平台经营的商家需自查合规情况。"
+        if any(k in text for k in ("保证金", "佣金", "费率", "结算", "扣款")):
+            return "影响商家资金结构，需评估对利润率和账期的实际影响。"
+        if any(k in text for k in ("类目", "准入", "入驻", "招商")):
+            return "影响商品上架资质和类目准入条件，新商家尤需关注。"
+        return "影响在该平台经营的全体商家，需核查账号和商品合规状态。"
+    if label == "traffic_creative":
+        if any(k in text for k in ("审核", "拒审", "违规素材", "素材要求")):
+            return "影响在投广告素材的过审率，需通知投流团队检查现有素材。"
+        if any(k in text for k in ("千川", "巨量", "聚光", "腾讯广告", "蒲公英")):
+            return "影响该平台投放规则和预算分配，需评估 ROI 变化。"
+        return "影响投流效率和素材制作方向，运营和投流团队需同步跟进。"
+    if label == "ai_commerce":
+        if any(k in text for k in ("图像", "图片", "product image", "商品图", "封面")):
+            return "图像生成能力变化，影响商品图/封面图/广告素材的制作成本和效率。"
+        if any(k in text for k in ("视频", "video", "短视频", "直播")):
+            return "视频生成能力变化，影响短视频带货和直播切片的内容产出效率。"
+        if any(k in text for k in ("agent", "automation", "workflow", "自动化", "智能体")):
+            return "自动化/Agent 能力变化，影响数据采集、客服和运营 SOP 的自动化程度。"
+        if any(k in text for k in ("customer support", "客服", "shopping assistant")):
+            return "影响售前客服和导购自动化，可能降低人工客服成本。"
+        return "AI 能力更新，影响电商内容生产、素材制作或运营自动化效率。"
+    if label == "operations_playbook":
+        if any(k in text for k in ("直播", "店播", "直播间")):
+            return "影响直播带货运营节奏，店播团队和达人合作方需关注。"
+        if any(k in text for k in ("达人", "种草", "蒲公英", "星图")):
+            return "影响达人种草和内容合作玩法，BD 和内容团队需跟进。"
+        return "新运营玩法出现，内容和运营团队可参考复用。"
+    if label == "extended_watch":
+        if any(k in text for k in ("关税", "tariff", "海关")):
+            return "影响跨境商品的关税成本，跨境卖家需重新计算报价和利润。"
+        if any(k in text for k in ("物流", "仓储", "fba", "履约")):
+            return "影响跨境履约时效和物流成本，需评估是否调整发货方案。"
+        return "跨境/出海卖家需关注，判断对物流、收款或平台政策的实际影响。"
+    return "需结合自身业务判断实际影响范围。"
+
+
+def _generate_suggested_action(label: str, signals: list[str], text: str) -> str:
+    """一句话：建议立即做什么。"""
+    if label == "platform_policy":
+        if any(k in text for k in ("处罚", "违规", "封号", "限流")):
+            return "立即自查账号和在售商品，对照细则排查违规风险，必要时下架或整改。"
+        if any(k in text for k in ("保证金", "费率", "结算")):
+            return "核算对现有商品利润的影响，必要时调整定价或账期安排。"
+        if any(k in text for k in ("新规", "公示", "意见征集")):
+            return "阅读全文，记录生效时间，提前安排合规整改工作。"
+        return "阅读原文，对照自身账号和商品情况，判断是否需要整改或跟进。"
+    if label == "traffic_creative":
+        if any(k in text for k in ("审核", "素材要求", "违规素材")):
+            return "通知投流团队暂停使用可能违规的素材，按新要求重新制作。"
+        return "评估对当前在投计划的影响，必要时调整素材策略和预算分配。"
+    if label == "ai_commerce":
+        if any(k in text for k in ("图像", "video", "视频", "商品图")):
+            return "测试新能力是否能替代现有图片/视频制作流程，评估成本节省空间。"
+        if any(k in text for k in ("agent", "automation", "自动化", "workflow")):
+            return "评估能否接入现有运营 SOP，尝试用 Agent 替代重复性数据处理任务。"
+        return "评估该 AI 能力能否降低素材、客服或数据分析的人力成本，安排小规模测试。"
+    if label == "operations_playbook":
+        return "提取可复用的方法论，安排团队内部分享，确定是否排期测试。"
+    if label == "extended_watch":
+        if any(k in text for k in ("关税", "tariff")):
+            return "重新核算受影响商品的到岸成本，调整报价或切换发货路线。"
+        return "同步给跨境/出海负责人，评估是否影响当前供应链或收款方案。"
+    return "判断对当前业务的实际影响，再决定是否行动。"
+
+
 def is_ecommerce_related_record(record: dict[str, Any]) -> bool:
     return bool(score_ecommerce_relevance(record)["is_ecommerce_related"])
 
 
 def add_ecommerce_relevance_fields(record: dict[str, Any]) -> dict[str, Any]:
     relevance = score_ecommerce_relevance(record)
+    label = relevance["label"]
+    signals = relevance["signals"]
+    title = str(record.get("title") or "")
+    source = str(record.get("source") or "")
+    site_name = str(record.get("site_name") or "")
+    text = f"{title} {source} {site_name}".lower()
     out = dict(record)
     out["ai_is_related"] = relevance["is_ecommerce_related"]
     out["ai_score"] = relevance["score"]
-    out["ai_label"] = relevance["label"]
+    out["ai_label"] = label
     out["ai_relevance_reason"] = relevance["reason"]
-    out["ai_signals"] = relevance["signals"]
+    out["ai_signals"] = signals
     out["ai_noise"] = relevance["noise"]
     out["business_value"] = relevance["usefulness"]
+    out["impact"] = _generate_impact(label, signals, text) if relevance["is_ecommerce_related"] else ""
+    out["suggested_action"] = _generate_suggested_action(label, signals, text) if relevance["is_ecommerce_related"] else ""
     out["topic"] = "ecommerce"
     out["topic_is_related"] = relevance["is_ecommerce_related"]
     out["topic_score"] = relevance["score"]
-    out["topic_label"] = relevance["label"]
+    out["topic_label"] = label
     return out

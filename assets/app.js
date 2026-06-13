@@ -1085,6 +1085,28 @@ function renderItemNode(item) {
     titleEl.textContent = item.title || zh || en;
   }
   titleEl.href = item.url;
+
+  // 业务价值提示：impact + suggested_action
+  const impact = (item.impact || "").trim();
+  const action = (item.suggested_action || item.business_value || "").trim();
+  if (impact || action) {
+    const hintEl = document.createElement("div");
+    hintEl.className = "card-value-hint";
+    if (impact) {
+      const impEl = document.createElement("span");
+      impEl.className = "card-impact";
+      impEl.textContent = impact;
+      hintEl.appendChild(impEl);
+    }
+    if (action) {
+      const actEl = document.createElement("span");
+      actEl.className = "card-action";
+      actEl.textContent = `→ ${action}`;
+      hintEl.appendChild(actEl);
+    }
+    node.appendChild(hintEl);
+  }
+
   return node;
 }
 

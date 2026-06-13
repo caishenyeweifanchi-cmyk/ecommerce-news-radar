@@ -3953,7 +3953,7 @@ def normalized_story_title(item: dict[str, Any]) -> str:
 
 def title_is_mergeable(title: str) -> bool:
     tokens = title_tokens(title)
-    return len(tokens) >= 4 and len(str(title or "").strip()) >= 18
+    return len(tokens) >= 3 and len(str(title or "").strip()) >= 12
 
 
 def title_similarity(a: str, b: str) -> float:
@@ -4202,8 +4202,8 @@ def merge_story_items(
     items: list[dict[str, Any]],
     now: datetime,
     window_hours: int,
-    title_window_hours: int = 6,
-    title_threshold: float = 0.86,
+    title_window_hours: int = 48,
+    title_threshold: float = 0.80,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     groups: dict[str, list[dict[str, Any]]] = {}
     group_titles: dict[str, str] = {}
