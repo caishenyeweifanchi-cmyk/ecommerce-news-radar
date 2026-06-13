@@ -935,7 +935,7 @@ function renderBoleFallback(picks) {
 
   const note = document.createElement("div");
   note.className = "bole-fallback-note";
-  note.textContent = "故事合并数据暂未生成，先展示伯乐候选信号。";
+  note.textContent = "故事合并数据暂未生成，先展示原始候选信号。";
   bolePicksListEl.appendChild(note);
 
   if (!picks.length) {
@@ -983,7 +983,7 @@ function renderBolePicks() {
 
   if (bolePicksWrapEl) bolePicksWrapEl.hidden = false;
   const picks = pickBoleItems(getFilteredItems());
-  bolePicksMetaEl.textContent = "故事合并数据暂未生成 · 伯乐候选信号";
+  bolePicksMetaEl.textContent = "故事合并数据暂未生成 · 原始候选信号";
   renderBoleFallback(picks);
 }
 
@@ -1001,6 +1001,12 @@ function renderDailyReport() {
     empty.textContent = "今日高优先级情报暂无";
     dailyReportListEl.appendChild(empty);
     return;
+  }
+  if (items.length < 3) {
+    const note = document.createElement("div");
+    note.className = "low-content-note";
+    note.textContent = "今日高优先级情报不足，仅保留已验证内容";
+    dailyReportListEl.appendChild(note);
   }
   const sections = Array.isArray(brief.sections) && brief.sections.length
     ? brief.sections
@@ -1302,7 +1308,7 @@ function renderWaytoagi(waytoagi) {
   if (waytoagi.has_error) {
     const div = document.createElement("div");
     div.className = "waytoagi-error";
-    div.textContent = waytoagi.error || "WaytoAGI 数据加载失败";
+    div.textContent = waytoagi.error || "AI 情报数据加载失败";
     waytoagiListEl.appendChild(div);
     return;
   }
