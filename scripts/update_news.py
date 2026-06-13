@@ -2614,8 +2614,8 @@ def fetch_web_sources(
 ) -> tuple[list[RawItem], dict[str, Any], list[dict[str, Any]]]:
     sources = load_web_source_config(config_path)
     total_config_sources = len(sources)
-    disabled_sources = [source for source in sources if source.get("enabled") is False]
-    sources = [source for source in sources if source.get("enabled") is not False]
+    disabled_sources = [source for source in sources if source.get("enabled") is False or source.get("candidate_only")]
+    sources = [source for source in sources if source.get("enabled") is not False and not source.get("candidate_only")]
     if max_sources > 0:
         sources = sources[:max_sources]
 
@@ -2634,11 +2634,13 @@ def fetch_web_sources(
         method = str(source.get("ingestion_method") or "")
         skipped_reason = ""
         try:
-            custom_items = fetch_custom_web_source_items(session, source, now)
+            if source.get("needs_headless"):
+                skipped_reason = "headless_browser_required"
+            custom_items = fetch_custom_web_source_items(session, source, now) if not skipped_reason else None
             if custom_items is not None:
                 local_items = custom_items
                 status_code = 200
-            elif method not in {"web_list_adapter"}:
+            elif not skipped_reason and method not in {"web_list_adapter"}:
                 skipped_reason = "manual_verify_required_or_rss_preferred"
             if custom_items is None and not skipped_reason:
                 resp = session.get(
@@ -2697,6 +2699,8 @@ def fetch_web_sources(
     source_statuses.sort(key=lambda item: str(item.get("source_name") or item.get("source_id") or ""))
     total_duration_ms = sum(int(s.get("duration_ms") or 0) for s in source_statuses)
     ok_count = sum(1 for s in source_statuses if s.get("ok"))
+    headless_blocked_count = sum(1 for s in source_statuses if s.get("skip_reason") == "headless_browser_required")
+    real_failed_count = sum(1 for s in source_statuses if not s.get("ok") and s.get("skip_reason") != "headless_browser_required")
     failed_count = sum(1 for s in source_statuses if not s.get("ok"))
     zero_count = sum(1 for s in source_statuses if s.get("ok") and int(s.get("item_count") or 0) == 0)
     active_count = sum(1 for s in source_statuses if s.get("ok") and int(s.get("item_count") or 0) > 0)
@@ -2706,10 +2710,10 @@ def fetch_web_sources(
         "site_id": "websource",
         "site_name": "重点网页源",
         "ok": active_count > 0,
-        "partial_failures": failed_count,
+        "partial_failures": real_failed_count,
         "item_count": len(out),
         "duration_ms": total_duration_ms,
-        "error": None if failed_count == 0 else f"{failed_count} web sources failed",
+        "error": None if real_failed_count == 0 else f"{real_failed_count} web sources failed",
         "source_count": len(sources),
         "configured_source_count": total_config_sources,
         "disabled_source_count": len(disabled_sources),
@@ -2717,7 +2721,8 @@ def fetch_web_sources(
         "active_source_count": active_count,
         "list_source_count": list_source_count,
         "snapshot_source_count": snapshot_source_count,
-        "failed_source_count": failed_count,
+        "failed_source_count": real_failed_count,
+        "headless_blocked_source_count": headless_blocked_count,
         "zero_item_source_count": zero_count,
     }
     return out, summary_status, source_statuses
