@@ -998,7 +998,7 @@ function renderDailyReport() {
   if (!items.length) {
     const empty = document.createElement("div");
     empty.className = "empty-note";
-    empty.textContent = "当前日报没有命中高优先级故事。";
+    empty.textContent = "今日高优先级情报暂无";
     dailyReportListEl.appendChild(empty);
     return;
   }
@@ -1701,9 +1701,15 @@ navLinkEls.forEach((link) => {
 
     setActiveNav(link);
     if (mode) {
-      state.categoryFilter = "";
-      filterTabEls.forEach((tab) => tab.classList.toggle("active", !tab.dataset.category));
       await switchMode(mode);
+      if (category) {
+        applyCategoryFilter(category);
+      } else {
+        state.categoryFilter = "";
+        filterTabEls.forEach((tab) => tab.classList.toggle("active", !tab.dataset.category));
+        renderBolePicks();
+        renderList();
+      }
     } else if (category !== undefined) {
       applyCategoryFilter(category);
     } else if (targetId !== "advancedPanel") {

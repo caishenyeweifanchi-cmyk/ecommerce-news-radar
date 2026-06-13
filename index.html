@@ -38,12 +38,16 @@
         </div>
         <nav class="nav-list">
           <a class="active" href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai">精选</a>
-          <a href="#listWrap" data-target="listWrap" data-mode="all" data-category="">电商动态</a>
+          <a href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai">今日必看</a>
+          <a href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai" data-category="platform_policy">平台规则</a>
+          <a href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai" data-category="operations_playbook">运营玩法</a>
           <a href="#aiRadarWrap" data-target="aiRadarWrap" data-mode="pure_ai">AI 情报</a>
+          <a href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai" data-category="ai_commerce">AI 电商</a>
+          <a href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai" data-category="traffic_creative">投流素材</a>
+          <a href="#listWrap" data-target="listWrap" data-mode="all">电商动态</a>
           <a href="#dailyReportWrap" data-target="dailyReportWrap">电商日报</a>
-          <a href="#agentAccessWrap" data-target="agentAccessWrap">Agent 接入</a>
-          <a href="#aboutWrap" data-target="aboutWrap">关于</a>
           <a href="#sourceSubmitWrap" data-target="sourceSubmitWrap">信源提报</a>
+          <a href="#aboutWrap" data-target="aboutWrap">关于</a>
         </nav>
       </aside>
 
@@ -153,15 +157,6 @@
                 </div>
                 <span class="mini-badge">运营看板</span>
               </div>
-              <div class="signal-chart" aria-hidden="true">
-                <span style="height: 34%"></span>
-                <span style="height: 58%"></span>
-                <span style="height: 42%"></span>
-                <span style="height: 76%"></span>
-                <span style="height: 54%"></span>
-                <span style="height: 88%"></span>
-                <span style="height: 63%"></span>
-              </div>
               <div class="risk-list">
                 <div><strong>平台规则</strong><span>优先核对处罚、准入、支付与履约变化</span></div>
                 <div><strong>运营玩法</strong><span>关注短视频带货、店播、达人、种草和选品机会</span></div>
@@ -207,20 +202,6 @@
           <div id="dailyReportList" class="daily-report-list"></div>
         </section>
 
-        <section class="plain-section" id="agentAccessWrap">
-          <div class="section-head">
-            <div>
-              <p class="section-eyebrow">AGENT ACCESS</p>
-              <h2>Agent 接入</h2>
-            </div>
-          </div>
-          <div class="info-grid">
-            <div><strong>日报文件</strong><span>data/daily-brief.json，每次自动采集后生成。</span></div>
-            <div><strong>今日必看</strong><span>data/latest-24h.json，保留电商运营可用信号。</span></div>
-            <div><strong>源健康</strong><span>data/source-status.json，记录哪些源成功、跳过或失败。</span></div>
-          </div>
-        </section>
-
         <section class="plain-section" id="sourceSubmitWrap">
           <div class="section-head">
             <div>
@@ -247,6 +228,12 @@
             </div>
           </div>
           <p class="section-copy">这个项目不是泛新闻聚合，而是电商运营情报系统。核心判断标准是：这条信息能不能帮助电商运营、内容生产、投流、选品、店铺经营或自动化提效。</p>
+          <div class="info-grid">
+            <div><strong>日报文件</strong><span>data/daily-brief.json，每次自动采集后生成，Agent 可每天读取。</span></div>
+            <div><strong>今日必看</strong><span>data/latest-24h.json，保留电商运营可用信号。</span></div>
+            <div><strong>源健康</strong><span>data/source-status.json，记录哪些源成功、跳过或失败。</span></div>
+            <div><strong>Skill 接入</strong><span>安装本仓库 Skill 后，Agent 可每天自动读取日报并推送到飞书/企微。</span></div>
+          </div>
           <div class="contact-grid" aria-label="项目联系人">
             <article class="contact-card">
               <div>
