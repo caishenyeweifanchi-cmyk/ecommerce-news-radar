@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-13T14:36:20.174591Z",
+  "generated_at": "2026-06-13T16:11:25.814589Z",
   "description": "Web source quality audit. Homepage and daily brief should prefer sources with detail URLs and real publish times.",
   "summary": {
     "source_total": 171,
     "p0_p1_total": 154,
-    "enable_total": 19,
+    "enable_total": 18,
     "candidate_only_total": 148,
-    "disable_total": 4,
-    "p0_p1_enable_total": 19,
+    "disable_total": 5,
+    "p0_p1_enable_total": 18,
     "p0_p1_candidate_only_total": 131,
-    "active_detail_sources": 28,
-    "active_real_time_sources": 19
+    "active_detail_sources": 27,
+    "active_real_time_sources": 18
   },
   "sources": [
     {
@@ -415,26 +415,22 @@
       "type": "vendor_blog",
       "priority": "P1",
       "url": "https://www.bloomreach.com/blog/",
-      "ok": true,
-      "collection_mode": "list",
+      "ok": false,
+      "collection_mode": "empty",
       "ingestion_method": "web_list_adapter",
-      "item_count": 12,
-      "detail_url_count": 12,
-      "real_published_time_count": 8,
+      "item_count": 0,
+      "detail_url_count": 0,
+      "real_published_time_count": 0,
       "snapshot_count": 0,
-      "detail_url_rate": 1.0,
-      "real_published_time_rate": 0.6667,
-      "published_time_sources": [
-        "detail_meta",
-        "list_text",
-        "unconfirmed"
-      ],
+      "detail_url_rate": 0,
+      "real_published_time_rate": 0,
+      "published_time_sources": [],
       "article_url_sources": [],
-      "status_code": 200,
-      "error": null,
+      "status_code": 403,
+      "error": "403 Client Error: Forbidden for url: https://www.bloomreach.com/blog/",
       "skip_reason": null,
-      "recommendation": "enable",
-      "reason": "usable"
+      "recommendation": "disable",
+      "reason": "fetch_failed"
     },
     {
       "source_id": "bilibili_mall_agreement",
