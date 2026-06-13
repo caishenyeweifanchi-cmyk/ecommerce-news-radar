@@ -30,3 +30,6 @@ data/email-digest.json
 .DS_Store
 .idea/
 .vscode/
+
+# Claude Code local config
+.claude/
