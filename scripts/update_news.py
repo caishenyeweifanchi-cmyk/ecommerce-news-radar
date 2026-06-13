@@ -4295,6 +4295,66 @@ def story_reasons(primary: dict[str, Any], score: float, source_count: int) -> l
     return reasons
 
 
+def operational_depth_for_story(
+    primary: dict[str, Any],
+    channel: str,
+    score: float,
+    source_count: int,
+    impact: str,
+    suggested_action: str,
+) -> dict[str, Any]:
+    role_map = {
+        "platform_policy": ["店铺运营", "商品负责人", "合规/售后"],
+        "operations_playbook": ["内容运营", "直播/店播", "达人商务"],
+        "ai_commerce": ["内容生产", "素材团队", "自动化/客服"],
+        "traffic_creative": ["投流负责人", "素材团队", "达人投放"],
+        "extended_watch": ["跨境负责人", "物流/收款", "选品负责人"],
+    }
+    meta = primary.get("meta") if isinstance(primary.get("meta"), dict) else {}
+    if str(primary.get("site_id") or "") == "websource" and meta.get("web_source_priority") == "P0":
+        priority = "P0"
+    elif score >= 0.82 or source_count >= 3:
+        priority = "P1"
+    else:
+        priority = "P2"
+    return {
+        "operator_question": "这条信息对电商运营有什么用？",
+        "affected_roles": role_map.get(channel, ["电商运营"]),
+        "action_priority": priority,
+        "why_it_matters": impact,
+        "next_action": suggested_action,
+        "quality_basis": {
+            "source_count": source_count,
+            "score": round(score, 4),
+            "channel": channel,
+        },
+    }
+
+
+def enrich_items_with_operational_depth(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    enriched: list[dict[str, Any]] = []
+    for item in items:
+        record = dict(item)
+        channel = ecommerce_brief_channel(record)
+        score = max(
+            float(record.get("topic_score") or 0),
+            float(record.get("ai_score") or 0),
+            float(record.get("score") or 0),
+        )
+        impact = ecommerce_impact_for_story(record, channel)
+        suggested_action = ecommerce_action_for_story(record, channel)
+        record["operational_depth"] = operational_depth_for_story(
+            record,
+            channel,
+            score,
+            1,
+            impact,
+            suggested_action,
+        )
+        enriched.append(record)
+    return enriched
+
+
 def build_story_record(
     story_id: str,
     items: list[dict[str, Any]],
@@ -4319,6 +4379,14 @@ def build_story_record(
     brief_channel = ecommerce_brief_channel(primary)
     impact = ecommerce_impact_for_story(primary, brief_channel)
     suggested_action = ecommerce_action_for_story(primary, brief_channel)
+    operational_depth = operational_depth_for_story(
+        primary,
+        brief_channel,
+        score,
+        source_count,
+        impact,
+        suggested_action,
+    )
     return {
         "story_id": story_id,
         "title": title,
@@ -4342,6 +4410,7 @@ def build_story_record(
         "impact": impact,
         "suggested_action": suggested_action,
         "business_value": primary.get("business_value") or impact,
+        "operational_depth": operational_depth,
         "platform": primary.get("source") or primary.get("site_name"),
         "reasons": story_reasons(primary, score, source_count),
         "earliest_at": iso(min(times)) if times else None,
@@ -4359,6 +4428,7 @@ def build_story_record(
             "impact": impact,
             "suggested_action": suggested_action,
             "business_value": primary.get("business_value") or impact,
+            "operational_depth": operational_depth,
             "meta": primary.get("meta") or {},
         },
     }
@@ -4439,6 +4509,23 @@ _OFFICIAL_RULE_KEYWORDS = ("规则", "公告", "政策", "处罚", "违规", "�
 _OFFICIAL_PLATFORM_HINTS = ("抖音电商", "快手电商", "小红书电商", "淘宝规则", "天猫规则", "京东商家", "拼多多规则", "千川", "巨量", "蒲公英", "聚光", "微信小店", "阿里妈妈")
 
 
+def websource_primary_has_detail_and_time(primary: dict[str, Any]) -> bool:
+    if str(primary.get("site_id") or "") != "websource":
+        return True
+    meta = primary.get("meta") if isinstance(primary.get("meta"), dict) else {}
+    if str(meta.get("web_source_mode") or "") == "page_snapshot":
+        return False
+    if str(meta.get("published_time_source") or "") not in REAL_PUBLISHED_TIME_SOURCES:
+        return False
+    if meta.get("article_url_source"):
+        return True
+    url = str(primary.get("url") or "")
+    source_url = str(meta.get("web_source_url") or "")
+    if not url or not source_url:
+        return False
+    return normalize_url(url) != normalize_url(source_url)
+
+
 def is_official_rule_story(story: dict[str, Any]) -> bool:
     primary = story.get("primary_item") if isinstance(story.get("primary_item"), dict) else {}
     site_id = str(primary.get("site_id") or story.get("primary_site_id") or "")
@@ -4446,6 +4533,8 @@ def is_official_rule_story(story: dict[str, Any]) -> bool:
     source = str(story.get("source") or primary.get("source") or "")
     meta = primary.get("meta") if isinstance(primary.get("meta"), dict) else {}
     if meta.get("web_source_mode") == "page_snapshot" or title.startswith("页面监控："):
+        return False
+    if site_id == "websource" and not websource_primary_has_detail_and_time(primary):
         return False
     hay = f"{title} {source} {meta.get('web_source_domain') or ''} {meta.get('web_source_priority') or ''}"
     if site_id == "websource":
@@ -4475,6 +4564,8 @@ def story_passes_brief_gate(story: dict[str, Any]) -> bool:
     if str(primary.get("site_id") or "") == "websource" and (
         meta.get("web_source_mode") == "page_snapshot" or str(story.get("title") or "").startswith("页面监控：")
     ):
+        return False
+    if str(primary.get("site_id") or "") == "websource" and not websource_primary_has_detail_and_time(primary):
         return False
     channel = str(story.get("brief_channel") or "")
     if channel == "extended_watch" and sources < 2 and score < 0.82:
@@ -4898,6 +4989,8 @@ def main() -> int:
     )
     latest_items_ai_dedup = suppress_near_duplicate_items(dedupe_items_by_title_url(latest_items, random_pick=False))
     latest_items_all_dedup = dedupe_items_by_title_url(latest_items_all, random_pick=True)
+    latest_items_ai_dedup = enrich_items_with_operational_depth(latest_items_ai_dedup)
+    latest_items_all_dedup = enrich_items_with_operational_depth(latest_items_all_dedup)
     stories, merge_events = merge_story_items(latest_items_ai_dedup, now=now, window_hours=args.window_hours)
     generated_at = iso(now)
     daily_brief_payload = build_daily_brief_payload(stories, generated_at=generated_at, window_hours=args.window_hours)

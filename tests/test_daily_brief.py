@@ -8,8 +8,10 @@ from scripts.update_news import (
     build_merge_log_payload,
     build_stories_payload,
     calculate_item_importance,
+    enrich_items_with_operational_depth,
     filter_records_for_local_date,
     merge_story_items,
+    story_passes_brief_gate,
 )
 
 
@@ -95,6 +97,69 @@ def test_daily_brief_record_supports_bole_output_contract():
     assert len(record["items"]) == 2
     assert len(record["sources"]) == 2
     assert record["primary_item"]["id"] == "item-1"
+
+
+def test_story_record_includes_product_depth_fields_for_operator_action():
+    items = [
+        make_item(
+            1,
+            site_id="websource",
+            title="Douyin ecommerce updates seller violation rule for creators",
+            ai_score=0.9,
+        )
+    ]
+    items[0]["topic_label"] = "platform_policy"
+    items[0]["impact"] = "Impacts merchant account risk and product compliance checks."
+    items[0]["suggested_action"] = "Review affected products and update the compliance checklist today."
+    items[0]["meta"] = {
+        "web_source_priority": "P0",
+        "web_source_domain": "平台规则",
+        "web_source_mode": "api_list",
+        "article_url_source": "douyin_articlev0",
+        "published_time_source": "api",
+    }
+    stories, _events = merge_story_items(items, NOW, 24)
+    record = stories[0]
+
+    assert record["operational_depth"]["affected_roles"]
+    assert record["operational_depth"]["action_priority"] in {"P0", "P1", "P2"}
+    assert record["operational_depth"]["operator_question"] == "这条信息对电商运营有什么用？"
+    assert record["primary_item"]["operational_depth"] == record["operational_depth"]
+
+
+def test_latest_items_can_be_enriched_with_product_depth_fields():
+    item = make_item(1, site_id="opmlrss", title="AI video workflow improves ecommerce ad creative testing")
+    item["topic_label"] = "ai_commerce"
+    item["topic_score"] = 0.82
+
+    enriched = enrich_items_with_operational_depth([item])
+
+    assert enriched[0]["operational_depth"]["operator_question"] == "这条信息对电商运营有什么用？"
+    assert enriched[0]["operational_depth"]["action_priority"] == "P1"
+    assert enriched[0]["operational_depth"]["quality_basis"]["channel"] == "ai_commerce"
+
+
+def test_brief_gate_rejects_p0_websource_without_detail_url_and_real_time():
+    story = {
+        "story_id": "story_weak_websource",
+        "title": "平台规则中心栏目页",
+        "score": 0.95,
+        "source_count": 1,
+        "brief_channel": "platform_policy",
+        "primary_item": {
+            "site_id": "websource",
+            "source": "淘宝规则中心",
+            "title": "平台规则中心栏目页",
+            "meta": {
+                "web_source_priority": "P0",
+                "web_source_domain": "平台规则",
+                "web_source_mode": "list",
+                "published_time_source": "unconfirmed",
+            },
+        },
+    }
+
+    assert story_passes_brief_gate(story) is False
 
 
 def test_today_filter_keeps_only_same_shanghai_calendar_day_for_brief_inputs():

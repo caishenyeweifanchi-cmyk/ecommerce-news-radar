@@ -444,10 +444,15 @@ def test_daily_brief_keeps_official_p0_rule_single_source():
             "site_id": "websource",
             "source": "抖音电商规则中心",
             "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
+            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+            "published_at": "2026-06-11T13:40:33Z",
             "meta": {
                 "web_source_priority": "P0",
                 "web_source_domain": "平台规则",
                 "web_source_mode": "api_list",
+                "web_source_url": "https://school.jinritemai.com/doudian/web/rules",
+                "article_url_source": "douyin_articlev0",
+                "published_time_source": "api",
             },
         },
     }
@@ -492,10 +497,15 @@ def test_daily_brief_prioritizes_official_p0_rules_over_generic_high_score_items
             "site_id": "websource",
             "title": "关于修订《创作者【违规营销活动或玩法】处置细则》的意见征集通知",
             "source": "抖音电商规则中心",
+            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJksF3Y7x1Bc",
+            "published_at": "2026-06-11T13:40:33Z",
             "meta": {
                 "web_source_priority": "P0",
                 "web_source_domain": "平台规则",
                 "web_source_mode": "api_list",
+                "web_source_url": "https://school.jinritemai.com/doudian/web/rules",
+                "article_url_source": "douyin_articlev0",
+                "published_time_source": "api",
             },
         },
     }

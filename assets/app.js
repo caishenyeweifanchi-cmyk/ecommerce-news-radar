@@ -890,17 +890,20 @@ function renderBoleBrief(stories) {
 
   const hot = hotStories(stories);
   const hotAvailable = hot.length >= 1;
-  // 宁缺毋滥: the hot view only exists when there is real multi-source heat.
-  if (boleViewToggleEl) boleViewToggleEl.hidden = !hotAvailable;
-  if (!hotAvailable) state.boleView = "timeline";
+  // 当前热点和时间线都保留；没有多源热点时，当前热点按评分兜底展示。
+  if (boleViewToggleEl) boleViewToggleEl.hidden = false;
   if (boleHotBtnEl) boleHotBtnEl.classList.toggle("active", state.boleView === "hot");
   if (boleTimelineBtnEl) boleTimelineBtnEl.classList.toggle("active", state.boleView !== "hot");
 
   let sorted;
   let metaLabel;
   if (state.boleView === "hot") {
-    sorted = hot;
-    metaLabel = `当前热点 · ${fmtNumber(sorted.length)} 簇 · 多源×时间衰减`;
+    sorted = hotAvailable
+      ? hot
+      : [...stories].sort((a, b) => storyScore(b) - storyScore(a) || storyTimeMs(b, "latest_at") - storyTimeMs(a, "latest_at"));
+    metaLabel = hotAvailable
+      ? `当前热点 · ${fmtNumber(sorted.length)} 簇 · 多源×时间衰减`
+      : `当前热点 · ${fmtNumber(sorted.length)} 条 · 按评分排序`;
   } else {
     sorted = [...stories].sort((a, b) => {
       const aLatest = storyTimeMs(a, "latest_at") || storyTimeMs(a, "earliest_at");
