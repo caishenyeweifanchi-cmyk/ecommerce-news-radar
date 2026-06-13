@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T07:59:30.638456Z",
+  "generated_at": "2026-06-13T08:23:01.093225Z",
   "window_hours": 168,
   "total_items": 6,
   "total_items_ai_raw": 6,
@@ -12,7 +12,7 @@
   "day_filter_scope": "items/items_ai, daily brief, current hotspots",
   "ai_relevance_threshold": 0.65,
   "topic_relevance_threshold": 0.65,
-  "archive_total": 10388,
+  "archive_total": 10389,
   "site_count": 2,
   "source_count": 6,
   "site_stats": [
@@ -39,7 +39,7 @@
       "url": "https://www.newrank.cn/article/detail/34522",
       "published_at": "2026-06-13T04:00:00Z",
       "first_seen_at": "2026-06-13T04:58:27.563610Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -100,7 +100,7 @@
       "url": "https://www.digitalcommerce360.com/2026/06/12/visa-openai-agent-led-payments",
       "published_at": "2026-06-12T22:02:26Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "feed_url": "https://www.digitalcommerce360.com/topic/artificial-intelligence/feed/",
         "feed_home": "https://www.digitalcommerce360.com/topic/artificial-intelligence/"
@@ -154,7 +154,7 @@
       "url": "https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark",
       "published_at": "2026-06-12T21:12:40Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
         "feed_home": "https://developer.nvidia.com/blog/category/generative-ai/"
@@ -208,7 +208,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai",
       "published_at": "2026-06-12T20:43:56Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -262,7 +262,7 @@
       "url": "https://the-decoder.com/openai-kicks-off-the-ai-price-wars-with-flexible-rate-limit-resets-for-its-codex-coding-agent",
       "published_at": "2026-06-12T17:34:23Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "feed_url": "https://the-decoder.com/feed/",
         "feed_home": "https://the-decoder.com/"
@@ -316,7 +316,7 @@
       "url": "https://openrouter.ai/blog/tutorials/hermes-agent",
       "published_at": "2026-06-12T16:00:00Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"
@@ -371,7 +371,7 @@
       "url": "https://www.newrank.cn/article/detail/34522",
       "published_at": "2026-06-13T04:00:00Z",
       "first_seen_at": "2026-06-13T04:58:27.563610Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "web_source_id": "newrank_cn",
         "web_source_url": "https://www.newrank.cn/",
@@ -432,7 +432,7 @@
       "url": "https://www.digitalcommerce360.com/2026/06/12/visa-openai-agent-led-payments",
       "published_at": "2026-06-12T22:02:26Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "feed_url": "https://www.digitalcommerce360.com/topic/artificial-intelligence/feed/",
         "feed_home": "https://www.digitalcommerce360.com/topic/artificial-intelligence/"
@@ -486,7 +486,7 @@
       "url": "https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark",
       "published_at": "2026-06-12T21:12:40Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
         "feed_home": "https://developer.nvidia.com/blog/category/generative-ai/"
@@ -540,7 +540,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai",
       "published_at": "2026-06-12T20:43:56Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
         "feed_home": "https://aws.amazon.com/blogs/machine-learning/"
@@ -594,7 +594,7 @@
       "url": "https://the-decoder.com/openai-kicks-off-the-ai-price-wars-with-flexible-rate-limit-resets-for-its-codex-coding-agent",
       "published_at": "2026-06-12T17:34:23Z",
       "first_seen_at": "2026-06-13T01:35:24.121358Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "feed_url": "https://the-decoder.com/feed/",
         "feed_home": "https://the-decoder.com/"
@@ -648,7 +648,7 @@
       "url": "https://openrouter.ai/blog/tutorials/hermes-agent",
       "published_at": "2026-06-12T16:00:00Z",
       "first_seen_at": "2026-06-13T04:00:37.203440Z",
-      "last_seen_at": "2026-06-13T07:59:30.638456Z",
+      "last_seen_at": "2026-06-13T08:23:01.093225Z",
       "meta": {
         "feed_url": "https://aihot.virxact.com/feed.xml",
         "feed_home": "https://aihot.virxact.com/"

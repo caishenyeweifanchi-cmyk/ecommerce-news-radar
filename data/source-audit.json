@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-13T07:59:30.638456Z",
+  "generated_at": "2026-06-13T08:23:01.093225Z",
   "description": "Web source quality audit. Homepage and daily brief should prefer sources with detail URLs and real publish times.",
   "summary": {
     "source_total": 171,
     "p0_p1_total": 154,
     "enable_total": 19,
-    "candidate_only_total": 147,
-    "disable_total": 5,
+    "candidate_only_total": 148,
+    "disable_total": 4,
     "p0_p1_enable_total": 19,
-    "p0_p1_candidate_only_total": 130,
-    "active_detail_sources": 27,
+    "p0_p1_candidate_only_total": 131,
+    "active_detail_sources": 28,
     "active_real_time_sources": 19
   },
   "sources": [
@@ -1762,13 +1762,12 @@
       "ingestion_method": "web_list_adapter",
       "item_count": 12,
       "detail_url_count": 12,
-      "real_published_time_count": 7,
+      "real_published_time_count": 6,
       "snapshot_count": 0,
       "detail_url_rate": 1.0,
-      "real_published_time_rate": 0.5833,
+      "real_published_time_rate": 0.5,
       "published_time_sources": [
         "detail_meta",
-        "detail_text",
         "unconfirmed"
       ],
       "article_url_sources": [],
@@ -1966,23 +1965,23 @@
       "priority": "P0",
       "url": "https://seller.temu.com/rule",
       "ok": true,
-      "collection_mode": "snapshot",
+      "collection_mode": "list",
       "ingestion_method": "web_list_adapter",
-      "item_count": 1,
-      "detail_url_count": 0,
+      "item_count": 2,
+      "detail_url_count": 2,
       "real_published_time_count": 0,
-      "snapshot_count": 1,
-      "detail_url_rate": 0.0,
+      "snapshot_count": 0,
+      "detail_url_rate": 1.0,
       "real_published_time_rate": 0.0,
       "published_time_sources": [
-        "snapshot"
+        "unconfirmed"
       ],
       "article_url_sources": [],
       "status_code": 200,
       "error": null,
       "skip_reason": null,
       "recommendation": "candidate_only",
-      "reason": "snapshot_only"
+      "reason": "missing_real_publish_time"
     },
     {
       "source_id": "ai_commerce_the_decoder",
@@ -2169,22 +2168,24 @@
       "type": "商家公告页",
       "priority": "P0",
       "url": "https://seller.tiktokshopglobalselling.com/university",
-      "ok": false,
-      "collection_mode": "empty",
+      "ok": true,
+      "collection_mode": "snapshot",
       "ingestion_method": "web_list_adapter",
-      "item_count": 0,
+      "item_count": 1,
       "detail_url_count": 0,
       "real_published_time_count": 0,
-      "snapshot_count": 0,
-      "detail_url_rate": 0,
-      "real_published_time_rate": 0,
-      "published_time_sources": [],
+      "snapshot_count": 1,
+      "detail_url_rate": 0.0,
+      "real_published_time_rate": 0.0,
+      "published_time_sources": [
+        "snapshot"
+      ],
       "article_url_sources": [],
-      "status_code": null,
-      "error": "HTTPSConnectionPool(host='seller.tiktokshopglobalselling.com', port=443): Max retries exceeded with url: /university (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "status_code": 200,
+      "error": null,
       "skip_reason": null,
-      "recommendation": "disable",
-      "reason": "fetch_failed"
+      "recommendation": "candidate_only",
+      "reason": "snapshot_only"
     },
     {
       "source_id": "seller_us_tiktok_com_university",
@@ -3309,6 +3310,33 @@
       "reason": "snapshot_only"
     },
     {
+      "source_id": "samr_gov_cn_xw_zj",
+      "source_name": "市场监管总局公告",
+      "platform": "市场监管总局",
+      "domain": "政策监管",
+      "type": "政策公告页",
+      "priority": "P0",
+      "url": "https://www.samr.gov.cn/xw/zj/",
+      "ok": true,
+      "collection_mode": "snapshot",
+      "ingestion_method": "web_list_adapter",
+      "item_count": 1,
+      "detail_url_count": 0,
+      "real_published_time_count": 0,
+      "snapshot_count": 1,
+      "detail_url_rate": 0.0,
+      "real_published_time_rate": 0.0,
+      "published_time_sources": [
+        "snapshot"
+      ],
+      "article_url_sources": [],
+      "status_code": 200,
+      "error": null,
+      "skip_reason": null,
+      "recommendation": "candidate_only",
+      "reason": "snapshot_only"
+    },
+    {
       "source_id": "samr_gov_cn_zw",
       "source_name": "市场监管总局公告",
       "platform": "市场监管总局",
@@ -3335,33 +3363,6 @@
       "skip_reason": null,
       "recommendation": "enable",
       "reason": "usable"
-    },
-    {
-      "source_id": "samr_gov_cn_xw_zj",
-      "source_name": "市场监管总局公告",
-      "platform": "市场监管总局",
-      "domain": "政策监管",
-      "type": "政策公告页",
-      "priority": "P0",
-      "url": "https://www.samr.gov.cn/xw/zj/",
-      "ok": true,
-      "collection_mode": "snapshot",
-      "ingestion_method": "web_list_adapter",
-      "item_count": 1,
-      "detail_url_count": 0,
-      "real_published_time_count": 0,
-      "snapshot_count": 1,
-      "detail_url_rate": 0.0,
-      "real_published_time_rate": 0.0,
-      "published_time_sources": [
-        "snapshot"
-      ],
-      "article_url_sources": [],
-      "status_code": 200,
-      "error": null,
-      "skip_reason": null,
-      "recommendation": "candidate_only",
-      "reason": "snapshot_only"
     },
     {
       "source_id": "dewu_merchant_public_rule_entry",
