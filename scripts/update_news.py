@@ -4269,6 +4269,10 @@ def merge_story_items(
 BRIEF_SCORE_GATE = 0.72
 
 
+_OFFICIAL_RULE_KEYWORDS = ("规则", "公告", "政策", "处罚", "违规", "治理", "公示", "准入", "履约", "结算", "保证金", "佣金", "费率")
+_OFFICIAL_PLATFORM_HINTS = ("抖音电商", "快手电商", "小红书电商", "淘宝规则", "天猫规则", "京东商家", "拼多多规则", "千川", "巨量", "蒲公英", "聚光", "微信小店", "阿里妈妈")
+
+
 def is_official_rule_story(story: dict[str, Any]) -> bool:
     primary = story.get("primary_item") if isinstance(story.get("primary_item"), dict) else {}
     site_id = str(primary.get("site_id") or story.get("primary_site_id") or "")
@@ -4278,11 +4282,14 @@ def is_official_rule_story(story: dict[str, Any]) -> bool:
     if meta.get("web_source_mode") == "page_snapshot" or title.startswith("页面监控："):
         return False
     hay = f"{title} {source} {meta.get('web_source_domain') or ''} {meta.get('web_source_priority') or ''}"
-    if site_id != "websource":
-        return False
-    if meta.get("web_source_priority") == "P0":
-        return True
-    return any(keyword in hay for keyword in ("规则", "公告", "政策", "处罚", "违规", "治理", "公示", "准入", "履约"))
+    if site_id == "websource":
+        if meta.get("web_source_priority") == "P0":
+            return True
+        return any(keyword in hay for keyword in _OFFICIAL_RULE_KEYWORDS)
+    # RSS/OPML sources: allow if title+source strongly signals platform rule
+    has_rule = any(k in hay for k in _OFFICIAL_RULE_KEYWORDS)
+    has_platform = any(k in hay for k in _OFFICIAL_PLATFORM_HINTS)
+    return has_rule and has_platform
 
 
 def story_passes_brief_gate(story: dict[str, Any]) -> bool:

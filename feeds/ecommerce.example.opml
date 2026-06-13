@@ -5,11 +5,11 @@
   </head>
   <body>
     <outline text="P0/P1 ecommerce operations feeds">
-      <outline text="???? B2C" title="???? B2C" type="rss" xmlUrl="https://www.ebrun.com/rss/news_b2c.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="???????" title="???????" type="rss" xmlUrl="https://www.ebrun.com/rss/news_retail.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="??????" title="??????" type="rss" xmlUrl="https://www.ebrun.com/rss/news_brands.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="???????" title="???????" type="rss" xmlUrl="https://www.ebrun.com/rss/news_service.xml" htmlUrl="https://www.ebrun.com/" />
-      <outline text="??????" title="??????" type="rss" xmlUrl="https://www.ebrun.com/rss/news_policy.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="亿邦动力 B2C" title="亿邦动力 B2C" type="rss" xmlUrl="https://www.ebrun.com/rss/news_b2c.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="亿邦动力 零售" title="亿邦动力 零售" type="rss" xmlUrl="https://www.ebrun.com/rss/news_retail.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="亿邦动力 品牌" title="亿邦动力 品牌" type="rss" xmlUrl="https://www.ebrun.com/rss/news_brands.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="亿邦动力 服务商" title="亿邦动力 服务商" type="rss" xmlUrl="https://www.ebrun.com/rss/news_service.xml" htmlUrl="https://www.ebrun.com/" />
+      <outline text="亿邦动力 政策" title="亿邦动力 政策" type="rss" xmlUrl="https://www.ebrun.com/rss/news_policy.xml" htmlUrl="https://www.ebrun.com/" />
       <outline text="Google Ads Commerce Blog" title="Google Ads Commerce Blog" type="rss" xmlUrl="https://blog.google/products/ads-commerce/rss/" htmlUrl="https://blog.google/products/ads-commerce/" />
       <outline text="Shopify Changelog" title="Shopify Changelog" type="rss" xmlUrl="https://changelog.shopify.com/feed" htmlUrl="https://changelog.shopify.com" />
       <outline text="WooCommerce Developer Blog" title="WooCommerce Developer Blog" type="rss" xmlUrl="https://developer.woocommerce.com/feed/" htmlUrl="https://developer.woocommerce.com/" />
@@ -24,9 +24,8 @@
       <outline text="Digital Commerce 360 AI" title="Digital Commerce 360 AI" type="rss" xmlUrl="https://www.digitalcommerce360.com/topic/artificial-intelligence/feed/" htmlUrl="https://www.digitalcommerce360.com/topic/artificial-intelligence/" />
       <outline text="Retail Customer Experience" title="Retail Customer Experience" type="rss" xmlUrl="https://www.retailcustomerexperience.com/rss/" htmlUrl="https://www.retailcustomerexperience.com/" />
       <outline text="MarTech.org" title="MarTech.org" type="rss" xmlUrl="https://martech.org/feed/" htmlUrl="https://martech.org/" />
-      <outline text="Dynamic Yield" title="Dynamic Yield" type="rss" xmlUrl="https://www.dynamicyield.com/feed/" htmlUrl="https://www.dynamicyield.com/" />
     </outline>
-    <outline text="AI commerce candidate feeds">
+    <outline text="AI 情报池 - 官方模型与能力源">
       <outline text="OpenAI News" title="OpenAI News" type="rss" xmlUrl="https://openai.com/news/rss.xml" htmlUrl="https://openai.com/news" />
       <outline text="Google DeepMind Blog" title="Google DeepMind Blog" type="rss" xmlUrl="https://deepmind.google/blog/rss.xml" htmlUrl="https://deepmind.google/blog" />
       <outline text="Google AI Blog" title="Google AI Blog" type="rss" xmlUrl="https://blog.google/innovation-and-ai/technology/ai/rss/" htmlUrl="https://blog.google/technology/ai/" />
@@ -34,6 +33,11 @@
       <outline text="GitHub AI &amp; ML" title="GitHub AI &amp; ML" type="rss" xmlUrl="https://github.blog/ai-and-ml/feed/" htmlUrl="https://github.blog/ai-and-ml/" />
       <outline text="GitHub Changelog" title="GitHub Changelog" type="rss" xmlUrl="https://github.blog/changelog/feed/" htmlUrl="https://github.blog/changelog/" />
       <outline text="NVIDIA Generative AI Blog" title="NVIDIA Generative AI Blog" type="rss" xmlUrl="https://developer.nvidia.com/blog/category/generative-ai/feed/" htmlUrl="https://developer.nvidia.com/blog/category/generative-ai/" />
+      <outline text="Meta AI Blog" title="Meta AI Blog" type="rss" xmlUrl="https://ai.meta.com/blog/rss/" htmlUrl="https://ai.meta.com/blog/" />
+      <outline text="Microsoft Research Blog" title="Microsoft Research Blog" type="rss" xmlUrl="https://www.microsoft.com/en-us/research/feed/" htmlUrl="https://www.microsoft.com/en-us/research/blog/" />
+      <outline text="AWS Machine Learning Blog" title="AWS Machine Learning Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/machine-learning/feed/" htmlUrl="https://aws.amazon.com/blogs/machine-learning/" />
+    </outline>
+    <outline text="AI 情报池 - 媒体与工具源">
       <outline text="The Decoder" title="The Decoder" type="rss" xmlUrl="https://the-decoder.com/feed/" htmlUrl="https://the-decoder.com/" />
       <outline text="VentureBeat AI" title="VentureBeat AI" type="rss" xmlUrl="https://venturebeat.com/category/ai/feed/" htmlUrl="https://venturebeat.com/category/ai/" />
       <outline text="TechCrunch AI" title="TechCrunch AI" type="rss" xmlUrl="https://techcrunch.com/category/artificial-intelligence/feed/" htmlUrl="https://techcrunch.com/category/artificial-intelligence/" />
@@ -41,6 +45,11 @@
       <outline text="AI HOT" title="AI HOT" type="rss" xmlUrl="https://aihot.virxact.com/feed.xml" htmlUrl="https://aihot.virxact.com/" />
       <outline text="MarkTechPost" title="MarkTechPost" type="rss" xmlUrl="https://www.marktechpost.com/feed/" htmlUrl="https://www.marktechpost.com/" />
       <outline text="Simon Willison" title="Simon Willison" type="rss" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/" />
+      <outline text="Import AI (Jack Clark)" title="Import AI (Jack Clark)" type="rss" xmlUrl="https://jack-clark.net/feed/" htmlUrl="https://jack-clark.net/" />
+      <outline text="The Batch (DeepLearning.AI)" title="The Batch (DeepLearning.AI)" type="rss" xmlUrl="https://www.deeplearning.ai/the-batch/feed/" htmlUrl="https://www.deeplearning.ai/the-batch/" />
+      <outline text="Towards AI" title="Towards AI" type="rss" xmlUrl="https://towardsai.net/feed" htmlUrl="https://towardsai.net/" />
+      <outline text="AI Business" title="AI Business" type="rss" xmlUrl="https://aibusiness.com/rss.xml" htmlUrl="https://aibusiness.com/" />
+      <outline text="Zapier Blog AI" title="Zapier Blog AI" type="rss" xmlUrl="https://zapier.com/blog/feeds/latest/category/ai-automation/" htmlUrl="https://zapier.com/blog/ai-automation/" />
     </outline>
   </body>
 </opml>

@@ -54,6 +54,8 @@ const waytoagiListEl = document.getElementById("waytoagiList");
 const waytoagiTodayBtnEl = document.getElementById("waytoagiTodayBtn");
 const waytoagi7dBtnEl = document.getElementById("waytoagi7dBtn");
 const coverageStripEl = document.getElementById("coverageStrip");
+const aiRadarWrapEl = document.getElementById("aiRadarWrap");
+const waytoagiWrapEl = document.getElementById("waytoagiWrap");
 const bolePicksListEl = document.getElementById("bolePicksList");
 const bolePicksMetaEl = document.getElementById("bolePicksMeta");
 const bolePicksWrapEl = document.getElementById("bolePicksWrap");
@@ -315,6 +317,8 @@ function renderModeSwitch() {
   if (allDedupeWrapEl) allDedupeWrapEl.classList.toggle("show", state.mode === "all");
   if (allDedupeToggleEl) allDedupeToggleEl.checked = state.allDedup;
   if (allDedupeLabelEl) allDedupeLabelEl.textContent = state.allDedup ? "去重开" : "去重关";
+  if (aiRadarWrapEl) aiRadarWrapEl.hidden = state.mode !== "pure_ai";
+  if (waytoagiWrapEl) waytoagiWrapEl.hidden = state.mode !== "pure_ai" || !state.waytoagiData;
   if (state.mode === "ai") {
     modeHintEl.textContent = `今日必看 · ${fmtNumber(state.totalAi)} 条`;
     if (listTitleEl) listTitleEl.textContent = "电商信号流";
@@ -1217,6 +1221,7 @@ function waytoagiViews(waytoagi) {
 
 function renderWaytoagi(waytoagi) {
   if (!waytoagiUpdatedAtEl || !waytoagiMetaEl || !waytoagiListEl) return;
+  if (waytoagiWrapEl) waytoagiWrapEl.hidden = state.mode !== "pure_ai";
   const { updates7d, updatesToday, latestDate } = waytoagiViews(waytoagi);
   if (waytoagiTodayBtnEl) waytoagiTodayBtnEl.classList.toggle("active", state.waytoagiMode === "today");
   if (waytoagi7dBtnEl) waytoagi7dBtnEl.classList.toggle("active", state.waytoagiMode === "7d");
@@ -1663,6 +1668,7 @@ navLinkEls.forEach((link) => {
     }
     if (targetId === "advancedPanel" && advancedPanelEl) advancedPanelEl.open = true;
     if (targetId === "bolePicksWrap" && bolePicksWrapEl) bolePicksWrapEl.hidden = false;
+    if (targetId === "aiRadarWrap" && aiRadarWrapEl) aiRadarWrapEl.hidden = false;
     scrollToPanel(targetId);
     history.replaceState(null, "", `#${targetId}`);
   });
