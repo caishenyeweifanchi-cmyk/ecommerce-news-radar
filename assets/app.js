@@ -837,6 +837,27 @@ function buildStoryCard(story, rank) {
   }
   body.appendChild(title);
 
+  // 业务价值提示
+  const storyImpact = (story.impact || (story.primary_item || {}).impact || "").trim();
+  const storyAction = (story.suggested_action || (story.primary_item || {}).suggested_action || "").trim();
+  if (storyImpact || storyAction) {
+    const hintEl = document.createElement("div");
+    hintEl.className = "card-value-hint";
+    if (storyImpact) {
+      const impEl = document.createElement("span");
+      impEl.className = "card-impact";
+      impEl.textContent = storyImpact;
+      hintEl.appendChild(impEl);
+    }
+    if (storyAction) {
+      const actEl = document.createElement("span");
+      actEl.className = "card-action";
+      actEl.textContent = `→ ${storyAction}`;
+      hintEl.appendChild(actEl);
+    }
+    body.appendChild(hintEl);
+  }
+
   link.append(time, body);
   return link;
 }
