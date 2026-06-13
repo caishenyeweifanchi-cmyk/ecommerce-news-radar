@@ -2,6 +2,7 @@ const state = {
   itemsAi: [],
   itemsAll: [],
   itemsAllRaw: [],
+  itemsPureAi: [],
   statsAi: [],
   totalAi: 0,
   totalRaw: 0,
@@ -35,6 +36,7 @@ const listTitleEl = document.getElementById("listTitle");
 const itemTpl = document.getElementById("itemTpl");
 const modeAiBtnEl = document.getElementById("modeAiBtn");
 const modeAllBtnEl = document.getElementById("modeAllBtn");
+const modePureAiBtnEl = document.getElementById("modePureAiBtn");
 const modeHintEl = document.getElementById("modeHint");
 const allDedupeWrapEl = document.getElementById("allDedupeWrap");
 const allDedupeToggleEl = document.getElementById("allDedupeToggle");
@@ -258,6 +260,7 @@ function computeSiteStats(items) {
 
 function currentSiteStats() {
   if (state.mode === "ai") return state.statsAi || [];
+  if (state.mode === "pure_ai") return computeSiteStats(state.itemsPureAi || []);
   return computeSiteStats(state.allDedup ? (state.itemsAll || []) : (state.itemsAllRaw || []));
 }
 
@@ -308,12 +311,16 @@ function renderSiteFilters() {
 function renderModeSwitch() {
   modeAiBtnEl.classList.toggle("active", state.mode === "ai");
   modeAllBtnEl.classList.toggle("active", state.mode === "all");
+  if (modePureAiBtnEl) modePureAiBtnEl.classList.toggle("active", state.mode === "pure_ai");
   if (allDedupeWrapEl) allDedupeWrapEl.classList.toggle("show", state.mode === "all");
   if (allDedupeToggleEl) allDedupeToggleEl.checked = state.allDedup;
   if (allDedupeLabelEl) allDedupeLabelEl.textContent = state.allDedup ? "去重开" : "去重关";
   if (state.mode === "ai") {
     modeHintEl.textContent = `今日必看 · ${fmtNumber(state.totalAi)} 条`;
     if (listTitleEl) listTitleEl.textContent = "电商信号流";
+  } else if (state.mode === "pure_ai") {
+    modeHintEl.textContent = `AI 情报 · ${fmtNumber(state.itemsPureAi.length)} 条`;
+    if (listTitleEl) listTitleEl.textContent = "AI 情报流";
   } else {
     const allCount = state.allDedup
       ? (state.totalAllMode || state.itemsAll.length)
@@ -324,11 +331,33 @@ function renderModeSwitch() {
   renderAdvancedSummary();
 }
 
+async function switchMode(nextMode) {
+  state.mode = nextMode;
+  state.siteFilter = "";
+  if (nextMode === "all") {
+    try {
+      await loadAllModeData();
+    } catch (err) {
+      newsListEl.innerHTML = "";
+      const failed = document.createElement("div");
+      failed.className = "empty";
+      failed.textContent = err.message;
+      newsListEl.appendChild(failed);
+      return;
+    }
+  }
+  renderModeSwitch();
+  renderSiteFilters();
+  renderBolePicks();
+  renderList();
+}
+
 function effectiveAllItems() {
   return state.allDedup ? state.itemsAll : state.itemsAllRaw;
 }
 
 function modeItems() {
+  if (state.mode === "pure_ai") return state.itemsPureAi;
   return state.mode === "all" ? effectiveAllItems() : state.itemsAi;
 }
 
@@ -431,9 +460,9 @@ function labelText(item) {
     operations_playbook: "运营玩法",
     ai_commerce: "AI 电商",
     traffic_creative: "投流素材",
-    extended_watch: "扩展观察",
+    extended_watch: "电商动态",
     traffic_marketing: "投流素材",
-    cross_border: "扩展观察",
+    cross_border: "电商动态",
     content_commerce: "运营玩法",
     product_trend: "品类趋势",
     supply_chain: "供应链",
@@ -1468,13 +1497,18 @@ async function loadDailyBriefData() {
   return fetchJsonWithFallback("data/daily-brief.json");
 }
 
+async function loadPureAiData() {
+  return fetchJsonWithFallback("data/ai-radar.json");
+}
+
 async function init() {
-  const [newsResult, waytoagiResult, statusResult, briefResult, webSourcesResult] = await Promise.allSettled([
+  const [newsResult, waytoagiResult, statusResult, briefResult, webSourcesResult, pureAiResult] = await Promise.allSettled([
     loadNewsData(),
     loadWaytoagiData(),
     loadSourceStatusData(),
     loadDailyBriefData(),
     loadWebSourcesData(),
+    loadPureAiData(),
   ]);
 
   if (briefResult.status === "fulfilled") {
@@ -1483,6 +1517,12 @@ async function init() {
     state.dailyBrief = null;
   }
   renderDailyReport();
+
+  if (pureAiResult.status === "fulfilled") {
+    state.itemsPureAi = Array.isArray(pureAiResult.value.items) ? pureAiResult.value.items : [];
+  } else {
+    state.itemsPureAi = [];
+  }
 
   if (newsResult.status === "fulfilled") {
     const payload = newsResult.value;
@@ -1552,11 +1592,7 @@ siteSelectEl.addEventListener("change", (e) => {
 });
 
 modeAiBtnEl.addEventListener("click", () => {
-  state.mode = "ai";
-  renderModeSwitch();
-  renderSiteFilters();
-  renderBolePicks();
-  renderList();
+  switchMode("ai");
 });
 
 modeAllBtnEl.addEventListener("click", async () => {
@@ -1581,6 +1617,12 @@ modeAllBtnEl.addEventListener("click", async () => {
   }
 });
 
+if (modePureAiBtnEl) {
+  modePureAiBtnEl.addEventListener("click", () => {
+    switchMode("pure_ai");
+  });
+}
+
 if (allDedupeToggleEl) {
   allDedupeToggleEl.addEventListener("change", (e) => {
     state.allDedup = Boolean(e.target.checked);
@@ -1600,13 +1642,18 @@ filterTabEls.forEach((button) => {
 });
 
 navLinkEls.forEach((link) => {
-  link.addEventListener("click", (event) => {
+  link.addEventListener("click", async (event) => {
     event.preventDefault();
     const category = link.dataset.category;
+    const mode = link.dataset.mode;
     const targetId = link.dataset.target || "overview";
 
     setActiveNav(link);
-    if (category !== undefined) {
+    if (mode) {
+      state.categoryFilter = "";
+      filterTabEls.forEach((tab) => tab.classList.toggle("active", !tab.dataset.category));
+      await switchMode(mode);
+    } else if (category !== undefined) {
       applyCategoryFilter(category);
     } else if (targetId !== "advancedPanel") {
       state.categoryFilter = "";

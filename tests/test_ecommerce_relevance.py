@@ -59,6 +59,31 @@ class EcommerceRelevanceScoringTests(unittest.TestCase):
         self.assertFalse(result["is_ecommerce_related"])
         self.assertLess(result["score"], 0.65)
 
+    def test_rejects_generic_official_ai_news_without_commerce_use_case(self):
+        rec = {
+            "site_id": "opmlrss",
+            "site_name": "OPML RSS",
+            "source": "OpenAI News",
+            "title": "OpenAI releases a new reasoning model with improved benchmark scores",
+            "url": "https://openai.com/news/example-model",
+        }
+        result = score_ecommerce_relevance(rec)
+        self.assertFalse(result["is_ecommerce_related"])
+        self.assertEqual(result["label"], "ai_without_commerce_scenario")
+
+    def test_accepts_ai_capability_when_mapped_to_commerce_use_case(self):
+        rec = {
+            "site_id": "opmlrss",
+            "site_name": "OPML RSS",
+            "source": "Google DeepMind Blog",
+            "title": "New image generation model improves product image and ad creative testing",
+            "url": "https://deepmind.google/blog/example-image-model",
+        }
+        result = score_ecommerce_relevance(rec)
+        self.assertTrue(result["is_ecommerce_related"])
+        self.assertEqual(result["label"], "ai_commerce")
+        self.assertIn("product image", result["signals"])
+
     def test_adds_compatible_topic_fields(self):
         rec = {
             "site_id": "opmlrss",

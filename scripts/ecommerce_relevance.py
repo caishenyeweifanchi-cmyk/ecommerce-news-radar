@@ -105,11 +105,26 @@ VALUE_KEYWORDS = {
         "gemini",
         "deepseek",
         "gpt",
+        "openai",
+        "anthropic",
+        "deepmind",
+        "hugging face",
+        "github ai",
+        "nvidia",
         "agent",
         "智能体",
         "多模态",
         "图像生成",
         "视频生成",
+        "image generation",
+        "video generation",
+        "product image",
+        "product photo",
+        "ad creative",
+        "advertising creative",
+        "customer support",
+        "shopping assistant",
+        "browser automation",
         "商品图",
         "广告素材",
         "脚本",
@@ -199,6 +214,19 @@ AI_COMMERCE_SCENE_KEYWORDS = [
     "价格监控",
     "飞书表",
     "自动化运营",
+    "ad creative",
+    "advertising creative",
+    "product image",
+    "product photo",
+    "product video",
+    "product description",
+    "customer support",
+    "customer service",
+    "shopping assistant",
+    "retail",
+    "commerce",
+    "merchant",
+    "seller workflow",
     "电商",
     "商家",
     "店铺",
@@ -363,18 +391,36 @@ def _dominant_value_bucket(value_hits: dict[str, list[str]]) -> str:
 
 
 def _ai_commerce_usefulness(text: str) -> str:
-    if contains_any_keyword(text, ["图像", "图片", "商品图", "详情页", "模特图", "封面", "视觉", "image"]):
+    if contains_any_keyword(
+        text,
+        [
+            "图像",
+            "图片",
+            "商品图",
+            "详情页",
+            "模特图",
+            "封面",
+            "视觉",
+            "image",
+            "product image",
+            "product photo",
+            "ad creative",
+            "advertising creative",
+        ],
+    ):
         return "可用于商品图、详情页、封面图和广告素材批量生产。"
-    if contains_any_keyword(text, ["视频", "短视频", "直播", "切片", "video"]):
+    if contains_any_keyword(text, ["视频", "短视频", "直播", "切片", "video", "product video"]):
         return "可用于短视频带货、产品展示、直播切片和信息流视频素材。"
-    if contains_any_keyword(text, ["多模态", "视觉理解", "评论", "买家秀", "页面分析"]):
+    if contains_any_keyword(text, ["多模态", "视觉理解", "评论", "买家秀", "页面分析", "multimodal"]):
         return "可用于竞品页面、评论、买家秀和素材拆解分析。"
-    if contains_any_keyword(text, ["长上下文", "推理", "分析", "诊断", "复盘"]):
+    if contains_any_keyword(text, ["长上下文", "推理", "分析", "诊断", "复盘", "reasoning", "analysis"]):
         return "可用于店铺诊断、爆款拆解、投流复盘和运营 SOP 分析。"
-    if contains_any_keyword(text, ["降价", "成本", "速度", "批量", "便宜"]):
+    if contains_any_keyword(text, ["降价", "成本", "速度", "批量", "便宜", "faster", "cheaper", "cost"]):
         return "可用于批量生成文案、素材、脚本和客服回复，降低内容生产成本。"
-    if contains_any_keyword(text, ["agent", "浏览器", "自动化", "采集", "监控"]):
+    if contains_any_keyword(text, ["agent", "浏览器", "自动化", "采集", "监控", "browser", "automation"]):
         return "可用于竞品采集、价格监控、飞书表整理和自动化运营。"
+    if contains_any_keyword(text, ["customer support", "customer service", "shopping assistant"]):
+        return "可用于售前客服、导购问答、客服回复和店铺服务提效。"
     return ""
 
 
@@ -407,6 +453,17 @@ def _has_direct_ai_commerce_transfer(text: str) -> bool:
         "多模态",
         "agent",
         "智能体",
+        "ad creative",
+        "advertising creative",
+        "product image",
+        "product photo",
+        "product video",
+        "product description",
+        "customer support",
+        "customer service",
+        "shopping assistant",
+        "seller workflow",
+        "browser automation",
     ]
     return contains_any_keyword(text, direct_terms)
 
@@ -453,6 +510,7 @@ def score_ecommerce_relevance(record: dict[str, Any]) -> dict[str, Any]:
     if is_ai_candidate and not has_scene:
         if ai_usefulness and _has_direct_ai_commerce_transfer(text):
             has_scene = True
+            has_business_value = True
             channel = "ai_commerce"
         else:
             return _result(
@@ -492,6 +550,8 @@ def score_ecommerce_relevance(record: dict[str, Any]) -> dict[str, Any]:
     if is_ai_candidate and ai_usefulness:
         score += 0.16
         channel = "ai_commerce"
+        if _has_direct_ai_commerce_transfer(text):
+            score = max(score, 0.68)
     if is_snapshot:
         score = min(score - 0.18, 0.58)
     if channel == "extended_watch":

@@ -37,8 +37,9 @@
           </div>
         </div>
         <nav class="nav-list">
-          <a class="active" href="#bolePicksWrap" data-target="bolePicksWrap">精选</a>
-          <a href="#listWrap" data-target="listWrap" data-category="">电商动态</a>
+          <a class="active" href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai">精选</a>
+          <a href="#listWrap" data-target="listWrap" data-mode="all" data-category="">电商动态</a>
+          <a href="#aiRadarWrap" data-target="aiRadarWrap" data-mode="pure_ai">AI 情报</a>
           <a href="#dailyReportWrap" data-target="dailyReportWrap">电商日报</a>
           <a href="#agentAccessWrap" data-target="agentAccessWrap">Agent 接入</a>
           <a href="#aboutWrap" data-target="aboutWrap">关于</a>
@@ -74,6 +75,7 @@
           <div class="mode-switch compact">
             <button id="modeAiBtn" class="mode-btn active" type="button">今日必看</button>
             <button id="modeAllBtn" class="mode-btn" type="button">电商动态</button>
+            <button id="modePureAiBtn" class="mode-btn" type="button">AI 情报</button>
           </div>
           <label id="allDedupeWrap" class="all-dedupe" for="allDedupeToggle">
             <input id="allDedupeToggle" type="checkbox" checked />
@@ -89,7 +91,7 @@
           <button class="filter-tab" type="button" data-category="operations_playbook">运营玩法</button>
           <button class="filter-tab" type="button" data-category="ai_commerce">AI 电商</button>
           <button class="filter-tab" type="button" data-category="traffic_creative">投流素材</button>
-          <button class="filter-tab" type="button" data-category="extended_watch">扩展观察</button>
+          <button class="filter-tab" type="button" data-category="extended_watch">电商动态</button>
         </section>
 
         <section class="dashboard-grid">
@@ -112,6 +114,7 @@
               <div id="bolePicksList" class="bole-board"></div>
             </section>
 
+            <div class="section-anchor" id="aiRadarWrap" aria-hidden="true"></div>
             <section class="list-wrap" id="listWrap">
               <div class="list-head">
                 <h2 id="listTitle">电商信号流</h2>

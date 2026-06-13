@@ -121,6 +121,37 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
     },
 )
 OFFICIAL_AI_MAX_AGE_DAYS = 45
+AI_RADAR_SOURCE_NAMES = {
+    "OpenAI News",
+    "Google DeepMind Blog",
+    "Google AI Blog",
+    "Hugging Face Blog",
+    "GitHub AI & ML",
+    "GitHub Changelog",
+    "NVIDIA Generative AI Blog",
+    "The Decoder",
+    "VentureBeat AI",
+    "TechCrunch AI",
+    "MIT Technology Review AI",
+    "AI HOT",
+    "MarkTechPost",
+    "Simon Willison",
+}
+AI_RADAR_HOST_HINTS = (
+    "openai.com",
+    "anthropic.com",
+    "deepmind.google",
+    "huggingface.co",
+    "github.blog",
+    "developer.nvidia.com",
+    "the-decoder.com",
+    "venturebeat.com",
+    "techcrunch.com",
+    "technologyreview.com",
+    "aihot.virxact.com",
+    "marktechpost.com",
+    "simonwillison.net",
+)
 AIBREAKFAST_JINA_URL = "https://r.jina.ai/https://aibreakfast.beehiiv.com/"
 AIHOT_FEED_URL = "https://aihot.virxact.com/feed.xml"
 AIHOT_FALLBACK_FEED_URLS = (
@@ -3669,6 +3700,15 @@ def is_ai_related_record(record: dict[str, Any]) -> bool:
     return bool(score_ai_relevance(record)["is_ai_related"])
 
 
+def is_ai_radar_candidate_record(record: dict[str, Any]) -> bool:
+    source = str(record.get("source") or "")
+    url = str(record.get("url") or "")
+    host = urlparse(url).netloc.lower()
+    if source in AI_RADAR_SOURCE_NAMES:
+        return True
+    return any(hint in host for hint in AI_RADAR_HOST_HINTS)
+
+
 def load_title_zh_cache(path: Path) -> dict[str, str]:
     if not path.exists():
         return {}
@@ -4461,6 +4501,7 @@ def main() -> int:
     latest_all_path = output_dir / "latest-24h-all.json"
     status_path = output_dir / "source-status.json"
     daily_brief_path = output_dir / "daily-brief.json"
+    ai_radar_path = output_dir / "ai-radar.json"
     stories_merged_path = output_dir / "stories-merged.json"
     merge_log_path = output_dir / "merge-log.json"
     waytoagi_path = output_dir / "waytoagi-7d.json"
@@ -4617,6 +4658,7 @@ def main() -> int:
     # 24h view
     window_start = now - timedelta(hours=args.window_hours)
     latest_items_all: list[dict[str, Any]] = []
+    ai_radar_items: list[dict[str, Any]] = []
     for record in archive.values():
         ts = event_time(record)
         if not ts:
@@ -4634,6 +4676,11 @@ def main() -> int:
             ):
                 continue
             if args.topic == "ecommerce":
+                ai_candidate = add_ai_relevance_fields(dict(normalized))
+                if ai_candidate.get("ai_is_related") or is_ai_radar_candidate_record(ai_candidate):
+                    ai_candidate = add_source_tier_fields(ai_candidate)
+                    ai_radar_items.append(ai_candidate)
+            if args.topic == "ecommerce":
                 normalized = add_ecommerce_relevance_fields(normalized)
                 if not normalized.get("topic_is_related"):
                     continue
@@ -4645,6 +4692,8 @@ def main() -> int:
     latest_items_all = suppress_superseded_web_snapshots(normalize_aihubtoday_records(latest_items_all))
 
     latest_items_all.sort(key=lambda x: event_time(x) or datetime.min.replace(tzinfo=UTC), reverse=True)
+    ai_radar_items = dedupe_items_by_title_url(ai_radar_items, random_pick=False)
+    ai_radar_items.sort(key=lambda x: event_time(x) or datetime.min.replace(tzinfo=UTC), reverse=True)
     latest_items = [record for record in latest_items_all if record.get("ai_is_related", is_ai_related_record(record))]
     title_cache = load_title_zh_cache(title_cache_path)
     latest_items, latest_items_all, title_cache = add_bilingual_fields(
@@ -4653,6 +4702,13 @@ def main() -> int:
         session,
         title_cache,
         max_new_translations=max(0, args.translate_max_new),
+    )
+    ai_radar_items, _, title_cache = add_bilingual_fields(
+        ai_radar_items,
+        [],
+        session,
+        title_cache,
+        max_new_translations=max(0, min(args.translate_max_new, 20)),
     )
     latest_items_ai_dedup = suppress_near_duplicate_items(dedupe_items_by_title_url(latest_items, random_pick=False))
     latest_items_all_dedup = dedupe_items_by_title_url(latest_items_all, random_pick=True)
@@ -4717,6 +4773,14 @@ def main() -> int:
         "items_ai": latest_items_ai_dedup,
         "items_all_raw": latest_items_all,
         "items_all": latest_items_all_dedup,
+    }
+    ai_radar_payload = {
+        "generated_at": generated_at,
+        "window_hours": args.window_hours,
+        "topic": "ai",
+        "description": "Pure AI radar feed. Ecommerce homepage/daily still use ecommerce relevance scoring.",
+        "total_items": len(ai_radar_items),
+        "items": ai_radar_items,
     }
 
     archive_payload = {
@@ -4821,6 +4885,10 @@ def main() -> int:
 
     latest_path.write_text(json.dumps(sanitize_public_payload(latest_payload), ensure_ascii=False, indent=2), encoding="utf-8")
     latest_all_path.write_text(json.dumps(sanitize_public_payload(latest_all_payload), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    ai_radar_path.write_text(
+        json.dumps(sanitize_public_payload(ai_radar_payload), ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8",
+    )
     daily_brief_path.write_text(
         json.dumps(sanitize_public_payload(daily_brief_payload), ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -4848,6 +4916,7 @@ def main() -> int:
 
     print(f"Wrote: {latest_path} ({len(latest_items)} items)")
     print(f"Wrote: {latest_all_path} ({len(latest_items_all_dedup)} all-mode items)")
+    print(f"Wrote: {ai_radar_path} ({len(ai_radar_items)} AI radar items)")
     print(f"Wrote: {daily_brief_path} ({daily_brief_payload.get('total_items', 0)} brief items)")
     print(f"Wrote: {stories_merged_path} ({stories_merged_payload.get('total_stories', 0)} stories)")
     print(f"Wrote: {merge_log_path} ({len(merge_events)} merge events)")

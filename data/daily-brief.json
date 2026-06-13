@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T00:16:29.471302Z",
+  "generated_at": "2026-06-13T01:35:24.121358Z",
   "window_hours": 168,
   "total_items": 20,
   "sections": [
@@ -42,14 +42,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8878,
-          "importance": 0.8878,
-          "importance_score": 0.8878,
+          "score": 0.8863,
+          "importance": 0.8863,
+          "importance_score": 0.8863,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.9391,
+            "recency": 0.9313,
             "story_heat": 0.0
           },
           "category": "official",
@@ -122,14 +122,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8807,
-          "importance": 0.8807,
-          "importance_score": 0.8807,
+          "score": 0.8791,
+          "importance": 0.8791,
+          "importance_score": 0.8791,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.9035,
+            "recency": 0.8957,
             "story_heat": 0.0
           },
           "category": "official",
@@ -200,14 +200,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8846,
-          "importance": 0.8846,
-          "importance_score": 0.8846,
+          "score": 0.883,
+          "importance": 0.883,
+          "importance_score": 0.883,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.9229,
+            "recency": 0.9151,
             "story_heat": 0.0
           },
           "category": "official",
@@ -299,14 +299,14 @@
           ],
           "item_count": 2,
           "duplicate_count": 2,
-          "score": 0.8308,
-          "importance": 0.8308,
-          "importance_score": 0.8308,
+          "score": 0.8292,
+          "importance": 0.8292,
+          "importance_score": 0.8292,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.82,
-            "recency": 0.799,
+            "recency": 0.7911,
             "story_heat": 0.25
           },
           "category": "official",
@@ -376,14 +376,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8294,
-          "importance": 0.8294,
-          "importance_score": 0.8294,
+          "score": 0.8278,
+          "importance": 0.8278,
+          "importance_score": 0.8278,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.82,
-            "recency": 0.917,
+            "recency": 0.9092,
             "story_heat": 0.0
           },
           "category": "official",
@@ -452,14 +452,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8568,
-          "importance": 0.8568,
-          "importance_score": 0.8568,
+          "score": 0.8552,
+          "importance": 0.8552,
+          "importance_score": 0.8552,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.7839,
+            "recency": 0.7761,
             "story_heat": 0.0
           },
           "category": "official",
@@ -530,14 +530,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8845,
-          "importance": 0.8845,
-          "importance_score": 0.8845,
+          "score": 0.8829,
+          "importance": 0.8829,
+          "importance_score": 0.8829,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.9224,
+            "recency": 0.9146,
             "story_heat": 0.0
           },
           "category": "official",
@@ -576,82 +576,6 @@
           }
         },
         {
-          "story_id": "story_75ee5875eff4",
-          "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
-          "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
-          "primary_url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
-          "source": "Google Ads Blog",
-          "source_name": "重点网页源",
-          "sources": [
-            {
-              "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-              "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
-              "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
-              "source": "Google Ads Blog",
-              "source_name": "重点网页源",
-              "site_id": "websource",
-              "published_at": "2026-06-11T00:00:00Z"
-            }
-          ],
-          "source_count": 1,
-          "source_names": [
-            "Google Ads Blog"
-          ],
-          "items": [
-            {
-              "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-              "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
-              "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
-              "source": "Google Ads Blog",
-              "source_name": "重点网页源",
-              "site_id": "websource",
-              "published_at": "2026-06-11T00:00:00Z"
-            }
-          ],
-          "item_count": 1,
-          "duplicate_count": 1,
-          "score": 0.8005,
-          "importance": 0.8005,
-          "importance_score": 0.8005,
-          "importance_label": "官方更新",
-          "importance_breakdown": {
-            "source_tier": 1.0,
-            "ai_relevance": 0.86,
-            "recency": 0.7126,
-            "story_heat": 0.0
-          },
-          "category": "official",
-          "brief_channel": "ai_commerce",
-          "impact": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
-          "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
-          "business_value": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
-          "platform": "Google Ads Blog",
-          "reasons": [
-            "official_source",
-            "high_ai_relevance",
-            "high_importance"
-          ],
-          "earliest_at": "2026-06-11T00:00:00Z",
-          "latest_at": "2026-06-11T00:00:00Z",
-          "primary_item": {
-            "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-            "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
-            "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
-            "source": "Google Ads Blog",
-            "source_name": "重点网页源",
-            "site_id": "websource",
-            "meta": {
-              "web_source_id": "blog_google_products_ads_commerce",
-              "web_source_url": "https://blog.google/products/ads-commerce/",
-              "web_source_score": 11,
-              "web_source_priority": "P0",
-              "web_source_domain": "投流营销",
-              "web_source_platform": "Google",
-              "published_time_source": "detail_meta"
-            }
-          }
-        },
-        {
           "story_id": "story_c4d0f344dd03",
           "title": "《快手旗舰标识管理规则》修订公告",
           "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=nGTlUU3dqS",
@@ -686,14 +610,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8568,
-          "importance": 0.8568,
-          "importance_score": 0.8568,
+          "score": 0.8552,
+          "importance": 0.8552,
+          "importance_score": 0.8552,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.7838,
+            "recency": 0.7759,
             "story_heat": 0.0
           },
           "category": "official",
@@ -764,14 +688,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8808,
-          "importance": 0.8808,
-          "importance_score": 0.8808,
+          "score": 0.8792,
+          "importance": 0.8792,
+          "importance_score": 0.8792,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.904,
+            "recency": 0.8962,
             "story_heat": 0.0
           },
           "category": "official",
@@ -844,14 +768,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.7987,
-          "importance": 0.7987,
-          "importance_score": 0.7987,
+          "score": 0.7971,
+          "importance": 0.7971,
+          "importance_score": 0.7971,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.82,
-            "recency": 0.7635,
+            "recency": 0.7557,
             "story_heat": 0.0
           },
           "category": "official",
@@ -920,14 +844,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8808,
-          "importance": 0.8808,
-          "importance_score": 0.8808,
+          "score": 0.8792,
+          "importance": 0.8792,
+          "importance_score": 0.8792,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.9038,
+            "recency": 0.896,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1000,14 +924,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.743,
-          "importance": 0.743,
-          "importance_score": 0.743,
+          "score": 0.7414,
+          "importance": 0.7414,
+          "importance_score": 0.7414,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.7,
-            "recency": 0.665,
+            "recency": 0.6572,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1074,14 +998,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8783,
-          "importance": 0.8783,
-          "importance_score": 0.8783,
+          "score": 0.8768,
+          "importance": 0.8768,
+          "importance_score": 0.8768,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.8916,
+            "recency": 0.8838,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1120,6 +1044,80 @@
           }
         },
         {
+          "story_id": "story_4c7ec35cde00",
+          "title": "Google Geminiとは？Googleの生成AIについて解説",
+          "url": "https://www.shopify.com/jp/blog/what-is-google-gemini",
+          "primary_url": "https://www.shopify.com/jp/blog/what-is-google-gemini",
+          "source": "Shopify AI Commerce Blog",
+          "source_name": "重点网页源",
+          "sources": [
+            {
+              "id": "4e307e04de828fccad7d7de3ce6da451717f10f7",
+              "title": "Google Geminiとは？Googleの生成AIについて解説",
+              "url": "https://www.shopify.com/jp/blog/what-is-google-gemini",
+              "source": "Shopify AI Commerce Blog",
+              "source_name": "重点网页源",
+              "site_id": "websource",
+              "published_at": "2026-06-09T12:20:19Z"
+            }
+          ],
+          "source_count": 1,
+          "source_names": [
+            "Shopify AI Commerce Blog"
+          ],
+          "items": [
+            {
+              "id": "4e307e04de828fccad7d7de3ce6da451717f10f7",
+              "title": "Google Geminiとは？Googleの生成AIについて解説",
+              "url": "https://www.shopify.com/jp/blog/what-is-google-gemini",
+              "source": "Shopify AI Commerce Blog",
+              "source_name": "重点网页源",
+              "site_id": "websource",
+              "published_at": "2026-06-09T12:20:19Z"
+            }
+          ],
+          "item_count": 1,
+          "duplicate_count": 1,
+          "score": 0.7085,
+          "importance": 0.7085,
+          "importance_score": 0.7085,
+          "importance_label": "官方更新",
+          "importance_breakdown": {
+            "source_tier": 1.0,
+            "ai_relevance": 0.7,
+            "recency": 0.4926,
+            "story_heat": 0.0
+          },
+          "category": "official",
+          "brief_channel": "ai_commerce",
+          "impact": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+          "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
+          "business_value": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+          "platform": "Shopify AI Commerce Blog",
+          "reasons": [
+            "official_source"
+          ],
+          "earliest_at": "2026-06-09T12:20:19Z",
+          "latest_at": "2026-06-09T12:20:19Z",
+          "primary_item": {
+            "id": "4e307e04de828fccad7d7de3ce6da451717f10f7",
+            "title": "Google Geminiとは？Googleの生成AIについて解説",
+            "url": "https://www.shopify.com/jp/blog/what-is-google-gemini",
+            "source": "Shopify AI Commerce Blog",
+            "source_name": "重点网页源",
+            "site_id": "websource",
+            "meta": {
+              "web_source_id": "shopify_ai_commerce_blog",
+              "web_source_url": "https://www.shopify.com/blog",
+              "web_source_score": 1,
+              "web_source_priority": "P0",
+              "web_source_domain": "ai_ecommerce",
+              "web_source_platform": "Shopify",
+              "published_time_source": "detail_meta"
+            }
+          }
+        },
+        {
           "story_id": "story_74e4c92b7da7",
           "title": "《快手小店结算规则》修订公告",
           "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=TParGlyquv",
@@ -1154,14 +1152,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.7895,
-          "importance": 0.7895,
-          "importance_score": 0.7895,
+          "score": 0.788,
+          "importance": 0.788,
+          "importance_score": 0.788,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.4476,
+            "recency": 0.4398,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1232,14 +1230,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.7144,
-          "importance": 0.7144,
-          "importance_score": 0.7144,
+          "score": 0.7129,
+          "importance": 0.7129,
+          "importance_score": 0.7129,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 0.7,
-            "recency": 0.5222,
+            "recency": 0.5143,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1272,21 +1270,21 @@
           }
         },
         {
-          "story_id": "story_e1286e4ba64a",
-          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
-          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+          "story_id": "story_806a4315559e",
+          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "sources": [
             {
-              "id": "0bee5e39656239effbd913bb9a642663c851fb60",
-              "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+              "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
+              "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
               "source": "抖音电商规则中心",
               "source_name": "重点网页源",
               "site_id": "websource",
-              "published_at": "2026-06-11T12:19:17Z"
+              "published_at": "2026-06-11T12:21:33Z"
             }
           ],
           "source_count": 1,
@@ -1295,25 +1293,25 @@
           ],
           "items": [
             {
-              "id": "0bee5e39656239effbd913bb9a642663c851fb60",
-              "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+              "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
+              "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
               "source": "抖音电商规则中心",
               "source_name": "重点网页源",
               "site_id": "websource",
-              "published_at": "2026-06-11T12:19:17Z"
+              "published_at": "2026-06-11T12:21:33Z"
             }
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8572,
-          "importance": 0.8572,
-          "importance_score": 0.8572,
+          "score": 0.8557,
+          "importance": 0.8557,
+          "importance_score": 0.8557,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.786,
+            "recency": 0.7784,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1327,12 +1325,12 @@
             "high_ai_relevance",
             "high_importance"
           ],
-          "earliest_at": "2026-06-11T12:19:17Z",
-          "latest_at": "2026-06-11T12:19:17Z",
+          "earliest_at": "2026-06-11T12:21:33Z",
+          "latest_at": "2026-06-11T12:21:33Z",
           "primary_item": {
-            "id": "0bee5e39656239effbd913bb9a642663c851fb60",
-            "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+            "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
+            "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
             "source": "抖音电商规则中心",
             "source_name": "重点网页源",
             "site_id": "websource",
@@ -1344,8 +1342,8 @@
               "web_source_domain": "平台规则",
               "web_source_platform": "抖音电商",
               "rule_type": 0,
-              "rule_status": 201,
-              "knowledge_id": "aJkw6NXXPDHC",
+              "rule_status": 0,
+              "knowledge_id": "aJkrRkeCNjeW",
               "article_url_source": "douyin_articlev0",
               "published_time_source": "api"
             }
@@ -1386,14 +1384,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.7895,
-          "importance": 0.7895,
-          "importance_score": 0.7895,
+          "score": 0.7879,
+          "importance": 0.7879,
+          "importance_score": 0.7879,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.4474,
+            "recency": 0.4396,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1430,21 +1428,21 @@
           }
         },
         {
-          "story_id": "story_806a4315559e",
-          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
-          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+          "story_id": "story_e1286e4ba64a",
+          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+          "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "sources": [
             {
-              "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
-              "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+              "id": "0bee5e39656239effbd913bb9a642663c851fb60",
+              "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
               "source": "抖音电商规则中心",
               "source_name": "重点网页源",
               "site_id": "websource",
-              "published_at": "2026-06-11T12:21:33Z"
+              "published_at": "2026-06-11T12:19:17Z"
             }
           ],
           "source_count": 1,
@@ -1453,25 +1451,25 @@
           ],
           "items": [
             {
-              "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
-              "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+              "id": "0bee5e39656239effbd913bb9a642663c851fb60",
+              "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+              "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
               "source": "抖音电商规则中心",
               "source_name": "重点网页源",
               "site_id": "websource",
-              "published_at": "2026-06-11T12:21:33Z"
+              "published_at": "2026-06-11T12:19:17Z"
             }
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.8572,
-          "importance": 0.8572,
-          "importance_score": 0.8572,
+          "score": 0.8556,
+          "importance": 0.8556,
+          "importance_score": 0.8556,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.7862,
+            "recency": 0.7782,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1485,12 +1483,12 @@
             "high_ai_relevance",
             "high_importance"
           ],
-          "earliest_at": "2026-06-11T12:21:33Z",
-          "latest_at": "2026-06-11T12:21:33Z",
+          "earliest_at": "2026-06-11T12:19:17Z",
+          "latest_at": "2026-06-11T12:19:17Z",
           "primary_item": {
-            "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
-            "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+            "id": "0bee5e39656239effbd913bb9a642663c851fb60",
+            "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+            "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
             "source": "抖音电商规则中心",
             "source_name": "重点网页源",
             "site_id": "websource",
@@ -1502,8 +1500,8 @@
               "web_source_domain": "平台规则",
               "web_source_platform": "抖音电商",
               "rule_type": 0,
-              "rule_status": 0,
-              "knowledge_id": "aJkrRkeCNjeW",
+              "rule_status": 201,
+              "knowledge_id": "aJkw6NXXPDHC",
               "article_url_source": "douyin_articlev0",
               "published_time_source": "api"
             }
@@ -1544,14 +1542,14 @@
           ],
           "item_count": 1,
           "duplicate_count": 1,
-          "score": 0.854,
-          "importance": 0.854,
-          "importance_score": 0.854,
+          "score": 0.8524,
+          "importance": 0.8524,
+          "importance_score": 0.8524,
           "importance_label": "官方更新",
           "importance_breakdown": {
             "source_tier": 1.0,
             "ai_relevance": 1.0,
-            "recency": 0.7698,
+            "recency": 0.762,
             "story_heat": 0.0
           },
           "category": "official",
@@ -1628,14 +1626,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8878,
-      "importance": 0.8878,
-      "importance_score": 0.8878,
+      "score": 0.8863,
+      "importance": 0.8863,
+      "importance_score": 0.8863,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9391,
+        "recency": 0.9313,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1708,14 +1706,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8807,
-      "importance": 0.8807,
-      "importance_score": 0.8807,
+      "score": 0.8791,
+      "importance": 0.8791,
+      "importance_score": 0.8791,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9035,
+        "recency": 0.8957,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1786,14 +1784,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8846,
-      "importance": 0.8846,
-      "importance_score": 0.8846,
+      "score": 0.883,
+      "importance": 0.883,
+      "importance_score": 0.883,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9229,
+        "recency": 0.9151,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1885,14 +1883,14 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8308,
-      "importance": 0.8308,
-      "importance_score": 0.8308,
+      "score": 0.8292,
+      "importance": 0.8292,
+      "importance_score": 0.8292,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.82,
-        "recency": 0.799,
+        "recency": 0.7911,
         "story_heat": 0.25
       },
       "category": "official",
@@ -1962,14 +1960,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8294,
-      "importance": 0.8294,
-      "importance_score": 0.8294,
+      "score": 0.8278,
+      "importance": 0.8278,
+      "importance_score": 0.8278,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.82,
-        "recency": 0.917,
+        "recency": 0.9092,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2038,14 +2036,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8568,
-      "importance": 0.8568,
-      "importance_score": 0.8568,
+      "score": 0.8552,
+      "importance": 0.8552,
+      "importance_score": 0.8552,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7839,
+        "recency": 0.7761,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2116,14 +2114,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8845,
-      "importance": 0.8845,
-      "importance_score": 0.8845,
+      "score": 0.8829,
+      "importance": 0.8829,
+      "importance_score": 0.8829,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9224,
+        "recency": 0.9146,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2162,82 +2160,6 @@
       }
     },
     {
-      "story_id": "story_75ee5875eff4",
-      "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
-      "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
-      "primary_url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
-      "source": "Google Ads Blog",
-      "source_name": "重点网页源",
-      "sources": [
-        {
-          "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-          "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
-          "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
-          "source": "Google Ads Blog",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google Ads Blog"
-      ],
-      "items": [
-        {
-          "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-          "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
-          "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
-          "source": "Google Ads Blog",
-          "source_name": "重点网页源",
-          "site_id": "websource",
-          "published_at": "2026-06-11T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8005,
-      "importance": 0.8005,
-      "importance_score": 0.8005,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.86,
-        "recency": 0.7126,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "brief_channel": "ai_commerce",
-      "impact": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
-      "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
-      "business_value": "可用于竞品采集、价格监控、飞书表整理和自动化运营。",
-      "platform": "Google Ads Blog",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-11T00:00:00Z",
-      "latest_at": "2026-06-11T00:00:00Z",
-      "primary_item": {
-        "id": "95f9412f5581dcb855d24a0582aff958e7496564",
-        "title": "增强型本地服务广告将购房者和本地代理商聚集在一起。 / Enhanced Local Services Ads for Home Listings bring homebuyers and local agents together.",
-        "url": "https://blog.google/products/ads-commerce/new-real-estate-ads-formats",
-        "source": "Google Ads Blog",
-        "source_name": "重点网页源",
-        "site_id": "websource",
-        "meta": {
-          "web_source_id": "blog_google_products_ads_commerce",
-          "web_source_url": "https://blog.google/products/ads-commerce/",
-          "web_source_score": 11,
-          "web_source_priority": "P0",
-          "web_source_domain": "投流营销",
-          "web_source_platform": "Google",
-          "published_time_source": "detail_meta"
-        }
-      }
-    },
-    {
       "story_id": "story_c4d0f344dd03",
       "title": "《快手旗舰标识管理规则》修订公告",
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=nGTlUU3dqS",
@@ -2272,14 +2194,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8568,
-      "importance": 0.8568,
-      "importance_score": 0.8568,
+      "score": 0.8552,
+      "importance": 0.8552,
+      "importance_score": 0.8552,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7838,
+        "recency": 0.7759,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2350,14 +2272,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8808,
-      "importance": 0.8808,
-      "importance_score": 0.8808,
+      "score": 0.8792,
+      "importance": 0.8792,
+      "importance_score": 0.8792,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.904,
+        "recency": 0.8962,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2430,14 +2352,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7987,
-      "importance": 0.7987,
-      "importance_score": 0.7987,
+      "score": 0.7971,
+      "importance": 0.7971,
+      "importance_score": 0.7971,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.82,
-        "recency": 0.7635,
+        "recency": 0.7557,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2506,14 +2428,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8808,
-      "importance": 0.8808,
-      "importance_score": 0.8808,
+      "score": 0.8792,
+      "importance": 0.8792,
+      "importance_score": 0.8792,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9038,
+        "recency": 0.896,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2586,14 +2508,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.743,
-      "importance": 0.743,
-      "importance_score": 0.743,
+      "score": 0.7414,
+      "importance": 0.7414,
+      "importance_score": 0.7414,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.7,
-        "recency": 0.665,
+        "recency": 0.6572,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2660,14 +2582,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8783,
-      "importance": 0.8783,
-      "importance_score": 0.8783,
+      "score": 0.8768,
+      "importance": 0.8768,
+      "importance_score": 0.8768,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8916,
+        "recency": 0.8838,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2706,6 +2628,80 @@
       }
     },
     {
+      "story_id": "story_4c7ec35cde00",
+      "title": "Google Geminiとは？Googleの生成AIについて解説",
+      "url": "https://www.shopify.com/jp/blog/what-is-google-gemini",
+      "primary_url": "https://www.shopify.com/jp/blog/what-is-google-gemini",
+      "source": "Shopify AI Commerce Blog",
+      "source_name": "重点网页源",
+      "sources": [
+        {
+          "id": "4e307e04de828fccad7d7de3ce6da451717f10f7",
+          "title": "Google Geminiとは？Googleの生成AIについて解説",
+          "url": "https://www.shopify.com/jp/blog/what-is-google-gemini",
+          "source": "Shopify AI Commerce Blog",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-09T12:20:19Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Shopify AI Commerce Blog"
+      ],
+      "items": [
+        {
+          "id": "4e307e04de828fccad7d7de3ce6da451717f10f7",
+          "title": "Google Geminiとは？Googleの生成AIについて解説",
+          "url": "https://www.shopify.com/jp/blog/what-is-google-gemini",
+          "source": "Shopify AI Commerce Blog",
+          "source_name": "重点网页源",
+          "site_id": "websource",
+          "published_at": "2026-06-09T12:20:19Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7085,
+      "importance": 0.7085,
+      "importance_score": 0.7085,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.7,
+        "recency": 0.4926,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "brief_channel": "ai_commerce",
+      "impact": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+      "suggested_action": "评估是否加入素材、脚本、客服、选品或竞品分析流程做小范围测试。",
+      "business_value": "用于判断 AI 能力能否迁移到电商素材、脚本、客服、选品或自动化。",
+      "platform": "Shopify AI Commerce Blog",
+      "reasons": [
+        "official_source"
+      ],
+      "earliest_at": "2026-06-09T12:20:19Z",
+      "latest_at": "2026-06-09T12:20:19Z",
+      "primary_item": {
+        "id": "4e307e04de828fccad7d7de3ce6da451717f10f7",
+        "title": "Google Geminiとは？Googleの生成AIについて解説",
+        "url": "https://www.shopify.com/jp/blog/what-is-google-gemini",
+        "source": "Shopify AI Commerce Blog",
+        "source_name": "重点网页源",
+        "site_id": "websource",
+        "meta": {
+          "web_source_id": "shopify_ai_commerce_blog",
+          "web_source_url": "https://www.shopify.com/blog",
+          "web_source_score": 1,
+          "web_source_priority": "P0",
+          "web_source_domain": "ai_ecommerce",
+          "web_source_platform": "Shopify",
+          "published_time_source": "detail_meta"
+        }
+      }
+    },
+    {
       "story_id": "story_74e4c92b7da7",
       "title": "《快手小店结算规则》修订公告",
       "url": "https://edu.kwaixiaodian.com/rule/web/detail?id=TParGlyquv",
@@ -2740,14 +2736,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7895,
-      "importance": 0.7895,
-      "importance_score": 0.7895,
+      "score": 0.788,
+      "importance": 0.788,
+      "importance_score": 0.788,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.4476,
+        "recency": 0.4398,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2818,14 +2814,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7144,
-      "importance": 0.7144,
-      "importance_score": 0.7144,
+      "score": 0.7129,
+      "importance": 0.7129,
+      "importance_score": 0.7129,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.7,
-        "recency": 0.5222,
+        "recency": 0.5143,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2858,21 +2854,21 @@
       }
     },
     {
-      "story_id": "story_e1286e4ba64a",
-      "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
-      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+      "story_id": "story_806a4315559e",
+      "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "0bee5e39656239effbd913bb9a642663c851fb60",
-          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+          "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
+          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T12:19:17Z"
+          "published_at": "2026-06-11T12:21:33Z"
         }
       ],
       "source_count": 1,
@@ -2881,25 +2877,25 @@
       ],
       "items": [
         {
-          "id": "0bee5e39656239effbd913bb9a642663c851fb60",
-          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+          "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
+          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T12:19:17Z"
+          "published_at": "2026-06-11T12:21:33Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8572,
-      "importance": 0.8572,
-      "importance_score": 0.8572,
+      "score": 0.8557,
+      "importance": 0.8557,
+      "importance_score": 0.8557,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.786,
+        "recency": 0.7784,
         "story_heat": 0.0
       },
       "category": "official",
@@ -2913,12 +2909,12 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-11T12:19:17Z",
-      "latest_at": "2026-06-11T12:19:17Z",
+      "earliest_at": "2026-06-11T12:21:33Z",
+      "latest_at": "2026-06-11T12:21:33Z",
       "primary_item": {
-        "id": "0bee5e39656239effbd913bb9a642663c851fb60",
-        "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
-        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+        "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
+        "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -2930,8 +2926,8 @@
           "web_source_domain": "平台规则",
           "web_source_platform": "抖音电商",
           "rule_type": 0,
-          "rule_status": 201,
-          "knowledge_id": "aJkw6NXXPDHC",
+          "rule_status": 0,
+          "knowledge_id": "aJkrRkeCNjeW",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
@@ -2972,14 +2968,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7895,
-      "importance": 0.7895,
-      "importance_score": 0.7895,
+      "score": 0.7879,
+      "importance": 0.7879,
+      "importance_score": 0.7879,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.4474,
+        "recency": 0.4396,
         "story_heat": 0.0
       },
       "category": "official",
@@ -3016,21 +3012,21 @@
       }
     },
     {
-      "story_id": "story_806a4315559e",
-      "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
-      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+      "story_id": "story_e1286e4ba64a",
+      "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+      "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
+      "primary_url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
       "source": "抖音电商规则中心",
       "source_name": "重点网页源",
       "sources": [
         {
-          "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
-          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+          "id": "0bee5e39656239effbd913bb9a642663c851fb60",
+          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T12:21:33Z"
+          "published_at": "2026-06-11T12:19:17Z"
         }
       ],
       "source_count": 1,
@@ -3039,25 +3035,25 @@
       ],
       "items": [
         {
-          "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
-          "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+          "id": "0bee5e39656239effbd913bb9a642663c851fb60",
+          "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+          "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
           "source": "抖音电商规则中心",
           "source_name": "重点网页源",
           "site_id": "websource",
-          "published_at": "2026-06-11T12:21:33Z"
+          "published_at": "2026-06-11T12:19:17Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8572,
-      "importance": 0.8572,
-      "importance_score": 0.8572,
+      "score": 0.8556,
+      "importance": 0.8556,
+      "importance_score": 0.8556,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7862,
+        "recency": 0.7782,
         "story_heat": 0.0
       },
       "category": "official",
@@ -3071,12 +3067,12 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-11T12:21:33Z",
-      "latest_at": "2026-06-11T12:21:33Z",
+      "earliest_at": "2026-06-11T12:19:17Z",
+      "latest_at": "2026-06-11T12:19:17Z",
       "primary_item": {
-        "id": "d241592a80f8684b3abd4a88a41119a995b63a32",
-        "title": "关于修订《【发布/分享混淆品牌信息】细则》的公示通知",
-        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkrRkeCNjeW",
+        "id": "0bee5e39656239effbd913bb9a642663c851fb60",
+        "title": "关于修订《【出售/分享假冒或盗版商品】细则》的意见征集通知",
+        "url": "https://school.jinritemai.com/doudian/web/articlev0/aJkw6NXXPDHC",
         "source": "抖音电商规则中心",
         "source_name": "重点网页源",
         "site_id": "websource",
@@ -3088,8 +3084,8 @@
           "web_source_domain": "平台规则",
           "web_source_platform": "抖音电商",
           "rule_type": 0,
-          "rule_status": 0,
-          "knowledge_id": "aJkrRkeCNjeW",
+          "rule_status": 201,
+          "knowledge_id": "aJkw6NXXPDHC",
           "article_url_source": "douyin_articlev0",
           "published_time_source": "api"
         }
@@ -3130,14 +3126,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.854,
-      "importance": 0.854,
-      "importance_score": 0.854,
+      "score": 0.8524,
+      "importance": 0.8524,
+      "importance_score": 0.8524,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7698,
+        "recency": 0.762,
         "story_heat": 0.0
       },
       "category": "official",
