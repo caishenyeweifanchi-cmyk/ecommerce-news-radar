@@ -8,6 +8,10 @@ GitHub Actions refresh jobs, and GitHub Pages publishing.
 
 ## Working Rules
 
+- Before starting any task, read `docs/WORK_LOG.md`.
+- After finishing any task, append a concise entry to `docs/WORK_LOG.md` with what changed, what was verified, remaining risks, and commit id if available.
+- Codex, Claude Code, and other agents share this log. Do not assume another agent knows what you changed unless it is recorded there.
+- Do not submit or commit auto-generated `data/*.json` changes unless the task explicitly asks for a data snapshot commit.
 - Keep changes small and reviewable.
 - Search the repo before changing source fetchers or output schemas.
 - Do not commit private feeds, secrets, tokens, cookies, or `.env` values.
