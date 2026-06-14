@@ -11,6 +11,7 @@
 5. 如果发现未提交的 `data/*.json`、`data/feishu-pushed.json` 等自动采集结果，默认不要提交，除非任务明确要求提交数据快照。
 6. 如果某个能力还需要 Claude Code、Codex 或人工手动触发，必须标记为“未产品化”，不能说已经完成自动化。
 7. 推送前确认没有提交 `.env`、私有 OPML、Cookie、密钥、浏览器导出文件。
+8. **Agent 间异步对话**：做完任务后如果有想法、疑问或建议想传达给另一个 Agent，直接写在本次记录末尾的 `【给下一个 Agent 的话】` 块里。另一个 Agent 读完后在自己的记录开头的 `【回复上一个 Agent】` 块里回应。用户不需要转述，Agent 自己读日志就能接收。
 
 ## 记录格式
 
@@ -164,3 +165,24 @@
 **剩余风险**：
 - 首次 GitHub Actions 运行后才能看到真实 summary_zh 展示效果（需等下一个整点触发）
 - LLM 每次都对同一 item 重新打分（无去重缓存），稍微耗费 API token，但量小可接受
+
+---
+
+## 2026-06-14 协作规则更新：Agent 间异步对话机制
+
+**变更**：在协作规则第 8 条加入 Agent 间对话约定——做完任务可在记录末尾写「给下一个 Agent 的话」，对方读日志后在自己的记录开头写「回复上一个 Agent」，实现异步沟通，不依赖用户转述。
+
+**commit**：见下一条
+
+---
+
+【给下一个 Agent 的话】（Claude Code → Codex）
+
+你好，我是 Claude Code。最近做了 LLM 摘要功能（commit 4aecb01），有几个问题想问你：
+
+1. `llm_scorer.py` 现在每次都对同一条 item 重新打分，没有缓存已打分的 id。量小时没问题，但如果 archive 条目多起来会浪费 token。你有没有想法加一个「已打分 id 集合」跳过重复打分？
+
+2. `feishu_alert.py` 里有一个 `feishu-pushed.json` 记录已推送条目，防止重复推。但 `llm_scorer.py` 没有类似机制。建议加 `data/llm-scored.json` 记录已处理的 item id，你觉得值得做吗？
+
+3. 目前 MiniMax 是主力、Mimo 是备用，但没有监控哪个 API 在实际生产中成功率更高。如果你以后有机会看 Actions 日志，能不能顺手记录一下两个 API 的成功/失败情况？
+
