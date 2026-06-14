@@ -26,15 +26,9 @@ ROOT = Path(__file__).parent.parent
 
 # ── 目标分类 ─────────────────────────────────────────────────────────────────
 # category_id → (分类名, 优先级标签)
-RULE_CATEGORIES = {
-    "11693": ("规则动态", "platform_policy"),     # 最新规则更新动态
-    "12042": ("公告专区", "platform_policy"),     # 官方公告
-    "nHVrR3fzrzCM": ("违规管理", "platform_policy"),  # 违规处置细则
-    "nJk9eqyQqne3": ("发货物流", "platform_policy"),  # 发货时效
-    "11679": ("营销推广", "operations_playbook"), # 营销活动规则
-    "11683": ("精选联盟", "operations_playbook"), # 达人合作规则
-    "11687": ("体验分保证金", "platform_policy"), # 体验分与保证金
-}
+# 经测试：category_id 参数无效，API 始终返回全局最新10条规则更新。
+# 单次调用即可拿到所有最新内容，多分类循环毫无意义。
+RULE_CATEGORY_ID = "11693"  # 任意有效 category_id 均可
 
 API_BASE = "https://school.jinritemai.com/api/eschool/v1/rule/list"
 DETAIL_BASE = "https://school.jinritemai.com/doudian/web/rules/{kid}?tabKey=rules"
@@ -104,31 +98,21 @@ def rule_to_item(rule: dict, category_name: str, label: str) -> dict:
 
 
 def fetch_all(window_hours: int = 168) -> list[dict]:
-    """采集所有分类，去重，按时间过滤，返回 item 列表。"""
+    """采集抖音最新规则更新。API 忽略 category_id，始终返回全局最新条目，单次调用即可。"""
     cutoff = datetime.now(tz=timezone.utc) - timedelta(hours=window_hours)
-    seen_ids: set[str] = set()
+    print(f"  采集抖音电商规则动态...")
+    rules = fetch_category(RULE_CATEGORY_ID, page_size=50)
+
     items: list[dict] = []
+    for rule in rules:
+        item = rule_to_item(rule, "规则动态", "platform_policy")
+        ts = rule.get("update_time", 0)
+        if ts and datetime.fromtimestamp(ts, tz=timezone.utc) < cutoff:
+            continue
+        items.append(item)
 
-    for cat_id, (cat_name, label) in RULE_CATEGORIES.items():
-        print(f"  采集 [{cat_name}]({cat_id})...")
-        rules = fetch_category(cat_id)
-        for rule in rules:
-            item = rule_to_item(rule, cat_name, label)
-            if item["id"] in seen_ids:
-                continue
-            seen_ids.add(item["id"])
-
-            # 时间过滤
-            ts = rule.get("update_time", 0)
-            if ts and datetime.fromtimestamp(ts, tz=timezone.utc) < cutoff:
-                continue
-
-            items.append(item)
-        time.sleep(0.3)  # 礼貌延迟
-
-    # 按更新时间降序
     items.sort(key=lambda x: x.get("published", ""), reverse=True)
-    print(f"  共采集 {len(items)} 条（7天内）")
+    print(f"  共采集 {len(items)} 条（{window_hours//24}天内）")
     return items
 
 
