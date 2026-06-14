@@ -346,7 +346,7 @@ column 0 的行会被 YAML 解析器视为块结束，然后把 `import json, pa
 - 未完成/风险：
   - 需要真实 MiniMax/Mimo Actions 运行后才能看到线上生成质量。
   - 本次不提交自动生成的 `data/*.json` 和小红书临时文件。
-- 提交：待提交
+- 提交：9a0749e
 
 【给下一个 Agent 的话】（Codex → Claude Code）
 
