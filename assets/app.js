@@ -1410,16 +1410,25 @@ function renderSourceHealth(errorMessage = "") {
 
   const metricGrid = document.createElement("div");
   metricGrid.className = "health-grid";
+  const allWebSources = Array.isArray(state.webSources?.sources) ? state.webSources.sources : [];
+  const headlessCount = status.headless_blocked_source_count
+    ?? allWebSources.filter((s) => s.needs_headless && s.enabled !== false && !s.candidate_only).length;
+  const candidateCount = allWebSources.filter((s) => s.candidate_only || s.ingestion_method === "candidate_only").length;
+  const disabledCount = allWebSources.filter((s) => s.enabled === false && !s.candidate_only).length;
+  const realFailedCount = status.real_failed_source_count ?? (failedSites.length + failedFeeds.length);
   metricGrid.append(
     renderMetric("内置源", `${fmtNumber(status.successful_sites || 0)}/${fmtNumber(sites.length)}`, failedSites.length ? "warn" : "ok"),
     renderMetric("RSS", rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "未启用"),
-    renderMetric("网页源", web.enabled ? `${fmtNumber(web.active_sources || 0)}/${fmtNumber(web.source_total || 0)}` : "未启用", (web.failed_sources || []).length || (web.zero_item_sources || []).length ? "warn" : "ok"),
+    renderMetric("网页源", web.enabled ? `${fmtNumber(web.active_sources || 0)}/${fmtNumber(web.source_total || 0)}` : "未启用", (web.failed_sources || []).length ? "warn" : "ok"),
     renderMetric("网页列表", web.enabled ? `${fmtNumber(web.list_sources || 0)}源` : "未启用", web.list_sources ? "ok" : "warn"),
     renderMetric("页面快照", web.enabled ? `${fmtNumber(web.snapshot_sources || 0)}源` : "未启用", web.snapshot_sources ? "ok" : ""),
     renderMetric("X API", xApi.enabled ? (xApi.skipped ? "待窗口" : `${fmtNumber(xApi.item_count || 0)}条`) : "未启用", xApi.error ? "bad" : ""),
     renderMetric("AgentMail", agentmail.enabled ? `${fmtNumber(agentmail.item_count || 0)}封` : "未启用", agentmail.error ? "bad" : ""),
-    renderMetric("失败源", fmtNumber(failedSites.length + failedFeeds.length), failedSites.length || failedFeeds.length ? "bad" : "ok"),
-    renderMetric("替换/跳过", `${fmtNumber(replacedFeeds.length)}/${fmtNumber(skippedFeeds.length)}`)
+    renderMetric("失败源", fmtNumber(realFailedCount), realFailedCount ? "bad" : "ok"),
+    renderMetric("替换/跳过", `${fmtNumber(replacedFeeds.length)}/${fmtNumber(skippedFeeds.length)}`),
+    renderMetric("Headless封锁", fmtNumber(headlessCount), headlessCount ? "warn" : ""),
+    renderMetric("待验证源", fmtNumber(candidateCount)),
+    renderMetric("已禁用源", fmtNumber(disabledCount))
   );
   sourceHealthEl.appendChild(metricGrid);
 

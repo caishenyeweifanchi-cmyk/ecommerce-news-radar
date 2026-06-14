@@ -13424,7 +13424,8 @@
       "required": true,
       "source_import_batch": "user_ecommerce_source_lists_2026_06_12",
       "source_import_file": "pasted-text.txt",
-      "enabled": true
+      "enabled": false,
+      "disabled_reason": "persistent_fetch_failure"
     },
     {
       "id": "business_instagram_com_blog",
@@ -14084,7 +14085,8 @@
       "required": true,
       "source_import_batch": "user_ecommerce_source_lists_2026_06_12",
       "source_import_file": "pasted-text.txt",
-      "enabled": true
+      "enabled": false,
+      "disabled_reason": "persistent_fetch_failure"
     },
     {
       "id": "adyen_com_news",
@@ -15925,7 +15927,8 @@
       "required": true,
       "source_import_batch": "user_ecommerce_source_lists_2026_06_12",
       "source_import_file": "pasted-text.txt",
-      "enabled": true
+      "enabled": false,
+      "disabled_reason": "persistent_fetch_failure"
     },
     {
       "id": "ads_google_com_intl_en_home_resources_announcements",
@@ -21367,7 +21370,8 @@
       "required": true,
       "source_import_batch": "user_ecommerce_source_lists_2026_06_12",
       "source_import_file": "pasted-text.txt",
-      "enabled": true
+      "enabled": false,
+      "disabled_reason": "persistent_fetch_failure"
     },
     {
       "id": "marketplacelearn_walmart_com",

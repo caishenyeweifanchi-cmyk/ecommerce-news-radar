@@ -19,7 +19,7 @@
       <outline text="Practical Ecommerce" title="Practical Ecommerce" type="rss" xmlUrl="https://www.practicalecommerce.com/rss" htmlUrl="https://www.practicalecommerce.com" />
       <outline text="Modern Retail" title="Modern Retail" type="rss" xmlUrl="https://modernretail.co/feed/" htmlUrl="https://modernretail.co" />
       <outline text="Retail Dive E-Commerce" title="Retail Dive E-Commerce" type="rss" xmlUrl="https://www.retaildive.com/feeds/news" htmlUrl="https://www.retaildive.com/topic/e-commerce/" />
-      <outline text="Search Engine Land" title="Search Engine Land" type="rss" xmlUrl="https://searchengineland.com/feed" htmlUrl="https://searchengineland.com/" />
+      <outline text="Search Engine Land SEO" title="Search Engine Land SEO" type="rss" xmlUrl="https://searchengineland.com/category/seo/feed" htmlUrl="https://searchengineland.com/category/seo/" />
       <outline text="Digiday" title="Digiday" type="rss" xmlUrl="https://digiday.com/feed/" htmlUrl="https://digiday.com/" />
       <outline text="Digital Commerce 360 AI" title="Digital Commerce 360 AI" type="rss" xmlUrl="https://www.digitalcommerce360.com/topic/artificial-intelligence/feed/" htmlUrl="https://www.digitalcommerce360.com/topic/artificial-intelligence/" />
       <outline text="Retail Customer Experience" title="Retail Customer Experience" type="rss" xmlUrl="https://www.retailcustomerexperience.com/rss/" htmlUrl="https://www.retailcustomerexperience.com/" />
@@ -47,10 +47,10 @@
       <outline text="MarkTechPost" title="MarkTechPost" type="rss" xmlUrl="https://www.marktechpost.com/feed/" htmlUrl="https://www.marktechpost.com/" />
       <outline text="Simon Willison" title="Simon Willison" type="rss" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/" />
       <outline text="Import AI (Jack Clark)" title="Import AI (Jack Clark)" type="rss" xmlUrl="https://jack-clark.net/feed/" htmlUrl="https://jack-clark.net/" />
-      <outline text="The Batch (DeepLearning.AI)" title="The Batch (DeepLearning.AI)" type="rss" xmlUrl="https://www.deeplearning.ai/the-batch/feed/" htmlUrl="https://www.deeplearning.ai/the-batch/" />
+      <outline text="DeepLearning.AI Blog" title="DeepLearning.AI Blog" type="rss" xmlUrl="https://www.deeplearning.ai/blog/feed/" htmlUrl="https://www.deeplearning.ai/blog/" />
       <outline text="Towards AI" title="Towards AI" type="rss" xmlUrl="https://towardsai.net/feed" htmlUrl="https://towardsai.net/" />
       <outline text="AI Business" title="AI Business" type="rss" xmlUrl="https://aibusiness.com/rss.xml" htmlUrl="https://aibusiness.com/" />
-      <outline text="Zapier Blog AI" title="Zapier Blog AI" type="rss" xmlUrl="https://zapier.com/blog/feeds/latest/category/ai-automation/" htmlUrl="https://zapier.com/blog/ai-automation/" />
+      <outline text="Zapier Blog" title="Zapier Blog" type="rss" xmlUrl="https://zapier.com/blog/feeds/latest/" htmlUrl="https://zapier.com/blog/" />
       <outline text="LangChain Blog" title="LangChain Blog" type="rss" xmlUrl="https://blog.langchain.dev/rss/" htmlUrl="https://blog.langchain.dev/" />
       <outline text="量子位 QbitAI" title="量子位 QbitAI" type="rss" xmlUrl="https://www.qbitai.com/feed" htmlUrl="https://www.qbitai.com/" />
     </outline>
