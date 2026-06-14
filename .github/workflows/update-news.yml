@@ -71,6 +71,39 @@ jobs:
             python scripts/update_news.py --topic ecommerce --output-dir data --window-hours 168 --archive-days 21 --web-sources feeds/ecommerce.web-sources.json --web-max-sources "${WEB_MAX_SOURCES:-0}"
           fi
 
+      - name: 采集小红书电商官方规则公告
+        run: |
+          python scripts/xhs_fetcher.py --output data/xhs-rules.json --window-hours 168
+          python - << 'PYEOF'
+import json, pathlib, sys
+
+xhs_path = pathlib.Path('data/xhs-rules.json')
+news_path = pathlib.Path('data/latest-24h.json')
+if not xhs_path.exists() or not news_path.exists():
+    print('Skip merge: files missing')
+    sys.exit(0)
+
+xhs = json.loads(xhs_path.read_text(encoding='utf-8'))
+news = json.loads(news_path.read_text(encoding='utf-8'))
+
+new_items = xhs.get('items', [])
+if not new_items:
+    print('No XHS items to merge')
+    sys.exit(0)
+
+existing_ids = {i.get('id') for i in news.get('items', [])}
+to_add = [i for i in new_items if i.get('id') not in existing_ids]
+
+news.setdefault('items', [])
+news.setdefault('items_ai', [])
+news['items'] = to_add + news['items']
+ai_existing = {i.get('id') for i in news['items_ai']}
+news['items_ai'] = [i for i in to_add if i.get('id') not in ai_existing] + news['items_ai']
+
+news_path.write_text(json.dumps(news, ensure_ascii=False, indent=2), encoding='utf-8')
+print(f'Merged {len(to_add)} XHS rule items into latest-24h.json')
+PYEOF
+
       - name: 采集抖音电商官方规则公告
         run: |
           python scripts/douyin_fetcher.py --output data/douyin-rules.json --window-hours 168
