@@ -343,5 +343,9 @@
   "Google Shrank Gemma 4 by 72% and Unsloth Fixed the 4-Bit Bug Nobody Else Caught on One 4090, and 4-Bit Shouldn’t Be This Good": "Google 将 Gemma 4 缩小了 72%，Unsloth 修复了 4090 上没有人发现的 4 位错误，4 位不应该这么好",
   "TOON: Beyond JSON for LLMs": "TOON：法学硕士的超越 JSON",
   "Built to benefit everyone: our plan": "旨在造福所有人：我们的计划",
-  "Introducing the OpenAI Economic Research Exchange": "OpenAI 经济研究交流中心简介"
+  "Introducing the OpenAI Economic Research Exchange": "OpenAI 经济研究交流中心简介",
+  "Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand": "据报道，在北京方面的要求下，Meta 将解除价值 20 亿美元的 Manus 交易",
+  "Publishing WASM wheels to PyPI for use with Pyodide": "将 WASM 轮发布到 PyPI 以与 Pyodide 一起使用",
+  "luau-wasm 0.1a0": "宴会瓦斯姆 0.1a0",
+  "Mapping SQLite result columns back to their source `table.column`": "将 SQLite 结果列映射回其源“table.column”"
 }
