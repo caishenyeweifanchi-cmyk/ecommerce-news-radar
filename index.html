@@ -37,7 +37,8 @@
           </div>
         </div>
         <nav class="nav-list">
-          <a class="active" href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai">精选</a>
+          <a class="active" href="#hotTopicsWrap" data-target="hotTopicsWrap">当前热点</a>
+          <a href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai">精选</a>
           <a href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai">今日必看</a>
           <a href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai" data-category="platform_policy">平台规则</a>
           <a href="#bolePicksWrap" data-target="bolePicksWrap" data-mode="ai" data-category="operations_playbook">运营玩法</a>
@@ -100,6 +101,19 @@
 
         <section class="dashboard-grid">
           <section class="main-column">
+
+            <section class="hot-topics-wrap" id="hotTopicsWrap">
+              <div class="hot-topics-head">
+                <div>
+                  <p class="section-eyebrow">TRENDING NOW</p>
+                  <h2>当前热点</h2>
+                </div>
+                <span class="hot-topics-meta" id="hotTopicsMeta">计算中...</span>
+              </div>
+              <p class="hot-topics-sub">多信源同时报道 · 实体提及聚合 · 热度随时间衰减</p>
+              <div id="hotTopicsList" class="hot-topics-list"></div>
+            </section>
+
             <section class="bole-picks-wrap" aria-label="热点精选" id="bolePicksWrap">
               <div class="bole-picks-head">
                 <div>

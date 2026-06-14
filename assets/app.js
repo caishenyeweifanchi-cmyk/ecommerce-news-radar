@@ -23,6 +23,7 @@ const state = {
   latestPayload: null,
   dailyBrief: null,
   boleView: "hot",
+  storiesMerged: [],
 };
 
 const statsEl = document.getElementById("stats");
@@ -1576,14 +1577,157 @@ async function loadPureAiData() {
   return fetchJsonWithFallback("data/ai-radar.json");
 }
 
+async function loadStoriesMergedData() {
+  return fetchJsonWithFallback("data/stories-merged.json");
+}
+
+// ── Hot Topics ────────────────────────────────────────────────────────────────
+
+const HOT_ENTITIES = [
+  { name: "抖音/TikTok",   aliases: ["抖音", "tiktok", "douyin"] },
+  { name: "快手",           aliases: ["快手", "kuaishou"] },
+  { name: "小红书",         aliases: ["小红书", "red note", "xiaohongshu"] },
+  { name: "拼多多/Temu",    aliases: ["拼多多", "temu", "pdd"] },
+  { name: "淘宝/天猫",      aliases: ["淘宝", "天猫", "taobao", "tmall"] },
+  { name: "京东",           aliases: ["京东", "jd.com", "jd "] },
+  { name: "Amazon",         aliases: ["amazon", "亚马逊"] },
+  { name: "Shopify",        aliases: ["shopify"] },
+  { name: "Anthropic/Claude", aliases: ["anthropic", "claude"] },
+  { name: "OpenAI/GPT",     aliases: ["openai", "chatgpt", "gpt-4", "gpt-5", "gpt4", "gpt5", "o3", "o4"] },
+  { name: "Google/Gemini",  aliases: ["gemini", "deepmind", "google ai"] },
+  { name: "Meta/Llama",     aliases: ["meta ai", "llama", "meta's"] },
+  { name: "阿里/通义",      aliases: ["通义", "qwen", "千问", "阿里云", "alibaba"] },
+  { name: "字节/豆包",      aliases: ["字节", "bytedance", "豆包", "doubao"] },
+  { name: "百度/文心",      aliases: ["百度", "文心", "ernie", "baidu"] },
+  { name: "腾讯/微信",      aliases: ["腾讯", "tencent", "微信", "wechat"] },
+  { name: "平台规则",       aliases: ["规则变更", "平台规则", "政策调整", "处罚", "违规", "合规"] },
+  { name: "广告投流",       aliases: ["投流", "广告投放", "roas", "roi", "素材"] },
+  { name: "直播带货",       aliases: ["直播", "带货", "店播", "达人", "主播"] },
+  { name: "跨境电商",       aliases: ["跨境", "出海", "独立站", "cross-border"] },
+];
+
+const HOT_HALF_LIFE_H = 12;
+
+function hotDecay(iso) {
+  if (!iso) return 0.1;
+  const ageH = (Date.now() - new Date(iso).getTime()) / 3_600_000;
+  return Math.pow(0.5, ageH / HOT_HALF_LIFE_H);
+}
+
+function computeHotTopics(stories, items) {
+  const topics = new Map();
+
+  // Signal 1: multi-source deduped stories (×3 weight)
+  for (const s of stories) {
+    if ((s.source_count || 1) < 2) continue;
+    const key = `story:${s.story_id}`;
+    const decay = hotDecay(s.latest_at || s.earliest_at);
+    topics.set(key, {
+      type: "story",
+      name: s.title_zh || s.title,
+      items: s.items || [s],
+      sourceCount: s.source_count,
+      mentionCount: s.source_count,
+      heatScore: s.source_count * 3 * decay,
+      latestAt: s.latest_at || s.earliest_at,
+    });
+  }
+
+  // Signal 2+3: entity clustering + time decay over 48 h window
+  const cutoff = Date.now() - 48 * 3_600_000;
+  const recent = items.filter(i => new Date(i.published_at || i.first_seen_at || 0).getTime() > cutoff);
+
+  for (const entity of HOT_ENTITIES) {
+    const matched = recent.filter(i => {
+      const txt = `${i.title || ""} ${i.title_zh || ""} ${i.title_en || ""}`.toLowerCase();
+      return entity.aliases.some(a => txt.includes(a));
+    });
+    if (matched.length < 2) continue;
+    matched.sort((a, b) => (b.published_at || "") > (a.published_at || "") ? 1 : -1);
+    const latestAt = matched[0].published_at || matched[0].first_seen_at;
+    const heatScore = matched.length * hotDecay(latestAt);
+    const key = `entity:${entity.name}`;
+    if (!topics.has(key) || heatScore > topics.get(key).heatScore) {
+      topics.set(key, {
+        type: "entity",
+        name: entity.name,
+        items: matched.slice(0, 6),
+        sourceCount: new Set(matched.map(i => i.source || i.site_id)).size,
+        mentionCount: matched.length,
+        heatScore,
+        latestAt,
+      });
+    }
+  }
+
+  return [...topics.values()].sort((a, b) => b.heatScore - a.heatScore);
+}
+
+function renderHotTopics() {
+  const listEl = document.getElementById("hotTopicsList");
+  const metaEl = document.getElementById("hotTopicsMeta");
+  if (!listEl) return;
+
+  const seen = new Set();
+  const allItems = [...(state.itemsAi || []), ...(state.itemsPureAi || [])].filter(i => {
+    if (!i.id || seen.has(i.id)) return false;
+    seen.add(i.id); return true;
+  });
+
+  const topics = computeHotTopics(state.storiesMerged || [], allItems);
+  if (metaEl) metaEl.textContent = topics.length ? `${topics.length} 个热点 · 48h 窗口` : "暂无热点";
+
+  if (!topics.length) {
+    listEl.innerHTML = `<div class="empty">信源增多后将自动出现多源热点</div>`;
+    return;
+  }
+
+  const maxHeat = topics[0].heatScore;
+  listEl.innerHTML = "";
+
+  topics.forEach((topic, idx) => {
+    const heatPct = Math.max(8, Math.round((topic.heatScore / maxHeat) * 100));
+    const badge = topic.type === "story"
+      ? `<span class="hot-badge hot-badge--story">${topic.sourceCount} 源同报</span>`
+      : `<span class="hot-badge hot-badge--entity">${topic.mentionCount} 条提及 · ${topic.sourceCount} 源</span>`;
+
+    const itemsHtml = topic.items.slice(0, 5).map(item => {
+      const title = item.title_zh || item.title || "(无标题)";
+      const url = item.url || item.primary_url || "#";
+      const src = item.source || item.site_name || "";
+      const time = fmtTime(item.published_at || item.first_seen_at);
+      return `<li class="hot-item">
+        <a class="hot-item-title" href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>
+        <span class="hot-item-meta">${src}${src && time ? " · " : ""}${time}</span>
+      </li>`;
+    }).join("");
+
+    const card = document.createElement("div");
+    card.className = "hot-topic-card";
+    card.innerHTML = `
+      <div class="hot-topic-head">
+        <div class="hot-rank">#${idx + 1}</div>
+        <div class="hot-topic-info">
+          <span class="hot-topic-name">${topic.name}</span>
+          ${badge}
+        </div>
+        <div class="heat-bar-track"><div class="heat-bar" style="width:${heatPct}%"></div></div>
+      </div>
+      <ul class="hot-item-list">${itemsHtml}</ul>
+    `;
+    listEl.appendChild(card);
+  });
+}
+
 async function init() {
-  const [newsResult, waytoagiResult, statusResult, briefResult, webSourcesResult, pureAiResult] = await Promise.allSettled([
+  const [newsResult, waytoagiResult, statusResult, briefResult, webSourcesResult, pureAiResult, storiesResult] = await Promise.allSettled([
     loadNewsData(),
     loadWaytoagiData(),
     loadSourceStatusData(),
     loadDailyBriefData(),
     loadWebSourcesData(),
     loadPureAiData(),
+    loadStoriesMergedData(),
   ]);
 
   if (briefResult.status === "fulfilled") {
@@ -1592,6 +1736,13 @@ async function init() {
     state.dailyBrief = null;
   }
   renderDailyReport();
+
+  if (storiesResult.status === "fulfilled") {
+    const raw = storiesResult.value;
+    state.storiesMerged = Array.isArray(raw) ? raw : (raw.stories || []);
+  } else {
+    state.storiesMerged = [];
+  }
 
   if (pureAiResult.status === "fulfilled") {
     state.itemsPureAi = Array.isArray(pureAiResult.value.items) ? pureAiResult.value.items : [];
@@ -1616,6 +1767,7 @@ async function init() {
     setStats(payload);
     renderModeSwitch();
     renderCoverageStrip();
+    renderHotTopics();
     renderBolePicks();
     renderSiteFilters();
     renderList();
