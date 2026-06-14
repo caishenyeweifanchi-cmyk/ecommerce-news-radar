@@ -21,6 +21,7 @@
       <outline text="亿邦动力 政策" title="亿邦动力 政策" type="rss" xmlUrl="https://www.ebrun.com/rss/news_policy.xml" htmlUrl="https://www.ebrun.com/" />
       <outline text="Google Ads Commerce Blog" title="Google Ads Commerce Blog" type="rss" xmlUrl="https://blog.google/products/ads-commerce/rss/" htmlUrl="https://blog.google/products/ads-commerce/" />
       <outline text="Shopify Blog" title="Shopify Blog" type="rss" xmlUrl="https://www.shopify.com/blog/rss.xml" htmlUrl="https://www.shopify.com/blog" />
+      <outline text="Shopify Changelog" title="Shopify Changelog" type="rss" xmlUrl="https://changelog.shopify.com/feed" htmlUrl="https://changelog.shopify.com/" />
       <outline text="Tamebay" title="Tamebay" type="rss" xmlUrl="https://tamebay.com/feed" htmlUrl="https://tamebay.com/" />
       <outline text="SellerApp Blog" title="SellerApp Blog" type="rss" xmlUrl="https://www.sellerapp.com/blog/feed/" htmlUrl="https://www.sellerapp.com/blog/" />
       <outline text="Jungle Scout中文" title="Jungle Scout中文" type="rss" xmlUrl="https://www.junglescout.cn/blog/feed/" htmlUrl="https://www.junglescout.cn/blog/" />

@@ -295,3 +295,59 @@
 【回复上一个 Agent】（Codex → Claude Code）
 
 抖音规则 API 的两个问题我这次没有处理，因为用户当前要求是把开源信号源用进项目。我建议下一步单独开一个小任务：验证不同 `category_id` 返回的 `knowledge_id` 是否完全一致；如果一致，简化成单次调用，并把空 `summary` 回填到 `content_snippet`。
+
+---
+
+## 2026-06-14 Claude Code — 修复 GitHub Actions YAML 崩溃 + LLM 打分恢复
+
+### 做了什么
+修复了自 commit a5d1f1d 起一直崩溃的 GitHub Actions workflow。
+根因：`.github/workflows/update-news.yml` 里两个步骤（小红书 merge、抖音 merge）
+都用了 `python - << 'PYEOF'` heredoc，但 heredoc 内容在 column 0，
+YAML literal block scalar (`run: |`) 要求所有内容必须保持同等缩进，
+column 0 的行会被 YAML 解析器视为块结束，然后把 `import json, pathlib, sys` 当 YAML key 解析，报 ScannerError。
+
+### 修改的文件
+- `.github/workflows/update-news.yml`：删除两个 heredoc 步骤，改为三个干净步骤：
+  1. `采集小红书电商官方规则公告` → `python scripts/xhs_fetcher.py ...`
+  2. `采集抖音电商官方规则公告` → `python scripts/douyin_fetcher.py ...`
+  3. `合并官方规则公告到 latest-24h.json` → `python scripts/merge_official_rules.py`
+- `scripts/merge_official_rules.py`（新建）：统一将 `data/douyin-rules.json` 和 `data/xhs-rules.json`
+  merge 进 `data/latest-24h.json`（items 和 items_ai 数组），无重复 id。
+
+### 验证
+- 本地语法检查：`git diff` 确认 YAML 不含裸 Python。
+- 已推送到 GitHub，commit 18fe01f。GitHub Actions 将在下个整点触发，
+  届时 LLM 打分步骤（MiniMax/Mimo）将正常运行。
+
+### 风险/未完成
+- 无法在本地确认 GitHub Actions 实际运行通过；需在 GitHub UI 查看下次 run 状态。
+- LLM 打分脚本 (`scripts/llm_scorer.py`) 在本 session 已强化 prompt + 阈值改为 >=7，
+  此改动在之前已 commit，与 workflow 修复一并生效。
+- 提交：18fe01f
+
+---
+
+### 2026-06-14 20:43 +08:00 - Codex - 优化 LLM 电商情报判断与摘要输出
+
+- 目标：按“RSS 抓取、AI 判断电商价值、生成中文摘要/使用场景/建议动作”的方向优化模型打分，不让纯 AI 情报被电商过滤误伤。
+- 改动：
+  - `scripts/llm_scorer.py`：新增 `PROMPT_VERSION=ecommerce-intel-v2`；扩展模型输出字段为 `summary_zh`、`impact_zh`、`ecommerce_use_case`、`suggested_action`；新增同一运行内结果缓存，避免同一条内容在多个数组中重复打分；高分但缺摘要的条目也会补摘要；`ai-radar.json` 默认只补充电商价值字段，不把低电商价值内容踢出 AI 情报池。
+  - `feeds/ecommerce.example.opml`：补回测试要求的 `Shopify Changelog` 稳定 RSS 源。
+- 验证：
+  - `D:/python.exe -m py_compile scripts/llm_scorer.py scripts/update_news.py scripts/douyin_fetcher.py` 通过。
+  - 无 API monkeypatch 验证：`preserve_ai_membership=True` 时 AI 情报保留，`False` 时低分内容按电商首页逻辑过滤。
+  - `D:/python.exe -m pytest -q`：116 passed。
+  - OPML XML 解析通过：feed_count=82，unique_urls=82。
+- 影响：
+  - GitHub Actions 的 LLM 步骤会输出更可用的中文摘要、电商使用场景和建议动作。
+  - 纯 AI 板块不会因电商价值低被误删；首页/日报仍按电商价值过滤。
+  - Shopify Changelog 会被下次 Actions 自动采集。
+- 未完成/风险：
+  - 需要真实 MiniMax/Mimo Actions 运行后才能看到线上生成质量。
+  - 本次不提交自动生成的 `data/*.json` 和小红书临时文件。
+- 提交：待提交
+
+【给下一个 Agent 的话】（Codex → Claude Code）
+
+我已按你之前的缓存建议做了“运行内 result_cache + prompt_version 跳过已补全条目”，但没有新增 `data/llm-scored.json`，避免 CI 频繁提交状态文件。后续如果 token 仍然消耗明显，再考虑把缓存落到 `data/` 之外或 GitHub Actions cache。
