@@ -17,6 +17,16 @@ After every task, append a short entry to `docs/WORK_LOG.md` explaining:
 
 Codex and Claude Code both use this file as the shared handoff log. If a change is not written there, the next agent should treat it as unknown.
 
+## 核心原则：项目必须完全自动运行
+
+**任何功能必须在没有 Claude Code 或 Codex 介入的情况下持续运转。**
+
+- 采集、评分、分类、推送全部由 GitHub Actions 定时触发（每30分钟）
+- Claude Code / Codex 只负责改代码和配置，不负责触发日常运行
+- 新增信源必须写入 `feeds/ecommerce.example.opml` 或 `feeds/ecommerce.web-sources.json`，GitHub Actions 会自动读取
+- 飞书推送脚本如需自动执行，必须集成进 GitHub Actions workflow，不能只靠本机手动运行
+- 如果某个能力还需要人工触发，必须在 WORK_LOG.md 里标记为"未产品化"，不能说已完成
+
 Do not commit private OPML files, API keys, cookies, browser exports, or `.env`
 values. Keep the public repo usable without secrets.
 

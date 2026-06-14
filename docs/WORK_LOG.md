@@ -71,3 +71,16 @@
   - daily-brief.json 经常为空，需增加信源后改善
   - 多源同报热点（source_count≥2）暂未触发，信源不足
 - 提交：82e65fe、4118c6b、272ec65 等
+
+### 2026-06-14 - Claude Code - 新增9个中文媒体 RSS 源 + 确立自动化原则
+
+- 目标：增加电商/科技中文媒体信源，写入项目核心原则。
+- 改动：
+  - `feeds/ecommerce.example.opml`：新增36氪、钛媒体、雷锋网、爱范儿、人人都是产品经理、运营派、白鲸出海、InfoQ中文、少数派
+  - `CLAUDE.md`：新增"核心原则：项目必须完全自动运行"，明确 Claude Code/Codex 只改代码不触发日常运行
+- 验证：本地采集跑通，36氪186条、钛媒体49条、爱范儿/雷锋/InfoQ/运营派各20条、少数派16条，白鲸出海待验证
+- 影响：GitHub Actions 使用 ecommerce.example.opml（无私有 OPML secret 时），新源下次 CI 自动生效
+- 未完成/风险：
+  - **【未产品化】飞书推送**：feishu_push.py / feishu_alert.py 尚未集成进 GitHub Actions，目前只能本机手动运行
+  - 白鲸出海 RSS 本地未采集到内容，可能需代理
+- 提交：5f81af4、daf4a2a
