@@ -71,10 +71,11 @@ jobs:
             python scripts/update_news.py --topic ecommerce --output-dir data --window-hours 168 --archive-days 21 --web-sources feeds/ecommerce.web-sources.json --web-max-sources "${WEB_MAX_SOURCES:-0}"
           fi
 
-      - name: LLM 二次打分（MiniMax）
-        if: ${{ env.MINIMAX_API_KEY != '' }}
+      - name: LLM 二次打分（MiniMax 主力 + Mimo 备用）
+        if: ${{ secrets.MINIMAX_API_KEY != '' || secrets.MIMO_API_KEY != '' }}
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
         run: |
           python scripts/llm_scorer.py --file data/ai-radar.json
 
