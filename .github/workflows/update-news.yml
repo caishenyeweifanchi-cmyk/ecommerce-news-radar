@@ -3,7 +3,7 @@ name: Update Ecommerce News Snapshot
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 * * * *"
 
 concurrency:
   group: update-ecommerce-news-${{ github.ref }}
