@@ -1729,7 +1729,7 @@ function renderHotTopics() {
 }
 
 async function init() {
-  const [newsResult, waytoagiResult, statusResult, briefResult, webSourcesResult, pureAiResult, storiesResult] = await Promise.allSettled([
+  const [newsResult, waytoagiResult, statusResult, briefResult, webSourcesResult, pureAiResult, storiesResult, sourceNavResult] = await Promise.allSettled([
     loadNewsData(),
     loadWaytoagiData(),
     loadSourceStatusData(),
@@ -1737,7 +1737,12 @@ async function init() {
     loadWebSourcesData(),
     loadPureAiData(),
     loadStoriesMergedData(),
+    loadSourceDirectory(),
   ]);
+
+  if (sourceNavResult.status === "fulfilled") {
+    renderSourceNav(sourceNavResult.value);
+  }
 
   if (briefResult.status === "fulfilled") {
     state.dailyBrief = briefResult.value;
@@ -1945,6 +1950,76 @@ if (waytoagi7dBtnEl) {
     state.waytoagiMode = "7d";
     if (state.waytoagiData) renderWaytoagi(state.waytoagiData);
   });
+}
+
+// ── 信源导航板块 ─────────────────────────────────────────────────────────────
+const sourceNavBodyEl = document.getElementById("sourceNavBody");
+const sourceNavMetaEl = document.getElementById("sourceNavMeta");
+
+async function loadSourceDirectory() {
+  try {
+    const data = await fetchJsonWithFallback("data/source-directory.json");
+    return data;
+  } catch {
+    return null;
+  }
+}
+
+function renderSourceNav(data) {
+  if (!sourceNavBodyEl || !data) return;
+  const categories = data.categories || [];
+  let totalSources = 0;
+  categories.forEach(c => totalSources += (c.sources || []).length);
+  if (sourceNavMetaEl) {
+    sourceNavMetaEl.textContent = `${categories.length} 个分类 · ${totalSources} 个精选信源`;
+  }
+
+  const wrap = document.createElement("div");
+  wrap.className = "source-nav-categories";
+
+  categories.forEach(cat => {
+    const catEl = document.createElement("div");
+    catEl.className = "source-nav-category";
+
+    const head = document.createElement("div");
+    head.className = "source-nav-cat-head";
+    head.innerHTML = `
+      <span class="source-nav-cat-icon">${cat.icon || "📌"}</span>
+      <span class="source-nav-cat-name">${cat.name}</span>
+      <span class="source-nav-cat-desc">${cat.desc || ""}</span>
+    `;
+    catEl.appendChild(head);
+
+    const grid = document.createElement("div");
+    grid.className = "source-nav-grid";
+
+    (cat.sources || []).forEach(src => {
+      const a = document.createElement("a");
+      a.className = "source-nav-item";
+      a.href = src.url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+
+      const tagClass = src.tag === "自动采集" ? "tag-auto" : src.hot ? "tag-hot" : "";
+      const hotDot = src.hot ? `<span class="source-nav-hot-dot"></span>` : "";
+
+      a.innerHTML = `
+        <div class="source-nav-item-top">
+          ${hotDot}
+          <span class="source-nav-item-name">${src.name}</span>
+          ${src.tag ? `<span class="source-nav-item-tag ${tagClass}">${src.tag}</span>` : ""}
+        </div>
+        <span class="source-nav-item-desc">${src.desc || ""}</span>
+      `;
+      grid.appendChild(a);
+    });
+
+    catEl.appendChild(grid);
+    wrap.appendChild(catEl);
+  });
+
+  sourceNavBodyEl.innerHTML = "";
+  sourceNavBodyEl.appendChild(wrap);
 }
 
 if (boleHotBtnEl) {

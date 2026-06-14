@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-06-14",
+  "categories": [
+    {
+      "id": "platform_official",
+      "name": "平台官方",
+      "icon": "🏛️",
+      "desc": "各大电商平台官方规则、公告、卖家中心",
+      "sources": [
+        { "name": "抖音电商学习中心", "url": "https://school.jinritemai.com/doudian/web/home", "desc": "官方规则/公告/课程，自动采集中", "tag": "自动采集", "hot": true },
+        { "name": "抖音电商规则中心", "url": "https://school.jinritemai.com/doudian/web/rules/nJjbkoeug9aS?tabKey=rules", "desc": "规则全景总览", "tag": "自动采集", "hot": true },
+        { "name": "巨量千川", "url": "https://qianchuan.jinritemai.com/", "desc": "抖音投流核心平台", "tag": "投流" },
+        { "name": "巨量百应", "url": "https://buyin.jinritemai.com/", "desc": "达人合作/精选联盟", "tag": "达人" },
+        { "name": "小红书商家学院", "url": "https://school.xiaohongshu.com/", "desc": "小红书卖家/薯店运营指南", "tag": "平台" },
+        { "name": "小红书聚光平台", "url": "https://juguang.xiaohongshu.com/", "desc": "小红书广告投放", "tag": "投流" },
+        { "name": "淘宝卖家学院", "url": "https://seller.taobao.com/", "desc": "淘宝/天猫运营中心", "tag": "平台" },
+        { "name": "阿里妈妈", "url": "https://www.alimama.com/", "desc": "淘系广告投放平台", "tag": "投流" },
+        { "name": "拼多多商家版", "url": "https://mms.pinduoduo.com/", "desc": "拼多多卖家后台", "tag": "平台" },
+        { "name": "亚马逊卖家中心", "url": "https://sellercentral.amazon.com/", "desc": "亚马逊官方卖家后台（需登录）", "tag": "跨境" },
+        { "name": "TikTok Shop卖家中心", "url": "https://seller.tiktokglobalshop.com/", "desc": "TikTok跨境电商后台", "tag": "跨境" },
+        { "name": "快手磁力引擎", "url": "https://e.kuaishou.com/", "desc": "快手广告投放", "tag": "投流" }
+      ]
+    },
+    {
+      "id": "industry_media",
+      "name": "行业媒体",
+      "icon": "📰",
+      "desc": "电商行业深度报道与分析，已接入自动采集",
+      "sources": [
+        { "name": "36氪·电商", "url": "https://36kr.com/", "desc": "科技/商业深度报道", "tag": "自动采集", "hot": true },
+        { "name": "钛媒体", "url": "https://www.tmtpost.com/", "desc": "科技与商业深度分析", "tag": "自动采集" },
+        { "name": "虎嗅网", "url": "https://www.huxiu.com/", "desc": "商业观察与分析", "tag": "自动采集" },
+        { "name": "亿邦动力", "url": "https://www.ebrun.com/", "desc": "电商垂直媒体，覆盖平台规则变化", "tag": "电商专属" },
+        { "name": "电商在线", "url": "https://www.dianshangzaixian.com/", "desc": "聚焦电商运营实战", "tag": "电商专属" },
+        { "name": "窄播", "url": "https://www.zhaibo.net/", "desc": "消费/电商深度研究", "tag": "深度" },
+        { "name": "白鲸出海", "url": "https://www.baijingapp.com/", "desc": "出海/跨境电商情报", "tag": "自动采集" },
+        { "name": "雷锋网", "url": "https://www.leiphone.com/", "desc": "AI与科技产业报道", "tag": "自动采集" },
+        { "name": "爱范儿", "url": "https://www.ifanr.com/", "desc": "科技产品与商业趋势", "tag": "自动采集" },
+        { "name": "InfoQ中文", "url": "https://www.infoq.cn/", "desc": "技术与架构，AI工程化", "tag": "自动采集" }
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "运营知识",
+      "icon": "⚙️",
+      "desc": "运营方法论、玩法拆解、实战经验",
+      "sources": [
+        { "name": "人人都是产品经理", "url": "https://www.woshipm.com/", "desc": "运营/产品/增长方法论", "tag": "自动采集", "hot": true },
+        { "name": "运营派", "url": "https://www.yunyingpai.com/", "desc": "运营实战干货", "tag": "自动采集" },
+        { "name": "运营研究社", "url": "https://www.yunyingyjsh.com/", "desc": "运营技能提升", "tag": "学习" },
+        { "name": "卖家之家", "url": "https://www.maijiazhijia.com/", "desc": "跨境卖家社区论坛", "tag": "社区" },
+        { "name": "知无不言", "url": "https://www.zhiwubuyan.com/", "desc": "跨境电商经验分享", "tag": "社区" },
+        { "name": "少数派", "url": "https://sspai.com/", "desc": "效率工具与数字生活", "tag": "自动采集" }
+      ]
+    },
+    {
+      "id": "cross_border",
+      "name": "跨境电商",
+      "icon": "🌏",
+      "desc": "跨境平台、政策、物流、选品情报",
+      "sources": [
+        { "name": "雨果网", "url": "https://www.cifnews.com/", "desc": "跨境电商综合媒体", "tag": "媒体" },
+        { "name": "蓝海亿观", "url": "https://www.ikjzd.com/", "desc": "跨境电商情报与数据", "tag": "媒体" },
+        { "name": "Jungle Scout Blog", "url": "https://www.junglescout.com/blog/", "desc": "亚马逊选品与运营指南", "tag": "自动采集" },
+        { "name": "Helium 10 Blog", "url": "https://www.helium10.com/blog/", "desc": "亚马逊卖家工具与策略", "tag": "工具" },
+        { "name": "SellerApp Blog", "url": "https://www.sellerapp.com/blog/", "desc": "亚马逊运营数据分析", "tag": "自动采集" },
+        { "name": "Tamebay", "url": "https://tamebay.com/", "desc": "英国/欧洲电商新闻", "tag": "自动采集" },
+        { "name": "Marketplace Pulse", "url": "https://www.marketplacepulse.com/", "desc": "亚马逊/电商市场数据研究", "tag": "数据" },
+        { "name": "ChannelX", "url": "https://channelx.world/", "desc": "多渠道电商新闻（含eBay/Amazon）", "tag": "自动采集" }
+      ]
+    },
+    {
+      "id": "ai_tools",
+      "name": "AI工具",
+      "icon": "🤖",
+      "desc": "可直接用于电商场景的AI能力与工具",
+      "sources": [
+        { "name": "Anthropic Blog", "url": "https://www.anthropic.com/news", "desc": "Claude系列模型最新进展", "tag": "自动采集", "hot": true },
+        { "name": "OpenAI Blog", "url": "https://openai.com/blog/", "desc": "GPT系列与AI应用", "tag": "自动采集" },
+        { "name": "MiniMax", "url": "https://www.minimaxi.com/", "desc": "国产大模型，本项目使用", "tag": "工具" },
+        { "name": "即梦AI", "url": "https://jimeng.jianying.com/", "desc": "抖音系AI图片/视频生成，素材制作", "tag": "素材" },
+        { "name": "可灵AI", "url": "https://klingai.kuaishou.com/", "desc": "快手系AI视频生成", "tag": "素材" },
+        { "name": "Midjourney", "url": "https://www.midjourney.com/", "desc": "商品图/素材AI生成", "tag": "素材" },
+        { "name": "豆包", "url": "https://www.doubao.com/", "desc": "字节AI助手，文案/脚本生成", "tag": "工具" },
+        { "name": "智谱AI", "url": "https://www.zhipuai.cn/", "desc": "国产大模型，GLM系列", "tag": "工具" }
+      ]
+    },
+    {
+      "id": "data_tools",
+      "name": "数据工具",
+      "icon": "📊",
+      "desc": "选品、竞品、流量分析工具",
+      "sources": [
+        { "name": "电商罗盘", "url": "https://compass.jinritemai.com/", "desc": "抖音电商官方数据分析", "tag": "官方" },
+        { "name": "生意参谋", "url": "https://sycm.taobao.com/", "desc": "淘宝/天猫官方数据平台", "tag": "官方" },
+        { "name": "飞瓜数据", "url": "https://www.feigua.io/", "desc": "抖音/小红书数据分析", "tag": "第三方" },
+        { "name": "卖家精灵", "url": "https://www.sellersprite.com/", "desc": "亚马逊选品与关键词分析", "tag": "跨境" },
+        { "name": "新榜", "url": "https://www.newrank.cn/", "desc": "公众号/短视频内容数据", "tag": "内容" },
+        { "name": "蝉妈妈", "url": "https://www.chanmama.com/", "desc": "抖音带货数据分析", "tag": "第三方" }
+      ]
+    },
+    {
+      "id": "learning",
+      "name": "学习课程",
+      "icon": "📚",
+      "desc": "系统学习电商运营、投流、选品的官方及第三方课程",
+      "sources": [
+        { "name": "抖音电商课程中心", "url": "https://school.jinritemai.com/doudian/web/subject", "desc": "抖音官方全角色课程", "tag": "官方免费" },
+        { "name": "千川大学", "url": "https://school.jinritemai.com/doudian/web/subject?tags=%5B%5B%22%E5%95%86%E5%AE%B6%22%5D%2C%5B%22%E5%B7%A8%E9%87%8F%E5%8D%83%E5%B7%9D%22%5D%2C%5B%22%22%5D%5D", "desc": "千川投流系统课程", "tag": "官方免费" },
+        { "name": "抖音电商直播课程", "url": "https://school.jinritemai.com/doudian/web/subject?tags=%5B%5B%22%E5%95%86%E5%AE%B6%22%5D%2C%5B%22%E7%9B%B4%E6%92%AD%E8%BF%90%E8%90%A5%22%5D%2C%5B%22%22%5D%5D", "desc": "直播运营全阶段课程", "tag": "官方免费" },
+        { "name": "巨量百应学习中心", "url": "https://school.jinritemai.com/buyin/web/subject", "desc": "达人带货课程", "tag": "官方免费" },
+        { "name": "亚马逊卖家大学", "url": "https://sellercentral.amazon.com/learn", "desc": "亚马逊官方运营学习", "tag": "官方免费" },
+        { "name": "TikTok Shop学院", "url": "https://seller.tiktokglobalshop.com/university", "desc": "TikTok Shop官方卖家教程", "tag": "官方免费" }
+      ]
+    }
+  ]
+}
