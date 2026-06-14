@@ -84,3 +84,18 @@
   - **【未产品化】飞书推送**：feishu_push.py / feishu_alert.py 尚未集成进 GitHub Actions，目前只能本机手动运行
   - 白鲸出海 RSS 本地未采集到内容，可能需代理
 - 提交：5f81af4、daf4a2a
+
+### 2026-06-14 - Claude Code - 飞书推送集成进 GitHub Actions
+
+- 目标：飞书推送完全自动化，不依赖本机手动触发。
+- 改动：
+  - `.github/workflows/update-news.yml`：采集后新增两步：
+    1. 精选实时提醒（每次 CI 跑都执行，有去重）
+    2. 每日日报（UTC 01:00-01:29 触发，对应北京时间 09:00）
+  - 两步均通过 `FEISHU_APP_ID` 环境变量判断是否启用，secrets 未配置时自动跳过
+- 验证：workflow 语法已人工检查，脚本本身已验证可用
+- 影响：需要在 GitHub 仓库 Settings → Secrets 配置3个 secret（见下）
+- 未完成/风险：
+  - **必须手动配置 GitHub Secrets** 才能生效，否则两步会被跳过（不报错）
+  - `data/feishu-pushed.json` 去重状态由 CI commit 回仓库，首次运行后生效
+- 提交：待提交

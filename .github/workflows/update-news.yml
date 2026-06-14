@@ -71,6 +71,32 @@ jobs:
             python scripts/update_news.py --topic ecommerce --output-dir data --window-hours 168 --archive-days 21 --web-sources feeds/ecommerce.web-sources.json --web-max-sources "${WEB_MAX_SOURCES:-0}"
           fi
 
+      - name: Feishu 精选实时提醒
+        if: ${{ env.FEISHU_APP_ID != '' }}
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
+        run: |
+          python scripts/feishu_alert.py
+
+      - name: Feishu 每日日报（北京时间 09:00）
+        if: ${{ env.FEISHU_APP_ID != '' }}
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
+        run: |
+          # 北京时间 09:00 = UTC 01:00，窗口 01:00-01:29（与 cron 30min 对齐）
+          HOUR=$(date -u +%H)
+          MIN=$(date -u +%M)
+          if [ "$HOUR" = "01" ] && [ "$MIN" -lt 30 ]; then
+            echo "触发每日日报推送"
+            python scripts/feishu_push.py --top 10
+          else
+            echo "非日报时间窗口（UTC ${HOUR}:${MIN}），跳过"
+          fi
+
       - name: Commit and push changes
         env:
           EMAIL_DIGEST_PUBLISH: ${{ secrets.EMAIL_DIGEST_PUBLISH || vars.EMAIL_DIGEST_PUBLISH }}
