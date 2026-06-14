@@ -81,6 +81,7 @@ jobs:
             exit 0
           fi
           python scripts/llm_scorer.py --file data/ai-radar.json
+          python scripts/llm_scorer.py --file data/latest-24h.json
 
       - name: Feishu 精选实时提醒
         env:

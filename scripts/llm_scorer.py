@@ -44,8 +44,8 @@ PROVIDERS = [
     },
 ]
 
-SYSTEM_PROMPT = """你是一个电商运营情报过滤器。
-判断这条内容是否对「在抖音/小红书/淘宝/拼多多/亚马逊/TikTok Shop做电商的卖家或运营」有直接参考价值。
+SYSTEM_PROMPT = """你是一个电商运营情报分析师。
+分析这条内容对「在抖音/小红书/淘宝/拼多多/亚马逊/TikTok Shop做电商的卖家或运营」的价值。
 
 有价值的内容包括：
 - 平台规则变化（新规、处罚、入驻、佣金、保证金）
@@ -56,10 +56,15 @@ SYSTEM_PROMPT = """你是一个电商运营情报过滤器。
 - 跨境政策（关税、合规、物流、收款）
 - 运营技巧（转化、复购、私域、店铺经营）
 
-无价值的内容：纯技术开发、通用科技新闻、学术研究、娱乐、与电商无关的社会话题。
+无价值：纯技术开发、通用科技新闻、学术研究、娱乐、与电商无关的社会话题。
 
 只返回JSON，不要其他文字：
-{"score": 0-10, "reason": "一句话说明判断依据", "label": "platform_policy/operations_playbook/ai_commerce/traffic_creative/extended_watch/irrelevant"}"""
+{
+  "score": 0-10,
+  "label": "platform_policy/operations_playbook/ai_commerce/traffic_creative/extended_watch/irrelevant",
+  "summary_zh": "1-2句中文摘要，说清楚这条内容讲了什么（英文内容需翻译成中文）",
+  "impact_zh": "score>=5时必填：对电商卖家/运营的直接影响是什么，20字以内，否则填空字符串"
+}"""
 
 
 def _load_env() -> dict[str, str]:
@@ -161,11 +166,19 @@ def batch_score(
 
         item["llm_score"] = round(llm_score / 10, 2)
         item["llm_label"] = label
-        item["llm_reason"] = reason
+
+        summary_zh = result.get("summary_zh", "")
+        impact_zh = result.get("impact_zh", "")
+        if summary_zh:
+            item["summary_zh"] = summary_zh
+        if impact_zh:
+            item["impact_zh"] = impact_zh
 
         if llm_score >= 6:
             item["ai_is_related"] = True
             item["ai_label"] = label
+            if impact_zh:
+                item["impact"] = impact_zh
         else:
             item["ai_is_related"] = False
             item["ai_label"] = "irrelevant"
@@ -213,10 +226,19 @@ def main() -> None:
     elif args.file:
         path = Path(args.file)
         data = json.loads(path.read_text(encoding="utf-8"))
-        items = data.get("items", [])
-        print(f"对 {len(items)} 条内容进行 LLM 二次打分...")
-        batch_score(items, env, verbose=True)
-        data["items"] = items
+        # Score all item arrays in the file (items, items_ai, items_all, etc.)
+        # so summary_zh/impact_zh propagate to whichever array the frontend reads.
+        scored_any = False
+        for key in ("items_ai", "items", "items_all", "items_all_raw"):
+            arr = data.get(key)
+            if not isinstance(arr, list) or not arr:
+                continue
+            print(f"对 {key}({len(arr)} 条) 进行 LLM 二次打分...")
+            batch_score(arr, env, verbose=True)
+            data[key] = arr
+            scored_any = True
+        if not scored_any:
+            print("文件中未找到可打分的条目列表")
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"已写回 {path}")
 

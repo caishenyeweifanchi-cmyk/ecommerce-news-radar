@@ -1626,6 +1626,17 @@ summary:focus-visible {
 }
 
 /* 信号卡片业务价值提示 */
+.card-summary {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 5px 0 2px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .card-value-hint {
   display: flex;
   flex-direction: column;

@@ -101,19 +101,19 @@ def build_alert_card(item: dict) -> str:
     label_name = label_text(label)
     color = LABEL_COLOR.get(label, "blue")
 
-    impact = item.get("impact") or item.get("ai_relevance_reason") or ""
-    if impact == "matched_ai_signal":
-        impact = ""
-    action = item.get("suggested_action") or ""
+    summary_zh = item.get("summary_zh") or ""
+    impact_zh = item.get("impact_zh") or item.get("impact") or item.get("ai_relevance_reason") or ""
+    if impact_zh == "matched_ai_signal":
+        impact_zh = ""
     source = item.get("source") or item.get("site_name") or ""
 
     body_lines = []
-    if impact:
-        body_lines.append(f"📌 **影响** {impact[:150]}")
-    if action:
-        body_lines.append(f"💡 **建议** {action[:120]}")
+    if summary_zh:
+        body_lines.append(summary_zh[:200])
+    if impact_zh:
+        body_lines.append(f"\n**对你意味着：** {impact_zh[:120]}")
     if source:
-        body_lines.append(f"📰 来源：{source}")
+        body_lines.append(f"\n📰 {source}")
     body_md = "\n".join(body_lines) if body_lines else "点击标题查看原文"
 
     elements = [

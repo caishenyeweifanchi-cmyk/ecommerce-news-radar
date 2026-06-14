@@ -1126,8 +1126,17 @@ function renderItemNode(item) {
   }
   titleEl.href = item.url;
 
-  // 业务价值提示：impact + suggested_action
-  const impact = (item.impact || "").trim();
+  // LLM 生成的中文摘要
+  const summaryZh = (item.summary_zh || "").trim();
+  if (summaryZh) {
+    const summaryEl = document.createElement("p");
+    summaryEl.className = "card-summary";
+    summaryEl.textContent = summaryZh;
+    node.appendChild(summaryEl);
+  }
+
+  // 业务价值提示：impact_zh 优先，fallback 到 impact / suggested_action
+  const impact = (item.impact_zh || item.impact || "").trim();
   const action = (item.suggested_action || item.business_value || "").trim();
   if (impact || action) {
     const hintEl = document.createElement("div");
@@ -1135,10 +1144,10 @@ function renderItemNode(item) {
     if (impact) {
       const impEl = document.createElement("span");
       impEl.className = "card-impact";
-      impEl.textContent = impact;
+      impEl.textContent = `对你意味着：${impact}`;
       hintEl.appendChild(impEl);
     }
-    if (action) {
+    if (action && !impact) {
       const actEl = document.createElement("span");
       actEl.className = "card-action";
       actEl.textContent = `→ ${action}`;
