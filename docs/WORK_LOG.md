@@ -44,3 +44,30 @@
 - 未完成/风险：
   - 当前工作区存在自动采集产生的 `data/*.json` 和 `data/feishu-pushed.json` 变更，本次不提交。
 - 提交：待提交。
+
+### 2026-06-14 - Claude Code - 飞书推送集成 + 当前热点模块 + 导航/UI 迭代
+
+- 目标：完成 GitHub 推送、真实采集验证新 RSS 源、飞书日报推送集成、当前热点模块。
+- 改动：
+  - `scripts/feishu_push.py`：飞书日报推送，使用 lark-oapi SDK，优先推 daily-brief.json 全量，兜底 ai-radar.json Top10
+  - `scripts/feishu_alert.py`：精选实时提醒，每条新进精选单独推卡片，去重记录存 `data/feishu-pushed.json`
+  - `scripts/run_pipeline.py`：一键流水线，采集→精选提醒→日报（--daily）
+  - `env.example`：飞书凭证配置模板（chat_id 已填，app_secret 不写入）
+  - `requirements.txt`：新增 lark-oapi>=1.3.0
+  - `feeds/ecommerce.example.opml`：新增 Anthropic、LangChain、量子位、机器之心、AIGC开放社区
+  - `index.html`：新增 `#hotTopicsWrap` 热点区块，nav 加"当前热点"
+  - `assets/app.js`：新增 computeHotTopics() + renderHotTopics()，三信号融合（多源同报×3 + 实体聚合 + 时间衰减12h），20个实体词典
+  - `assets/styles.css`：新增热点卡片样式
+- 验证：
+  - 采集跑通，ai-radar.json 478条；6个RSS失败（已知）
+  - 飞书卡片消息推送成功（群 oc_7f372a21eb3f16564ee9e924711e9079）
+  - 热点预览：Anthropic/Claude #1(17条·6源)、OpenAI/GPT #2(17条·9源) 正确显示
+- 影响：
+  - 飞书推送依赖本机 `.env`（FEISHU_APP_SECRET），不入库
+  - `data/feishu-pushed.json` 是推送去重状态文件，不要手动覆盖
+- 未完成/风险：
+  - 导航仍有冗余（平台规则/运营玩法等与 filter-tabs 重复），本 session 继续精简
+  - 公众号信源采集尚未实现，待集成
+  - daily-brief.json 经常为空，需增加信源后改善
+  - 多源同报热点（source_count≥2）暂未触发，信源不足
+- 提交：82e65fe、4118c6b、272ec65 等

@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-14T06:29:48.904890Z",
+  "generated_at": "2026-06-14T04:49:17.137686Z",
   "description": "Web source quality audit. Homepage and daily brief should prefer sources with detail URLs and real publish times.",
   "summary": {
     "source_total": 167,
     "p0_p1_total": 150,
-    "enable_total": 19,
-    "candidate_only_total": 148,
-    "disable_total": 0,
-    "p0_p1_enable_total": 19,
-    "p0_p1_candidate_only_total": 131,
-    "active_detail_sources": 28,
-    "active_real_time_sources": 19
+    "enable_total": 18,
+    "candidate_only_total": 147,
+    "disable_total": 2,
+    "p0_p1_enable_total": 18,
+    "p0_p1_candidate_only_total": 130,
+    "active_detail_sources": 26,
+    "active_real_time_sources": 18
   },
   "sources": [
     {
@@ -363,24 +363,22 @@
       "type": "官方社区",
       "priority": "P0",
       "url": "https://sellercentral.amazon.com/forums/c/announcements",
-      "ok": true,
-      "collection_mode": "list",
+      "ok": false,
+      "collection_mode": "empty",
       "ingestion_method": "web_list_adapter",
-      "item_count": 12,
+      "item_count": 0,
       "detail_url_count": 0,
       "real_published_time_count": 0,
       "snapshot_count": 0,
-      "detail_url_rate": 0.0,
-      "real_published_time_rate": 0.0,
-      "published_time_sources": [
-        "unconfirmed"
-      ],
+      "detail_url_rate": 0,
+      "real_published_time_rate": 0,
+      "published_time_sources": [],
       "article_url_sources": [],
-      "status_code": 200,
-      "error": null,
+      "status_code": null,
+      "error": "Already at the end of a Zstandard frame.",
       "skip_reason": null,
-      "recommendation": "candidate_only",
-      "reason": "missing_real_publish_time"
+      "recommendation": "disable",
+      "reason": "fetch_failed"
     },
     {
       "source_id": "support_bigcommerce_com_s_changelog",
@@ -1521,25 +1519,22 @@
       "type": "官方公告页",
       "priority": "P0",
       "url": "https://sell.amazon.com/blog/announcements",
-      "ok": true,
-      "collection_mode": "list",
+      "ok": false,
+      "collection_mode": "empty",
       "ingestion_method": "web_list_adapter",
-      "item_count": 12,
-      "detail_url_count": 10,
-      "real_published_time_count": 6,
+      "item_count": 0,
+      "detail_url_count": 0,
+      "real_published_time_count": 0,
       "snapshot_count": 0,
-      "detail_url_rate": 0.8333,
-      "real_published_time_rate": 0.5,
-      "published_time_sources": [
-        "detail_meta",
-        "unconfirmed"
-      ],
+      "detail_url_rate": 0,
+      "real_published_time_rate": 0,
+      "published_time_sources": [],
       "article_url_sources": [],
-      "status_code": 200,
-      "error": null,
+      "status_code": null,
+      "error": "Already at the end of a Zstandard frame.",
       "skip_reason": null,
-      "recommendation": "enable",
-      "reason": "usable"
+      "recommendation": "disable",
+      "reason": "fetch_failed"
     },
     {
       "source_id": "shopee_cn_policy",
@@ -1865,23 +1860,23 @@
       "priority": "P0",
       "url": "https://seller.temu.com/rule",
       "ok": true,
-      "collection_mode": "list",
+      "collection_mode": "snapshot",
       "ingestion_method": "web_list_adapter",
-      "item_count": 2,
-      "detail_url_count": 2,
+      "item_count": 1,
+      "detail_url_count": 0,
       "real_published_time_count": 0,
-      "snapshot_count": 0,
-      "detail_url_rate": 1.0,
+      "snapshot_count": 1,
+      "detail_url_rate": 0.0,
       "real_published_time_rate": 0.0,
       "published_time_sources": [
-        "unconfirmed"
+        "snapshot"
       ],
       "article_url_sources": [],
       "status_code": 200,
       "error": null,
       "skip_reason": null,
       "recommendation": "candidate_only",
-      "reason": "missing_real_publish_time"
+      "reason": "snapshot_only"
     },
     {
       "source_id": "ai_commerce_the_decoder",
@@ -3210,33 +3205,6 @@
       "reason": "snapshot_only"
     },
     {
-      "source_id": "samr_gov_cn_xw_zj",
-      "source_name": "市场监管总局公告",
-      "platform": "市场监管总局",
-      "domain": "政策监管",
-      "type": "政策公告页",
-      "priority": "P0",
-      "url": "https://www.samr.gov.cn/xw/zj/",
-      "ok": true,
-      "collection_mode": "snapshot",
-      "ingestion_method": "web_list_adapter",
-      "item_count": 1,
-      "detail_url_count": 0,
-      "real_published_time_count": 0,
-      "snapshot_count": 1,
-      "detail_url_rate": 0.0,
-      "real_published_time_rate": 0.0,
-      "published_time_sources": [
-        "snapshot"
-      ],
-      "article_url_sources": [],
-      "status_code": 200,
-      "error": null,
-      "skip_reason": null,
-      "recommendation": "candidate_only",
-      "reason": "snapshot_only"
-    },
-    {
       "source_id": "samr_gov_cn_zw",
       "source_name": "市场监管总局公告",
       "platform": "市场监管总局",
@@ -3263,6 +3231,33 @@
       "skip_reason": null,
       "recommendation": "enable",
       "reason": "usable"
+    },
+    {
+      "source_id": "samr_gov_cn_xw_zj",
+      "source_name": "市场监管总局公告",
+      "platform": "市场监管总局",
+      "domain": "政策监管",
+      "type": "政策公告页",
+      "priority": "P0",
+      "url": "https://www.samr.gov.cn/xw/zj/",
+      "ok": true,
+      "collection_mode": "snapshot",
+      "ingestion_method": "web_list_adapter",
+      "item_count": 1,
+      "detail_url_count": 0,
+      "real_published_time_count": 0,
+      "snapshot_count": 1,
+      "detail_url_rate": 0.0,
+      "real_published_time_rate": 0.0,
+      "published_time_sources": [
+        "snapshot"
+      ],
+      "article_url_sources": [],
+      "status_code": 200,
+      "error": null,
+      "skip_reason": null,
+      "recommendation": "candidate_only",
+      "reason": "snapshot_only"
     },
     {
       "source_id": "dewu_merchant_public_rule_entry",

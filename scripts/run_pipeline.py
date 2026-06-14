@@ -43,6 +43,7 @@ def main() -> None:
     parser.add_argument("--daily", action="store_true", help="同时发送每日日报汇总")
     parser.add_argument("--dry-run", action="store_true", help="不实际发飞书消息")
     parser.add_argument("--skip-collect", action="store_true", help="跳过采集直接推送（调试用）")
+    parser.add_argument("--wx", action="store_true", help="抓取公众号文章（需配置 feeds/wx-accounts.json）")
     args = parser.parse_args()
 
     # ── Step 1: 采集 ──────────────────────────────────────────────
@@ -61,6 +62,12 @@ def main() -> None:
         ]
         if not run(collect_cmd, "Step 1 / 3  采集最新内容"):
             sys.exit(1)
+
+    # ── Step 1b: 公众号抓取（可选）─────────────────────────────────
+    if args.wx:
+        wx_cmd = [PYTHON, str(ROOT / "scripts" / "wx_fetcher.py"), "--batch"]
+        if not run(wx_cmd, "Step 1b  公众号文章抓取"):
+            print("⚠ 公众号抓取失败，继续后续步骤。")
 
     # ── Step 2: 精选实时提醒 ──────────────────────────────────────
     alert_cmd = [PYTHON, str(ROOT / "scripts" / "feishu_alert.py")]

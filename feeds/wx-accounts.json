@@ -1,0 +1,9 @@
+[
+  {
+    "name": "示例公众号",
+    "description": "在此填入你要追踪的公众号名称",
+    "recent_urls": [
+      "https://mp.weixin.qq.com/s/示例文章ID"
+    ]
+  }
+]
