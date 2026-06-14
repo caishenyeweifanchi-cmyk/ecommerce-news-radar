@@ -137,3 +137,30 @@
   - 用户截图中暴露了完整 MiniMax API Key，应尽快在 MiniMax 后台作废并重新生成，再更新本机 `.env` 和 GitHub Actions secrets。
   - 当前 `scripts/llm_scorer.py`、`scripts/feishu_alert.py`、`assets/app.js`、`assets/styles.css` 仍有未提交改动，疑似 Claude 正在开发；本次不提交这些文件。
 - 提交：6b74a1c
+
+---
+
+## 2026-06-14 LLM摘要+影响力展示功能上线
+
+**任务**：给每条精选加中文摘要、加"对你意味着"、飞书卡片同步更新（用户要求三项）
+
+**变更文件**：
+- `scripts/llm_scorer.py` — 扩展 SYSTEM_PROMPT 输出 summary_zh + impact_zh；`batch_score` 同时写入所有 item 数组（items_ai、items、items_all 等）
+- `.github/workflows/update-news.yml` — 在 ai-radar.json 打分后也对 latest-24h.json 执行打分
+- `assets/app.js` — 卡片渲染加 `.card-summary` 段落；impact 前缀"对你意味着："
+- `assets/styles.css` — 新增 `.card-summary` 样式（3行截断、muted色）
+- `scripts/feishu_alert.py` — 卡片 body 优先用 summary_zh，展示"对你意味着"和来源
+- `index.html` — 缓存版本号升至 ecommerce-console-0614-llmsummary
+
+**根因发现**：scorer 原来只写 `data["items"]`，但前端读 `data["items_ai"]`，导致 summary_zh 永远进不了卡片。已修复为遍历所有数组。
+
+**验证**：
+- renderItemNode() 手动调用确认 `.card-summary` 正确渲染
+- 数据管道逻辑核对通过（items_ai ai_score=0.68 在打分区间内）
+- 已清理测试条目（"抖音电商2026"手动注入项已移除）
+
+**commit**：4aecb01
+
+**剩余风险**：
+- 首次 GitHub Actions 运行后才能看到真实 summary_zh 展示效果（需等下一个整点触发）
+- LLM 每次都对同一 item 重新打分（无去重缓存），稍微耗费 API token，但量小可接受
