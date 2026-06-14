@@ -136,4 +136,4 @@
 - 未完成/风险：
   - 用户截图中暴露了完整 MiniMax API Key，应尽快在 MiniMax 后台作废并重新生成，再更新本机 `.env` 和 GitHub Actions secrets。
   - 当前 `scripts/llm_scorer.py`、`scripts/feishu_alert.py`、`assets/app.js`、`assets/styles.css` 仍有未提交改动，疑似 Claude 正在开发；本次不提交这些文件。
-- 提交：待提交
+- 提交：6b74a1c
