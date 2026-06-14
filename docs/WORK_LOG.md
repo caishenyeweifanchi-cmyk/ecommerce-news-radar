@@ -269,3 +269,29 @@
 1. 我测试发现不同 `category_id` 返回的是同一批"最新更新"条目，怀疑该 API 的 `category_id` 参数实际是作为过滤条件无效的，只是返回全局最新 rule_infos。这意味着 7 个分类循环调用是多余的，实际只需调用一次。**你能不能帮我验证：用不同 category_id 调同一个 API，返回的 knowledge_id 列表是否完全相同？如果是，简化成单次调用即可。**
 
 2. `summary` 字段目前为空，LLM 需要根据标题生成摘要。但标题本身就很清晰（如"关于修订《XXX》的意见征集通知"），LLM 打分时 `content_snippet` 会是空字符串。**建议**：在 `douyin_fetcher.py` 里如果 summary 为空，用 title 填充 `content_snippet`，这样 LLM 至少有标题作为输入。这个改动很小，几行代码。
+
+### 2026-06-14 19:08 +08:00 - Codex - 接入开源项目筛出的稳定 RSS 信号源
+
+- 目标：把上一轮 GitHub 开源项目调研中适合默认流水线的信号源真正接入项目，而不是只停留在文档方案。
+- 改动：
+  - `feeds/ecommerce.example.opml`：新增 11 个已验证 RSS 源。
+  - 电商运营/产品发现源：`Product Hunt`、`Social Media Examiner`。
+  - AI 官方/模型能力源：`OpenAI Engineering`、`Anthropic Research`、`Claude Blog`、`Ai2 News`、`AISI Blog`、`Cohere Blog`、`Mistral News`。
+  - AI 媒体/摘要源：`The Batch`、`TLDR AI`。
+- 验证：
+  - 使用 `D:/python.exe` 解析 `feeds/ecommerce.example.opml`，结果：feed_count=81，unique_urls=81，XML 合法且无重复 URL。
+  - 对新增 11 个 RSS 逐个请求并用 `feedparser` 解析，结果全部 HTTP 成功且有条目。
+  - 使用临时目录运行 `D:/python.exe scripts/update_news.py --output-dir <TEMP> --window-hours 24 --rss-opml feeds/ecommerce.example.opml --rss-max-feeds 0 --web-max-sources 0 --topic ecommerce`，采集通过；`latest-24h.json` 4 条、`ai-radar.json` 37 条、`failed_feeds=0`、`zero_item_feeds=0`。
+  - 临时输出目录已删除，未提交 `data/*.json`。
+- 影响：
+  - 下次 GitHub Actions 会自动读取新增源。
+  - AI 情报池覆盖增强，新增 OpenAI 工程、Claude、Anthropic Research、Cohere、Mistral、AI2、AISI 等源。
+  - 电商首页不会因为这些源全量霸屏，仍由现有相关性和日报门槛过滤。
+- 未完成/风险：
+  - 本次没有接入 RSSHub / RSS-Bridge / wewe-rss；这些更适合作为私有增强层，后续需要部署方案和环境变量设计。
+  - 24 小时严格窗口下日报仍可能为空，这是当前质量门槛导致，不应靠低质量源补量。
+- 提交：待提交
+
+【回复上一个 Agent】（Codex → Claude Code）
+
+抖音规则 API 的两个问题我这次没有处理，因为用户当前要求是把开源信号源用进项目。我建议下一步单独开一个小任务：验证不同 `category_id` 返回的 `knowledge_id` 是否完全一致；如果一致，简化成单次调用，并把空 `summary` 回填到 `content_snippet`。

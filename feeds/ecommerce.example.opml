@@ -48,10 +48,15 @@
       <outline text="ShipBob Blog" title="ShipBob Blog" type="rss" xmlUrl="https://www.shipbob.com/blog/feed/" htmlUrl="https://www.shipbob.com/blog/" />
       <outline text="Social Media Today" title="Social Media Today" type="rss" xmlUrl="https://www.socialmediatoday.com/feeds/news/" htmlUrl="https://www.socialmediatoday.com/" />
       <outline text="Stripe Blog" title="Stripe Blog" type="rss" xmlUrl="https://stripe.com/blog/feed.rss" htmlUrl="https://stripe.com/blog" />
+      <outline text="Product Hunt" title="Product Hunt" type="rss" xmlUrl="http://www.producthunt.com/feed" htmlUrl="https://www.producthunt.com/" />
+      <outline text="Social Media Examiner" title="Social Media Examiner" type="rss" xmlUrl="http://www.socialmediaexaminer.com/feed/" htmlUrl="https://www.socialmediaexaminer.com/" />
     </outline>
     <outline text="AI 情报池 - 官方模型与能力源">
       <outline text="OpenAI News" title="OpenAI News" type="rss" xmlUrl="https://openai.com/news/rss.xml" htmlUrl="https://openai.com/news" />
+      <outline text="OpenAI Engineering" title="OpenAI Engineering" type="rss" xmlUrl="https://openai.com/news/engineering/rss.xml" htmlUrl="https://openai.com/news/engineering/" />
       <outline text="Anthropic News" title="Anthropic News" type="rss" xmlUrl="https://www.anthropic.com/rss.xml" htmlUrl="https://www.anthropic.com/news" />
+      <outline text="Anthropic Research" title="Anthropic Research" type="rss" xmlUrl="https://raw.githubusercontent.com/alan-turing-institute/ai-rss-feeds/refs/heads/main/feeds/anthropic-research.xml" htmlUrl="https://www.anthropic.com/research" />
+      <outline text="Claude Blog" title="Claude Blog" type="rss" xmlUrl="https://raw.githubusercontent.com/alan-turing-institute/ai-rss-feeds/refs/heads/main/feeds/claude-blog.xml" htmlUrl="https://claude.com/blog" />
       <outline text="Google DeepMind Blog" title="Google DeepMind Blog" type="rss" xmlUrl="https://deepmind.google/blog/rss.xml" htmlUrl="https://deepmind.google/blog" />
       <outline text="Google AI Blog" title="Google AI Blog" type="rss" xmlUrl="https://blog.google/innovation-and-ai/technology/ai/rss/" htmlUrl="https://blog.google/technology/ai/" />
       <outline text="Hugging Face Blog" title="Hugging Face Blog" type="rss" xmlUrl="https://huggingface.co/blog/feed.xml" htmlUrl="https://huggingface.co/blog" />
@@ -59,6 +64,10 @@
       <outline text="GitHub Changelog" title="GitHub Changelog" type="rss" xmlUrl="https://github.blog/changelog/feed/" htmlUrl="https://github.blog/changelog/" />
       <outline text="NVIDIA Generative AI Blog" title="NVIDIA Generative AI Blog" type="rss" xmlUrl="https://developer.nvidia.com/blog/category/generative-ai/feed/" htmlUrl="https://developer.nvidia.com/blog/category/generative-ai/" />
       <outline text="Meta AI Blog" title="Meta AI Blog" type="rss" xmlUrl="https://ai.meta.com/blog/rss/" htmlUrl="https://ai.meta.com/blog/" />
+      <outline text="Ai2 News" title="Ai2 News" type="rss" xmlUrl="https://raw.githubusercontent.com/alan-turing-institute/ai-rss-feeds/refs/heads/main/feeds/allenai-news.xml" htmlUrl="https://allenai.org/news" />
+      <outline text="AISI Blog" title="AISI Blog" type="rss" xmlUrl="https://raw.githubusercontent.com/alan-turing-institute/ai-rss-feeds/refs/heads/main/feeds/aisi-blog.xml" htmlUrl="https://www.aisi.gov.uk/blog" />
+      <outline text="Cohere Blog" title="Cohere Blog" type="rss" xmlUrl="https://raw.githubusercontent.com/alan-turing-institute/ai-rss-feeds/refs/heads/main/feeds/cohere-blog.xml" htmlUrl="https://cohere.com/blog" />
+      <outline text="Mistral News" title="Mistral News" type="rss" xmlUrl="https://raw.githubusercontent.com/alan-turing-institute/ai-rss-feeds/refs/heads/main/feeds/mistral-news.xml" htmlUrl="https://mistral.ai/news" />
       <outline text="Microsoft Research Blog" title="Microsoft Research Blog" type="rss" xmlUrl="https://www.microsoft.com/en-us/research/feed/" htmlUrl="https://www.microsoft.com/en-us/research/blog/" />
       <outline text="AWS Machine Learning Blog" title="AWS Machine Learning Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/machine-learning/feed/" htmlUrl="https://aws.amazon.com/blogs/machine-learning/" />
     </outline>
@@ -72,6 +81,8 @@
       <outline text="Simon Willison" title="Simon Willison" type="rss" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/" />
       <outline text="Import AI (Jack Clark)" title="Import AI (Jack Clark)" type="rss" xmlUrl="https://jack-clark.net/feed/" htmlUrl="https://jack-clark.net/" />
       <outline text="DeepLearning.AI Blog" title="DeepLearning.AI Blog" type="rss" xmlUrl="https://www.deeplearning.ai/blog/feed/" htmlUrl="https://www.deeplearning.ai/blog/" />
+      <outline text="The Batch" title="The Batch" type="rss" xmlUrl="https://raw.githubusercontent.com/alan-turing-institute/ai-rss-feeds/refs/heads/main/feeds/the-batch.xml" htmlUrl="https://www.deeplearning.ai/the-batch/" />
+      <outline text="TLDR AI" title="TLDR AI" type="rss" xmlUrl="https://raw.githubusercontent.com/alan-turing-institute/ai-rss-feeds/refs/heads/main/feeds/tldr-ai.xml" htmlUrl="https://tldr.tech/ai/archives" />
       <outline text="Towards AI" title="Towards AI" type="rss" xmlUrl="https://towardsai.net/feed" htmlUrl="https://towardsai.net/" />
       <outline text="AI Business" title="AI Business" type="rss" xmlUrl="https://aibusiness.com/rss.xml" htmlUrl="https://aibusiness.com/" />
       <outline text="Zapier Blog" title="Zapier Blog" type="rss" xmlUrl="https://zapier.com/blog/feeds/latest/" htmlUrl="https://zapier.com/blog/" />
