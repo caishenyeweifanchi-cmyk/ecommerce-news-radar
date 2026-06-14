@@ -87,8 +87,8 @@ def load_items(top: int) -> list[dict]:
     return items[:top]
 
 
-def build_text(items: list[dict], date_str: str) -> str:
-    lines = [f"📡 电商热点雷达 · {date_str} 情报日报\n"]
+def build_card(items: list[dict], date_str: str) -> str:
+    elements = []
     for idx, item in enumerate(items, 1):
         title = item.get("title_zh") or item.get("title") or "(无标题)"
         url = item.get("url") or item.get("primary_url") or ""
@@ -99,26 +99,58 @@ def build_text(items: list[dict], date_str: str) -> str:
             or item.get("ai_relevance_reason")
             or ""
         )
+        title_md = f"[{title}]({url})" if url else title
+        impact_line = f"\n📌 {impact[:120]}" if impact and impact != "matched_ai_signal" else ""
+        elements.append({
+            "tag": "div",
+            "text": {
+                "tag": "lark_md",
+                "content": f"**{idx}.** `{label}` **{title_md}**{impact_line}",
+            },
+        })
+        if idx < len(items):
+            elements.append({"tag": "hr"})
+
+    elements.append({
+        "tag": "note",
+        "elements": [{"tag": "plain_text", "content": f"共 {len(items)} 条 · ecommerce-news-radar 自动生成"}],
+    })
+
+    card = {
+        "config": {"wide_screen_mode": True},
+        "header": {
+            "title": {"tag": "plain_text", "content": f"📡 电商热点雷达 · {date_str} 情报日报"},
+            "template": "blue",
+        },
+        "elements": elements,
+    }
+    return json.dumps(card, ensure_ascii=False)
+
+
+def build_text(items: list[dict], date_str: str) -> str:
+    """纯文本备用格式。"""
+    lines = [f"📡 电商热点雷达 · {date_str} 情报日报\n"]
+    for idx, item in enumerate(items, 1):
+        title = item.get("title_zh") or item.get("title") or "(无标题)"
+        url = item.get("url") or item.get("primary_url") or ""
+        label = label_text(item.get("ai_label") or "")
         lines.append(f"{idx}. [{label}] {title}")
         if url:
             lines.append(f"   {url}")
-        if impact:
-            lines.append(f"   📌 {impact[:120]}")
         lines.append("")
     lines.append(f"共 {len(items)} 条  |  ecommerce-news-radar 自动生成")
     return "\n".join(lines)
 
 
-def send_message(client: lark.Client, chat_id: str, text: str) -> str:
-    """发送文本消息，返回 message_id。"""
-    content = json.dumps({"text": text}, ensure_ascii=False)
+def send_message(client: lark.Client, chat_id: str, content: str, msg_type: str) -> str:
+    """发送消息，返回 message_id。"""
     req = (
         CreateMessageRequest.builder()
         .receive_id_type("chat_id")
         .request_body(
             CreateMessageRequestBody.builder()
             .receive_id(chat_id)
-            .msg_type("text")
+            .msg_type(msg_type)
             .content(content)
             .build()
         )
@@ -151,10 +183,9 @@ def main() -> None:
         sys.exit(0)
 
     date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    text = build_text(items, date_str)
 
     if args.dry_run:
-        print(text)
+        print(build_text(items, date_str))
         return
 
     if not chat_id:
@@ -173,7 +204,13 @@ def main() -> None:
     )
 
     print(f"推送 {len(items)} 条情报到 {chat_id} ...")
-    msg_id = send_message(client, chat_id, text)
+    card_content = build_card(items, date_str)
+    try:
+        msg_id = send_message(client, chat_id, card_content, "interactive")
+    except RuntimeError:
+        # 卡片失败则降级为文本
+        text_content = json.dumps({"text": build_text(items, date_str)}, ensure_ascii=False)
+        msg_id = send_message(client, chat_id, text_content, "text")
     print(f"✓ 推送成功  message_id={msg_id}")
 
 
