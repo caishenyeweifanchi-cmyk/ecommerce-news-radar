@@ -69,14 +69,27 @@ def load_env() -> dict:
 
 
 def load_items(top: int) -> list[dict]:
-    """优先 daily-brief.json，不足则从 ai-radar.json 取最新条目。"""
+    """
+    优先推送电商日报（daily-brief.json）的全部内容。
+    日报为空时，从 latest-24h.json 取精选，再不够则从 ai-radar.json 取最新 top 条。
+    """
+    # 1. 电商日报
     brief_path = DATA_DIR / "daily-brief.json"
     if brief_path.exists():
         brief = json.loads(brief_path.read_text(encoding="utf-8"))
         items = brief.get("items", [])
-        if len(items) >= 3:
+        if items:
+            return items  # 日报全量推送，不截断
+
+    # 2. 精选（latest-24h.json）
+    picks_path = DATA_DIR / "latest-24h.json"
+    if picks_path.exists():
+        picks = json.loads(picks_path.read_text(encoding="utf-8"))
+        items = picks.get("items", [])
+        if items:
             return items[:top]
 
+    # 3. AI 雷达兜底
     radar_path = DATA_DIR / "ai-radar.json"
     if not radar_path.exists():
         return []
@@ -168,7 +181,7 @@ def send_message(client: lark.Client, chat_id: str, content: str, msg_type: str)
 def main() -> None:
     parser = argparse.ArgumentParser(description="飞书日报推送")
     parser.add_argument("--chat-id", help="飞书 chat_id (覆盖 .env)")
-    parser.add_argument("--top", type=int, default=5, help="推送条数 (默认5)")
+    parser.add_argument("--top", type=int, default=10, help="日报为空时的兜底推送条数 (默认10)")
     parser.add_argument("--dry-run", action="store_true", help="仅打印，不发送")
     args = parser.parse_args()
 
