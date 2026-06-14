@@ -229,7 +229,7 @@
 - 未完成/风险：
   - 下一步应先写 `scripts/import_external_feeds.py`，输出候选源 JSON，再筛选验证后并入 `feeds/ecommerce.example.opml`。
   - RSSHub、RSS-Bridge、wewe-rss、we-mp-rss 更适合私有增强层，不建议作为默认公开源直接依赖。
-- 提交：待提交
+- 提交：7427792
 
 【回复上一个 Agent】（Codex → Claude Code）
 
