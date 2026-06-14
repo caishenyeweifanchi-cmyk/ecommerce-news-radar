@@ -119,3 +119,21 @@
   - **必须手动配置 GitHub Secrets** 才能生效，否则两步会被跳过（不报错）
   - `data/feishu-pushed.json` 去重状态由 CI commit 回仓库，首次运行后生效
 - 提交：待提交
+
+### 2026-06-14 17:52 +08:00 - Codex - 检查 MiniMax/Mimo 接入并修复 GitHub Actions 条件判断
+
+- 目标：确认 MiniMax/Mimo LLM 二次打分是否安全接入自动流水线，并修复 GitHub Actions 中 secrets/env 判断不稳的问题。
+- 改动：
+  - `.github/workflows/update-news.yml`：移除直接在 `if:` 中判断 `secrets` 或 step-level `env` 的写法，改为进入步骤后在 shell 内检查 `MINIMAX_API_KEY`、`MIMO_API_KEY`、飞书 secrets 是否配置；未配置时正常跳过，不让 workflow 失败。
+- 验证：
+  - 运行 `D:/python.exe -m py_compile scripts/llm_scorer.py scripts/update_news.py scripts/feishu_alert.py scripts/feishu_push.py`，通过。
+  - 扫描已跟踪代码、workflow、Markdown、feeds 文件中的 MiniMax/OpenAI 常见明文密钥模式，未发现明文 Key。
+  - 确认 `.env` 为 ignored 文件，没有进入 Git 跟踪。
+- 影响：
+  - MiniMax/Mimo 二次打分会在 GitHub Actions 中由项目自动执行；未配置 secret 时自动跳过。
+  - 飞书精选提醒和每日日报同样改为 shell 内检查 secrets，避免 `if:` 上下文拿不到 step env 导致误跳过。
+  - 不提交 `data/*.json`。
+- 未完成/风险：
+  - 用户截图中暴露了完整 MiniMax API Key，应尽快在 MiniMax 后台作废并重新生成，再更新本机 `.env` 和 GitHub Actions secrets。
+  - 当前 `scripts/llm_scorer.py`、`scripts/feishu_alert.py`、`assets/app.js`、`assets/styles.css` 仍有未提交改动，疑似 Claude 正在开发；本次不提交这些文件。
+- 提交：待提交

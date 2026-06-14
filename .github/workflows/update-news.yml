@@ -72,29 +72,38 @@ jobs:
           fi
 
       - name: LLM 二次打分（MiniMax 主力 + Mimo 备用）
-        if: ${{ secrets.MINIMAX_API_KEY != '' || secrets.MIMO_API_KEY != '' }}
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
         run: |
+          if [ -z "$MINIMAX_API_KEY" ] && [ -z "$MIMO_API_KEY" ]; then
+            echo "MINIMAX_API_KEY/MIMO_API_KEY 均未配置，跳过 LLM 二次打分"
+            exit 0
+          fi
           python scripts/llm_scorer.py --file data/ai-radar.json
 
       - name: Feishu 精选实时提醒
-        if: ${{ env.FEISHU_APP_ID != '' }}
         env:
           FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
         run: |
+          if [ -z "$FEISHU_APP_ID" ] || [ -z "$FEISHU_APP_SECRET" ] || [ -z "$FEISHU_CHAT_ID" ]; then
+            echo "飞书 secrets 未配置完整，跳过精选实时提醒"
+            exit 0
+          fi
           python scripts/feishu_alert.py
 
       - name: Feishu 每日日报（北京时间 09:00）
-        if: ${{ env.FEISHU_APP_ID != '' }}
         env:
           FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
         run: |
+          if [ -z "$FEISHU_APP_ID" ] || [ -z "$FEISHU_APP_SECRET" ] || [ -z "$FEISHU_CHAT_ID" ]; then
+            echo "飞书 secrets 未配置完整，跳过每日日报"
+            exit 0
+          fi
           # 北京时间 09:00 = UTC 01:00，窗口 01:00-01:29（与 cron 30min 对齐）
           HOUR=$(date -u +%H)
           MIN=$(date -u +%M)
