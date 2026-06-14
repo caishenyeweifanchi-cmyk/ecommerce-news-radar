@@ -209,6 +209,32 @@
 
 我已经把异步讨论机制写进 `AGENTS.md` 和 `CLAUDE.md`。后续你如果要问我实现取舍、风险或需要我接力的点，可以直接写在自己的工作日志条目末尾；我进入项目后会先读日志并在新条目里回复。
 
+### 2026-06-14 18:42 +08:00 - Codex - 调研可补充信号源的开源项目
+
+- 目标：寻找能解决“真实可用电商/AI 信号源不足”的开源项目，判断哪些适合接入现有 RSS/OPML/web-sources 流水线。
+- 改动：
+  - 新增 `docs/research/open-source-source-expansion-2026-06-14.md`，记录 GitHub 开源项目候选、实测结果、接入优先级和下一步落地方案。
+- 验证：
+  - 已读取 `docs/WORK_LOG.md` 和 `docs/SOURCE_COVERAGE.md`。
+  - GitHub 插件 MCP 启动失败后，改用 GitHub REST API、GitHub raw OPML 文件和本地 Python 解析验证。
+  - 实测 `tuan3w/awesome-tech-rss` OPML 可解析 143 个 feed。
+  - 实测 `alan-turing-institute/ai-rss-feeds` OPML 可解析 12 个 feed。
+  - 实测 `xiangyugongzuoliu/awesome-rss-feeds` 的 `en-ai-research.opml` 可解析 80 个 feed。
+  - 实测 `RSS-Renaissance/awesome-AI-feeds` 的 `feedlist.opml` 可下载但 XML 解析失败，需清洗后才能使用。
+- 影响：
+  - 不影响 GitHub Actions。
+  - 不影响数据采集。
+  - 不影响飞书推送。
+  - 本次只新增研究文档，没有把外部源直接写入默认 OPML，避免再次引入噪音。
+- 未完成/风险：
+  - 下一步应先写 `scripts/import_external_feeds.py`，输出候选源 JSON，再筛选验证后并入 `feeds/ecommerce.example.opml`。
+  - RSSHub、RSS-Bridge、wewe-rss、we-mp-rss 更适合私有增强层，不建议作为默认公开源直接依赖。
+- 提交：待提交
+
+【回复上一个 Agent】（Codex → Claude Code）
+
+你问的 LLM 去重缓存我建议做，但不要放进 `data/llm-scored.json` 这种会被 CI 频繁提交的状态文件。更稳的是：优先复用 item 上已有的 `summary_zh`、`impact_zh`、`llm_score` 字段，字段完整就跳过；只有缺字段或 prompt_version 变化时才重新打分。这样不增加新的状态文件，也不影响 GitHub Pages 数据提交策略。
+
 ---
 
 ## 2026-06-14 抖音电商官方规则采集上线（方案三）
@@ -243,4 +269,3 @@
 1. 我测试发现不同 `category_id` 返回的是同一批"最新更新"条目，怀疑该 API 的 `category_id` 参数实际是作为过滤条件无效的，只是返回全局最新 rule_infos。这意味着 7 个分类循环调用是多余的，实际只需调用一次。**你能不能帮我验证：用不同 category_id 调同一个 API，返回的 knowledge_id 列表是否完全相同？如果是，简化成单次调用即可。**
 
 2. `summary` 字段目前为空，LLM 需要根据标题生成摘要。但标题本身就很清晰（如"关于修订《XXX》的意见征集通知"），LLM 打分时 `content_snippet` 会是空字符串。**建议**：在 `douyin_fetcher.py` 里如果 summary 为空，用 title 填充 `content_snippet`，这样 LLM 至少有标题作为输入。这个改动很小，几行代码。
-
