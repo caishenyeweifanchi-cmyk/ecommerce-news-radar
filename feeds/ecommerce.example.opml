@@ -5,6 +5,15 @@
   </head>
   <body>
     <outline text="P0/P1 ecommerce operations feeds">
+      <outline text="36氪" title="36氪" type="rss" xmlUrl="https://36kr.com/feed" htmlUrl="https://36kr.com/" />
+      <outline text="钛媒体" title="钛媒体" type="rss" xmlUrl="https://www.tmtpost.com/feed" htmlUrl="https://www.tmtpost.com/" />
+      <outline text="雷锋网" title="雷锋网" type="rss" xmlUrl="https://www.leiphone.com/feed" htmlUrl="https://www.leiphone.com/" />
+      <outline text="爱范儿" title="爱范儿" type="rss" xmlUrl="https://www.ifanr.com/feed" htmlUrl="https://www.ifanr.com/" />
+      <outline text="人人都是产品经理" title="人人都是产品经理" type="rss" xmlUrl="https://www.woshipm.com/feed" htmlUrl="https://www.woshipm.com/" />
+      <outline text="运营派" title="运营派" type="rss" xmlUrl="https://www.yunyingpai.com/feed" htmlUrl="https://www.yunyingpai.com/" />
+      <outline text="白鲸出海" title="白鲸出海" type="rss" xmlUrl="https://www.baijingapp.com/feed" htmlUrl="https://www.baijingapp.com/" />
+      <outline text="InfoQ中文" title="InfoQ中文" type="rss" xmlUrl="https://www.infoq.cn/feed" htmlUrl="https://www.infoq.cn/" />
+      <outline text="少数派" title="少数派" type="rss" xmlUrl="https://sspai.com/feed" htmlUrl="https://sspai.com/" />
       <outline text="亿邦动力 B2C" title="亿邦动力 B2C" type="rss" xmlUrl="https://www.ebrun.com/rss/news_b2c.xml" htmlUrl="https://www.ebrun.com/" />
       <outline text="亿邦动力 零售" title="亿邦动力 零售" type="rss" xmlUrl="https://www.ebrun.com/rss/news_retail.xml" htmlUrl="https://www.ebrun.com/" />
       <outline text="亿邦动力 品牌" title="亿邦动力 品牌" type="rss" xmlUrl="https://www.ebrun.com/rss/news_brands.xml" htmlUrl="https://www.ebrun.com/" />
