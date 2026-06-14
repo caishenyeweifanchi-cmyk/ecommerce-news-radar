@@ -85,6 +85,26 @@
   - 白鲸出海 RSS 本地未采集到内容，可能需代理
 - 提交：5f81af4、daf4a2a
 
+### 2026-06-14 16:13 +08:00 - Codex - 源池治理第一轮：补充稳定电商 RSS
+
+- 目标：缓解真实可用电商信息源不足的问题，先补充一批能自动采集、可解析、有条目的高质量 RSS 源。
+- 改动：
+  - `feeds/ecommerce.example.opml`：新增 13 个已验证 RSS 源，覆盖广告投流、独立站、私域营销、跨境 marketplace、零售动态、物流履约、支付和电商 SEO。
+  - 新增源包括 AdExchanger、ChannelX、Drip Blog、Ecommerce Germany News、HubSpot Sales Ecommerce、InternetRetailing、Marketing Dive、Omnisend Blog、PYMNTS Retail、Search Engine Journal Ecommerce、ShipBob Blog、Social Media Today、Stripe Blog。
+- 验证：
+  - 使用 `D:/python.exe` 解析 OPML，结果：XML 合法，feed_count=68，重复 URL=0。
+  - 使用 `requests + feedparser` 验证 13 个新增 RSS，结果：全部 HTTP 200 且能解析到条目。
+  - 运行 `D:/python.exe scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/ecommerce.example.opml --rss-max-feeds 0 --web-sources feeds/ecommerce.web-sources.json --web-max-sources 0 --topic ecommerce`，采集跑通；严格当天门槛下 `daily-brief.json` 仍为 0 条，说明日报不能靠低质量内容补量。
+  - `Retail Gazette` 在单独验证时可用，但完整流水线触发 429 限流，已撤掉，不进入默认 OPML。
+- 影响：
+  - 下次 GitHub Actions 会自动采集新增 RSS。
+  - 不影响飞书推送代码。
+  - 不修改 `data/*.json` 的提交策略，本次采集产生的数据变更不提交。
+- 未完成/风险：
+  - 新增源主要补足海外电商、投流、营销和履约信息；国内平台官方规则仍需要靠 P1 代理源和后续专项治理。
+  - 日报仍缺当天高优先级内容，下一步需要继续补国内内容电商、平台规则代理、公众号真实 URL 和高价值论坛/社区源。
+- 提交：22849bd
+
 ### 2026-06-14 - Claude Code - 飞书推送集成进 GitHub Actions
 
 - 目标：飞书推送完全自动化，不依赖本机手动触发。

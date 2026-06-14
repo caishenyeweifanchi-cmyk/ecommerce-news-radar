@@ -33,6 +33,19 @@
       <outline text="Digital Commerce 360 AI" title="Digital Commerce 360 AI" type="rss" xmlUrl="https://www.digitalcommerce360.com/topic/artificial-intelligence/feed/" htmlUrl="https://www.digitalcommerce360.com/topic/artificial-intelligence/" />
       <outline text="Retail Customer Experience" title="Retail Customer Experience" type="rss" xmlUrl="https://www.retailcustomerexperience.com/rss/" htmlUrl="https://www.retailcustomerexperience.com/" />
       <outline text="MarTech.org" title="MarTech.org" type="rss" xmlUrl="https://martech.org/feed/" htmlUrl="https://martech.org/" />
+      <outline text="AdExchanger" title="AdExchanger" type="rss" xmlUrl="https://www.adexchanger.com/feed/" htmlUrl="https://www.adexchanger.com/" />
+      <outline text="ChannelX" title="ChannelX" type="rss" xmlUrl="https://channelx.world/feed" htmlUrl="https://channelx.world/" />
+      <outline text="Drip Blog" title="Drip Blog" type="rss" xmlUrl="https://www.drip.com/blog/feed" htmlUrl="https://www.drip.com/blog" />
+      <outline text="Ecommerce Germany News" title="Ecommerce Germany News" type="rss" xmlUrl="https://ecommercegermany.com/blog/feed" htmlUrl="https://ecommercegermany.com/blog" />
+      <outline text="HubSpot Sales Ecommerce" title="HubSpot Sales Ecommerce" type="rss" xmlUrl="https://blog.hubspot.com/sales/rss.xml" htmlUrl="https://blog.hubspot.com/sales/topic/ecommerce" />
+      <outline text="InternetRetailing" title="InternetRetailing" type="rss" xmlUrl="https://internetretailing.net/feed/" htmlUrl="https://internetretailing.net/" />
+      <outline text="Marketing Dive" title="Marketing Dive" type="rss" xmlUrl="https://www.marketingdive.com/feeds/news/" htmlUrl="https://www.marketingdive.com/" />
+      <outline text="Omnisend Blog" title="Omnisend Blog" type="rss" xmlUrl="https://www.omnisend.com/blog/feed/" htmlUrl="https://www.omnisend.com/blog/" />
+      <outline text="PYMNTS Retail" title="PYMNTS Retail" type="rss" xmlUrl="https://www.pymnts.com/category/news/retail/feed/" htmlUrl="https://www.pymnts.com/category/news/retail/" />
+      <outline text="Search Engine Journal Ecommerce" title="Search Engine Journal Ecommerce" type="rss" xmlUrl="https://www.searchenginejournal.com/category/ecommerce/feed/" htmlUrl="https://www.searchenginejournal.com/category/ecommerce/" />
+      <outline text="ShipBob Blog" title="ShipBob Blog" type="rss" xmlUrl="https://www.shipbob.com/blog/feed/" htmlUrl="https://www.shipbob.com/blog/" />
+      <outline text="Social Media Today" title="Social Media Today" type="rss" xmlUrl="https://www.socialmediatoday.com/feeds/news/" htmlUrl="https://www.socialmediatoday.com/" />
+      <outline text="Stripe Blog" title="Stripe Blog" type="rss" xmlUrl="https://stripe.com/blog/feed.rss" htmlUrl="https://stripe.com/blog" />
     </outline>
     <outline text="AI 情报池 - 官方模型与能力源">
       <outline text="OpenAI News" title="OpenAI News" type="rss" xmlUrl="https://openai.com/news/rss.xml" htmlUrl="https://openai.com/news" />
