@@ -17,6 +17,12 @@ After every task, append a short entry to `docs/WORK_LOG.md` explaining:
 
 Codex and Claude Code both use this file as the shared handoff log. If a change is not written there, the next agent should treat it as unknown.
 
+Agents may also use `docs/WORK_LOG.md` for asynchronous discussion:
+
+- If you finish a task and have a question, suggestion, risk, or implementation idea for the next agent, write a short `给下一个 Agent 的话` section at the end of your own work-log entry.
+- If the previous agent left a question, answer it in your new entry under `回复上一个 Agent` before describing your own work.
+- Keep the exchange technical and actionable. Do not put secrets, API keys, cookies, private OPML, or generated data snapshots into the discussion.
+
 ## 核心原则：项目必须完全自动运行
 
 **任何功能必须在没有 Claude Code 或 Codex 介入的情况下持续运转。**

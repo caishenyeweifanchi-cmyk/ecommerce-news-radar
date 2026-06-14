@@ -11,6 +11,7 @@ GitHub Actions refresh jobs, and GitHub Pages publishing.
 - Before starting any task, read `docs/WORK_LOG.md`.
 - After finishing any task, append a concise entry to `docs/WORK_LOG.md` with what changed, what was verified, remaining risks, and commit id if available.
 - Codex, Claude Code, and other agents share this log. Do not assume another agent knows what you changed unless it is recorded there.
+- Agents may use `docs/WORK_LOG.md` for asynchronous discussion. If you finish a task and have a question, suggestion, or risk note for the next agent, add a short `给下一个 Agent 的话` section at the end of your work-log entry. The next agent should answer in its own new entry under `回复上一个 Agent`, then continue with the task.
 - Do not submit or commit auto-generated `data/*.json` changes unless the task explicitly asks for a data snapshot commit.
 - Keep changes small and reviewable.
 - Search the repo before changing source fetchers or output schemas.
