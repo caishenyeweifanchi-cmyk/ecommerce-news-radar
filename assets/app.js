@@ -1965,6 +1965,38 @@ async function loadSourceDirectory() {
   }
 }
 
+function getSourceEmoji(src, cat) {
+  // 给每个信源分配一个特色 emoji 作为 logo
+  const emojiMap = {
+    "抖音电商学习中心": "🎵", "抖音电商规则中心": "📋", "巨量千川": "🚀",
+    "巨量百应": "🤝", "小红书商家学院": "📕", "小红书聚光平台": "✨",
+    "淘宝卖家学院": "🛒", "阿里妈妈": "💰", "拼多多商家版": "🛍️",
+    "亚马逊卖家中心": "📦", "TikTok Shop卖家中心": "🌐", "快手磁力引擎": "⚡",
+    "36氪·电商": "🔥", "钛媒体": "⚙️", "虎嗅网": "🦊", "亿邦动力": "💡",
+    "电商在线": "🖥️", "窄播": "📡", "白鲸出海": "🐋", "雷锋网": "🤖",
+    "爱范儿": "💎", "InfoQ中文": "🔬", "人人都是产品经理": "👥",
+    "运营派": "🎯", "运营研究社": "📈", "卖家之家": "🏠",
+    "知无不言": "💬", "少数派": "✏️", "雨果网": "🌊", "蓝海亿观": "🔭",
+    "Jungle Scout Blog": "🌿", "Helium 10 Blog": "🎈", "SellerApp Blog": "📊",
+    "Tamebay": "🏪", "Marketplace Pulse": "💹", "ChannelX": "📡",
+    "Anthropic Blog": "🧠", "OpenAI Blog": "🤖", "MiniMax": "🌟",
+    "即梦AI": "🎨", "可灵AI": "🎬", "Midjourney": "🖼️", "豆包": "🫘",
+    "智谱AI": "⚡", "电商罗盘": "🧭", "生意参谋": "📐", "飞瓜数据": "🍉",
+    "卖家精灵": "🧚", "新榜": "📊", "蝉妈妈": "🦗",
+    "抖音电商课程中心": "🎓", "千川大学": "🏫", "抖音电商直播课程": "📺",
+    "巨量百应学习中心": "📚", "亚马逊卖家大学": "🎓", "TikTok Shop学院": "🎓",
+  };
+  return emojiMap[src.name] || cat.icon || "🔗";
+}
+
+function getBgColor(index) {
+  const colors = [
+    "#EEF2FF", "#FFF7ED", "#F0FDF4", "#FDF4FF", "#FFFBEB",
+    "#F0F9FF", "#FFF1F2", "#F0FDFA", "#FEF9C3", "#F5F3FF",
+  ];
+  return colors[index % colors.length];
+}
+
 function renderSourceNav(data) {
   if (!sourceNavBodyEl || !data) return;
   const categories = data.categories || [];
@@ -1986,6 +2018,7 @@ function renderSourceNav(data) {
     head.innerHTML = `
       <span class="source-nav-cat-icon">${cat.icon || "📌"}</span>
       <span class="source-nav-cat-name">${cat.name}</span>
+      <span class="source-nav-cat-count">${(cat.sources || []).length}</span>
       <span class="source-nav-cat-desc">${cat.desc || ""}</span>
     `;
     catEl.appendChild(head);
@@ -1993,23 +2026,27 @@ function renderSourceNav(data) {
     const grid = document.createElement("div");
     grid.className = "source-nav-grid";
 
-    (cat.sources || []).forEach(src => {
+    (cat.sources || []).forEach((src, i) => {
       const a = document.createElement("a");
       a.className = "source-nav-item";
       a.href = src.url;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
 
-      const tagClass = src.tag === "自动采集" ? "tag-auto" : src.hot ? "tag-hot" : "";
-      const hotDot = src.hot ? `<span class="source-nav-hot-dot"></span>` : "";
+      const emoji = getSourceEmoji(src, cat);
+      const bgColor = getBgColor(i);
+      const tagClass = src.tag === "自动采集" ? "tag-auto"
+        : (src.tag && src.tag.includes("官方")) ? "tag-official" : "";
+      const hotBadge = src.hot ? `<span class="source-nav-hot-badge"></span>` : "";
 
       a.innerHTML = `
-        <div class="source-nav-item-top">
-          ${hotDot}
+        ${hotBadge}
+        <div class="source-nav-logo" style="background:${bgColor}">${emoji}</div>
+        <div class="source-nav-info">
           <span class="source-nav-item-name">${src.name}</span>
+          <span class="source-nav-item-desc">${src.desc || ""}</span>
           ${src.tag ? `<span class="source-nav-item-tag ${tagClass}">${src.tag}</span>` : ""}
         </div>
-        <span class="source-nav-item-desc">${src.desc || ""}</span>
       `;
       grid.appendChild(a);
     });

@@ -1629,35 +1629,36 @@ summary:focus-visible {
 .source-nav-categories {
   display: flex;
   flex-direction: column;
-  gap: 28px;
-  margin-top: 16px;
+  gap: 36px;
+  margin-top: 8px;
 }
 
-.source-nav-category {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
-}
+.source-nav-category {}
 
 .source-nav-cat-head {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 14px 18px;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg-secondary, rgba(0,0,0,.03));
+  gap: 8px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border);
 }
 
-.source-nav-cat-icon {
-  font-size: 20px;
-  line-height: 1;
-}
+.source-nav-cat-icon { font-size: 18px; line-height: 1; }
 
 .source-nav-cat-name {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text-primary);
+}
+
+.source-nav-cat-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--border);
+  border-radius: 20px;
+  padding: 1px 8px;
+  margin-left: 4px;
 }
 
 .source-nav-cat-desc {
@@ -1666,74 +1667,122 @@ summary:focus-visible {
   margin-left: auto;
 }
 
+/* 卡片网格 */
 .source-nav-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1px;
-  background: var(--border);
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
 }
 
 .source-nav-item {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  align-items: flex-start;
+  gap: 10px;
   padding: 12px 14px;
   background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
   text-decoration: none;
-  transition: background 0.15s;
+  transition: box-shadow 0.15s, border-color 0.15s, transform 0.1s;
   position: relative;
+  cursor: pointer;
 }
 
 .source-nav-item:hover {
-  background: var(--bg-hover, rgba(0,0,0,.04));
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  border-color: var(--accent, #6366f1);
+  transform: translateY(-1px);
 }
 
-.source-nav-item-top {
+/* logo 圆角图标 */
+.source-nav-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1;
+  overflow: hidden;
+  background: var(--border);
+}
+
+.source-nav-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.source-nav-logo-fallback {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* 卡片右侧文字 */
+.source-nav-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
 }
 
 .source-nav-item-name {
-  font-size: 13.5px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
   color: var(--text-primary);
   line-height: 1.3;
-}
-
-.source-nav-item-tag {
-  font-size: 10px;
-  padding: 1px 6px;
-  border-radius: 4px;
   white-space: nowrap;
-  background: var(--accent-subtle, rgba(99,102,241,.1));
-  color: var(--accent, #6366f1);
-  font-weight: 600;
-}
-
-.source-nav-item-tag.tag-auto {
-  background: rgba(16,185,129,.1);
-  color: #059669;
-}
-
-.source-nav-item-tag.tag-hot {
-  background: rgba(239,68,68,.1);
-  color: #dc2626;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .source-nav-item-desc {
-  font-size: 11.5px;
+  font-size: 11px;
   color: var(--text-muted);
-  line-height: 1.45;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.source-nav-hot-dot {
-  width: 6px;
-  height: 6px;
+.source-nav-item-tag {
+  display: inline-block;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-weight: 600;
+  margin-top: 2px;
+  background: rgba(99,102,241,.1);
+  color: #6366f1;
+  width: fit-content;
+}
+
+.source-nav-item-tag.tag-auto {
+  background: rgba(16,185,129,.12);
+  color: #059669;
+}
+
+.source-nav-item-tag.tag-official {
+  background: rgba(245,158,11,.12);
+  color: #d97706;
+}
+
+/* 右上角热门红点 */
+.source-nav-hot-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: #ef4444;
-  flex-shrink: 0;
-  margin-top: 2px;
+  box-shadow: 0 0 0 2px rgba(239,68,68,.2);
 }
 
 /* 信号卡片业务价值提示 */
