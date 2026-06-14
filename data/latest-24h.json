@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T01:42:01.094411Z",
+  "generated_at": "2026-06-14T06:29:48.904890Z",
   "window_hours": 168,
   "total_items": 1,
   "total_items_ai_raw": 1,
@@ -12,7 +12,7 @@
   "day_filter_scope": "items/items_ai, daily brief, current hotspots",
   "ai_relevance_threshold": 0.65,
   "topic_relevance_threshold": 0.65,
-  "archive_total": 10416,
+  "archive_total": 10444,
   "site_count": 2,
   "source_count": 1,
   "site_stats": [
